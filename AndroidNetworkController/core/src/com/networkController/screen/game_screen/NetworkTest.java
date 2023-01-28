@@ -108,11 +108,11 @@ public class NetworkTest extends ScreenBaseAdapter {
                             response = new BufferedReader(new InputStreamReader(client.getInputStream())).readLine();
                             //response = new BufferedReader(new InputStreamReader(client.getInputStream())).readLine();
 
-                            Gdx.app.log("PingPongSocketExample", "got server message: " + response);
+                            Gdx.app.log("AndroidNetworkController", "got server message: " + response);
                             System.out.println("Server Messager : " + response);
                         }
                     } catch (IOException e) {
-                        Gdx.app.log("PingPongSocketExample", "an error occured", e);
+                        Gdx.app.log("AndroidNetworkController", "an error occured", e);
                     }
                // }
             }
