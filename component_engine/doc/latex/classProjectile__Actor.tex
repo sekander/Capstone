@@ -1,0 +1,215 @@
+\hypertarget{classProjectile__Actor}{}\doxysection{Projectile\+\_\+\+Actor Class Reference}
+\label{classProjectile__Actor}\index{Projectile\_Actor@{Projectile\_Actor}}
+
+
+{\ttfamily \#include $<$Projectile\+\_\+\+Acotr.\+h$>$}
+
+
+
+Inheritance diagram for Projectile\+\_\+\+Actor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classProjectile__Actor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Projectile\+\_\+\+Actor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classProjectile__Actor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classProjectile__Actor_a2cae6df0c47bae8d6162855c310be1df}{Projectile\+\_\+\+Actor}} (\mbox{\hyperlink{classComponent}{Component}} $\ast$parent\+\_\+)
+\item 
+\mbox{\hyperlink{classProjectile__Actor_a0813f8233d0b8df5e9ac8cf47b12b5a8}{$\sim$\+Projectile\+\_\+\+Actor}} ()
+\item 
+bool \mbox{\hyperlink{classProjectile__Actor_a98e2e2198cd164c35318c04f96e6a3ac}{on\+Create}} ()
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classProjectile__Actor_a58d01ff77f0815ca611236f139b7aafa}{on\+Destroy}} ()
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classProjectile__Actor_ab61aec7117a93626c3096bef71ab30fc}{update}} (const float delta\+Time\+\_\+)
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classProjectile__Actor_a63aab28b99512041ebbd7474c8acb1b4}{input}} ()
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classProjectile__Actor_ab2cbe2e37cc22542c5a4446e33075300}{draw}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classShader__Actor}{Shader\+\_\+\+Actor}} $>$ \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_a57b2a96adb1d51204909a82d861e395e}{shader}}, glm\+::mat4 \mbox{\hyperlink{main__menu__state_8cpp_a565d92bfbcc4a481d2d35f3850a382f7}{projection}}, float xpos, float ypos, float box\+Width, float bow\+Height, float rot) const
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classProjectile__Actor_af9d53296ef36ff9c63acaaea996366ce}{reset\+Bullet\+Pos}} (int \mbox{\hyperlink{game__play__state_8cpp_acb559820d9ca11295b4500f179ef6392}{i}})
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classProjectile__Actor_aa81c08d48039d932378d9579628e91e9}{projectile\+\_\+collision\+\_\+update}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classNPC__Actor}{N\+P\+C\+\_\+\+Actor}} $>$ actor)
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classProjectile__Actor_a04cc0baaa196235c85f628c92327c23b}{projectile\+\_\+firing}} (float projectile\+\_\+vel\+\_\+x, float projectile\+\_\+vel\+\_\+y, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGun__Actor}{Gun\+\_\+\+Actor}} $>$ spawn\+Loc)
+\item 
+bool \mbox{\hyperlink{classProjectile__Actor_a205f34a830ec6d19a87d978d63d52922}{get\+\_\+projectile\+\_\+collision}} ()
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classProjectile__Actor_a5bad8780253a216f0ed9bf160cc2c760}{set\+\_\+projectile\+\_\+collision}} (bool collision)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classProjectile__Actor_a14073ceee00cc59d7aa87574413816f1}{projectile\+\_\+collision}}
+\item 
+float \mbox{\hyperlink{classProjectile__Actor_a43a1b9d877211660fbfe425d0ee4f9c1}{projectile\+\_\+counter}}
+\item 
+bool \mbox{\hyperlink{classProjectile__Actor_afbbd91b7ac2df24126906c9eebc6373d}{projectile\+\_\+shooting\+\_\+right}}
+\item 
+bool \mbox{\hyperlink{classProjectile__Actor_a68a49440a92e4df0b57ad1f585db53a6}{projectile\+\_\+shooting\+\_\+up}}
+\item 
+bool \mbox{\hyperlink{classProjectile__Actor_aeedc983cf4854fa176e7e1fb76f9fcf4}{projectile\+\_\+shooting\+\_\+left}}
+\item 
+bool \mbox{\hyperlink{classProjectile__Actor_a9e11ed3fc1da2a1ff487f14c6db6cff4}{projectile\+\_\+shooting\+\_\+down}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static uint16\+\_\+t \mbox{\hyperlink{classProjectile__Actor_ad22a18a63f3e8ec1c37a726bf23e64d0}{projectile\+\_\+count}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classProjectile__Actor_a2cae6df0c47bae8d6162855c310be1df}\label{classProjectile__Actor_a2cae6df0c47bae8d6162855c310be1df}} 
+\index{Projectile\_Actor@{Projectile\_Actor}!Projectile\_Actor@{Projectile\_Actor}}
+\index{Projectile\_Actor@{Projectile\_Actor}!Projectile\_Actor@{Projectile\_Actor}}
+\doxysubsubsection{\texorpdfstring{Projectile\_Actor()}{Projectile\_Actor()}}
+{\footnotesize\ttfamily Projectile\+\_\+\+Actor\+::\+Projectile\+\_\+\+Actor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComponent}{Component}} $\ast$}]{parent\+\_\+ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProjectile__Actor_a0813f8233d0b8df5e9ac8cf47b12b5a8}\label{classProjectile__Actor_a0813f8233d0b8df5e9ac8cf47b12b5a8}} 
+\index{Projectile\_Actor@{Projectile\_Actor}!````~Projectile\_Actor@{$\sim$Projectile\_Actor}}
+\index{````~Projectile\_Actor@{$\sim$Projectile\_Actor}!Projectile\_Actor@{Projectile\_Actor}}
+\doxysubsubsection{\texorpdfstring{$\sim$Projectile\_Actor()}{~Projectile\_Actor()}}
+{\footnotesize\ttfamily Projectile\+\_\+\+Actor\+::$\sim$\+Projectile\+\_\+\+Actor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classProjectile__Actor_ab2cbe2e37cc22542c5a4446e33075300}\label{classProjectile__Actor_ab2cbe2e37cc22542c5a4446e33075300}} 
+\index{Projectile\_Actor@{Projectile\_Actor}!draw@{draw}}
+\index{draw@{draw}!Projectile\_Actor@{Projectile\_Actor}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Projectile\+\_\+\+Actor\+::draw (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classShader__Actor}{Shader\+\_\+\+Actor}} $>$}]{shader,  }\item[{glm\+::mat4}]{projection,  }\item[{float}]{xpos,  }\item[{float}]{ypos,  }\item[{float}]{box\+Width,  }\item[{float}]{bow\+Height,  }\item[{float}]{rot }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classProjectile__Actor_a205f34a830ec6d19a87d978d63d52922}\label{classProjectile__Actor_a205f34a830ec6d19a87d978d63d52922}} 
+\index{Projectile\_Actor@{Projectile\_Actor}!get\_projectile\_collision@{get\_projectile\_collision}}
+\index{get\_projectile\_collision@{get\_projectile\_collision}!Projectile\_Actor@{Projectile\_Actor}}
+\doxysubsubsection{\texorpdfstring{get\_projectile\_collision()}{get\_projectile\_collision()}}
+{\footnotesize\ttfamily bool Projectile\+\_\+\+Actor\+::get\+\_\+projectile\+\_\+collision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classProjectile__Actor_a63aab28b99512041ebbd7474c8acb1b4}\label{classProjectile__Actor_a63aab28b99512041ebbd7474c8acb1b4}} 
+\index{Projectile\_Actor@{Projectile\_Actor}!input@{input}}
+\index{input@{input}!Projectile\_Actor@{Projectile\_Actor}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Projectile\+\_\+\+Actor\+::input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProjectile__Actor_a98e2e2198cd164c35318c04f96e6a3ac}\label{classProjectile__Actor_a98e2e2198cd164c35318c04f96e6a3ac}} 
+\index{Projectile\_Actor@{Projectile\_Actor}!onCreate@{onCreate}}
+\index{onCreate@{onCreate}!Projectile\_Actor@{Projectile\_Actor}}
+\doxysubsubsection{\texorpdfstring{onCreate()}{onCreate()}}
+{\footnotesize\ttfamily bool Projectile\+\_\+\+Actor\+::on\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classActor_a56a241c949adf52cedceb45a7102ea1a}{Actor}}.
+
+\mbox{\Hypertarget{classProjectile__Actor_a58d01ff77f0815ca611236f139b7aafa}\label{classProjectile__Actor_a58d01ff77f0815ca611236f139b7aafa}} 
+\index{Projectile\_Actor@{Projectile\_Actor}!onDestroy@{onDestroy}}
+\index{onDestroy@{onDestroy}!Projectile\_Actor@{Projectile\_Actor}}
+\doxysubsubsection{\texorpdfstring{onDestroy()}{onDestroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Projectile\+\_\+\+Actor\+::on\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classActor_a47101d6275509662bf6c84c3f3439696}{Actor}}.
+
+\mbox{\Hypertarget{classProjectile__Actor_aa81c08d48039d932378d9579628e91e9}\label{classProjectile__Actor_aa81c08d48039d932378d9579628e91e9}} 
+\index{Projectile\_Actor@{Projectile\_Actor}!projectile\_collision\_update@{projectile\_collision\_update}}
+\index{projectile\_collision\_update@{projectile\_collision\_update}!Projectile\_Actor@{Projectile\_Actor}}
+\doxysubsubsection{\texorpdfstring{projectile\_collision\_update()}{projectile\_collision\_update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Projectile\+\_\+\+Actor\+::projectile\+\_\+collision\+\_\+update (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classNPC__Actor}{N\+P\+C\+\_\+\+Actor}} $>$}]{actor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProjectile__Actor_a04cc0baaa196235c85f628c92327c23b}\label{classProjectile__Actor_a04cc0baaa196235c85f628c92327c23b}} 
+\index{Projectile\_Actor@{Projectile\_Actor}!projectile\_firing@{projectile\_firing}}
+\index{projectile\_firing@{projectile\_firing}!Projectile\_Actor@{Projectile\_Actor}}
+\doxysubsubsection{\texorpdfstring{projectile\_firing()}{projectile\_firing()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Projectile\+\_\+\+Actor\+::projectile\+\_\+firing (\begin{DoxyParamCaption}\item[{float}]{projectile\+\_\+vel\+\_\+x,  }\item[{float}]{projectile\+\_\+vel\+\_\+y,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGun__Actor}{Gun\+\_\+\+Actor}} $>$}]{spawn\+Loc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProjectile__Actor_af9d53296ef36ff9c63acaaea996366ce}\label{classProjectile__Actor_af9d53296ef36ff9c63acaaea996366ce}} 
+\index{Projectile\_Actor@{Projectile\_Actor}!resetBulletPos@{resetBulletPos}}
+\index{resetBulletPos@{resetBulletPos}!Projectile\_Actor@{Projectile\_Actor}}
+\doxysubsubsection{\texorpdfstring{resetBulletPos()}{resetBulletPos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Projectile\+\_\+\+Actor\+::reset\+Bullet\+Pos (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProjectile__Actor_a5bad8780253a216f0ed9bf160cc2c760}\label{classProjectile__Actor_a5bad8780253a216f0ed9bf160cc2c760}} 
+\index{Projectile\_Actor@{Projectile\_Actor}!set\_projectile\_collision@{set\_projectile\_collision}}
+\index{set\_projectile\_collision@{set\_projectile\_collision}!Projectile\_Actor@{Projectile\_Actor}}
+\doxysubsubsection{\texorpdfstring{set\_projectile\_collision()}{set\_projectile\_collision()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Projectile\+\_\+\+Actor\+::set\+\_\+projectile\+\_\+collision (\begin{DoxyParamCaption}\item[{bool}]{collision }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classProjectile__Actor_ab61aec7117a93626c3096bef71ab30fc}\label{classProjectile__Actor_ab61aec7117a93626c3096bef71ab30fc}} 
+\index{Projectile\_Actor@{Projectile\_Actor}!update@{update}}
+\index{update@{update}!Projectile\_Actor@{Projectile\_Actor}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Projectile\+\_\+\+Actor\+::update (\begin{DoxyParamCaption}\item[{const float}]{delta\+Time\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classActor_a724ff8f2e9c34f15a6c443a3912504c4}{Actor}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classProjectile__Actor_a14073ceee00cc59d7aa87574413816f1}\label{classProjectile__Actor_a14073ceee00cc59d7aa87574413816f1}} 
+\index{Projectile\_Actor@{Projectile\_Actor}!projectile\_collision@{projectile\_collision}}
+\index{projectile\_collision@{projectile\_collision}!Projectile\_Actor@{Projectile\_Actor}}
+\doxysubsubsection{\texorpdfstring{projectile\_collision}{projectile\_collision}}
+{\footnotesize\ttfamily bool Projectile\+\_\+\+Actor\+::projectile\+\_\+collision\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classProjectile__Actor_ad22a18a63f3e8ec1c37a726bf23e64d0}\label{classProjectile__Actor_ad22a18a63f3e8ec1c37a726bf23e64d0}} 
+\index{Projectile\_Actor@{Projectile\_Actor}!projectile\_count@{projectile\_count}}
+\index{projectile\_count@{projectile\_count}!Projectile\_Actor@{Projectile\_Actor}}
+\doxysubsubsection{\texorpdfstring{projectile\_count}{projectile\_count}}
+{\footnotesize\ttfamily uint16\+\_\+t Projectile\+\_\+\+Actor\+::projectile\+\_\+count\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classProjectile__Actor_a43a1b9d877211660fbfe425d0ee4f9c1}\label{classProjectile__Actor_a43a1b9d877211660fbfe425d0ee4f9c1}} 
+\index{Projectile\_Actor@{Projectile\_Actor}!projectile\_counter@{projectile\_counter}}
+\index{projectile\_counter@{projectile\_counter}!Projectile\_Actor@{Projectile\_Actor}}
+\doxysubsubsection{\texorpdfstring{projectile\_counter}{projectile\_counter}}
+{\footnotesize\ttfamily float Projectile\+\_\+\+Actor\+::projectile\+\_\+counter\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classProjectile__Actor_a9e11ed3fc1da2a1ff487f14c6db6cff4}\label{classProjectile__Actor_a9e11ed3fc1da2a1ff487f14c6db6cff4}} 
+\index{Projectile\_Actor@{Projectile\_Actor}!projectile\_shooting\_down@{projectile\_shooting\_down}}
+\index{projectile\_shooting\_down@{projectile\_shooting\_down}!Projectile\_Actor@{Projectile\_Actor}}
+\doxysubsubsection{\texorpdfstring{projectile\_shooting\_down}{projectile\_shooting\_down}}
+{\footnotesize\ttfamily bool Projectile\+\_\+\+Actor\+::projectile\+\_\+shooting\+\_\+down\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classProjectile__Actor_aeedc983cf4854fa176e7e1fb76f9fcf4}\label{classProjectile__Actor_aeedc983cf4854fa176e7e1fb76f9fcf4}} 
+\index{Projectile\_Actor@{Projectile\_Actor}!projectile\_shooting\_left@{projectile\_shooting\_left}}
+\index{projectile\_shooting\_left@{projectile\_shooting\_left}!Projectile\_Actor@{Projectile\_Actor}}
+\doxysubsubsection{\texorpdfstring{projectile\_shooting\_left}{projectile\_shooting\_left}}
+{\footnotesize\ttfamily bool Projectile\+\_\+\+Actor\+::projectile\+\_\+shooting\+\_\+left\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classProjectile__Actor_afbbd91b7ac2df24126906c9eebc6373d}\label{classProjectile__Actor_afbbd91b7ac2df24126906c9eebc6373d}} 
+\index{Projectile\_Actor@{Projectile\_Actor}!projectile\_shooting\_right@{projectile\_shooting\_right}}
+\index{projectile\_shooting\_right@{projectile\_shooting\_right}!Projectile\_Actor@{Projectile\_Actor}}
+\doxysubsubsection{\texorpdfstring{projectile\_shooting\_right}{projectile\_shooting\_right}}
+{\footnotesize\ttfamily bool Projectile\+\_\+\+Actor\+::projectile\+\_\+shooting\+\_\+right\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classProjectile__Actor_a68a49440a92e4df0b57ad1f585db53a6}\label{classProjectile__Actor_a68a49440a92e4df0b57ad1f585db53a6}} 
+\index{Projectile\_Actor@{Projectile\_Actor}!projectile\_shooting\_up@{projectile\_shooting\_up}}
+\index{projectile\_shooting\_up@{projectile\_shooting\_up}!Projectile\_Actor@{Projectile\_Actor}}
+\doxysubsubsection{\texorpdfstring{projectile\_shooting\_up}{projectile\_shooting\_up}}
+{\footnotesize\ttfamily bool Projectile\+\_\+\+Actor\+::projectile\+\_\+shooting\+\_\+up\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fnky/\+C0de/component\+\_\+engine/include/\+Actors/\mbox{\hyperlink{Projectile__Acotr_8h}{Projectile\+\_\+\+Acotr.\+h}}\item 
+/home/fnky/\+C0de/component\+\_\+engine/src/\+Actors/\mbox{\hyperlink{Projectile__Actor_8cpp}{Projectile\+\_\+\+Actor.\+cpp}}\end{DoxyCompactItemize}

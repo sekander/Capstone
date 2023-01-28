@@ -1,0 +1,357 @@
+\hypertarget{classsprite}{}\doxysection{sprite Class Reference}
+\label{classsprite}\index{sprite@{sprite}}
+
+
+{\ttfamily \#include $<$sprite.\+h$>$}
+
+
+
+Collaboration diagram for sprite\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{classsprite__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsprite_ab301a52437b1fedba953a3a3003d3a0d}{sprite}} ()
+\item 
+\mbox{\hyperlink{classsprite_a4eb7fd55561401ee6765aae2ff18433d}{sprite}} (const char $\ast$file\+Name, vec2 position, vec2 \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}}, uint8\+\_\+t x\+\_\+frame=0, uint8\+\_\+t y\+\_\+frame=0, float rotation=0.\+0f, vec3 colour=vec3(1.\+0f), vec2 frames=vec2(1.\+0f), bool is\+Alpha=true)
+\item 
+\mbox{\hyperlink{classsprite_aa2c57852113368003657c673e39b6f3a}{$\sim$sprite}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTexture2D}{Texture2D}} $>$ \mbox{\hyperlink{classsprite_afe48450fff6269737f6adf370d03bbd8}{load\+Smart\+Texture}} (const char $\ast$file\+Name, bool alapha)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTexture2D}{Texture2D}} $>$ \mbox{\hyperlink{classsprite_a85a220f38cdb533f79f888d2b5911e4c}{get\+\_\+smart\+\_\+texture}} ()
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classsprite_a9923b8aa539e4a415a105df2e5ef723e}{set\+\_\+texture}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTexture2D}{Texture2D}} $>$ \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_a0b57774cb59b667df4a205ae0b1a50e2}{texture}})
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac83513893df92266f79a515488701770}{std\+::string}} \mbox{\hyperlink{classsprite_a5626c49182e9785cab088ec140cc95e2}{get\+\_\+key}} ()
+\item 
+bool \mbox{\hyperlink{classsprite_a6b2f3ae0858b040330d66a547543d91e}{get\+\_\+sprite\+\_\+sheet}} ()
+\item 
+bool \mbox{\hyperlink{classsprite_a935dcb319f155f0fcb698e2c082e3f2c}{get\+\_\+change\+\_\+frames}} ()
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classsprite_a437200beac1a88ed9a35a1dc2e190e93}{get\+\_\+num\+\_\+x\+\_\+frames}} ()
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classsprite_aff2cdf45b432e65094d8113a6d9e44eb}{get\+\_\+num\+\_\+y\+\_\+frames}} ()
+\item 
+float \mbox{\hyperlink{classsprite_a34d638c04ee20e0640b121432a9b2bc2}{get\+\_\+incrementer}} ()
+\item 
+vec2 \mbox{\hyperlink{classsprite_acd9a248ff0bb693c614b084d5200d651}{get\+\_\+position}} ()
+\item 
+vec2 \mbox{\hyperlink{classsprite_acccf755d4af9f43b89554f7df47e0a4f}{get\+\_\+size}} ()
+\item 
+float \mbox{\hyperlink{classsprite_a7b6bbbb227a4558c7d4a0e8fc4344bca}{get\+\_\+rotation}} ()
+\item 
+vec3 \mbox{\hyperlink{classsprite_a47cf0b71c2e1f8b8df582ed341991043}{get\+\_\+color}} ()
+\item 
+vec2 \mbox{\hyperlink{classsprite_a76bc14c424cd83e145cbe056cb4a5572}{get\+\_\+frame}} ()
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classsprite_aba784f0507715f2e5a9c9eec4c84c868}{set\+\_\+sprite\+\_\+sheet}} (bool sprite\+\_\+sheet)
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classsprite_ab682d38f77706a999f53a1e62bf2539e}{set\+\_\+change\+\_\+frames}} (bool change\+\_\+frames)
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classsprite_a94abe518a02e2ef3ae690ef3d19af461}{set\+\_\+num\+\_\+x\+\_\+frames}} (uint8\+\_\+t num\+\_\+x\+\_\+frames)
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classsprite_a2396292b3f5ff37fbb0851b697237248}{set\+\_\+num\+\_\+y\+\_\+frames}} (uint8\+\_\+t num\+\_\+y\+\_\+frames)
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classsprite_ae3c9856eee554bf235ea32433a9cda60}{set\+\_\+incrementer}} (float incrementer)
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classsprite_ac273d4def330f6280e88eeab65d60b32}{set\+\_\+position}} (vec2 position)
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classsprite_a42ea6b6f3f0bb27ae75d136e118fdf06}{set\+\_\+size}} (vec2 \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}})
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classsprite_ab95aac27f21039f0f8584343687e734b}{set\+\_\+rotation}} (float rotation)
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classsprite_a43c820290835b2ba00b789af65ad6dca}{set\+\_\+color}} (vec3 color)
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classsprite_a2ee0454b622030ee1f4a7d8d130db410}{set\+\_\+frames}} (vec2 frame)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTexture2D}{Texture2D}} $>$ \mbox{\hyperlink{classsprite_a88c07efe1337b770a4a1f8a1fffe8834}{smart\+\_\+texture}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTexture2D}{Texture2D}} $>$, \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac83513893df92266f79a515488701770}{std\+::string}} $>$ \mbox{\hyperlink{classsprite_aa17ee337e7e0df44f042178b5e522751}{texture\+\_\+list}}
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac83513893df92266f79a515488701770}{std\+::string}} \mbox{\hyperlink{classsprite_a814c5905ffdd26f7a585d2eeec6a8d93}{m\+\_\+key}}
+\item 
+bool \mbox{\hyperlink{classsprite_a90713ede82ab2256a308feae3ec5e3eb}{m\+\_\+sprite\+\_\+sheet}}
+\item 
+bool \mbox{\hyperlink{classsprite_a29b0927a7303c9156b9caf753501db06}{m\+\_\+change\+\_\+frames}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classsprite_a70f53dec07ce080a3004925a850e4651}{m\+\_\+x\+\_\+num\+\_\+frame}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classsprite_a84ce0565b22ff655ff7cc54d6bc5a260}{m\+\_\+y\+\_\+num\+\_\+frame}}
+\item 
+float \mbox{\hyperlink{classsprite_aecbf0a0cd9ea195f174be3aaa921f057}{m\+\_\+incrementer}}
+\item 
+vec2 \mbox{\hyperlink{classsprite_a445b6161d96984e6054612134f25cb72}{m\+\_\+position}}
+\item 
+vec2 \mbox{\hyperlink{classsprite_a165e771f6553bed419a0a19a44a561ca}{m\+\_\+size}}
+\item 
+float \mbox{\hyperlink{classsprite_a0d9b789deca4f552207112656ef62363}{m\+\_\+rotate}}
+\item 
+vec3 \mbox{\hyperlink{classsprite_a6630a3c3ce65c8b35aad99e6799751d5}{m\+\_\+color}}
+\item 
+vec2 \mbox{\hyperlink{classsprite_a275ea7dc233e92f18aebef18c317638f}{m\+\_\+frames}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsprite_ab301a52437b1fedba953a3a3003d3a0d}\label{classsprite_ab301a52437b1fedba953a3a3003d3a0d}} 
+\index{sprite@{sprite}!sprite@{sprite}}
+\index{sprite@{sprite}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{sprite()}{sprite()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily sprite\+::sprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsprite_a4eb7fd55561401ee6765aae2ff18433d}\label{classsprite_a4eb7fd55561401ee6765aae2ff18433d}} 
+\index{sprite@{sprite}!sprite@{sprite}}
+\index{sprite@{sprite}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{sprite()}{sprite()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily sprite\+::sprite (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name,  }\item[{vec2}]{position,  }\item[{vec2}]{size,  }\item[{uint8\+\_\+t}]{x\+\_\+frame = {\ttfamily 0},  }\item[{uint8\+\_\+t}]{y\+\_\+frame = {\ttfamily 0},  }\item[{float}]{rotation = {\ttfamily 0.0f},  }\item[{vec3}]{colour = {\ttfamily vec3(1.0f)},  }\item[{vec2}]{frames = {\ttfamily vec2(1.0f)},  }\item[{bool}]{is\+Alpha = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsprite_aa2c57852113368003657c673e39b6f3a}\label{classsprite_aa2c57852113368003657c673e39b6f3a}} 
+\index{sprite@{sprite}!````~sprite@{$\sim$sprite}}
+\index{````~sprite@{$\sim$sprite}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{$\sim$sprite()}{~sprite()}}
+{\footnotesize\ttfamily sprite\+::$\sim$sprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsprite_a935dcb319f155f0fcb698e2c082e3f2c}\label{classsprite_a935dcb319f155f0fcb698e2c082e3f2c}} 
+\index{sprite@{sprite}!get\_change\_frames@{get\_change\_frames}}
+\index{get\_change\_frames@{get\_change\_frames}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{get\_change\_frames()}{get\_change\_frames()}}
+{\footnotesize\ttfamily bool sprite\+::get\+\_\+change\+\_\+frames (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsprite_a47cf0b71c2e1f8b8df582ed341991043}\label{classsprite_a47cf0b71c2e1f8b8df582ed341991043}} 
+\index{sprite@{sprite}!get\_color@{get\_color}}
+\index{get\_color@{get\_color}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{get\_color()}{get\_color()}}
+{\footnotesize\ttfamily vec3 sprite\+::get\+\_\+color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsprite_a76bc14c424cd83e145cbe056cb4a5572}\label{classsprite_a76bc14c424cd83e145cbe056cb4a5572}} 
+\index{sprite@{sprite}!get\_frame@{get\_frame}}
+\index{get\_frame@{get\_frame}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{get\_frame()}{get\_frame()}}
+{\footnotesize\ttfamily vec2 sprite\+::get\+\_\+frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsprite_a34d638c04ee20e0640b121432a9b2bc2}\label{classsprite_a34d638c04ee20e0640b121432a9b2bc2}} 
+\index{sprite@{sprite}!get\_incrementer@{get\_incrementer}}
+\index{get\_incrementer@{get\_incrementer}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{get\_incrementer()}{get\_incrementer()}}
+{\footnotesize\ttfamily float sprite\+::get\+\_\+incrementer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsprite_a5626c49182e9785cab088ec140cc95e2}\label{classsprite_a5626c49182e9785cab088ec140cc95e2}} 
+\index{sprite@{sprite}!get\_key@{get\_key}}
+\index{get\_key@{get\_key}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{get\_key()}{get\_key()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac83513893df92266f79a515488701770}{std\+::string}} sprite\+::get\+\_\+key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsprite_a437200beac1a88ed9a35a1dc2e190e93}\label{classsprite_a437200beac1a88ed9a35a1dc2e190e93}} 
+\index{sprite@{sprite}!get\_num\_x\_frames@{get\_num\_x\_frames}}
+\index{get\_num\_x\_frames@{get\_num\_x\_frames}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{get\_num\_x\_frames()}{get\_num\_x\_frames()}}
+{\footnotesize\ttfamily uint8\+\_\+t sprite\+::get\+\_\+num\+\_\+x\+\_\+frames (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsprite_aff2cdf45b432e65094d8113a6d9e44eb}\label{classsprite_aff2cdf45b432e65094d8113a6d9e44eb}} 
+\index{sprite@{sprite}!get\_num\_y\_frames@{get\_num\_y\_frames}}
+\index{get\_num\_y\_frames@{get\_num\_y\_frames}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{get\_num\_y\_frames()}{get\_num\_y\_frames()}}
+{\footnotesize\ttfamily uint8\+\_\+t sprite\+::get\+\_\+num\+\_\+y\+\_\+frames (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsprite_acd9a248ff0bb693c614b084d5200d651}\label{classsprite_acd9a248ff0bb693c614b084d5200d651}} 
+\index{sprite@{sprite}!get\_position@{get\_position}}
+\index{get\_position@{get\_position}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{get\_position()}{get\_position()}}
+{\footnotesize\ttfamily vec2 sprite\+::get\+\_\+position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsprite_a7b6bbbb227a4558c7d4a0e8fc4344bca}\label{classsprite_a7b6bbbb227a4558c7d4a0e8fc4344bca}} 
+\index{sprite@{sprite}!get\_rotation@{get\_rotation}}
+\index{get\_rotation@{get\_rotation}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{get\_rotation()}{get\_rotation()}}
+{\footnotesize\ttfamily float sprite\+::get\+\_\+rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsprite_acccf755d4af9f43b89554f7df47e0a4f}\label{classsprite_acccf755d4af9f43b89554f7df47e0a4f}} 
+\index{sprite@{sprite}!get\_size@{get\_size}}
+\index{get\_size@{get\_size}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{get\_size()}{get\_size()}}
+{\footnotesize\ttfamily vec2 sprite\+::get\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsprite_a85a220f38cdb533f79f888d2b5911e4c}\label{classsprite_a85a220f38cdb533f79f888d2b5911e4c}} 
+\index{sprite@{sprite}!get\_smart\_texture@{get\_smart\_texture}}
+\index{get\_smart\_texture@{get\_smart\_texture}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{get\_smart\_texture()}{get\_smart\_texture()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classTexture2D}{Texture2D}}$>$ sprite\+::get\+\_\+smart\+\_\+texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsprite_a6b2f3ae0858b040330d66a547543d91e}\label{classsprite_a6b2f3ae0858b040330d66a547543d91e}} 
+\index{sprite@{sprite}!get\_sprite\_sheet@{get\_sprite\_sheet}}
+\index{get\_sprite\_sheet@{get\_sprite\_sheet}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{get\_sprite\_sheet()}{get\_sprite\_sheet()}}
+{\footnotesize\ttfamily bool sprite\+::get\+\_\+sprite\+\_\+sheet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsprite_afe48450fff6269737f6adf370d03bbd8}\label{classsprite_afe48450fff6269737f6adf370d03bbd8}} 
+\index{sprite@{sprite}!loadSmartTexture@{loadSmartTexture}}
+\index{loadSmartTexture@{loadSmartTexture}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{loadSmartTexture()}{loadSmartTexture()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTexture2D}{Texture2D}} $>$ sprite\+::load\+Smart\+Texture (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name,  }\item[{bool}]{alapha }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsprite_ab682d38f77706a999f53a1e62bf2539e}\label{classsprite_ab682d38f77706a999f53a1e62bf2539e}} 
+\index{sprite@{sprite}!set\_change\_frames@{set\_change\_frames}}
+\index{set\_change\_frames@{set\_change\_frames}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{set\_change\_frames()}{set\_change\_frames()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} sprite\+::set\+\_\+change\+\_\+frames (\begin{DoxyParamCaption}\item[{bool}]{change\+\_\+frames }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsprite_a43c820290835b2ba00b789af65ad6dca}\label{classsprite_a43c820290835b2ba00b789af65ad6dca}} 
+\index{sprite@{sprite}!set\_color@{set\_color}}
+\index{set\_color@{set\_color}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{set\_color()}{set\_color()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} sprite\+::set\+\_\+color (\begin{DoxyParamCaption}\item[{vec3}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsprite_a2ee0454b622030ee1f4a7d8d130db410}\label{classsprite_a2ee0454b622030ee1f4a7d8d130db410}} 
+\index{sprite@{sprite}!set\_frames@{set\_frames}}
+\index{set\_frames@{set\_frames}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{set\_frames()}{set\_frames()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} sprite\+::set\+\_\+frames (\begin{DoxyParamCaption}\item[{vec2}]{frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsprite_ae3c9856eee554bf235ea32433a9cda60}\label{classsprite_ae3c9856eee554bf235ea32433a9cda60}} 
+\index{sprite@{sprite}!set\_incrementer@{set\_incrementer}}
+\index{set\_incrementer@{set\_incrementer}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{set\_incrementer()}{set\_incrementer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} sprite\+::set\+\_\+incrementer (\begin{DoxyParamCaption}\item[{float}]{incrementer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsprite_a94abe518a02e2ef3ae690ef3d19af461}\label{classsprite_a94abe518a02e2ef3ae690ef3d19af461}} 
+\index{sprite@{sprite}!set\_num\_x\_frames@{set\_num\_x\_frames}}
+\index{set\_num\_x\_frames@{set\_num\_x\_frames}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{set\_num\_x\_frames()}{set\_num\_x\_frames()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} sprite\+::set\+\_\+num\+\_\+x\+\_\+frames (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{num\+\_\+x\+\_\+frames }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsprite_a2396292b3f5ff37fbb0851b697237248}\label{classsprite_a2396292b3f5ff37fbb0851b697237248}} 
+\index{sprite@{sprite}!set\_num\_y\_frames@{set\_num\_y\_frames}}
+\index{set\_num\_y\_frames@{set\_num\_y\_frames}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{set\_num\_y\_frames()}{set\_num\_y\_frames()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} sprite\+::set\+\_\+num\+\_\+y\+\_\+frames (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{num\+\_\+y\+\_\+frames }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsprite_ac273d4def330f6280e88eeab65d60b32}\label{classsprite_ac273d4def330f6280e88eeab65d60b32}} 
+\index{sprite@{sprite}!set\_position@{set\_position}}
+\index{set\_position@{set\_position}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{set\_position()}{set\_position()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} sprite\+::set\+\_\+position (\begin{DoxyParamCaption}\item[{vec2}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsprite_ab95aac27f21039f0f8584343687e734b}\label{classsprite_ab95aac27f21039f0f8584343687e734b}} 
+\index{sprite@{sprite}!set\_rotation@{set\_rotation}}
+\index{set\_rotation@{set\_rotation}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{set\_rotation()}{set\_rotation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} sprite\+::set\+\_\+rotation (\begin{DoxyParamCaption}\item[{float}]{rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsprite_a42ea6b6f3f0bb27ae75d136e118fdf06}\label{classsprite_a42ea6b6f3f0bb27ae75d136e118fdf06}} 
+\index{sprite@{sprite}!set\_size@{set\_size}}
+\index{set\_size@{set\_size}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{set\_size()}{set\_size()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} sprite\+::set\+\_\+size (\begin{DoxyParamCaption}\item[{vec2}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsprite_aba784f0507715f2e5a9c9eec4c84c868}\label{classsprite_aba784f0507715f2e5a9c9eec4c84c868}} 
+\index{sprite@{sprite}!set\_sprite\_sheet@{set\_sprite\_sheet}}
+\index{set\_sprite\_sheet@{set\_sprite\_sheet}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{set\_sprite\_sheet()}{set\_sprite\_sheet()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} sprite\+::set\+\_\+sprite\+\_\+sheet (\begin{DoxyParamCaption}\item[{bool}]{sprite\+\_\+sheet }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsprite_a9923b8aa539e4a415a105df2e5ef723e}\label{classsprite_a9923b8aa539e4a415a105df2e5ef723e}} 
+\index{sprite@{sprite}!set\_texture@{set\_texture}}
+\index{set\_texture@{set\_texture}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{set\_texture()}{set\_texture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} sprite\+::set\+\_\+texture (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTexture2D}{Texture2D}} $>$}]{texture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsprite_a29b0927a7303c9156b9caf753501db06}\label{classsprite_a29b0927a7303c9156b9caf753501db06}} 
+\index{sprite@{sprite}!m\_change\_frames@{m\_change\_frames}}
+\index{m\_change\_frames@{m\_change\_frames}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{m\_change\_frames}{m\_change\_frames}}
+{\footnotesize\ttfamily bool sprite\+::m\+\_\+change\+\_\+frames\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsprite_a6630a3c3ce65c8b35aad99e6799751d5}\label{classsprite_a6630a3c3ce65c8b35aad99e6799751d5}} 
+\index{sprite@{sprite}!m\_color@{m\_color}}
+\index{m\_color@{m\_color}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{m\_color}{m\_color}}
+{\footnotesize\ttfamily vec3 sprite\+::m\+\_\+color\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsprite_a275ea7dc233e92f18aebef18c317638f}\label{classsprite_a275ea7dc233e92f18aebef18c317638f}} 
+\index{sprite@{sprite}!m\_frames@{m\_frames}}
+\index{m\_frames@{m\_frames}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{m\_frames}{m\_frames}}
+{\footnotesize\ttfamily vec2 sprite\+::m\+\_\+frames\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsprite_aecbf0a0cd9ea195f174be3aaa921f057}\label{classsprite_aecbf0a0cd9ea195f174be3aaa921f057}} 
+\index{sprite@{sprite}!m\_incrementer@{m\_incrementer}}
+\index{m\_incrementer@{m\_incrementer}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{m\_incrementer}{m\_incrementer}}
+{\footnotesize\ttfamily float sprite\+::m\+\_\+incrementer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsprite_a814c5905ffdd26f7a585d2eeec6a8d93}\label{classsprite_a814c5905ffdd26f7a585d2eeec6a8d93}} 
+\index{sprite@{sprite}!m\_key@{m\_key}}
+\index{m\_key@{m\_key}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{m\_key}{m\_key}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac83513893df92266f79a515488701770}{std\+::string}} sprite\+::m\+\_\+key\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsprite_a445b6161d96984e6054612134f25cb72}\label{classsprite_a445b6161d96984e6054612134f25cb72}} 
+\index{sprite@{sprite}!m\_position@{m\_position}}
+\index{m\_position@{m\_position}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{m\_position}{m\_position}}
+{\footnotesize\ttfamily vec2 sprite\+::m\+\_\+position\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsprite_a0d9b789deca4f552207112656ef62363}\label{classsprite_a0d9b789deca4f552207112656ef62363}} 
+\index{sprite@{sprite}!m\_rotate@{m\_rotate}}
+\index{m\_rotate@{m\_rotate}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{m\_rotate}{m\_rotate}}
+{\footnotesize\ttfamily float sprite\+::m\+\_\+rotate\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsprite_a165e771f6553bed419a0a19a44a561ca}\label{classsprite_a165e771f6553bed419a0a19a44a561ca}} 
+\index{sprite@{sprite}!m\_size@{m\_size}}
+\index{m\_size@{m\_size}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{m\_size}{m\_size}}
+{\footnotesize\ttfamily vec2 sprite\+::m\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsprite_a90713ede82ab2256a308feae3ec5e3eb}\label{classsprite_a90713ede82ab2256a308feae3ec5e3eb}} 
+\index{sprite@{sprite}!m\_sprite\_sheet@{m\_sprite\_sheet}}
+\index{m\_sprite\_sheet@{m\_sprite\_sheet}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{m\_sprite\_sheet}{m\_sprite\_sheet}}
+{\footnotesize\ttfamily bool sprite\+::m\+\_\+sprite\+\_\+sheet\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsprite_a70f53dec07ce080a3004925a850e4651}\label{classsprite_a70f53dec07ce080a3004925a850e4651}} 
+\index{sprite@{sprite}!m\_x\_num\_frame@{m\_x\_num\_frame}}
+\index{m\_x\_num\_frame@{m\_x\_num\_frame}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{m\_x\_num\_frame}{m\_x\_num\_frame}}
+{\footnotesize\ttfamily uint8\+\_\+t sprite\+::m\+\_\+x\+\_\+num\+\_\+frame\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsprite_a84ce0565b22ff655ff7cc54d6bc5a260}\label{classsprite_a84ce0565b22ff655ff7cc54d6bc5a260}} 
+\index{sprite@{sprite}!m\_y\_num\_frame@{m\_y\_num\_frame}}
+\index{m\_y\_num\_frame@{m\_y\_num\_frame}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{m\_y\_num\_frame}{m\_y\_num\_frame}}
+{\footnotesize\ttfamily uint8\+\_\+t sprite\+::m\+\_\+y\+\_\+num\+\_\+frame\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsprite_a88c07efe1337b770a4a1f8a1fffe8834}\label{classsprite_a88c07efe1337b770a4a1f8a1fffe8834}} 
+\index{sprite@{sprite}!smart\_texture@{smart\_texture}}
+\index{smart\_texture@{smart\_texture}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{smart\_texture}{smart\_texture}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classTexture2D}{Texture2D}}$>$ sprite\+::smart\+\_\+texture\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsprite_aa17ee337e7e0df44f042178b5e522751}\label{classsprite_aa17ee337e7e0df44f042178b5e522751}} 
+\index{sprite@{sprite}!texture\_list@{texture\_list}}
+\index{texture\_list@{texture\_list}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{texture\_list}{texture\_list}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classTexture2D}{Texture2D}}$>$, \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac83513893df92266f79a515488701770}{std\+::string}}$>$ sprite\+::texture\+\_\+list\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fnky/\+C0de/component\+\_\+engine/include/\+Graphics/\mbox{\hyperlink{sprite_8h}{sprite.\+h}}\item 
+/home/fnky/\+C0de/component\+\_\+engine/src/\+Graphics/\mbox{\hyperlink{sprite_8cpp}{sprite.\+cpp}}\end{DoxyCompactItemize}

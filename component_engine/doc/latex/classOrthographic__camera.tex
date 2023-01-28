@@ -1,0 +1,168 @@
+\hypertarget{classOrthographic__camera}{}\doxysection{Orthographic\+\_\+camera Class Reference}
+\label{classOrthographic__camera}\index{Orthographic\_camera@{Orthographic\_camera}}
+
+
+{\ttfamily \#include $<$Orthographic\+\_\+camera.\+h$>$}
+
+
+
+Collaboration diagram for Orthographic\+\_\+camera\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOrthographic__camera__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classOrthographic__camera_aeb45b5f12a351769d0b80a2926193e7f}{Orthographic\+\_\+camera}} (float left, float right, float bottom, float top, float z\+Near, float z\+Far)
+\item 
+\mbox{\hyperlink{classOrthographic__camera_abd3ea1d0674fc8de61786ff787d97390}{$\sim$\+Orthographic\+\_\+camera}} ()
+\item 
+const glm\+::vec3 \& \mbox{\hyperlink{classOrthographic__camera_aae41cb7e5c48eb6ce5354d86c9d13123}{Get\+Position}} () const
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classOrthographic__camera_a3cf573e0cc2b494bf6ca7adf11df8d0f}{Set\+Position}} (const glm\+::vec3 position)
+\item 
+float \mbox{\hyperlink{classOrthographic__camera_a8c9169569698fca75d45550b0cf450b3}{Get\+Rotation}} () const
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classOrthographic__camera_aafb33c86e3b3178dd76192e72306f1fb}{Set\+Rotation}} (float rotation)
+\item 
+const glm\+::vec2 \& \mbox{\hyperlink{classOrthographic__camera_a6e6a3c646d9f677e2522671b0c0f1ce0}{Get\+Scale}} () const
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classOrthographic__camera_ac3975aafe2fc108abf27a9df0068dd56}{Set\+Scale}} (glm\+::vec2 z\+\_\+scale)
+\item 
+glm\+::mat4 \mbox{\hyperlink{classOrthographic__camera_ac8140eaa2011ecc0a7fb80ca38111909}{return\+\_\+matrix}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classOrthographic__camera_aa878ce1cd32947da29852ea03dcffd01}{recalculate\+\_\+view\+\_\+matrix}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+glm\+::mat4 \mbox{\hyperlink{classOrthographic__camera_ab86fab9f0ee868e8cca74ded191c4ab9}{m\+\_\+\+Projection\+\_\+matrix}}
+\item 
+glm\+::mat4 \mbox{\hyperlink{classOrthographic__camera_aadb603c787908e6b7545baa3367dd0bc}{m\+\_\+\+View\+\_\+matrix}}
+\item 
+glm\+::mat4 \mbox{\hyperlink{classOrthographic__camera_a3826c2d1b6976581f2d3288432f1b62a}{m\+\_\+\+View\+\_\+\+Projection\+\_\+matrix}}
+\item 
+glm\+::vec3 \mbox{\hyperlink{classOrthographic__camera_a8ed8a2734597964dea167e5e212174b6}{m\+\_\+positon}}
+\item 
+glm\+::vec2 \mbox{\hyperlink{classOrthographic__camera_ad26f470c0fc6a7bb4394ddb9b4f9a55f}{m\+\_\+scale}}
+\item 
+float \mbox{\hyperlink{classOrthographic__camera_aae32e53691911da1651e4fdb82135951}{m\+\_\+rotation}} = 0.\+0f
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classOrthographic__camera_aeb45b5f12a351769d0b80a2926193e7f}\label{classOrthographic__camera_aeb45b5f12a351769d0b80a2926193e7f}} 
+\index{Orthographic\_camera@{Orthographic\_camera}!Orthographic\_camera@{Orthographic\_camera}}
+\index{Orthographic\_camera@{Orthographic\_camera}!Orthographic\_camera@{Orthographic\_camera}}
+\doxysubsubsection{\texorpdfstring{Orthographic\_camera()}{Orthographic\_camera()}}
+{\footnotesize\ttfamily Orthographic\+\_\+camera\+::\+Orthographic\+\_\+camera (\begin{DoxyParamCaption}\item[{float}]{left,  }\item[{float}]{right,  }\item[{float}]{bottom,  }\item[{float}]{top,  }\item[{float}]{z\+Near,  }\item[{float}]{z\+Far }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classOrthographic__camera_abd3ea1d0674fc8de61786ff787d97390}\label{classOrthographic__camera_abd3ea1d0674fc8de61786ff787d97390}} 
+\index{Orthographic\_camera@{Orthographic\_camera}!````~Orthographic\_camera@{$\sim$Orthographic\_camera}}
+\index{````~Orthographic\_camera@{$\sim$Orthographic\_camera}!Orthographic\_camera@{Orthographic\_camera}}
+\doxysubsubsection{\texorpdfstring{$\sim$Orthographic\_camera()}{~Orthographic\_camera()}}
+{\footnotesize\ttfamily Orthographic\+\_\+camera\+::$\sim$\+Orthographic\+\_\+camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classOrthographic__camera_aae41cb7e5c48eb6ce5354d86c9d13123}\label{classOrthographic__camera_aae41cb7e5c48eb6ce5354d86c9d13123}} 
+\index{Orthographic\_camera@{Orthographic\_camera}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!Orthographic\_camera@{Orthographic\_camera}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily const glm\+::vec3\& Orthographic\+\_\+camera\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classOrthographic__camera_a8c9169569698fca75d45550b0cf450b3}\label{classOrthographic__camera_a8c9169569698fca75d45550b0cf450b3}} 
+\index{Orthographic\_camera@{Orthographic\_camera}!GetRotation@{GetRotation}}
+\index{GetRotation@{GetRotation}!Orthographic\_camera@{Orthographic\_camera}}
+\doxysubsubsection{\texorpdfstring{GetRotation()}{GetRotation()}}
+{\footnotesize\ttfamily float Orthographic\+\_\+camera\+::\+Get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classOrthographic__camera_a6e6a3c646d9f677e2522671b0c0f1ce0}\label{classOrthographic__camera_a6e6a3c646d9f677e2522671b0c0f1ce0}} 
+\index{Orthographic\_camera@{Orthographic\_camera}!GetScale@{GetScale}}
+\index{GetScale@{GetScale}!Orthographic\_camera@{Orthographic\_camera}}
+\doxysubsubsection{\texorpdfstring{GetScale()}{GetScale()}}
+{\footnotesize\ttfamily const glm\+::vec2\& Orthographic\+\_\+camera\+::\+Get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classOrthographic__camera_aa878ce1cd32947da29852ea03dcffd01}\label{classOrthographic__camera_aa878ce1cd32947da29852ea03dcffd01}} 
+\index{Orthographic\_camera@{Orthographic\_camera}!recalculate\_view\_matrix@{recalculate\_view\_matrix}}
+\index{recalculate\_view\_matrix@{recalculate\_view\_matrix}!Orthographic\_camera@{Orthographic\_camera}}
+\doxysubsubsection{\texorpdfstring{recalculate\_view\_matrix()}{recalculate\_view\_matrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Orthographic\+\_\+camera\+::recalculate\+\_\+view\+\_\+matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classOrthographic__camera_ac8140eaa2011ecc0a7fb80ca38111909}\label{classOrthographic__camera_ac8140eaa2011ecc0a7fb80ca38111909}} 
+\index{Orthographic\_camera@{Orthographic\_camera}!return\_matrix@{return\_matrix}}
+\index{return\_matrix@{return\_matrix}!Orthographic\_camera@{Orthographic\_camera}}
+\doxysubsubsection{\texorpdfstring{return\_matrix()}{return\_matrix()}}
+{\footnotesize\ttfamily glm\+::mat4 Orthographic\+\_\+camera\+::return\+\_\+matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classOrthographic__camera_a3cf573e0cc2b494bf6ca7adf11df8d0f}\label{classOrthographic__camera_a3cf573e0cc2b494bf6ca7adf11df8d0f}} 
+\index{Orthographic\_camera@{Orthographic\_camera}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!Orthographic\_camera@{Orthographic\_camera}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Orthographic\+\_\+camera\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{const glm\+::vec3}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classOrthographic__camera_aafb33c86e3b3178dd76192e72306f1fb}\label{classOrthographic__camera_aafb33c86e3b3178dd76192e72306f1fb}} 
+\index{Orthographic\_camera@{Orthographic\_camera}!SetRotation@{SetRotation}}
+\index{SetRotation@{SetRotation}!Orthographic\_camera@{Orthographic\_camera}}
+\doxysubsubsection{\texorpdfstring{SetRotation()}{SetRotation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Orthographic\+\_\+camera\+::\+Set\+Rotation (\begin{DoxyParamCaption}\item[{float}]{rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classOrthographic__camera_ac3975aafe2fc108abf27a9df0068dd56}\label{classOrthographic__camera_ac3975aafe2fc108abf27a9df0068dd56}} 
+\index{Orthographic\_camera@{Orthographic\_camera}!SetScale@{SetScale}}
+\index{SetScale@{SetScale}!Orthographic\_camera@{Orthographic\_camera}}
+\doxysubsubsection{\texorpdfstring{SetScale()}{SetScale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Orthographic\+\_\+camera\+::\+Set\+Scale (\begin{DoxyParamCaption}\item[{glm\+::vec2}]{z\+\_\+scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classOrthographic__camera_a8ed8a2734597964dea167e5e212174b6}\label{classOrthographic__camera_a8ed8a2734597964dea167e5e212174b6}} 
+\index{Orthographic\_camera@{Orthographic\_camera}!m\_positon@{m\_positon}}
+\index{m\_positon@{m\_positon}!Orthographic\_camera@{Orthographic\_camera}}
+\doxysubsubsection{\texorpdfstring{m\_positon}{m\_positon}}
+{\footnotesize\ttfamily glm\+::vec3 Orthographic\+\_\+camera\+::m\+\_\+positon\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classOrthographic__camera_ab86fab9f0ee868e8cca74ded191c4ab9}\label{classOrthographic__camera_ab86fab9f0ee868e8cca74ded191c4ab9}} 
+\index{Orthographic\_camera@{Orthographic\_camera}!m\_Projection\_matrix@{m\_Projection\_matrix}}
+\index{m\_Projection\_matrix@{m\_Projection\_matrix}!Orthographic\_camera@{Orthographic\_camera}}
+\doxysubsubsection{\texorpdfstring{m\_Projection\_matrix}{m\_Projection\_matrix}}
+{\footnotesize\ttfamily glm\+::mat4 Orthographic\+\_\+camera\+::m\+\_\+\+Projection\+\_\+matrix\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classOrthographic__camera_aae32e53691911da1651e4fdb82135951}\label{classOrthographic__camera_aae32e53691911da1651e4fdb82135951}} 
+\index{Orthographic\_camera@{Orthographic\_camera}!m\_rotation@{m\_rotation}}
+\index{m\_rotation@{m\_rotation}!Orthographic\_camera@{Orthographic\_camera}}
+\doxysubsubsection{\texorpdfstring{m\_rotation}{m\_rotation}}
+{\footnotesize\ttfamily float Orthographic\+\_\+camera\+::m\+\_\+rotation = 0.\+0f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classOrthographic__camera_ad26f470c0fc6a7bb4394ddb9b4f9a55f}\label{classOrthographic__camera_ad26f470c0fc6a7bb4394ddb9b4f9a55f}} 
+\index{Orthographic\_camera@{Orthographic\_camera}!m\_scale@{m\_scale}}
+\index{m\_scale@{m\_scale}!Orthographic\_camera@{Orthographic\_camera}}
+\doxysubsubsection{\texorpdfstring{m\_scale}{m\_scale}}
+{\footnotesize\ttfamily glm\+::vec2 Orthographic\+\_\+camera\+::m\+\_\+scale\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classOrthographic__camera_aadb603c787908e6b7545baa3367dd0bc}\label{classOrthographic__camera_aadb603c787908e6b7545baa3367dd0bc}} 
+\index{Orthographic\_camera@{Orthographic\_camera}!m\_View\_matrix@{m\_View\_matrix}}
+\index{m\_View\_matrix@{m\_View\_matrix}!Orthographic\_camera@{Orthographic\_camera}}
+\doxysubsubsection{\texorpdfstring{m\_View\_matrix}{m\_View\_matrix}}
+{\footnotesize\ttfamily glm\+::mat4 Orthographic\+\_\+camera\+::m\+\_\+\+View\+\_\+matrix\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classOrthographic__camera_a3826c2d1b6976581f2d3288432f1b62a}\label{classOrthographic__camera_a3826c2d1b6976581f2d3288432f1b62a}} 
+\index{Orthographic\_camera@{Orthographic\_camera}!m\_View\_Projection\_matrix@{m\_View\_Projection\_matrix}}
+\index{m\_View\_Projection\_matrix@{m\_View\_Projection\_matrix}!Orthographic\_camera@{Orthographic\_camera}}
+\doxysubsubsection{\texorpdfstring{m\_View\_Projection\_matrix}{m\_View\_Projection\_matrix}}
+{\footnotesize\ttfamily glm\+::mat4 Orthographic\+\_\+camera\+::m\+\_\+\+View\+\_\+\+Projection\+\_\+matrix\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fnky/\+C0de/component\+\_\+engine/include/\+Camera/\mbox{\hyperlink{Orthographic__camera_8h}{Orthographic\+\_\+camera.\+h}}\item 
+/home/fnky/\+C0de/component\+\_\+engine/src/\+Camera/\mbox{\hyperlink{Orthographic__camera_8cpp}{Orthographic\+\_\+camera.\+cpp}}\end{DoxyCompactItemize}

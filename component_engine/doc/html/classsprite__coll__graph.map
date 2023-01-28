@@ -1,0 +1,5 @@
+<map id="sprite" name="sprite">
+<area shape="rect" id="node1" title=" " alt="" coords="5,175,180,516"/>
+<area shape="rect" id="node2" title=" " alt="" coords="13,5,66,83"/>
+<area shape="rect" id="node3" title=" " alt="" coords="121,5,174,83"/>
+</map>

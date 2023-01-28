@@ -1,0 +1,233 @@
+\hypertarget{game__play__state_8cpp}{}\doxysection{/home/fnky/\+C0de/component\+\_\+engine/src/\+States/game\+\_\+play\+\_\+state.cpp File Reference}
+\label{game__play__state_8cpp}\index{/home/fnky/C0de/component\_engine/src/States/game\_play\_state.cpp@{/home/fnky/C0de/component\_engine/src/States/game\_play\_state.cpp}}
+{\ttfamily \#include \char`\"{}../../include/\+Components/\+Transform\+Component.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Components/\+Shader\+Component.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Components/\+Render\+Component.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Components/\+Text\+Render\+Component.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Components/\+Physics\+Component.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Components/\+A\+I\+Component.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Actors/\+Shader\+\_\+\+Actor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Actors/\+Texture\+\_\+\+Actor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Actors/\+Actor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Actors/\+Player\+\_\+\+Actor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Actors/\+N\+P\+C\+\_\+\+Actor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Actors/\+Text\+\_\+\+Actor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Actors/\+Edge\+\_\+\+Actor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Actors/\+Projectile\+\_\+\+Acotr.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Actors/\+Platform\+\_\+\+Actor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Actors/\+Gun\+\_\+\+Actor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Actors/\+Animate\+\_\+\+Actor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Game\+Data/\+Game\+Data.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+States/game\+\_\+play\+\_\+state.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Loaders/\+Loading\+Game\+Objects.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$G\+L\+F\+W/glfw3.\+h$>$}\newline
+{\ttfamily \#include $<$box2d/b2\+\_\+math.\+h$>$}\newline
+{\ttfamily \#include $<$glm/fwd.\+hpp$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for game\+\_\+play\+\_\+state.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game__play__state_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{game__play__state_8cpp_abe040ae255b70ffb201aacc407ed614d}{M\+A\+X\+\_\+\+B\+O\+X\+ES}}~250
+\begin{DoxyCompactList}\small\item\em -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---\mbox{\hyperlink{classComponent}{Component}} System-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{game__play__state_8cpp_ae7bc5941d49688dda23f311e2cecc6fb}{M\+A\+X\+\_\+\+B\+O\+X\+E\+S\+\_\+\+T\+E\+ST}}~200
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const uint16\+\_\+t \mbox{\hyperlink{game__play__state_8cpp_a754534979399a995b84ec0c0760a6941}{S\+C\+R\+\_\+\+W\+I\+D\+TH}} = 800
+\item 
+const uint16\+\_\+t \mbox{\hyperlink{game__play__state_8cpp_a05d3feb701aaefb138a56b4ea8681566}{S\+C\+R\+\_\+\+H\+E\+I\+G\+HT}} = 600
+\item 
+glm\+::mat4 \mbox{\hyperlink{game__play__state_8cpp_adaef6bcdae83ffc0bd168f8d15815951}{projection1}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classShader__Actor}{Shader\+\_\+\+Actor}} $>$ \mbox{\hyperlink{game__play__state_8cpp_a046e34ced88262f4fb5c71f1979f482e}{shader}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classShader__Actor}{Shader\+\_\+\+Actor}} $>$ \mbox{\hyperlink{game__play__state_8cpp_ac7114a5d71e8416cf3c9d75fe4e165d3}{texture\+\_\+shader}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classText__Actor}{Text\+\_\+\+Actor}} $>$ \mbox{\hyperlink{game__play__state_8cpp_a295b62c787445f811e691da4b10f6be4}{text}}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classProjectile__Actor}{Projectile\+\_\+\+Actor}} $>$ $>$ \mbox{\hyperlink{game__play__state_8cpp_afbd18f5214de29b0eccacb8b9b24d2a0}{boxes}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classPlayer__Actor}{Player\+\_\+\+Actor}} $>$ \mbox{\hyperlink{game__play__state_8cpp_ac65a4bc85dcd7c1cefbc84425f42fc46}{player}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGun__Actor}{Gun\+\_\+\+Actor}} $>$ \mbox{\hyperlink{game__play__state_8cpp_add80b8ad6081fe06bcfb1956a830b5fd}{gun}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classNPC__Actor}{N\+P\+C\+\_\+\+Actor}} $>$ \mbox{\hyperlink{game__play__state_8cpp_af0a49ad723812fe144c9547ee2d00e64}{npc\+\_\+}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classNPC__Actor}{N\+P\+C\+\_\+\+Actor}} $>$ \mbox{\hyperlink{game__play__state_8cpp_a3d68ecec0b11e403d569fb665ca2591f}{npc\+\_\+1}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classNPC__Actor}{N\+P\+C\+\_\+\+Actor}} $>$ \mbox{\hyperlink{game__play__state_8cpp_ac0860783e0c39d16e74ba07b3fbd1ce8}{npc\+\_\+2}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classNPC__Actor}{N\+P\+C\+\_\+\+Actor}} $>$ \mbox{\hyperlink{game__play__state_8cpp_a1000a7901b9e9e25d6ad6f7d387c91d0}{\+\_\+npc\+Flee}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classPlatform__Actor}{Platform\+\_\+\+Actor}} $>$ \mbox{\hyperlink{game__play__state_8cpp_acf969625e015dc6761399b8edbe739a2}{platform}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classAnimate__Actor}{Animate\+\_\+\+Actor}} $>$ \mbox{\hyperlink{game__play__state_8cpp_a92142980eca768cd7cc864a7fec9f880}{test\+\_\+animation}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classAnimate__Actor}{Animate\+\_\+\+Actor}} $>$ \mbox{\hyperlink{game__play__state_8cpp_aabfec00ae5b955c7e86e2998627f5ff1}{test2\+\_\+animation}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classAnimate__Actor}{Animate\+\_\+\+Actor}} $>$ \mbox{\hyperlink{game__play__state_8cpp_a15090b52d19ed502c5457f5fbfc4fe2a}{red\+\_\+animation}}
+\item 
+double \mbox{\hyperlink{game__play__state_8cpp_a5c7bc50eb68633f12ce19383f135d553}{game\+\_\+state\+\_\+last\+\_\+time}} = glfw\+Get\+Time()
+\item 
+int \mbox{\hyperlink{game__play__state_8cpp_acb559820d9ca11295b4500f179ef6392}{i}} = 0
+\item 
+double \mbox{\hyperlink{game__play__state_8cpp_a6b59d5f89e39fc1bc0d21ab9b3fec7a4}{game\+\_\+play\+\_\+last\+\_\+time}} = glfw\+Get\+Time()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{game__play__state_8cpp_abe040ae255b70ffb201aacc407ed614d}\label{game__play__state_8cpp_abe040ae255b70ffb201aacc407ed614d}} 
+\index{game\_play\_state.cpp@{game\_play\_state.cpp}!MAX\_BOXES@{MAX\_BOXES}}
+\index{MAX\_BOXES@{MAX\_BOXES}!game\_play\_state.cpp@{game\_play\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{MAX\_BOXES}{MAX\_BOXES}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+B\+O\+X\+ES~250}
+
+
+
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---\mbox{\hyperlink{classComponent}{Component}} System-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- 
+
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---Actors-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \mbox{\Hypertarget{game__play__state_8cpp_ae7bc5941d49688dda23f311e2cecc6fb}\label{game__play__state_8cpp_ae7bc5941d49688dda23f311e2cecc6fb}} 
+\index{game\_play\_state.cpp@{game\_play\_state.cpp}!MAX\_BOXES\_TEST@{MAX\_BOXES\_TEST}}
+\index{MAX\_BOXES\_TEST@{MAX\_BOXES\_TEST}!game\_play\_state.cpp@{game\_play\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{MAX\_BOXES\_TEST}{MAX\_BOXES\_TEST}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+B\+O\+X\+E\+S\+\_\+\+T\+E\+ST~200}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{game__play__state_8cpp_a1000a7901b9e9e25d6ad6f7d387c91d0}\label{game__play__state_8cpp_a1000a7901b9e9e25d6ad6f7d387c91d0}} 
+\index{game\_play\_state.cpp@{game\_play\_state.cpp}!\_npcFlee@{\_npcFlee}}
+\index{\_npcFlee@{\_npcFlee}!game\_play\_state.cpp@{game\_play\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{\_npcFlee}{\_npcFlee}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classNPC__Actor}{N\+P\+C\+\_\+\+Actor}}$>$ \+\_\+npc\+Flee}
+
+\mbox{\Hypertarget{game__play__state_8cpp_afbd18f5214de29b0eccacb8b9b24d2a0}\label{game__play__state_8cpp_afbd18f5214de29b0eccacb8b9b24d2a0}} 
+\index{game\_play\_state.cpp@{game\_play\_state.cpp}!boxes@{boxes}}
+\index{boxes@{boxes}!game\_play\_state.cpp@{game\_play\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{boxes}{boxes}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classProjectile__Actor}{Projectile\+\_\+\+Actor}}$>$ $>$ boxes}
+
+\mbox{\Hypertarget{game__play__state_8cpp_a6b59d5f89e39fc1bc0d21ab9b3fec7a4}\label{game__play__state_8cpp_a6b59d5f89e39fc1bc0d21ab9b3fec7a4}} 
+\index{game\_play\_state.cpp@{game\_play\_state.cpp}!game\_play\_last\_time@{game\_play\_last\_time}}
+\index{game\_play\_last\_time@{game\_play\_last\_time}!game\_play\_state.cpp@{game\_play\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{game\_play\_last\_time}{game\_play\_last\_time}}
+{\footnotesize\ttfamily double game\+\_\+play\+\_\+last\+\_\+time = glfw\+Get\+Time()}
+
+\mbox{\Hypertarget{game__play__state_8cpp_a5c7bc50eb68633f12ce19383f135d553}\label{game__play__state_8cpp_a5c7bc50eb68633f12ce19383f135d553}} 
+\index{game\_play\_state.cpp@{game\_play\_state.cpp}!game\_state\_last\_time@{game\_state\_last\_time}}
+\index{game\_state\_last\_time@{game\_state\_last\_time}!game\_play\_state.cpp@{game\_play\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{game\_state\_last\_time}{game\_state\_last\_time}}
+{\footnotesize\ttfamily double game\+\_\+state\+\_\+last\+\_\+time = glfw\+Get\+Time()}
+
+\mbox{\Hypertarget{game__play__state_8cpp_add80b8ad6081fe06bcfb1956a830b5fd}\label{game__play__state_8cpp_add80b8ad6081fe06bcfb1956a830b5fd}} 
+\index{game\_play\_state.cpp@{game\_play\_state.cpp}!gun@{gun}}
+\index{gun@{gun}!game\_play\_state.cpp@{game\_play\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{gun}{gun}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classGun__Actor}{Gun\+\_\+\+Actor}}$>$ gun}
+
+\mbox{\Hypertarget{game__play__state_8cpp_acb559820d9ca11295b4500f179ef6392}\label{game__play__state_8cpp_acb559820d9ca11295b4500f179ef6392}} 
+\index{game\_play\_state.cpp@{game\_play\_state.cpp}!i@{i}}
+\index{i@{i}!game\_play\_state.cpp@{game\_play\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily int i = 0}
+
+\mbox{\Hypertarget{game__play__state_8cpp_af0a49ad723812fe144c9547ee2d00e64}\label{game__play__state_8cpp_af0a49ad723812fe144c9547ee2d00e64}} 
+\index{game\_play\_state.cpp@{game\_play\_state.cpp}!npc\_@{npc\_}}
+\index{npc\_@{npc\_}!game\_play\_state.cpp@{game\_play\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{npc\_}{npc\_}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classNPC__Actor}{N\+P\+C\+\_\+\+Actor}}$>$ npc\+\_\+}
+
+\mbox{\Hypertarget{game__play__state_8cpp_a3d68ecec0b11e403d569fb665ca2591f}\label{game__play__state_8cpp_a3d68ecec0b11e403d569fb665ca2591f}} 
+\index{game\_play\_state.cpp@{game\_play\_state.cpp}!npc\_1@{npc\_1}}
+\index{npc\_1@{npc\_1}!game\_play\_state.cpp@{game\_play\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{npc\_1}{npc\_1}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classNPC__Actor}{N\+P\+C\+\_\+\+Actor}}$>$ npc\+\_\+1}
+
+\mbox{\Hypertarget{game__play__state_8cpp_ac0860783e0c39d16e74ba07b3fbd1ce8}\label{game__play__state_8cpp_ac0860783e0c39d16e74ba07b3fbd1ce8}} 
+\index{game\_play\_state.cpp@{game\_play\_state.cpp}!npc\_2@{npc\_2}}
+\index{npc\_2@{npc\_2}!game\_play\_state.cpp@{game\_play\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{npc\_2}{npc\_2}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classNPC__Actor}{N\+P\+C\+\_\+\+Actor}}$>$ npc\+\_\+2}
+
+\mbox{\Hypertarget{game__play__state_8cpp_acf969625e015dc6761399b8edbe739a2}\label{game__play__state_8cpp_acf969625e015dc6761399b8edbe739a2}} 
+\index{game\_play\_state.cpp@{game\_play\_state.cpp}!platform@{platform}}
+\index{platform@{platform}!game\_play\_state.cpp@{game\_play\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{platform}{platform}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classPlatform__Actor}{Platform\+\_\+\+Actor}}$>$ platform}
+
+\mbox{\Hypertarget{game__play__state_8cpp_ac65a4bc85dcd7c1cefbc84425f42fc46}\label{game__play__state_8cpp_ac65a4bc85dcd7c1cefbc84425f42fc46}} 
+\index{game\_play\_state.cpp@{game\_play\_state.cpp}!player@{player}}
+\index{player@{player}!game\_play\_state.cpp@{game\_play\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classPlayer__Actor}{Player\+\_\+\+Actor}}$>$ player}
+
+\mbox{\Hypertarget{game__play__state_8cpp_adaef6bcdae83ffc0bd168f8d15815951}\label{game__play__state_8cpp_adaef6bcdae83ffc0bd168f8d15815951}} 
+\index{game\_play\_state.cpp@{game\_play\_state.cpp}!projection1@{projection1}}
+\index{projection1@{projection1}!game\_play\_state.cpp@{game\_play\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{projection1}{projection1}}
+{\footnotesize\ttfamily glm\+::mat4 projection1}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= glm::ortho(0.0f, \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(\mbox{\hyperlink{game__play__state_8cpp_a754534979399a995b84ec0c0760a6941}{SCR\_WIDTH}}),}
+\DoxyCodeLine{            \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(\mbox{\hyperlink{game__play__state_8cpp_a05d3feb701aaefb138a56b4ea8681566}{SCR\_HEIGHT}}), 0.0f, -\/1.0f, 1.0f)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{game__play__state_8cpp_a15090b52d19ed502c5457f5fbfc4fe2a}\label{game__play__state_8cpp_a15090b52d19ed502c5457f5fbfc4fe2a}} 
+\index{game\_play\_state.cpp@{game\_play\_state.cpp}!red\_animation@{red\_animation}}
+\index{red\_animation@{red\_animation}!game\_play\_state.cpp@{game\_play\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{red\_animation}{red\_animation}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classAnimate__Actor}{Animate\+\_\+\+Actor}}$>$ red\+\_\+animation}
+
+\mbox{\Hypertarget{game__play__state_8cpp_a05d3feb701aaefb138a56b4ea8681566}\label{game__play__state_8cpp_a05d3feb701aaefb138a56b4ea8681566}} 
+\index{game\_play\_state.cpp@{game\_play\_state.cpp}!SCR\_HEIGHT@{SCR\_HEIGHT}}
+\index{SCR\_HEIGHT@{SCR\_HEIGHT}!game\_play\_state.cpp@{game\_play\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{SCR\_HEIGHT}{SCR\_HEIGHT}}
+{\footnotesize\ttfamily const uint16\+\_\+t S\+C\+R\+\_\+\+H\+E\+I\+G\+HT = 600}
+
+\mbox{\Hypertarget{game__play__state_8cpp_a754534979399a995b84ec0c0760a6941}\label{game__play__state_8cpp_a754534979399a995b84ec0c0760a6941}} 
+\index{game\_play\_state.cpp@{game\_play\_state.cpp}!SCR\_WIDTH@{SCR\_WIDTH}}
+\index{SCR\_WIDTH@{SCR\_WIDTH}!game\_play\_state.cpp@{game\_play\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{SCR\_WIDTH}{SCR\_WIDTH}}
+{\footnotesize\ttfamily const uint16\+\_\+t S\+C\+R\+\_\+\+W\+I\+D\+TH = 800}
+
+\mbox{\Hypertarget{game__play__state_8cpp_a046e34ced88262f4fb5c71f1979f482e}\label{game__play__state_8cpp_a046e34ced88262f4fb5c71f1979f482e}} 
+\index{game\_play\_state.cpp@{game\_play\_state.cpp}!shader@{shader}}
+\index{shader@{shader}!game\_play\_state.cpp@{game\_play\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{shader}{shader}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classShader__Actor}{Shader\+\_\+\+Actor}}$>$ \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_a57b2a96adb1d51204909a82d861e395e}{shader}}}
+
+\mbox{\Hypertarget{game__play__state_8cpp_aabfec00ae5b955c7e86e2998627f5ff1}\label{game__play__state_8cpp_aabfec00ae5b955c7e86e2998627f5ff1}} 
+\index{game\_play\_state.cpp@{game\_play\_state.cpp}!test2\_animation@{test2\_animation}}
+\index{test2\_animation@{test2\_animation}!game\_play\_state.cpp@{game\_play\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{test2\_animation}{test2\_animation}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classAnimate__Actor}{Animate\+\_\+\+Actor}}$>$ test2\+\_\+animation}
+
+\mbox{\Hypertarget{game__play__state_8cpp_a92142980eca768cd7cc864a7fec9f880}\label{game__play__state_8cpp_a92142980eca768cd7cc864a7fec9f880}} 
+\index{game\_play\_state.cpp@{game\_play\_state.cpp}!test\_animation@{test\_animation}}
+\index{test\_animation@{test\_animation}!game\_play\_state.cpp@{game\_play\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_animation}{test\_animation}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classAnimate__Actor}{Animate\+\_\+\+Actor}}$>$ test\+\_\+animation}
+
+\mbox{\Hypertarget{game__play__state_8cpp_a295b62c787445f811e691da4b10f6be4}\label{game__play__state_8cpp_a295b62c787445f811e691da4b10f6be4}} 
+\index{game\_play\_state.cpp@{game\_play\_state.cpp}!text@{text}}
+\index{text@{text}!game\_play\_state.cpp@{game\_play\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classText__Actor}{Text\+\_\+\+Actor}}$>$ text}
+
+\mbox{\Hypertarget{game__play__state_8cpp_ac7114a5d71e8416cf3c9d75fe4e165d3}\label{game__play__state_8cpp_ac7114a5d71e8416cf3c9d75fe4e165d3}} 
+\index{game\_play\_state.cpp@{game\_play\_state.cpp}!texture\_shader@{texture\_shader}}
+\index{texture\_shader@{texture\_shader}!game\_play\_state.cpp@{game\_play\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{texture\_shader}{texture\_shader}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classShader__Actor}{Shader\+\_\+\+Actor}}$>$ texture\+\_\+shader}
+

@@ -1,0 +1,351 @@
+\hypertarget{classGamePlayState}{}\doxysection{Game\+Play\+State Class Reference}
+\label{classGamePlayState}\index{GamePlayState@{GamePlayState}}
+
+
+{\ttfamily \#include $<$game\+\_\+play\+\_\+state.\+h$>$}
+
+
+
+Inheritance diagram for Game\+Play\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classGamePlayState__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Game\+Play\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classGamePlayState__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGamePlayState_ab20bfae56acce9a61770ec97a27ecd73}{Game\+Play\+State}} (\mbox{\hyperlink{structGameData}{Game\+Data}} \&\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_abd87654504355b4c1bb002dcb1d4d16a}{data}})
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classGamePlayState_ae13389eea1f83f27d18ba200f107937d}{Init}} ()
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classGamePlayState_a3bc9231fd11546b5dd13581ed2aa1afa}{Input}} (float delta)
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classGamePlayState_a19bcc1ff2a83a3aa001010ae35d67b85}{Update}} (float delta)
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classGamePlayState_a4bd296aa04088a3d8249f569e86f21a7}{Render}} (float delta)
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classGamePlayState_a3367714db85b4d59a52bc1d8b0828d3c}{Sound\+Update}} ()
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classGamePlayState_a8a393249f2deabe0fe8f236b4e58cb17}{Delete\+Data}} ()
+\item 
+\mbox{\hyperlink{classGamePlayState_aaa1afd5f6e091e5cb5bda2fa82247d58}{$\sim$\+Game\+Play\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structGameData}{Game\+Data}} $\ast$ \mbox{\hyperlink{classGamePlayState_a0e1217ba99e0bb8098e73ebaa99bdc77}{\+\_\+data}}
+\item 
+float \mbox{\hyperlink{classGamePlayState_a055feaf3b4acaaff53dddc571252c4e4}{x}}
+\item 
+float \mbox{\hyperlink{classGamePlayState_ae1da324a3664591e663d09a5b17f9007}{y}}
+\item 
+float \mbox{\hyperlink{classGamePlayState_a1f0c5c88f94177891ec0819628d0aa8c}{x\+\_\+cam}}
+\item 
+float \mbox{\hyperlink{classGamePlayState_ab69b90dcdbb3375687e6e3641d1654da}{y\+\_\+cam}}
+\item 
+float \mbox{\hyperlink{classGamePlayState_a3b25b85d41324ec556fe81a75bb1811f}{z\+\_\+cam}}
+\item 
+float \mbox{\hyperlink{classGamePlayState_a430ff4098f9f58fe0b6ab4fe154a89a0}{r\+\_\+cam}}
+\item 
+glm\+::vec2 \mbox{\hyperlink{classGamePlayState_a9bdc2e5899e9ca4e266019f646d2ba34}{z\+\_\+scale}}
+\item 
+double \mbox{\hyperlink{classGamePlayState_a28703a4a41c15f3957f76f8ffcdad4f3}{delay}}
+\item 
+double \mbox{\hyperlink{classGamePlayState_a4a4caf8b02f0dbac194c18947bf84ba6}{jump\+\_\+delay}}
+\item 
+float \mbox{\hyperlink{classGamePlayState_a739fbcc19589d3b2218664832fd864fe}{counter}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classGamePlayState_ae6d97fab3b6d39625b5ce3d124183c56}{platform\+\_\+delay}} = 0
+\item 
+bool \mbox{\hyperlink{classGamePlayState_ae17620bd80a3c92dea5bdbde326535ea}{reached\+Pos}} = false
+\item 
+bool \mbox{\hyperlink{classGamePlayState_a0b574d8b2807e3229e51ec16bc5b74a6}{prev\+Pos}} = true
+\item 
+int \mbox{\hyperlink{classGamePlayState_a911170373ef52829b49f5466dcfbc539}{x\+\_\+pos}}
+\item 
+int \mbox{\hyperlink{classGamePlayState_a9b95e9647ae9faa2999c0493eed9eca8}{y\+\_\+pos}}
+\item 
+float \mbox{\hyperlink{classGamePlayState_a7c1580fcdce88e288e301045fe591c20}{xpos\+\_\+o}} = 0.\+0f
+\item 
+float \mbox{\hyperlink{classGamePlayState_a865a2610a83319f93d5333a3601df82f}{ypos\+\_\+o}} = 0.\+0f
+\item 
+float \mbox{\hyperlink{classGamePlayState_ae464f50b3921ada027f527e57cdcff14}{xpos\+\_\+d}} = 0.\+0f
+\item 
+float \mbox{\hyperlink{classGamePlayState_a467580f211160c869fb9adf6cf71d1d7}{ypos\+\_\+d}} = 0.\+0f
+\item 
+bool \mbox{\hyperlink{classGamePlayState_a136dd8a52d05f63db0736bf7f79285de}{bullet\+\_\+collides}} = false
+\item 
+bool \mbox{\hyperlink{classGamePlayState_ae5146d674744d3f43e8541330e8e79a7}{ncp\+\_\+collides}} = false
+\item 
+float \mbox{\hyperlink{classGamePlayState_aab6a3ae389a4c88378653ab8b60e1249}{gun\+\_\+angle}} = 0.\+0f
+\item 
+float \mbox{\hyperlink{classGamePlayState_a5211ff451b3f19d974388a33261be88c}{jump\+\_\+counter}} = 0.\+0f
+\item 
+bool \mbox{\hyperlink{classGamePlayState_aa3ec4c3f5c41617c68771269c3330be0}{jump\+\_\+press}} = false
+\item 
+bool \mbox{\hyperlink{classGamePlayState_af38249e5d60c38ec0df14acb443b774e}{shooting\+\_\+left}} = false
+\item 
+bool \mbox{\hyperlink{classGamePlayState_a36d144ba7b2b86df108b38ae3ebc0bb4}{shooting\+\_\+right}} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGamePlayState_ab20bfae56acce9a61770ec97a27ecd73}\label{classGamePlayState_ab20bfae56acce9a61770ec97a27ecd73}} 
+\index{GamePlayState@{GamePlayState}!GamePlayState@{GamePlayState}}
+\index{GamePlayState@{GamePlayState}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{GamePlayState()}{GamePlayState()}}
+{\footnotesize\ttfamily Game\+Play\+State\+::\+Game\+Play\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGameData}{Game\+Data}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classGamePlayState_aaa1afd5f6e091e5cb5bda2fa82247d58}\label{classGamePlayState_aaa1afd5f6e091e5cb5bda2fa82247d58}} 
+\index{GamePlayState@{GamePlayState}!````~GamePlayState@{$\sim$GamePlayState}}
+\index{````~GamePlayState@{$\sim$GamePlayState}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{$\sim$GamePlayState()}{~GamePlayState()}}
+{\footnotesize\ttfamily Game\+Play\+State\+::$\sim$\+Game\+Play\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGamePlayState_a8a393249f2deabe0fe8f236b4e58cb17}\label{classGamePlayState_a8a393249f2deabe0fe8f236b4e58cb17}} 
+\index{GamePlayState@{GamePlayState}!DeleteData@{DeleteData}}
+\index{DeleteData@{DeleteData}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{DeleteData()}{DeleteData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Game\+Play\+State\+::\+Delete\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classState_ade502eaa386d570e526eb356ffd73fd8}{State}}.
+
+\mbox{\Hypertarget{classGamePlayState_ae13389eea1f83f27d18ba200f107937d}\label{classGamePlayState_ae13389eea1f83f27d18ba200f107937d}} 
+\index{GamePlayState@{GamePlayState}!Init@{Init}}
+\index{Init@{Init}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Game\+Play\+State\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classState_a7ab4d8c6aa239a17ed579d89a209b156}{State}}.
+
+\mbox{\Hypertarget{classGamePlayState_a3bc9231fd11546b5dd13581ed2aa1afa}\label{classGamePlayState_a3bc9231fd11546b5dd13581ed2aa1afa}} 
+\index{GamePlayState@{GamePlayState}!Input@{Input}}
+\index{Input@{Input}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Game\+Play\+State\+::\+Input (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classState_a1705412877f37a5cc8fc712542756076}{State}}.
+
+\mbox{\Hypertarget{classGamePlayState_a4bd296aa04088a3d8249f569e86f21a7}\label{classGamePlayState_a4bd296aa04088a3d8249f569e86f21a7}} 
+\index{GamePlayState@{GamePlayState}!Render@{Render}}
+\index{Render@{Render}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Game\+Play\+State\+::\+Render (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classState_a0e48dfae1e3090630475812681417c5f}{State}}.
+
+\mbox{\Hypertarget{classGamePlayState_a3367714db85b4d59a52bc1d8b0828d3c}\label{classGamePlayState_a3367714db85b4d59a52bc1d8b0828d3c}} 
+\index{GamePlayState@{GamePlayState}!SoundUpdate@{SoundUpdate}}
+\index{SoundUpdate@{SoundUpdate}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{SoundUpdate()}{SoundUpdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Game\+Play\+State\+::\+Sound\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classState_a6572089fbf2178bf5c582cc27d6d3925}{State}}.
+
+\mbox{\Hypertarget{classGamePlayState_a19bcc1ff2a83a3aa001010ae35d67b85}\label{classGamePlayState_a19bcc1ff2a83a3aa001010ae35d67b85}} 
+\index{GamePlayState@{GamePlayState}!Update@{Update}}
+\index{Update@{Update}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Game\+Play\+State\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classState_aac0d3fdee1341e168af730b8f31a7bf1}{State}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classGamePlayState_a0e1217ba99e0bb8098e73ebaa99bdc77}\label{classGamePlayState_a0e1217ba99e0bb8098e73ebaa99bdc77}} 
+\index{GamePlayState@{GamePlayState}!\_data@{\_data}}
+\index{\_data@{\_data}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{\_data}{\_data}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structGameData}{Game\+Data}}$\ast$ Game\+Play\+State\+::\+\_\+data\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGamePlayState_a136dd8a52d05f63db0736bf7f79285de}\label{classGamePlayState_a136dd8a52d05f63db0736bf7f79285de}} 
+\index{GamePlayState@{GamePlayState}!bullet\_collides@{bullet\_collides}}
+\index{bullet\_collides@{bullet\_collides}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{bullet\_collides}{bullet\_collides}}
+{\footnotesize\ttfamily bool Game\+Play\+State\+::bullet\+\_\+collides = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGamePlayState_a739fbcc19589d3b2218664832fd864fe}\label{classGamePlayState_a739fbcc19589d3b2218664832fd864fe}} 
+\index{GamePlayState@{GamePlayState}!counter@{counter}}
+\index{counter@{counter}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily float Game\+Play\+State\+::counter\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGamePlayState_a28703a4a41c15f3957f76f8ffcdad4f3}\label{classGamePlayState_a28703a4a41c15f3957f76f8ffcdad4f3}} 
+\index{GamePlayState@{GamePlayState}!delay@{delay}}
+\index{delay@{delay}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{delay}{delay}}
+{\footnotesize\ttfamily double Game\+Play\+State\+::delay\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGamePlayState_aab6a3ae389a4c88378653ab8b60e1249}\label{classGamePlayState_aab6a3ae389a4c88378653ab8b60e1249}} 
+\index{GamePlayState@{GamePlayState}!gun\_angle@{gun\_angle}}
+\index{gun\_angle@{gun\_angle}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{gun\_angle}{gun\_angle}}
+{\footnotesize\ttfamily float Game\+Play\+State\+::gun\+\_\+angle = 0.\+0f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGamePlayState_a5211ff451b3f19d974388a33261be88c}\label{classGamePlayState_a5211ff451b3f19d974388a33261be88c}} 
+\index{GamePlayState@{GamePlayState}!jump\_counter@{jump\_counter}}
+\index{jump\_counter@{jump\_counter}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{jump\_counter}{jump\_counter}}
+{\footnotesize\ttfamily float Game\+Play\+State\+::jump\+\_\+counter = 0.\+0f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGamePlayState_a4a4caf8b02f0dbac194c18947bf84ba6}\label{classGamePlayState_a4a4caf8b02f0dbac194c18947bf84ba6}} 
+\index{GamePlayState@{GamePlayState}!jump\_delay@{jump\_delay}}
+\index{jump\_delay@{jump\_delay}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{jump\_delay}{jump\_delay}}
+{\footnotesize\ttfamily double Game\+Play\+State\+::jump\+\_\+delay\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGamePlayState_aa3ec4c3f5c41617c68771269c3330be0}\label{classGamePlayState_aa3ec4c3f5c41617c68771269c3330be0}} 
+\index{GamePlayState@{GamePlayState}!jump\_press@{jump\_press}}
+\index{jump\_press@{jump\_press}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{jump\_press}{jump\_press}}
+{\footnotesize\ttfamily bool Game\+Play\+State\+::jump\+\_\+press = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGamePlayState_ae5146d674744d3f43e8541330e8e79a7}\label{classGamePlayState_ae5146d674744d3f43e8541330e8e79a7}} 
+\index{GamePlayState@{GamePlayState}!ncp\_collides@{ncp\_collides}}
+\index{ncp\_collides@{ncp\_collides}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{ncp\_collides}{ncp\_collides}}
+{\footnotesize\ttfamily bool Game\+Play\+State\+::ncp\+\_\+collides = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGamePlayState_ae6d97fab3b6d39625b5ce3d124183c56}\label{classGamePlayState_ae6d97fab3b6d39625b5ce3d124183c56}} 
+\index{GamePlayState@{GamePlayState}!platform\_delay@{platform\_delay}}
+\index{platform\_delay@{platform\_delay}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{platform\_delay}{platform\_delay}}
+{\footnotesize\ttfamily uint16\+\_\+t Game\+Play\+State\+::platform\+\_\+delay = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGamePlayState_a0b574d8b2807e3229e51ec16bc5b74a6}\label{classGamePlayState_a0b574d8b2807e3229e51ec16bc5b74a6}} 
+\index{GamePlayState@{GamePlayState}!prevPos@{prevPos}}
+\index{prevPos@{prevPos}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{prevPos}{prevPos}}
+{\footnotesize\ttfamily bool Game\+Play\+State\+::prev\+Pos = true\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGamePlayState_a430ff4098f9f58fe0b6ab4fe154a89a0}\label{classGamePlayState_a430ff4098f9f58fe0b6ab4fe154a89a0}} 
+\index{GamePlayState@{GamePlayState}!r\_cam@{r\_cam}}
+\index{r\_cam@{r\_cam}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{r\_cam}{r\_cam}}
+{\footnotesize\ttfamily float Game\+Play\+State\+::r\+\_\+cam\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGamePlayState_ae17620bd80a3c92dea5bdbde326535ea}\label{classGamePlayState_ae17620bd80a3c92dea5bdbde326535ea}} 
+\index{GamePlayState@{GamePlayState}!reachedPos@{reachedPos}}
+\index{reachedPos@{reachedPos}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{reachedPos}{reachedPos}}
+{\footnotesize\ttfamily bool Game\+Play\+State\+::reached\+Pos = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGamePlayState_af38249e5d60c38ec0df14acb443b774e}\label{classGamePlayState_af38249e5d60c38ec0df14acb443b774e}} 
+\index{GamePlayState@{GamePlayState}!shooting\_left@{shooting\_left}}
+\index{shooting\_left@{shooting\_left}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{shooting\_left}{shooting\_left}}
+{\footnotesize\ttfamily bool Game\+Play\+State\+::shooting\+\_\+left = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGamePlayState_a36d144ba7b2b86df108b38ae3ebc0bb4}\label{classGamePlayState_a36d144ba7b2b86df108b38ae3ebc0bb4}} 
+\index{GamePlayState@{GamePlayState}!shooting\_right@{shooting\_right}}
+\index{shooting\_right@{shooting\_right}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{shooting\_right}{shooting\_right}}
+{\footnotesize\ttfamily bool Game\+Play\+State\+::shooting\+\_\+right = true\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGamePlayState_a055feaf3b4acaaff53dddc571252c4e4}\label{classGamePlayState_a055feaf3b4acaaff53dddc571252c4e4}} 
+\index{GamePlayState@{GamePlayState}!x@{x}}
+\index{x@{x}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily float Game\+Play\+State\+::x\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGamePlayState_a1f0c5c88f94177891ec0819628d0aa8c}\label{classGamePlayState_a1f0c5c88f94177891ec0819628d0aa8c}} 
+\index{GamePlayState@{GamePlayState}!x\_cam@{x\_cam}}
+\index{x\_cam@{x\_cam}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{x\_cam}{x\_cam}}
+{\footnotesize\ttfamily float Game\+Play\+State\+::x\+\_\+cam\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGamePlayState_a911170373ef52829b49f5466dcfbc539}\label{classGamePlayState_a911170373ef52829b49f5466dcfbc539}} 
+\index{GamePlayState@{GamePlayState}!x\_pos@{x\_pos}}
+\index{x\_pos@{x\_pos}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{x\_pos}{x\_pos}}
+{\footnotesize\ttfamily int Game\+Play\+State\+::x\+\_\+pos\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGamePlayState_ae464f50b3921ada027f527e57cdcff14}\label{classGamePlayState_ae464f50b3921ada027f527e57cdcff14}} 
+\index{GamePlayState@{GamePlayState}!xpos\_d@{xpos\_d}}
+\index{xpos\_d@{xpos\_d}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{xpos\_d}{xpos\_d}}
+{\footnotesize\ttfamily float Game\+Play\+State\+::xpos\+\_\+d = 0.\+0f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGamePlayState_a7c1580fcdce88e288e301045fe591c20}\label{classGamePlayState_a7c1580fcdce88e288e301045fe591c20}} 
+\index{GamePlayState@{GamePlayState}!xpos\_o@{xpos\_o}}
+\index{xpos\_o@{xpos\_o}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{xpos\_o}{xpos\_o}}
+{\footnotesize\ttfamily float Game\+Play\+State\+::xpos\+\_\+o = 0.\+0f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGamePlayState_ae1da324a3664591e663d09a5b17f9007}\label{classGamePlayState_ae1da324a3664591e663d09a5b17f9007}} 
+\index{GamePlayState@{GamePlayState}!y@{y}}
+\index{y@{y}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily float Game\+Play\+State\+::y\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGamePlayState_ab69b90dcdbb3375687e6e3641d1654da}\label{classGamePlayState_ab69b90dcdbb3375687e6e3641d1654da}} 
+\index{GamePlayState@{GamePlayState}!y\_cam@{y\_cam}}
+\index{y\_cam@{y\_cam}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{y\_cam}{y\_cam}}
+{\footnotesize\ttfamily float Game\+Play\+State\+::y\+\_\+cam\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGamePlayState_a9b95e9647ae9faa2999c0493eed9eca8}\label{classGamePlayState_a9b95e9647ae9faa2999c0493eed9eca8}} 
+\index{GamePlayState@{GamePlayState}!y\_pos@{y\_pos}}
+\index{y\_pos@{y\_pos}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{y\_pos}{y\_pos}}
+{\footnotesize\ttfamily int Game\+Play\+State\+::y\+\_\+pos\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGamePlayState_a467580f211160c869fb9adf6cf71d1d7}\label{classGamePlayState_a467580f211160c869fb9adf6cf71d1d7}} 
+\index{GamePlayState@{GamePlayState}!ypos\_d@{ypos\_d}}
+\index{ypos\_d@{ypos\_d}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{ypos\_d}{ypos\_d}}
+{\footnotesize\ttfamily float Game\+Play\+State\+::ypos\+\_\+d = 0.\+0f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGamePlayState_a865a2610a83319f93d5333a3601df82f}\label{classGamePlayState_a865a2610a83319f93d5333a3601df82f}} 
+\index{GamePlayState@{GamePlayState}!ypos\_o@{ypos\_o}}
+\index{ypos\_o@{ypos\_o}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{ypos\_o}{ypos\_o}}
+{\footnotesize\ttfamily float Game\+Play\+State\+::ypos\+\_\+o = 0.\+0f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGamePlayState_a3b25b85d41324ec556fe81a75bb1811f}\label{classGamePlayState_a3b25b85d41324ec556fe81a75bb1811f}} 
+\index{GamePlayState@{GamePlayState}!z\_cam@{z\_cam}}
+\index{z\_cam@{z\_cam}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{z\_cam}{z\_cam}}
+{\footnotesize\ttfamily float Game\+Play\+State\+::z\+\_\+cam\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGamePlayState_a9bdc2e5899e9ca4e266019f646d2ba34}\label{classGamePlayState_a9bdc2e5899e9ca4e266019f646d2ba34}} 
+\index{GamePlayState@{GamePlayState}!z\_scale@{z\_scale}}
+\index{z\_scale@{z\_scale}!GamePlayState@{GamePlayState}}
+\doxysubsubsection{\texorpdfstring{z\_scale}{z\_scale}}
+{\footnotesize\ttfamily glm\+::vec2 Game\+Play\+State\+::z\+\_\+scale\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fnky/\+C0de/component\+\_\+engine/include/\+States/\mbox{\hyperlink{game__play__state_8h}{game\+\_\+play\+\_\+state.\+h}}\item 
+/home/fnky/\+C0de/component\+\_\+engine/src/\+States/\mbox{\hyperlink{game__play__state_8cpp}{game\+\_\+play\+\_\+state.\+cpp}}\end{DoxyCompactItemize}

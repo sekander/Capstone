@@ -1,0 +1,323 @@
+\hypertarget{classPhysicsComponent}{}\doxysection{Physics\+Component Class Reference}
+\label{classPhysicsComponent}\index{PhysicsComponent@{PhysicsComponent}}
+
+
+{\ttfamily \#include $<$Physics\+Component.\+h$>$}
+
+
+
+Inheritance diagram for Physics\+Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classPhysicsComponent__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Physics\+Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classPhysicsComponent__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPhysicsComponent_ac017ab88e7bf394bb8adf393a523f796}{Physics\+Component}} (\mbox{\hyperlink{classComponent}{Component}} $\ast$parent\+\_\+)
+\item 
+\mbox{\hyperlink{classPhysicsComponent_ac77afe4cc81460ea6027e6c21739a4af}{$\sim$\+Physics\+Component}} ()
+\item 
+bool \mbox{\hyperlink{classPhysicsComponent_ad797a2708cfc3c0e88a44341121f594d}{on\+Create}} () override
+\item 
+bool \mbox{\hyperlink{classPhysicsComponent_a3103543ce56426e419481b02e2107009}{create\+\_\+kinematic\+\_\+body}} (b2\+World $\ast$world, bool set\+\_\+physics, glm\+::vec2 position, float rotation, glm\+::vec2 \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}}, unsigned int num\+\_\+x\+\_\+frames=1, unsigned int num\+\_\+y\+\_\+frames=1, uint16 category\+Bits=0x0001, uint16 mask\+Bits=0x\+F\+F\+FF)
+\item 
+bool \mbox{\hyperlink{classPhysicsComponent_a0b7ab35e9b3edabf22c7e16b8494d5c2}{create\+\_\+body}} (b2\+World $\ast$world, bool dynamic, bool set\+\_\+physics, glm\+::vec2 position, float rotation, glm\+::vec2 \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}}, unsigned int num\+\_\+x\+\_\+frames=1, unsigned int num\+\_\+y\+\_\+frames=1, uint16 category\+Bits=0x0001, uint16 mask\+Bits=0x\+F\+F\+FF)
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classPhysicsComponent_a1e3f0387d8beec67cd139c093b3d6548}{create\+Edeg}} (b2\+World $\ast$world, float x\+\_\+point\+\_\+origin, float y\+\_\+point\+\_\+origin, float x\+\_\+point\+\_\+dest, float y\+\_\+point\+\_\+dest, uint16 category\+Bits=0x0001, uint16 mask\+Bits=0x\+F\+F\+FF)
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classPhysicsComponent_a425b028e07ebe6629a5773658a75348a}{create\+One\+Edeg}} (b2\+World $\ast$world, float x\+\_\+point\+\_\+origin, float y\+\_\+point\+\_\+origin, float x\+\_\+point\+\_\+dest, float y\+\_\+point\+\_\+dest, uint16 category\+Bits=0x0001, uint16 mask\+Bits=0x\+F\+F\+FF)
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classPhysicsComponent_a5a5e472f0c6975d4a22e0990c504ec0a}{on\+Destroy}} () override
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classPhysicsComponent_a7494b2fec675132ee3e31050d7d87d30}{update}} (const float delta) override
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classPhysicsComponent_abbbd38f9a42a3fa09d42535b389e5b41}{update\+\_\+body}} (const float delta, glm\+::vec2 position, float rotation)
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classPhysicsComponent_afe1f99cac34411e9de43abebfcef0713}{draw}} () const override
+\item 
+b2\+Body $\ast$ \mbox{\hyperlink{classPhysicsComponent_af8a05389feadfe76f83ae492f20d4644}{get\+\_\+body}} ()
+\item 
+bool \mbox{\hyperlink{classPhysicsComponent_a54c20910dbe35ec46aa3e214f4503a89}{get\+\_\+physics\+\_\+enable}} ()
+\item 
+b2\+Fixture\+Def \mbox{\hyperlink{classPhysicsComponent_a63f0b8f93b3963c2225a7a75b63e4239}{get\+\_\+fixture}} ()
+\item 
+b2\+Edge\+Shape \mbox{\hyperlink{classPhysicsComponent_a0e5d7016877eb7a4e2d99367c3da7c9c}{get\+\_\+edge}} ()
+\item 
+b2\+Polygon\+Shape \mbox{\hyperlink{classPhysicsComponent_aeb345cab02629f9c74bd59a9257885a5}{get\+\_\+shape}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classPhysicsComponent_aaa3041013e4b2841a99d2f97ba24786f}{\+\_\+entity\+Category}} \{ \newline
+\mbox{\hyperlink{classPhysicsComponent_aaa3041013e4b2841a99d2f97ba24786fa3d238d353711783b9d5a3909df3a5552}{A\+LL}} = 0x0001, 
+\mbox{\hyperlink{classPhysicsComponent_aaa3041013e4b2841a99d2f97ba24786fa8e8352e571279a84a37722888dac1235}{P\+L\+A\+Y\+ER}} = 0x0002, 
+\mbox{\hyperlink{classPhysicsComponent_aaa3041013e4b2841a99d2f97ba24786fac34a05d1913fd69180c20503c9c65734}{N\+PC}} = 0x0004, 
+\mbox{\hyperlink{classPhysicsComponent_aaa3041013e4b2841a99d2f97ba24786fa56b565a12f51fa158e99e20df9015953}{F\+L\+O\+OR}} = 0x0008, 
+\newline
+\mbox{\hyperlink{classPhysicsComponent_aaa3041013e4b2841a99d2f97ba24786fa9fa0bbfeda36da22e9c5b4c0f0100f1b}{B\+U\+L\+L\+E\+TS}} = 0x0016
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+b2\+Body $\ast$ \mbox{\hyperlink{classPhysicsComponent_a643c8078ab0823f37ae62dd98c316b9f}{body}}
+\item 
+b2\+Body\+Def \mbox{\hyperlink{classPhysicsComponent_ad2f5ffe4163e08e6f16fa222bf633474}{body\+Def}}
+\item 
+b2\+Polygon\+Shape \mbox{\hyperlink{classPhysicsComponent_a50be8b7da57aec98417b76d4b90973fa}{shape}}
+\item 
+b2\+Fixture\+Def \mbox{\hyperlink{classPhysicsComponent_aca31f533ae49f60632160d205a1425d4}{fixture\+Def}}
+\item 
+bool \mbox{\hyperlink{classPhysicsComponent_a660b0c70e486dbb2d0117162eb7a98c4}{m\+\_\+physics\+\_\+enable}}
+\item 
+b2\+Edge\+Shape \mbox{\hyperlink{classPhysicsComponent_ae30461aa2643259a30a51fee37586a4b}{edge}}
+\item 
+b2\+Circle\+Shape $\ast$ \mbox{\hyperlink{classPhysicsComponent_a14fd1bdb36beb4e156c96b22780c4cfa}{circle}}
+\item 
+float \mbox{\hyperlink{classPhysicsComponent_a42f8ac53bfdf5ac224e401a67b69e6d7}{xo}}
+\item 
+float \mbox{\hyperlink{classPhysicsComponent_a27b23d86202aeb074c099cc948696281}{yo}}
+\item 
+float \mbox{\hyperlink{classPhysicsComponent_a1aa73375358c6423eb0370c34fb221ca}{xd}}
+\item 
+float \mbox{\hyperlink{classPhysicsComponent_a50d90cbee9f4abe616e25b9d73922bfb}{yd}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classPhysicsComponent_aaa3041013e4b2841a99d2f97ba24786f}\label{classPhysicsComponent_aaa3041013e4b2841a99d2f97ba24786f}} 
+\index{PhysicsComponent@{PhysicsComponent}!\_entityCategory@{\_entityCategory}}
+\index{\_entityCategory@{\_entityCategory}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{\_entityCategory}{\_entityCategory}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classPhysicsComponent_aaa3041013e4b2841a99d2f97ba24786f}{Physics\+Component\+::\+\_\+entity\+Category}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ALL@{ALL}!PhysicsComponent@{PhysicsComponent}}\index{PhysicsComponent@{PhysicsComponent}!ALL@{ALL}}}\mbox{\Hypertarget{classPhysicsComponent_aaa3041013e4b2841a99d2f97ba24786fa3d238d353711783b9d5a3909df3a5552}\label{classPhysicsComponent_aaa3041013e4b2841a99d2f97ba24786fa3d238d353711783b9d5a3909df3a5552}} 
+A\+LL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PLAYER@{PLAYER}!PhysicsComponent@{PhysicsComponent}}\index{PhysicsComponent@{PhysicsComponent}!PLAYER@{PLAYER}}}\mbox{\Hypertarget{classPhysicsComponent_aaa3041013e4b2841a99d2f97ba24786fa8e8352e571279a84a37722888dac1235}\label{classPhysicsComponent_aaa3041013e4b2841a99d2f97ba24786fa8e8352e571279a84a37722888dac1235}} 
+P\+L\+A\+Y\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NPC@{NPC}!PhysicsComponent@{PhysicsComponent}}\index{PhysicsComponent@{PhysicsComponent}!NPC@{NPC}}}\mbox{\Hypertarget{classPhysicsComponent_aaa3041013e4b2841a99d2f97ba24786fac34a05d1913fd69180c20503c9c65734}\label{classPhysicsComponent_aaa3041013e4b2841a99d2f97ba24786fac34a05d1913fd69180c20503c9c65734}} 
+N\+PC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLOOR@{FLOOR}!PhysicsComponent@{PhysicsComponent}}\index{PhysicsComponent@{PhysicsComponent}!FLOOR@{FLOOR}}}\mbox{\Hypertarget{classPhysicsComponent_aaa3041013e4b2841a99d2f97ba24786fa56b565a12f51fa158e99e20df9015953}\label{classPhysicsComponent_aaa3041013e4b2841a99d2f97ba24786fa56b565a12f51fa158e99e20df9015953}} 
+F\+L\+O\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BULLETS@{BULLETS}!PhysicsComponent@{PhysicsComponent}}\index{PhysicsComponent@{PhysicsComponent}!BULLETS@{BULLETS}}}\mbox{\Hypertarget{classPhysicsComponent_aaa3041013e4b2841a99d2f97ba24786fa9fa0bbfeda36da22e9c5b4c0f0100f1b}\label{classPhysicsComponent_aaa3041013e4b2841a99d2f97ba24786fa9fa0bbfeda36da22e9c5b4c0f0100f1b}} 
+B\+U\+L\+L\+E\+TS&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPhysicsComponent_ac017ab88e7bf394bb8adf393a523f796}\label{classPhysicsComponent_ac017ab88e7bf394bb8adf393a523f796}} 
+\index{PhysicsComponent@{PhysicsComponent}!PhysicsComponent@{PhysicsComponent}}
+\index{PhysicsComponent@{PhysicsComponent}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{PhysicsComponent()}{PhysicsComponent()}}
+{\footnotesize\ttfamily Physics\+Component\+::\+Physics\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComponent}{Component}} $\ast$}]{parent\+\_\+ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPhysicsComponent_ac77afe4cc81460ea6027e6c21739a4af}\label{classPhysicsComponent_ac77afe4cc81460ea6027e6c21739a4af}} 
+\index{PhysicsComponent@{PhysicsComponent}!````~PhysicsComponent@{$\sim$PhysicsComponent}}
+\index{````~PhysicsComponent@{$\sim$PhysicsComponent}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{$\sim$PhysicsComponent()}{~PhysicsComponent()}}
+{\footnotesize\ttfamily Physics\+Component\+::$\sim$\+Physics\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPhysicsComponent_a0b7ab35e9b3edabf22c7e16b8494d5c2}\label{classPhysicsComponent_a0b7ab35e9b3edabf22c7e16b8494d5c2}} 
+\index{PhysicsComponent@{PhysicsComponent}!create\_body@{create\_body}}
+\index{create\_body@{create\_body}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{create\_body()}{create\_body()}}
+{\footnotesize\ttfamily bool Physics\+Component\+::create\+\_\+body (\begin{DoxyParamCaption}\item[{b2\+World $\ast$}]{world,  }\item[{bool}]{dynamic,  }\item[{bool}]{set\+\_\+physics,  }\item[{glm\+::vec2}]{position,  }\item[{float}]{rotation,  }\item[{glm\+::vec2}]{size,  }\item[{unsigned int}]{num\+\_\+x\+\_\+frames = {\ttfamily 1},  }\item[{unsigned int}]{num\+\_\+y\+\_\+frames = {\ttfamily 1},  }\item[{uint16}]{category\+Bits = {\ttfamily 0x0001},  }\item[{uint16}]{mask\+Bits = {\ttfamily 0xFFFF} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPhysicsComponent_a3103543ce56426e419481b02e2107009}\label{classPhysicsComponent_a3103543ce56426e419481b02e2107009}} 
+\index{PhysicsComponent@{PhysicsComponent}!create\_kinematic\_body@{create\_kinematic\_body}}
+\index{create\_kinematic\_body@{create\_kinematic\_body}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{create\_kinematic\_body()}{create\_kinematic\_body()}}
+{\footnotesize\ttfamily bool Physics\+Component\+::create\+\_\+kinematic\+\_\+body (\begin{DoxyParamCaption}\item[{b2\+World $\ast$}]{world,  }\item[{bool}]{set\+\_\+physics,  }\item[{glm\+::vec2}]{position,  }\item[{float}]{rotation,  }\item[{glm\+::vec2}]{size,  }\item[{unsigned int}]{num\+\_\+x\+\_\+frames = {\ttfamily 1},  }\item[{unsigned int}]{num\+\_\+y\+\_\+frames = {\ttfamily 1},  }\item[{uint16}]{category\+Bits = {\ttfamily 0x0001},  }\item[{uint16}]{mask\+Bits = {\ttfamily 0xFFFF} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPhysicsComponent_a1e3f0387d8beec67cd139c093b3d6548}\label{classPhysicsComponent_a1e3f0387d8beec67cd139c093b3d6548}} 
+\index{PhysicsComponent@{PhysicsComponent}!createEdeg@{createEdeg}}
+\index{createEdeg@{createEdeg}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{createEdeg()}{createEdeg()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Physics\+Component\+::create\+Edeg (\begin{DoxyParamCaption}\item[{b2\+World $\ast$}]{world,  }\item[{float}]{x\+\_\+point\+\_\+origin,  }\item[{float}]{y\+\_\+point\+\_\+origin,  }\item[{float}]{x\+\_\+point\+\_\+dest,  }\item[{float}]{y\+\_\+point\+\_\+dest,  }\item[{uint16}]{category\+Bits = {\ttfamily 0x0001},  }\item[{uint16}]{mask\+Bits = {\ttfamily 0xFFFF} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPhysicsComponent_a425b028e07ebe6629a5773658a75348a}\label{classPhysicsComponent_a425b028e07ebe6629a5773658a75348a}} 
+\index{PhysicsComponent@{PhysicsComponent}!createOneEdeg@{createOneEdeg}}
+\index{createOneEdeg@{createOneEdeg}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{createOneEdeg()}{createOneEdeg()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Physics\+Component\+::create\+One\+Edeg (\begin{DoxyParamCaption}\item[{b2\+World $\ast$}]{world,  }\item[{float}]{x\+\_\+point\+\_\+origin,  }\item[{float}]{y\+\_\+point\+\_\+origin,  }\item[{float}]{x\+\_\+point\+\_\+dest,  }\item[{float}]{y\+\_\+point\+\_\+dest,  }\item[{uint16}]{category\+Bits = {\ttfamily 0x0001},  }\item[{uint16}]{mask\+Bits = {\ttfamily 0xFFFF} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPhysicsComponent_afe1f99cac34411e9de43abebfcef0713}\label{classPhysicsComponent_afe1f99cac34411e9de43abebfcef0713}} 
+\index{PhysicsComponent@{PhysicsComponent}!draw@{draw}}
+\index{draw@{draw}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Physics\+Component\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classComponent_a8f45309003f02191f2bcc8864e8e9ecf}{Component}}.
+
+\mbox{\Hypertarget{classPhysicsComponent_af8a05389feadfe76f83ae492f20d4644}\label{classPhysicsComponent_af8a05389feadfe76f83ae492f20d4644}} 
+\index{PhysicsComponent@{PhysicsComponent}!get\_body@{get\_body}}
+\index{get\_body@{get\_body}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{get\_body()}{get\_body()}}
+{\footnotesize\ttfamily b2\+Body$\ast$ Physics\+Component\+::get\+\_\+body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPhysicsComponent_a0e5d7016877eb7a4e2d99367c3da7c9c}\label{classPhysicsComponent_a0e5d7016877eb7a4e2d99367c3da7c9c}} 
+\index{PhysicsComponent@{PhysicsComponent}!get\_edge@{get\_edge}}
+\index{get\_edge@{get\_edge}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{get\_edge()}{get\_edge()}}
+{\footnotesize\ttfamily b2\+Edge\+Shape Physics\+Component\+::get\+\_\+edge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPhysicsComponent_a63f0b8f93b3963c2225a7a75b63e4239}\label{classPhysicsComponent_a63f0b8f93b3963c2225a7a75b63e4239}} 
+\index{PhysicsComponent@{PhysicsComponent}!get\_fixture@{get\_fixture}}
+\index{get\_fixture@{get\_fixture}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{get\_fixture()}{get\_fixture()}}
+{\footnotesize\ttfamily b2\+Fixture\+Def Physics\+Component\+::get\+\_\+fixture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPhysicsComponent_a54c20910dbe35ec46aa3e214f4503a89}\label{classPhysicsComponent_a54c20910dbe35ec46aa3e214f4503a89}} 
+\index{PhysicsComponent@{PhysicsComponent}!get\_physics\_enable@{get\_physics\_enable}}
+\index{get\_physics\_enable@{get\_physics\_enable}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{get\_physics\_enable()}{get\_physics\_enable()}}
+{\footnotesize\ttfamily bool Physics\+Component\+::get\+\_\+physics\+\_\+enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPhysicsComponent_aeb345cab02629f9c74bd59a9257885a5}\label{classPhysicsComponent_aeb345cab02629f9c74bd59a9257885a5}} 
+\index{PhysicsComponent@{PhysicsComponent}!get\_shape@{get\_shape}}
+\index{get\_shape@{get\_shape}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{get\_shape()}{get\_shape()}}
+{\footnotesize\ttfamily b2\+Polygon\+Shape Physics\+Component\+::get\+\_\+shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPhysicsComponent_ad797a2708cfc3c0e88a44341121f594d}\label{classPhysicsComponent_ad797a2708cfc3c0e88a44341121f594d}} 
+\index{PhysicsComponent@{PhysicsComponent}!onCreate@{onCreate}}
+\index{onCreate@{onCreate}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{onCreate()}{onCreate()}}
+{\footnotesize\ttfamily bool Physics\+Component\+::on\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classComponent_a3a1537a8b8bcdb2155afbb925c77b0a2}{Component}}.
+
+\mbox{\Hypertarget{classPhysicsComponent_a5a5e472f0c6975d4a22e0990c504ec0a}\label{classPhysicsComponent_a5a5e472f0c6975d4a22e0990c504ec0a}} 
+\index{PhysicsComponent@{PhysicsComponent}!onDestroy@{onDestroy}}
+\index{onDestroy@{onDestroy}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{onDestroy()}{onDestroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Physics\+Component\+::on\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classComponent_a2b198f27162a6caf63917e304295f892}{Component}}.
+
+\mbox{\Hypertarget{classPhysicsComponent_a7494b2fec675132ee3e31050d7d87d30}\label{classPhysicsComponent_a7494b2fec675132ee3e31050d7d87d30}} 
+\index{PhysicsComponent@{PhysicsComponent}!update@{update}}
+\index{update@{update}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Physics\+Component\+::update (\begin{DoxyParamCaption}\item[{const float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classComponent_a3448977e6f464df89e77dda7c6f52204}{Component}}.
+
+\mbox{\Hypertarget{classPhysicsComponent_abbbd38f9a42a3fa09d42535b389e5b41}\label{classPhysicsComponent_abbbd38f9a42a3fa09d42535b389e5b41}} 
+\index{PhysicsComponent@{PhysicsComponent}!update\_body@{update\_body}}
+\index{update\_body@{update\_body}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{update\_body()}{update\_body()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Physics\+Component\+::update\+\_\+body (\begin{DoxyParamCaption}\item[{const float}]{delta,  }\item[{glm\+::vec2}]{position,  }\item[{float}]{rotation }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classPhysicsComponent_a643c8078ab0823f37ae62dd98c316b9f}\label{classPhysicsComponent_a643c8078ab0823f37ae62dd98c316b9f}} 
+\index{PhysicsComponent@{PhysicsComponent}!body@{body}}
+\index{body@{body}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{body}{body}}
+{\footnotesize\ttfamily b2\+Body$\ast$ Physics\+Component\+::body\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPhysicsComponent_ad2f5ffe4163e08e6f16fa222bf633474}\label{classPhysicsComponent_ad2f5ffe4163e08e6f16fa222bf633474}} 
+\index{PhysicsComponent@{PhysicsComponent}!bodyDef@{bodyDef}}
+\index{bodyDef@{bodyDef}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{bodyDef}{bodyDef}}
+{\footnotesize\ttfamily b2\+Body\+Def Physics\+Component\+::body\+Def\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPhysicsComponent_a14fd1bdb36beb4e156c96b22780c4cfa}\label{classPhysicsComponent_a14fd1bdb36beb4e156c96b22780c4cfa}} 
+\index{PhysicsComponent@{PhysicsComponent}!circle@{circle}}
+\index{circle@{circle}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{circle}{circle}}
+{\footnotesize\ttfamily b2\+Circle\+Shape$\ast$ Physics\+Component\+::circle\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPhysicsComponent_ae30461aa2643259a30a51fee37586a4b}\label{classPhysicsComponent_ae30461aa2643259a30a51fee37586a4b}} 
+\index{PhysicsComponent@{PhysicsComponent}!edge@{edge}}
+\index{edge@{edge}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{edge}{edge}}
+{\footnotesize\ttfamily b2\+Edge\+Shape Physics\+Component\+::edge\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPhysicsComponent_aca31f533ae49f60632160d205a1425d4}\label{classPhysicsComponent_aca31f533ae49f60632160d205a1425d4}} 
+\index{PhysicsComponent@{PhysicsComponent}!fixtureDef@{fixtureDef}}
+\index{fixtureDef@{fixtureDef}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{fixtureDef}{fixtureDef}}
+{\footnotesize\ttfamily b2\+Fixture\+Def Physics\+Component\+::fixture\+Def\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPhysicsComponent_a660b0c70e486dbb2d0117162eb7a98c4}\label{classPhysicsComponent_a660b0c70e486dbb2d0117162eb7a98c4}} 
+\index{PhysicsComponent@{PhysicsComponent}!m\_physics\_enable@{m\_physics\_enable}}
+\index{m\_physics\_enable@{m\_physics\_enable}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{m\_physics\_enable}{m\_physics\_enable}}
+{\footnotesize\ttfamily bool Physics\+Component\+::m\+\_\+physics\+\_\+enable\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPhysicsComponent_a50be8b7da57aec98417b76d4b90973fa}\label{classPhysicsComponent_a50be8b7da57aec98417b76d4b90973fa}} 
+\index{PhysicsComponent@{PhysicsComponent}!shape@{shape}}
+\index{shape@{shape}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{shape}{shape}}
+{\footnotesize\ttfamily b2\+Polygon\+Shape Physics\+Component\+::shape\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPhysicsComponent_a1aa73375358c6423eb0370c34fb221ca}\label{classPhysicsComponent_a1aa73375358c6423eb0370c34fb221ca}} 
+\index{PhysicsComponent@{PhysicsComponent}!xd@{xd}}
+\index{xd@{xd}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{xd}{xd}}
+{\footnotesize\ttfamily float Physics\+Component\+::xd\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPhysicsComponent_a42f8ac53bfdf5ac224e401a67b69e6d7}\label{classPhysicsComponent_a42f8ac53bfdf5ac224e401a67b69e6d7}} 
+\index{PhysicsComponent@{PhysicsComponent}!xo@{xo}}
+\index{xo@{xo}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{xo}{xo}}
+{\footnotesize\ttfamily float Physics\+Component\+::xo\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPhysicsComponent_a50d90cbee9f4abe616e25b9d73922bfb}\label{classPhysicsComponent_a50d90cbee9f4abe616e25b9d73922bfb}} 
+\index{PhysicsComponent@{PhysicsComponent}!yd@{yd}}
+\index{yd@{yd}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{yd}{yd}}
+{\footnotesize\ttfamily float Physics\+Component\+::yd\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPhysicsComponent_a27b23d86202aeb074c099cc948696281}\label{classPhysicsComponent_a27b23d86202aeb074c099cc948696281}} 
+\index{PhysicsComponent@{PhysicsComponent}!yo@{yo}}
+\index{yo@{yo}!PhysicsComponent@{PhysicsComponent}}
+\doxysubsubsection{\texorpdfstring{yo}{yo}}
+{\footnotesize\ttfamily float Physics\+Component\+::yo\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fnky/\+C0de/component\+\_\+engine/include/\+Components/\mbox{\hyperlink{PhysicsComponent_8h}{Physics\+Component.\+h}}\item 
+/home/fnky/\+C0de/component\+\_\+engine/src/\+Components/\mbox{\hyperlink{PhysicsComponent_8cpp}{Physics\+Component.\+cpp}}\end{DoxyCompactItemize}
