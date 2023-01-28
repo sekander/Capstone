@@ -1,0 +1,115 @@
+\hypertarget{splash__state_8cpp}{}\doxysection{/home/fnky/\+C0de/component\+\_\+engine/src/\+States/splash\+\_\+state.cpp File Reference}
+\label{splash__state_8cpp}\index{/home/fnky/C0de/component\_engine/src/States/splash\_state.cpp@{/home/fnky/C0de/component\_engine/src/States/splash\_state.cpp}}
+{\ttfamily \#include \char`\"{}../../include/\+Components/\+Transform\+Component.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Components/\+Shader\+Component.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Components/\+Render\+Component.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Actors/\+Actor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Actors/\+Texture\+\_\+\+Actor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Game\+Data/\+Game\+Data.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+States/splash\+\_\+state.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+Include dependency graph for splash\+\_\+state.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{splash__state_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classActor}{Actor}} $>$ \mbox{\hyperlink{splash__state_8cpp_ad08daddf37f438c4a3de54292e109d2f}{gs\+\_\+actor}}
+\begin{DoxyCompactList}\small\item\em -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---\mbox{\hyperlink{classComponent}{Component}} System-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classActor}{Actor}} $>$ \mbox{\hyperlink{splash__state_8cpp_a6477f67a3a34ca86c9256f0dfc708330}{animate\+\_\+actor}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classActor}{Actor}} $>$ \mbox{\hyperlink{splash__state_8cpp_a200701545719cf5d4ee428c3aeedf177}{splash\+\_\+fade\+\_\+in\+\_\+out\+\_\+actor}}
+\item 
+const unsigned int \mbox{\hyperlink{splash__state_8cpp_a74ba59acbf346c2b19bc1ce5170f755d}{S\+C\+R\+\_\+\+W\+I\+D\+TH}} = 800
+\item 
+const unsigned int \mbox{\hyperlink{splash__state_8cpp_aca03a77ac5a7f2e26d08cd6de43f9a17}{S\+C\+R\+\_\+\+H\+E\+I\+G\+HT}} = 600
+\item 
+glm\+::mat4 \mbox{\hyperlink{splash__state_8cpp_a949ee6397237a07bab00864f405ae615}{projection2}}
+\item 
+double \mbox{\hyperlink{splash__state_8cpp_ab3742e1445f567debea67a2a948b16fe}{last\+\_\+time}} = glfw\+Get\+Time()
+\item 
+unsigned int \mbox{\hyperlink{splash__state_8cpp_aa842b9586dde38a44641d58f88b6d888}{frame\+\_\+x}}
+\item 
+float \mbox{\hyperlink{splash__state_8cpp_a62d90547f34aecf5beecf4014818e508}{splash\+\_\+fadein\+\_\+wave}}
+\item 
+bool \mbox{\hyperlink{splash__state_8cpp_a2bade554d18c6b49aad84e8bdededcf7}{splash\+\_\+pause\+\_\+fade}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{splash__state_8cpp_a6477f67a3a34ca86c9256f0dfc708330}\label{splash__state_8cpp_a6477f67a3a34ca86c9256f0dfc708330}} 
+\index{splash\_state.cpp@{splash\_state.cpp}!animate\_actor@{animate\_actor}}
+\index{animate\_actor@{animate\_actor}!splash\_state.cpp@{splash\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{animate\_actor}{animate\_actor}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classActor}{Actor}}$>$ animate\+\_\+actor}
+
+\mbox{\Hypertarget{splash__state_8cpp_aa842b9586dde38a44641d58f88b6d888}\label{splash__state_8cpp_aa842b9586dde38a44641d58f88b6d888}} 
+\index{splash\_state.cpp@{splash\_state.cpp}!frame\_x@{frame\_x}}
+\index{frame\_x@{frame\_x}!splash\_state.cpp@{splash\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{frame\_x}{frame\_x}}
+{\footnotesize\ttfamily unsigned int frame\+\_\+x}
+
+\mbox{\Hypertarget{splash__state_8cpp_ad08daddf37f438c4a3de54292e109d2f}\label{splash__state_8cpp_ad08daddf37f438c4a3de54292e109d2f}} 
+\index{splash\_state.cpp@{splash\_state.cpp}!gs\_actor@{gs\_actor}}
+\index{gs\_actor@{gs\_actor}!splash\_state.cpp@{splash\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{gs\_actor}{gs\_actor}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classActor}{Actor}}$>$ gs\+\_\+actor}
+
+
+
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---\mbox{\hyperlink{classComponent}{Component}} System-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- 
+
+\mbox{\Hypertarget{splash__state_8cpp_ab3742e1445f567debea67a2a948b16fe}\label{splash__state_8cpp_ab3742e1445f567debea67a2a948b16fe}} 
+\index{splash\_state.cpp@{splash\_state.cpp}!last\_time@{last\_time}}
+\index{last\_time@{last\_time}!splash\_state.cpp@{splash\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{last\_time}{last\_time}}
+{\footnotesize\ttfamily double last\+\_\+time = glfw\+Get\+Time()}
+
+\mbox{\Hypertarget{splash__state_8cpp_a949ee6397237a07bab00864f405ae615}\label{splash__state_8cpp_a949ee6397237a07bab00864f405ae615}} 
+\index{splash\_state.cpp@{splash\_state.cpp}!projection2@{projection2}}
+\index{projection2@{projection2}!splash\_state.cpp@{splash\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{projection2}{projection2}}
+{\footnotesize\ttfamily glm\+::mat4 projection2}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= glm::ortho(0.0f, \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(\mbox{\hyperlink{splash__state_8cpp_a74ba59acbf346c2b19bc1ce5170f755d}{SCR\_WIDTH}}),}
+\DoxyCodeLine{            \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(\mbox{\hyperlink{splash__state_8cpp_aca03a77ac5a7f2e26d08cd6de43f9a17}{SCR\_HEIGHT}}), 0.0f, -\/1.0f, 1.0f)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{splash__state_8cpp_aca03a77ac5a7f2e26d08cd6de43f9a17}\label{splash__state_8cpp_aca03a77ac5a7f2e26d08cd6de43f9a17}} 
+\index{splash\_state.cpp@{splash\_state.cpp}!SCR\_HEIGHT@{SCR\_HEIGHT}}
+\index{SCR\_HEIGHT@{SCR\_HEIGHT}!splash\_state.cpp@{splash\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{SCR\_HEIGHT}{SCR\_HEIGHT}}
+{\footnotesize\ttfamily const unsigned int S\+C\+R\+\_\+\+H\+E\+I\+G\+HT = 600}
+
+\mbox{\Hypertarget{splash__state_8cpp_a74ba59acbf346c2b19bc1ce5170f755d}\label{splash__state_8cpp_a74ba59acbf346c2b19bc1ce5170f755d}} 
+\index{splash\_state.cpp@{splash\_state.cpp}!SCR\_WIDTH@{SCR\_WIDTH}}
+\index{SCR\_WIDTH@{SCR\_WIDTH}!splash\_state.cpp@{splash\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{SCR\_WIDTH}{SCR\_WIDTH}}
+{\footnotesize\ttfamily const unsigned int S\+C\+R\+\_\+\+W\+I\+D\+TH = 800}
+
+\mbox{\Hypertarget{splash__state_8cpp_a200701545719cf5d4ee428c3aeedf177}\label{splash__state_8cpp_a200701545719cf5d4ee428c3aeedf177}} 
+\index{splash\_state.cpp@{splash\_state.cpp}!splash\_fade\_in\_out\_actor@{splash\_fade\_in\_out\_actor}}
+\index{splash\_fade\_in\_out\_actor@{splash\_fade\_in\_out\_actor}!splash\_state.cpp@{splash\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{splash\_fade\_in\_out\_actor}{splash\_fade\_in\_out\_actor}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classActor}{Actor}}$>$ splash\+\_\+fade\+\_\+in\+\_\+out\+\_\+actor}
+
+\mbox{\Hypertarget{splash__state_8cpp_a62d90547f34aecf5beecf4014818e508}\label{splash__state_8cpp_a62d90547f34aecf5beecf4014818e508}} 
+\index{splash\_state.cpp@{splash\_state.cpp}!splash\_fadein\_wave@{splash\_fadein\_wave}}
+\index{splash\_fadein\_wave@{splash\_fadein\_wave}!splash\_state.cpp@{splash\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{splash\_fadein\_wave}{splash\_fadein\_wave}}
+{\footnotesize\ttfamily float splash\+\_\+fadein\+\_\+wave}
+
+\mbox{\Hypertarget{splash__state_8cpp_a2bade554d18c6b49aad84e8bdededcf7}\label{splash__state_8cpp_a2bade554d18c6b49aad84e8bdededcf7}} 
+\index{splash\_state.cpp@{splash\_state.cpp}!splash\_pause\_fade@{splash\_pause\_fade}}
+\index{splash\_pause\_fade@{splash\_pause\_fade}!splash\_state.cpp@{splash\_state.cpp}}
+\doxysubsubsection{\texorpdfstring{splash\_pause\_fade}{splash\_pause\_fade}}
+{\footnotesize\ttfamily bool splash\+\_\+pause\+\_\+fade}
+

@@ -1,0 +1,11 @@
+<map id="LoadingPlayState" name="LoadingPlayState">
+<area shape="rect" id="node1" title=" " alt="" coords="72,865,243,1045"/>
+<area shape="rect" id="node2" href="$classState.html" title=" " alt="" coords="69,645,203,795"/>
+<area shape="rect" id="node3" href="$structGameData.html" title=" " alt="" coords="228,637,356,803"/>
+<area shape="rect" id="node4" href="$classStateMachine.html" title=" " alt="" coords="5,270,152,494"/>
+<area shape="rect" id="node5" href="$classLoadingGameObjects.html" title=" " alt="" coords="177,189,407,575"/>
+<area shape="rect" id="node6" href="$classOrthographic__camera.html" title=" " alt="" coords="431,277,633,487"/>
+<area shape="rect" id="node7" title=" " alt="" coords="328,5,384,83"/>
+<area shape="rect" id="node8" title=" " alt="" coords="505,5,559,83"/>
+<area shape="rect" id="node9" title=" " alt="" coords="600,5,653,83"/>
+</map>

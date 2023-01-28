@@ -1,0 +1,680 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<Splash_State>
+<head><version>1.0</version></head>
+	<level_1>
+			<an>
+				<param
+						key				= "enemy3"
+						filename 			= "assets/images/Idle.png"
+						num_x_frame			= 4
+						num_y_frame			= 1 
+						animation_speed		= 0.1
+						position_x			= 90
+						position_y			= 15
+						size_x				= 192 
+						size_y				= 48
+						rotate				= 0 
+						color_r				= 1.0
+						color_g				= 1.0
+						color_b				= 1.0
+						current_x_frame		= 1 				
+						current_y_frame		= 1 				
+						alpha 				= true
+				/>
+				
+				<param
+						key				= "enemy4"
+						filename 			= "assets/images/Idle.png"
+						num_x_frame			= 4
+						num_y_frame			= 1 
+						animation_speed		= 0.1
+						position_x			= 80
+						position_y			= 15
+						size_x				= 192 
+						size_y				= 48
+						rotate				= 0 
+						color_r				= 1.0
+						color_g				= 1.0
+						color_b				= 1.0
+						current_x_frame		= 1 				
+						current_y_frame		= 1 				
+						alpha 				= true
+				/>
+
+				<param
+						key				= "enemy5"
+						filename 			= "assets/images/drone_Idle.png"
+						num_x_frame			= 4
+						num_y_frame			= 1 
+						animation_speed		= 0.1
+						position_x			= 70
+						position_y			= 15 
+						size_x				= 384 
+						size_y				= 96
+						rotate				= 0 
+						color_r				= 1.0
+						color_g				= 1.0
+						color_b				= 1.0
+						current_x_frame		= 1 				
+						current_y_frame		= 1 				
+						alpha 				= true
+				/>
+				
+				<param
+						key				= "enemy6"
+						filename 			= "assets/images/npc_1_idle.png"
+						num_x_frame			= 4
+						num_y_frame			= 1 
+						animation_speed		= 0.1
+						position_x			= 60
+						position_y			= 15 
+						size_x				= 192 
+						size_y				= 48
+						rotate				= 0 
+						color_r				= 1.0
+						color_g				= 1.0
+						color_b				= 1.0
+						current_x_frame		= 1 				
+						current_y_frame		= 1 				
+						alpha 				= true
+				/>
+
+
+
+			</an>
+
+    		<gw>
+				<param
+						key					= "face"
+						filename 			= "assets/images/awesomeface.png"
+						num_x_frame			= 1 				
+						num_y_frame			= 1
+						animation_speed		= 0
+						position_x			= 20
+						position_y			= 500
+						size_x				= 512 
+						size_y				= 512
+						rotate				= 90 
+						color_r				= 0.8 
+						color_g				= 0.1
+						color_b				= 0.5
+						current_x_frame		= 1 				
+						current_y_frame		= 1 				
+						alpha 				= true
+				/>
+				
+				<param
+						key					= "face_3"
+						filename 			= "assets/images/awesomeface.png"
+						num_x_frame			= 1 				
+						num_y_frame			= 1
+						animation_speed		= 0
+						position_x			= 300
+						position_y			= 500
+						size_x				= 512 
+						size_y				= 512
+						rotate				= 0 
+						color_r				= 0.1 
+						color_g				= 0.8
+						color_b				= 0.5
+						current_x_frame		= 1 				
+						current_y_frame		= 1 				
+						alpha 				= true
+				/>
+				<param
+						key					= "face_2"
+						filename 			= "assets/images/awesomeface.png"
+						num_x_frame			= 1 				
+						num_y_frame			= 1
+						animation_speed		= 0
+						position_x			= 1200
+						position_y			= 510
+						size_x				= 512 
+						size_y				= 512
+						rotate				= 0 
+						color_r				= 0.2 
+						color_g				= 0.1
+						color_b				= 0.9
+						current_x_frame		= 1 				
+						current_y_frame		= 1 				
+						alpha 				= true
+				/>
+				
+				<param
+						key					= "face_4"
+						filename 			= "assets/images/awesomeface.png"
+						num_x_frame			= 1 				
+						num_y_frame			= 1
+						animation_speed		= 0
+						position_x			= 800
+						position_y			= 500
+						size_x				= 512 
+						size_y				= 512
+						rotate				= 0 
+						color_r				= 0.9 
+						color_g				= 0.7
+						color_b				= 0.3
+						current_x_frame		= 1 				
+						current_y_frame		= 1 				
+						alpha 				= true
+				/>
+
+
+				<param
+						key				= "red"
+						filename 			= "assets/images/red.png"
+						num_x_frame			= 3
+						num_y_frame			= 4 
+						animation_speed		= 0.1
+						position_x			= 100
+						position_y			= 10
+						size_x				= 95 
+						size_y				= 128
+						rotate				= 0 
+						color_r				= 1.0
+						color_g				= 1.0
+						color_b				= 1.0
+						current_x_frame		= 1 				
+						current_y_frame		= 2 				
+						alpha 				= true
+				/>
+				
+				<param
+						key				= "enemy"
+						filename 			= "assets/images/Idle.png"
+						num_x_frame			= 4
+						num_y_frame			= 1 
+						animation_speed		= 0.1
+						position_x			= 90
+						position_y			= 10
+						size_x				= 192 
+						size_y				= 48
+						rotate				= 0 
+						color_r				= 1.0
+						color_g				= 1.0
+						color_b				= 1.0
+						current_x_frame		= 4 				
+						current_y_frame		= 1 				
+						alpha 				= true
+				/>
+				
+				<param
+						key				= "enemy1"
+						filename 			= "assets/images/Cyborg_run.png"
+						num_x_frame			= 6
+						num_y_frame			= 1 
+						animation_speed		= 0.1
+						position_x			= 10
+						position_y			= -20
+						size_x				= 288 
+						size_y				= 48
+						rotate				= 0 
+						color_r				= 1.0
+						color_g				= 1.0
+						color_b				= 1.0
+						current_x_frame		= 1 				
+						current_y_frame		= 1 				
+						alpha 				= true
+				/>
+				<param
+						key				= "gun"
+						filename 			= "assets/images/2_1.png"
+						num_x_frame			= 1
+						num_y_frame			= 1 
+						animation_speed		= 1
+						position_x			= 80
+						position_y			= 10
+						size_x				= 22 
+						size_y				= 8
+						rotate				= 0 
+						color_r				= 1.0
+						color_g				= 1.0
+						color_b				= 1.0
+						current_x_frame		= 4 				
+						current_y_frame		= 1 				
+						alpha 				= true
+				/>
+				<!--
+				<param
+						key					= "background"
+						filename 			= "assets/images/carnage.png"
+						num_x_frame			= 1
+						num_y_frame			= 1 
+						animation_speed		= 0.0
+						position_x			= 0
+						position_y			= 0
+						size_x				= 1200
+						size_y				= 1200
+						rotate				= 0 
+						color_r				= 1.0
+						color_g				= 1.0
+						color_b				= 1.0
+						current_x_frame		= 1 				
+						current_y_frame		= 1 				
+						alpha 				= true
+				/>
+				-->	
+				<param
+						key					= "backgroundO"
+						filename 			= "assets/images/orange.png"
+						num_x_frame			= 1
+						num_y_frame			= 1 
+						animation_speed		= 0.0
+						position_x			= 100
+						position_y			= 0
+						size_x				= 1200
+						size_y				= 1200
+						rotate				= 0 
+						color_r				= 1.0
+						color_g				= 1.0
+						color_b				= 1.0
+						current_x_frame		= 1 				
+						current_y_frame		= 1 				
+						alpha 				= false 
+				/>
+				
+				<param
+						key					= "rusted"
+						filename 			= "assets/images/rusted.png"
+						num_x_frame			= 1
+						num_y_frame			= 1 
+						animation_speed		= 0.0
+						position_x			= 100
+						position_y			= 100
+						size_x				= 1200
+						size_y				= 1200
+						rotate				= 0 
+						color_r				= 1.0
+						color_g				= 1.0
+						color_b				= 1.0
+						current_x_frame		= 1 				
+						current_y_frame		= 1 				
+						alpha 				= false 
+				/>
+				
+				
+				<param
+						key					= "map"
+						filename 			= "assets/images/map2_tiled.png"
+						num_x_frame			= 1
+						num_y_frame			= 1 
+						animation_speed			= 0.0
+						position_x			= 10
+						position_y			= 2
+						size_x				= 480 
+						size_y				= 240
+						rotate				= 0 
+						color_r				= 1.0
+						color_g				= 1.0
+						color_b				= 1.0
+						current_x_frame		= 1 				
+						current_y_frame		= 1 				
+						alpha 				=true 
+				/>
+
+				
+			</gw>
+
+<!--
+		<npc>
+			<param
+				key = "npc"
+				xpos = 100
+				ypos = 16
+				boxWidth = 1 
+				boxHeight = 1
+				rotation = 0.0
+				xFrame = 1
+				yFrame = 1
+			/>
+			
+			<param
+				key = "npc"
+				xpos = 10
+				ypos = 16
+				boxWidth = 1 
+				boxHeight = 1
+				rotation = 0.0
+				xFrame = 1
+				yFrame = 1
+			/>
+
+		</npc>
+-->
+
+		<platform>
+			<param
+				key  	  = "platform"
+				xpos 	  = 100 
+				ypos 	  = 15
+				boxWidth  = 10
+				boxHeight = 2
+				rotation  = 0
+
+				/>
+			
+			<param
+				key  	  = "platform"
+				xpos 	  = 390 
+				ypos 	  = 35
+				boxWidth  = 10
+				boxHeight = 2
+				rotation  = 0
+
+				/>
+		</platform>
+
+		<edge>
+			<param
+				key = "floor"
+				xo = 9
+				yo = 20
+				xd = 180
+				yd = 20
+			/>
+			
+			<param
+				key = "wall"
+				xo = 9
+				yo = 20
+				xd = 9
+				yd = 0
+			/>
+			
+			<param
+				key = "wall"
+				xo = 180
+				yo = 20
+				xd = 180
+				yd = 50
+			/>
+			
+			
+			
+			<param
+				key = "ramp"
+				xo = 250
+				yo = 50
+				xd = 350
+				yd = 100
+			/>
+			
+			<param
+				key = "ramp"
+				xo = 350
+				yo = 100
+				xd = 650
+				yd = 100
+			/>
+			
+			<param
+				key = "roof"
+				xo = 9
+				yo = 1
+				xd = 300
+				yd = 1
+			/>
+			
+			
+			<param
+				key = "wall"
+				xo = 300
+				yo = 0
+				xd = 300
+				yd = 40
+			/>
+			
+			<param
+				key = "floor"
+				xo = 180
+				yo = 50
+				xd = 250
+				yd = 50
+			/>
+
+		</edge>
+
+		<edgeO>
+			<param
+				key = "floor"
+				xo = 180
+				yo = 26
+				xd = 192
+				yd = 26
+			/>
+			
+			<param
+				key = "floor"
+				xo = 180
+				yo = 32
+				xd = 202
+				yd = 32
+			/>
+			
+			<param
+				key = "floor"
+				xo = 180
+				yo = 38
+				xd = 212
+				yd = 38
+			/>
+			
+			<param
+				key = "floor"
+				xo = 180
+				yo = 46
+				xd = 220
+				yd = 46
+			/>
+			
+			<param
+				key = "platform"
+				xo = 360
+				yo = 94
+				xd = 460
+				yd = 94
+			/>
+			
+		</edgeO>
+
+<!--
+			<map>
+				<mapData
+					filename 			= "assets/map/tileset.png"
+					key 				= "tile"
+					num_x_frame			= 48
+					num_y_frame			= 23
+					position_x			= 10
+					position_y			= 2.0
+					size_x				= 1536 
+					size_y				= 736
+					map_width 			= 7 
+					map_height 			= 3 
+				/>
+				
+
+					<t x=5 y=4/> <t x=5 y=4/> <t x=5 y=4/> <t x=5 y=4/>    <t x=5 y=4/> <t x=5 y=4/> <t x=5 y=4/> <t x=5 y=4/> 
+					<t x=5 y=4/> <t x=5 y=4/> <t x=5 y=4/> <t x=5 y=4/>    <t x=5 y=4/> <t x=5 y=4/> <t x=5 y=4/> <t x=5 y=4/> 
+					<t x=5 y=4/> <t x=5 y=4/> <t x=5 y=4/> <t x=5 y=4/>    <t x=5 y=4/> <t x=5 y=4/> <t x=5 y=4/> <t x=5 y=4/> 
+					<t x=5 y=4/> <t x=5 y=4/> <t x=5 y=4/> <t x=5 y=4/>    <t x=5 y=4/> <t x=5 y=4/> <t x=5 y=4/> <t x=5 y=4/> 
+
+
+
+			</map>
+
+
+-->
+	</level_1>
+
+
+	<level_2>
+			<an>
+				<param
+						key				= "enemy3"
+						filename 			= "assets/images/Idle.png"
+						num_x_frame			= 4
+						num_y_frame			= 1 
+						animation_speed		= 0.1
+						position_x			= 90
+						position_y			= 15
+						size_x				= 192 
+						size_y				= 48
+						rotate				= 0 
+						color_r				= 1.0
+						color_g				= 1.0
+						color_b				= 1.0
+						current_x_frame		= 1 				
+						current_y_frame		= 1 				
+						alpha 				= true
+				/>
+			</an>
+
+    		<gw>
+				<param
+						key					= "face"
+						filename 			= "assets/images/awesomeface.png"
+						num_x_frame			= 1 				
+						num_y_frame			= 1
+						animation_speed		= 0
+						position_x			= 20
+						position_y			= 500
+						size_x				= 512 
+						size_y				= 512
+						rotate				= 90 
+						color_r				= 0.8 
+						color_g				= 0.1
+						color_b				= 0.5
+						current_x_frame		= 1 				
+						current_y_frame		= 1 				
+						alpha 				= true
+				/>
+			</gw>
+		<platform>
+			<param
+				key  	  = "platform"
+				xpos 	  = 100 
+				ypos 	  = 15
+				boxWidth  = 10
+				boxHeight = 2
+				rotation  = 0
+
+				/>
+		</platform>
+		<edge>
+			<param
+				key = "floor"
+				xo = 9
+				yo = 20
+				xd = 180
+				yd = 20
+			/>
+			
+			<param
+				key = "wall"
+				xo = 9
+				yo = 20
+				xd = 9
+				yd = 0
+			/>
+			
+			<param
+				key = "wall"
+				xo = 180
+				yo = 20
+				xd = 180
+				yd = 50
+			/>
+			
+			
+			
+			<param
+				key = "ramp"
+				xo = 250
+				yo = 50
+				xd = 350
+				yd = 100
+			/>
+			
+			<param
+				key = "ramp"
+				xo = 350
+				yo = 100
+				xd = 650
+				yd = 100
+			/>
+			
+			<param
+				key = "roof"
+				xo = 9
+				yo = 1
+				xd = 300
+				yd = 1
+			/>
+			
+			
+			<param
+				key = "wall"
+				xo = 300
+				yo = 0
+				xd = 300
+				yd = 40
+			/>
+			
+			<param
+				key = "floor"
+				xo = 180
+				yo = 50
+				xd = 250
+				yd = 50
+			/>
+
+		</edge>
+
+		<edgeO>
+			<param
+				key = "floor"
+				xo = 180
+				yo = 26
+				xd = 192
+				yd = 26
+			/>
+			
+			<param
+				key = "floor"
+				xo = 180
+				yo = 32
+				xd = 202
+				yd = 32
+			/>
+			
+			<param
+				key = "floor"
+				xo = 180
+				yo = 38
+				xd = 212
+				yd = 38
+			/>
+			
+			<param
+				key = "floor"
+				xo = 180
+				yo = 46
+				xd = 220
+				yd = 46
+			/>
+			
+			<param
+				key = "platform"
+				xo = 360
+				yo = 94
+				xd = 460
+				yd = 94
+			/>
+			
+		</edgeO>
+
+	</level_2>
+
+
+</Splash_State>

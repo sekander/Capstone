@@ -1,0 +1,11 @@
+<map id="SplashState" name="SplashState">
+<area shape="rect" id="node1" title=" " alt="" coords="393,865,528,1192"/>
+<area shape="rect" id="node2" href="$classState.html" title=" " alt="" coords="237,645,372,795"/>
+<area shape="rect" id="node3" href="$structGameData.html" title=" " alt="" coords="397,637,525,803"/>
+<area shape="rect" id="node4" href="$classStateMachine.html" title=" " alt="" coords="486,270,633,494"/>
+<area shape="rect" id="node5" href="$classLoadingGameObjects.html" title=" " alt="" coords="5,189,236,575"/>
+<area shape="rect" id="node6" href="$classOrthographic__camera.html" title=" " alt="" coords="260,277,461,487"/>
+<area shape="rect" id="node7" title=" " alt="" coords="186,5,242,83"/>
+<area shape="rect" id="node8" title=" " alt="" coords="601,5,654,83"/>
+<area shape="rect" id="node9" title=" " alt="" coords="363,5,417,83"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="BStateMachine" name="BStateMachine">
+<area shape="rect" id="node1" title=" " alt="" coords="43,402,232,538"/>
+<area shape="rect" id="node3" href="$classNPC__Actor.html" title=" " alt="" coords="136,681,376,979"/>
+<area shape="rect" id="node2" href="$classBState.html" title=" " alt="" coords="68,49,207,200"/>
+<area shape="rect" id="node6" href="$classTransition.html" title=" " alt="" coords="46,1225,189,1347"/>
+<area shape="rect" id="node7" href="$classCondition.html" title=" " alt="" coords="235,1056,355,1163"/>
+<area shape="rect" id="node4" href="$classActor.html" title=" " alt="" coords="463,321,663,619"/>
+<area shape="rect" id="node5" href="$classComponent.html" title=" " alt="" coords="496,5,629,244"/>
+<area shape="rect" id="node8" title=" " alt="" coords="385,431,439,509"/>
+</map>

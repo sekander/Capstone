@@ -1,0 +1,20 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classComponent.html" title=" " alt="" coords="5,385,103,412"/>
+<area shape="rect" id="node2" href="$classActor.html" title=" " alt="" coords="208,233,264,260"/>
+<area shape="rect" id="node13" href="$classAIComponent.html" title=" " alt="" coords="181,284,291,311"/>
+<area shape="rect" id="node14" href="$classPhysicsComponent.html" title=" " alt="" coords="163,335,309,361"/>
+<area shape="rect" id="node15" href="$classRenderComponent.html" title=" " alt="" coords="165,385,307,412"/>
+<area shape="rect" id="node16" href="$classShaderComponent.html" title=" " alt="" coords="165,436,307,463"/>
+<area shape="rect" id="node17" href="$classTextRenderComponent.html" title=" " alt="" coords="151,487,321,513"/>
+<area shape="rect" id="node18" href="$classTransformComponent.html" title=" " alt="" coords="155,537,317,564"/>
+<area shape="rect" id="node3" href="$classAnimate__Actor.html" title=" " alt="" coords="372,5,491,32"/>
+<area shape="rect" id="node4" href="$classEdge__Actor.html" title=" " alt="" coords="384,56,479,83"/>
+<area shape="rect" id="node5" href="$classGun__Actor.html" title=" " alt="" coords="387,107,476,133"/>
+<area shape="rect" id="node6" href="$classNPC__Actor.html" title=" " alt="" coords="386,157,477,184"/>
+<area shape="rect" id="node7" href="$classPlatform__Actor.html" title=" " alt="" coords="372,208,491,235"/>
+<area shape="rect" id="node8" href="$classPlayer__Actor.html" title=" " alt="" coords="379,259,483,285"/>
+<area shape="rect" id="node9" href="$classProjectile__Actor.html" title=" " alt="" coords="369,309,493,336"/>
+<area shape="rect" id="node10" href="$classShader__Actor.html" title=" " alt="" coords="377,360,485,387"/>
+<area shape="rect" id="node11" href="$classText__Actor.html" title=" " alt="" coords="386,411,477,437"/>
+<area shape="rect" id="node12" href="$classTexture__Actor.html" title=" " alt="" coords="376,461,487,488"/>
+</map>

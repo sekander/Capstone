@@ -1,0 +1,168 @@
+\hypertarget{classAnimate__Actor}{}\doxysection{Animate\+\_\+\+Actor Class Reference}
+\label{classAnimate__Actor}\index{Animate\_Actor@{Animate\_Actor}}
+
+
+{\ttfamily \#include $<$Animate\+\_\+\+Actor.\+h$>$}
+
+
+
+Inheritance diagram for Animate\+\_\+\+Actor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classAnimate__Actor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Animate\+\_\+\+Actor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classAnimate__Actor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAnimate__Actor_aee4a76bfca6d5f49f880f20e23e968bc}{Animate\+\_\+\+Actor}} (\mbox{\hyperlink{classComponent}{Component}} $\ast$parent\+\_\+)
+\item 
+\mbox{\hyperlink{classAnimate__Actor_a7915c06d4d0a12655b1f3290398c109a}{$\sim$\+Animate\+\_\+\+Actor}} ()
+\item 
+bool \mbox{\hyperlink{classAnimate__Actor_a0e7160b050fd2baf26fa83890f58a154}{on\+Create}} (const char $\ast$file\+Name, glm\+::vec2 position, glm\+::vec2 \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}}, int num\+X\+Frames, int num\+Y\+Frames, float rotate, glm\+::vec3 colour, glm\+::vec2 current\+Frame, bool is\+Alpha)
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classAnimate__Actor_ae67ff6399f3d46696f84c77b2e519ead}{on\+Destroy}} ()
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classAnimate__Actor_a6bdb436a75efbc01545679b613858201}{update}} (const float delta\+Time\+\_\+)
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classAnimate__Actor_a0b1f2798694dfcc5bc6401d8ed2d95d7}{input}} ()
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classAnimate__Actor_aff9d0d27d13899605b35524ac52b8324}{draw}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classShader__Actor}{Shader\+\_\+\+Actor}} $>$ \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_a57b2a96adb1d51204909a82d861e395e}{shader}}, glm\+::mat4 \mbox{\hyperlink{main__menu__state_8cpp_a565d92bfbcc4a481d2d35f3850a382f7}{projection}}, float xpos, float ypos, float box\+Width, float bow\+Height, float rot) const
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTexture__Actor}{Texture\+\_\+\+Actor}} $>$ $>$ \mbox{\hyperlink{classAnimate__Actor_a9105a1dae4c378c98dc9112476fde7f1}{get\+Animation}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classAnimate__Actor_aaec5373c6b5361d9b4281b07269f168a}{animation\+\_\+last\+\_\+time}}
+\item 
+int \mbox{\hyperlink{classAnimate__Actor_a6ca33dd363ec6295bac6d811dc22ba47}{curr\+\_\+frame}}
+\item 
+int \mbox{\hyperlink{classAnimate__Actor_acd36b7c0f4ebdac9d7f5672be523f27c}{animation\+\_\+frame}}
+\item 
+int \mbox{\hyperlink{classAnimate__Actor_a40951dd58ee9db94c4d9c2f8c761c185}{max\+\_\+frame}}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTexture__Actor}{Texture\+\_\+\+Actor}} $>$ $>$ \mbox{\hyperlink{classAnimate__Actor_aa4b98466c47863249c944ac660712101}{animation}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTexture__Actor}{Texture\+\_\+\+Actor}} $>$ \mbox{\hyperlink{classAnimate__Actor_a48a940cb5632d01a6aedd57ed3a0d992}{texture}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAnimate__Actor_aee4a76bfca6d5f49f880f20e23e968bc}\label{classAnimate__Actor_aee4a76bfca6d5f49f880f20e23e968bc}} 
+\index{Animate\_Actor@{Animate\_Actor}!Animate\_Actor@{Animate\_Actor}}
+\index{Animate\_Actor@{Animate\_Actor}!Animate\_Actor@{Animate\_Actor}}
+\doxysubsubsection{\texorpdfstring{Animate\_Actor()}{Animate\_Actor()}}
+{\footnotesize\ttfamily Animate\+\_\+\+Actor\+::\+Animate\+\_\+\+Actor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComponent}{Component}} $\ast$}]{parent\+\_\+ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAnimate__Actor_a7915c06d4d0a12655b1f3290398c109a}\label{classAnimate__Actor_a7915c06d4d0a12655b1f3290398c109a}} 
+\index{Animate\_Actor@{Animate\_Actor}!````~Animate\_Actor@{$\sim$Animate\_Actor}}
+\index{````~Animate\_Actor@{$\sim$Animate\_Actor}!Animate\_Actor@{Animate\_Actor}}
+\doxysubsubsection{\texorpdfstring{$\sim$Animate\_Actor()}{~Animate\_Actor()}}
+{\footnotesize\ttfamily Animate\+\_\+\+Actor\+::$\sim$\+Animate\+\_\+\+Actor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAnimate__Actor_aff9d0d27d13899605b35524ac52b8324}\label{classAnimate__Actor_aff9d0d27d13899605b35524ac52b8324}} 
+\index{Animate\_Actor@{Animate\_Actor}!draw@{draw}}
+\index{draw@{draw}!Animate\_Actor@{Animate\_Actor}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Animate\+\_\+\+Actor\+::draw (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classShader__Actor}{Shader\+\_\+\+Actor}} $>$}]{shader,  }\item[{glm\+::mat4}]{projection,  }\item[{float}]{xpos,  }\item[{float}]{ypos,  }\item[{float}]{box\+Width,  }\item[{float}]{bow\+Height,  }\item[{float}]{rot }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classAnimate__Actor_a9105a1dae4c378c98dc9112476fde7f1}\label{classAnimate__Actor_a9105a1dae4c378c98dc9112476fde7f1}} 
+\index{Animate\_Actor@{Animate\_Actor}!getAnimation@{getAnimation}}
+\index{getAnimation@{getAnimation}!Animate\_Actor@{Animate\_Actor}}
+\doxysubsubsection{\texorpdfstring{getAnimation()}{getAnimation()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classTexture__Actor}{Texture\+\_\+\+Actor}}$>$ $>$ Animate\+\_\+\+Actor\+::get\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAnimate__Actor_a0b1f2798694dfcc5bc6401d8ed2d95d7}\label{classAnimate__Actor_a0b1f2798694dfcc5bc6401d8ed2d95d7}} 
+\index{Animate\_Actor@{Animate\_Actor}!input@{input}}
+\index{input@{input}!Animate\_Actor@{Animate\_Actor}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Animate\+\_\+\+Actor\+::input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAnimate__Actor_a0e7160b050fd2baf26fa83890f58a154}\label{classAnimate__Actor_a0e7160b050fd2baf26fa83890f58a154}} 
+\index{Animate\_Actor@{Animate\_Actor}!onCreate@{onCreate}}
+\index{onCreate@{onCreate}!Animate\_Actor@{Animate\_Actor}}
+\doxysubsubsection{\texorpdfstring{onCreate()}{onCreate()}}
+{\footnotesize\ttfamily bool Animate\+\_\+\+Actor\+::on\+Create (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name,  }\item[{glm\+::vec2}]{position,  }\item[{glm\+::vec2}]{size,  }\item[{int}]{num\+X\+Frames,  }\item[{int}]{num\+Y\+Frames,  }\item[{float}]{rotate,  }\item[{glm\+::vec3}]{colour,  }\item[{glm\+::vec2}]{current\+Frame,  }\item[{bool}]{is\+Alpha }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAnimate__Actor_ae67ff6399f3d46696f84c77b2e519ead}\label{classAnimate__Actor_ae67ff6399f3d46696f84c77b2e519ead}} 
+\index{Animate\_Actor@{Animate\_Actor}!onDestroy@{onDestroy}}
+\index{onDestroy@{onDestroy}!Animate\_Actor@{Animate\_Actor}}
+\doxysubsubsection{\texorpdfstring{onDestroy()}{onDestroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Animate\+\_\+\+Actor\+::on\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classActor_a47101d6275509662bf6c84c3f3439696}{Actor}}.
+
+\mbox{\Hypertarget{classAnimate__Actor_a6bdb436a75efbc01545679b613858201}\label{classAnimate__Actor_a6bdb436a75efbc01545679b613858201}} 
+\index{Animate\_Actor@{Animate\_Actor}!update@{update}}
+\index{update@{update}!Animate\_Actor@{Animate\_Actor}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} Animate\+\_\+\+Actor\+::update (\begin{DoxyParamCaption}\item[{const float}]{delta\+Time\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classActor_a724ff8f2e9c34f15a6c443a3912504c4}{Actor}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classAnimate__Actor_aa4b98466c47863249c944ac660712101}\label{classAnimate__Actor_aa4b98466c47863249c944ac660712101}} 
+\index{Animate\_Actor@{Animate\_Actor}!animation@{animation}}
+\index{animation@{animation}!Animate\_Actor@{Animate\_Actor}}
+\doxysubsubsection{\texorpdfstring{animation}{animation}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classTexture__Actor}{Texture\+\_\+\+Actor}}$>$ $>$ Animate\+\_\+\+Actor\+::animation\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAnimate__Actor_acd36b7c0f4ebdac9d7f5672be523f27c}\label{classAnimate__Actor_acd36b7c0f4ebdac9d7f5672be523f27c}} 
+\index{Animate\_Actor@{Animate\_Actor}!animation\_frame@{animation\_frame}}
+\index{animation\_frame@{animation\_frame}!Animate\_Actor@{Animate\_Actor}}
+\doxysubsubsection{\texorpdfstring{animation\_frame}{animation\_frame}}
+{\footnotesize\ttfamily int Animate\+\_\+\+Actor\+::animation\+\_\+frame\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAnimate__Actor_aaec5373c6b5361d9b4281b07269f168a}\label{classAnimate__Actor_aaec5373c6b5361d9b4281b07269f168a}} 
+\index{Animate\_Actor@{Animate\_Actor}!animation\_last\_time@{animation\_last\_time}}
+\index{animation\_last\_time@{animation\_last\_time}!Animate\_Actor@{Animate\_Actor}}
+\doxysubsubsection{\texorpdfstring{animation\_last\_time}{animation\_last\_time}}
+{\footnotesize\ttfamily double Animate\+\_\+\+Actor\+::animation\+\_\+last\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAnimate__Actor_a6ca33dd363ec6295bac6d811dc22ba47}\label{classAnimate__Actor_a6ca33dd363ec6295bac6d811dc22ba47}} 
+\index{Animate\_Actor@{Animate\_Actor}!curr\_frame@{curr\_frame}}
+\index{curr\_frame@{curr\_frame}!Animate\_Actor@{Animate\_Actor}}
+\doxysubsubsection{\texorpdfstring{curr\_frame}{curr\_frame}}
+{\footnotesize\ttfamily int Animate\+\_\+\+Actor\+::curr\+\_\+frame\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAnimate__Actor_a40951dd58ee9db94c4d9c2f8c761c185}\label{classAnimate__Actor_a40951dd58ee9db94c4d9c2f8c761c185}} 
+\index{Animate\_Actor@{Animate\_Actor}!max\_frame@{max\_frame}}
+\index{max\_frame@{max\_frame}!Animate\_Actor@{Animate\_Actor}}
+\doxysubsubsection{\texorpdfstring{max\_frame}{max\_frame}}
+{\footnotesize\ttfamily int Animate\+\_\+\+Actor\+::max\+\_\+frame\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAnimate__Actor_a48a940cb5632d01a6aedd57ed3a0d992}\label{classAnimate__Actor_a48a940cb5632d01a6aedd57ed3a0d992}} 
+\index{Animate\_Actor@{Animate\_Actor}!texture@{texture}}
+\index{texture@{texture}!Animate\_Actor@{Animate\_Actor}}
+\doxysubsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classTexture__Actor}{Texture\+\_\+\+Actor}}$>$ Animate\+\_\+\+Actor\+::texture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fnky/\+C0de/component\+\_\+engine/include/\+Actors/\mbox{\hyperlink{Animate__Actor_8h}{Animate\+\_\+\+Actor.\+h}}\item 
+/home/fnky/\+C0de/component\+\_\+engine/src/\+Actors/\mbox{\hyperlink{Animate__Actor_8cpp}{Animate\+\_\+\+Actor.\+cpp}}\end{DoxyCompactItemize}

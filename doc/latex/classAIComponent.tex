@@ -1,0 +1,248 @@
+\hypertarget{classAIComponent}{}\doxysection{A\+I\+Component Class Reference}
+\label{classAIComponent}\index{AIComponent@{AIComponent}}
+
+
+{\ttfamily \#include $<$A\+I\+Component.\+h$>$}
+
+
+
+Inheritance diagram for A\+I\+Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classAIComponent__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for A\+I\+Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classAIComponent__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAIComponent_a78108337893807f59557596e2825cbb3}{A\+I\+Component}} (\mbox{\hyperlink{classComponent}{Component}} $\ast$parent\+\_\+)
+\item 
+\mbox{\hyperlink{classAIComponent_a0ffc6db0d1cb5720b8aaef8ec28f4efe}{$\sim$\+A\+I\+Component}} ()
+\item 
+bool \mbox{\hyperlink{classAIComponent_a1f7e2f748183cbcba9e3f351025b862c}{on\+Create}} () override
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classAIComponent_a82e8e79810024e09695545ebf59452f2}{on\+Destroy}} () override
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classAIComponent_a456939f85de6d6cfc3e4e48ffc9f568c}{update}} (const float delta) override
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classAIComponent_ab4d6c5c6043cfa275e4edce5b575a8a9}{draw}} () const override
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classAIComponent_a09ef4a12ea342b7e9cbb0f0e1aeceefe}{Init}} (b2\+Body $\ast$body)
+\item 
+b2\+Vec2 \mbox{\hyperlink{classAIComponent_a356b7fa667e4aed3fdf790a58916c3b9}{seek}} (b2\+Body $\ast$other\+Body, float max\+Speed, float gravity)
+\item 
+b2\+Vec2 \mbox{\hyperlink{classAIComponent_adc2c03c2bd20fd66ed26580e2b8d2784}{flee}} (b2\+Body $\ast$other\+Body, float max\+Speed, float gravity)
+\item 
+b2\+Vec2 \mbox{\hyperlink{classAIComponent_aee1af922a048c44f48cb204d8e153fb5}{wander}} (float min\+Distance, float max\+Speed, float max\+Distance)
+\item 
+bool \mbox{\hyperlink{classAIComponent_a24853885627e632ae760ae372bb57714}{move\+Position}} (b2\+Vec2 positions)
+\item 
+bool \mbox{\hyperlink{classAIComponent_aa584e4cfba8281933bfff799c9caf06d}{move\+Left\+Position}} (b2\+Vec2 positions)
+\item 
+bool \mbox{\hyperlink{classAIComponent_ac7ae5bfd9cf4e5163a4289c096c78f7c}{move\+Right\+Position}} (b2\+Vec2 positions)
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classAIComponent_a81d6ead52253301578f5e25527075899}{search}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGraph}{Graph}} $>$ \mbox{\hyperlink{classAIComponent_aeddece3b6c4aac54c401fb3ebeb657ba}{get\+Graph}} ()
+\item 
+\mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} \mbox{\hyperlink{classAIComponent_a33f4903d01350f4c17e6275dbf3f9097}{populate\+A\+I\+Positions}} (char key, b2\+Vec2 positions)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structAIposition}{A\+Iposition}} $\ast$ $>$ \mbox{\hyperlink{classAIComponent_a8bc910076abb3723183b92fa8d317049}{get\+A\+I\+Positions}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+b2\+Vec2 \mbox{\hyperlink{classAIComponent_a4762eb8f3fc7c56cbedef2074183a7df}{m\+\_\+position}}
+\item 
+b2\+Vec2 \mbox{\hyperlink{classAIComponent_abdffe34d98dd34e51c777512bce686ca}{m\+\_\+velocity}}
+\item 
+b2\+Body $\ast$ \mbox{\hyperlink{classAIComponent_a5ae9cb55df68289dc80568e0072b2473}{m\+\_\+body}}
+\item 
+float \mbox{\hyperlink{classAIComponent_aa0d6c295cf92653b96bad859e0fa330f}{beginning\+Position}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGraph}{Graph}} $>$ \mbox{\hyperlink{classAIComponent_a7b0b2a7230a851322867a387a81f985a}{bfs\+\_\+graph}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structAIposition}{A\+Iposition}} $\ast$ $>$ \mbox{\hyperlink{classAIComponent_a016b40f3b9d332294a517cbcc28ddcc9}{ai\+Positions}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAIComponent_a78108337893807f59557596e2825cbb3}\label{classAIComponent_a78108337893807f59557596e2825cbb3}} 
+\index{AIComponent@{AIComponent}!AIComponent@{AIComponent}}
+\index{AIComponent@{AIComponent}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{AIComponent()}{AIComponent()}}
+{\footnotesize\ttfamily A\+I\+Component\+::\+A\+I\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComponent}{Component}} $\ast$}]{parent\+\_\+ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAIComponent_a0ffc6db0d1cb5720b8aaef8ec28f4efe}\label{classAIComponent_a0ffc6db0d1cb5720b8aaef8ec28f4efe}} 
+\index{AIComponent@{AIComponent}!````~AIComponent@{$\sim$AIComponent}}
+\index{````~AIComponent@{$\sim$AIComponent}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{$\sim$AIComponent()}{~AIComponent()}}
+{\footnotesize\ttfamily A\+I\+Component\+::$\sim$\+A\+I\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAIComponent_ab4d6c5c6043cfa275e4edce5b575a8a9}\label{classAIComponent_ab4d6c5c6043cfa275e4edce5b575a8a9}} 
+\index{AIComponent@{AIComponent}!draw@{draw}}
+\index{draw@{draw}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} A\+I\+Component\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classComponent_a8f45309003f02191f2bcc8864e8e9ecf}{Component}}.
+
+\mbox{\Hypertarget{classAIComponent_adc2c03c2bd20fd66ed26580e2b8d2784}\label{classAIComponent_adc2c03c2bd20fd66ed26580e2b8d2784}} 
+\index{AIComponent@{AIComponent}!flee@{flee}}
+\index{flee@{flee}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{flee()}{flee()}}
+{\footnotesize\ttfamily b2\+Vec2 A\+I\+Component\+::flee (\begin{DoxyParamCaption}\item[{b2\+Body $\ast$}]{other\+Body,  }\item[{float}]{max\+Speed,  }\item[{float}]{gravity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAIComponent_a8bc910076abb3723183b92fa8d317049}\label{classAIComponent_a8bc910076abb3723183b92fa8d317049}} 
+\index{AIComponent@{AIComponent}!getAIPositions@{getAIPositions}}
+\index{getAIPositions@{getAIPositions}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{getAIPositions()}{getAIPositions()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structAIposition}{A\+Iposition}}$\ast$$>$ A\+I\+Component\+::get\+A\+I\+Positions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAIComponent_aeddece3b6c4aac54c401fb3ebeb657ba}\label{classAIComponent_aeddece3b6c4aac54c401fb3ebeb657ba}} 
+\index{AIComponent@{AIComponent}!getGraph@{getGraph}}
+\index{getGraph@{getGraph}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{getGraph()}{getGraph()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classGraph}{Graph}}$>$ A\+I\+Component\+::get\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAIComponent_a09ef4a12ea342b7e9cbb0f0e1aeceefe}\label{classAIComponent_a09ef4a12ea342b7e9cbb0f0e1aeceefe}} 
+\index{AIComponent@{AIComponent}!Init@{Init}}
+\index{Init@{Init}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} A\+I\+Component\+::\+Init (\begin{DoxyParamCaption}\item[{b2\+Body $\ast$}]{body }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAIComponent_aa584e4cfba8281933bfff799c9caf06d}\label{classAIComponent_aa584e4cfba8281933bfff799c9caf06d}} 
+\index{AIComponent@{AIComponent}!moveLeftPosition@{moveLeftPosition}}
+\index{moveLeftPosition@{moveLeftPosition}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{moveLeftPosition()}{moveLeftPosition()}}
+{\footnotesize\ttfamily bool A\+I\+Component\+::move\+Left\+Position (\begin{DoxyParamCaption}\item[{b2\+Vec2}]{positions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAIComponent_a24853885627e632ae760ae372bb57714}\label{classAIComponent_a24853885627e632ae760ae372bb57714}} 
+\index{AIComponent@{AIComponent}!movePosition@{movePosition}}
+\index{movePosition@{movePosition}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{movePosition()}{movePosition()}}
+{\footnotesize\ttfamily bool A\+I\+Component\+::move\+Position (\begin{DoxyParamCaption}\item[{b2\+Vec2}]{positions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAIComponent_ac7ae5bfd9cf4e5163a4289c096c78f7c}\label{classAIComponent_ac7ae5bfd9cf4e5163a4289c096c78f7c}} 
+\index{AIComponent@{AIComponent}!moveRightPosition@{moveRightPosition}}
+\index{moveRightPosition@{moveRightPosition}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{moveRightPosition()}{moveRightPosition()}}
+{\footnotesize\ttfamily bool A\+I\+Component\+::move\+Right\+Position (\begin{DoxyParamCaption}\item[{b2\+Vec2}]{positions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAIComponent_a1f7e2f748183cbcba9e3f351025b862c}\label{classAIComponent_a1f7e2f748183cbcba9e3f351025b862c}} 
+\index{AIComponent@{AIComponent}!onCreate@{onCreate}}
+\index{onCreate@{onCreate}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{onCreate()}{onCreate()}}
+{\footnotesize\ttfamily bool A\+I\+Component\+::on\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classComponent_a3a1537a8b8bcdb2155afbb925c77b0a2}{Component}}.
+
+\mbox{\Hypertarget{classAIComponent_a82e8e79810024e09695545ebf59452f2}\label{classAIComponent_a82e8e79810024e09695545ebf59452f2}} 
+\index{AIComponent@{AIComponent}!onDestroy@{onDestroy}}
+\index{onDestroy@{onDestroy}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{onDestroy()}{onDestroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} A\+I\+Component\+::on\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classComponent_a2b198f27162a6caf63917e304295f892}{Component}}.
+
+\mbox{\Hypertarget{classAIComponent_a33f4903d01350f4c17e6275dbf3f9097}\label{classAIComponent_a33f4903d01350f4c17e6275dbf3f9097}} 
+\index{AIComponent@{AIComponent}!populateAIPositions@{populateAIPositions}}
+\index{populateAIPositions@{populateAIPositions}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{populateAIPositions()}{populateAIPositions()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} A\+I\+Component\+::populate\+A\+I\+Positions (\begin{DoxyParamCaption}\item[{char}]{key,  }\item[{b2\+Vec2}]{positions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAIComponent_a81d6ead52253301578f5e25527075899}\label{classAIComponent_a81d6ead52253301578f5e25527075899}} 
+\index{AIComponent@{AIComponent}!search@{search}}
+\index{search@{search}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ A\+I\+Component\+::search (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAIComponent_a356b7fa667e4aed3fdf790a58916c3b9}\label{classAIComponent_a356b7fa667e4aed3fdf790a58916c3b9}} 
+\index{AIComponent@{AIComponent}!seek@{seek}}
+\index{seek@{seek}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{seek()}{seek()}}
+{\footnotesize\ttfamily b2\+Vec2 A\+I\+Component\+::seek (\begin{DoxyParamCaption}\item[{b2\+Body $\ast$}]{other\+Body,  }\item[{float}]{max\+Speed,  }\item[{float}]{gravity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAIComponent_a456939f85de6d6cfc3e4e48ffc9f568c}\label{classAIComponent_a456939f85de6d6cfc3e4e48ffc9f568c}} 
+\index{AIComponent@{AIComponent}!update@{update}}
+\index{update@{update}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}} A\+I\+Component\+::update (\begin{DoxyParamCaption}\item[{const float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classComponent_a3448977e6f464df89e77dda7c6f52204}{Component}}.
+
+\mbox{\Hypertarget{classAIComponent_aee1af922a048c44f48cb204d8e153fb5}\label{classAIComponent_aee1af922a048c44f48cb204d8e153fb5}} 
+\index{AIComponent@{AIComponent}!wander@{wander}}
+\index{wander@{wander}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{wander()}{wander()}}
+{\footnotesize\ttfamily b2\+Vec2 A\+I\+Component\+::wander (\begin{DoxyParamCaption}\item[{float}]{min\+Distance,  }\item[{float}]{max\+Speed,  }\item[{float}]{max\+Distance }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classAIComponent_a016b40f3b9d332294a517cbcc28ddcc9}\label{classAIComponent_a016b40f3b9d332294a517cbcc28ddcc9}} 
+\index{AIComponent@{AIComponent}!aiPositions@{aiPositions}}
+\index{aiPositions@{aiPositions}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{aiPositions}{aiPositions}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structAIposition}{A\+Iposition}}$\ast$$>$ A\+I\+Component\+::ai\+Positions\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAIComponent_aa0d6c295cf92653b96bad859e0fa330f}\label{classAIComponent_aa0d6c295cf92653b96bad859e0fa330f}} 
+\index{AIComponent@{AIComponent}!beginningPosition@{beginningPosition}}
+\index{beginningPosition@{beginningPosition}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{beginningPosition}{beginningPosition}}
+{\footnotesize\ttfamily float A\+I\+Component\+::beginning\+Position\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAIComponent_a7b0b2a7230a851322867a387a81f985a}\label{classAIComponent_a7b0b2a7230a851322867a387a81f985a}} 
+\index{AIComponent@{AIComponent}!bfs\_graph@{bfs\_graph}}
+\index{bfs\_graph@{bfs\_graph}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{bfs\_graph}{bfs\_graph}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classGraph}{Graph}}$>$ A\+I\+Component\+::bfs\+\_\+graph\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAIComponent_a5ae9cb55df68289dc80568e0072b2473}\label{classAIComponent_a5ae9cb55df68289dc80568e0072b2473}} 
+\index{AIComponent@{AIComponent}!m\_body@{m\_body}}
+\index{m\_body@{m\_body}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{m\_body}{m\_body}}
+{\footnotesize\ttfamily b2\+Body$\ast$ A\+I\+Component\+::m\+\_\+body\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAIComponent_a4762eb8f3fc7c56cbedef2074183a7df}\label{classAIComponent_a4762eb8f3fc7c56cbedef2074183a7df}} 
+\index{AIComponent@{AIComponent}!m\_position@{m\_position}}
+\index{m\_position@{m\_position}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{m\_position}{m\_position}}
+{\footnotesize\ttfamily b2\+Vec2 A\+I\+Component\+::m\+\_\+position\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAIComponent_abdffe34d98dd34e51c777512bce686ca}\label{classAIComponent_abdffe34d98dd34e51c777512bce686ca}} 
+\index{AIComponent@{AIComponent}!m\_velocity@{m\_velocity}}
+\index{m\_velocity@{m\_velocity}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{m\_velocity}{m\_velocity}}
+{\footnotesize\ttfamily b2\+Vec2 A\+I\+Component\+::m\+\_\+velocity\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/fnky/\+C0de/component\+\_\+engine/include/\+Components/\mbox{\hyperlink{AIComponent_8h}{A\+I\+Component.\+h}}\item 
+/home/fnky/\+C0de/component\+\_\+engine/src/\+Components/\mbox{\hyperlink{AIComponent_8cpp}{A\+I\+Component.\+cpp}}\end{DoxyCompactItemize}
