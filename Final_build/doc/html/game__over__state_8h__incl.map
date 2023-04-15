@@ -1,7 +1,0 @@
-<map id="/mnt/hdd/fnky/C0de/CAPSTONE/clean_build/include/States/game_over_state.h" name="/mnt/hdd/fnky/C0de/CAPSTONE/clean_build/include/States/game_over_state.h">
-<area shape="rect" id="node2" href="$state_8h.html" title="state.h" alt="" coords="850,288,913,315"/>
-<area shape="rect" id="node3" href="$GameData_8h.html" title="../GameData/GameData.h" alt="" coords="462,124,637,151"/>
-<area shape="rect" id="node9" href="$Orthographic__camera_8h.html" title="../../include/Camera\l/Orthographic_camera.h" alt="" coords="814,199,975,240"/>
-<area shape="rect" id="node12" href="$state__machine_8h.html" title="../../include/States\l/state_machine.h" alt="" coords="661,199,790,240"/>
-<area shape="rect" id="node14" href="$LoadingGameObjects_8h.html" title="../../include/Loaders\l/LoadingGameObjects.h" alt="" coords="111,199,273,240"/>
-</map>

@@ -1,4 +1,0 @@
-<map id="MemoryPoolAllocator&lt; BaseAllocator &gt;" name="MemoryPoolAllocator&lt; BaseAllocator &gt;">
-<area shape="rect" id="node2" href="$structMemoryPoolAllocator_1_1SharedData.html" title="{MemoryPoolAllocator\l\&lt; BaseAllocator \&gt;::SharedData\n|+ ownBaseAllocator\l+ ownBuffer\l|}" alt="" coords="125,359,329,465"/>
-<area shape="rect" id="node3" href="$structMemoryPoolAllocator_1_1ChunkHeader.html" title="Chunk header for perpending to each chunk. " alt="" coords="312,160,527,252"/>
-</map>

@@ -1,3 +1,0 @@
-<map id="ImGuiViewport" name="ImGuiViewport">
-<area shape="rect" id="node2" href="$structImGuiViewportP.html" title="{ImGuiViewportP\n|+ DrawListsLastFrame\l+ DrawLists\l+ DrawDataP\l+ DrawDataBuilder\l+ WorkOffsetMin\l+ WorkOffsetMax\l+ BuildWorkOffsetMin\l+ BuildWorkOffsetMax\l|+ ImGuiViewportP()\l+ ~ImGuiViewportP()\l+ CalcWorkRectPos()\l+ CalcWorkRectSize()\l+ UpdateWorkRect()\l+ GetMainRect()\l+ GetWorkRect()\l+ GetBuildWorkRect()\l}" alt="" coords="5,233,160,516"/>
-</map>

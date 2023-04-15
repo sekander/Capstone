@@ -1,8 +1,0 @@
-<map id="NPC_Actor" name="NPC_Actor">
-<area shape="rect" id="node5" href="$classBStateMachine.html" title="{BStateMachine\n||+ BStateMachine()\l+ ~BStateMachine()\l+ setInitialState()\l+ update()\l+ getCurrentStateName()\l}" alt="" coords="327,1013,496,1149"/>
-<area shape="rect" id="node7" href="$classCondition.html" title="{Condition\n||+ Condition()\l+ ~Condition()\l+ test()\l}" alt="" coords="43,1028,148,1135"/>
-<area shape="rect" id="node2" href="$classActor.html" title="{Actor\n|&#45; components\l|+ Actor()\l+ ~Actor()\l+ onCreate()\l+ onDestroy()\l+ update()\l+ draw()\l+ AddComponent()\l+ AddComponent()\l+ GetComponent()\l+ RemoveComponent()\l+ RemoveAllComponents()\l+ ListComponents()\l}" alt="" coords="5,293,185,532"/>
-<area shape="rect" id="node3" href="$classComponent.html" title="{Component\n|# isCreated\l|+ Component()\l+ ~Component()\l+ onCreate()\l+ onDestroy()\l+ update()\l+ draw()\l+ Component()\l+ ~Component()\l+ onCreate()\l+ onDestroy()\l+ update()\l+ draw()\l}" alt="" coords="37,5,154,244"/>
-<area shape="rect" id="node4" href="$classBState.html" title="{BState\n|&#45; transitions\l&#45; Stransitions\l&#45; name\l|+ BState()\l+ ~BState()\l+ getTransitions()\l+ getSTransitions()\l+ addTransition()\l+ addTransition()\l+ getName()\l}" alt="" coords="370,315,503,510"/>
-<area shape="rect" id="node6" href="$classTransition.html" title="{Transition\n||+ Transition()\l+ ~Transition()\l+ isTriggered()\l+ getTargetState()\l}" alt="" coords="154,1212,282,1333"/>
-</map>

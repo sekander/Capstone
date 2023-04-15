@@ -1,9 +1,0 @@
-<map id="ConditionInRange" name="ConditionInRange">
-<area shape="rect" id="node2" href="$classCondition.html" title="{Condition\n||+ Condition()\l+ ~Condition()\l+ test()\l}" alt="" coords="256,71,361,178"/>
-<area shape="rect" id="node3" href="$classNPC__Actor.html" title="{NPC_Actor\n|&#45; health\l&#45; npc_collision\l&#45; isWalking\l&#45; isRunning\l&#45; isAttacking\l|+ NPC_Actor()\l+ ~NPC_Actor()\l+ InitalizeActor()\l+ InitalizeActor()\l+ onCreate()\l+ onDestroy()\l+ basic_update()\l+ update()\l+ input()\l+ draw()\land 14 more...\l}" alt="" coords="500,623,619,905"/>
-<area shape="rect" id="node8" href="$classTransition.html" title="{Transition\n||+ Transition()\l+ ~Transition()\l+ isTriggered()\l+ getTargetState()\l}" alt="" coords="495,365,623,487"/>
-<area shape="rect" id="node7" href="$classBStateMachine.html" title="{BStateMachine\n||+ BStateMachine()\l+ ~BStateMachine()\l+ setInitialState()\l+ update()\l+ getCurrentStateName()\l}" alt="" coords="543,968,712,1104"/>
-<area shape="rect" id="node4" href="$classActor.html" title="{Actor\n|&#45; components\l|+ Actor()\l+ ~Actor()\l+ onCreate()\l+ onDestroy()\l+ update()\l+ draw()\l+ AddComponent()\l+ AddComponent()\l+ GetComponent()\l+ RemoveComponent()\l+ RemoveAllComponents()\l+ ListComponents()\l}" alt="" coords="648,307,828,545"/>
-<area shape="rect" id="node5" href="$classComponent.html" title="{Component\n|# isCreated\l|+ Component()\l+ ~Component()\l+ onCreate()\l+ onDestroy()\l+ update()\l+ draw()\l+ Component()\l+ ~Component()\l+ onCreate()\l+ onDestroy()\l+ update()\l+ draw()\l}" alt="" coords="617,5,734,244"/>
-<area shape="rect" id="node6" href="$classBState.html" title="{BState\n|&#45; transitions\l&#45; Stransitions\l&#45; name\l|+ BState()\l+ ~BState()\l+ getTransitions()\l+ getSTransitions()\l+ addTransition()\l+ addTransition()\l+ getName()\l}" alt="" coords="830,27,963,222"/>
-</map>

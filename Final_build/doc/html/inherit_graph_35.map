@@ -1,5 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classGenericReader_1_1NumberStream_3_01InputStream_00_01StackCharacter_00_01false_00_01false_01_4.html" title="GenericReader\&lt; SourceEncoding,\l TargetEncoding, StackAllocator\l \&gt;::NumberStream\&lt; InputStream,\l StackCharacter, false, false \&gt;" alt="" coords="5,5,225,76"/>
-<area shape="rect" id="node2" href="$classGenericReader_1_1NumberStream_3_01InputStream_00_01StackCharacter_00_01true_00_01false_01_4.html" title="GenericReader\&lt; SourceEncoding,\l TargetEncoding, StackAllocator\l \&gt;::NumberStream\&lt; InputStream,\l StackCharacter, true, false \&gt;" alt="" coords="273,5,493,76"/>
-<area shape="rect" id="node3" href="$classGenericReader_1_1NumberStream_3_01InputStream_00_01StackCharacter_00_01true_00_01true_01_4.html" title="GenericReader\&lt; SourceEncoding,\l TargetEncoding, StackAllocator\l \&gt;::NumberStream\&lt; InputStream,\l StackCharacter, true, true \&gt;" alt="" coords="541,5,761,76"/>
-</map>

@@ -1,4 +1,0 @@
-<map id="ImGuiStorage" name="ImGuiStorage">
-<area shape="rect" id="node2" href="$structImVector.html" title="{ImVector\&lt; ImGuiStorage\l::ImGuiStoragePair \&gt;\n|+ Size\l+ Capacity\l|+ ImVector()\l+ ImVector()\l+ operator=()\l+ ~ImVector()\l+ clear()\l+ clear_delete()\l+ clear_destruct()\l+ empty()\l+ size()\l+ size_in_bytes()\land 32 more...\l}" alt="" coords="29,233,195,487"/>
-<area shape="rect" id="node3" href="$structImGuiStorage_1_1ImGuiStoragePair.html" title="{ImGuiStorage::ImGuiStoragePair\n|+ key\l+ val_i\l+ val_f\l+ val_p\l+ @2\l|+ ImGuiStoragePair()\l+ ImGuiStoragePair()\l+ ImGuiStoragePair()\l}" alt="" coords="5,5,219,171"/>
-</map>

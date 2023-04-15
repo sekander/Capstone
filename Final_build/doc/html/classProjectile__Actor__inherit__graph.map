@@ -1,4 +1,0 @@
-<map id="Projectile_Actor" name="Projectile_Actor">
-<area shape="rect" id="node2" href="$classActor.html" title="{Actor\n|&#45; components\l|+ Actor()\l+ ~Actor()\l+ onCreate()\l+ onDestroy()\l+ update()\l+ draw()\l+ AddComponent()\l+ AddComponent()\l+ GetComponent()\l+ RemoveComponent()\l+ RemoveAllComponents()\l+ ListComponents()\l}" alt="" coords="5,307,185,545"/>
-<area shape="rect" id="node3" href="$classComponent.html" title="{Component\n|# parent\l# isCreated\l|+ Component()\l+ ~Component()\l+ onCreate()\l+ onDestroy()\l+ update()\l+ draw()\l+ Component()\l+ ~Component()\l+ onCreate()\l+ onDestroy()\l+ update()\l+ draw()\l}" alt="" coords="37,5,154,259"/>
-</map>

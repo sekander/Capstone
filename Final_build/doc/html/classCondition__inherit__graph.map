@@ -1,4 +1,0 @@
-<map id="Condition" name="Condition">
-<area shape="rect" id="node2" href="$classConditionInRange.html" title="{ConditionInRange\n|&#45; threshold\l|+ ConditionInRange()\l+ test()\l}" alt="" coords="5,160,152,252"/>
-<area shape="rect" id="node3" href="$classConditionOutOfRange.html" title="{ConditionOutOfRange\n|&#45; threshold\l|+ ConditionOutOfRange()\l+ test()\l}" alt="" coords="176,160,347,252"/>
-</map>
