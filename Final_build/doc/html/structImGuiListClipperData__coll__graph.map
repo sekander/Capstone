@@ -1,0 +1,5 @@
+<map id="ImGuiListClipperData" name="ImGuiListClipperData">
+<area shape="rect" id="node2" href="$structImGuiListClipper.html" title="{ImGuiListClipper\n|+ DisplayStart\l+ DisplayEnd\l+ ItemsCount\l+ ItemsHeight\l+ StartPosY\l+ TempData\l|+ ImGuiListClipper()\l+ ~ImGuiListClipper()\l+ Begin()\l+ End()\l+ Step()\l+ ForceDisplayRangeByIndices()\l+ ImGuiListClipper()\l}" alt="" coords="5,226,220,465"/>
+<area shape="rect" id="node3" href="$structImVector.html" title="{ImVector\&lt; ImGuiListClipper\lRange \&gt;\n|+ Size\l+ Capacity\l|+ ImVector()\l+ ImVector()\l+ operator=()\l+ ~ImVector()\l+ clear()\l+ clear_delete()\l+ clear_destruct()\l+ empty()\l+ size()\l+ size_in_bytes()\land 32 more...\l}" alt="" coords="245,219,429,472"/>
+<area shape="rect" id="node4" href="$structImGuiListClipperRange.html" title="{ImGuiListClipperRange\n|+ Min\l+ Max\l+ PosToIndexConvert\l+ PosToIndexOffsetMin\l+ PosToIndexOffsetMax\l|+ FromIndices()\l+ FromPositions()\l}" alt="" coords="254,5,419,156"/>
+</map>

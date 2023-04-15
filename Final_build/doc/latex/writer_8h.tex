@@ -1,0 +1,96 @@
+\hypertarget{writer_8h}{}\section{/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/rapidjson/writer.h File Reference}
+\label{writer_8h}\index{/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/rapidjson/writer.\+h@{/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/rapidjson/writer.\+h}}
+{\ttfamily \#include \char`\"{}stream.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}internal/clzll.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}internal/meta.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}internal/stack.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}internal/strfunc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}internal/dtoa.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}internal/itoa.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stringbuffer.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$new$>$}\newline
+Include dependency graph for writer.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{writer_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{writer_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classWriter}{Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$}
+\begin{DoxyCompactList}\small\item\em J\+S\+ON writer. \end{DoxyCompactList}\item 
+struct \hyperlink{structWriter_1_1Level}{Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Level}
+\begin{DoxyCompactList}\small\item\em Information for each nested level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{writer_8h_a1975595e2f1dc20a2d4859f340ac88c6}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+W\+R\+I\+T\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+L\+A\+GS}~\hyperlink{writer_8h_ab05d31260e712ed01daa80077f21e0a5a840478bb69a2b99ad9a47920ba176997}{k\+Write\+No\+Flags}
+\item 
+\#define \hyperlink{writer_8h_ae2c492a0a464591893d4255ea26d5e3a}{Z16}~0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{writer_8h_ab05d31260e712ed01daa80077f21e0a5}{Write\+Flag} \{ \hyperlink{writer_8h_ab05d31260e712ed01daa80077f21e0a5a840478bb69a2b99ad9a47920ba176997}{k\+Write\+No\+Flags} = 0, 
+\hyperlink{writer_8h_ab05d31260e712ed01daa80077f21e0a5a4a41050fd3b8f133b51ced9905f839c4}{k\+Write\+Validate\+Encoding\+Flag} = 1, 
+\hyperlink{writer_8h_ab05d31260e712ed01daa80077f21e0a5a1ff67a91b689ae093ce241e0301c0816}{k\+Write\+Nan\+And\+Inf\+Flag} = 2, 
+\hyperlink{writer_8h_ab05d31260e712ed01daa80077f21e0a5a63d8536bdc203be5310a1c58643f30b8}{k\+Write\+Default\+Flags} = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+W\+R\+I\+T\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+L\+A\+GS
+ \}\begin{DoxyCompactList}\small\item\em Combination of write\+Flags. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{writer_8h_a1975595e2f1dc20a2d4859f340ac88c6}\label{writer_8h_a1975595e2f1dc20a2d4859f340ac88c6}} 
+\index{writer.\+h@{writer.\+h}!R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+W\+R\+I\+T\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+L\+A\+GS@{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+W\+R\+I\+T\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+L\+A\+GS}}
+\index{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+W\+R\+I\+T\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+L\+A\+GS@{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+W\+R\+I\+T\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+L\+A\+GS}!writer.\+h@{writer.\+h}}
+\subsubsection{\texorpdfstring{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+W\+R\+I\+T\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+L\+A\+GS}{RAPIDJSON\_WRITE\_DEFAULT\_FLAGS}}
+{\footnotesize\ttfamily \#define R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+W\+R\+I\+T\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+L\+A\+GS~\hyperlink{writer_8h_ab05d31260e712ed01daa80077f21e0a5a840478bb69a2b99ad9a47920ba176997}{k\+Write\+No\+Flags}}
+
+\mbox{\Hypertarget{writer_8h_ae2c492a0a464591893d4255ea26d5e3a}\label{writer_8h_ae2c492a0a464591893d4255ea26d5e3a}} 
+\index{writer.\+h@{writer.\+h}!Z16@{Z16}}
+\index{Z16@{Z16}!writer.\+h@{writer.\+h}}
+\subsubsection{\texorpdfstring{Z16}{Z16}}
+{\footnotesize\ttfamily \#define Z16~0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{writer_8h_ab05d31260e712ed01daa80077f21e0a5}\label{writer_8h_ab05d31260e712ed01daa80077f21e0a5}} 
+\index{writer.\+h@{writer.\+h}!Write\+Flag@{Write\+Flag}}
+\index{Write\+Flag@{Write\+Flag}!writer.\+h@{writer.\+h}}
+\subsubsection{\texorpdfstring{Write\+Flag}{WriteFlag}}
+{\footnotesize\ttfamily enum \hyperlink{writer_8h_ab05d31260e712ed01daa80077f21e0a5}{Write\+Flag}}
+
+
+
+Combination of write\+Flags. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Write\+No\+Flags@{k\+Write\+No\+Flags}!writer.\+h@{writer.\+h}}\index{writer.\+h@{writer.\+h}!k\+Write\+No\+Flags@{k\+Write\+No\+Flags}}}\mbox{\Hypertarget{writer_8h_ab05d31260e712ed01daa80077f21e0a5a840478bb69a2b99ad9a47920ba176997}\label{writer_8h_ab05d31260e712ed01daa80077f21e0a5a840478bb69a2b99ad9a47920ba176997}} 
+k\+Write\+No\+Flags&No flags are set. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Write\+Validate\+Encoding\+Flag@{k\+Write\+Validate\+Encoding\+Flag}!writer.\+h@{writer.\+h}}\index{writer.\+h@{writer.\+h}!k\+Write\+Validate\+Encoding\+Flag@{k\+Write\+Validate\+Encoding\+Flag}}}\mbox{\Hypertarget{writer_8h_ab05d31260e712ed01daa80077f21e0a5a4a41050fd3b8f133b51ced9905f839c4}\label{writer_8h_ab05d31260e712ed01daa80077f21e0a5a4a41050fd3b8f133b51ced9905f839c4}} 
+k\+Write\+Validate\+Encoding\+Flag&Validate encoding of J\+S\+ON strings. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Write\+Nan\+And\+Inf\+Flag@{k\+Write\+Nan\+And\+Inf\+Flag}!writer.\+h@{writer.\+h}}\index{writer.\+h@{writer.\+h}!k\+Write\+Nan\+And\+Inf\+Flag@{k\+Write\+Nan\+And\+Inf\+Flag}}}\mbox{\Hypertarget{writer_8h_ab05d31260e712ed01daa80077f21e0a5a1ff67a91b689ae093ce241e0301c0816}\label{writer_8h_ab05d31260e712ed01daa80077f21e0a5a1ff67a91b689ae093ce241e0301c0816}} 
+k\+Write\+Nan\+And\+Inf\+Flag&Allow writing of Infinity, -\/\+Infinity and NaN. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Write\+Default\+Flags@{k\+Write\+Default\+Flags}!writer.\+h@{writer.\+h}}\index{writer.\+h@{writer.\+h}!k\+Write\+Default\+Flags@{k\+Write\+Default\+Flags}}}\mbox{\Hypertarget{writer_8h_ab05d31260e712ed01daa80077f21e0a5a63d8536bdc203be5310a1c58643f30b8}\label{writer_8h_ab05d31260e712ed01daa80077f21e0a5a63d8536bdc203be5310a1c58643f30b8}} 
+k\+Write\+Default\+Flags&Default write flags. Can be customized by defining R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+W\+R\+I\+T\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+L\+A\+GS. \\
+\hline
+
+\end{DoxyEnumFields}

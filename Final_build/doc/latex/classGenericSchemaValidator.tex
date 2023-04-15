@@ -1,0 +1,1335 @@
+\hypertarget{classGenericSchemaValidator}{}\section{Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$ Class Template Reference}
+\label{classGenericSchemaValidator}\index{Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$@{Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$}}
+
+
+J\+S\+ON Schema Validator.  
+
+
+
+
+{\ttfamily \#include $<$fwd.\+h$>$}
+
+
+
+Inheritance diagram for Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGenericSchemaValidator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGenericSchemaValidator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Schema\+Document\+Type\+::\+Schema\+Type \hyperlink{classGenericSchemaValidator_ac79628f00f6720bbabb70b44f0d076a0}{Schema\+Type}
+\item 
+typedef Schema\+Document\+Type\+::\+Pointer\+Type \hyperlink{classGenericSchemaValidator_ae0c6c9a9c0ff6bae80e75c6705f2668b}{Pointer\+Type}
+\item 
+typedef Schema\+Type\+::\+Encoding\+Type \hyperlink{classGenericSchemaValidator_acf1c5361bb96da87d23167d8720b1ea5}{Encoding\+Type}
+\item 
+typedef Schema\+Type\+::\+S\+Value \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value}
+\item 
+typedef Encoding\+Type\+::\+Ch \hyperlink{classGenericSchemaValidator_a8b7dab5a0cda9cc0adaefb4401d260c1}{Ch}
+\item 
+typedef \hyperlink{structGenericStringRef}{Generic\+String\+Ref}$<$ \hyperlink{classGenericSchemaValidator_a8b7dab5a0cda9cc0adaefb4401d260c1}{Ch} $>$ \hyperlink{classGenericSchemaValidator_a604160fcd6af7582e0deccc205309dcf}{String\+Ref\+Type}
+\item 
+typedef \hyperlink{classGenericValue}{Generic\+Value}$<$ \hyperlink{classGenericSchemaValidator_acf1c5361bb96da87d23167d8720b1ea5}{Encoding\+Type}, State\+Allocator $>$ \hyperlink{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}{Value\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGenericSchemaValidator_a202ee6fdbe5ae9eab3e77a81ecdfeb6d}{Generic\+Schema\+Validator} (const Schema\+Document\+Type \&schema\+Document, State\+Allocator $\ast$allocator=0, size\+\_\+t schema\+Stack\+Capacity=\hyperlink{classGenericSchemaValidator_aab8510602779c91bc5b55ea81fd7385b}{k\+Default\+Schema\+Stack\+Capacity}, size\+\_\+t document\+Stack\+Capacity=\hyperlink{classGenericSchemaValidator_a0052a86778575179422064167a95c405}{k\+Default\+Document\+Stack\+Capacity})
+\begin{DoxyCompactList}\small\item\em Constructor without output handler. \end{DoxyCompactList}\item 
+\hyperlink{classGenericSchemaValidator_ac2027be8ca55b01cd6f38b45f4e233b4}{Generic\+Schema\+Validator} (const Schema\+Document\+Type \&schema\+Document, Output\+Handler \&output\+Handler, State\+Allocator $\ast$allocator=0, size\+\_\+t schema\+Stack\+Capacity=\hyperlink{classGenericSchemaValidator_aab8510602779c91bc5b55ea81fd7385b}{k\+Default\+Schema\+Stack\+Capacity}, size\+\_\+t document\+Stack\+Capacity=\hyperlink{classGenericSchemaValidator_a0052a86778575179422064167a95c405}{k\+Default\+Document\+Stack\+Capacity})
+\begin{DoxyCompactList}\small\item\em Constructor with output handler. \end{DoxyCompactList}\item 
+\hyperlink{classGenericSchemaValidator_a3eab83d483a50efb0c0390adf3291963}{$\sim$\+Generic\+Schema\+Validator} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a49efbbe098cb77728be3d48cafed17e4}{Reset} ()
+\begin{DoxyCompactList}\small\item\em Reset the internal states. \end{DoxyCompactList}\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a8374dd359e572f653c49293545ad3ef4}{Reset\+Error} ()
+\begin{DoxyCompactList}\small\item\em Reset the error state. \end{DoxyCompactList}\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_af4840dac2410bcfe73912c30eb95b875}{Set\+Validate\+Flags} (unsigned flags)
+\begin{DoxyCompactList}\small\item\em Implementation of I\+Schema\+Validator. \end{DoxyCompactList}\item 
+virtual unsigned \hyperlink{classGenericSchemaValidator_a318bf1cf98d2f18074edd336b1bc684d}{Get\+Validate\+Flags} () const
+\item 
+virtual bool \hyperlink{classGenericSchemaValidator_a8ebda4da3d8b1fc41e57f15dd62e8f19}{Is\+Valid} () const
+\item 
+\hyperlink{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}{Value\+Type} \& \hyperlink{classGenericSchemaValidator_a7af476e6940d935efcf79d823c933035}{Get\+Error} ()
+\begin{DoxyCompactList}\small\item\em End of Implementation of I\+Schema\+Validator. \end{DoxyCompactList}\item 
+const \hyperlink{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}{Value\+Type} \& \hyperlink{classGenericSchemaValidator_a15bad1493265a83928c869dbeb034ef0}{Get\+Error} () const
+\item 
+\hyperlink{classGenericSchemaValidator_ae0c6c9a9c0ff6bae80e75c6705f2668b}{Pointer\+Type} \hyperlink{classGenericSchemaValidator_a5b8f2d5c466b2a362e2e4c3bcfbfc5a8}{Get\+Invalid\+Schema\+Pointer} () const
+\begin{DoxyCompactList}\small\item\em Gets the J\+S\+ON pointer pointed to the invalid schema. \end{DoxyCompactList}\item 
+const \hyperlink{classGenericSchemaValidator_a8b7dab5a0cda9cc0adaefb4401d260c1}{Ch} $\ast$ \hyperlink{classGenericSchemaValidator_ab71ec18e5a013e5153a10b312a4f03bc}{Get\+Invalid\+Schema\+Keyword} () const
+\begin{DoxyCompactList}\small\item\em Gets the keyword of invalid schema. \end{DoxyCompactList}\item 
+\hyperlink{group__RAPIDJSON__ERRORS_ga2e1f88f94a5d9a6817a5de0ed2f0105a}{Validate\+Error\+Code} \hyperlink{classGenericSchemaValidator_aeba2093eb93f77b239e9b4c27219c982}{Get\+Invalid\+Schema\+Code} () const
+\begin{DoxyCompactList}\small\item\em Gets the error code of invalid schema. \end{DoxyCompactList}\item 
+\hyperlink{classGenericSchemaValidator_ae0c6c9a9c0ff6bae80e75c6705f2668b}{Pointer\+Type} \hyperlink{classGenericSchemaValidator_ac10a88c4dc138bbdbe2afd041658a3b0}{Get\+Invalid\+Document\+Pointer} () const
+\begin{DoxyCompactList}\small\item\em Gets the J\+S\+ON pointer pointed to the invalid value. \end{DoxyCompactList}\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_ab2f08413a2b23d73d4bbd09c8ca1f547}{Not\+Multiple\+Of} (\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\+\_\+t} actual, const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&expected)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a5c59d25dc44d85404cc587ebfa7455cd}{Not\+Multiple\+Of} (\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} actual, const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&expected)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_ae5fc8a4545fed53955ec6c57b79ca949}{Not\+Multiple\+Of} (double actual, const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&expected)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a4c9c7db8a3488f84a5a86681ad1d8194}{Above\+Maximum} (\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\+\_\+t} actual, const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&expected, bool exclusive)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a9262c73768789eb7cf8dc271cfec7f96}{Above\+Maximum} (\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} actual, const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&expected, bool exclusive)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_abcf1f5b46bdae8ca20a80858d603483d}{Above\+Maximum} (double actual, const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&expected, bool exclusive)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a15a12306bc14f16357b4f2edea8396b7}{Below\+Minimum} (\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\+\_\+t} actual, const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&expected, bool exclusive)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_ad3db1f3852a1b2e6fada43fbcad401ea}{Below\+Minimum} (\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} actual, const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&expected, bool exclusive)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_afdd4a9787239a6fc3eeb56d34fd531f4}{Below\+Minimum} (double actual, const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&expected, bool exclusive)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a227dce44e0684a73accbfb062200eb26}{Too\+Long} (const \hyperlink{classGenericSchemaValidator_a8b7dab5a0cda9cc0adaefb4401d260c1}{Ch} $\ast$str, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} \hyperlink{imgui__impl__opengl3__loader_8h_a011fc24f10426c01349e94a4edd4b0d5}{length}, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} expected)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a7711071f95ead18c0dd99f69c09a4c11}{Too\+Short} (const \hyperlink{classGenericSchemaValidator_a8b7dab5a0cda9cc0adaefb4401d260c1}{Ch} $\ast$str, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} \hyperlink{imgui__impl__opengl3__loader_8h_a011fc24f10426c01349e94a4edd4b0d5}{length}, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} expected)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_af1be05889e634936c223f24c6e5f6ec5}{Does\+Not\+Match} (const \hyperlink{classGenericSchemaValidator_a8b7dab5a0cda9cc0adaefb4401d260c1}{Ch} $\ast$str, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} \hyperlink{imgui__impl__opengl3__loader_8h_a011fc24f10426c01349e94a4edd4b0d5}{length})
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a2d47a88a3d9fb82466b5bda480b6e70f}{Disallowed\+Item} (\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} \hyperlink{imgui__impl__opengl3__loader_8h_a57f14e05b1900f16a2da82ade47d0c6d}{index})
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_af39007d9bf43126dab231961a1c5064f}{Too\+Few\+Items} (\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} actual\+Count, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} expected\+Count)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a78e85eeae0e2bdef827815672a7fbbc9}{Too\+Many\+Items} (\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} actual\+Count, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} expected\+Count)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a82aa865146069e3ba5010d25346a71f2}{Duplicate\+Items} (\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} index1, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} index2)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_ad7ca0a327420c110e9ee6e70b2cdbc87}{Too\+Many\+Properties} (\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} actual\+Count, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} expected\+Count)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_aaebaf28aa289826a3c39dc953b0ca466}{Too\+Few\+Properties} (\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} actual\+Count, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} expected\+Count)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a41c4d67e349561f13948a5045bfc50c9}{Start\+Missing\+Properties} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a8d355eeb25364e414d9a2f8121aa0eaa}{Add\+Missing\+Property} (const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name})
+\item 
+bool \hyperlink{classGenericSchemaValidator_a557b7aa531ff94a6355fed8f8575fed5}{End\+Missing\+Properties} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a29fa7c6f787450b2df1f9d440436aeab}{Property\+Violations} (I\+Schema\+Validator $\ast$$\ast$subvalidators, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} \hyperlink{imgui__impl__opengl3__loader_8h_a619bc20e8198de3bd3f3d7fc34de66b2}{count})
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a44f06b99edfb650c6088f17e8af5b5a8}{Disallowed\+Property} (const \hyperlink{classGenericSchemaValidator_a8b7dab5a0cda9cc0adaefb4401d260c1}{Ch} $\ast$\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} \hyperlink{imgui__impl__opengl3__loader_8h_a011fc24f10426c01349e94a4edd4b0d5}{length})
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a767f115cc90e0f2f5bdd1c9fbdbf75df}{Start\+Dependency\+Errors} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_ac4faa073bc4671f42e98a59a9e9cb01a}{Start\+Missing\+Dependent\+Properties} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a85f2be483f0ddfc402a97665aff6eca9}{Add\+Missing\+Dependent\+Property} (const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&target\+Name)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_afdcd2ff7b5f7e24f4f3d6976fa5b803e}{End\+Missing\+Dependent\+Properties} (const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&source\+Name)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a27542a75617cdc28f6846b594fe01229}{Add\+Dependency\+Schema\+Error} (const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&source\+Name, I\+Schema\+Validator $\ast$subvalidator)
+\item 
+bool \hyperlink{classGenericSchemaValidator_ab6d1c964faaa0f86f9da51a0f66dc1e4}{End\+Dependency\+Errors} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_afc9082d5e9733762e64df3faa88e0160}{Disallowed\+Value} (const \hyperlink{group__RAPIDJSON__ERRORS_ga2e1f88f94a5d9a6817a5de0ed2f0105a}{Validate\+Error\+Code} code=\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa3c12e9cbc8a479b77776ceccbda4c289}{k\+Validate\+Error\+Enum})
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a9904719420fd91200f80772e92fe225f}{Start\+Disallowed\+Type} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a68e5308e5ca9726ee66139a212b63bcc}{Add\+Expected\+Type} (const typename Schema\+Type\+::\+Value\+Type \&expected\+Type)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_ae0f99bfee3e2021c05322fd5d6de2f6e}{End\+Disallowed\+Type} (const typename Schema\+Type\+::\+Value\+Type \&actual\+Type)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a4275b02cdd86bfe11b42afe94817eae5}{Not\+All\+Of} (I\+Schema\+Validator $\ast$$\ast$subvalidators, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} \hyperlink{imgui__impl__opengl3__loader_8h_a619bc20e8198de3bd3f3d7fc34de66b2}{count})
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_aae9c45082721c650b91f8418cecc7293}{None\+Of} (I\+Schema\+Validator $\ast$$\ast$subvalidators, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} \hyperlink{imgui__impl__opengl3__loader_8h_a619bc20e8198de3bd3f3d7fc34de66b2}{count})
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_ad4819a91a42d781391760f26014cd315}{Not\+One\+Of} (I\+Schema\+Validator $\ast$$\ast$subvalidators, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} \hyperlink{imgui__impl__opengl3__loader_8h_a619bc20e8198de3bd3f3d7fc34de66b2}{count})
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a53c37b0dba5f2ca79d2c7c13488e5ffd}{Multiple\+One\+Of} (\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} index1, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} index2)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_acc65a322086c792d6534e306c7a091cf}{Disallowed} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_aa66173c9e71ed6143fa2b35ce777f36a}{Disallowed\+When\+Writing} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_aa8bee0b3cbf45421151cf1b4040c4df7}{Disallowed\+When\+Reading} ()
+\item 
+bool \hyperlink{classGenericSchemaValidator_a7137af73e934f50c66cbb8a9aa802ea6}{Null} ()
+\item 
+bool \hyperlink{classGenericSchemaValidator_aa25fa7456f2f308a105e400f01a4afde}{Bool} (bool b)
+\item 
+bool \hyperlink{classGenericSchemaValidator_ad823c29990225661a4df69d34647b659}{Int} (int \hyperlink{game__play__state_8cpp_acb559820d9ca11295b4500f179ef6392}{i})
+\item 
+bool \hyperlink{classGenericSchemaValidator_aa688665c5274f93543c84a4b6cabe8da}{Uint} (unsigned u)
+\item 
+bool \hyperlink{classGenericSchemaValidator_ac5a9e416e18129a7b787f251019a828f}{Int64} (\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\+\_\+t} \hyperlink{game__play__state_8cpp_acb559820d9ca11295b4500f179ef6392}{i})
+\item 
+bool \hyperlink{classGenericSchemaValidator_abfc56c58cf0b65318e376fc5f2879292}{Uint64} (\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} u)
+\item 
+bool \hyperlink{classGenericSchemaValidator_aed0532dbda3ac6f3ca7196af06066b86}{Double} (double d)
+\item 
+bool \hyperlink{classGenericSchemaValidator_ae4f024145421d2c1dde08a9de528722a}{Raw\+Number} (const \hyperlink{classGenericSchemaValidator_a8b7dab5a0cda9cc0adaefb4401d260c1}{Ch} $\ast$str, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} \hyperlink{imgui__impl__opengl3__loader_8h_a011fc24f10426c01349e94a4edd4b0d5}{length}, bool copy)
+\item 
+bool \hyperlink{classGenericSchemaValidator_a33cf3f83307a8fea38c3238ef75c3d58}{String} (const \hyperlink{classGenericSchemaValidator_a8b7dab5a0cda9cc0adaefb4401d260c1}{Ch} $\ast$str, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} \hyperlink{imgui__impl__opengl3__loader_8h_a011fc24f10426c01349e94a4edd4b0d5}{length}, bool copy)
+\item 
+bool \hyperlink{classGenericSchemaValidator_a59972d612c3d37aae9a30222e428d216}{Start\+Object} ()
+\item 
+bool \hyperlink{classGenericSchemaValidator_a6d08b458216ec4a09eed9d94800d05c1}{Key} (const \hyperlink{classGenericSchemaValidator_a8b7dab5a0cda9cc0adaefb4401d260c1}{Ch} $\ast$str, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} len, bool copy)
+\item 
+bool \hyperlink{classGenericSchemaValidator_aa89e14f0f731f6acdec22a0f7e003037}{End\+Object} (\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} member\+Count)
+\item 
+bool \hyperlink{classGenericSchemaValidator_aba13751f802531ed8cbd850778ea993c}{Start\+Array} ()
+\item 
+bool \hyperlink{classGenericSchemaValidator_a67b501f0f65d40e0086ca8216882b34f}{End\+Array} (\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} element\+Count)
+\item 
+virtual I\+Schema\+Validator $\ast$ \hyperlink{classGenericSchemaValidator_a48c724c1255cf1fcc53df75c791423a9}{Create\+Schema\+Validator} (const \hyperlink{classGenericSchemaValidator_ac79628f00f6720bbabb70b44f0d076a0}{Schema\+Type} \&root, const bool inherit\+Continue\+On\+Errors)
+\item 
+virtual \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_ae24fa298e328f1fd7dda2ef6267156d2}{Destroy\+Schema\+Validator} (I\+Schema\+Validator $\ast$validator)
+\item 
+virtual \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} $\ast$ \hyperlink{classGenericSchemaValidator_abc377481583ca2095fb784be88887faa}{Create\+Hasher} ()
+\item 
+virtual \hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} \hyperlink{classGenericSchemaValidator_ac01c45982a1f512e1ca06fe5544b0c0f}{Get\+Hash\+Code} (\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} $\ast$hasher)
+\item 
+virtual \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a007eef58be575dc562543d069ddd2710}{Destrory\+Hasher} (\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} $\ast$hasher)
+\item 
+virtual \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} $\ast$ \hyperlink{classGenericSchemaValidator_a7c999dfb3118aaa08495d60eee6d3732}{Malloc\+State} (size\+\_\+t \hyperlink{imgui__impl__opengl3__loader_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size})
+\item 
+virtual \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a4e250737a411af2969a9e585a7da4187}{Free\+State} (\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} $\ast$p)
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Schema\+Type\+::\+Context \hyperlink{classGenericSchemaValidator_ac6403619afb8aa8729e1e15d8c34d350}{Context}
+\item 
+typedef \hyperlink{classGenericValue}{Generic\+Value}$<$ \hyperlink{structUTF8}{U\+T\+F8}$<$$>$, State\+Allocator $>$ \hyperlink{classGenericSchemaValidator_ae1cb713f267c2df2f8c5d4fbfe427ea4}{Hash\+Code\+Array}
+\item 
+typedef \hyperlink{classinternal_1_1Hasher}{internal\+::\+Hasher}$<$ \hyperlink{classGenericSchemaValidator_acf1c5361bb96da87d23167d8720b1ea5}{Encoding\+Type}, State\+Allocator $>$ \hyperlink{classGenericSchemaValidator_ab7df29495a3ba8f3f5dc828f90a40936}{Hasher\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGenericSchemaValidator_a639e2060d70c0788e3d9e87f0c770a7c}{Generic\+Schema\+Validator} (const Schema\+Document\+Type \&schema\+Document, const \hyperlink{classGenericSchemaValidator_ac79628f00f6720bbabb70b44f0d076a0}{Schema\+Type} \&root, const char $\ast$base\+Path, size\+\_\+t base\+Path\+Size, unsigned depth, State\+Allocator $\ast$allocator=0, size\+\_\+t schema\+Stack\+Capacity=\hyperlink{classGenericSchemaValidator_aab8510602779c91bc5b55ea81fd7385b}{k\+Default\+Schema\+Stack\+Capacity}, size\+\_\+t document\+Stack\+Capacity=\hyperlink{classGenericSchemaValidator_a0052a86778575179422064167a95c405}{k\+Default\+Document\+Stack\+Capacity})
+\item 
+State\+Allocator \& \hyperlink{classGenericSchemaValidator_a84115d2b389b82723a90987c08684cbb}{Get\+State\+Allocator} ()
+\item 
+bool \hyperlink{classGenericSchemaValidator_a9f679277e023babf6a62ef8087ffd459}{Get\+Continue\+On\+Errors} () const
+\item 
+bool \hyperlink{classGenericSchemaValidator_a3a701bdd690fa33db03431c8336a7653}{Begin\+Value} ()
+\item 
+bool \hyperlink{classGenericSchemaValidator_ae78fc24af2c112de5d7651f0755257db}{End\+Value} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_acf4db1d2b158d7220adc228d872938ba}{Append\+Token} (const \hyperlink{classGenericSchemaValidator_a8b7dab5a0cda9cc0adaefb4401d260c1}{Ch} $\ast$str, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} len)
+\item 
+R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_ae7302da6df72e7af0451a78998eb624d}{Push\+Schema} (const \hyperlink{classGenericSchemaValidator_ac79628f00f6720bbabb70b44f0d076a0}{Schema\+Type} \&schema)
+\item 
+R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a6cc7f347eace3847c428fce684c97b56}{Pop\+Schema} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_adabc1745041f939572aae7e2e6477f8e}{Add\+Error\+Instance\+Location} (\hyperlink{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}{Value\+Type} \&\hyperlink{imgui__impl__opengl3__loader_8h_aa7f56a70231ed8bc64f97aa7c37fcb19}{result}, bool parent)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_abc04c7dc0ec538a08f62c76a41ce0e9a}{Add\+Error\+Schema\+Location} (\hyperlink{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}{Value\+Type} \&\hyperlink{imgui__impl__opengl3__loader_8h_aa7f56a70231ed8bc64f97aa7c37fcb19}{result}, \hyperlink{classGenericSchemaValidator_ae0c6c9a9c0ff6bae80e75c6705f2668b}{Pointer\+Type} schema=\hyperlink{classGenericSchemaValidator_ae0c6c9a9c0ff6bae80e75c6705f2668b}{Pointer\+Type}())
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a437bd3210074af1b0df90b72e15e9b7e}{Add\+Error\+Code} (\hyperlink{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}{Value\+Type} \&\hyperlink{imgui__impl__opengl3__loader_8h_aa7f56a70231ed8bc64f97aa7c37fcb19}{result}, const \hyperlink{group__RAPIDJSON__ERRORS_ga2e1f88f94a5d9a6817a5de0ed2f0105a}{Validate\+Error\+Code} code)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a0dcd3dedf97c2ccff9de5b194447f175}{Add\+Error} (\hyperlink{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}{Value\+Type} \&keyword, \hyperlink{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}{Value\+Type} \&error)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a9553b3f47b319674386ecafa513f0489}{Add\+Current\+Error} (const \hyperlink{group__RAPIDJSON__ERRORS_ga2e1f88f94a5d9a6817a5de0ed2f0105a}{Validate\+Error\+Code} code, bool parent=false)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a55995260e5ef46a7b0706823d2985446}{Merge\+Error} (\hyperlink{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}{Value\+Type} \&other)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_a752965fdb585b99db45201579f8ff04a}{Add\+Number\+Error} (const \hyperlink{group__RAPIDJSON__ERRORS_ga2e1f88f94a5d9a6817a5de0ed2f0105a}{Validate\+Error\+Code} code, \hyperlink{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}{Value\+Type} \&actual, const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&expected, const typename Schema\+Type\+::\+Value\+Type \&($\ast$exclusive)()=0)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator_aeaad9469f70e135ac75983e796818970}{Add\+Error\+Array} (const \hyperlink{group__RAPIDJSON__ERRORS_ga2e1f88f94a5d9a6817a5de0ed2f0105a}{Validate\+Error\+Code} code, I\+Schema\+Validator $\ast$$\ast$subvalidators, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} \hyperlink{imgui__impl__opengl3__loader_8h_a619bc20e8198de3bd3f3d7fc34de66b2}{count})
+\item 
+const \hyperlink{classGenericSchemaValidator_ac79628f00f6720bbabb70b44f0d076a0}{Schema\+Type} \& \hyperlink{classGenericSchemaValidator_ad00ad0a27d466e975de5e0f104e6962d}{Current\+Schema} () const
+\item 
+\hyperlink{classGenericSchemaValidator_ac6403619afb8aa8729e1e15d8c34d350}{Context} \& \hyperlink{classGenericSchemaValidator_a057dffa977f78cb7447a0850500cb2e0}{Current\+Context} ()
+\item 
+const \hyperlink{classGenericSchemaValidator_ac6403619afb8aa8729e1e15d8c34d350}{Context} \& \hyperlink{classGenericSchemaValidator_a9008095198e2f892e91f018db2fc0536}{Current\+Context} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const Schema\+Document\+Type $\ast$ \hyperlink{classGenericSchemaValidator_a433e6fe22bea392d1dbd57e9f581bd7a}{schema\+Document\+\_\+}
+\item 
+const \hyperlink{classGenericSchemaValidator_ac79628f00f6720bbabb70b44f0d076a0}{Schema\+Type} \& \hyperlink{classGenericSchemaValidator_a7517bd5334a8fc4696fe298dbab2ce31}{root\+\_\+}
+\item 
+State\+Allocator $\ast$ \hyperlink{classGenericSchemaValidator_a1fea37905619d085cb3d3c6699b209a5}{state\+Allocator\+\_\+}
+\item 
+State\+Allocator $\ast$ \hyperlink{classGenericSchemaValidator_a1f8233bfa10ae88aac6137a0e979174b}{own\+State\+Allocator\+\_\+}
+\item 
+\hyperlink{classinternal_1_1Stack}{internal\+::\+Stack}$<$ State\+Allocator $>$ \hyperlink{classGenericSchemaValidator_ae5775fdd9f94b8a2581f774d97135670}{schema\+Stack\+\_\+}
+\begin{DoxyCompactList}\small\item\em stack to store the current path of schema (Base\+Schema\+Type $\ast$) \end{DoxyCompactList}\item 
+\hyperlink{classinternal_1_1Stack}{internal\+::\+Stack}$<$ State\+Allocator $>$ \hyperlink{classGenericSchemaValidator_a98a99734991555b5458398b01f0cce44}{document\+Stack\+\_\+}
+\begin{DoxyCompactList}\small\item\em stack to store the current path of validating document (Ch) \end{DoxyCompactList}\item 
+Output\+Handler $\ast$ \hyperlink{classGenericSchemaValidator_ac03855c6eb85ffcae993105082e09fc1}{output\+Handler\+\_\+}
+\item 
+\hyperlink{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}{Value\+Type} \hyperlink{classGenericSchemaValidator_a9c3e6efc65a62225a83ae9d0f377c074}{error\+\_\+}
+\item 
+\hyperlink{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}{Value\+Type} \hyperlink{classGenericSchemaValidator_afa09db405ea6ce3f35d04401c89023f4}{current\+Error\+\_\+}
+\item 
+\hyperlink{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}{Value\+Type} \hyperlink{classGenericSchemaValidator_a08633a530070c002f9f0016991a22187}{missing\+Dependents\+\_\+}
+\item 
+bool \hyperlink{classGenericSchemaValidator_a637361bc6c37c60278576169f01c84bb}{valid\+\_\+}
+\item 
+unsigned \hyperlink{classGenericSchemaValidator_ab56d66840b9f7afe8a806e31afa10a10}{flags\+\_\+}
+\item 
+unsigned \hyperlink{classGenericSchemaValidator_ac90e249c2d8d5e68631e3f8ce44b15fe}{depth\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const size\+\_\+t \hyperlink{classGenericSchemaValidator_aab8510602779c91bc5b55ea81fd7385b}{k\+Default\+Schema\+Stack\+Capacity} = 1024
+\item 
+static const size\+\_\+t \hyperlink{classGenericSchemaValidator_a0052a86778575179422064167a95c405}{k\+Default\+Document\+Stack\+Capacity} = 256
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$\newline
+class Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$}
+
+J\+S\+ON Schema Validator. 
+
+A S\+AX style J\+S\+ON schema validator. It uses a {\ttfamily \hyperlink{classGenericSchemaDocument}{Generic\+Schema\+Document}} to validate S\+AX events. It delegates the incoming S\+AX events to an output handler. The default output handler does nothing. It can be reused multiple times by calling {\ttfamily \hyperlink{classGenericSchemaValidator_a49efbbe098cb77728be3d48cafed17e4}{Reset()}}.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Schema\+Document\+Type} & Type of schema document. \\
+\hline
+{\em Output\+Handler} & Type of output handler. Default handler does nothing. \\
+\hline
+{\em State\+Allocator} & Allocator for storing the internal validation states. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classGenericSchemaValidator_a8b7dab5a0cda9cc0adaefb4401d260c1}\label{classGenericSchemaValidator_a8b7dab5a0cda9cc0adaefb4401d260c1}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Ch@{Ch}}
+\index{Ch@{Ch}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+typedef Encoding\+Type\+::\+Ch \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::\hyperlink{classGenericSchemaValidator_a8b7dab5a0cda9cc0adaefb4401d260c1}{Ch}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_ac6403619afb8aa8729e1e15d8c34d350}\label{classGenericSchemaValidator_ac6403619afb8aa8729e1e15d8c34d350}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Context@{Context}}
+\index{Context@{Context}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Context}{Context}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+typedef Schema\+Type\+::\+Context \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::\hyperlink{classGenericSchemaValidator_ac6403619afb8aa8729e1e15d8c34d350}{Context}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_acf1c5361bb96da87d23167d8720b1ea5}\label{classGenericSchemaValidator_acf1c5361bb96da87d23167d8720b1ea5}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Encoding\+Type@{Encoding\+Type}}
+\index{Encoding\+Type@{Encoding\+Type}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Encoding\+Type}{EncodingType}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+typedef Schema\+Type\+::\+Encoding\+Type \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::\hyperlink{classGenericSchemaValidator_acf1c5361bb96da87d23167d8720b1ea5}{Encoding\+Type}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_ae1cb713f267c2df2f8c5d4fbfe427ea4}\label{classGenericSchemaValidator_ae1cb713f267c2df2f8c5d4fbfe427ea4}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Hash\+Code\+Array@{Hash\+Code\+Array}}
+\index{Hash\+Code\+Array@{Hash\+Code\+Array}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Hash\+Code\+Array}{HashCodeArray}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+typedef \hyperlink{classGenericValue}{Generic\+Value}$<$\hyperlink{structUTF8}{U\+T\+F8}$<$$>$, State\+Allocator$>$ \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::\hyperlink{classGenericSchemaValidator_ae1cb713f267c2df2f8c5d4fbfe427ea4}{Hash\+Code\+Array}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_ab7df29495a3ba8f3f5dc828f90a40936}\label{classGenericSchemaValidator_ab7df29495a3ba8f3f5dc828f90a40936}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Hasher\+Type@{Hasher\+Type}}
+\index{Hasher\+Type@{Hasher\+Type}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Hasher\+Type}{HasherType}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+typedef \hyperlink{classinternal_1_1Hasher}{internal\+::\+Hasher}$<$\hyperlink{classGenericSchemaValidator_acf1c5361bb96da87d23167d8720b1ea5}{Encoding\+Type}, State\+Allocator$>$ \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::\hyperlink{classGenericSchemaValidator_ab7df29495a3ba8f3f5dc828f90a40936}{Hasher\+Type}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_ae0c6c9a9c0ff6bae80e75c6705f2668b}\label{classGenericSchemaValidator_ae0c6c9a9c0ff6bae80e75c6705f2668b}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Pointer\+Type@{Pointer\+Type}}
+\index{Pointer\+Type@{Pointer\+Type}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Pointer\+Type}{PointerType}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+typedef Schema\+Document\+Type\+::\+Pointer\+Type \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::\hyperlink{classGenericSchemaValidator_ae0c6c9a9c0ff6bae80e75c6705f2668b}{Pointer\+Type}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_ac79628f00f6720bbabb70b44f0d076a0}\label{classGenericSchemaValidator_ac79628f00f6720bbabb70b44f0d076a0}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Schema\+Type@{Schema\+Type}}
+\index{Schema\+Type@{Schema\+Type}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Schema\+Type}{SchemaType}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+typedef Schema\+Document\+Type\+::\+Schema\+Type \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::\hyperlink{classGenericSchemaValidator_ac79628f00f6720bbabb70b44f0d076a0}{Schema\+Type}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a604160fcd6af7582e0deccc205309dcf}\label{classGenericSchemaValidator_a604160fcd6af7582e0deccc205309dcf}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!String\+Ref\+Type@{String\+Ref\+Type}}
+\index{String\+Ref\+Type@{String\+Ref\+Type}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{String\+Ref\+Type}{StringRefType}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+typedef \hyperlink{structGenericStringRef}{Generic\+String\+Ref}$<$\hyperlink{classGenericSchemaValidator_a8b7dab5a0cda9cc0adaefb4401d260c1}{Ch}$>$ \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::\hyperlink{classGenericSchemaValidator_a604160fcd6af7582e0deccc205309dcf}{String\+Ref\+Type}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}\label{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!S\+Value@{S\+Value}}
+\index{S\+Value@{S\+Value}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{S\+Value}{SValue}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+typedef Schema\+Type\+::\+S\+Value \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::\hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}\label{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Value\+Type@{Value\+Type}}
+\index{Value\+Type@{Value\+Type}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Value\+Type}{ValueType}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+typedef \hyperlink{classGenericValue}{Generic\+Value}$<$\hyperlink{classGenericSchemaValidator_acf1c5361bb96da87d23167d8720b1ea5}{Encoding\+Type}, State\+Allocator$>$ \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::\hyperlink{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}{Value\+Type}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGenericSchemaValidator_a202ee6fdbe5ae9eab3e77a81ecdfeb6d}\label{classGenericSchemaValidator_a202ee6fdbe5ae9eab3e77a81ecdfeb6d}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Generic\+Schema\+Validator()}{GenericSchemaValidator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::\hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator} (\begin{DoxyParamCaption}\item[{const Schema\+Document\+Type \&}]{schema\+Document,  }\item[{State\+Allocator $\ast$}]{allocator = {\ttfamily 0},  }\item[{size\+\_\+t}]{schema\+Stack\+Capacity = {\ttfamily \hyperlink{classGenericSchemaValidator_aab8510602779c91bc5b55ea81fd7385b}{k\+Default\+Schema\+Stack\+Capacity}},  }\item[{size\+\_\+t}]{document\+Stack\+Capacity = {\ttfamily \hyperlink{classGenericSchemaValidator_a0052a86778575179422064167a95c405}{k\+Default\+Document\+Stack\+Capacity}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor without output handler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em schema\+Document} & The schema document to conform to. \\
+\hline
+{\em allocator} & Optional allocator for storing internal validation states. \\
+\hline
+{\em schema\+Stack\+Capacity} & Optional initial capacity of schema path stack. \\
+\hline
+{\em document\+Stack\+Capacity} & Optional initial capacity of document path stack. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGenericSchemaValidator_ac2027be8ca55b01cd6f38b45f4e233b4}\label{classGenericSchemaValidator_ac2027be8ca55b01cd6f38b45f4e233b4}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Generic\+Schema\+Validator()}{GenericSchemaValidator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::\hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator} (\begin{DoxyParamCaption}\item[{const Schema\+Document\+Type \&}]{schema\+Document,  }\item[{Output\+Handler \&}]{output\+Handler,  }\item[{State\+Allocator $\ast$}]{allocator = {\ttfamily 0},  }\item[{size\+\_\+t}]{schema\+Stack\+Capacity = {\ttfamily \hyperlink{classGenericSchemaValidator_aab8510602779c91bc5b55ea81fd7385b}{k\+Default\+Schema\+Stack\+Capacity}},  }\item[{size\+\_\+t}]{document\+Stack\+Capacity = {\ttfamily \hyperlink{classGenericSchemaValidator_a0052a86778575179422064167a95c405}{k\+Default\+Document\+Stack\+Capacity}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor with output handler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em schema\+Document} & The schema document to conform to. \\
+\hline
+{\em allocator} & Optional allocator for storing internal validation states. \\
+\hline
+{\em schema\+Stack\+Capacity} & Optional initial capacity of schema path stack. \\
+\hline
+{\em document\+Stack\+Capacity} & Optional initial capacity of document path stack. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGenericSchemaValidator_a3eab83d483a50efb0c0390adf3291963}\label{classGenericSchemaValidator_a3eab83d483a50efb0c0390adf3291963}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!````~Generic\+Schema\+Validator@{$\sim$\+Generic\+Schema\+Validator}}
+\index{````~Generic\+Schema\+Validator@{$\sim$\+Generic\+Schema\+Validator}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{$\sim$\+Generic\+Schema\+Validator()}{~GenericSchemaValidator()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::$\sim$\hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destructor. 
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a639e2060d70c0788e3d9e87f0c770a7c}\label{classGenericSchemaValidator_a639e2060d70c0788e3d9e87f0c770a7c}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Generic\+Schema\+Validator()}{GenericSchemaValidator()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::\hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator} (\begin{DoxyParamCaption}\item[{const Schema\+Document\+Type \&}]{schema\+Document,  }\item[{const \hyperlink{classGenericSchemaValidator_ac79628f00f6720bbabb70b44f0d076a0}{Schema\+Type} \&}]{root,  }\item[{const char $\ast$}]{base\+Path,  }\item[{size\+\_\+t}]{base\+Path\+Size,  }\item[{unsigned}]{depth,  }\item[{State\+Allocator $\ast$}]{allocator = {\ttfamily 0},  }\item[{size\+\_\+t}]{schema\+Stack\+Capacity = {\ttfamily \hyperlink{classGenericSchemaValidator_aab8510602779c91bc5b55ea81fd7385b}{k\+Default\+Schema\+Stack\+Capacity}},  }\item[{size\+\_\+t}]{document\+Stack\+Capacity = {\ttfamily \hyperlink{classGenericSchemaValidator_a0052a86778575179422064167a95c405}{k\+Default\+Document\+Stack\+Capacity}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGenericSchemaValidator_a4c9c7db8a3488f84a5a86681ad1d8194}\label{classGenericSchemaValidator_a4c9c7db8a3488f84a5a86681ad1d8194}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Above\+Maximum@{Above\+Maximum}}
+\index{Above\+Maximum@{Above\+Maximum}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Above\+Maximum()}{AboveMaximum()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Above\+Maximum (\begin{DoxyParamCaption}\item[{\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\+\_\+t}}]{actual,  }\item[{const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&}]{expected,  }\item[{bool}]{exclusive }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a9262c73768789eb7cf8dc271cfec7f96}\label{classGenericSchemaValidator_a9262c73768789eb7cf8dc271cfec7f96}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Above\+Maximum@{Above\+Maximum}}
+\index{Above\+Maximum@{Above\+Maximum}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Above\+Maximum()}{AboveMaximum()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Above\+Maximum (\begin{DoxyParamCaption}\item[{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}]{actual,  }\item[{const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&}]{expected,  }\item[{bool}]{exclusive }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_abcf1f5b46bdae8ca20a80858d603483d}\label{classGenericSchemaValidator_abcf1f5b46bdae8ca20a80858d603483d}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Above\+Maximum@{Above\+Maximum}}
+\index{Above\+Maximum@{Above\+Maximum}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Above\+Maximum()}{AboveMaximum()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Above\+Maximum (\begin{DoxyParamCaption}\item[{double}]{actual,  }\item[{const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&}]{expected,  }\item[{bool}]{exclusive }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a9553b3f47b319674386ecafa513f0489}\label{classGenericSchemaValidator_a9553b3f47b319674386ecafa513f0489}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Add\+Current\+Error@{Add\+Current\+Error}}
+\index{Add\+Current\+Error@{Add\+Current\+Error}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Add\+Current\+Error()}{AddCurrentError()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Add\+Current\+Error (\begin{DoxyParamCaption}\item[{const \hyperlink{group__RAPIDJSON__ERRORS_ga2e1f88f94a5d9a6817a5de0ed2f0105a}{Validate\+Error\+Code}}]{code,  }\item[{bool}]{parent = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a27542a75617cdc28f6846b594fe01229}\label{classGenericSchemaValidator_a27542a75617cdc28f6846b594fe01229}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Add\+Dependency\+Schema\+Error@{Add\+Dependency\+Schema\+Error}}
+\index{Add\+Dependency\+Schema\+Error@{Add\+Dependency\+Schema\+Error}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Add\+Dependency\+Schema\+Error()}{AddDependencySchemaError()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Add\+Dependency\+Schema\+Error (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&}]{source\+Name,  }\item[{I\+Schema\+Validator $\ast$}]{subvalidator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a0dcd3dedf97c2ccff9de5b194447f175}\label{classGenericSchemaValidator_a0dcd3dedf97c2ccff9de5b194447f175}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Add\+Error@{Add\+Error}}
+\index{Add\+Error@{Add\+Error}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Add\+Error()}{AddError()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Add\+Error (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}{Value\+Type} \&}]{keyword,  }\item[{\hyperlink{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}{Value\+Type} \&}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_aeaad9469f70e135ac75983e796818970}\label{classGenericSchemaValidator_aeaad9469f70e135ac75983e796818970}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Add\+Error\+Array@{Add\+Error\+Array}}
+\index{Add\+Error\+Array@{Add\+Error\+Array}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Add\+Error\+Array()}{AddErrorArray()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Add\+Error\+Array (\begin{DoxyParamCaption}\item[{const \hyperlink{group__RAPIDJSON__ERRORS_ga2e1f88f94a5d9a6817a5de0ed2f0105a}{Validate\+Error\+Code}}]{code,  }\item[{I\+Schema\+Validator $\ast$$\ast$}]{subvalidators,  }\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a437bd3210074af1b0df90b72e15e9b7e}\label{classGenericSchemaValidator_a437bd3210074af1b0df90b72e15e9b7e}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Add\+Error\+Code@{Add\+Error\+Code}}
+\index{Add\+Error\+Code@{Add\+Error\+Code}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Add\+Error\+Code()}{AddErrorCode()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Add\+Error\+Code (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}{Value\+Type} \&}]{result,  }\item[{const \hyperlink{group__RAPIDJSON__ERRORS_ga2e1f88f94a5d9a6817a5de0ed2f0105a}{Validate\+Error\+Code}}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_adabc1745041f939572aae7e2e6477f8e}\label{classGenericSchemaValidator_adabc1745041f939572aae7e2e6477f8e}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Add\+Error\+Instance\+Location@{Add\+Error\+Instance\+Location}}
+\index{Add\+Error\+Instance\+Location@{Add\+Error\+Instance\+Location}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Add\+Error\+Instance\+Location()}{AddErrorInstanceLocation()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Add\+Error\+Instance\+Location (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}{Value\+Type} \&}]{result,  }\item[{bool}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_abc04c7dc0ec538a08f62c76a41ce0e9a}\label{classGenericSchemaValidator_abc04c7dc0ec538a08f62c76a41ce0e9a}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Add\+Error\+Schema\+Location@{Add\+Error\+Schema\+Location}}
+\index{Add\+Error\+Schema\+Location@{Add\+Error\+Schema\+Location}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Add\+Error\+Schema\+Location()}{AddErrorSchemaLocation()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Add\+Error\+Schema\+Location (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}{Value\+Type} \&}]{result,  }\item[{\hyperlink{classGenericSchemaValidator_ae0c6c9a9c0ff6bae80e75c6705f2668b}{Pointer\+Type}}]{schema = {\ttfamily \hyperlink{classGenericSchemaValidator_ae0c6c9a9c0ff6bae80e75c6705f2668b}{Pointer\+Type}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a68e5308e5ca9726ee66139a212b63bcc}\label{classGenericSchemaValidator_a68e5308e5ca9726ee66139a212b63bcc}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Add\+Expected\+Type@{Add\+Expected\+Type}}
+\index{Add\+Expected\+Type@{Add\+Expected\+Type}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Add\+Expected\+Type()}{AddExpectedType()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Add\+Expected\+Type (\begin{DoxyParamCaption}\item[{const typename Schema\+Type\+::\+Value\+Type \&}]{expected\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a85f2be483f0ddfc402a97665aff6eca9}\label{classGenericSchemaValidator_a85f2be483f0ddfc402a97665aff6eca9}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Add\+Missing\+Dependent\+Property@{Add\+Missing\+Dependent\+Property}}
+\index{Add\+Missing\+Dependent\+Property@{Add\+Missing\+Dependent\+Property}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Add\+Missing\+Dependent\+Property()}{AddMissingDependentProperty()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Add\+Missing\+Dependent\+Property (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&}]{target\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a8d355eeb25364e414d9a2f8121aa0eaa}\label{classGenericSchemaValidator_a8d355eeb25364e414d9a2f8121aa0eaa}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Add\+Missing\+Property@{Add\+Missing\+Property}}
+\index{Add\+Missing\+Property@{Add\+Missing\+Property}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Add\+Missing\+Property()}{AddMissingProperty()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Add\+Missing\+Property (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a752965fdb585b99db45201579f8ff04a}\label{classGenericSchemaValidator_a752965fdb585b99db45201579f8ff04a}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Add\+Number\+Error@{Add\+Number\+Error}}
+\index{Add\+Number\+Error@{Add\+Number\+Error}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Add\+Number\+Error()}{AddNumberError()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Add\+Number\+Error (\begin{DoxyParamCaption}\item[{const \hyperlink{group__RAPIDJSON__ERRORS_ga2e1f88f94a5d9a6817a5de0ed2f0105a}{Validate\+Error\+Code}}]{code,  }\item[{\hyperlink{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}{Value\+Type} \&}]{actual,  }\item[{const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&}]{expected,  }\item[{const typename Schema\+Type\+::\+Value\+Type \&($\ast$)()}]{exclusive = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_acf4db1d2b158d7220adc228d872938ba}\label{classGenericSchemaValidator_acf4db1d2b158d7220adc228d872938ba}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Append\+Token@{Append\+Token}}
+\index{Append\+Token@{Append\+Token}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Append\+Token()}{AppendToken()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Append\+Token (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericSchemaValidator_a8b7dab5a0cda9cc0adaefb4401d260c1}{Ch} $\ast$}]{str,  }\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a3a701bdd690fa33db03431c8336a7653}\label{classGenericSchemaValidator_a3a701bdd690fa33db03431c8336a7653}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Begin\+Value@{Begin\+Value}}
+\index{Begin\+Value@{Begin\+Value}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Begin\+Value()}{BeginValue()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+bool \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Begin\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a15a12306bc14f16357b4f2edea8396b7}\label{classGenericSchemaValidator_a15a12306bc14f16357b4f2edea8396b7}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Below\+Minimum@{Below\+Minimum}}
+\index{Below\+Minimum@{Below\+Minimum}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Below\+Minimum()}{BelowMinimum()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Below\+Minimum (\begin{DoxyParamCaption}\item[{\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\+\_\+t}}]{actual,  }\item[{const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&}]{expected,  }\item[{bool}]{exclusive }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_ad3db1f3852a1b2e6fada43fbcad401ea}\label{classGenericSchemaValidator_ad3db1f3852a1b2e6fada43fbcad401ea}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Below\+Minimum@{Below\+Minimum}}
+\index{Below\+Minimum@{Below\+Minimum}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Below\+Minimum()}{BelowMinimum()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Below\+Minimum (\begin{DoxyParamCaption}\item[{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}]{actual,  }\item[{const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&}]{expected,  }\item[{bool}]{exclusive }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_afdd4a9787239a6fc3eeb56d34fd531f4}\label{classGenericSchemaValidator_afdd4a9787239a6fc3eeb56d34fd531f4}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Below\+Minimum@{Below\+Minimum}}
+\index{Below\+Minimum@{Below\+Minimum}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Below\+Minimum()}{BelowMinimum()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Below\+Minimum (\begin{DoxyParamCaption}\item[{double}]{actual,  }\item[{const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&}]{expected,  }\item[{bool}]{exclusive }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_aa25fa7456f2f308a105e400f01a4afde}\label{classGenericSchemaValidator_aa25fa7456f2f308a105e400f01a4afde}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Bool@{Bool}}
+\index{Bool@{Bool}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Bool()}{Bool()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+bool \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Bool (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_abc377481583ca2095fb784be88887faa}\label{classGenericSchemaValidator_abc377481583ca2095fb784be88887faa}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Create\+Hasher@{Create\+Hasher}}
+\index{Create\+Hasher@{Create\+Hasher}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Create\+Hasher()}{CreateHasher()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+virtual \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}$\ast$ \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Create\+Hasher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classinternal_1_1ISchemaStateFactory_a4ac37b9d3e9526004c82692473f978f4}{internal\+::\+I\+Schema\+State\+Factory$<$ Schema\+Document\+Type\+::\+Schema\+Type $>$}.
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a48c724c1255cf1fcc53df75c791423a9}\label{classGenericSchemaValidator_a48c724c1255cf1fcc53df75c791423a9}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Create\+Schema\+Validator@{Create\+Schema\+Validator}}
+\index{Create\+Schema\+Validator@{Create\+Schema\+Validator}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Create\+Schema\+Validator()}{CreateSchemaValidator()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+virtual I\+Schema\+Validator$\ast$ \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Create\+Schema\+Validator (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericSchemaValidator_ac79628f00f6720bbabb70b44f0d076a0}{Schema\+Type} \&}]{root,  }\item[{const bool}]{inherit\+Continue\+On\+Errors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classinternal_1_1ISchemaStateFactory_aa9420905f406101f930bca3c9ca3a865}{internal\+::\+I\+Schema\+State\+Factory$<$ Schema\+Document\+Type\+::\+Schema\+Type $>$}.
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a057dffa977f78cb7447a0850500cb2e0}\label{classGenericSchemaValidator_a057dffa977f78cb7447a0850500cb2e0}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Current\+Context@{Current\+Context}}
+\index{Current\+Context@{Current\+Context}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Current\+Context()}{CurrentContext()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classGenericSchemaValidator_ac6403619afb8aa8729e1e15d8c34d350}{Context}\& \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Current\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a9008095198e2f892e91f018db2fc0536}\label{classGenericSchemaValidator_a9008095198e2f892e91f018db2fc0536}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Current\+Context@{Current\+Context}}
+\index{Current\+Context@{Current\+Context}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Current\+Context()}{CurrentContext()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+const \hyperlink{classGenericSchemaValidator_ac6403619afb8aa8729e1e15d8c34d350}{Context}\& \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Current\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_ad00ad0a27d466e975de5e0f104e6962d}\label{classGenericSchemaValidator_ad00ad0a27d466e975de5e0f104e6962d}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Current\+Schema@{Current\+Schema}}
+\index{Current\+Schema@{Current\+Schema}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Current\+Schema()}{CurrentSchema()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+const \hyperlink{classGenericSchemaValidator_ac79628f00f6720bbabb70b44f0d076a0}{Schema\+Type}\& \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Current\+Schema (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a007eef58be575dc562543d069ddd2710}\label{classGenericSchemaValidator_a007eef58be575dc562543d069ddd2710}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Destrory\+Hasher@{Destrory\+Hasher}}
+\index{Destrory\+Hasher@{Destrory\+Hasher}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Destrory\+Hasher()}{DestroryHasher()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+virtual \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Destrory\+Hasher (\begin{DoxyParamCaption}\item[{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} $\ast$}]{hasher }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classinternal_1_1ISchemaStateFactory_a70b8d88180d2e6993105b17f19101635}{internal\+::\+I\+Schema\+State\+Factory$<$ Schema\+Document\+Type\+::\+Schema\+Type $>$}.
+
+\mbox{\Hypertarget{classGenericSchemaValidator_ae24fa298e328f1fd7dda2ef6267156d2}\label{classGenericSchemaValidator_ae24fa298e328f1fd7dda2ef6267156d2}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Destroy\+Schema\+Validator@{Destroy\+Schema\+Validator}}
+\index{Destroy\+Schema\+Validator@{Destroy\+Schema\+Validator}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Destroy\+Schema\+Validator()}{DestroySchemaValidator()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+virtual \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Destroy\+Schema\+Validator (\begin{DoxyParamCaption}\item[{I\+Schema\+Validator $\ast$}]{validator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_acc65a322086c792d6534e306c7a091cf}\label{classGenericSchemaValidator_acc65a322086c792d6534e306c7a091cf}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Disallowed@{Disallowed}}
+\index{Disallowed@{Disallowed}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Disallowed()}{Disallowed()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Disallowed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classinternal_1_1IValidationErrorHandler_a570a6723282e6c0576a47c492ffe5602}{internal\+::\+I\+Validation\+Error\+Handler$<$ Schema\+Document\+Type\+::\+Schema\+Type $>$}.
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a2d47a88a3d9fb82466b5bda480b6e70f}\label{classGenericSchemaValidator_a2d47a88a3d9fb82466b5bda480b6e70f}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Disallowed\+Item@{Disallowed\+Item}}
+\index{Disallowed\+Item@{Disallowed\+Item}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Disallowed\+Item()}{DisallowedItem()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Disallowed\+Item (\begin{DoxyParamCaption}\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classinternal_1_1IValidationErrorHandler_a0ac36d4217d9a14205cbe392601f3ee7}{internal\+::\+I\+Validation\+Error\+Handler$<$ Schema\+Document\+Type\+::\+Schema\+Type $>$}.
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a44f06b99edfb650c6088f17e8af5b5a8}\label{classGenericSchemaValidator_a44f06b99edfb650c6088f17e8af5b5a8}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Disallowed\+Property@{Disallowed\+Property}}
+\index{Disallowed\+Property@{Disallowed\+Property}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Disallowed\+Property()}{DisallowedProperty()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Disallowed\+Property (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericSchemaValidator_a8b7dab5a0cda9cc0adaefb4401d260c1}{Ch} $\ast$}]{name,  }\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_afc9082d5e9733762e64df3faa88e0160}\label{classGenericSchemaValidator_afc9082d5e9733762e64df3faa88e0160}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Disallowed\+Value@{Disallowed\+Value}}
+\index{Disallowed\+Value@{Disallowed\+Value}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Disallowed\+Value()}{DisallowedValue()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Disallowed\+Value (\begin{DoxyParamCaption}\item[{const \hyperlink{group__RAPIDJSON__ERRORS_ga2e1f88f94a5d9a6817a5de0ed2f0105a}{Validate\+Error\+Code}}]{code = {\ttfamily \hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa3c12e9cbc8a479b77776ceccbda4c289}{k\+Validate\+Error\+Enum}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classinternal_1_1IValidationErrorHandler_a67531a59c1dd8db20db72b17f0933d03}{internal\+::\+I\+Validation\+Error\+Handler$<$ Schema\+Document\+Type\+::\+Schema\+Type $>$}.
+
+\mbox{\Hypertarget{classGenericSchemaValidator_aa8bee0b3cbf45421151cf1b4040c4df7}\label{classGenericSchemaValidator_aa8bee0b3cbf45421151cf1b4040c4df7}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Disallowed\+When\+Reading@{Disallowed\+When\+Reading}}
+\index{Disallowed\+When\+Reading@{Disallowed\+When\+Reading}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Disallowed\+When\+Reading()}{DisallowedWhenReading()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Disallowed\+When\+Reading (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classinternal_1_1IValidationErrorHandler_ac53a7125383d8051f4522ea222c3c5d5}{internal\+::\+I\+Validation\+Error\+Handler$<$ Schema\+Document\+Type\+::\+Schema\+Type $>$}.
+
+\mbox{\Hypertarget{classGenericSchemaValidator_aa66173c9e71ed6143fa2b35ce777f36a}\label{classGenericSchemaValidator_aa66173c9e71ed6143fa2b35ce777f36a}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Disallowed\+When\+Writing@{Disallowed\+When\+Writing}}
+\index{Disallowed\+When\+Writing@{Disallowed\+When\+Writing}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Disallowed\+When\+Writing()}{DisallowedWhenWriting()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Disallowed\+When\+Writing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classinternal_1_1IValidationErrorHandler_a1a7e9f0a384be3e0d6ae63d8fe366363}{internal\+::\+I\+Validation\+Error\+Handler$<$ Schema\+Document\+Type\+::\+Schema\+Type $>$}.
+
+\mbox{\Hypertarget{classGenericSchemaValidator_af1be05889e634936c223f24c6e5f6ec5}\label{classGenericSchemaValidator_af1be05889e634936c223f24c6e5f6ec5}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Does\+Not\+Match@{Does\+Not\+Match}}
+\index{Does\+Not\+Match@{Does\+Not\+Match}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Does\+Not\+Match()}{DoesNotMatch()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Does\+Not\+Match (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericSchemaValidator_a8b7dab5a0cda9cc0adaefb4401d260c1}{Ch} $\ast$}]{str,  }\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_aed0532dbda3ac6f3ca7196af06066b86}\label{classGenericSchemaValidator_aed0532dbda3ac6f3ca7196af06066b86}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Double@{Double}}
+\index{Double@{Double}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Double()}{Double()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+bool \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Double (\begin{DoxyParamCaption}\item[{double}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a82aa865146069e3ba5010d25346a71f2}\label{classGenericSchemaValidator_a82aa865146069e3ba5010d25346a71f2}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Duplicate\+Items@{Duplicate\+Items}}
+\index{Duplicate\+Items@{Duplicate\+Items}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Duplicate\+Items()}{DuplicateItems()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Duplicate\+Items (\begin{DoxyParamCaption}\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{index1,  }\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{index2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classinternal_1_1IValidationErrorHandler_a3a0836796f39c946f31f87b80ddd6cf1}{internal\+::\+I\+Validation\+Error\+Handler$<$ Schema\+Document\+Type\+::\+Schema\+Type $>$}.
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a67b501f0f65d40e0086ca8216882b34f}\label{classGenericSchemaValidator_a67b501f0f65d40e0086ca8216882b34f}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!End\+Array@{End\+Array}}
+\index{End\+Array@{End\+Array}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{End\+Array()}{EndArray()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+bool \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::End\+Array (\begin{DoxyParamCaption}\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{element\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_ab6d1c964faaa0f86f9da51a0f66dc1e4}\label{classGenericSchemaValidator_ab6d1c964faaa0f86f9da51a0f66dc1e4}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!End\+Dependency\+Errors@{End\+Dependency\+Errors}}
+\index{End\+Dependency\+Errors@{End\+Dependency\+Errors}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{End\+Dependency\+Errors()}{EndDependencyErrors()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+bool \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::End\+Dependency\+Errors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classinternal_1_1IValidationErrorHandler_a817c1e3e9cc62603997a2fcdc564820b}{internal\+::\+I\+Validation\+Error\+Handler$<$ Schema\+Document\+Type\+::\+Schema\+Type $>$}.
+
+\mbox{\Hypertarget{classGenericSchemaValidator_ae0f99bfee3e2021c05322fd5d6de2f6e}\label{classGenericSchemaValidator_ae0f99bfee3e2021c05322fd5d6de2f6e}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!End\+Disallowed\+Type@{End\+Disallowed\+Type}}
+\index{End\+Disallowed\+Type@{End\+Disallowed\+Type}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{End\+Disallowed\+Type()}{EndDisallowedType()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::End\+Disallowed\+Type (\begin{DoxyParamCaption}\item[{const typename Schema\+Type\+::\+Value\+Type \&}]{actual\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_afdcd2ff7b5f7e24f4f3d6976fa5b803e}\label{classGenericSchemaValidator_afdcd2ff7b5f7e24f4f3d6976fa5b803e}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!End\+Missing\+Dependent\+Properties@{End\+Missing\+Dependent\+Properties}}
+\index{End\+Missing\+Dependent\+Properties@{End\+Missing\+Dependent\+Properties}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{End\+Missing\+Dependent\+Properties()}{EndMissingDependentProperties()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::End\+Missing\+Dependent\+Properties (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&}]{source\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a557b7aa531ff94a6355fed8f8575fed5}\label{classGenericSchemaValidator_a557b7aa531ff94a6355fed8f8575fed5}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!End\+Missing\+Properties@{End\+Missing\+Properties}}
+\index{End\+Missing\+Properties@{End\+Missing\+Properties}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{End\+Missing\+Properties()}{EndMissingProperties()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+bool \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::End\+Missing\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classinternal_1_1IValidationErrorHandler_a3a01eec1a969cfb600340a2bad157c9c}{internal\+::\+I\+Validation\+Error\+Handler$<$ Schema\+Document\+Type\+::\+Schema\+Type $>$}.
+
+\mbox{\Hypertarget{classGenericSchemaValidator_aa89e14f0f731f6acdec22a0f7e003037}\label{classGenericSchemaValidator_aa89e14f0f731f6acdec22a0f7e003037}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!End\+Object@{End\+Object}}
+\index{End\+Object@{End\+Object}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{End\+Object()}{EndObject()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+bool \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::End\+Object (\begin{DoxyParamCaption}\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{member\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_ae78fc24af2c112de5d7651f0755257db}\label{classGenericSchemaValidator_ae78fc24af2c112de5d7651f0755257db}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!End\+Value@{End\+Value}}
+\index{End\+Value@{End\+Value}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{End\+Value()}{EndValue()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+bool \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::End\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a4e250737a411af2969a9e585a7da4187}\label{classGenericSchemaValidator_a4e250737a411af2969a9e585a7da4187}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Free\+State@{Free\+State}}
+\index{Free\+State@{Free\+State}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Free\+State()}{FreeState()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+virtual \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Free\+State (\begin{DoxyParamCaption}\item[{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classinternal_1_1ISchemaStateFactory_a27bd2138940cac3c330dd8399c49b22b}{internal\+::\+I\+Schema\+State\+Factory$<$ Schema\+Document\+Type\+::\+Schema\+Type $>$}.
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a9f679277e023babf6a62ef8087ffd459}\label{classGenericSchemaValidator_a9f679277e023babf6a62ef8087ffd459}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Get\+Continue\+On\+Errors@{Get\+Continue\+On\+Errors}}
+\index{Get\+Continue\+On\+Errors@{Get\+Continue\+On\+Errors}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Get\+Continue\+On\+Errors()}{GetContinueOnErrors()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+bool \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Get\+Continue\+On\+Errors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a7af476e6940d935efcf79d823c933035}\label{classGenericSchemaValidator_a7af476e6940d935efcf79d823c933035}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Get\+Error@{Get\+Error}}
+\index{Get\+Error@{Get\+Error}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Get\+Error()}{GetError()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}{Value\+Type}\& \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Get\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+End of Implementation of I\+Schema\+Validator. 
+
+Gets the error object. \mbox{\Hypertarget{classGenericSchemaValidator_a15bad1493265a83928c869dbeb034ef0}\label{classGenericSchemaValidator_a15bad1493265a83928c869dbeb034ef0}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Get\+Error@{Get\+Error}}
+\index{Get\+Error@{Get\+Error}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Get\+Error()}{GetError()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+const \hyperlink{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}{Value\+Type}\& \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Get\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_ac01c45982a1f512e1ca06fe5544b0c0f}\label{classGenericSchemaValidator_ac01c45982a1f512e1ca06fe5544b0c0f}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Get\+Hash\+Code@{Get\+Hash\+Code}}
+\index{Get\+Hash\+Code@{Get\+Hash\+Code}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Get\+Hash\+Code()}{GetHashCode()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+virtual \hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Get\+Hash\+Code (\begin{DoxyParamCaption}\item[{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} $\ast$}]{hasher }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classinternal_1_1ISchemaStateFactory_addfcf00963cc777edf642b204f07c8d6}{internal\+::\+I\+Schema\+State\+Factory$<$ Schema\+Document\+Type\+::\+Schema\+Type $>$}.
+
+\mbox{\Hypertarget{classGenericSchemaValidator_ac10a88c4dc138bbdbe2afd041658a3b0}\label{classGenericSchemaValidator_ac10a88c4dc138bbdbe2afd041658a3b0}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Get\+Invalid\+Document\+Pointer@{Get\+Invalid\+Document\+Pointer}}
+\index{Get\+Invalid\+Document\+Pointer@{Get\+Invalid\+Document\+Pointer}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Get\+Invalid\+Document\+Pointer()}{GetInvalidDocumentPointer()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classGenericSchemaValidator_ae0c6c9a9c0ff6bae80e75c6705f2668b}{Pointer\+Type} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Get\+Invalid\+Document\+Pointer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the J\+S\+ON pointer pointed to the invalid value. 
+
+\mbox{\Hypertarget{classGenericSchemaValidator_aeba2093eb93f77b239e9b4c27219c982}\label{classGenericSchemaValidator_aeba2093eb93f77b239e9b4c27219c982}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Get\+Invalid\+Schema\+Code@{Get\+Invalid\+Schema\+Code}}
+\index{Get\+Invalid\+Schema\+Code@{Get\+Invalid\+Schema\+Code}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Get\+Invalid\+Schema\+Code()}{GetInvalidSchemaCode()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{group__RAPIDJSON__ERRORS_ga2e1f88f94a5d9a6817a5de0ed2f0105a}{Validate\+Error\+Code} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Get\+Invalid\+Schema\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the error code of invalid schema. 
+
+\mbox{\Hypertarget{classGenericSchemaValidator_ab71ec18e5a013e5153a10b312a4f03bc}\label{classGenericSchemaValidator_ab71ec18e5a013e5153a10b312a4f03bc}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Get\+Invalid\+Schema\+Keyword@{Get\+Invalid\+Schema\+Keyword}}
+\index{Get\+Invalid\+Schema\+Keyword@{Get\+Invalid\+Schema\+Keyword}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Get\+Invalid\+Schema\+Keyword()}{GetInvalidSchemaKeyword()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+const \hyperlink{classGenericSchemaValidator_a8b7dab5a0cda9cc0adaefb4401d260c1}{Ch}$\ast$ \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Get\+Invalid\+Schema\+Keyword (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the keyword of invalid schema. 
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a5b8f2d5c466b2a362e2e4c3bcfbfc5a8}\label{classGenericSchemaValidator_a5b8f2d5c466b2a362e2e4c3bcfbfc5a8}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Get\+Invalid\+Schema\+Pointer@{Get\+Invalid\+Schema\+Pointer}}
+\index{Get\+Invalid\+Schema\+Pointer@{Get\+Invalid\+Schema\+Pointer}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Get\+Invalid\+Schema\+Pointer()}{GetInvalidSchemaPointer()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classGenericSchemaValidator_ae0c6c9a9c0ff6bae80e75c6705f2668b}{Pointer\+Type} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Get\+Invalid\+Schema\+Pointer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the J\+S\+ON pointer pointed to the invalid schema. 
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a84115d2b389b82723a90987c08684cbb}\label{classGenericSchemaValidator_a84115d2b389b82723a90987c08684cbb}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Get\+State\+Allocator@{Get\+State\+Allocator}}
+\index{Get\+State\+Allocator@{Get\+State\+Allocator}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Get\+State\+Allocator()}{GetStateAllocator()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+State\+Allocator\& \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Get\+State\+Allocator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a318bf1cf98d2f18074edd336b1bc684d}\label{classGenericSchemaValidator_a318bf1cf98d2f18074edd336b1bc684d}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Get\+Validate\+Flags@{Get\+Validate\+Flags}}
+\index{Get\+Validate\+Flags@{Get\+Validate\+Flags}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Get\+Validate\+Flags()}{GetValidateFlags()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+virtual unsigned \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Get\+Validate\+Flags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classinternal_1_1ISchemaValidator_aa27d587f8e6fa2b95235a6ffa077429d}{internal\+::\+I\+Schema\+Validator}.
+
+\mbox{\Hypertarget{classGenericSchemaValidator_ad823c29990225661a4df69d34647b659}\label{classGenericSchemaValidator_ad823c29990225661a4df69d34647b659}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Int@{Int}}
+\index{Int@{Int}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Int()}{Int()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+bool \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Int (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_ac5a9e416e18129a7b787f251019a828f}\label{classGenericSchemaValidator_ac5a9e416e18129a7b787f251019a828f}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Int64@{Int64}}
+\index{Int64@{Int64}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Int64()}{Int64()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+bool \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Int64 (\begin{DoxyParamCaption}\item[{\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\+\_\+t}}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a8ebda4da3d8b1fc41e57f15dd62e8f19}\label{classGenericSchemaValidator_a8ebda4da3d8b1fc41e57f15dd62e8f19}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Is\+Valid@{Is\+Valid}}
+\index{Is\+Valid@{Is\+Valid}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Is\+Valid()}{IsValid()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+virtual bool \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Is\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classinternal_1_1ISchemaValidator_a94f61f24b1447497279ef12ee0127285}{internal\+::\+I\+Schema\+Validator}.
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a6d08b458216ec4a09eed9d94800d05c1}\label{classGenericSchemaValidator_a6d08b458216ec4a09eed9d94800d05c1}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Key@{Key}}
+\index{Key@{Key}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Key()}{Key()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+bool \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Key (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericSchemaValidator_a8b7dab5a0cda9cc0adaefb4401d260c1}{Ch} $\ast$}]{str,  }\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{len,  }\item[{bool}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a7c999dfb3118aaa08495d60eee6d3732}\label{classGenericSchemaValidator_a7c999dfb3118aaa08495d60eee6d3732}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Malloc\+State@{Malloc\+State}}
+\index{Malloc\+State@{Malloc\+State}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Malloc\+State()}{MallocState()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+virtual \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}$\ast$ \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Malloc\+State (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classinternal_1_1ISchemaStateFactory_ada92ebf8e9ef994f7e20a0f7f9750519}{internal\+::\+I\+Schema\+State\+Factory$<$ Schema\+Document\+Type\+::\+Schema\+Type $>$}.
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a55995260e5ef46a7b0706823d2985446}\label{classGenericSchemaValidator_a55995260e5ef46a7b0706823d2985446}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Merge\+Error@{Merge\+Error}}
+\index{Merge\+Error@{Merge\+Error}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Merge\+Error()}{MergeError()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Merge\+Error (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}{Value\+Type} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a53c37b0dba5f2ca79d2c7c13488e5ffd}\label{classGenericSchemaValidator_a53c37b0dba5f2ca79d2c7c13488e5ffd}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Multiple\+One\+Of@{Multiple\+One\+Of}}
+\index{Multiple\+One\+Of@{Multiple\+One\+Of}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Multiple\+One\+Of()}{MultipleOneOf()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Multiple\+One\+Of (\begin{DoxyParamCaption}\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{index1,  }\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{index2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classinternal_1_1IValidationErrorHandler_aea207ebba88ff7d198b55b04f0ff43e0}{internal\+::\+I\+Validation\+Error\+Handler$<$ Schema\+Document\+Type\+::\+Schema\+Type $>$}.
+
+\mbox{\Hypertarget{classGenericSchemaValidator_aae9c45082721c650b91f8418cecc7293}\label{classGenericSchemaValidator_aae9c45082721c650b91f8418cecc7293}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!None\+Of@{None\+Of}}
+\index{None\+Of@{None\+Of}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{None\+Of()}{NoneOf()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::None\+Of (\begin{DoxyParamCaption}\item[{I\+Schema\+Validator $\ast$$\ast$}]{subvalidators,  }\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a4275b02cdd86bfe11b42afe94817eae5}\label{classGenericSchemaValidator_a4275b02cdd86bfe11b42afe94817eae5}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Not\+All\+Of@{Not\+All\+Of}}
+\index{Not\+All\+Of@{Not\+All\+Of}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Not\+All\+Of()}{NotAllOf()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Not\+All\+Of (\begin{DoxyParamCaption}\item[{I\+Schema\+Validator $\ast$$\ast$}]{subvalidators,  }\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_ab2f08413a2b23d73d4bbd09c8ca1f547}\label{classGenericSchemaValidator_ab2f08413a2b23d73d4bbd09c8ca1f547}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Not\+Multiple\+Of@{Not\+Multiple\+Of}}
+\index{Not\+Multiple\+Of@{Not\+Multiple\+Of}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Not\+Multiple\+Of()}{NotMultipleOf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Not\+Multiple\+Of (\begin{DoxyParamCaption}\item[{\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\+\_\+t}}]{actual,  }\item[{const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&}]{expected }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a5c59d25dc44d85404cc587ebfa7455cd}\label{classGenericSchemaValidator_a5c59d25dc44d85404cc587ebfa7455cd}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Not\+Multiple\+Of@{Not\+Multiple\+Of}}
+\index{Not\+Multiple\+Of@{Not\+Multiple\+Of}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Not\+Multiple\+Of()}{NotMultipleOf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Not\+Multiple\+Of (\begin{DoxyParamCaption}\item[{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}]{actual,  }\item[{const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&}]{expected }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_ae5fc8a4545fed53955ec6c57b79ca949}\label{classGenericSchemaValidator_ae5fc8a4545fed53955ec6c57b79ca949}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Not\+Multiple\+Of@{Not\+Multiple\+Of}}
+\index{Not\+Multiple\+Of@{Not\+Multiple\+Of}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Not\+Multiple\+Of()}{NotMultipleOf()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Not\+Multiple\+Of (\begin{DoxyParamCaption}\item[{double}]{actual,  }\item[{const \hyperlink{classGenericSchemaValidator_a3c004e35c7eb9fa5a28c0ccfb8ac62dc}{S\+Value} \&}]{expected }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_ad4819a91a42d781391760f26014cd315}\label{classGenericSchemaValidator_ad4819a91a42d781391760f26014cd315}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Not\+One\+Of@{Not\+One\+Of}}
+\index{Not\+One\+Of@{Not\+One\+Of}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Not\+One\+Of()}{NotOneOf()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Not\+One\+Of (\begin{DoxyParamCaption}\item[{I\+Schema\+Validator $\ast$$\ast$}]{subvalidators,  }\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a7137af73e934f50c66cbb8a9aa802ea6}\label{classGenericSchemaValidator_a7137af73e934f50c66cbb8a9aa802ea6}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Null@{Null}}
+\index{Null@{Null}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Null()}{Null()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+bool \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a6cc7f347eace3847c428fce684c97b56}\label{classGenericSchemaValidator_a6cc7f347eace3847c428fce684c97b56}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Pop\+Schema@{Pop\+Schema}}
+\index{Pop\+Schema@{Pop\+Schema}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Pop\+Schema()}{PopSchema()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Pop\+Schema (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a29fa7c6f787450b2df1f9d440436aeab}\label{classGenericSchemaValidator_a29fa7c6f787450b2df1f9d440436aeab}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Property\+Violations@{Property\+Violations}}
+\index{Property\+Violations@{Property\+Violations}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Property\+Violations()}{PropertyViolations()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Property\+Violations (\begin{DoxyParamCaption}\item[{I\+Schema\+Validator $\ast$$\ast$}]{subvalidators,  }\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_ae7302da6df72e7af0451a78998eb624d}\label{classGenericSchemaValidator_ae7302da6df72e7af0451a78998eb624d}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Push\+Schema@{Push\+Schema}}
+\index{Push\+Schema@{Push\+Schema}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Push\+Schema()}{PushSchema()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Push\+Schema (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericSchemaValidator_ac79628f00f6720bbabb70b44f0d076a0}{Schema\+Type} \&}]{schema }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_ae4f024145421d2c1dde08a9de528722a}\label{classGenericSchemaValidator_ae4f024145421d2c1dde08a9de528722a}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Raw\+Number@{Raw\+Number}}
+\index{Raw\+Number@{Raw\+Number}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Raw\+Number()}{RawNumber()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+bool \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Raw\+Number (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericSchemaValidator_a8b7dab5a0cda9cc0adaefb4401d260c1}{Ch} $\ast$}]{str,  }\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{length,  }\item[{bool}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a49efbbe098cb77728be3d48cafed17e4}\label{classGenericSchemaValidator_a49efbbe098cb77728be3d48cafed17e4}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Reset@{Reset}}
+\index{Reset@{Reset}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reset the internal states. 
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a8374dd359e572f653c49293545ad3ef4}\label{classGenericSchemaValidator_a8374dd359e572f653c49293545ad3ef4}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Reset\+Error@{Reset\+Error}}
+\index{Reset\+Error@{Reset\+Error}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Reset\+Error()}{ResetError()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Reset\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reset the error state. 
+
+\mbox{\Hypertarget{classGenericSchemaValidator_af4840dac2410bcfe73912c30eb95b875}\label{classGenericSchemaValidator_af4840dac2410bcfe73912c30eb95b875}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Set\+Validate\+Flags@{Set\+Validate\+Flags}}
+\index{Set\+Validate\+Flags@{Set\+Validate\+Flags}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Set\+Validate\+Flags()}{SetValidateFlags()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Set\+Validate\+Flags (\begin{DoxyParamCaption}\item[{unsigned}]{flags }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implementation of I\+Schema\+Validator. 
+
+
+
+Implements \hyperlink{classinternal_1_1ISchemaValidator_a29b7df0935c87630bbb70c1e19d4c722}{internal\+::\+I\+Schema\+Validator}.
+
+\mbox{\Hypertarget{classGenericSchemaValidator_aba13751f802531ed8cbd850778ea993c}\label{classGenericSchemaValidator_aba13751f802531ed8cbd850778ea993c}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Start\+Array@{Start\+Array}}
+\index{Start\+Array@{Start\+Array}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Start\+Array()}{StartArray()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+bool \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Start\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a767f115cc90e0f2f5bdd1c9fbdbf75df}\label{classGenericSchemaValidator_a767f115cc90e0f2f5bdd1c9fbdbf75df}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Start\+Dependency\+Errors@{Start\+Dependency\+Errors}}
+\index{Start\+Dependency\+Errors@{Start\+Dependency\+Errors}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Start\+Dependency\+Errors()}{StartDependencyErrors()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Start\+Dependency\+Errors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classinternal_1_1IValidationErrorHandler_ab3cf4b9fe450ff76f52d70a2888f0342}{internal\+::\+I\+Validation\+Error\+Handler$<$ Schema\+Document\+Type\+::\+Schema\+Type $>$}.
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a9904719420fd91200f80772e92fe225f}\label{classGenericSchemaValidator_a9904719420fd91200f80772e92fe225f}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Start\+Disallowed\+Type@{Start\+Disallowed\+Type}}
+\index{Start\+Disallowed\+Type@{Start\+Disallowed\+Type}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Start\+Disallowed\+Type()}{StartDisallowedType()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Start\+Disallowed\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classinternal_1_1IValidationErrorHandler_a994a8b1526a79737b9d7b7575def4f65}{internal\+::\+I\+Validation\+Error\+Handler$<$ Schema\+Document\+Type\+::\+Schema\+Type $>$}.
+
+\mbox{\Hypertarget{classGenericSchemaValidator_ac4faa073bc4671f42e98a59a9e9cb01a}\label{classGenericSchemaValidator_ac4faa073bc4671f42e98a59a9e9cb01a}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Start\+Missing\+Dependent\+Properties@{Start\+Missing\+Dependent\+Properties}}
+\index{Start\+Missing\+Dependent\+Properties@{Start\+Missing\+Dependent\+Properties}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Start\+Missing\+Dependent\+Properties()}{StartMissingDependentProperties()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Start\+Missing\+Dependent\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classinternal_1_1IValidationErrorHandler_ae312aea74718dda0411af023c0c78ef6}{internal\+::\+I\+Validation\+Error\+Handler$<$ Schema\+Document\+Type\+::\+Schema\+Type $>$}.
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a41c4d67e349561f13948a5045bfc50c9}\label{classGenericSchemaValidator_a41c4d67e349561f13948a5045bfc50c9}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Start\+Missing\+Properties@{Start\+Missing\+Properties}}
+\index{Start\+Missing\+Properties@{Start\+Missing\+Properties}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Start\+Missing\+Properties()}{StartMissingProperties()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Start\+Missing\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classinternal_1_1IValidationErrorHandler_ac0073bef86b572b4517876b304aada0f}{internal\+::\+I\+Validation\+Error\+Handler$<$ Schema\+Document\+Type\+::\+Schema\+Type $>$}.
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a59972d612c3d37aae9a30222e428d216}\label{classGenericSchemaValidator_a59972d612c3d37aae9a30222e428d216}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Start\+Object@{Start\+Object}}
+\index{Start\+Object@{Start\+Object}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Start\+Object()}{StartObject()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+bool \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Start\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a33cf3f83307a8fea38c3238ef75c3d58}\label{classGenericSchemaValidator_a33cf3f83307a8fea38c3238ef75c3d58}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!String@{String}}
+\index{String@{String}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{String()}{String()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+bool \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::String (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericSchemaValidator_a8b7dab5a0cda9cc0adaefb4401d260c1}{Ch} $\ast$}]{str,  }\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{length,  }\item[{bool}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_af39007d9bf43126dab231961a1c5064f}\label{classGenericSchemaValidator_af39007d9bf43126dab231961a1c5064f}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Too\+Few\+Items@{Too\+Few\+Items}}
+\index{Too\+Few\+Items@{Too\+Few\+Items}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Too\+Few\+Items()}{TooFewItems()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Too\+Few\+Items (\begin{DoxyParamCaption}\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{actual\+Count,  }\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{expected\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classinternal_1_1IValidationErrorHandler_afc144690ba0e24636a72f541efd32c3b}{internal\+::\+I\+Validation\+Error\+Handler$<$ Schema\+Document\+Type\+::\+Schema\+Type $>$}.
+
+\mbox{\Hypertarget{classGenericSchemaValidator_aaebaf28aa289826a3c39dc953b0ca466}\label{classGenericSchemaValidator_aaebaf28aa289826a3c39dc953b0ca466}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Too\+Few\+Properties@{Too\+Few\+Properties}}
+\index{Too\+Few\+Properties@{Too\+Few\+Properties}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Too\+Few\+Properties()}{TooFewProperties()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Too\+Few\+Properties (\begin{DoxyParamCaption}\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{actual\+Count,  }\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{expected\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classinternal_1_1IValidationErrorHandler_adf515d2fad2e55bc0735a6fb16eec9e6}{internal\+::\+I\+Validation\+Error\+Handler$<$ Schema\+Document\+Type\+::\+Schema\+Type $>$}.
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a227dce44e0684a73accbfb062200eb26}\label{classGenericSchemaValidator_a227dce44e0684a73accbfb062200eb26}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Too\+Long@{Too\+Long}}
+\index{Too\+Long@{Too\+Long}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Too\+Long()}{TooLong()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Too\+Long (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericSchemaValidator_a8b7dab5a0cda9cc0adaefb4401d260c1}{Ch} $\ast$}]{str,  }\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{length,  }\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{expected }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a78e85eeae0e2bdef827815672a7fbbc9}\label{classGenericSchemaValidator_a78e85eeae0e2bdef827815672a7fbbc9}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Too\+Many\+Items@{Too\+Many\+Items}}
+\index{Too\+Many\+Items@{Too\+Many\+Items}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Too\+Many\+Items()}{TooManyItems()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Too\+Many\+Items (\begin{DoxyParamCaption}\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{actual\+Count,  }\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{expected\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classinternal_1_1IValidationErrorHandler_a9371ca15622897a429971f69c07c47ef}{internal\+::\+I\+Validation\+Error\+Handler$<$ Schema\+Document\+Type\+::\+Schema\+Type $>$}.
+
+\mbox{\Hypertarget{classGenericSchemaValidator_ad7ca0a327420c110e9ee6e70b2cdbc87}\label{classGenericSchemaValidator_ad7ca0a327420c110e9ee6e70b2cdbc87}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Too\+Many\+Properties@{Too\+Many\+Properties}}
+\index{Too\+Many\+Properties@{Too\+Many\+Properties}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Too\+Many\+Properties()}{TooManyProperties()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Too\+Many\+Properties (\begin{DoxyParamCaption}\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{actual\+Count,  }\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{expected\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classinternal_1_1IValidationErrorHandler_a3494e9d2bff94979649e186aba71b32e}{internal\+::\+I\+Validation\+Error\+Handler$<$ Schema\+Document\+Type\+::\+Schema\+Type $>$}.
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a7711071f95ead18c0dd99f69c09a4c11}\label{classGenericSchemaValidator_a7711071f95ead18c0dd99f69c09a4c11}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Too\+Short@{Too\+Short}}
+\index{Too\+Short@{Too\+Short}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Too\+Short()}{TooShort()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Too\+Short (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericSchemaValidator_a8b7dab5a0cda9cc0adaefb4401d260c1}{Ch} $\ast$}]{str,  }\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{length,  }\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{expected }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_aa688665c5274f93543c84a4b6cabe8da}\label{classGenericSchemaValidator_aa688665c5274f93543c84a4b6cabe8da}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Uint@{Uint}}
+\index{Uint@{Uint}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Uint()}{Uint()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+bool \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Uint (\begin{DoxyParamCaption}\item[{unsigned}]{u }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_abfc56c58cf0b65318e376fc5f2879292}\label{classGenericSchemaValidator_abfc56c58cf0b65318e376fc5f2879292}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!Uint64@{Uint64}}
+\index{Uint64@{Uint64}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{Uint64()}{Uint64()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+bool \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::Uint64 (\begin{DoxyParamCaption}\item[{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}]{u }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classGenericSchemaValidator_afa09db405ea6ce3f35d04401c89023f4}\label{classGenericSchemaValidator_afa09db405ea6ce3f35d04401c89023f4}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!current\+Error\+\_\+@{current\+Error\+\_\+}}
+\index{current\+Error\+\_\+@{current\+Error\+\_\+}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{current\+Error\+\_\+}{currentError\_}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}{Value\+Type} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::current\+Error\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_ac90e249c2d8d5e68631e3f8ce44b15fe}\label{classGenericSchemaValidator_ac90e249c2d8d5e68631e3f8ce44b15fe}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!depth\+\_\+@{depth\+\_\+}}
+\index{depth\+\_\+@{depth\+\_\+}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{depth\+\_\+}{depth\_}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+unsigned \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::depth\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a98a99734991555b5458398b01f0cce44}\label{classGenericSchemaValidator_a98a99734991555b5458398b01f0cce44}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!document\+Stack\+\_\+@{document\+Stack\+\_\+}}
+\index{document\+Stack\+\_\+@{document\+Stack\+\_\+}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{document\+Stack\+\_\+}{documentStack\_}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classinternal_1_1Stack}{internal\+::\+Stack}$<$State\+Allocator$>$ \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::document\+Stack\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+stack to store the current path of validating document (Ch) 
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a9c3e6efc65a62225a83ae9d0f377c074}\label{classGenericSchemaValidator_a9c3e6efc65a62225a83ae9d0f377c074}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!error\+\_\+@{error\+\_\+}}
+\index{error\+\_\+@{error\+\_\+}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{error\+\_\+}{error\_}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}{Value\+Type} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::error\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_ab56d66840b9f7afe8a806e31afa10a10}\label{classGenericSchemaValidator_ab56d66840b9f7afe8a806e31afa10a10}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!flags\+\_\+@{flags\+\_\+}}
+\index{flags\+\_\+@{flags\+\_\+}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{flags\+\_\+}{flags\_}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+unsigned \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::flags\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a0052a86778575179422064167a95c405}\label{classGenericSchemaValidator_a0052a86778575179422064167a95c405}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!k\+Default\+Document\+Stack\+Capacity@{k\+Default\+Document\+Stack\+Capacity}}
+\index{k\+Default\+Document\+Stack\+Capacity@{k\+Default\+Document\+Stack\+Capacity}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{k\+Default\+Document\+Stack\+Capacity}{kDefaultDocumentStackCapacity}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+const size\+\_\+t \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::k\+Default\+Document\+Stack\+Capacity = 256\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_aab8510602779c91bc5b55ea81fd7385b}\label{classGenericSchemaValidator_aab8510602779c91bc5b55ea81fd7385b}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!k\+Default\+Schema\+Stack\+Capacity@{k\+Default\+Schema\+Stack\+Capacity}}
+\index{k\+Default\+Schema\+Stack\+Capacity@{k\+Default\+Schema\+Stack\+Capacity}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{k\+Default\+Schema\+Stack\+Capacity}{kDefaultSchemaStackCapacity}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+const size\+\_\+t \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::k\+Default\+Schema\+Stack\+Capacity = 1024\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a08633a530070c002f9f0016991a22187}\label{classGenericSchemaValidator_a08633a530070c002f9f0016991a22187}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!missing\+Dependents\+\_\+@{missing\+Dependents\+\_\+}}
+\index{missing\+Dependents\+\_\+@{missing\+Dependents\+\_\+}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{missing\+Dependents\+\_\+}{missingDependents\_}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classGenericSchemaValidator_a435890a2dddeecb896d4ac76de03ca68}{Value\+Type} \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::missing\+Dependents\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_ac03855c6eb85ffcae993105082e09fc1}\label{classGenericSchemaValidator_ac03855c6eb85ffcae993105082e09fc1}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!output\+Handler\+\_\+@{output\+Handler\+\_\+}}
+\index{output\+Handler\+\_\+@{output\+Handler\+\_\+}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{output\+Handler\+\_\+}{outputHandler\_}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+Output\+Handler$\ast$ \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::output\+Handler\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a1f8233bfa10ae88aac6137a0e979174b}\label{classGenericSchemaValidator_a1f8233bfa10ae88aac6137a0e979174b}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!own\+State\+Allocator\+\_\+@{own\+State\+Allocator\+\_\+}}
+\index{own\+State\+Allocator\+\_\+@{own\+State\+Allocator\+\_\+}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{own\+State\+Allocator\+\_\+}{ownStateAllocator\_}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+State\+Allocator$\ast$ \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::own\+State\+Allocator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a7517bd5334a8fc4696fe298dbab2ce31}\label{classGenericSchemaValidator_a7517bd5334a8fc4696fe298dbab2ce31}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!root\+\_\+@{root\+\_\+}}
+\index{root\+\_\+@{root\+\_\+}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{root\+\_\+}{root\_}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+const \hyperlink{classGenericSchemaValidator_ac79628f00f6720bbabb70b44f0d076a0}{Schema\+Type}\& \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::root\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a433e6fe22bea392d1dbd57e9f581bd7a}\label{classGenericSchemaValidator_a433e6fe22bea392d1dbd57e9f581bd7a}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!schema\+Document\+\_\+@{schema\+Document\+\_\+}}
+\index{schema\+Document\+\_\+@{schema\+Document\+\_\+}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{schema\+Document\+\_\+}{schemaDocument\_}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+const Schema\+Document\+Type$\ast$ \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::schema\+Document\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_ae5775fdd9f94b8a2581f774d97135670}\label{classGenericSchemaValidator_ae5775fdd9f94b8a2581f774d97135670}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!schema\+Stack\+\_\+@{schema\+Stack\+\_\+}}
+\index{schema\+Stack\+\_\+@{schema\+Stack\+\_\+}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{schema\+Stack\+\_\+}{schemaStack\_}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classinternal_1_1Stack}{internal\+::\+Stack}$<$State\+Allocator$>$ \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::schema\+Stack\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+stack to store the current path of schema (Base\+Schema\+Type $\ast$) 
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a1fea37905619d085cb3d3c6699b209a5}\label{classGenericSchemaValidator_a1fea37905619d085cb3d3c6699b209a5}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!state\+Allocator\+\_\+@{state\+Allocator\+\_\+}}
+\index{state\+Allocator\+\_\+@{state\+Allocator\+\_\+}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{state\+Allocator\+\_\+}{stateAllocator\_}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+State\+Allocator$\ast$ \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::state\+Allocator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericSchemaValidator_a637361bc6c37c60278576169f01c84bb}\label{classGenericSchemaValidator_a637361bc6c37c60278576169f01c84bb}} 
+\index{Generic\+Schema\+Validator@{Generic\+Schema\+Validator}!valid\+\_\+@{valid\+\_\+}}
+\index{valid\+\_\+@{valid\+\_\+}!Generic\+Schema\+Validator@{Generic\+Schema\+Validator}}
+\subsubsection{\texorpdfstring{valid\+\_\+}{valid\_}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type, typename Output\+Handler = Base\+Reader\+Handler$<$typename Schema\+Document\+Type\+::\+Schema\+Type\+::\+Encoding\+Type$>$, typename State\+Allocator = Crt\+Allocator$>$ \\
+bool \hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator}$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::valid\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/rapidjson/\hyperlink{fwd_8h}{fwd.\+h}\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/rapidjson/\hyperlink{schema_8h}{schema.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="ImGuiStackTool" name="ImGuiStackTool">
+<area shape="rect" id="node2" href="$structImVector.html" title="{ImVector\&lt; ImGuiStackLevel\lInfo \&gt;\n|+ Size\l+ Capacity\l|+ ImVector()\l+ ImVector()\l+ operator=()\l+ ~ImVector()\l+ clear()\l+ clear_delete()\l+ clear_destruct()\l+ empty()\l+ size()\l+ size_in_bytes()\land 32 more...\l}" alt="" coords="7,204,193,457"/>
+<area shape="rect" id="node3" href="$structImGuiStackLevelInfo.html" title="{ImGuiStackLevelInfo\n|+ ID\l+ QueryFrameCount\l+ QuerySuccess\l+ DataType\l+ Desc\l|+ ImGuiStackLevelInfo()\l}" alt="" coords="18,5,182,141"/>
+</map>

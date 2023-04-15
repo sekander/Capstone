@@ -1,0 +1,10 @@
+<map id="ImFontBuildSrcData" name="ImFontBuildSrcData">
+<area shape="rect" id="node2" href="$structImBitVector.html" title="{ImBitVector\n||+ Create()\l+ Clear()\l+ TestBit()\l+ SetBit()\l+ ClearBit()\l}" alt="" coords="29,461,120,597"/>
+<area shape="rect" id="node3" href="$structImVector.html" title="{ImVector\&lt; ImU32 \&gt;\n|+ Size\l+ Capacity\l+ Data\l|+ ImVector()\l+ ImVector()\l+ operator=()\l+ ~ImVector()\l+ clear()\l+ clear_delete()\l+ clear_destruct()\l+ empty()\l+ size()\l+ size_in_bytes()\land 32 more...\l}" alt="" coords="5,5,144,259"/>
+<area shape="rect" id="node4" href="$structstbtt__fontinfo.html" title="{stbtt_fontinfo\n|+ userdata\l+ data\l+ fontstart\l+ numGlyphs\l+ loca\l+ head\l+ glyf\l+ hhea\l+ hmtx\l+ kern\l+ gpos\l+ svg\l+ index_map\l+ indexToLocFormat\l|}" alt="" coords="145,395,287,663"/>
+<area shape="rect" id="node5" href="$structstbtt____buf.html" title="{stbtt__buf\n|+ data\l+ cursor\l+ size\l|}" alt="" coords="176,79,256,185"/>
+<area shape="rect" id="node6" href="$structstbrp__rect.html" title="{stbrp_rect\n|+ id\l+ w\l+ h\l+ x\l+ y\l+ was_packed\l|}" alt="" coords="312,453,419,604"/>
+<area shape="rect" id="node7" href="$structstbtt__packedchar.html" title="{stbtt_packedchar\n|+ x0\l+ y0\l+ x1\l+ y1\l+ xoff\l+ yoff\l+ xadvance\l+ xoff2\l+ yoff2\l|}" alt="" coords="471,35,593,229"/>
+<area shape="rect" id="node9" href="$structstbtt__pack__range.html" title="{stbtt_pack_range\n|+ font_size\l+ first_unicode_codepoint\l_in_range\l+ array_of_unicode_codepoints\l+ num_chars\l+ h_oversample\l+ v_oversample\l|}" alt="" coords="583,446,785,611"/>
+<area shape="rect" id="node8" href="$structImVector.html" title="{ImVector\&lt; int \&gt;\n|+ Size\l+ Capacity\l+ Data\l|+ ImVector()\l+ ImVector()\l+ operator=()\l+ ~ImVector()\l+ clear()\l+ clear_delete()\l+ clear_destruct()\l+ empty()\l+ size()\l+ size_in_bytes()\land 32 more...\l}" alt="" coords="810,402,934,655"/>
+</map>

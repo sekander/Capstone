@@ -1,0 +1,403 @@
+\hypertarget{classAnimated__Player__Actor}{}\section{Animated\+\_\+\+Player\+\_\+\+Actor Class Reference}
+\label{classAnimated__Player__Actor}\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+
+
+{\ttfamily \#include $<$Animated\+\_\+\+Player\+\_\+\+Actor.\+h$>$}
+
+
+
+Inheritance diagram for Animated\+\_\+\+Player\+\_\+\+Actor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classAnimated__Player__Actor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Animated\+\_\+\+Player\+\_\+\+Actor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classAnimated__Player__Actor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAnimated__Player__Actor_a223689b724b4983b4122adf665eb61d3}{Animated\+\_\+\+Player\+\_\+\+Actor} (\hyperlink{classComponent}{Component} $\ast$parent\+\_\+)
+\item 
+\hyperlink{classAnimated__Player__Actor_a34e25dba15914d9dd3596f35c387ffd6}{$\sim$\+Animated\+\_\+\+Player\+\_\+\+Actor} ()
+\item 
+bool \hyperlink{classAnimated__Player__Actor_aa7ac745ffba6976efc31a31370166017}{on\+Create} (int num\+\_\+x\+\_\+frame, int num\+\_\+y\+\_\+frame, int curr\+\_\+x\+\_\+frame, int curr\+\_\+y\+\_\+frame)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classAnimated__Player__Actor_ac6c4259340bfa000195b69f7eef1ae17}{on\+Destroy} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classAnimated__Player__Actor_aa383063c812e8b0015f18485ab000d65}{update} (const float delta\+Time\+\_\+)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classAnimated__Player__Actor_a2528c4e08b2b78ceb360176000f2c585}{input} (\hyperlink{structGameData}{Game\+Data} $\ast$\hyperlink{imgui__impl__opengl3__loader_8h_abd87654504355b4c1bb002dcb1d4d16a}{data})
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classAnimated__Player__Actor_a0f47a39cced0b631b6e6ef75243ef181}{draw} (std\+::shared\+\_\+ptr$<$ \hyperlink{classShader__Actor}{Shader\+\_\+\+Actor} $>$ \hyperlink{imgui__impl__opengl3__loader_8h_a57b2a96adb1d51204909a82d861e395e}{shader}, glm\+::mat4 \hyperlink{main__menu__state_8cpp_a565d92bfbcc4a481d2d35f3850a382f7}{projection}, float xpos, float ypos, float box\+Width, float bow\+Height, float rot) const
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classAnimated__Player__Actor_a05ff973dde6e3409c66b933407748997}{jump} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classAnimated__Player__Actor_a2a16f88ffccdd67e6d7f0df4a9374754}{move\+Left} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classAnimated__Player__Actor_a8ddbff2c1e30f700832d987b362669b5}{move\+Right} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classAnimated__Player__Actor_a67f7bb9c2544d32c2d35a29c4e245f10}{stop} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classAnimated__Player__Actor_acd9a4dee055dd82f0588db375dde0ca7}{check\+\_\+collision\+\_\+edge} (std\+::shared\+\_\+ptr$<$ \hyperlink{classEdge__Actor}{Edge\+\_\+\+Actor} $>$ edge)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classAnimated__Player__Actor_a231e2dd478cf7583529ce058e6da082f}{pressure\+\_\+sensitve\+\_\+jump} (float pressure)
+\item 
+bool \hyperlink{classAnimated__Player__Actor_a1dc051ee2ceb0b0f4d3be1f02dac5ff0}{pick\+\_\+up\+\_\+gun} (std\+::shared\+\_\+ptr$<$ \hyperlink{classGun__Actor}{Gun\+\_\+\+Actor} $>$ \hyperlink{game__play__state_8cpp_add80b8ad6081fe06bcfb1956a830b5fd}{gun})
+\item 
+bool \hyperlink{classAnimated__Player__Actor_aac846074a509a83f033258ca84a8d41f}{get\+\_\+jump\+\_\+flag} () const
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classAnimated__Player__Actor_a7e0fb150e4e6a0a588b126a7251b059d}{set\+\_\+jump\+\_\+flag} (bool \hyperlink{classAnimated__Player__Actor_a05ff973dde6e3409c66b933407748997}{jump})
+\item 
+bool \hyperlink{classAnimated__Player__Actor_a68f4ad7c2fb88bf5c608d79157f506b9}{get\+\_\+shooting\+\_\+flag} () const
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classAnimated__Player__Actor_a48472acfb2041970e148be3a99d6fcaa}{set\+\_\+shooting\+\_\+flag} (bool \hyperlink{classAnimated__Player__Actor_a05ff973dde6e3409c66b933407748997}{jump})
+\item 
+bool \hyperlink{classAnimated__Player__Actor_a97607376e26b559e468567ab4ac98569}{get\+\_\+move\+\_\+flag} () const
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classAnimated__Player__Actor_a16d5a1c9a0a71b5ce19f7d7efff643be}{set\+\_\+move\+\_\+flag} (bool \hyperlink{classAnimated__Player__Actor_a05ff973dde6e3409c66b933407748997}{jump})
+\item 
+bool \hyperlink{classAnimated__Player__Actor_aad2d5d5761775d725237d742e22ea79a}{get\+\_\+move\+\_\+left\+\_\+flag} () const
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classAnimated__Player__Actor_ac09411ed578cb6415b04b3c6f23cf5b5}{set\+\_\+move\+\_\+left\+\_\+flag} (bool \hyperlink{classAnimated__Player__Actor_a05ff973dde6e3409c66b933407748997}{jump})
+\item 
+bool \hyperlink{classAnimated__Player__Actor_a5b8cbfd84d0663e73d11f92d91349081}{get\+\_\+floor\+\_\+flag} () const
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classAnimated__Player__Actor_accd8fe5d483364886bb677faa7ee9a83}{set\+\_\+floor\+\_\+flag} (bool bfloor)
+\item 
+bool \hyperlink{classAnimated__Player__Actor_ac9440a10f172d940409e0d8abaa1606c}{get\+\_\+run\+\_\+flag} () const
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classAnimated__Player__Actor_a3109b8d2f5fcabfde409edfe5d1d93b3}{set\+\_\+run\+\_\+flag} (bool run)
+\item 
+bool \hyperlink{classAnimated__Player__Actor_a898d6a22c942403470ce35d21eb38ec9}{get\+\_\+gun\+\_\+equipped\+\_\+flag} () const
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classAnimated__Player__Actor_a6e291bd8d34967d94386067affd48998}{set\+\_\+gun\+\_\+equipped\+\_\+flag} (bool \hyperlink{game__play__state_8cpp_add80b8ad6081fe06bcfb1956a830b5fd}{gun})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classAnimated__Player__Actor_a0b42068bb0686dd7009c1bea18ad7c1d}{force\+\_\+x}
+\item 
+float \hyperlink{classAnimated__Player__Actor_ade36a912f45284335623b4caf62a792c}{force}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+u\+\_\+int16\+\_\+t \hyperlink{classAnimated__Player__Actor_ad060f4c5f7fbc808f517fcfbc183df7b}{counter} = 0
+\item 
+bool \hyperlink{classAnimated__Player__Actor_a1407bc9c5cb95871ddfcc2560005fe1c}{move\+\_\+flag}
+\item 
+bool \hyperlink{classAnimated__Player__Actor_aeb1af491d3cb43502b9b3018f954c393}{move\+\_\+left\+\_\+flag}
+\item 
+bool \hyperlink{classAnimated__Player__Actor_a398ca40ea9a8295d6b056765d93c0296}{jump\+\_\+flag}
+\item 
+bool \hyperlink{classAnimated__Player__Actor_a534150c13901a7d63cc02ae70f09ac3d}{shooting\+\_\+flag}
+\item 
+bool \hyperlink{classAnimated__Player__Actor_ac03b324c54c1b0785cfa6fcf9f2a7899}{floor\+\_\+flag}
+\item 
+bool \hyperlink{classAnimated__Player__Actor_aa9fdf3aad648049b0e371655aca50b71}{run\+\_\+flag}
+\item 
+bool \hyperlink{classAnimated__Player__Actor_a81feb89124afa146b6c4084d0f439420}{gun\+\_\+equipped}
+\item 
+bool \hyperlink{classAnimated__Player__Actor_abfa9855e7199bfee3d52caa60c858c2e}{player\+\_\+collision}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAnimate__Actor}{Animate\+\_\+\+Actor} $>$ \hyperlink{classAnimated__Player__Actor_a5b7c54c2ea4a5fdf3f2c875e116e0679}{idle\+\_\+animation}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAnimate__Actor}{Animate\+\_\+\+Actor} $>$ \hyperlink{classAnimated__Player__Actor_a449e23d0b58757379207ec4e931af48a}{run\+\_\+animation}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAnimate__Actor}{Animate\+\_\+\+Actor} $>$ \hyperlink{classAnimated__Player__Actor_a99cfc98df7c52de42a4954d4ce97ee7d}{run\+Left\+\_\+animation}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAnimate__Actor}{Animate\+\_\+\+Actor} $>$ \hyperlink{classAnimated__Player__Actor_a343da9854c906004cf55e0180e257494}{jump\+\_\+animation}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAnimated__Player__Actor_a223689b724b4983b4122adf665eb61d3}\label{classAnimated__Player__Actor_a223689b724b4983b4122adf665eb61d3}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{Animated\+\_\+\+Player\+\_\+\+Actor()}{Animated\_Player\_Actor()}}
+{\footnotesize\ttfamily Animated\+\_\+\+Player\+\_\+\+Actor\+::\+Animated\+\_\+\+Player\+\_\+\+Actor (\begin{DoxyParamCaption}\item[{\hyperlink{classComponent}{Component} $\ast$}]{parent\+\_\+ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_a34e25dba15914d9dd3596f35c387ffd6}\label{classAnimated__Player__Actor_a34e25dba15914d9dd3596f35c387ffd6}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!````~Animated\+\_\+\+Player\+\_\+\+Actor@{$\sim$\+Animated\+\_\+\+Player\+\_\+\+Actor}}
+\index{````~Animated\+\_\+\+Player\+\_\+\+Actor@{$\sim$\+Animated\+\_\+\+Player\+\_\+\+Actor}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{$\sim$\+Animated\+\_\+\+Player\+\_\+\+Actor()}{~Animated\_Player\_Actor()}}
+{\footnotesize\ttfamily Animated\+\_\+\+Player\+\_\+\+Actor\+::$\sim$\+Animated\+\_\+\+Player\+\_\+\+Actor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAnimated__Player__Actor_acd9a4dee055dd82f0588db375dde0ca7}\label{classAnimated__Player__Actor_acd9a4dee055dd82f0588db375dde0ca7}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!check\+\_\+collision\+\_\+edge@{check\+\_\+collision\+\_\+edge}}
+\index{check\+\_\+collision\+\_\+edge@{check\+\_\+collision\+\_\+edge}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{check\+\_\+collision\+\_\+edge()}{check\_collision\_edge()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Animated\+\_\+\+Player\+\_\+\+Actor\+::check\+\_\+collision\+\_\+edge (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classEdge__Actor}{Edge\+\_\+\+Actor} $>$}]{edge }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_a0f47a39cced0b631b6e6ef75243ef181}\label{classAnimated__Player__Actor_a0f47a39cced0b631b6e6ef75243ef181}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!draw@{draw}}
+\index{draw@{draw}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Animated\+\_\+\+Player\+\_\+\+Actor\+::draw (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classShader__Actor}{Shader\+\_\+\+Actor} $>$}]{shader,  }\item[{glm\+::mat4}]{projection,  }\item[{float}]{xpos,  }\item[{float}]{ypos,  }\item[{float}]{box\+Width,  }\item[{float}]{bow\+Height,  }\item[{float}]{rot }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_a5b8cbfd84d0663e73d11f92d91349081}\label{classAnimated__Player__Actor_a5b8cbfd84d0663e73d11f92d91349081}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!get\+\_\+floor\+\_\+flag@{get\+\_\+floor\+\_\+flag}}
+\index{get\+\_\+floor\+\_\+flag@{get\+\_\+floor\+\_\+flag}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{get\+\_\+floor\+\_\+flag()}{get\_floor\_flag()}}
+{\footnotesize\ttfamily bool Animated\+\_\+\+Player\+\_\+\+Actor\+::get\+\_\+floor\+\_\+flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_a898d6a22c942403470ce35d21eb38ec9}\label{classAnimated__Player__Actor_a898d6a22c942403470ce35d21eb38ec9}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!get\+\_\+gun\+\_\+equipped\+\_\+flag@{get\+\_\+gun\+\_\+equipped\+\_\+flag}}
+\index{get\+\_\+gun\+\_\+equipped\+\_\+flag@{get\+\_\+gun\+\_\+equipped\+\_\+flag}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{get\+\_\+gun\+\_\+equipped\+\_\+flag()}{get\_gun\_equipped\_flag()}}
+{\footnotesize\ttfamily bool Animated\+\_\+\+Player\+\_\+\+Actor\+::get\+\_\+gun\+\_\+equipped\+\_\+flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_aac846074a509a83f033258ca84a8d41f}\label{classAnimated__Player__Actor_aac846074a509a83f033258ca84a8d41f}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!get\+\_\+jump\+\_\+flag@{get\+\_\+jump\+\_\+flag}}
+\index{get\+\_\+jump\+\_\+flag@{get\+\_\+jump\+\_\+flag}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{get\+\_\+jump\+\_\+flag()}{get\_jump\_flag()}}
+{\footnotesize\ttfamily bool Animated\+\_\+\+Player\+\_\+\+Actor\+::get\+\_\+jump\+\_\+flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_a97607376e26b559e468567ab4ac98569}\label{classAnimated__Player__Actor_a97607376e26b559e468567ab4ac98569}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!get\+\_\+move\+\_\+flag@{get\+\_\+move\+\_\+flag}}
+\index{get\+\_\+move\+\_\+flag@{get\+\_\+move\+\_\+flag}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{get\+\_\+move\+\_\+flag()}{get\_move\_flag()}}
+{\footnotesize\ttfamily bool Animated\+\_\+\+Player\+\_\+\+Actor\+::get\+\_\+move\+\_\+flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_aad2d5d5761775d725237d742e22ea79a}\label{classAnimated__Player__Actor_aad2d5d5761775d725237d742e22ea79a}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!get\+\_\+move\+\_\+left\+\_\+flag@{get\+\_\+move\+\_\+left\+\_\+flag}}
+\index{get\+\_\+move\+\_\+left\+\_\+flag@{get\+\_\+move\+\_\+left\+\_\+flag}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{get\+\_\+move\+\_\+left\+\_\+flag()}{get\_move\_left\_flag()}}
+{\footnotesize\ttfamily bool Animated\+\_\+\+Player\+\_\+\+Actor\+::get\+\_\+move\+\_\+left\+\_\+flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_ac9440a10f172d940409e0d8abaa1606c}\label{classAnimated__Player__Actor_ac9440a10f172d940409e0d8abaa1606c}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!get\+\_\+run\+\_\+flag@{get\+\_\+run\+\_\+flag}}
+\index{get\+\_\+run\+\_\+flag@{get\+\_\+run\+\_\+flag}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{get\+\_\+run\+\_\+flag()}{get\_run\_flag()}}
+{\footnotesize\ttfamily bool Animated\+\_\+\+Player\+\_\+\+Actor\+::get\+\_\+run\+\_\+flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_a68f4ad7c2fb88bf5c608d79157f506b9}\label{classAnimated__Player__Actor_a68f4ad7c2fb88bf5c608d79157f506b9}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!get\+\_\+shooting\+\_\+flag@{get\+\_\+shooting\+\_\+flag}}
+\index{get\+\_\+shooting\+\_\+flag@{get\+\_\+shooting\+\_\+flag}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{get\+\_\+shooting\+\_\+flag()}{get\_shooting\_flag()}}
+{\footnotesize\ttfamily bool Animated\+\_\+\+Player\+\_\+\+Actor\+::get\+\_\+shooting\+\_\+flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_a2528c4e08b2b78ceb360176000f2c585}\label{classAnimated__Player__Actor_a2528c4e08b2b78ceb360176000f2c585}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!input@{input}}
+\index{input@{input}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Animated\+\_\+\+Player\+\_\+\+Actor\+::input (\begin{DoxyParamCaption}\item[{\hyperlink{structGameData}{Game\+Data} $\ast$}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_a05ff973dde6e3409c66b933407748997}\label{classAnimated__Player__Actor_a05ff973dde6e3409c66b933407748997}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!jump@{jump}}
+\index{jump@{jump}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{jump()}{jump()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Animated\+\_\+\+Player\+\_\+\+Actor\+::jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_a2a16f88ffccdd67e6d7f0df4a9374754}\label{classAnimated__Player__Actor_a2a16f88ffccdd67e6d7f0df4a9374754}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!move\+Left@{move\+Left}}
+\index{move\+Left@{move\+Left}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{move\+Left()}{moveLeft()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Animated\+\_\+\+Player\+\_\+\+Actor\+::move\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_a8ddbff2c1e30f700832d987b362669b5}\label{classAnimated__Player__Actor_a8ddbff2c1e30f700832d987b362669b5}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!move\+Right@{move\+Right}}
+\index{move\+Right@{move\+Right}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{move\+Right()}{moveRight()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Animated\+\_\+\+Player\+\_\+\+Actor\+::move\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_aa7ac745ffba6976efc31a31370166017}\label{classAnimated__Player__Actor_aa7ac745ffba6976efc31a31370166017}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!on\+Create@{on\+Create}}
+\index{on\+Create@{on\+Create}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{on\+Create()}{onCreate()}}
+{\footnotesize\ttfamily bool Animated\+\_\+\+Player\+\_\+\+Actor\+::on\+Create (\begin{DoxyParamCaption}\item[{int}]{num\+\_\+x\+\_\+frame,  }\item[{int}]{num\+\_\+y\+\_\+frame,  }\item[{int}]{curr\+\_\+x\+\_\+frame,  }\item[{int}]{curr\+\_\+y\+\_\+frame }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_ac6c4259340bfa000195b69f7eef1ae17}\label{classAnimated__Player__Actor_ac6c4259340bfa000195b69f7eef1ae17}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!on\+Destroy@{on\+Destroy}}
+\index{on\+Destroy@{on\+Destroy}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{on\+Destroy()}{onDestroy()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Animated\+\_\+\+Player\+\_\+\+Actor\+::on\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classActor_a47101d6275509662bf6c84c3f3439696}{Actor}.
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_a1dc051ee2ceb0b0f4d3be1f02dac5ff0}\label{classAnimated__Player__Actor_a1dc051ee2ceb0b0f4d3be1f02dac5ff0}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!pick\+\_\+up\+\_\+gun@{pick\+\_\+up\+\_\+gun}}
+\index{pick\+\_\+up\+\_\+gun@{pick\+\_\+up\+\_\+gun}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{pick\+\_\+up\+\_\+gun()}{pick\_up\_gun()}}
+{\footnotesize\ttfamily bool Animated\+\_\+\+Player\+\_\+\+Actor\+::pick\+\_\+up\+\_\+gun (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classGun__Actor}{Gun\+\_\+\+Actor} $>$}]{gun }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_a231e2dd478cf7583529ce058e6da082f}\label{classAnimated__Player__Actor_a231e2dd478cf7583529ce058e6da082f}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!pressure\+\_\+sensitve\+\_\+jump@{pressure\+\_\+sensitve\+\_\+jump}}
+\index{pressure\+\_\+sensitve\+\_\+jump@{pressure\+\_\+sensitve\+\_\+jump}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{pressure\+\_\+sensitve\+\_\+jump()}{pressure\_sensitve\_jump()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Animated\+\_\+\+Player\+\_\+\+Actor\+::pressure\+\_\+sensitve\+\_\+jump (\begin{DoxyParamCaption}\item[{float}]{pressure }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_accd8fe5d483364886bb677faa7ee9a83}\label{classAnimated__Player__Actor_accd8fe5d483364886bb677faa7ee9a83}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!set\+\_\+floor\+\_\+flag@{set\+\_\+floor\+\_\+flag}}
+\index{set\+\_\+floor\+\_\+flag@{set\+\_\+floor\+\_\+flag}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{set\+\_\+floor\+\_\+flag()}{set\_floor\_flag()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Animated\+\_\+\+Player\+\_\+\+Actor\+::set\+\_\+floor\+\_\+flag (\begin{DoxyParamCaption}\item[{bool}]{bfloor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_a6e291bd8d34967d94386067affd48998}\label{classAnimated__Player__Actor_a6e291bd8d34967d94386067affd48998}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!set\+\_\+gun\+\_\+equipped\+\_\+flag@{set\+\_\+gun\+\_\+equipped\+\_\+flag}}
+\index{set\+\_\+gun\+\_\+equipped\+\_\+flag@{set\+\_\+gun\+\_\+equipped\+\_\+flag}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{set\+\_\+gun\+\_\+equipped\+\_\+flag()}{set\_gun\_equipped\_flag()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Animated\+\_\+\+Player\+\_\+\+Actor\+::set\+\_\+gun\+\_\+equipped\+\_\+flag (\begin{DoxyParamCaption}\item[{bool}]{gun }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_a7e0fb150e4e6a0a588b126a7251b059d}\label{classAnimated__Player__Actor_a7e0fb150e4e6a0a588b126a7251b059d}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!set\+\_\+jump\+\_\+flag@{set\+\_\+jump\+\_\+flag}}
+\index{set\+\_\+jump\+\_\+flag@{set\+\_\+jump\+\_\+flag}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{set\+\_\+jump\+\_\+flag()}{set\_jump\_flag()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Animated\+\_\+\+Player\+\_\+\+Actor\+::set\+\_\+jump\+\_\+flag (\begin{DoxyParamCaption}\item[{bool}]{jump }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_a16d5a1c9a0a71b5ce19f7d7efff643be}\label{classAnimated__Player__Actor_a16d5a1c9a0a71b5ce19f7d7efff643be}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!set\+\_\+move\+\_\+flag@{set\+\_\+move\+\_\+flag}}
+\index{set\+\_\+move\+\_\+flag@{set\+\_\+move\+\_\+flag}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{set\+\_\+move\+\_\+flag()}{set\_move\_flag()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Animated\+\_\+\+Player\+\_\+\+Actor\+::set\+\_\+move\+\_\+flag (\begin{DoxyParamCaption}\item[{bool}]{jump }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_ac09411ed578cb6415b04b3c6f23cf5b5}\label{classAnimated__Player__Actor_ac09411ed578cb6415b04b3c6f23cf5b5}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!set\+\_\+move\+\_\+left\+\_\+flag@{set\+\_\+move\+\_\+left\+\_\+flag}}
+\index{set\+\_\+move\+\_\+left\+\_\+flag@{set\+\_\+move\+\_\+left\+\_\+flag}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{set\+\_\+move\+\_\+left\+\_\+flag()}{set\_move\_left\_flag()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Animated\+\_\+\+Player\+\_\+\+Actor\+::set\+\_\+move\+\_\+left\+\_\+flag (\begin{DoxyParamCaption}\item[{bool}]{jump }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_a3109b8d2f5fcabfde409edfe5d1d93b3}\label{classAnimated__Player__Actor_a3109b8d2f5fcabfde409edfe5d1d93b3}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!set\+\_\+run\+\_\+flag@{set\+\_\+run\+\_\+flag}}
+\index{set\+\_\+run\+\_\+flag@{set\+\_\+run\+\_\+flag}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{set\+\_\+run\+\_\+flag()}{set\_run\_flag()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Animated\+\_\+\+Player\+\_\+\+Actor\+::set\+\_\+run\+\_\+flag (\begin{DoxyParamCaption}\item[{bool}]{run }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_a48472acfb2041970e148be3a99d6fcaa}\label{classAnimated__Player__Actor_a48472acfb2041970e148be3a99d6fcaa}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!set\+\_\+shooting\+\_\+flag@{set\+\_\+shooting\+\_\+flag}}
+\index{set\+\_\+shooting\+\_\+flag@{set\+\_\+shooting\+\_\+flag}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{set\+\_\+shooting\+\_\+flag()}{set\_shooting\_flag()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Animated\+\_\+\+Player\+\_\+\+Actor\+::set\+\_\+shooting\+\_\+flag (\begin{DoxyParamCaption}\item[{bool}]{jump }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_a67f7bb9c2544d32c2d35a29c4e245f10}\label{classAnimated__Player__Actor_a67f7bb9c2544d32c2d35a29c4e245f10}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!stop@{stop}}
+\index{stop@{stop}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Animated\+\_\+\+Player\+\_\+\+Actor\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_aa383063c812e8b0015f18485ab000d65}\label{classAnimated__Player__Actor_aa383063c812e8b0015f18485ab000d65}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!update@{update}}
+\index{update@{update}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Animated\+\_\+\+Player\+\_\+\+Actor\+::update (\begin{DoxyParamCaption}\item[{const float}]{delta\+Time\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classActor_a724ff8f2e9c34f15a6c443a3912504c4}{Actor}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classAnimated__Player__Actor_ad060f4c5f7fbc808f517fcfbc183df7b}\label{classAnimated__Player__Actor_ad060f4c5f7fbc808f517fcfbc183df7b}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!counter@{counter}}
+\index{counter@{counter}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily u\+\_\+int16\+\_\+t Animated\+\_\+\+Player\+\_\+\+Actor\+::counter = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_ac03b324c54c1b0785cfa6fcf9f2a7899}\label{classAnimated__Player__Actor_ac03b324c54c1b0785cfa6fcf9f2a7899}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!floor\+\_\+flag@{floor\+\_\+flag}}
+\index{floor\+\_\+flag@{floor\+\_\+flag}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{floor\+\_\+flag}{floor\_flag}}
+{\footnotesize\ttfamily bool Animated\+\_\+\+Player\+\_\+\+Actor\+::floor\+\_\+flag\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_ade36a912f45284335623b4caf62a792c}\label{classAnimated__Player__Actor_ade36a912f45284335623b4caf62a792c}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!force@{force}}
+\index{force@{force}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{force}{force}}
+{\footnotesize\ttfamily float Animated\+\_\+\+Player\+\_\+\+Actor\+::force}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_a0b42068bb0686dd7009c1bea18ad7c1d}\label{classAnimated__Player__Actor_a0b42068bb0686dd7009c1bea18ad7c1d}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!force\+\_\+x@{force\+\_\+x}}
+\index{force\+\_\+x@{force\+\_\+x}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{force\+\_\+x}{force\_x}}
+{\footnotesize\ttfamily float Animated\+\_\+\+Player\+\_\+\+Actor\+::force\+\_\+x}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_a81feb89124afa146b6c4084d0f439420}\label{classAnimated__Player__Actor_a81feb89124afa146b6c4084d0f439420}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!gun\+\_\+equipped@{gun\+\_\+equipped}}
+\index{gun\+\_\+equipped@{gun\+\_\+equipped}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{gun\+\_\+equipped}{gun\_equipped}}
+{\footnotesize\ttfamily bool Animated\+\_\+\+Player\+\_\+\+Actor\+::gun\+\_\+equipped\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_a5b7c54c2ea4a5fdf3f2c875e116e0679}\label{classAnimated__Player__Actor_a5b7c54c2ea4a5fdf3f2c875e116e0679}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!idle\+\_\+animation@{idle\+\_\+animation}}
+\index{idle\+\_\+animation@{idle\+\_\+animation}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{idle\+\_\+animation}{idle\_animation}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classAnimate__Actor}{Animate\+\_\+\+Actor}$>$ Animated\+\_\+\+Player\+\_\+\+Actor\+::idle\+\_\+animation\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_a343da9854c906004cf55e0180e257494}\label{classAnimated__Player__Actor_a343da9854c906004cf55e0180e257494}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!jump\+\_\+animation@{jump\+\_\+animation}}
+\index{jump\+\_\+animation@{jump\+\_\+animation}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{jump\+\_\+animation}{jump\_animation}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classAnimate__Actor}{Animate\+\_\+\+Actor}$>$ Animated\+\_\+\+Player\+\_\+\+Actor\+::jump\+\_\+animation\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_a398ca40ea9a8295d6b056765d93c0296}\label{classAnimated__Player__Actor_a398ca40ea9a8295d6b056765d93c0296}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!jump\+\_\+flag@{jump\+\_\+flag}}
+\index{jump\+\_\+flag@{jump\+\_\+flag}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{jump\+\_\+flag}{jump\_flag}}
+{\footnotesize\ttfamily bool Animated\+\_\+\+Player\+\_\+\+Actor\+::jump\+\_\+flag\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_a1407bc9c5cb95871ddfcc2560005fe1c}\label{classAnimated__Player__Actor_a1407bc9c5cb95871ddfcc2560005fe1c}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!move\+\_\+flag@{move\+\_\+flag}}
+\index{move\+\_\+flag@{move\+\_\+flag}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{move\+\_\+flag}{move\_flag}}
+{\footnotesize\ttfamily bool Animated\+\_\+\+Player\+\_\+\+Actor\+::move\+\_\+flag\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_aeb1af491d3cb43502b9b3018f954c393}\label{classAnimated__Player__Actor_aeb1af491d3cb43502b9b3018f954c393}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!move\+\_\+left\+\_\+flag@{move\+\_\+left\+\_\+flag}}
+\index{move\+\_\+left\+\_\+flag@{move\+\_\+left\+\_\+flag}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{move\+\_\+left\+\_\+flag}{move\_left\_flag}}
+{\footnotesize\ttfamily bool Animated\+\_\+\+Player\+\_\+\+Actor\+::move\+\_\+left\+\_\+flag\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_abfa9855e7199bfee3d52caa60c858c2e}\label{classAnimated__Player__Actor_abfa9855e7199bfee3d52caa60c858c2e}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!player\+\_\+collision@{player\+\_\+collision}}
+\index{player\+\_\+collision@{player\+\_\+collision}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{player\+\_\+collision}{player\_collision}}
+{\footnotesize\ttfamily bool Animated\+\_\+\+Player\+\_\+\+Actor\+::player\+\_\+collision\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_a449e23d0b58757379207ec4e931af48a}\label{classAnimated__Player__Actor_a449e23d0b58757379207ec4e931af48a}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!run\+\_\+animation@{run\+\_\+animation}}
+\index{run\+\_\+animation@{run\+\_\+animation}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{run\+\_\+animation}{run\_animation}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classAnimate__Actor}{Animate\+\_\+\+Actor}$>$ Animated\+\_\+\+Player\+\_\+\+Actor\+::run\+\_\+animation\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_aa9fdf3aad648049b0e371655aca50b71}\label{classAnimated__Player__Actor_aa9fdf3aad648049b0e371655aca50b71}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!run\+\_\+flag@{run\+\_\+flag}}
+\index{run\+\_\+flag@{run\+\_\+flag}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{run\+\_\+flag}{run\_flag}}
+{\footnotesize\ttfamily bool Animated\+\_\+\+Player\+\_\+\+Actor\+::run\+\_\+flag\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_a99cfc98df7c52de42a4954d4ce97ee7d}\label{classAnimated__Player__Actor_a99cfc98df7c52de42a4954d4ce97ee7d}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!run\+Left\+\_\+animation@{run\+Left\+\_\+animation}}
+\index{run\+Left\+\_\+animation@{run\+Left\+\_\+animation}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{run\+Left\+\_\+animation}{runLeft\_animation}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classAnimate__Actor}{Animate\+\_\+\+Actor}$>$ Animated\+\_\+\+Player\+\_\+\+Actor\+::run\+Left\+\_\+animation\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAnimated__Player__Actor_a534150c13901a7d63cc02ae70f09ac3d}\label{classAnimated__Player__Actor_a534150c13901a7d63cc02ae70f09ac3d}} 
+\index{Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}!shooting\+\_\+flag@{shooting\+\_\+flag}}
+\index{shooting\+\_\+flag@{shooting\+\_\+flag}!Animated\+\_\+\+Player\+\_\+\+Actor@{Animated\+\_\+\+Player\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{shooting\+\_\+flag}{shooting\_flag}}
+{\footnotesize\ttfamily bool Animated\+\_\+\+Player\+\_\+\+Actor\+::shooting\+\_\+flag\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/\+Actors/\hyperlink{Animated__Player__Actor_8h}{Animated\+\_\+\+Player\+\_\+\+Actor.\+h}\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/src/\+Actors/\hyperlink{Animated__Player__Actor_8cpp}{Animated\+\_\+\+Player\+\_\+\+Actor.\+cpp}\end{DoxyCompactItemize}

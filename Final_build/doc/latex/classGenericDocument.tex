@@ -1,0 +1,842 @@
+\hypertarget{classGenericDocument}{}\section{Generic\+Document$<$ Encoding, Allocator, Stack\+Allocator $>$ Class Template Reference}
+\label{classGenericDocument}\index{Generic\+Document$<$ Encoding, Allocator, Stack\+Allocator $>$@{Generic\+Document$<$ Encoding, Allocator, Stack\+Allocator $>$}}
+
+
+A document for parsing J\+S\+ON text as D\+OM.  
+
+
+
+
+{\ttfamily \#include $<$document.\+h$>$}
+
+
+
+Inheritance diagram for Generic\+Document$<$ Encoding, Allocator, Stack\+Allocator $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classGenericDocument__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Generic\+Document$<$ Encoding, Allocator, Stack\+Allocator $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGenericDocument__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structGenericDocument_1_1ClearStackOnExit}{Clear\+Stack\+On\+Exit}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Encoding\+::\+Ch \hyperlink{classGenericDocument_a6f5b0b7b6626508d094ae67490269700}{Ch}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structCharacter}{Character} type derived from Encoding. \end{DoxyCompactList}\item 
+typedef \hyperlink{classGenericValue}{Generic\+Value}$<$ Encoding, Allocator $>$ \hyperlink{classGenericDocument_a8936205dc215dda029060d7e835e0549}{Value\+Type}
+\begin{DoxyCompactList}\small\item\em Value type of the document. \end{DoxyCompactList}\item 
+typedef Allocator \hyperlink{classGenericDocument_a35155b912da66ced38d22e2551364c57}{Allocator\+Type}
+\begin{DoxyCompactList}\small\item\em Allocator type from template parameter. \end{DoxyCompactList}\item 
+typedef Stack\+Allocator \hyperlink{classGenericDocument_a4765969f2292442eef42b28388e1f75b}{Stack\+Allocator\+Type}
+\begin{DoxyCompactList}\small\item\em Stack\+Allocator type from template parameter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGenericDocument_a3da21e72ec8f26b9da77d86cc1d41cdd}{Generic\+Document} (\hyperlink{rapidjson_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type} \hyperlink{imgui__impl__opengl3__loader_8h_a63267399cd2a2ee217572c11d2e54f07}{type}, Allocator $\ast$allocator=0, size\+\_\+t stack\+Capacity=\hyperlink{classGenericDocument_a90d452abe8940d8a9c9634d1c49d8f49}{k\+Default\+Stack\+Capacity}, Stack\+Allocator $\ast$stack\+Allocator=0)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classGenericDocument_a6b1c313ad538cafc4d23d4bd5f97178c}{Generic\+Document} (Allocator $\ast$allocator=0, size\+\_\+t stack\+Capacity=\hyperlink{classGenericDocument_a90d452abe8940d8a9c9634d1c49d8f49}{k\+Default\+Stack\+Capacity}, Stack\+Allocator $\ast$stack\+Allocator=0)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classGenericDocument_aa9f980909298a4de32f66526484820bf}{$\sim$\+Generic\+Document} ()
+\item 
+\hyperlink{classGenericDocument}{Generic\+Document} \& \hyperlink{classGenericDocument_a6290e1290fad74177625af5938c0c58f}{Swap} (\hyperlink{classGenericDocument}{Generic\+Document} \&rhs) R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+O\+E\+X\+C\+E\+PT
+\begin{DoxyCompactList}\small\item\em Exchange the contents of this document with those of another. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Generator $>$ }\\\hyperlink{classGenericDocument}{Generic\+Document} \& \hyperlink{classGenericDocument_a36fbc7d0a9595d26e0d2c8859d207d1f}{Populate} (Generator \&g)
+\begin{DoxyCompactList}\small\item\em Populate this document by a generator which produces S\+AX events. \end{DoxyCompactList}\item 
+Allocator \& \hyperlink{classGenericDocument_aa4609d6b19f86aec1a6b96edf2c27686}{Get\+Allocator} ()
+\begin{DoxyCompactList}\small\item\em Get the allocator of this document. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classGenericDocument_a9e2e543c326b8b981d4f2c3d6793d15b}{Get\+Stack\+Capacity} () const
+\begin{DoxyCompactList}\small\item\em Get the capacity of stack in bytes. \end{DoxyCompactList}\item 
+bool \hyperlink{classGenericDocument_a87dc7f66b2b92660b8a43546733f9df2}{Null} ()
+\item 
+bool \hyperlink{classGenericDocument_a4c44780642518dd34bd241a1ea0ceaf1}{Bool} (bool b)
+\item 
+bool \hyperlink{classGenericDocument_a8cc986266becaa268474c607489745c7}{Int} (int \hyperlink{game__play__state_8cpp_acb559820d9ca11295b4500f179ef6392}{i})
+\item 
+bool \hyperlink{classGenericDocument_a530dd899a04a00ba74f52507b488d2c1}{Uint} (unsigned \hyperlink{game__play__state_8cpp_acb559820d9ca11295b4500f179ef6392}{i})
+\item 
+bool \hyperlink{classGenericDocument_a934b1b7a7ed89917615a5410db77a942}{Int64} (\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\+\_\+t} \hyperlink{game__play__state_8cpp_acb559820d9ca11295b4500f179ef6392}{i})
+\item 
+bool \hyperlink{classGenericDocument_a50ac3451a1afd0ce248dcc023d5e09e8}{Uint64} (\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} \hyperlink{game__play__state_8cpp_acb559820d9ca11295b4500f179ef6392}{i})
+\item 
+bool \hyperlink{classGenericDocument_a934bf7a5d1ff062ab079756d842e4f6b}{Double} (double d)
+\item 
+bool \hyperlink{classGenericDocument_af703994dec5af6ef049a24b5243aceab}{Raw\+Number} (const \hyperlink{classGenericValue_ade0e0ce64ccd5d852da57a35e720bafb}{Ch} $\ast$str, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} \hyperlink{imgui__impl__opengl3__loader_8h_a011fc24f10426c01349e94a4edd4b0d5}{length}, bool copy)
+\item 
+bool \hyperlink{classGenericDocument_ad319fcc9e13606b6795424b9374a7398}{String} (const \hyperlink{classGenericValue_ade0e0ce64ccd5d852da57a35e720bafb}{Ch} $\ast$str, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} \hyperlink{imgui__impl__opengl3__loader_8h_a011fc24f10426c01349e94a4edd4b0d5}{length}, bool copy)
+\item 
+bool \hyperlink{classGenericDocument_abb1417fde52cc34cb340e3b50a3295da}{Start\+Object} ()
+\item 
+bool \hyperlink{classGenericDocument_a600d0950baabbcab11197cacb1459c7a}{Key} (const \hyperlink{classGenericValue_ade0e0ce64ccd5d852da57a35e720bafb}{Ch} $\ast$str, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} \hyperlink{imgui__impl__opengl3__loader_8h_a011fc24f10426c01349e94a4edd4b0d5}{length}, bool copy)
+\item 
+bool \hyperlink{classGenericDocument_a42f2df68f9c9d8b88a15b609716867d9}{End\+Object} (\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} member\+Count)
+\item 
+bool \hyperlink{classGenericDocument_ae12c513c61745ae731a47b1ca33db063}{Start\+Array} ()
+\item 
+bool \hyperlink{classGenericDocument_a14097c833bed1a9c7be064ea619c887f}{End\+Array} (\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} element\+Count)
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Parse from stream}\par
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$unsigned parse\+Flags, typename Source\+Encoding , typename Input\+Stream $>$ }\\\hyperlink{classGenericDocument}{Generic\+Document} \& \hyperlink{classGenericDocument_afe94c0abc83a20f2d7dc1ba7677e6238}{Parse\+Stream} (Input\+Stream \&is)
+\begin{DoxyCompactList}\small\item\em Parse J\+S\+ON text from an input stream (with Encoding conversion) \end{DoxyCompactList}\item 
+{\footnotesize template$<$unsigned parse\+Flags, typename Input\+Stream $>$ }\\\hyperlink{classGenericDocument}{Generic\+Document} \& \hyperlink{classGenericDocument_a6e154066c6f5024b91aaab25e03700e3}{Parse\+Stream} (Input\+Stream \&is)
+\begin{DoxyCompactList}\small\item\em Parse J\+S\+ON text from an input stream. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Input\+Stream $>$ }\\\hyperlink{classGenericDocument}{Generic\+Document} \& \hyperlink{classGenericDocument_abe07ededbe9aaceb0058e3d254892b71}{Parse\+Stream} (Input\+Stream \&is)
+\begin{DoxyCompactList}\small\item\em Parse J\+S\+ON text from an input stream (with \hyperlink{reader_8h_ab7be7dabe6ffcba60fad441505583450a9104b0946d648e9467cb7a967401ec80}{k\+Parse\+Default\+Flags}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Parse in-\/place from mutable string}\par
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$unsigned parse\+Flags$>$ }\\\hyperlink{classGenericDocument}{Generic\+Document} \& \hyperlink{classGenericDocument_a301f8f297a5a0da4b6be5459ad766f75}{Parse\+Insitu} (\hyperlink{classGenericValue_ade0e0ce64ccd5d852da57a35e720bafb}{Ch} $\ast$str)
+\begin{DoxyCompactList}\small\item\em Parse J\+S\+ON text from a mutable string. \end{DoxyCompactList}\item 
+\hyperlink{classGenericDocument}{Generic\+Document} \& \hyperlink{classGenericDocument_a81922881357539d5482d31aea14b5664}{Parse\+Insitu} (\hyperlink{classGenericValue_ade0e0ce64ccd5d852da57a35e720bafb}{Ch} $\ast$str)
+\begin{DoxyCompactList}\small\item\em Parse J\+S\+ON text from a mutable string (with \hyperlink{reader_8h_ab7be7dabe6ffcba60fad441505583450a9104b0946d648e9467cb7a967401ec80}{k\+Parse\+Default\+Flags}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Parse from read-\/only string}\par
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$unsigned parse\+Flags, typename Source\+Encoding $>$ }\\\hyperlink{classGenericDocument}{Generic\+Document} \& \hyperlink{classGenericDocument_aadee36db7064cc9894a75c848831cdae}{Parse} (const typename Source\+Encoding\+::\+Ch $\ast$str)
+\begin{DoxyCompactList}\small\item\em Parse J\+S\+ON text from a read-\/only string (with Encoding conversion) \end{DoxyCompactList}\item 
+{\footnotesize template$<$unsigned parse\+Flags$>$ }\\\hyperlink{classGenericDocument}{Generic\+Document} \& \hyperlink{classGenericDocument_a5e377f840009b5cee6757be29525ce0b}{Parse} (const \hyperlink{classGenericValue_ade0e0ce64ccd5d852da57a35e720bafb}{Ch} $\ast$str)
+\begin{DoxyCompactList}\small\item\em Parse J\+S\+ON text from a read-\/only string. \end{DoxyCompactList}\item 
+\hyperlink{classGenericDocument}{Generic\+Document} \& \hyperlink{classGenericDocument_a49ae6de6fd0bc820d9864a106c10b4da}{Parse} (const \hyperlink{classGenericValue_ade0e0ce64ccd5d852da57a35e720bafb}{Ch} $\ast$str)
+\begin{DoxyCompactList}\small\item\em Parse J\+S\+ON text from a read-\/only string (with \hyperlink{reader_8h_ab7be7dabe6ffcba60fad441505583450a9104b0946d648e9467cb7a967401ec80}{k\+Parse\+Default\+Flags}) \end{DoxyCompactList}\item 
+{\footnotesize template$<$unsigned parse\+Flags, typename Source\+Encoding $>$ }\\\hyperlink{classGenericDocument}{Generic\+Document} \& \hyperlink{classGenericDocument_a46b5028cc760c4e915a0d5216af9f7e2}{Parse} (const typename Source\+Encoding\+::\+Ch $\ast$str, size\+\_\+t \hyperlink{imgui__impl__opengl3__loader_8h_a011fc24f10426c01349e94a4edd4b0d5}{length})
+\item 
+{\footnotesize template$<$unsigned parse\+Flags$>$ }\\\hyperlink{classGenericDocument}{Generic\+Document} \& \hyperlink{classGenericDocument_a93fec16eacec4f4b42075bb3bc242a6b}{Parse} (const \hyperlink{classGenericValue_ade0e0ce64ccd5d852da57a35e720bafb}{Ch} $\ast$str, size\+\_\+t \hyperlink{imgui__impl__opengl3__loader_8h_a011fc24f10426c01349e94a4edd4b0d5}{length})
+\item 
+\hyperlink{classGenericDocument}{Generic\+Document} \& \hyperlink{classGenericDocument_ab13d8358acc0648e3f91f6b825365e4f}{Parse} (const \hyperlink{classGenericValue_ade0e0ce64ccd5d852da57a35e720bafb}{Ch} $\ast$str, size\+\_\+t \hyperlink{imgui__impl__opengl3__loader_8h_a011fc24f10426c01349e94a4edd4b0d5}{length})
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Handling parse errors}\par
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classGenericDocument_a510a0588db4eb372f5d81bc3646578fb}{Has\+Parse\+Error} () const
+\begin{DoxyCompactList}\small\item\em Whether a parse error has occurred in the last parsing. \end{DoxyCompactList}\item 
+\hyperlink{group__RAPIDJSON__ERRORS_ga8d4b32dfc45840bca189ade2bbcb6ba7}{Parse\+Error\+Code} \hyperlink{classGenericDocument_a9400a5bd3169cc6ed545e681ccc06070}{Get\+Parse\+Error} () const
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{group__RAPIDJSON__ERRORS_ga8d4b32dfc45840bca189ade2bbcb6ba7}{Parse\+Error\+Code} of last parsing. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classGenericDocument_ae1ef7ca99ced428e9300c68e5142afdb}{Get\+Error\+Offset} () const
+\begin{DoxyCompactList}\small\item\em Get the position of last parsing error in input, 0 otherwise. \end{DoxyCompactList}\item 
+\hyperlink{classGenericDocument_af9bb8eade3eae0c039161378e8d2923a}{operator Parse\+Result} () const
+\begin{DoxyCompactList}\small\item\em Implicit conversion to get the last parse result. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGenericDocument_a58dd6c300949aeb9627de7f9e34796db}{Generic\+Document} (const \hyperlink{classGenericDocument}{Generic\+Document} \&)
+\begin{DoxyCompactList}\small\item\em Prohibit copying. \end{DoxyCompactList}\item 
+\hyperlink{classGenericDocument}{Generic\+Document} \& \hyperlink{classGenericDocument_ae31cd36a3b677d697d0a3bed68edf3c3}{operator=} (const \hyperlink{classGenericDocument}{Generic\+Document} \&)
+\begin{DoxyCompactList}\small\item\em Prohibit assignment. \end{DoxyCompactList}\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericDocument_aa6f040219ed1d4cdd48f7ed9353942a4}{Clear\+Stack} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericDocument_ad72f36087f5129ad4b5321cf8418c923}{Destroy} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Allocator $\ast$ \hyperlink{classGenericDocument_a9b5f15fc75c8035612c37f796548e87a}{allocator\+\_\+}
+\item 
+Allocator $\ast$ \hyperlink{classGenericDocument_ada153f6865201106b3a753861c870266}{own\+Allocator\+\_\+}
+\item 
+\hyperlink{classinternal_1_1Stack}{internal\+::\+Stack}$<$ Stack\+Allocator $>$ \hyperlink{classGenericDocument_ad2169359326bdf8a7180338fec77e77f}{stack\+\_\+}
+\item 
+\hyperlink{structParseResult}{Parse\+Result} \hyperlink{classGenericDocument_a499058f1c615928337d96cfaf374373e}{parse\+Result\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const size\+\_\+t \hyperlink{classGenericDocument_a90d452abe8940d8a9c9634d1c49d8f49}{k\+Default\+Stack\+Capacity} = 1024
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename , typename $>$ }\\class \hyperlink{classGenericDocument_a899449e1a645b5e377af059fb61113d8}{Generic\+Value}
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericDocument_a0d63efcc43758ac3aed77e868233369d}{swap} (\hyperlink{classGenericDocument}{Generic\+Document} \&\hyperlink{pointer_8h_aeeddce917cf130d62c370b8f216026dd}{a}, \hyperlink{classGenericDocument}{Generic\+Document} \&b) R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+O\+E\+X\+C\+E\+PT
+\begin{DoxyCompactList}\small\item\em free-\/standing swap function helper \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$\newline
+class Generic\+Document$<$ Encoding, Allocator, Stack\+Allocator $>$}
+
+A document for parsing J\+S\+ON text as D\+OM. 
+
+\begin{DoxyNote}{Note}
+implements Handler concept 
+\end{DoxyNote}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Encoding} & Encoding for both parsing and string storage. \\
+\hline
+{\em Allocator} & Allocator for allocating memory for the D\+OM \\
+\hline
+{\em Stack\+Allocator} & Allocator for allocating memory for stack during parsing. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyWarning}{Warning}
+Although \hyperlink{classGenericDocument}{Generic\+Document} inherits from \hyperlink{classGenericValue}{Generic\+Value}, the A\+PI does {\bfseries not} provide any virtual functions, especially no virtual destructor. To avoid memory leaks, do not {\ttfamily delete} a \hyperlink{classGenericDocument}{Generic\+Document} object via a pointer to a \hyperlink{classGenericValue}{Generic\+Value}. 
+\end{DoxyWarning}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classGenericDocument_a35155b912da66ced38d22e2551364c57}\label{classGenericDocument_a35155b912da66ced38d22e2551364c57}} 
+\index{Generic\+Document@{Generic\+Document}!Allocator\+Type@{Allocator\+Type}}
+\index{Allocator\+Type@{Allocator\+Type}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Allocator\+Type}{AllocatorType}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+typedef Allocator \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::\hyperlink{classGenericValue_a7beb83860c1b8d2a0e2a7da9796b2fa1}{Allocator\+Type}}
+
+
+
+Allocator type from template parameter. 
+
+\mbox{\Hypertarget{classGenericDocument_a6f5b0b7b6626508d094ae67490269700}\label{classGenericDocument_a6f5b0b7b6626508d094ae67490269700}} 
+\index{Generic\+Document@{Generic\+Document}!Ch@{Ch}}
+\index{Ch@{Ch}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+typedef Encoding\+::\+Ch \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::\hyperlink{classGenericValue_ade0e0ce64ccd5d852da57a35e720bafb}{Ch}}
+
+
+
+\hyperlink{structCharacter}{Character} type derived from Encoding. 
+
+\mbox{\Hypertarget{classGenericDocument_a4765969f2292442eef42b28388e1f75b}\label{classGenericDocument_a4765969f2292442eef42b28388e1f75b}} 
+\index{Generic\+Document@{Generic\+Document}!Stack\+Allocator\+Type@{Stack\+Allocator\+Type}}
+\index{Stack\+Allocator\+Type@{Stack\+Allocator\+Type}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Stack\+Allocator\+Type}{StackAllocatorType}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+typedef Stack\+Allocator \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::\hyperlink{classGenericDocument_a4765969f2292442eef42b28388e1f75b}{Stack\+Allocator\+Type}}
+
+
+
+Stack\+Allocator type from template parameter. 
+
+\mbox{\Hypertarget{classGenericDocument_a8936205dc215dda029060d7e835e0549}\label{classGenericDocument_a8936205dc215dda029060d7e835e0549}} 
+\index{Generic\+Document@{Generic\+Document}!Value\+Type@{Value\+Type}}
+\index{Value\+Type@{Value\+Type}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Value\+Type}{ValueType}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+typedef \hyperlink{classGenericValue}{Generic\+Value}$<$Encoding, Allocator$>$ \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::\hyperlink{classGenericValue_a43a39bb4fca9b9d3de3da6ac353d25ce}{Value\+Type}}
+
+
+
+Value type of the document. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGenericDocument_a3da21e72ec8f26b9da77d86cc1d41cdd}\label{classGenericDocument_a3da21e72ec8f26b9da77d86cc1d41cdd}} 
+\index{Generic\+Document@{Generic\+Document}!Generic\+Document@{Generic\+Document}}
+\index{Generic\+Document@{Generic\+Document}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Generic\+Document()}{GenericDocument()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+\hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::\hyperlink{classGenericDocument}{Generic\+Document} (\begin{DoxyParamCaption}\item[{\hyperlink{rapidjson_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}]{type,  }\item[{Allocator $\ast$}]{allocator = {\ttfamily 0},  }\item[{size\+\_\+t}]{stack\+Capacity = {\ttfamily \hyperlink{classGenericDocument_a90d452abe8940d8a9c9634d1c49d8f49}{k\+Default\+Stack\+Capacity}},  }\item[{Stack\+Allocator $\ast$}]{stack\+Allocator = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructor. 
+
+Creates an empty document of specified type. 
+\begin{DoxyParams}{Parameters}
+{\em type} & Mandatory type of object to create. \\
+\hline
+{\em allocator} & Optional allocator for allocating memory. \\
+\hline
+{\em stack\+Capacity} & Optional initial capacity of stack in bytes. \\
+\hline
+{\em stack\+Allocator} & Optional allocator for allocating memory for stack. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGenericDocument_a6b1c313ad538cafc4d23d4bd5f97178c}\label{classGenericDocument_a6b1c313ad538cafc4d23d4bd5f97178c}} 
+\index{Generic\+Document@{Generic\+Document}!Generic\+Document@{Generic\+Document}}
+\index{Generic\+Document@{Generic\+Document}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Generic\+Document()}{GenericDocument()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+\hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::\hyperlink{classGenericDocument}{Generic\+Document} (\begin{DoxyParamCaption}\item[{Allocator $\ast$}]{allocator = {\ttfamily 0},  }\item[{size\+\_\+t}]{stack\+Capacity = {\ttfamily \hyperlink{classGenericDocument_a90d452abe8940d8a9c9634d1c49d8f49}{k\+Default\+Stack\+Capacity}},  }\item[{Stack\+Allocator $\ast$}]{stack\+Allocator = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+Creates an empty document which type is Null. 
+\begin{DoxyParams}{Parameters}
+{\em allocator} & Optional allocator for allocating memory. \\
+\hline
+{\em stack\+Capacity} & Optional initial capacity of stack in bytes. \\
+\hline
+{\em stack\+Allocator} & Optional allocator for allocating memory for stack. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGenericDocument_aa9f980909298a4de32f66526484820bf}\label{classGenericDocument_aa9f980909298a4de32f66526484820bf}} 
+\index{Generic\+Document@{Generic\+Document}!````~Generic\+Document@{$\sim$\+Generic\+Document}}
+\index{````~Generic\+Document@{$\sim$\+Generic\+Document}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{$\sim$\+Generic\+Document()}{~GenericDocument()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+\hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::$\sim$\hyperlink{classGenericDocument}{Generic\+Document} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericDocument_a58dd6c300949aeb9627de7f9e34796db}\label{classGenericDocument_a58dd6c300949aeb9627de7f9e34796db}} 
+\index{Generic\+Document@{Generic\+Document}!Generic\+Document@{Generic\+Document}}
+\index{Generic\+Document@{Generic\+Document}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Generic\+Document()}{GenericDocument()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+\hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::\hyperlink{classGenericDocument}{Generic\+Document} (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Prohibit copying. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGenericDocument_a4c44780642518dd34bd241a1ea0ceaf1}\label{classGenericDocument_a4c44780642518dd34bd241a1ea0ceaf1}} 
+\index{Generic\+Document@{Generic\+Document}!Bool@{Bool}}
+\index{Bool@{Bool}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Bool()}{Bool()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+bool \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Bool (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericDocument_aa6f040219ed1d4cdd48f7ed9353942a4}\label{classGenericDocument_aa6f040219ed1d4cdd48f7ed9353942a4}} 
+\index{Generic\+Document@{Generic\+Document}!Clear\+Stack@{Clear\+Stack}}
+\index{Clear\+Stack@{Clear\+Stack}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Clear\+Stack()}{ClearStack()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Clear\+Stack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericDocument_ad72f36087f5129ad4b5321cf8418c923}\label{classGenericDocument_ad72f36087f5129ad4b5321cf8418c923}} 
+\index{Generic\+Document@{Generic\+Document}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericDocument_a934bf7a5d1ff062ab079756d842e4f6b}\label{classGenericDocument_a934bf7a5d1ff062ab079756d842e4f6b}} 
+\index{Generic\+Document@{Generic\+Document}!Double@{Double}}
+\index{Double@{Double}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Double()}{Double()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+bool \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Double (\begin{DoxyParamCaption}\item[{double}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericDocument_a14097c833bed1a9c7be064ea619c887f}\label{classGenericDocument_a14097c833bed1a9c7be064ea619c887f}} 
+\index{Generic\+Document@{Generic\+Document}!End\+Array@{End\+Array}}
+\index{End\+Array@{End\+Array}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{End\+Array()}{EndArray()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+bool \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::End\+Array (\begin{DoxyParamCaption}\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{element\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericDocument_a42f2df68f9c9d8b88a15b609716867d9}\label{classGenericDocument_a42f2df68f9c9d8b88a15b609716867d9}} 
+\index{Generic\+Document@{Generic\+Document}!End\+Object@{End\+Object}}
+\index{End\+Object@{End\+Object}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{End\+Object()}{EndObject()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+bool \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::End\+Object (\begin{DoxyParamCaption}\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{member\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericDocument_aa4609d6b19f86aec1a6b96edf2c27686}\label{classGenericDocument_aa4609d6b19f86aec1a6b96edf2c27686}} 
+\index{Generic\+Document@{Generic\+Document}!Get\+Allocator@{Get\+Allocator}}
+\index{Get\+Allocator@{Get\+Allocator}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Get\+Allocator()}{GetAllocator()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+Allocator\& \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Get\+Allocator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the allocator of this document. 
+
+\mbox{\Hypertarget{classGenericDocument_ae1ef7ca99ced428e9300c68e5142afdb}\label{classGenericDocument_ae1ef7ca99ced428e9300c68e5142afdb}} 
+\index{Generic\+Document@{Generic\+Document}!Get\+Error\+Offset@{Get\+Error\+Offset}}
+\index{Get\+Error\+Offset@{Get\+Error\+Offset}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Get\+Error\+Offset()}{GetErrorOffset()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+size\+\_\+t \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Get\+Error\+Offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the position of last parsing error in input, 0 otherwise. 
+
+\mbox{\Hypertarget{classGenericDocument_a9400a5bd3169cc6ed545e681ccc06070}\label{classGenericDocument_a9400a5bd3169cc6ed545e681ccc06070}} 
+\index{Generic\+Document@{Generic\+Document}!Get\+Parse\+Error@{Get\+Parse\+Error}}
+\index{Get\+Parse\+Error@{Get\+Parse\+Error}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Get\+Parse\+Error()}{GetParseError()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+\hyperlink{group__RAPIDJSON__ERRORS_ga8d4b32dfc45840bca189ade2bbcb6ba7}{Parse\+Error\+Code} \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Get\+Parse\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the \hyperlink{group__RAPIDJSON__ERRORS_ga8d4b32dfc45840bca189ade2bbcb6ba7}{Parse\+Error\+Code} of last parsing. 
+
+\mbox{\Hypertarget{classGenericDocument_a9e2e543c326b8b981d4f2c3d6793d15b}\label{classGenericDocument_a9e2e543c326b8b981d4f2c3d6793d15b}} 
+\index{Generic\+Document@{Generic\+Document}!Get\+Stack\+Capacity@{Get\+Stack\+Capacity}}
+\index{Get\+Stack\+Capacity@{Get\+Stack\+Capacity}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Get\+Stack\+Capacity()}{GetStackCapacity()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+size\+\_\+t \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Get\+Stack\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the capacity of stack in bytes. 
+
+\mbox{\Hypertarget{classGenericDocument_a510a0588db4eb372f5d81bc3646578fb}\label{classGenericDocument_a510a0588db4eb372f5d81bc3646578fb}} 
+\index{Generic\+Document@{Generic\+Document}!Has\+Parse\+Error@{Has\+Parse\+Error}}
+\index{Has\+Parse\+Error@{Has\+Parse\+Error}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Has\+Parse\+Error()}{HasParseError()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+bool \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Has\+Parse\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Whether a parse error has occurred in the last parsing. 
+
+\mbox{\Hypertarget{classGenericDocument_a8cc986266becaa268474c607489745c7}\label{classGenericDocument_a8cc986266becaa268474c607489745c7}} 
+\index{Generic\+Document@{Generic\+Document}!Int@{Int}}
+\index{Int@{Int}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Int()}{Int()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+bool \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Int (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericDocument_a934b1b7a7ed89917615a5410db77a942}\label{classGenericDocument_a934b1b7a7ed89917615a5410db77a942}} 
+\index{Generic\+Document@{Generic\+Document}!Int64@{Int64}}
+\index{Int64@{Int64}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Int64()}{Int64()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+bool \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Int64 (\begin{DoxyParamCaption}\item[{\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\+\_\+t}}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericDocument_a600d0950baabbcab11197cacb1459c7a}\label{classGenericDocument_a600d0950baabbcab11197cacb1459c7a}} 
+\index{Generic\+Document@{Generic\+Document}!Key@{Key}}
+\index{Key@{Key}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Key()}{Key()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+bool \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Key (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericValue_ade0e0ce64ccd5d852da57a35e720bafb}{Ch} $\ast$}]{str,  }\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{length,  }\item[{bool}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericDocument_a87dc7f66b2b92660b8a43546733f9df2}\label{classGenericDocument_a87dc7f66b2b92660b8a43546733f9df2}} 
+\index{Generic\+Document@{Generic\+Document}!Null@{Null}}
+\index{Null@{Null}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Null()}{Null()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+bool \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericDocument_af9bb8eade3eae0c039161378e8d2923a}\label{classGenericDocument_af9bb8eade3eae0c039161378e8d2923a}} 
+\index{Generic\+Document@{Generic\+Document}!operator Parse\+Result@{operator Parse\+Result}}
+\index{operator Parse\+Result@{operator Parse\+Result}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{operator Parse\+Result()}{operator ParseResult()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+\hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::operator \hyperlink{structParseResult}{Parse\+Result} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implicit conversion to get the last parse result. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{structParseResult}{Parse\+Result} of the last parse operation
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+\hyperlink{classGenericDocument}{Document} doc;
+\hyperlink{structParseResult}{ParseResult} ok = doc.\hyperlink{classGenericDocument_aadee36db7064cc9894a75c848831cdae}{Parse}(json);
+\textcolor{keywordflow}{if} (!ok)
+  printf( \textcolor{stringliteral}{"JSON parse error: %s (%u)\(\backslash\)n"}, \hyperlink{group__RAPIDJSON__ERRORS_ga755b523205f46c980c80d12e230a3abd}{GetParseError\_En}(ok.
+      \hyperlink{structParseResult_a2aae3c2f42b31cc2409ee1e03bc4852e}{Code}()), ok.\hyperlink{structParseResult_afbe762766ac21b2aae266105f1dfa643}{Offset}());
+\end{DoxyCode}
+ \mbox{\Hypertarget{classGenericDocument_ae31cd36a3b677d697d0a3bed68edf3c3}\label{classGenericDocument_ae31cd36a3b677d697d0a3bed68edf3c3}} 
+\index{Generic\+Document@{Generic\+Document}!operator=@{operator=}}
+\index{operator=@{operator=}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+\hyperlink{classGenericDocument}{Generic\+Document}\& \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Prohibit assignment. 
+
+\mbox{\Hypertarget{classGenericDocument_aadee36db7064cc9894a75c848831cdae}\label{classGenericDocument_aadee36db7064cc9894a75c848831cdae}} 
+\index{Generic\+Document@{Generic\+Document}!Parse@{Parse}}
+\index{Parse@{Parse}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Parse()}{Parse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+template$<$unsigned parse\+Flags, typename Source\+Encoding $>$ \\
+\hyperlink{classGenericDocument}{Generic\+Document}\& \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Parse (\begin{DoxyParamCaption}\item[{const typename Source\+Encoding\+::\+Ch $\ast$}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parse J\+S\+ON text from a read-\/only string (with Encoding conversion) 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em parse\+Flags} & Combination of \hyperlink{reader_8h_ab7be7dabe6ffcba60fad441505583450}{Parse\+Flag} (must not contain \hyperlink{reader_8h_ab7be7dabe6ffcba60fad441505583450a13188bd483b4df0b6582bebe2aeb5b01}{k\+Parse\+Insitu\+Flag}). \\
+\hline
+{\em Source\+Encoding} & Transcoding from input Encoding \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em str} & Read-\/only zero-\/terminated string to be parsed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGenericDocument_a5e377f840009b5cee6757be29525ce0b}\label{classGenericDocument_a5e377f840009b5cee6757be29525ce0b}} 
+\index{Generic\+Document@{Generic\+Document}!Parse@{Parse}}
+\index{Parse@{Parse}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Parse()}{Parse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+template$<$unsigned parse\+Flags$>$ \\
+\hyperlink{classGenericDocument}{Generic\+Document}\& \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Parse (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericValue_ade0e0ce64ccd5d852da57a35e720bafb}{Ch} $\ast$}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parse J\+S\+ON text from a read-\/only string. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em parse\+Flags} & Combination of \hyperlink{reader_8h_ab7be7dabe6ffcba60fad441505583450}{Parse\+Flag} (must not contain \hyperlink{reader_8h_ab7be7dabe6ffcba60fad441505583450a13188bd483b4df0b6582bebe2aeb5b01}{k\+Parse\+Insitu\+Flag}). \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em str} & Read-\/only zero-\/terminated string to be parsed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGenericDocument_a49ae6de6fd0bc820d9864a106c10b4da}\label{classGenericDocument_a49ae6de6fd0bc820d9864a106c10b4da}} 
+\index{Generic\+Document@{Generic\+Document}!Parse@{Parse}}
+\index{Parse@{Parse}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Parse()}{Parse()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+\hyperlink{classGenericDocument}{Generic\+Document}\& \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Parse (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericValue_ade0e0ce64ccd5d852da57a35e720bafb}{Ch} $\ast$}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parse J\+S\+ON text from a read-\/only string (with \hyperlink{reader_8h_ab7be7dabe6ffcba60fad441505583450a9104b0946d648e9467cb7a967401ec80}{k\+Parse\+Default\+Flags}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & Read-\/only zero-\/terminated string to be parsed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGenericDocument_a46b5028cc760c4e915a0d5216af9f7e2}\label{classGenericDocument_a46b5028cc760c4e915a0d5216af9f7e2}} 
+\index{Generic\+Document@{Generic\+Document}!Parse@{Parse}}
+\index{Parse@{Parse}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Parse()}{Parse()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+template$<$unsigned parse\+Flags, typename Source\+Encoding $>$ \\
+\hyperlink{classGenericDocument}{Generic\+Document}\& \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Parse (\begin{DoxyParamCaption}\item[{const typename Source\+Encoding\+::\+Ch $\ast$}]{str,  }\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericDocument_a93fec16eacec4f4b42075bb3bc242a6b}\label{classGenericDocument_a93fec16eacec4f4b42075bb3bc242a6b}} 
+\index{Generic\+Document@{Generic\+Document}!Parse@{Parse}}
+\index{Parse@{Parse}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Parse()}{Parse()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+template$<$unsigned parse\+Flags$>$ \\
+\hyperlink{classGenericDocument}{Generic\+Document}\& \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Parse (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericValue_ade0e0ce64ccd5d852da57a35e720bafb}{Ch} $\ast$}]{str,  }\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericDocument_ab13d8358acc0648e3f91f6b825365e4f}\label{classGenericDocument_ab13d8358acc0648e3f91f6b825365e4f}} 
+\index{Generic\+Document@{Generic\+Document}!Parse@{Parse}}
+\index{Parse@{Parse}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Parse()}{Parse()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+\hyperlink{classGenericDocument}{Generic\+Document}\& \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Parse (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericValue_ade0e0ce64ccd5d852da57a35e720bafb}{Ch} $\ast$}]{str,  }\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericDocument_a301f8f297a5a0da4b6be5459ad766f75}\label{classGenericDocument_a301f8f297a5a0da4b6be5459ad766f75}} 
+\index{Generic\+Document@{Generic\+Document}!Parse\+Insitu@{Parse\+Insitu}}
+\index{Parse\+Insitu@{Parse\+Insitu}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Parse\+Insitu()}{ParseInsitu()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+template$<$unsigned parse\+Flags$>$ \\
+\hyperlink{classGenericDocument}{Generic\+Document}\& \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Parse\+Insitu (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericValue_ade0e0ce64ccd5d852da57a35e720bafb}{Ch} $\ast$}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parse J\+S\+ON text from a mutable string. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em parse\+Flags} & Combination of \hyperlink{reader_8h_ab7be7dabe6ffcba60fad441505583450}{Parse\+Flag}. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em str} & Mutable zero-\/terminated string to be parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The document itself for fluent A\+PI. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGenericDocument_a81922881357539d5482d31aea14b5664}\label{classGenericDocument_a81922881357539d5482d31aea14b5664}} 
+\index{Generic\+Document@{Generic\+Document}!Parse\+Insitu@{Parse\+Insitu}}
+\index{Parse\+Insitu@{Parse\+Insitu}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Parse\+Insitu()}{ParseInsitu()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+\hyperlink{classGenericDocument}{Generic\+Document}\& \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Parse\+Insitu (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericValue_ade0e0ce64ccd5d852da57a35e720bafb}{Ch} $\ast$}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parse J\+S\+ON text from a mutable string (with \hyperlink{reader_8h_ab7be7dabe6ffcba60fad441505583450a9104b0946d648e9467cb7a967401ec80}{k\+Parse\+Default\+Flags}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & Mutable zero-\/terminated string to be parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The document itself for fluent A\+PI. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGenericDocument_afe94c0abc83a20f2d7dc1ba7677e6238}\label{classGenericDocument_afe94c0abc83a20f2d7dc1ba7677e6238}} 
+\index{Generic\+Document@{Generic\+Document}!Parse\+Stream@{Parse\+Stream}}
+\index{Parse\+Stream@{Parse\+Stream}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Parse\+Stream()}{ParseStream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+template$<$unsigned parse\+Flags, typename Source\+Encoding , typename Input\+Stream $>$ \\
+\hyperlink{classGenericDocument}{Generic\+Document}\& \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Parse\+Stream (\begin{DoxyParamCaption}\item[{Input\+Stream \&}]{is }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parse J\+S\+ON text from an input stream (with Encoding conversion) 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em parse\+Flags} & Combination of \hyperlink{reader_8h_ab7be7dabe6ffcba60fad441505583450}{Parse\+Flag}. \\
+\hline
+{\em Source\+Encoding} & Encoding of input stream \\
+\hline
+{\em Input\+Stream} & Type of input stream, implementing Stream concept \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em is} & Input stream to be parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The document itself for fluent A\+PI. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGenericDocument_a6e154066c6f5024b91aaab25e03700e3}\label{classGenericDocument_a6e154066c6f5024b91aaab25e03700e3}} 
+\index{Generic\+Document@{Generic\+Document}!Parse\+Stream@{Parse\+Stream}}
+\index{Parse\+Stream@{Parse\+Stream}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Parse\+Stream()}{ParseStream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+template$<$unsigned parse\+Flags, typename Input\+Stream $>$ \\
+\hyperlink{classGenericDocument}{Generic\+Document}\& \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Parse\+Stream (\begin{DoxyParamCaption}\item[{Input\+Stream \&}]{is }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parse J\+S\+ON text from an input stream. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em parse\+Flags} & Combination of \hyperlink{reader_8h_ab7be7dabe6ffcba60fad441505583450}{Parse\+Flag}. \\
+\hline
+{\em Input\+Stream} & Type of input stream, implementing Stream concept \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em is} & Input stream to be parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The document itself for fluent A\+PI. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGenericDocument_abe07ededbe9aaceb0058e3d254892b71}\label{classGenericDocument_abe07ededbe9aaceb0058e3d254892b71}} 
+\index{Generic\+Document@{Generic\+Document}!Parse\+Stream@{Parse\+Stream}}
+\index{Parse\+Stream@{Parse\+Stream}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Parse\+Stream()}{ParseStream()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+template$<$typename Input\+Stream $>$ \\
+\hyperlink{classGenericDocument}{Generic\+Document}\& \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Parse\+Stream (\begin{DoxyParamCaption}\item[{Input\+Stream \&}]{is }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parse J\+S\+ON text from an input stream (with \hyperlink{reader_8h_ab7be7dabe6ffcba60fad441505583450a9104b0946d648e9467cb7a967401ec80}{k\+Parse\+Default\+Flags}) 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Input\+Stream} & Type of input stream, implementing Stream concept \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em is} & Input stream to be parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The document itself for fluent A\+PI. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGenericDocument_a36fbc7d0a9595d26e0d2c8859d207d1f}\label{classGenericDocument_a36fbc7d0a9595d26e0d2c8859d207d1f}} 
+\index{Generic\+Document@{Generic\+Document}!Populate@{Populate}}
+\index{Populate@{Populate}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Populate()}{Populate()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+template$<$typename Generator $>$ \\
+\hyperlink{classGenericDocument}{Generic\+Document}\& \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Populate (\begin{DoxyParamCaption}\item[{Generator \&}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Populate this document by a generator which produces S\+AX events. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Generator} & A functor with {\ttfamily bool f(\+Handler)} prototype. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Generator functor which sends S\+AX events to the parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The document itself for fluent A\+PI. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGenericDocument_af703994dec5af6ef049a24b5243aceab}\label{classGenericDocument_af703994dec5af6ef049a24b5243aceab}} 
+\index{Generic\+Document@{Generic\+Document}!Raw\+Number@{Raw\+Number}}
+\index{Raw\+Number@{Raw\+Number}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Raw\+Number()}{RawNumber()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+bool \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Raw\+Number (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericValue_ade0e0ce64ccd5d852da57a35e720bafb}{Ch} $\ast$}]{str,  }\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{length,  }\item[{bool}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericDocument_ae12c513c61745ae731a47b1ca33db063}\label{classGenericDocument_ae12c513c61745ae731a47b1ca33db063}} 
+\index{Generic\+Document@{Generic\+Document}!Start\+Array@{Start\+Array}}
+\index{Start\+Array@{Start\+Array}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Start\+Array()}{StartArray()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+bool \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Start\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericDocument_abb1417fde52cc34cb340e3b50a3295da}\label{classGenericDocument_abb1417fde52cc34cb340e3b50a3295da}} 
+\index{Generic\+Document@{Generic\+Document}!Start\+Object@{Start\+Object}}
+\index{Start\+Object@{Start\+Object}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Start\+Object()}{StartObject()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+bool \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Start\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericDocument_ad319fcc9e13606b6795424b9374a7398}\label{classGenericDocument_ad319fcc9e13606b6795424b9374a7398}} 
+\index{Generic\+Document@{Generic\+Document}!String@{String}}
+\index{String@{String}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{String()}{String()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+bool \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::\hyperlink{structGenericValue_1_1String}{String} (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericValue_ade0e0ce64ccd5d852da57a35e720bafb}{Ch} $\ast$}]{str,  }\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{length,  }\item[{bool}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericDocument_a6290e1290fad74177625af5938c0c58f}\label{classGenericDocument_a6290e1290fad74177625af5938c0c58f}} 
+\index{Generic\+Document@{Generic\+Document}!Swap@{Swap}}
+\index{Swap@{Swap}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Swap()}{Swap()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+\hyperlink{classGenericDocument}{Generic\+Document}\& \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Swap (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Exchange the contents of this document with those of another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & Another document. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Constant complexity. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+Generic\+Value\+::\+Swap 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classGenericDocument_a530dd899a04a00ba74f52507b488d2c1}\label{classGenericDocument_a530dd899a04a00ba74f52507b488d2c1}} 
+\index{Generic\+Document@{Generic\+Document}!Uint@{Uint}}
+\index{Uint@{Uint}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Uint()}{Uint()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+bool \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Uint (\begin{DoxyParamCaption}\item[{unsigned}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericDocument_a50ac3451a1afd0ce248dcc023d5e09e8}\label{classGenericDocument_a50ac3451a1afd0ce248dcc023d5e09e8}} 
+\index{Generic\+Document@{Generic\+Document}!Uint64@{Uint64}}
+\index{Uint64@{Uint64}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Uint64()}{Uint64()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+bool \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::Uint64 (\begin{DoxyParamCaption}\item[{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classGenericDocument_a899449e1a645b5e377af059fb61113d8}\label{classGenericDocument_a899449e1a645b5e377af059fb61113d8}} 
+\index{Generic\+Document@{Generic\+Document}!Generic\+Value@{Generic\+Value}}
+\index{Generic\+Value@{Generic\+Value}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{Generic\+Value}{GenericValue}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+template$<$typename , typename $>$ \\
+friend class \hyperlink{classGenericValue}{Generic\+Value}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classGenericDocument_a0d63efcc43758ac3aed77e868233369d}\label{classGenericDocument_a0d63efcc43758ac3aed77e868233369d}} 
+\index{Generic\+Document@{Generic\+Document}!swap@{swap}}
+\index{swap@{swap}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{swap}{swap}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} swap (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$ \&}]{a,  }\item[{\hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$ \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+free-\/standing swap function helper 
+
+Helper function to enable support for common swap implementation pattern based on {\ttfamily std\+::swap\+:} 
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} \hyperlink{classGenericDocument_a0d63efcc43758ac3aed77e868233369d}{swap}(MyClass& \hyperlink{pointer_8h_aeeddce917cf130d62c370b8f216026dd}{a}, MyClass& b) \{
+    \textcolor{keyword}{using} std::swap;
+    \hyperlink{classGenericDocument_a0d63efcc43758ac3aed77e868233369d}{swap}(a.doc, b.doc);
+    \textcolor{comment}{// ...}
+\}
+\end{DoxyCode}
+ \begin{DoxySeeAlso}{See also}
+\hyperlink{classGenericDocument_a6290e1290fad74177625af5938c0c58f}{Swap()} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classGenericDocument_a9b5f15fc75c8035612c37f796548e87a}\label{classGenericDocument_a9b5f15fc75c8035612c37f796548e87a}} 
+\index{Generic\+Document@{Generic\+Document}!allocator\+\_\+@{allocator\+\_\+}}
+\index{allocator\+\_\+@{allocator\+\_\+}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{allocator\+\_\+}{allocator\_}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+Allocator$\ast$ \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::allocator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericDocument_a90d452abe8940d8a9c9634d1c49d8f49}\label{classGenericDocument_a90d452abe8940d8a9c9634d1c49d8f49}} 
+\index{Generic\+Document@{Generic\+Document}!k\+Default\+Stack\+Capacity@{k\+Default\+Stack\+Capacity}}
+\index{k\+Default\+Stack\+Capacity@{k\+Default\+Stack\+Capacity}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{k\+Default\+Stack\+Capacity}{kDefaultStackCapacity}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+const size\+\_\+t \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::k\+Default\+Stack\+Capacity = 1024\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericDocument_ada153f6865201106b3a753861c870266}\label{classGenericDocument_ada153f6865201106b3a753861c870266}} 
+\index{Generic\+Document@{Generic\+Document}!own\+Allocator\+\_\+@{own\+Allocator\+\_\+}}
+\index{own\+Allocator\+\_\+@{own\+Allocator\+\_\+}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{own\+Allocator\+\_\+}{ownAllocator\_}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+Allocator$\ast$ \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::own\+Allocator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericDocument_a499058f1c615928337d96cfaf374373e}\label{classGenericDocument_a499058f1c615928337d96cfaf374373e}} 
+\index{Generic\+Document@{Generic\+Document}!parse\+Result\+\_\+@{parse\+Result\+\_\+}}
+\index{parse\+Result\+\_\+@{parse\+Result\+\_\+}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{parse\+Result\+\_\+}{parseResult\_}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+\hyperlink{structParseResult}{Parse\+Result} \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::parse\+Result\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericDocument_ad2169359326bdf8a7180338fec77e77f}\label{classGenericDocument_ad2169359326bdf8a7180338fec77e77f}} 
+\index{Generic\+Document@{Generic\+Document}!stack\+\_\+@{stack\+\_\+}}
+\index{stack\+\_\+@{stack\+\_\+}!Generic\+Document@{Generic\+Document}}
+\subsubsection{\texorpdfstring{stack\+\_\+}{stack\_}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR, typename Stack\+Allocator = R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR$>$ \\
+\hyperlink{classinternal_1_1Stack}{internal\+::\+Stack}$<$Stack\+Allocator$>$ \hyperlink{classGenericDocument}{Generic\+Document}$<$ Encoding, Allocator, Stack\+Allocator $>$\+::stack\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/rapidjson/\hyperlink{document_8h}{document.\+h}\end{DoxyCompactItemize}

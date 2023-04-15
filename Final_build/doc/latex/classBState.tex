@@ -1,0 +1,117 @@
+\hypertarget{classBState}{}\section{B\+State Class Reference}
+\label{classBState}\index{B\+State@{B\+State}}
+
+
+{\ttfamily \#include $<$B\+State.\+h$>$}
+
+
+
+Collaboration diagram for B\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classBState__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBState_ab620431914f2b63b156a108cb47f9f9e}{B\+State} (\hyperlink{BState_8h_a275a67132f10277ada3a0ee3d616b647}{S\+T\+A\+TE} name\+\_\+)
+\item 
+\hyperlink{classBState_ab7dcf09e84afba8a5f2d1c714468ca5b}{$\sim$\+B\+State} ()
+\item 
+list$<$ \hyperlink{classTransition}{Transition} $\ast$ $>$ \hyperlink{classBState_a12a62f55d5136baa914a5a9296fc1a94}{get\+Transitions} ()
+\item 
+list$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classTransition}{Transition} $>$ $>$ \hyperlink{classBState_a3314d0c5e4a877f3b14c153e285611d9}{get\+S\+Transitions} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classBState_a19d39e24d561b72484a026a367aee031}{add\+Transition} (\hyperlink{classTransition}{Transition} $\ast$transition)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classBState_a2e1c33342d2a21e2c11083e0f89e1748}{add\+Transition} (std\+::shared\+\_\+ptr$<$ \hyperlink{classTransition}{Transition} $>$ transition)
+\item 
+\hyperlink{BState_8h_a275a67132f10277ada3a0ee3d616b647}{S\+T\+A\+TE} \hyperlink{classBState_acf259690a67bd6d34fe78f95501d5b45}{get\+Name} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list$<$ \hyperlink{classTransition}{Transition} $\ast$ $>$ \hyperlink{classBState_a9bd20e613fd32ef9408818eb15f80350}{transitions}
+\item 
+list$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classTransition}{Transition} $>$ $>$ \hyperlink{classBState_a5435ea55aa101d3b45474c81e53d1d42}{Stransitions}
+\item 
+\hyperlink{BState_8h_a275a67132f10277ada3a0ee3d616b647}{S\+T\+A\+TE} \hyperlink{classBState_ac4a447d0ad6729605fd5b0d74f5273bb}{name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBState_ab620431914f2b63b156a108cb47f9f9e}\label{classBState_ab620431914f2b63b156a108cb47f9f9e}} 
+\index{B\+State@{B\+State}!B\+State@{B\+State}}
+\index{B\+State@{B\+State}!B\+State@{B\+State}}
+\subsubsection{\texorpdfstring{B\+State()}{BState()}}
+{\footnotesize\ttfamily B\+State\+::\+B\+State (\begin{DoxyParamCaption}\item[{\hyperlink{BState_8h_a275a67132f10277ada3a0ee3d616b647}{S\+T\+A\+TE}}]{name\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBState_ab7dcf09e84afba8a5f2d1c714468ca5b}\label{classBState_ab7dcf09e84afba8a5f2d1c714468ca5b}} 
+\index{B\+State@{B\+State}!````~B\+State@{$\sim$\+B\+State}}
+\index{````~B\+State@{$\sim$\+B\+State}!B\+State@{B\+State}}
+\subsubsection{\texorpdfstring{$\sim$\+B\+State()}{~BState()}}
+{\footnotesize\ttfamily B\+State\+::$\sim$\+B\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classBState_a19d39e24d561b72484a026a367aee031}\label{classBState_a19d39e24d561b72484a026a367aee031}} 
+\index{B\+State@{B\+State}!add\+Transition@{add\+Transition}}
+\index{add\+Transition@{add\+Transition}!B\+State@{B\+State}}
+\subsubsection{\texorpdfstring{add\+Transition()}{addTransition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} B\+State\+::add\+Transition (\begin{DoxyParamCaption}\item[{\hyperlink{classTransition}{Transition} $\ast$}]{transition }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classBState_a2e1c33342d2a21e2c11083e0f89e1748}\label{classBState_a2e1c33342d2a21e2c11083e0f89e1748}} 
+\index{B\+State@{B\+State}!add\+Transition@{add\+Transition}}
+\index{add\+Transition@{add\+Transition}!B\+State@{B\+State}}
+\subsubsection{\texorpdfstring{add\+Transition()}{addTransition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} B\+State\+::add\+Transition (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classTransition}{Transition} $>$}]{transition }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classBState_acf259690a67bd6d34fe78f95501d5b45}\label{classBState_acf259690a67bd6d34fe78f95501d5b45}} 
+\index{B\+State@{B\+State}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!B\+State@{B\+State}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily \hyperlink{BState_8h_a275a67132f10277ada3a0ee3d616b647}{S\+T\+A\+TE} B\+State\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBState_a3314d0c5e4a877f3b14c153e285611d9}\label{classBState_a3314d0c5e4a877f3b14c153e285611d9}} 
+\index{B\+State@{B\+State}!get\+S\+Transitions@{get\+S\+Transitions}}
+\index{get\+S\+Transitions@{get\+S\+Transitions}!B\+State@{B\+State}}
+\subsubsection{\texorpdfstring{get\+S\+Transitions()}{getSTransitions()}}
+{\footnotesize\ttfamily list$<$std\+::shared\+\_\+ptr$<$\hyperlink{classTransition}{Transition}$>$ $>$ B\+State\+::get\+S\+Transitions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBState_a12a62f55d5136baa914a5a9296fc1a94}\label{classBState_a12a62f55d5136baa914a5a9296fc1a94}} 
+\index{B\+State@{B\+State}!get\+Transitions@{get\+Transitions}}
+\index{get\+Transitions@{get\+Transitions}!B\+State@{B\+State}}
+\subsubsection{\texorpdfstring{get\+Transitions()}{getTransitions()}}
+{\footnotesize\ttfamily list$<$\hyperlink{classTransition}{Transition}$\ast$$>$ B\+State\+::get\+Transitions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classBState_ac4a447d0ad6729605fd5b0d74f5273bb}\label{classBState_ac4a447d0ad6729605fd5b0d74f5273bb}} 
+\index{B\+State@{B\+State}!name@{name}}
+\index{name@{name}!B\+State@{B\+State}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \hyperlink{BState_8h_a275a67132f10277ada3a0ee3d616b647}{S\+T\+A\+TE} B\+State\+::name\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBState_a5435ea55aa101d3b45474c81e53d1d42}\label{classBState_a5435ea55aa101d3b45474c81e53d1d42}} 
+\index{B\+State@{B\+State}!Stransitions@{Stransitions}}
+\index{Stransitions@{Stransitions}!B\+State@{B\+State}}
+\subsubsection{\texorpdfstring{Stransitions}{Stransitions}}
+{\footnotesize\ttfamily list$<$std\+::shared\+\_\+ptr$<$\hyperlink{classTransition}{Transition}$>$ $>$ B\+State\+::\+Stransitions\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBState_a9bd20e613fd32ef9408818eb15f80350}\label{classBState_a9bd20e613fd32ef9408818eb15f80350}} 
+\index{B\+State@{B\+State}!transitions@{transitions}}
+\index{transitions@{transitions}!B\+State@{B\+State}}
+\subsubsection{\texorpdfstring{transitions}{transitions}}
+{\footnotesize\ttfamily list$<$\hyperlink{classTransition}{Transition}$\ast$$>$ B\+State\+::transitions\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/\+B\+State\+Machine/\hyperlink{BState_8h}{B\+State.\+h}\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/src/\+B\+State\+Machine/\hyperlink{BState_8cpp}{B\+State.\+cpp}\end{DoxyCompactItemize}

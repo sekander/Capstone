@@ -1,9 +1,0 @@
-<map id="/home/fnky/C0de/component_engine/include/Actors/Gun_Actor.h" name="/home/fnky/C0de/component_engine/include/Actors/Gun_Actor.h">
-<area shape="rect" id="node1" title=" " alt="" coords="425,5,635,61"/>
-<area shape="rect" id="node2" href="$Projectile__Acotr_8h.html" title=" " alt="" coords="355,109,564,165"/>
-<area shape="rect" id="node3" href="$Gun__Actor_8cpp.html" title=" " alt="" coords="5,213,215,269"/>
-<area shape="rect" id="node6" href="$game__play__state_8cpp.html" title=" " alt="" coords="705,213,915,269"/>
-<area shape="rect" id="node7" href="$Player__Actor_8cpp.html" title=" " alt="" coords="640,109,849,165"/>
-<area shape="rect" id="node4" href="$NPC__Actor_8cpp.html" title=" " alt="" coords="239,213,448,269"/>
-<area shape="rect" id="node5" href="$Projectile__Actor_8cpp.html" title=" " alt="" coords="472,213,681,269"/>
-</map>

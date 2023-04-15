@@ -1,0 +1,239 @@
+\hypertarget{classSplashState}{}\section{Splash\+State Class Reference}
+\label{classSplashState}\index{Splash\+State@{Splash\+State}}
+
+
+{\ttfamily \#include $<$splash\+\_\+state.\+h$>$}
+
+
+
+Inheritance diagram for Splash\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{classSplashState__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Splash\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSplashState__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSplashState_a9aa258fc56874b33de72ea986bceeb62}{Splash\+State} (\hyperlink{structGameData}{Game\+Data} \&\hyperlink{imgui__impl__opengl3__loader_8h_abd87654504355b4c1bb002dcb1d4d16a}{data})
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classSplashState_ae3e0604da087032c179593c237580988}{Init} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classSplashState_adb2eb87bd89e41af0c3a9d0903e89450}{Input} (float delta)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classSplashState_af19b293ae1e914e13db4382115e56d2c}{Update} (float delta)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classSplashState_a5efb6f0ede61ec76ee2dd72a6b24c57c}{Render} (float delta)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classSplashState_adff14b96ab0de144e0052326819e7f2e}{Sound\+Update} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classSplashState_aca842c8e3ea2642980569ed3b4bb362a}{Delete\+Data} ()
+\item 
+\hyperlink{classSplashState_a3171ebc16024564fced18948bf9d7ec5}{$\sim$\+Splash\+State} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structGameData}{Game\+Data} $\ast$ \hyperlink{classSplashState_af1176a8c13fcd1dc47263064d6b081d5}{\+\_\+data}
+\item 
+clock\+\_\+t \hyperlink{classSplashState_a403b26122d93bd2b3744e6525ec26671}{timer} = clock()
+\item 
+double \hyperlink{classSplashState_a109200dcf29852092ded37289f784db2}{delay}
+\item 
+double \hyperlink{classSplashState_a321b8ee8c87742641b9bfc168ec90d7f}{jump\+\_\+delay}
+\item 
+float \hyperlink{classSplashState_aef944c31e8600bfa272bfeae2c7a9208}{counter}
+\item 
+\hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t} \hyperlink{classSplashState_a4d8f1271f8f62fba1a674bed0c67f950}{platform\+\_\+delay} = 0
+\item 
+float \hyperlink{classSplashState_ad74688dceca650f340e9113938234547}{x}
+\item 
+float \hyperlink{classSplashState_a4477fcbed7b631aaf135359a09bb0b3c}{y}
+\item 
+float \hyperlink{classSplashState_a4264ee844097c44c250a95457aa7da2f}{x\+\_\+cam}
+\item 
+float \hyperlink{classSplashState_adce1ee0219be0b1045a578c4cae88b3b}{y\+\_\+cam}
+\item 
+float \hyperlink{classSplashState_a4c2362acca2844d0cbcdc2fc958d68a6}{z\+\_\+cam}
+\item 
+float \hyperlink{classSplashState_a20b119095bf99299609bf381224624c9}{r\+\_\+cam}
+\item 
+glm\+::vec2 \hyperlink{classSplashState_aa80fb9876f76790eb989071b213c967f}{z\+\_\+scale}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSplashState_a9aa258fc56874b33de72ea986bceeb62}\label{classSplashState_a9aa258fc56874b33de72ea986bceeb62}} 
+\index{Splash\+State@{Splash\+State}!Splash\+State@{Splash\+State}}
+\index{Splash\+State@{Splash\+State}!Splash\+State@{Splash\+State}}
+\subsubsection{\texorpdfstring{Splash\+State()}{SplashState()}}
+{\footnotesize\ttfamily Splash\+State\+::\+Splash\+State (\begin{DoxyParamCaption}\item[{\hyperlink{structGameData}{Game\+Data} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSplashState_a3171ebc16024564fced18948bf9d7ec5}\label{classSplashState_a3171ebc16024564fced18948bf9d7ec5}} 
+\index{Splash\+State@{Splash\+State}!````~Splash\+State@{$\sim$\+Splash\+State}}
+\index{````~Splash\+State@{$\sim$\+Splash\+State}!Splash\+State@{Splash\+State}}
+\subsubsection{\texorpdfstring{$\sim$\+Splash\+State()}{~SplashState()}}
+{\footnotesize\ttfamily Splash\+State\+::$\sim$\+Splash\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSplashState_aca842c8e3ea2642980569ed3b4bb362a}\label{classSplashState_aca842c8e3ea2642980569ed3b4bb362a}} 
+\index{Splash\+State@{Splash\+State}!Delete\+Data@{Delete\+Data}}
+\index{Delete\+Data@{Delete\+Data}!Splash\+State@{Splash\+State}}
+\subsubsection{\texorpdfstring{Delete\+Data()}{DeleteData()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Splash\+State\+::\+Delete\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classState_ade502eaa386d570e526eb356ffd73fd8}{State}.
+
+\mbox{\Hypertarget{classSplashState_ae3e0604da087032c179593c237580988}\label{classSplashState_ae3e0604da087032c179593c237580988}} 
+\index{Splash\+State@{Splash\+State}!Init@{Init}}
+\index{Init@{Init}!Splash\+State@{Splash\+State}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Splash\+State\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classState_a7ab4d8c6aa239a17ed579d89a209b156}{State}.
+
+\mbox{\Hypertarget{classSplashState_adb2eb87bd89e41af0c3a9d0903e89450}\label{classSplashState_adb2eb87bd89e41af0c3a9d0903e89450}} 
+\index{Splash\+State@{Splash\+State}!Input@{Input}}
+\index{Input@{Input}!Splash\+State@{Splash\+State}}
+\subsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Splash\+State\+::\+Input (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classState_a1705412877f37a5cc8fc712542756076}{State}.
+
+\mbox{\Hypertarget{classSplashState_a5efb6f0ede61ec76ee2dd72a6b24c57c}\label{classSplashState_a5efb6f0ede61ec76ee2dd72a6b24c57c}} 
+\index{Splash\+State@{Splash\+State}!Render@{Render}}
+\index{Render@{Render}!Splash\+State@{Splash\+State}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Splash\+State\+::\+Render (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classState_a0e48dfae1e3090630475812681417c5f}{State}.
+
+\mbox{\Hypertarget{classSplashState_adff14b96ab0de144e0052326819e7f2e}\label{classSplashState_adff14b96ab0de144e0052326819e7f2e}} 
+\index{Splash\+State@{Splash\+State}!Sound\+Update@{Sound\+Update}}
+\index{Sound\+Update@{Sound\+Update}!Splash\+State@{Splash\+State}}
+\subsubsection{\texorpdfstring{Sound\+Update()}{SoundUpdate()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Splash\+State\+::\+Sound\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classState_a6572089fbf2178bf5c582cc27d6d3925}{State}.
+
+\mbox{\Hypertarget{classSplashState_af19b293ae1e914e13db4382115e56d2c}\label{classSplashState_af19b293ae1e914e13db4382115e56d2c}} 
+\index{Splash\+State@{Splash\+State}!Update@{Update}}
+\index{Update@{Update}!Splash\+State@{Splash\+State}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Splash\+State\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classState_aac0d3fdee1341e168af730b8f31a7bf1}{State}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classSplashState_af1176a8c13fcd1dc47263064d6b081d5}\label{classSplashState_af1176a8c13fcd1dc47263064d6b081d5}} 
+\index{Splash\+State@{Splash\+State}!\+\_\+data@{\+\_\+data}}
+\index{\+\_\+data@{\+\_\+data}!Splash\+State@{Splash\+State}}
+\subsubsection{\texorpdfstring{\+\_\+data}{\_data}}
+{\footnotesize\ttfamily \hyperlink{structGameData}{Game\+Data}$\ast$ Splash\+State\+::\+\_\+data\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSplashState_aef944c31e8600bfa272bfeae2c7a9208}\label{classSplashState_aef944c31e8600bfa272bfeae2c7a9208}} 
+\index{Splash\+State@{Splash\+State}!counter@{counter}}
+\index{counter@{counter}!Splash\+State@{Splash\+State}}
+\subsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily float Splash\+State\+::counter\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSplashState_a109200dcf29852092ded37289f784db2}\label{classSplashState_a109200dcf29852092ded37289f784db2}} 
+\index{Splash\+State@{Splash\+State}!delay@{delay}}
+\index{delay@{delay}!Splash\+State@{Splash\+State}}
+\subsubsection{\texorpdfstring{delay}{delay}}
+{\footnotesize\ttfamily double Splash\+State\+::delay\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSplashState_a321b8ee8c87742641b9bfc168ec90d7f}\label{classSplashState_a321b8ee8c87742641b9bfc168ec90d7f}} 
+\index{Splash\+State@{Splash\+State}!jump\+\_\+delay@{jump\+\_\+delay}}
+\index{jump\+\_\+delay@{jump\+\_\+delay}!Splash\+State@{Splash\+State}}
+\subsubsection{\texorpdfstring{jump\+\_\+delay}{jump\_delay}}
+{\footnotesize\ttfamily double Splash\+State\+::jump\+\_\+delay\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSplashState_a4d8f1271f8f62fba1a674bed0c67f950}\label{classSplashState_a4d8f1271f8f62fba1a674bed0c67f950}} 
+\index{Splash\+State@{Splash\+State}!platform\+\_\+delay@{platform\+\_\+delay}}
+\index{platform\+\_\+delay@{platform\+\_\+delay}!Splash\+State@{Splash\+State}}
+\subsubsection{\texorpdfstring{platform\+\_\+delay}{platform\_delay}}
+{\footnotesize\ttfamily \hyperlink{stdint_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t} Splash\+State\+::platform\+\_\+delay = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSplashState_a20b119095bf99299609bf381224624c9}\label{classSplashState_a20b119095bf99299609bf381224624c9}} 
+\index{Splash\+State@{Splash\+State}!r\+\_\+cam@{r\+\_\+cam}}
+\index{r\+\_\+cam@{r\+\_\+cam}!Splash\+State@{Splash\+State}}
+\subsubsection{\texorpdfstring{r\+\_\+cam}{r\_cam}}
+{\footnotesize\ttfamily float Splash\+State\+::r\+\_\+cam\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSplashState_a403b26122d93bd2b3744e6525ec26671}\label{classSplashState_a403b26122d93bd2b3744e6525ec26671}} 
+\index{Splash\+State@{Splash\+State}!timer@{timer}}
+\index{timer@{timer}!Splash\+State@{Splash\+State}}
+\subsubsection{\texorpdfstring{timer}{timer}}
+{\footnotesize\ttfamily clock\+\_\+t Splash\+State\+::timer = clock()\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSplashState_ad74688dceca650f340e9113938234547}\label{classSplashState_ad74688dceca650f340e9113938234547}} 
+\index{Splash\+State@{Splash\+State}!x@{x}}
+\index{x@{x}!Splash\+State@{Splash\+State}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily float Splash\+State\+::x\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSplashState_a4264ee844097c44c250a95457aa7da2f}\label{classSplashState_a4264ee844097c44c250a95457aa7da2f}} 
+\index{Splash\+State@{Splash\+State}!x\+\_\+cam@{x\+\_\+cam}}
+\index{x\+\_\+cam@{x\+\_\+cam}!Splash\+State@{Splash\+State}}
+\subsubsection{\texorpdfstring{x\+\_\+cam}{x\_cam}}
+{\footnotesize\ttfamily float Splash\+State\+::x\+\_\+cam\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSplashState_a4477fcbed7b631aaf135359a09bb0b3c}\label{classSplashState_a4477fcbed7b631aaf135359a09bb0b3c}} 
+\index{Splash\+State@{Splash\+State}!y@{y}}
+\index{y@{y}!Splash\+State@{Splash\+State}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily float Splash\+State\+::y\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSplashState_adce1ee0219be0b1045a578c4cae88b3b}\label{classSplashState_adce1ee0219be0b1045a578c4cae88b3b}} 
+\index{Splash\+State@{Splash\+State}!y\+\_\+cam@{y\+\_\+cam}}
+\index{y\+\_\+cam@{y\+\_\+cam}!Splash\+State@{Splash\+State}}
+\subsubsection{\texorpdfstring{y\+\_\+cam}{y\_cam}}
+{\footnotesize\ttfamily float Splash\+State\+::y\+\_\+cam\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSplashState_a4c2362acca2844d0cbcdc2fc958d68a6}\label{classSplashState_a4c2362acca2844d0cbcdc2fc958d68a6}} 
+\index{Splash\+State@{Splash\+State}!z\+\_\+cam@{z\+\_\+cam}}
+\index{z\+\_\+cam@{z\+\_\+cam}!Splash\+State@{Splash\+State}}
+\subsubsection{\texorpdfstring{z\+\_\+cam}{z\_cam}}
+{\footnotesize\ttfamily float Splash\+State\+::z\+\_\+cam\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSplashState_aa80fb9876f76790eb989071b213c967f}\label{classSplashState_aa80fb9876f76790eb989071b213c967f}} 
+\index{Splash\+State@{Splash\+State}!z\+\_\+scale@{z\+\_\+scale}}
+\index{z\+\_\+scale@{z\+\_\+scale}!Splash\+State@{Splash\+State}}
+\subsubsection{\texorpdfstring{z\+\_\+scale}{z\_scale}}
+{\footnotesize\ttfamily glm\+::vec2 Splash\+State\+::z\+\_\+scale\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/\+States/\hyperlink{splash__state_8h}{splash\+\_\+state.\+h}\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/src/\+States/\hyperlink{splash__state_8cpp}{splash\+\_\+state.\+cpp}\end{DoxyCompactItemize}

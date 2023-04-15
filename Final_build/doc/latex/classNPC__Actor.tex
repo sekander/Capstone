@@ -1,0 +1,372 @@
+\hypertarget{classNPC__Actor}{}\section{N\+P\+C\+\_\+\+Actor Class Reference}
+\label{classNPC__Actor}\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+
+
+{\ttfamily \#include $<$N\+P\+C\+\_\+\+Actor.\+h$>$}
+
+
+
+Inheritance diagram for N\+P\+C\+\_\+\+Actor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classNPC__Actor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for N\+P\+C\+\_\+\+Actor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classNPC__Actor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classNPC__Actor_aa87fc7f9fb6487b746f3df4e1ab4af18}{N\+P\+C\+\_\+\+Actor} (\hyperlink{classComponent}{Component} $\ast$parent\+\_\+)
+\item 
+\hyperlink{classNPC__Actor_a5bb0ec8906e74ae2d5809da099a9ae00}{$\sim$\+N\+P\+C\+\_\+\+Actor} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classNPC__Actor_aee175ed98d287e0c15202d9db34ead24}{Initalize\+Actor} (const char $\ast$file\+Name, b2\+World $\ast$world, glm\+::vec2 positon, glm\+::vec2 \hyperlink{imgui__impl__opengl3__loader_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}, glm\+::vec2 box\+Size, int currentframeX, int currentframeY, int total\+X\+Frames, int total\+Y\+Frames)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classNPC__Actor_a4549d7c33e0e1fb711b1c2d42f651c00}{Initalize\+Actor} (b2\+World $\ast$world, glm\+::vec2 positon, glm\+::vec2 \hyperlink{imgui__impl__opengl3__loader_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}, glm\+::vec2 box\+Size, int currentframeX, int currentframeY, int total\+X\+Frames, int total\+Y\+Frames)
+\item 
+bool \hyperlink{classNPC__Actor_a290c88cbf6fb977dd5084d0ee75ba34b}{on\+Create} (int num\+\_\+x\+\_\+frame, int num\+\_\+y\+\_\+frame, int curr\+\_\+x\+\_\+frame, int curr\+\_\+y\+\_\+frame)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classNPC__Actor_ab274d0517bd0cd710efc7df31cd7450b}{on\+Destroy} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classNPC__Actor_a6d4175597b53261419a5e60d4dd486cb}{basic\+\_\+update} (std\+::shared\+\_\+ptr$<$ \hyperlink{classPlayer__Actor}{Player\+\_\+\+Actor} $>$ \hyperlink{game__play__state_8cpp_ac65a4bc85dcd7c1cefbc84425f42fc46}{player}, const float delta\+Time\+\_\+, b2\+World $\ast$world)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classNPC__Actor_a8bfe3a4223330ef3911d3cea91fff6cd}{update} (std\+::shared\+\_\+ptr$<$ \hyperlink{classPlayer__Actor}{Player\+\_\+\+Actor} $>$ \hyperlink{game__play__state_8cpp_ac65a4bc85dcd7c1cefbc84425f42fc46}{player}, const float delta\+Time\+\_\+, b2\+World $\ast$world, bool state\+Machine\+Exist)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classNPC__Actor_a69631753bbb4fc94c3d9e1cd7e550f07}{input} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classNPC__Actor_af33500f1aeb5c8e845fdaf386d736050}{draw} (std\+::shared\+\_\+ptr$<$ \hyperlink{classShader__Actor}{Shader\+\_\+\+Actor} $>$ \hyperlink{imgui__impl__opengl3__loader_8h_a57b2a96adb1d51204909a82d861e395e}{shader}, glm\+::mat4 \hyperlink{main__menu__state_8cpp_a565d92bfbcc4a481d2d35f3850a382f7}{projection}, float xpos, float ypos, float box\+Width, float bow\+Height, float rot) const
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classNPC__Actor_adce8bd20771bac78d7de190b81da119d}{collison\+\_\+update} (std\+::shared\+\_\+ptr$<$ \hyperlink{classProjectile__Actor}{Projectile\+\_\+\+Actor} $>$ projectile)
+\item 
+int \hyperlink{classNPC__Actor_aefa30370f75f0af9c12eb3ea67fb3722}{get\+\_\+health} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classNPC__Actor_ac60f3b69ca850dbbf77c71275344f8c6}{set\+\_\+health} (int health\+\_\+)
+\item 
+bool \hyperlink{classNPC__Actor_a3ea00a11b31b55d80f02575ded1a8262}{get\+\_\+is\+Walking} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classNPC__Actor_a5df8dbfeafc9e69da41dbbeac85d92b2}{set\+\_\+is\+Walking} (bool walking)
+\item 
+bool \hyperlink{classNPC__Actor_a1eeb245ce58c7a7dd49562eff05a6f95}{get\+\_\+is\+Running} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classNPC__Actor_a78bf8b2ada74d5e95fc780feb2c1b30d}{set\+\_\+is\+Running} (bool running)
+\item 
+bool \hyperlink{classNPC__Actor_a7111e6b53b445ce038079e25ea080882}{get\+\_\+is\+Attacking} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classNPC__Actor_ab31d259c92592433e390e68915a22f69}{set\+\_\+is\+Attacking} (bool \hyperlink{classNPC__Actor_a9af988fb1e657f9d8aed581cb6ad4b92}{attack})
+\item 
+bool \hyperlink{classNPC__Actor_a0957033379358fcfb66b07307f25c32e}{get\+\_\+collision} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classNPC__Actor_a7c380c28c883a0823d772f2b91934185}{set\+\_\+collision} (bool collision)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classNPC__Actor_aaf0be3c75aa294c15f999c2398412d5e}{set\+\_\+colour} (glm\+::vec3 colour)
+\item 
+bool \hyperlink{classNPC__Actor_a16c0a2ec5add05145d0065493cb5edd6}{check\+Distance\+Between\+Player} (\hyperlink{classPlayer__Actor}{Player\+\_\+\+Actor} $\ast$\hyperlink{game__play__state_8cpp_ac65a4bc85dcd7c1cefbc84425f42fc46}{player}, float distance)
+\item 
+bool \hyperlink{classNPC__Actor_a3a5bc6ab5362520a4d919ca99b31f51b}{read\+State\+Machine} (\hyperlink{imgui__impl__opengl3__loader_8h_ac83513893df92266f79a515488701770}{string} file\+Name)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classNPC__Actor_ab86bda3924c077b5e162a55ab0f755e4}{health}
+\item 
+glm\+::vec3 \hyperlink{classNPC__Actor_a232164230fc00e76adb5c73e99c9d25b}{npc\+\_\+colour}
+\item 
+bool \hyperlink{classNPC__Actor_aed111eb54650325f6b573d6c7eead724}{npc\+\_\+collision}
+\item 
+\hyperlink{classBStateMachine}{B\+State\+Machine} $\ast$ \hyperlink{classNPC__Actor_a893e34f05e775fb908431ea3ccd050c0}{state\+Machine}
+\item 
+\hyperlink{classBState}{B\+State} $\ast$ \hyperlink{classNPC__Actor_abda022e63f59e763f64ef227889fe557}{seek\+Player}
+\item 
+\hyperlink{classBState}{B\+State} $\ast$ \hyperlink{classNPC__Actor_ab1bffb4fa8bff0259a4472877282a1dd}{wander}
+\item 
+\hyperlink{classBState}{B\+State} $\ast$ \hyperlink{classNPC__Actor_a9af988fb1e657f9d8aed581cb6ad4b92}{attack}
+\item 
+\hyperlink{classCondition}{Condition} $\ast$ \hyperlink{classNPC__Actor_a86543ff81852572e2600abd0681148fc}{in\+Attack\+Range}
+\item 
+\hyperlink{classCondition}{Condition} $\ast$ \hyperlink{classNPC__Actor_a770a1305cf4cb10c03f414e9634fb1b5}{out\+Attack\+Range}
+\item 
+\hyperlink{classCondition}{Condition} $\ast$ \hyperlink{classNPC__Actor_ae81ad1d14e52ada49257eedbbdbb83df}{if\+In\+Range}
+\item 
+\hyperlink{classCondition}{Condition} $\ast$ \hyperlink{classNPC__Actor_aeff8e47fde9f5edd76bc54a76b5e07ca}{out\+Of\+Range}
+\item 
+\hyperlink{classTransition}{Transition} $\ast$ \hyperlink{classNPC__Actor_ac63373fb322218c56cfc46ee6882001f}{in\+Transition}
+\item 
+\hyperlink{classTransition}{Transition} $\ast$ \hyperlink{classNPC__Actor_af67abbbb96dc9f7abf9f9d3db665d9e7}{out\+Transition}
+\item 
+bool \hyperlink{classNPC__Actor_af7ae5ac70a3d6f2e34ede9090e9ed613}{is\+Walking}
+\item 
+bool \hyperlink{classNPC__Actor_a9be686994f2d2d8543cf8c05129ad8fc}{is\+Running}
+\item 
+bool \hyperlink{classNPC__Actor_ac4a60d0f75b7de3b813c6282c1d38aa2}{is\+Attacking}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNPC__Actor_aa87fc7f9fb6487b746f3df4e1ab4af18}\label{classNPC__Actor_aa87fc7f9fb6487b746f3df4e1ab4af18}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{N\+P\+C\+\_\+\+Actor()}{NPC\_Actor()}}
+{\footnotesize\ttfamily N\+P\+C\+\_\+\+Actor\+::\+N\+P\+C\+\_\+\+Actor (\begin{DoxyParamCaption}\item[{\hyperlink{classComponent}{Component} $\ast$}]{parent\+\_\+ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNPC__Actor_a5bb0ec8906e74ae2d5809da099a9ae00}\label{classNPC__Actor_a5bb0ec8906e74ae2d5809da099a9ae00}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!````~N\+P\+C\+\_\+\+Actor@{$\sim$\+N\+P\+C\+\_\+\+Actor}}
+\index{````~N\+P\+C\+\_\+\+Actor@{$\sim$\+N\+P\+C\+\_\+\+Actor}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{$\sim$\+N\+P\+C\+\_\+\+Actor()}{~NPC\_Actor()}}
+{\footnotesize\ttfamily N\+P\+C\+\_\+\+Actor\+::$\sim$\+N\+P\+C\+\_\+\+Actor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classNPC__Actor_a6d4175597b53261419a5e60d4dd486cb}\label{classNPC__Actor_a6d4175597b53261419a5e60d4dd486cb}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!basic\+\_\+update@{basic\+\_\+update}}
+\index{basic\+\_\+update@{basic\+\_\+update}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{basic\+\_\+update()}{basic\_update()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} N\+P\+C\+\_\+\+Actor\+::basic\+\_\+update (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classPlayer__Actor}{Player\+\_\+\+Actor} $>$}]{player,  }\item[{const float}]{delta\+Time\+\_\+,  }\item[{b2\+World $\ast$}]{world }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNPC__Actor_a16c0a2ec5add05145d0065493cb5edd6}\label{classNPC__Actor_a16c0a2ec5add05145d0065493cb5edd6}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!check\+Distance\+Between\+Player@{check\+Distance\+Between\+Player}}
+\index{check\+Distance\+Between\+Player@{check\+Distance\+Between\+Player}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{check\+Distance\+Between\+Player()}{checkDistanceBetweenPlayer()}}
+{\footnotesize\ttfamily bool N\+P\+C\+\_\+\+Actor\+::check\+Distance\+Between\+Player (\begin{DoxyParamCaption}\item[{\hyperlink{classPlayer__Actor}{Player\+\_\+\+Actor} $\ast$}]{player,  }\item[{float}]{distance }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNPC__Actor_adce8bd20771bac78d7de190b81da119d}\label{classNPC__Actor_adce8bd20771bac78d7de190b81da119d}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!collison\+\_\+update@{collison\+\_\+update}}
+\index{collison\+\_\+update@{collison\+\_\+update}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{collison\+\_\+update()}{collison\_update()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} N\+P\+C\+\_\+\+Actor\+::collison\+\_\+update (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classProjectile__Actor}{Projectile\+\_\+\+Actor} $>$}]{projectile }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNPC__Actor_af33500f1aeb5c8e845fdaf386d736050}\label{classNPC__Actor_af33500f1aeb5c8e845fdaf386d736050}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!draw@{draw}}
+\index{draw@{draw}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} N\+P\+C\+\_\+\+Actor\+::draw (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classShader__Actor}{Shader\+\_\+\+Actor} $>$}]{shader,  }\item[{glm\+::mat4}]{projection,  }\item[{float}]{xpos,  }\item[{float}]{ypos,  }\item[{float}]{box\+Width,  }\item[{float}]{bow\+Height,  }\item[{float}]{rot }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classNPC__Actor_a0957033379358fcfb66b07307f25c32e}\label{classNPC__Actor_a0957033379358fcfb66b07307f25c32e}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!get\+\_\+collision@{get\+\_\+collision}}
+\index{get\+\_\+collision@{get\+\_\+collision}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{get\+\_\+collision()}{get\_collision()}}
+{\footnotesize\ttfamily bool N\+P\+C\+\_\+\+Actor\+::get\+\_\+collision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNPC__Actor_aefa30370f75f0af9c12eb3ea67fb3722}\label{classNPC__Actor_aefa30370f75f0af9c12eb3ea67fb3722}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!get\+\_\+health@{get\+\_\+health}}
+\index{get\+\_\+health@{get\+\_\+health}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{get\+\_\+health()}{get\_health()}}
+{\footnotesize\ttfamily int N\+P\+C\+\_\+\+Actor\+::get\+\_\+health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNPC__Actor_a7111e6b53b445ce038079e25ea080882}\label{classNPC__Actor_a7111e6b53b445ce038079e25ea080882}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!get\+\_\+is\+Attacking@{get\+\_\+is\+Attacking}}
+\index{get\+\_\+is\+Attacking@{get\+\_\+is\+Attacking}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{get\+\_\+is\+Attacking()}{get\_isAttacking()}}
+{\footnotesize\ttfamily bool N\+P\+C\+\_\+\+Actor\+::get\+\_\+is\+Attacking (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNPC__Actor_a1eeb245ce58c7a7dd49562eff05a6f95}\label{classNPC__Actor_a1eeb245ce58c7a7dd49562eff05a6f95}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!get\+\_\+is\+Running@{get\+\_\+is\+Running}}
+\index{get\+\_\+is\+Running@{get\+\_\+is\+Running}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{get\+\_\+is\+Running()}{get\_isRunning()}}
+{\footnotesize\ttfamily bool N\+P\+C\+\_\+\+Actor\+::get\+\_\+is\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNPC__Actor_a3ea00a11b31b55d80f02575ded1a8262}\label{classNPC__Actor_a3ea00a11b31b55d80f02575ded1a8262}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!get\+\_\+is\+Walking@{get\+\_\+is\+Walking}}
+\index{get\+\_\+is\+Walking@{get\+\_\+is\+Walking}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{get\+\_\+is\+Walking()}{get\_isWalking()}}
+{\footnotesize\ttfamily bool N\+P\+C\+\_\+\+Actor\+::get\+\_\+is\+Walking (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNPC__Actor_aee175ed98d287e0c15202d9db34ead24}\label{classNPC__Actor_aee175ed98d287e0c15202d9db34ead24}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!Initalize\+Actor@{Initalize\+Actor}}
+\index{Initalize\+Actor@{Initalize\+Actor}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{Initalize\+Actor()}{InitalizeActor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} N\+P\+C\+\_\+\+Actor\+::\+Initalize\+Actor (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name,  }\item[{b2\+World $\ast$}]{world,  }\item[{glm\+::vec2}]{positon,  }\item[{glm\+::vec2}]{size,  }\item[{glm\+::vec2}]{box\+Size,  }\item[{int}]{currentframeX,  }\item[{int}]{currentframeY,  }\item[{int}]{total\+X\+Frames,  }\item[{int}]{total\+Y\+Frames }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNPC__Actor_a4549d7c33e0e1fb711b1c2d42f651c00}\label{classNPC__Actor_a4549d7c33e0e1fb711b1c2d42f651c00}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!Initalize\+Actor@{Initalize\+Actor}}
+\index{Initalize\+Actor@{Initalize\+Actor}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{Initalize\+Actor()}{InitalizeActor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} N\+P\+C\+\_\+\+Actor\+::\+Initalize\+Actor (\begin{DoxyParamCaption}\item[{b2\+World $\ast$}]{world,  }\item[{glm\+::vec2}]{positon,  }\item[{glm\+::vec2}]{size,  }\item[{glm\+::vec2}]{box\+Size,  }\item[{int}]{currentframeX,  }\item[{int}]{currentframeY,  }\item[{int}]{total\+X\+Frames,  }\item[{int}]{total\+Y\+Frames }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNPC__Actor_a69631753bbb4fc94c3d9e1cd7e550f07}\label{classNPC__Actor_a69631753bbb4fc94c3d9e1cd7e550f07}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!input@{input}}
+\index{input@{input}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} N\+P\+C\+\_\+\+Actor\+::input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNPC__Actor_a290c88cbf6fb977dd5084d0ee75ba34b}\label{classNPC__Actor_a290c88cbf6fb977dd5084d0ee75ba34b}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!on\+Create@{on\+Create}}
+\index{on\+Create@{on\+Create}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{on\+Create()}{onCreate()}}
+{\footnotesize\ttfamily bool N\+P\+C\+\_\+\+Actor\+::on\+Create (\begin{DoxyParamCaption}\item[{int}]{num\+\_\+x\+\_\+frame,  }\item[{int}]{num\+\_\+y\+\_\+frame,  }\item[{int}]{curr\+\_\+x\+\_\+frame,  }\item[{int}]{curr\+\_\+y\+\_\+frame }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNPC__Actor_ab274d0517bd0cd710efc7df31cd7450b}\label{classNPC__Actor_ab274d0517bd0cd710efc7df31cd7450b}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!on\+Destroy@{on\+Destroy}}
+\index{on\+Destroy@{on\+Destroy}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{on\+Destroy()}{onDestroy()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} N\+P\+C\+\_\+\+Actor\+::on\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classActor_a47101d6275509662bf6c84c3f3439696}{Actor}.
+
+\mbox{\Hypertarget{classNPC__Actor_a3a5bc6ab5362520a4d919ca99b31f51b}\label{classNPC__Actor_a3a5bc6ab5362520a4d919ca99b31f51b}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!read\+State\+Machine@{read\+State\+Machine}}
+\index{read\+State\+Machine@{read\+State\+Machine}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{read\+State\+Machine()}{readStateMachine()}}
+{\footnotesize\ttfamily bool N\+P\+C\+\_\+\+Actor\+::read\+State\+Machine (\begin{DoxyParamCaption}\item[{\hyperlink{imgui__impl__opengl3__loader_8h_ac83513893df92266f79a515488701770}{string}}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNPC__Actor_a7c380c28c883a0823d772f2b91934185}\label{classNPC__Actor_a7c380c28c883a0823d772f2b91934185}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!set\+\_\+collision@{set\+\_\+collision}}
+\index{set\+\_\+collision@{set\+\_\+collision}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{set\+\_\+collision()}{set\_collision()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} N\+P\+C\+\_\+\+Actor\+::set\+\_\+collision (\begin{DoxyParamCaption}\item[{bool}]{collision }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNPC__Actor_aaf0be3c75aa294c15f999c2398412d5e}\label{classNPC__Actor_aaf0be3c75aa294c15f999c2398412d5e}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!set\+\_\+colour@{set\+\_\+colour}}
+\index{set\+\_\+colour@{set\+\_\+colour}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{set\+\_\+colour()}{set\_colour()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} N\+P\+C\+\_\+\+Actor\+::set\+\_\+colour (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{colour }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNPC__Actor_ac60f3b69ca850dbbf77c71275344f8c6}\label{classNPC__Actor_ac60f3b69ca850dbbf77c71275344f8c6}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!set\+\_\+health@{set\+\_\+health}}
+\index{set\+\_\+health@{set\+\_\+health}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{set\+\_\+health()}{set\_health()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} N\+P\+C\+\_\+\+Actor\+::set\+\_\+health (\begin{DoxyParamCaption}\item[{int}]{health\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNPC__Actor_ab31d259c92592433e390e68915a22f69}\label{classNPC__Actor_ab31d259c92592433e390e68915a22f69}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!set\+\_\+is\+Attacking@{set\+\_\+is\+Attacking}}
+\index{set\+\_\+is\+Attacking@{set\+\_\+is\+Attacking}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{set\+\_\+is\+Attacking()}{set\_isAttacking()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} N\+P\+C\+\_\+\+Actor\+::set\+\_\+is\+Attacking (\begin{DoxyParamCaption}\item[{bool}]{attack }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNPC__Actor_a78bf8b2ada74d5e95fc780feb2c1b30d}\label{classNPC__Actor_a78bf8b2ada74d5e95fc780feb2c1b30d}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!set\+\_\+is\+Running@{set\+\_\+is\+Running}}
+\index{set\+\_\+is\+Running@{set\+\_\+is\+Running}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{set\+\_\+is\+Running()}{set\_isRunning()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} N\+P\+C\+\_\+\+Actor\+::set\+\_\+is\+Running (\begin{DoxyParamCaption}\item[{bool}]{running }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNPC__Actor_a5df8dbfeafc9e69da41dbbeac85d92b2}\label{classNPC__Actor_a5df8dbfeafc9e69da41dbbeac85d92b2}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!set\+\_\+is\+Walking@{set\+\_\+is\+Walking}}
+\index{set\+\_\+is\+Walking@{set\+\_\+is\+Walking}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{set\+\_\+is\+Walking()}{set\_isWalking()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} N\+P\+C\+\_\+\+Actor\+::set\+\_\+is\+Walking (\begin{DoxyParamCaption}\item[{bool}]{walking }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNPC__Actor_a8bfe3a4223330ef3911d3cea91fff6cd}\label{classNPC__Actor_a8bfe3a4223330ef3911d3cea91fff6cd}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!update@{update}}
+\index{update@{update}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} N\+P\+C\+\_\+\+Actor\+::update (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classPlayer__Actor}{Player\+\_\+\+Actor} $>$}]{player,  }\item[{const float}]{delta\+Time\+\_\+,  }\item[{b2\+World $\ast$}]{world,  }\item[{bool}]{state\+Machine\+Exist }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classNPC__Actor_a9af988fb1e657f9d8aed581cb6ad4b92}\label{classNPC__Actor_a9af988fb1e657f9d8aed581cb6ad4b92}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!attack@{attack}}
+\index{attack@{attack}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{attack}{attack}}
+{\footnotesize\ttfamily \hyperlink{classBState}{B\+State}$\ast$ N\+P\+C\+\_\+\+Actor\+::attack\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNPC__Actor_ab86bda3924c077b5e162a55ab0f755e4}\label{classNPC__Actor_ab86bda3924c077b5e162a55ab0f755e4}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!health@{health}}
+\index{health@{health}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{health}{health}}
+{\footnotesize\ttfamily int N\+P\+C\+\_\+\+Actor\+::health\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNPC__Actor_ae81ad1d14e52ada49257eedbbdbb83df}\label{classNPC__Actor_ae81ad1d14e52ada49257eedbbdbb83df}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!if\+In\+Range@{if\+In\+Range}}
+\index{if\+In\+Range@{if\+In\+Range}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{if\+In\+Range}{ifInRange}}
+{\footnotesize\ttfamily \hyperlink{classCondition}{Condition}$\ast$ N\+P\+C\+\_\+\+Actor\+::if\+In\+Range\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNPC__Actor_a86543ff81852572e2600abd0681148fc}\label{classNPC__Actor_a86543ff81852572e2600abd0681148fc}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!in\+Attack\+Range@{in\+Attack\+Range}}
+\index{in\+Attack\+Range@{in\+Attack\+Range}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{in\+Attack\+Range}{inAttackRange}}
+{\footnotesize\ttfamily \hyperlink{classCondition}{Condition}$\ast$ N\+P\+C\+\_\+\+Actor\+::in\+Attack\+Range\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNPC__Actor_ac63373fb322218c56cfc46ee6882001f}\label{classNPC__Actor_ac63373fb322218c56cfc46ee6882001f}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!in\+Transition@{in\+Transition}}
+\index{in\+Transition@{in\+Transition}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{in\+Transition}{inTransition}}
+{\footnotesize\ttfamily \hyperlink{classTransition}{Transition}$\ast$ N\+P\+C\+\_\+\+Actor\+::in\+Transition\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNPC__Actor_ac4a60d0f75b7de3b813c6282c1d38aa2}\label{classNPC__Actor_ac4a60d0f75b7de3b813c6282c1d38aa2}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!is\+Attacking@{is\+Attacking}}
+\index{is\+Attacking@{is\+Attacking}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{is\+Attacking}{isAttacking}}
+{\footnotesize\ttfamily bool N\+P\+C\+\_\+\+Actor\+::is\+Attacking\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNPC__Actor_a9be686994f2d2d8543cf8c05129ad8fc}\label{classNPC__Actor_a9be686994f2d2d8543cf8c05129ad8fc}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!is\+Running@{is\+Running}}
+\index{is\+Running@{is\+Running}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{is\+Running}{isRunning}}
+{\footnotesize\ttfamily bool N\+P\+C\+\_\+\+Actor\+::is\+Running\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNPC__Actor_af7ae5ac70a3d6f2e34ede9090e9ed613}\label{classNPC__Actor_af7ae5ac70a3d6f2e34ede9090e9ed613}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!is\+Walking@{is\+Walking}}
+\index{is\+Walking@{is\+Walking}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{is\+Walking}{isWalking}}
+{\footnotesize\ttfamily bool N\+P\+C\+\_\+\+Actor\+::is\+Walking\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNPC__Actor_aed111eb54650325f6b573d6c7eead724}\label{classNPC__Actor_aed111eb54650325f6b573d6c7eead724}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!npc\+\_\+collision@{npc\+\_\+collision}}
+\index{npc\+\_\+collision@{npc\+\_\+collision}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{npc\+\_\+collision}{npc\_collision}}
+{\footnotesize\ttfamily bool N\+P\+C\+\_\+\+Actor\+::npc\+\_\+collision\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNPC__Actor_a232164230fc00e76adb5c73e99c9d25b}\label{classNPC__Actor_a232164230fc00e76adb5c73e99c9d25b}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!npc\+\_\+colour@{npc\+\_\+colour}}
+\index{npc\+\_\+colour@{npc\+\_\+colour}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{npc\+\_\+colour}{npc\_colour}}
+{\footnotesize\ttfamily glm\+::vec3 N\+P\+C\+\_\+\+Actor\+::npc\+\_\+colour\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNPC__Actor_a770a1305cf4cb10c03f414e9634fb1b5}\label{classNPC__Actor_a770a1305cf4cb10c03f414e9634fb1b5}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!out\+Attack\+Range@{out\+Attack\+Range}}
+\index{out\+Attack\+Range@{out\+Attack\+Range}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{out\+Attack\+Range}{outAttackRange}}
+{\footnotesize\ttfamily \hyperlink{classCondition}{Condition}$\ast$ N\+P\+C\+\_\+\+Actor\+::out\+Attack\+Range\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNPC__Actor_aeff8e47fde9f5edd76bc54a76b5e07ca}\label{classNPC__Actor_aeff8e47fde9f5edd76bc54a76b5e07ca}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!out\+Of\+Range@{out\+Of\+Range}}
+\index{out\+Of\+Range@{out\+Of\+Range}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{out\+Of\+Range}{outOfRange}}
+{\footnotesize\ttfamily \hyperlink{classCondition}{Condition}$\ast$ N\+P\+C\+\_\+\+Actor\+::out\+Of\+Range\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNPC__Actor_af67abbbb96dc9f7abf9f9d3db665d9e7}\label{classNPC__Actor_af67abbbb96dc9f7abf9f9d3db665d9e7}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!out\+Transition@{out\+Transition}}
+\index{out\+Transition@{out\+Transition}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{out\+Transition}{outTransition}}
+{\footnotesize\ttfamily \hyperlink{classTransition}{Transition}$\ast$ N\+P\+C\+\_\+\+Actor\+::out\+Transition\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNPC__Actor_abda022e63f59e763f64ef227889fe557}\label{classNPC__Actor_abda022e63f59e763f64ef227889fe557}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!seek\+Player@{seek\+Player}}
+\index{seek\+Player@{seek\+Player}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{seek\+Player}{seekPlayer}}
+{\footnotesize\ttfamily \hyperlink{classBState}{B\+State}$\ast$ N\+P\+C\+\_\+\+Actor\+::seek\+Player\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNPC__Actor_a893e34f05e775fb908431ea3ccd050c0}\label{classNPC__Actor_a893e34f05e775fb908431ea3ccd050c0}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!state\+Machine@{state\+Machine}}
+\index{state\+Machine@{state\+Machine}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{state\+Machine}{stateMachine}}
+{\footnotesize\ttfamily \hyperlink{classBStateMachine}{B\+State\+Machine}$\ast$ N\+P\+C\+\_\+\+Actor\+::state\+Machine\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNPC__Actor_ab1bffb4fa8bff0259a4472877282a1dd}\label{classNPC__Actor_ab1bffb4fa8bff0259a4472877282a1dd}} 
+\index{N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}!wander@{wander}}
+\index{wander@{wander}!N\+P\+C\+\_\+\+Actor@{N\+P\+C\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{wander}{wander}}
+{\footnotesize\ttfamily \hyperlink{classBState}{B\+State}$\ast$ N\+P\+C\+\_\+\+Actor\+::wander\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/\+Actors/\hyperlink{NPC__Actor_8h}{N\+P\+C\+\_\+\+Actor.\+h}\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/src/\+Actors/\hyperlink{NPC__Actor_8cpp}{N\+P\+C\+\_\+\+Actor.\+cpp}\end{DoxyCompactItemize}

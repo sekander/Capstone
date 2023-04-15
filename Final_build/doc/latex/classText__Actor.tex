@@ -1,0 +1,106 @@
+\hypertarget{classText__Actor}{}\section{Text\+\_\+\+Actor Class Reference}
+\label{classText__Actor}\index{Text\+\_\+\+Actor@{Text\+\_\+\+Actor}}
+
+
+{\ttfamily \#include $<$Text\+\_\+\+Actor.\+h$>$}
+
+
+
+Inheritance diagram for Text\+\_\+\+Actor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classText__Actor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Text\+\_\+\+Actor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classText__Actor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classText__Actor_a5d0932b7902bb86583c36c589931d069}{Text\+\_\+\+Actor} (\hyperlink{classComponent}{Component} $\ast$parent\+\_\+)
+\item 
+\hyperlink{classText__Actor_af327288b1330371a17070fb499f8d54c}{$\sim$\+Text\+\_\+\+Actor} ()
+\item 
+bool \hyperlink{classText__Actor_a07ecf27d5a9e6b29187a9d0e6a47d4a2}{on\+Create} (const char $\ast$v\+Shader, const char $\ast$f\+Shader, \hyperlink{imgui__impl__opengl3__loader_8h_ac83513893df92266f79a515488701770}{std\+::string} text\+File, unsigned int font\+Size)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classText__Actor_af9b25da889aad4aec6f17671c37ac431}{on\+Destroy} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classText__Actor_a26181e1102ab2a37ec8b140c999a6f6a}{update} (const float delta\+Time\+\_\+)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classText__Actor_acbb29cf3a69e2858880e6f680f395579}{input} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classText__Actor_a7d39e279f8491521f213a8f3dc5309a9}{draw} (glm\+::mat4 \hyperlink{main__menu__state_8cpp_a565d92bfbcc4a481d2d35f3850a382f7}{projection}, \hyperlink{imgui__impl__opengl3__loader_8h_ac83513893df92266f79a515488701770}{std\+::string} \hyperlink{game__play__state_8cpp_a295b62c787445f811e691da4b10f6be4}{text}, float xpos, float ypos, float r=0.\+0f, float g=1.\+0f, float b=0.\+0f) const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classText__Actor_a5d0932b7902bb86583c36c589931d069}\label{classText__Actor_a5d0932b7902bb86583c36c589931d069}} 
+\index{Text\+\_\+\+Actor@{Text\+\_\+\+Actor}!Text\+\_\+\+Actor@{Text\+\_\+\+Actor}}
+\index{Text\+\_\+\+Actor@{Text\+\_\+\+Actor}!Text\+\_\+\+Actor@{Text\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{Text\+\_\+\+Actor()}{Text\_Actor()}}
+{\footnotesize\ttfamily Text\+\_\+\+Actor\+::\+Text\+\_\+\+Actor (\begin{DoxyParamCaption}\item[{\hyperlink{classComponent}{Component} $\ast$}]{parent\+\_\+ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classText__Actor_af327288b1330371a17070fb499f8d54c}\label{classText__Actor_af327288b1330371a17070fb499f8d54c}} 
+\index{Text\+\_\+\+Actor@{Text\+\_\+\+Actor}!````~Text\+\_\+\+Actor@{$\sim$\+Text\+\_\+\+Actor}}
+\index{````~Text\+\_\+\+Actor@{$\sim$\+Text\+\_\+\+Actor}!Text\+\_\+\+Actor@{Text\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{$\sim$\+Text\+\_\+\+Actor()}{~Text\_Actor()}}
+{\footnotesize\ttfamily Text\+\_\+\+Actor\+::$\sim$\+Text\+\_\+\+Actor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classText__Actor_a7d39e279f8491521f213a8f3dc5309a9}\label{classText__Actor_a7d39e279f8491521f213a8f3dc5309a9}} 
+\index{Text\+\_\+\+Actor@{Text\+\_\+\+Actor}!draw@{draw}}
+\index{draw@{draw}!Text\+\_\+\+Actor@{Text\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Text\+\_\+\+Actor\+::draw (\begin{DoxyParamCaption}\item[{glm\+::mat4}]{projection,  }\item[{\hyperlink{imgui__impl__opengl3__loader_8h_ac83513893df92266f79a515488701770}{std\+::string}}]{text,  }\item[{float}]{xpos,  }\item[{float}]{ypos,  }\item[{float}]{r = {\ttfamily 0.0f},  }\item[{float}]{g = {\ttfamily 1.0f},  }\item[{float}]{b = {\ttfamily 0.0f} }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classText__Actor_acbb29cf3a69e2858880e6f680f395579}\label{classText__Actor_acbb29cf3a69e2858880e6f680f395579}} 
+\index{Text\+\_\+\+Actor@{Text\+\_\+\+Actor}!input@{input}}
+\index{input@{input}!Text\+\_\+\+Actor@{Text\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Text\+\_\+\+Actor\+::input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classText__Actor_a07ecf27d5a9e6b29187a9d0e6a47d4a2}\label{classText__Actor_a07ecf27d5a9e6b29187a9d0e6a47d4a2}} 
+\index{Text\+\_\+\+Actor@{Text\+\_\+\+Actor}!on\+Create@{on\+Create}}
+\index{on\+Create@{on\+Create}!Text\+\_\+\+Actor@{Text\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{on\+Create()}{onCreate()}}
+{\footnotesize\ttfamily bool Text\+\_\+\+Actor\+::on\+Create (\begin{DoxyParamCaption}\item[{const char $\ast$}]{v\+Shader,  }\item[{const char $\ast$}]{f\+Shader,  }\item[{\hyperlink{imgui__impl__opengl3__loader_8h_ac83513893df92266f79a515488701770}{std\+::string}}]{text\+File,  }\item[{unsigned int}]{font\+Size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classText__Actor_af9b25da889aad4aec6f17671c37ac431}\label{classText__Actor_af9b25da889aad4aec6f17671c37ac431}} 
+\index{Text\+\_\+\+Actor@{Text\+\_\+\+Actor}!on\+Destroy@{on\+Destroy}}
+\index{on\+Destroy@{on\+Destroy}!Text\+\_\+\+Actor@{Text\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{on\+Destroy()}{onDestroy()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Text\+\_\+\+Actor\+::on\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classActor_a47101d6275509662bf6c84c3f3439696}{Actor}.
+
+\mbox{\Hypertarget{classText__Actor_a26181e1102ab2a37ec8b140c999a6f6a}\label{classText__Actor_a26181e1102ab2a37ec8b140c999a6f6a}} 
+\index{Text\+\_\+\+Actor@{Text\+\_\+\+Actor}!update@{update}}
+\index{update@{update}!Text\+\_\+\+Actor@{Text\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Text\+\_\+\+Actor\+::update (\begin{DoxyParamCaption}\item[{const float}]{delta\+Time\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classActor_a724ff8f2e9c34f15a6c443a3912504c4}{Actor}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/\+Actors/\hyperlink{Text__Actor_8h}{Text\+\_\+\+Actor.\+h}\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/src/\+Actors/\hyperlink{Text__Actor_8cpp}{Text\+\_\+\+Actor.\+cpp}\end{DoxyCompactItemize}

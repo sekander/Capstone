@@ -1,0 +1,379 @@
+\hypertarget{classStdAllocator}{}\section{Std\+Allocator$<$ T, Base\+Allocator $>$ Class Template Reference}
+\label{classStdAllocator}\index{Std\+Allocator$<$ T, Base\+Allocator $>$@{Std\+Allocator$<$ T, Base\+Allocator $>$}}
+
+
+{\ttfamily \#include $<$allocators.\+h$>$}
+
+
+
+Inheritance diagram for Std\+Allocator$<$ T, Base\+Allocator $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{classStdAllocator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Std\+Allocator$<$ T, Base\+Allocator $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{classStdAllocator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structStdAllocator_1_1rebind}{rebind}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Base\+Allocator \hyperlink{classStdAllocator_a09e7299a6c14e2d234bd469f1162bb21}{Base\+Allocator\+Type}
+\item 
+typedef traits\+\_\+type\+::size\+\_\+type \hyperlink{classStdAllocator_af0b177dc293fe5b985ba9e27de23b2c1}{size\+\_\+type}
+\item 
+typedef traits\+\_\+type\+::difference\+\_\+type \hyperlink{classStdAllocator_a4f3adbac47a8c20e47dbfb5c1f421ccd}{difference\+\_\+type}
+\item 
+typedef traits\+\_\+type\+::value\+\_\+type \hyperlink{classStdAllocator_aa9b7be996e5529bd6f1cbacadfa090c7}{value\+\_\+type}
+\item 
+typedef traits\+\_\+type\+::pointer \hyperlink{classStdAllocator_a0c970fb2525af736640f0ac3a29d45c5}{pointer}
+\item 
+typedef traits\+\_\+type\+::const\+\_\+pointer \hyperlink{classStdAllocator_add1391b3b872c9be9b4d89ed4fabe296}{const\+\_\+pointer}
+\item 
+typedef allocator\+\_\+type\+::reference \hyperlink{classStdAllocator_a108581b842584639473a6d3fdd135598}{reference}
+\item 
+typedef allocator\+\_\+type\+::const\+\_\+reference \hyperlink{classStdAllocator_a2bc4a28386765e3a2c105b270793a49e}{const\+\_\+reference}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classStdAllocator_afdef530c5dbd0c4e86922ab263c8ca83}{Std\+Allocator} () R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+O\+E\+X\+C\+E\+PT
+\item 
+\hyperlink{classStdAllocator_abfb16c76a06015f0ec1abe704375ace8}{Std\+Allocator} (const \hyperlink{classStdAllocator}{Std\+Allocator} \&rhs) R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+O\+E\+X\+C\+E\+PT
+\item 
+{\footnotesize template$<$typename U $>$ }\\\hyperlink{classStdAllocator_ab41a5cbaf54473e1e10468258629bd1b}{Std\+Allocator} (const \hyperlink{classStdAllocator}{Std\+Allocator}$<$ U, Base\+Allocator $>$ \&rhs) R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+O\+E\+X\+C\+E\+PT
+\item 
+\hyperlink{classStdAllocator_a40ffe84a544bd5fe938581d09595bd1f}{Std\+Allocator} (const Base\+Allocator \&allocator) R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+O\+E\+X\+C\+E\+PT
+\item 
+\hyperlink{classStdAllocator_a3d1703f93d5929c71a35e0c9baf9ceb1}{$\sim$\+Std\+Allocator} () R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+O\+E\+X\+C\+E\+PT
+\item 
+\hyperlink{classStdAllocator_a0c970fb2525af736640f0ac3a29d45c5}{pointer} \hyperlink{classStdAllocator_afbe805c057283166350a93f6c7e7a2c6}{address} (\hyperlink{classStdAllocator_a108581b842584639473a6d3fdd135598}{reference} r) const R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+O\+E\+X\+C\+E\+PT
+\item 
+\hyperlink{classStdAllocator_add1391b3b872c9be9b4d89ed4fabe296}{const\+\_\+pointer} \hyperlink{classStdAllocator_a56c3bab4003eccf5b7a9d18175ef4dc2}{address} (\hyperlink{classStdAllocator_a2bc4a28386765e3a2c105b270793a49e}{const\+\_\+reference} r) const R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+O\+E\+X\+C\+E\+PT
+\item 
+\hyperlink{classStdAllocator_af0b177dc293fe5b985ba9e27de23b2c1}{size\+\_\+type} \hyperlink{classStdAllocator_a158b8ba5e88fbcd7a851541090654930}{max\+\_\+size} () const R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+O\+E\+X\+C\+E\+PT
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classStdAllocator_a279cb8367857b1263c4ab014b74f842a}{construct} (\hyperlink{classStdAllocator_a0c970fb2525af736640f0ac3a29d45c5}{pointer} p, \hyperlink{classStdAllocator_a2bc4a28386765e3a2c105b270793a49e}{const\+\_\+reference} r)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classStdAllocator_a2aebac89efaaac9707d380b95c902567}{destroy} (\hyperlink{classStdAllocator_a0c970fb2525af736640f0ac3a29d45c5}{pointer} p)
+\item 
+{\footnotesize template$<$typename U $>$ }\\U $\ast$ \hyperlink{classStdAllocator_afaabcd7ede5a9432ae8dbe604a0c2982}{allocate} (\hyperlink{classStdAllocator_af0b177dc293fe5b985ba9e27de23b2c1}{size\+\_\+type} n=1, const \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} $\ast$=0)
+\item 
+{\footnotesize template$<$typename U $>$ }\\\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classStdAllocator_a92371ba62f651185c0d3eef856080cfa}{deallocate} (U $\ast$p, \hyperlink{classStdAllocator_af0b177dc293fe5b985ba9e27de23b2c1}{size\+\_\+type} n=1)
+\item 
+\hyperlink{classStdAllocator_a0c970fb2525af736640f0ac3a29d45c5}{pointer} \hyperlink{classStdAllocator_aa301f003f6722d438834b377c314247e}{allocate} (\hyperlink{classStdAllocator_af0b177dc293fe5b985ba9e27de23b2c1}{size\+\_\+type} n=1, const \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} $\ast$=0)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classStdAllocator_a96a27b5bc9919d08013e727f5217db7a}{deallocate} (\hyperlink{classStdAllocator_a0c970fb2525af736640f0ac3a29d45c5}{pointer} p, \hyperlink{classStdAllocator_af0b177dc293fe5b985ba9e27de23b2c1}{size\+\_\+type} n=1)
+\item 
+{\footnotesize template$<$typename U $>$ }\\bool \hyperlink{classStdAllocator_acec867ea79558926a5e3a5f9bbafaf31}{operator==} (const \hyperlink{classStdAllocator}{Std\+Allocator}$<$ U, Base\+Allocator $>$ \&rhs) const R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+O\+E\+X\+C\+E\+PT
+\item 
+{\footnotesize template$<$typename U $>$ }\\bool \hyperlink{classStdAllocator_a6d1d3ae1297ec63f6043f06d26b99df7}{operator!=} (const \hyperlink{classStdAllocator}{Std\+Allocator}$<$ U, Base\+Allocator $>$ \&rhs) const R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+O\+E\+X\+C\+E\+PT
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} $\ast$ \hyperlink{classStdAllocator_ac56f94d87a4e3864ede25f65602daf64}{Malloc} (size\+\_\+t \hyperlink{imgui__impl__opengl3__loader_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size})
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} $\ast$ \hyperlink{classStdAllocator_aa2743f6ccc125c6313917d8fd71dc847}{Realloc} (\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} $\ast$original\+Ptr, size\+\_\+t original\+Size, size\+\_\+t new\+Size)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classStdAllocator_ae3b6918eee229eeb89e9535d65296d6d}{Free} (\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} $\ast$ptr) R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+O\+E\+X\+C\+E\+PT
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const bool \hyperlink{classStdAllocator_a75b2c8e2995e564037dd7d5408217a6b}{k\+Need\+Free} = Base\+Allocator\+::k\+Need\+Free
+\begin{DoxyCompactList}\small\item\em rapidjson Allocator concept \end{DoxyCompactList}\item 
+static const bool \hyperlink{classStdAllocator_afd2564e7c3121474d93c805839fa5f83}{k\+Ref\+Counted} = \hyperlink{structinternal_1_1IsRefCounted}{internal\+::\+Is\+Ref\+Counted}$<$Base\+Allocator$>$\+::\hyperlink{document_8h_a071cf97155ba72ac9a1fc4ad7e63d481}{Value}
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::allocator$<$ T $>$ \hyperlink{classStdAllocator_a572b0281d5b161135a426d3ff348d997}{allocator\+\_\+type}
+\item 
+typedef \hyperlink{classStdAllocator_a572b0281d5b161135a426d3ff348d997}{allocator\+\_\+type} \hyperlink{classStdAllocator_a5cc8d5905b0333753db9d7437aeadfc0}{traits\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Base\+Allocator \hyperlink{classStdAllocator_a66c60fe437ac39440d37410884dd18be}{base\+Allocator\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename , typename $>$ }\\class \hyperlink{classStdAllocator_afb3a6a655f835f6b9ec21fab41291287}{Std\+Allocator}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classStdAllocator_a572b0281d5b161135a426d3ff348d997}\label{classStdAllocator_a572b0281d5b161135a426d3ff348d997}} 
+\index{Std\+Allocator@{Std\+Allocator}!allocator\+\_\+type@{allocator\+\_\+type}}
+\index{allocator\+\_\+type@{allocator\+\_\+type}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{allocator\+\_\+type}{allocator\_type}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+typedef std\+::allocator$<$T$>$ \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::\hyperlink{classStdAllocator_a572b0281d5b161135a426d3ff348d997}{allocator\+\_\+type}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classStdAllocator_a09e7299a6c14e2d234bd469f1162bb21}\label{classStdAllocator_a09e7299a6c14e2d234bd469f1162bb21}} 
+\index{Std\+Allocator@{Std\+Allocator}!Base\+Allocator\+Type@{Base\+Allocator\+Type}}
+\index{Base\+Allocator\+Type@{Base\+Allocator\+Type}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{Base\+Allocator\+Type}{BaseAllocatorType}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+typedef Base\+Allocator \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::\hyperlink{classStdAllocator_a09e7299a6c14e2d234bd469f1162bb21}{Base\+Allocator\+Type}}
+
+\mbox{\Hypertarget{classStdAllocator_add1391b3b872c9be9b4d89ed4fabe296}\label{classStdAllocator_add1391b3b872c9be9b4d89ed4fabe296}} 
+\index{Std\+Allocator@{Std\+Allocator}!const\+\_\+pointer@{const\+\_\+pointer}}
+\index{const\+\_\+pointer@{const\+\_\+pointer}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{const\+\_\+pointer}{const\_pointer}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+typedef traits\+\_\+type\+::const\+\_\+pointer \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::\hyperlink{classStdAllocator_add1391b3b872c9be9b4d89ed4fabe296}{const\+\_\+pointer}}
+
+\mbox{\Hypertarget{classStdAllocator_a2bc4a28386765e3a2c105b270793a49e}\label{classStdAllocator_a2bc4a28386765e3a2c105b270793a49e}} 
+\index{Std\+Allocator@{Std\+Allocator}!const\+\_\+reference@{const\+\_\+reference}}
+\index{const\+\_\+reference@{const\+\_\+reference}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{const\+\_\+reference}{const\_reference}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+typedef allocator\+\_\+type\+::const\+\_\+reference \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::\hyperlink{classStdAllocator_a2bc4a28386765e3a2c105b270793a49e}{const\+\_\+reference}}
+
+\mbox{\Hypertarget{classStdAllocator_a4f3adbac47a8c20e47dbfb5c1f421ccd}\label{classStdAllocator_a4f3adbac47a8c20e47dbfb5c1f421ccd}} 
+\index{Std\+Allocator@{Std\+Allocator}!difference\+\_\+type@{difference\+\_\+type}}
+\index{difference\+\_\+type@{difference\+\_\+type}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{difference\+\_\+type}{difference\_type}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+typedef traits\+\_\+type\+::difference\+\_\+type \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::\hyperlink{classStdAllocator_a4f3adbac47a8c20e47dbfb5c1f421ccd}{difference\+\_\+type}}
+
+\mbox{\Hypertarget{classStdAllocator_a0c970fb2525af736640f0ac3a29d45c5}\label{classStdAllocator_a0c970fb2525af736640f0ac3a29d45c5}} 
+\index{Std\+Allocator@{Std\+Allocator}!pointer@{pointer}}
+\index{pointer@{pointer}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+typedef traits\+\_\+type\+::pointer \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::\hyperlink{classStdAllocator_a0c970fb2525af736640f0ac3a29d45c5}{pointer}}
+
+\mbox{\Hypertarget{classStdAllocator_a108581b842584639473a6d3fdd135598}\label{classStdAllocator_a108581b842584639473a6d3fdd135598}} 
+\index{Std\+Allocator@{Std\+Allocator}!reference@{reference}}
+\index{reference@{reference}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{reference}{reference}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+typedef allocator\+\_\+type\+::reference \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::\hyperlink{classStdAllocator_a108581b842584639473a6d3fdd135598}{reference}}
+
+\mbox{\Hypertarget{classStdAllocator_af0b177dc293fe5b985ba9e27de23b2c1}\label{classStdAllocator_af0b177dc293fe5b985ba9e27de23b2c1}} 
+\index{Std\+Allocator@{Std\+Allocator}!size\+\_\+type@{size\+\_\+type}}
+\index{size\+\_\+type@{size\+\_\+type}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{size\+\_\+type}{size\_type}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+typedef traits\+\_\+type\+::size\+\_\+type \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::\hyperlink{classStdAllocator_af0b177dc293fe5b985ba9e27de23b2c1}{size\+\_\+type}}
+
+\mbox{\Hypertarget{classStdAllocator_a5cc8d5905b0333753db9d7437aeadfc0}\label{classStdAllocator_a5cc8d5905b0333753db9d7437aeadfc0}} 
+\index{Std\+Allocator@{Std\+Allocator}!traits\+\_\+type@{traits\+\_\+type}}
+\index{traits\+\_\+type@{traits\+\_\+type}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{traits\+\_\+type}{traits\_type}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+typedef \hyperlink{classStdAllocator_a572b0281d5b161135a426d3ff348d997}{allocator\+\_\+type} \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::\hyperlink{classStdAllocator_a5cc8d5905b0333753db9d7437aeadfc0}{traits\+\_\+type}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classStdAllocator_aa9b7be996e5529bd6f1cbacadfa090c7}\label{classStdAllocator_aa9b7be996e5529bd6f1cbacadfa090c7}} 
+\index{Std\+Allocator@{Std\+Allocator}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+typedef traits\+\_\+type\+::value\+\_\+type \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::\hyperlink{classStdAllocator_aa9b7be996e5529bd6f1cbacadfa090c7}{value\+\_\+type}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classStdAllocator_afdef530c5dbd0c4e86922ab263c8ca83}\label{classStdAllocator_afdef530c5dbd0c4e86922ab263c8ca83}} 
+\index{Std\+Allocator@{Std\+Allocator}!Std\+Allocator@{Std\+Allocator}}
+\index{Std\+Allocator@{Std\+Allocator}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{Std\+Allocator()}{StdAllocator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::\hyperlink{classStdAllocator}{Std\+Allocator} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classStdAllocator_abfb16c76a06015f0ec1abe704375ace8}\label{classStdAllocator_abfb16c76a06015f0ec1abe704375ace8}} 
+\index{Std\+Allocator@{Std\+Allocator}!Std\+Allocator@{Std\+Allocator}}
+\index{Std\+Allocator@{Std\+Allocator}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{Std\+Allocator()}{StdAllocator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::\hyperlink{classStdAllocator}{Std\+Allocator} (\begin{DoxyParamCaption}\item[{const \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classStdAllocator_ab41a5cbaf54473e1e10468258629bd1b}\label{classStdAllocator_ab41a5cbaf54473e1e10468258629bd1b}} 
+\index{Std\+Allocator@{Std\+Allocator}!Std\+Allocator@{Std\+Allocator}}
+\index{Std\+Allocator@{Std\+Allocator}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{Std\+Allocator()}{StdAllocator()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+template$<$typename U $>$ \\
+\hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::\hyperlink{classStdAllocator}{Std\+Allocator} (\begin{DoxyParamCaption}\item[{const \hyperlink{classStdAllocator}{Std\+Allocator}$<$ U, Base\+Allocator $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classStdAllocator_a40ffe84a544bd5fe938581d09595bd1f}\label{classStdAllocator_a40ffe84a544bd5fe938581d09595bd1f}} 
+\index{Std\+Allocator@{Std\+Allocator}!Std\+Allocator@{Std\+Allocator}}
+\index{Std\+Allocator@{Std\+Allocator}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{Std\+Allocator()}{StdAllocator()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::\hyperlink{classStdAllocator}{Std\+Allocator} (\begin{DoxyParamCaption}\item[{const Base\+Allocator \&}]{allocator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classStdAllocator_a3d1703f93d5929c71a35e0c9baf9ceb1}\label{classStdAllocator_a3d1703f93d5929c71a35e0c9baf9ceb1}} 
+\index{Std\+Allocator@{Std\+Allocator}!````~Std\+Allocator@{$\sim$\+Std\+Allocator}}
+\index{````~Std\+Allocator@{$\sim$\+Std\+Allocator}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{$\sim$\+Std\+Allocator()}{~StdAllocator()}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::$\sim$\hyperlink{classStdAllocator}{Std\+Allocator} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classStdAllocator_afbe805c057283166350a93f6c7e7a2c6}\label{classStdAllocator_afbe805c057283166350a93f6c7e7a2c6}} 
+\index{Std\+Allocator@{Std\+Allocator}!address@{address}}
+\index{address@{address}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{address()}{address()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classStdAllocator_a0c970fb2525af736640f0ac3a29d45c5}{pointer} \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::address (\begin{DoxyParamCaption}\item[{\hyperlink{classStdAllocator_a108581b842584639473a6d3fdd135598}{reference}}]{r }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classStdAllocator_a56c3bab4003eccf5b7a9d18175ef4dc2}\label{classStdAllocator_a56c3bab4003eccf5b7a9d18175ef4dc2}} 
+\index{Std\+Allocator@{Std\+Allocator}!address@{address}}
+\index{address@{address}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{address()}{address()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classStdAllocator_add1391b3b872c9be9b4d89ed4fabe296}{const\+\_\+pointer} \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::address (\begin{DoxyParamCaption}\item[{\hyperlink{classStdAllocator_a2bc4a28386765e3a2c105b270793a49e}{const\+\_\+reference}}]{r }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classStdAllocator_afaabcd7ede5a9432ae8dbe604a0c2982}\label{classStdAllocator_afaabcd7ede5a9432ae8dbe604a0c2982}} 
+\index{Std\+Allocator@{Std\+Allocator}!allocate@{allocate}}
+\index{allocate@{allocate}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{allocate()}{allocate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+template$<$typename U $>$ \\
+U$\ast$ \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::allocate (\begin{DoxyParamCaption}\item[{\hyperlink{classStdAllocator_af0b177dc293fe5b985ba9e27de23b2c1}{size\+\_\+type}}]{n = {\ttfamily 1},  }\item[{const \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} $\ast$}]{ = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classStdAllocator_aa301f003f6722d438834b377c314247e}\label{classStdAllocator_aa301f003f6722d438834b377c314247e}} 
+\index{Std\+Allocator@{Std\+Allocator}!allocate@{allocate}}
+\index{allocate@{allocate}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{allocate()}{allocate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classStdAllocator_a0c970fb2525af736640f0ac3a29d45c5}{pointer} \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::allocate (\begin{DoxyParamCaption}\item[{\hyperlink{classStdAllocator_af0b177dc293fe5b985ba9e27de23b2c1}{size\+\_\+type}}]{n = {\ttfamily 1},  }\item[{const \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} $\ast$}]{ = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classStdAllocator_a279cb8367857b1263c4ab014b74f842a}\label{classStdAllocator_a279cb8367857b1263c4ab014b74f842a}} 
+\index{Std\+Allocator@{Std\+Allocator}!construct@{construct}}
+\index{construct@{construct}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{construct()}{construct()}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::construct (\begin{DoxyParamCaption}\item[{\hyperlink{classStdAllocator_a0c970fb2525af736640f0ac3a29d45c5}{pointer}}]{p,  }\item[{\hyperlink{classStdAllocator_a2bc4a28386765e3a2c105b270793a49e}{const\+\_\+reference}}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classStdAllocator_a92371ba62f651185c0d3eef856080cfa}\label{classStdAllocator_a92371ba62f651185c0d3eef856080cfa}} 
+\index{Std\+Allocator@{Std\+Allocator}!deallocate@{deallocate}}
+\index{deallocate@{deallocate}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{deallocate()}{deallocate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+template$<$typename U $>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::deallocate (\begin{DoxyParamCaption}\item[{U $\ast$}]{p,  }\item[{\hyperlink{classStdAllocator_af0b177dc293fe5b985ba9e27de23b2c1}{size\+\_\+type}}]{n = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classStdAllocator_a96a27b5bc9919d08013e727f5217db7a}\label{classStdAllocator_a96a27b5bc9919d08013e727f5217db7a}} 
+\index{Std\+Allocator@{Std\+Allocator}!deallocate@{deallocate}}
+\index{deallocate@{deallocate}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{deallocate()}{deallocate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::deallocate (\begin{DoxyParamCaption}\item[{\hyperlink{classStdAllocator_a0c970fb2525af736640f0ac3a29d45c5}{pointer}}]{p,  }\item[{\hyperlink{classStdAllocator_af0b177dc293fe5b985ba9e27de23b2c1}{size\+\_\+type}}]{n = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classStdAllocator_a2aebac89efaaac9707d380b95c902567}\label{classStdAllocator_a2aebac89efaaac9707d380b95c902567}} 
+\index{Std\+Allocator@{Std\+Allocator}!destroy@{destroy}}
+\index{destroy@{destroy}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::destroy (\begin{DoxyParamCaption}\item[{\hyperlink{classStdAllocator_a0c970fb2525af736640f0ac3a29d45c5}{pointer}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classStdAllocator_ae3b6918eee229eeb89e9535d65296d6d}\label{classStdAllocator_ae3b6918eee229eeb89e9535d65296d6d}} 
+\index{Std\+Allocator@{Std\+Allocator}!Free@{Free}}
+\index{Free@{Free}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{Free()}{Free()}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+static \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::Free (\begin{DoxyParamCaption}\item[{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} $\ast$}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classStdAllocator_ac56f94d87a4e3864ede25f65602daf64}\label{classStdAllocator_ac56f94d87a4e3864ede25f65602daf64}} 
+\index{Std\+Allocator@{Std\+Allocator}!Malloc@{Malloc}}
+\index{Malloc@{Malloc}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{Malloc()}{Malloc()}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}$\ast$ \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::Malloc (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classStdAllocator_a158b8ba5e88fbcd7a851541090654930}\label{classStdAllocator_a158b8ba5e88fbcd7a851541090654930}} 
+\index{Std\+Allocator@{Std\+Allocator}!max\+\_\+size@{max\+\_\+size}}
+\index{max\+\_\+size@{max\+\_\+size}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{max\+\_\+size()}{max\_size()}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classStdAllocator_af0b177dc293fe5b985ba9e27de23b2c1}{size\+\_\+type} \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::max\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classStdAllocator_a6d1d3ae1297ec63f6043f06d26b99df7}\label{classStdAllocator_a6d1d3ae1297ec63f6043f06d26b99df7}} 
+\index{Std\+Allocator@{Std\+Allocator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+template$<$typename U $>$ \\
+bool \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{classStdAllocator}{Std\+Allocator}$<$ U, Base\+Allocator $>$ \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classStdAllocator_acec867ea79558926a5e3a5f9bbafaf31}\label{classStdAllocator_acec867ea79558926a5e3a5f9bbafaf31}} 
+\index{Std\+Allocator@{Std\+Allocator}!operator==@{operator==}}
+\index{operator==@{operator==}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+template$<$typename U $>$ \\
+bool \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classStdAllocator}{Std\+Allocator}$<$ U, Base\+Allocator $>$ \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classStdAllocator_aa2743f6ccc125c6313917d8fd71dc847}\label{classStdAllocator_aa2743f6ccc125c6313917d8fd71dc847}} 
+\index{Std\+Allocator@{Std\+Allocator}!Realloc@{Realloc}}
+\index{Realloc@{Realloc}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{Realloc()}{Realloc()}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void}$\ast$ \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::Realloc (\begin{DoxyParamCaption}\item[{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} $\ast$}]{original\+Ptr,  }\item[{size\+\_\+t}]{original\+Size,  }\item[{size\+\_\+t}]{new\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classStdAllocator_afb3a6a655f835f6b9ec21fab41291287}\label{classStdAllocator_afb3a6a655f835f6b9ec21fab41291287}} 
+\index{Std\+Allocator@{Std\+Allocator}!Std\+Allocator@{Std\+Allocator}}
+\index{Std\+Allocator@{Std\+Allocator}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{Std\+Allocator}{StdAllocator}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+template$<$typename , typename $>$ \\
+friend class \hyperlink{classStdAllocator}{Std\+Allocator}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classStdAllocator_a66c60fe437ac39440d37410884dd18be}\label{classStdAllocator_a66c60fe437ac39440d37410884dd18be}} 
+\index{Std\+Allocator@{Std\+Allocator}!base\+Allocator\+\_\+@{base\+Allocator\+\_\+}}
+\index{base\+Allocator\+\_\+@{base\+Allocator\+\_\+}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{base\+Allocator\+\_\+}{baseAllocator\_}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+Base\+Allocator \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::base\+Allocator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classStdAllocator_a75b2c8e2995e564037dd7d5408217a6b}\label{classStdAllocator_a75b2c8e2995e564037dd7d5408217a6b}} 
+\index{Std\+Allocator@{Std\+Allocator}!k\+Need\+Free@{k\+Need\+Free}}
+\index{k\+Need\+Free@{k\+Need\+Free}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{k\+Need\+Free}{kNeedFree}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+const bool \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::k\+Need\+Free = Base\+Allocator\+::k\+Need\+Free\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+rapidjson Allocator concept 
+
+\mbox{\Hypertarget{classStdAllocator_afd2564e7c3121474d93c805839fa5f83}\label{classStdAllocator_afd2564e7c3121474d93c805839fa5f83}} 
+\index{Std\+Allocator@{Std\+Allocator}!k\+Ref\+Counted@{k\+Ref\+Counted}}
+\index{k\+Ref\+Counted@{k\+Ref\+Counted}!Std\+Allocator@{Std\+Allocator}}
+\subsubsection{\texorpdfstring{k\+Ref\+Counted}{kRefCounted}}
+{\footnotesize\ttfamily template$<$typename T, typename Base\+Allocator = Crt\+Allocator$>$ \\
+const bool \hyperlink{classStdAllocator}{Std\+Allocator}$<$ T, Base\+Allocator $>$\+::k\+Ref\+Counted = \hyperlink{structinternal_1_1IsRefCounted}{internal\+::\+Is\+Ref\+Counted}$<$Base\+Allocator$>$\+::\hyperlink{document_8h_a071cf97155ba72ac9a1fc4ad7e63d481}{Value}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/rapidjson/\hyperlink{allocators_8h}{allocators.\+h}\end{DoxyCompactItemize}

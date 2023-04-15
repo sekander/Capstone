@@ -1,0 +1,67 @@
+\hypertarget{structMemoryPoolAllocator_1_1SharedData}{}\section{Memory\+Pool\+Allocator$<$ Base\+Allocator $>$\+:\+:Shared\+Data Struct Reference}
+\label{structMemoryPoolAllocator_1_1SharedData}\index{Memory\+Pool\+Allocator$<$ Base\+Allocator $>$\+::\+Shared\+Data@{Memory\+Pool\+Allocator$<$ Base\+Allocator $>$\+::\+Shared\+Data}}
+
+
+Collaboration diagram for Memory\+Pool\+Allocator$<$ Base\+Allocator $>$\+:\+:Shared\+Data\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structMemoryPoolAllocator_1_1SharedData__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structMemoryPoolAllocator_1_1ChunkHeader}{Chunk\+Header} $\ast$ \hyperlink{structMemoryPoolAllocator_1_1SharedData_a1f6aa37c67bc020bd9e5490a8c5bdfb9}{chunk\+Head}
+\begin{DoxyCompactList}\small\item\em Head of the chunk linked-\/list. Only the head chunk serves allocation. \end{DoxyCompactList}\item 
+Base\+Allocator $\ast$ \hyperlink{structMemoryPoolAllocator_1_1SharedData_a8e991b807bbdde89645a19bde7398bf7}{own\+Base\+Allocator}
+\begin{DoxyCompactList}\small\item\em base allocator created by this object. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structMemoryPoolAllocator_1_1SharedData_a518c933b79807f4fd3518ce6d426f2dc}{refcount}
+\item 
+bool \hyperlink{structMemoryPoolAllocator_1_1SharedData_a89636640af96ac5eddb73c7377981eb9}{own\+Buffer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structMemoryPoolAllocator_1_1SharedData_a1f6aa37c67bc020bd9e5490a8c5bdfb9}\label{structMemoryPoolAllocator_1_1SharedData_a1f6aa37c67bc020bd9e5490a8c5bdfb9}} 
+\index{Memory\+Pool\+Allocator\+::\+Shared\+Data@{Memory\+Pool\+Allocator\+::\+Shared\+Data}!chunk\+Head@{chunk\+Head}}
+\index{chunk\+Head@{chunk\+Head}!Memory\+Pool\+Allocator\+::\+Shared\+Data@{Memory\+Pool\+Allocator\+::\+Shared\+Data}}
+\subsubsection{\texorpdfstring{chunk\+Head}{chunkHead}}
+{\footnotesize\ttfamily template$<$typename Base\+Allocator = Crt\+Allocator$>$ \\
+\hyperlink{structMemoryPoolAllocator_1_1ChunkHeader}{Chunk\+Header}$\ast$ \hyperlink{classMemoryPoolAllocator}{Memory\+Pool\+Allocator}$<$ Base\+Allocator $>$\+::Shared\+Data\+::chunk\+Head}
+
+
+
+Head of the chunk linked-\/list. Only the head chunk serves allocation. 
+
+\mbox{\Hypertarget{structMemoryPoolAllocator_1_1SharedData_a8e991b807bbdde89645a19bde7398bf7}\label{structMemoryPoolAllocator_1_1SharedData_a8e991b807bbdde89645a19bde7398bf7}} 
+\index{Memory\+Pool\+Allocator\+::\+Shared\+Data@{Memory\+Pool\+Allocator\+::\+Shared\+Data}!own\+Base\+Allocator@{own\+Base\+Allocator}}
+\index{own\+Base\+Allocator@{own\+Base\+Allocator}!Memory\+Pool\+Allocator\+::\+Shared\+Data@{Memory\+Pool\+Allocator\+::\+Shared\+Data}}
+\subsubsection{\texorpdfstring{own\+Base\+Allocator}{ownBaseAllocator}}
+{\footnotesize\ttfamily template$<$typename Base\+Allocator = Crt\+Allocator$>$ \\
+Base\+Allocator$\ast$ \hyperlink{classMemoryPoolAllocator}{Memory\+Pool\+Allocator}$<$ Base\+Allocator $>$\+::Shared\+Data\+::own\+Base\+Allocator}
+
+
+
+base allocator created by this object. 
+
+\mbox{\Hypertarget{structMemoryPoolAllocator_1_1SharedData_a89636640af96ac5eddb73c7377981eb9}\label{structMemoryPoolAllocator_1_1SharedData_a89636640af96ac5eddb73c7377981eb9}} 
+\index{Memory\+Pool\+Allocator\+::\+Shared\+Data@{Memory\+Pool\+Allocator\+::\+Shared\+Data}!own\+Buffer@{own\+Buffer}}
+\index{own\+Buffer@{own\+Buffer}!Memory\+Pool\+Allocator\+::\+Shared\+Data@{Memory\+Pool\+Allocator\+::\+Shared\+Data}}
+\subsubsection{\texorpdfstring{own\+Buffer}{ownBuffer}}
+{\footnotesize\ttfamily template$<$typename Base\+Allocator = Crt\+Allocator$>$ \\
+bool \hyperlink{classMemoryPoolAllocator}{Memory\+Pool\+Allocator}$<$ Base\+Allocator $>$\+::Shared\+Data\+::own\+Buffer}
+
+\mbox{\Hypertarget{structMemoryPoolAllocator_1_1SharedData_a518c933b79807f4fd3518ce6d426f2dc}\label{structMemoryPoolAllocator_1_1SharedData_a518c933b79807f4fd3518ce6d426f2dc}} 
+\index{Memory\+Pool\+Allocator\+::\+Shared\+Data@{Memory\+Pool\+Allocator\+::\+Shared\+Data}!refcount@{refcount}}
+\index{refcount@{refcount}!Memory\+Pool\+Allocator\+::\+Shared\+Data@{Memory\+Pool\+Allocator\+::\+Shared\+Data}}
+\subsubsection{\texorpdfstring{refcount}{refcount}}
+{\footnotesize\ttfamily template$<$typename Base\+Allocator = Crt\+Allocator$>$ \\
+size\+\_\+t \hyperlink{classMemoryPoolAllocator}{Memory\+Pool\+Allocator}$<$ Base\+Allocator $>$\+::Shared\+Data\+::refcount}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/rapidjson/\hyperlink{allocators_8h}{allocators.\+h}\end{DoxyCompactItemize}

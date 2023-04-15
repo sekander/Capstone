@@ -1,0 +1,191 @@
+\hypertarget{classEncodedInputStream}{}\section{Encoded\+Input\+Stream$<$ Encoding, Input\+Byte\+Stream $>$ Class Template Reference}
+\label{classEncodedInputStream}\index{Encoded\+Input\+Stream$<$ Encoding, Input\+Byte\+Stream $>$@{Encoded\+Input\+Stream$<$ Encoding, Input\+Byte\+Stream $>$}}
+
+
+Input byte stream wrapper with a statically bound encoding.  
+
+
+
+
+{\ttfamily \#include $<$encodedstream.\+h$>$}
+
+
+
+Collaboration diagram for Encoded\+Input\+Stream$<$ Encoding, Input\+Byte\+Stream $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{classEncodedInputStream__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Encoding\+::\+Ch \hyperlink{classEncodedInputStream_acc387a1364390da244bbb1ab07bdceca}{Ch}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEncodedInputStream_a17f8e629500f6ae71cb72d1d63bf41fd}{Encoded\+Input\+Stream} (Input\+Byte\+Stream \&is)
+\item 
+\hyperlink{classEncodedInputStream_acc387a1364390da244bbb1ab07bdceca}{Ch} \hyperlink{classEncodedInputStream_a046ab121d8dd303b9dc14d4b34940fad}{Peek} () const
+\item 
+\hyperlink{classEncodedInputStream_acc387a1364390da244bbb1ab07bdceca}{Ch} \hyperlink{classEncodedInputStream_ab42cd57581bf62e42af471583e5b8377}{Take} ()
+\item 
+size\+\_\+t \hyperlink{classEncodedInputStream_afbe4ac0fc57fa992ba3aa5da8dc66527}{Tell} () const
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classEncodedInputStream_afea36b666a44bd4adeabfcab7b68a322}{Put} (\hyperlink{classEncodedInputStream_acc387a1364390da244bbb1ab07bdceca}{Ch})
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classEncodedInputStream_aa4415bf4b97dd01e8c3de0ad7a161724}{Flush} ()
+\item 
+\hyperlink{classEncodedInputStream_acc387a1364390da244bbb1ab07bdceca}{Ch} $\ast$ \hyperlink{classEncodedInputStream_ad97f7a549a8622c61b7fb2c63fedd69b}{Put\+Begin} ()
+\item 
+size\+\_\+t \hyperlink{classEncodedInputStream_a83fe5ed281413d6005d1b324730e8bed}{Put\+End} (\hyperlink{classEncodedInputStream_acc387a1364390da244bbb1ab07bdceca}{Ch} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEncodedInputStream_acc6c2b46e636edfeb81dfaea80ee384a}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (sizeof(typename Input\+Byte\+Stream\+::\+Ch)==1)
+\item 
+\hyperlink{classEncodedInputStream_a672ac1977918f6da245de0820d41b77e}{Encoded\+Input\+Stream} (const \hyperlink{classEncodedInputStream}{Encoded\+Input\+Stream} \&)
+\item 
+\hyperlink{classEncodedInputStream}{Encoded\+Input\+Stream} \& \hyperlink{classEncodedInputStream_aebee85cf36e2aa4ed25881a95678c4c4}{operator=} (const \hyperlink{classEncodedInputStream}{Encoded\+Input\+Stream} \&)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Input\+Byte\+Stream \& \hyperlink{classEncodedInputStream_ab07b45f34f288184313750af5f7077b6}{is\+\_\+}
+\item 
+\hyperlink{classEncodedInputStream_acc387a1364390da244bbb1ab07bdceca}{Ch} \hyperlink{classEncodedInputStream_a20b49879c87fdf6d6ba20e99f0cf7893}{current\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Encoding, typename Input\+Byte\+Stream$>$\newline
+class Encoded\+Input\+Stream$<$ Encoding, Input\+Byte\+Stream $>$}
+
+Input byte stream wrapper with a statically bound encoding. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Encoding} & The interpretation of encoding of the stream. Either \hyperlink{structUTF8}{U\+T\+F8}, \hyperlink{structUTF16LE}{U\+T\+F16\+LE}, \hyperlink{structUTF16BE}{U\+T\+F16\+BE}, \hyperlink{structUTF32LE}{U\+T\+F32\+LE}, \hyperlink{structUTF32BE}{U\+T\+F32\+BE}. \\
+\hline
+{\em Input\+Byte\+Stream} & Type of input byte stream. For example, \hyperlink{classFileReadStream}{File\+Read\+Stream}. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classEncodedInputStream_acc387a1364390da244bbb1ab07bdceca}\label{classEncodedInputStream_acc387a1364390da244bbb1ab07bdceca}} 
+\index{Encoded\+Input\+Stream@{Encoded\+Input\+Stream}!Ch@{Ch}}
+\index{Ch@{Ch}!Encoded\+Input\+Stream@{Encoded\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Input\+Byte\+Stream$>$ \\
+typedef Encoding\+::\+Ch \hyperlink{classEncodedInputStream}{Encoded\+Input\+Stream}$<$ Encoding, Input\+Byte\+Stream $>$\+::\hyperlink{classEncodedInputStream_acc387a1364390da244bbb1ab07bdceca}{Ch}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEncodedInputStream_a17f8e629500f6ae71cb72d1d63bf41fd}\label{classEncodedInputStream_a17f8e629500f6ae71cb72d1d63bf41fd}} 
+\index{Encoded\+Input\+Stream@{Encoded\+Input\+Stream}!Encoded\+Input\+Stream@{Encoded\+Input\+Stream}}
+\index{Encoded\+Input\+Stream@{Encoded\+Input\+Stream}!Encoded\+Input\+Stream@{Encoded\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Encoded\+Input\+Stream()}{EncodedInputStream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Input\+Byte\+Stream$>$ \\
+\hyperlink{classEncodedInputStream}{Encoded\+Input\+Stream}$<$ Encoding, Input\+Byte\+Stream $>$\+::\hyperlink{classEncodedInputStream}{Encoded\+Input\+Stream} (\begin{DoxyParamCaption}\item[{Input\+Byte\+Stream \&}]{is }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classEncodedInputStream_a672ac1977918f6da245de0820d41b77e}\label{classEncodedInputStream_a672ac1977918f6da245de0820d41b77e}} 
+\index{Encoded\+Input\+Stream@{Encoded\+Input\+Stream}!Encoded\+Input\+Stream@{Encoded\+Input\+Stream}}
+\index{Encoded\+Input\+Stream@{Encoded\+Input\+Stream}!Encoded\+Input\+Stream@{Encoded\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Encoded\+Input\+Stream()}{EncodedInputStream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Input\+Byte\+Stream$>$ \\
+\hyperlink{classEncodedInputStream}{Encoded\+Input\+Stream}$<$ Encoding, Input\+Byte\+Stream $>$\+::\hyperlink{classEncodedInputStream}{Encoded\+Input\+Stream} (\begin{DoxyParamCaption}\item[{const \hyperlink{classEncodedInputStream}{Encoded\+Input\+Stream}$<$ Encoding, Input\+Byte\+Stream $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEncodedInputStream_aa4415bf4b97dd01e8c3de0ad7a161724}\label{classEncodedInputStream_aa4415bf4b97dd01e8c3de0ad7a161724}} 
+\index{Encoded\+Input\+Stream@{Encoded\+Input\+Stream}!Flush@{Flush}}
+\index{Flush@{Flush}!Encoded\+Input\+Stream@{Encoded\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Flush()}{Flush()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Input\+Byte\+Stream$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classEncodedInputStream}{Encoded\+Input\+Stream}$<$ Encoding, Input\+Byte\+Stream $>$\+::Flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classEncodedInputStream_aebee85cf36e2aa4ed25881a95678c4c4}\label{classEncodedInputStream_aebee85cf36e2aa4ed25881a95678c4c4}} 
+\index{Encoded\+Input\+Stream@{Encoded\+Input\+Stream}!operator=@{operator=}}
+\index{operator=@{operator=}!Encoded\+Input\+Stream@{Encoded\+Input\+Stream}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Input\+Byte\+Stream$>$ \\
+\hyperlink{classEncodedInputStream}{Encoded\+Input\+Stream}\& \hyperlink{classEncodedInputStream}{Encoded\+Input\+Stream}$<$ Encoding, Input\+Byte\+Stream $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classEncodedInputStream}{Encoded\+Input\+Stream}$<$ Encoding, Input\+Byte\+Stream $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classEncodedInputStream_a046ab121d8dd303b9dc14d4b34940fad}\label{classEncodedInputStream_a046ab121d8dd303b9dc14d4b34940fad}} 
+\index{Encoded\+Input\+Stream@{Encoded\+Input\+Stream}!Peek@{Peek}}
+\index{Peek@{Peek}!Encoded\+Input\+Stream@{Encoded\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Peek()}{Peek()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Input\+Byte\+Stream$>$ \\
+\hyperlink{classEncodedInputStream_acc387a1364390da244bbb1ab07bdceca}{Ch} \hyperlink{classEncodedInputStream}{Encoded\+Input\+Stream}$<$ Encoding, Input\+Byte\+Stream $>$\+::Peek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classEncodedInputStream_afea36b666a44bd4adeabfcab7b68a322}\label{classEncodedInputStream_afea36b666a44bd4adeabfcab7b68a322}} 
+\index{Encoded\+Input\+Stream@{Encoded\+Input\+Stream}!Put@{Put}}
+\index{Put@{Put}!Encoded\+Input\+Stream@{Encoded\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Put()}{Put()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Input\+Byte\+Stream$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classEncodedInputStream}{Encoded\+Input\+Stream}$<$ Encoding, Input\+Byte\+Stream $>$\+::Put (\begin{DoxyParamCaption}\item[{\hyperlink{classEncodedInputStream_acc387a1364390da244bbb1ab07bdceca}{Ch}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classEncodedInputStream_ad97f7a549a8622c61b7fb2c63fedd69b}\label{classEncodedInputStream_ad97f7a549a8622c61b7fb2c63fedd69b}} 
+\index{Encoded\+Input\+Stream@{Encoded\+Input\+Stream}!Put\+Begin@{Put\+Begin}}
+\index{Put\+Begin@{Put\+Begin}!Encoded\+Input\+Stream@{Encoded\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Put\+Begin()}{PutBegin()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Input\+Byte\+Stream$>$ \\
+\hyperlink{classEncodedInputStream_acc387a1364390da244bbb1ab07bdceca}{Ch}$\ast$ \hyperlink{classEncodedInputStream}{Encoded\+Input\+Stream}$<$ Encoding, Input\+Byte\+Stream $>$\+::Put\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classEncodedInputStream_a83fe5ed281413d6005d1b324730e8bed}\label{classEncodedInputStream_a83fe5ed281413d6005d1b324730e8bed}} 
+\index{Encoded\+Input\+Stream@{Encoded\+Input\+Stream}!Put\+End@{Put\+End}}
+\index{Put\+End@{Put\+End}!Encoded\+Input\+Stream@{Encoded\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Put\+End()}{PutEnd()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Input\+Byte\+Stream$>$ \\
+size\+\_\+t \hyperlink{classEncodedInputStream}{Encoded\+Input\+Stream}$<$ Encoding, Input\+Byte\+Stream $>$\+::Put\+End (\begin{DoxyParamCaption}\item[{\hyperlink{classEncodedInputStream_acc387a1364390da244bbb1ab07bdceca}{Ch} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classEncodedInputStream_acc6c2b46e636edfeb81dfaea80ee384a}\label{classEncodedInputStream_acc6c2b46e636edfeb81dfaea80ee384a}} 
+\index{Encoded\+Input\+Stream@{Encoded\+Input\+Stream}!R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT@{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT}}
+\index{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT@{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT}!Encoded\+Input\+Stream@{Encoded\+Input\+Stream}}
+\subsubsection{\texorpdfstring{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+R\+T()}{RAPIDJSON\_STATIC\_ASSERT()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Input\+Byte\+Stream$>$ \\
+\hyperlink{classEncodedInputStream}{Encoded\+Input\+Stream}$<$ Encoding, Input\+Byte\+Stream $>$\+::R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT (\begin{DoxyParamCaption}\item[{sizeof(typename Input\+Byte\+Stream\+::\+Ch)}]{ = {\ttfamily =1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classEncodedInputStream_ab42cd57581bf62e42af471583e5b8377}\label{classEncodedInputStream_ab42cd57581bf62e42af471583e5b8377}} 
+\index{Encoded\+Input\+Stream@{Encoded\+Input\+Stream}!Take@{Take}}
+\index{Take@{Take}!Encoded\+Input\+Stream@{Encoded\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Take()}{Take()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Input\+Byte\+Stream$>$ \\
+\hyperlink{classEncodedInputStream_acc387a1364390da244bbb1ab07bdceca}{Ch} \hyperlink{classEncodedInputStream}{Encoded\+Input\+Stream}$<$ Encoding, Input\+Byte\+Stream $>$\+::Take (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classEncodedInputStream_afbe4ac0fc57fa992ba3aa5da8dc66527}\label{classEncodedInputStream_afbe4ac0fc57fa992ba3aa5da8dc66527}} 
+\index{Encoded\+Input\+Stream@{Encoded\+Input\+Stream}!Tell@{Tell}}
+\index{Tell@{Tell}!Encoded\+Input\+Stream@{Encoded\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Tell()}{Tell()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Input\+Byte\+Stream$>$ \\
+size\+\_\+t \hyperlink{classEncodedInputStream}{Encoded\+Input\+Stream}$<$ Encoding, Input\+Byte\+Stream $>$\+::Tell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classEncodedInputStream_a20b49879c87fdf6d6ba20e99f0cf7893}\label{classEncodedInputStream_a20b49879c87fdf6d6ba20e99f0cf7893}} 
+\index{Encoded\+Input\+Stream@{Encoded\+Input\+Stream}!current\+\_\+@{current\+\_\+}}
+\index{current\+\_\+@{current\+\_\+}!Encoded\+Input\+Stream@{Encoded\+Input\+Stream}}
+\subsubsection{\texorpdfstring{current\+\_\+}{current\_}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Input\+Byte\+Stream$>$ \\
+\hyperlink{classEncodedInputStream_acc387a1364390da244bbb1ab07bdceca}{Ch} \hyperlink{classEncodedInputStream}{Encoded\+Input\+Stream}$<$ Encoding, Input\+Byte\+Stream $>$\+::current\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classEncodedInputStream_ab07b45f34f288184313750af5f7077b6}\label{classEncodedInputStream_ab07b45f34f288184313750af5f7077b6}} 
+\index{Encoded\+Input\+Stream@{Encoded\+Input\+Stream}!is\+\_\+@{is\+\_\+}}
+\index{is\+\_\+@{is\+\_\+}!Encoded\+Input\+Stream@{Encoded\+Input\+Stream}}
+\subsubsection{\texorpdfstring{is\+\_\+}{is\_}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Input\+Byte\+Stream$>$ \\
+Input\+Byte\+Stream\& \hyperlink{classEncodedInputStream}{Encoded\+Input\+Stream}$<$ Encoding, Input\+Byte\+Stream $>$\+::is\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/rapidjson/\hyperlink{encodedstream_8h}{encodedstream.\+h}\end{DoxyCompactItemize}

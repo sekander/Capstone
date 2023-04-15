@@ -1,0 +1,4 @@
+<map id="ImGuiTextFilter" name="ImGuiTextFilter">
+<area shape="rect" id="node2" href="$structImVector.html" title="{ImVector\&lt; ImGuiTextFilter\l::ImGuiTextRange \&gt;\n|+ Size\l+ Capacity\l|+ ImVector()\l+ ImVector()\l+ operator=()\l+ ~ImVector()\l+ clear()\l+ clear_delete()\l+ clear_destruct()\l+ empty()\l+ size()\l+ size_in_bytes()\land 32 more...\l}" alt="" coords="7,219,185,472"/>
+<area shape="rect" id="node3" href="$structImGuiTextFilter_1_1ImGuiTextRange.html" title="{ImGuiTextFilter::ImGuiText\lRange\n|+ b\l+ e\l|+ ImGuiTextRange()\l+ ImGuiTextRange()\l+ empty()\l+ split()\l}" alt="" coords="5,5,187,156"/>
+</map>

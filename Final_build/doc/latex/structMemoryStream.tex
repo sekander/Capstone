@@ -1,0 +1,192 @@
+\hypertarget{structMemoryStream}{}\section{Memory\+Stream Struct Reference}
+\label{structMemoryStream}\index{Memory\+Stream@{Memory\+Stream}}
+
+
+Represents an in-\/memory input byte stream.  
+
+
+
+
+{\ttfamily \#include $<$memorystream.\+h$>$}
+
+
+
+Collaboration diagram for Memory\+Stream\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{structMemoryStream__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef char \hyperlink{structMemoryStream_a62a1cbd052c325c83dbdb387d2f89088}{Ch}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structMemoryStream_a2472317ef00fcd44e5cc209e04c49756}{Memory\+Stream} (const \hyperlink{structMemoryStream_a62a1cbd052c325c83dbdb387d2f89088}{Ch} $\ast$src, size\+\_\+t \hyperlink{imgui__impl__opengl3__loader_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size})
+\item 
+\hyperlink{structMemoryStream_a62a1cbd052c325c83dbdb387d2f89088}{Ch} \hyperlink{structMemoryStream_a707014bbfd303838b6a7b90be24f6adc}{Peek} () const
+\item 
+\hyperlink{structMemoryStream_a62a1cbd052c325c83dbdb387d2f89088}{Ch} \hyperlink{structMemoryStream_a14ff92deda5d39c9b166aaa07e82a0ee}{Take} ()
+\item 
+size\+\_\+t \hyperlink{structMemoryStream_a2de1486742f0d44decda90a56bc43268}{Tell} () const
+\item 
+\hyperlink{structMemoryStream_a62a1cbd052c325c83dbdb387d2f89088}{Ch} $\ast$ \hyperlink{structMemoryStream_a5674d10aa2faa05cb326e2e16715cc3d}{Put\+Begin} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{structMemoryStream_ac445f93c23c9e85f1f5381911c4ed870}{Put} (\hyperlink{structMemoryStream_a62a1cbd052c325c83dbdb387d2f89088}{Ch})
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{structMemoryStream_a305e141314ae0e3afacb04aaf2d8bcc6}{Flush} ()
+\item 
+size\+\_\+t \hyperlink{structMemoryStream_a74fb36c1f6f95d189502cf7a6be79135}{Put\+End} (\hyperlink{structMemoryStream_a62a1cbd052c325c83dbdb387d2f89088}{Ch} $\ast$)
+\item 
+const \hyperlink{structMemoryStream_a62a1cbd052c325c83dbdb387d2f89088}{Ch} $\ast$ \hyperlink{structMemoryStream_ac63422050829d9724086363247059089}{Peek4} () const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{structMemoryStream_a62a1cbd052c325c83dbdb387d2f89088}{Ch} $\ast$ \hyperlink{structMemoryStream_a57cf6cb5766e931a62928b9f92507443}{src\+\_\+}
+\begin{DoxyCompactList}\small\item\em Current read position. \end{DoxyCompactList}\item 
+const \hyperlink{structMemoryStream_a62a1cbd052c325c83dbdb387d2f89088}{Ch} $\ast$ \hyperlink{structMemoryStream_a91f0767b4f0ed2476d835e8344848a2f}{begin\+\_\+}
+\begin{DoxyCompactList}\small\item\em Original head of the string. \end{DoxyCompactList}\item 
+const \hyperlink{structMemoryStream_a62a1cbd052c325c83dbdb387d2f89088}{Ch} $\ast$ \hyperlink{structMemoryStream_a55fb302ba0492419757e3ba318c8c654}{end\+\_\+}
+\begin{DoxyCompactList}\small\item\em End of stream. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structMemoryStream_ab26a1b5c6d5e8f52c0f6982feba47f36}{size\+\_\+}
+\begin{DoxyCompactList}\small\item\em Size of the stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents an in-\/memory input byte stream. 
+
+This class is mainly for being wrapped by \hyperlink{classEncodedInputStream}{Encoded\+Input\+Stream} or \hyperlink{classAutoUTFInputStream}{Auto\+U\+T\+F\+Input\+Stream}.
+
+It is similar to File\+Read\+Buffer but the source is an in-\/memory buffer instead of a file.
+
+Differences between \hyperlink{structMemoryStream}{Memory\+Stream} and String\+Stream\+:
+\begin{DoxyEnumerate}
+\item String\+Stream has encoding but \hyperlink{structMemoryStream}{Memory\+Stream} is a byte stream.
+\item \hyperlink{structMemoryStream}{Memory\+Stream} needs size of the source buffer and the buffer don\textquotesingle{}t need to be null terminated. String\+Stream assume null-\/terminated string as source.
+\item \hyperlink{structMemoryStream}{Memory\+Stream} supports \hyperlink{structMemoryStream_ac63422050829d9724086363247059089}{Peek4()} for encoding detection. String\+Stream is specified with an encoding so it should not have \hyperlink{structMemoryStream_ac63422050829d9724086363247059089}{Peek4()}. \begin{DoxyNote}{Note}
+implements Stream concept 
+\end{DoxyNote}
+
+\end{DoxyEnumerate}
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structMemoryStream_a62a1cbd052c325c83dbdb387d2f89088}\label{structMemoryStream_a62a1cbd052c325c83dbdb387d2f89088}} 
+\index{Memory\+Stream@{Memory\+Stream}!Ch@{Ch}}
+\index{Ch@{Ch}!Memory\+Stream@{Memory\+Stream}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily typedef char \hyperlink{structMemoryStream_a62a1cbd052c325c83dbdb387d2f89088}{Memory\+Stream\+::\+Ch}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structMemoryStream_a2472317ef00fcd44e5cc209e04c49756}\label{structMemoryStream_a2472317ef00fcd44e5cc209e04c49756}} 
+\index{Memory\+Stream@{Memory\+Stream}!Memory\+Stream@{Memory\+Stream}}
+\index{Memory\+Stream@{Memory\+Stream}!Memory\+Stream@{Memory\+Stream}}
+\subsubsection{\texorpdfstring{Memory\+Stream()}{MemoryStream()}}
+{\footnotesize\ttfamily Memory\+Stream\+::\+Memory\+Stream (\begin{DoxyParamCaption}\item[{const \hyperlink{structMemoryStream_a62a1cbd052c325c83dbdb387d2f89088}{Ch} $\ast$}]{src,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structMemoryStream_a305e141314ae0e3afacb04aaf2d8bcc6}\label{structMemoryStream_a305e141314ae0e3afacb04aaf2d8bcc6}} 
+\index{Memory\+Stream@{Memory\+Stream}!Flush@{Flush}}
+\index{Flush@{Flush}!Memory\+Stream@{Memory\+Stream}}
+\subsubsection{\texorpdfstring{Flush()}{Flush()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Memory\+Stream\+::\+Flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structMemoryStream_a707014bbfd303838b6a7b90be24f6adc}\label{structMemoryStream_a707014bbfd303838b6a7b90be24f6adc}} 
+\index{Memory\+Stream@{Memory\+Stream}!Peek@{Peek}}
+\index{Peek@{Peek}!Memory\+Stream@{Memory\+Stream}}
+\subsubsection{\texorpdfstring{Peek()}{Peek()}}
+{\footnotesize\ttfamily \hyperlink{structMemoryStream_a62a1cbd052c325c83dbdb387d2f89088}{Ch} Memory\+Stream\+::\+Peek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structMemoryStream_ac63422050829d9724086363247059089}\label{structMemoryStream_ac63422050829d9724086363247059089}} 
+\index{Memory\+Stream@{Memory\+Stream}!Peek4@{Peek4}}
+\index{Peek4@{Peek4}!Memory\+Stream@{Memory\+Stream}}
+\subsubsection{\texorpdfstring{Peek4()}{Peek4()}}
+{\footnotesize\ttfamily const \hyperlink{structMemoryStream_a62a1cbd052c325c83dbdb387d2f89088}{Ch}$\ast$ Memory\+Stream\+::\+Peek4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structMemoryStream_ac445f93c23c9e85f1f5381911c4ed870}\label{structMemoryStream_ac445f93c23c9e85f1f5381911c4ed870}} 
+\index{Memory\+Stream@{Memory\+Stream}!Put@{Put}}
+\index{Put@{Put}!Memory\+Stream@{Memory\+Stream}}
+\subsubsection{\texorpdfstring{Put()}{Put()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Memory\+Stream\+::\+Put (\begin{DoxyParamCaption}\item[{\hyperlink{structMemoryStream_a62a1cbd052c325c83dbdb387d2f89088}{Ch}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structMemoryStream_a5674d10aa2faa05cb326e2e16715cc3d}\label{structMemoryStream_a5674d10aa2faa05cb326e2e16715cc3d}} 
+\index{Memory\+Stream@{Memory\+Stream}!Put\+Begin@{Put\+Begin}}
+\index{Put\+Begin@{Put\+Begin}!Memory\+Stream@{Memory\+Stream}}
+\subsubsection{\texorpdfstring{Put\+Begin()}{PutBegin()}}
+{\footnotesize\ttfamily \hyperlink{structMemoryStream_a62a1cbd052c325c83dbdb387d2f89088}{Ch}$\ast$ Memory\+Stream\+::\+Put\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structMemoryStream_a74fb36c1f6f95d189502cf7a6be79135}\label{structMemoryStream_a74fb36c1f6f95d189502cf7a6be79135}} 
+\index{Memory\+Stream@{Memory\+Stream}!Put\+End@{Put\+End}}
+\index{Put\+End@{Put\+End}!Memory\+Stream@{Memory\+Stream}}
+\subsubsection{\texorpdfstring{Put\+End()}{PutEnd()}}
+{\footnotesize\ttfamily size\+\_\+t Memory\+Stream\+::\+Put\+End (\begin{DoxyParamCaption}\item[{\hyperlink{structMemoryStream_a62a1cbd052c325c83dbdb387d2f89088}{Ch} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structMemoryStream_a14ff92deda5d39c9b166aaa07e82a0ee}\label{structMemoryStream_a14ff92deda5d39c9b166aaa07e82a0ee}} 
+\index{Memory\+Stream@{Memory\+Stream}!Take@{Take}}
+\index{Take@{Take}!Memory\+Stream@{Memory\+Stream}}
+\subsubsection{\texorpdfstring{Take()}{Take()}}
+{\footnotesize\ttfamily \hyperlink{structMemoryStream_a62a1cbd052c325c83dbdb387d2f89088}{Ch} Memory\+Stream\+::\+Take (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structMemoryStream_a2de1486742f0d44decda90a56bc43268}\label{structMemoryStream_a2de1486742f0d44decda90a56bc43268}} 
+\index{Memory\+Stream@{Memory\+Stream}!Tell@{Tell}}
+\index{Tell@{Tell}!Memory\+Stream@{Memory\+Stream}}
+\subsubsection{\texorpdfstring{Tell()}{Tell()}}
+{\footnotesize\ttfamily size\+\_\+t Memory\+Stream\+::\+Tell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structMemoryStream_a91f0767b4f0ed2476d835e8344848a2f}\label{structMemoryStream_a91f0767b4f0ed2476d835e8344848a2f}} 
+\index{Memory\+Stream@{Memory\+Stream}!begin\+\_\+@{begin\+\_\+}}
+\index{begin\+\_\+@{begin\+\_\+}!Memory\+Stream@{Memory\+Stream}}
+\subsubsection{\texorpdfstring{begin\+\_\+}{begin\_}}
+{\footnotesize\ttfamily const \hyperlink{structMemoryStream_a62a1cbd052c325c83dbdb387d2f89088}{Ch}$\ast$ Memory\+Stream\+::begin\+\_\+}
+
+
+
+Original head of the string. 
+
+\mbox{\Hypertarget{structMemoryStream_a55fb302ba0492419757e3ba318c8c654}\label{structMemoryStream_a55fb302ba0492419757e3ba318c8c654}} 
+\index{Memory\+Stream@{Memory\+Stream}!end\+\_\+@{end\+\_\+}}
+\index{end\+\_\+@{end\+\_\+}!Memory\+Stream@{Memory\+Stream}}
+\subsubsection{\texorpdfstring{end\+\_\+}{end\_}}
+{\footnotesize\ttfamily const \hyperlink{structMemoryStream_a62a1cbd052c325c83dbdb387d2f89088}{Ch}$\ast$ Memory\+Stream\+::end\+\_\+}
+
+
+
+End of stream. 
+
+\mbox{\Hypertarget{structMemoryStream_ab26a1b5c6d5e8f52c0f6982feba47f36}\label{structMemoryStream_ab26a1b5c6d5e8f52c0f6982feba47f36}} 
+\index{Memory\+Stream@{Memory\+Stream}!size\+\_\+@{size\+\_\+}}
+\index{size\+\_\+@{size\+\_\+}!Memory\+Stream@{Memory\+Stream}}
+\subsubsection{\texorpdfstring{size\+\_\+}{size\_}}
+{\footnotesize\ttfamily size\+\_\+t Memory\+Stream\+::size\+\_\+}
+
+
+
+Size of the stream. 
+
+\mbox{\Hypertarget{structMemoryStream_a57cf6cb5766e931a62928b9f92507443}\label{structMemoryStream_a57cf6cb5766e931a62928b9f92507443}} 
+\index{Memory\+Stream@{Memory\+Stream}!src\+\_\+@{src\+\_\+}}
+\index{src\+\_\+@{src\+\_\+}!Memory\+Stream@{Memory\+Stream}}
+\subsubsection{\texorpdfstring{src\+\_\+}{src\_}}
+{\footnotesize\ttfamily const \hyperlink{structMemoryStream_a62a1cbd052c325c83dbdb387d2f89088}{Ch}$\ast$ Memory\+Stream\+::src\+\_\+}
+
+
+
+Current read position. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/rapidjson/\hyperlink{memorystream_8h}{memorystream.\+h}\end{DoxyCompactItemize}

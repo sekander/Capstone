@@ -1,0 +1,489 @@
+\hypertarget{classGenericPointer}{}\section{Generic\+Pointer$<$ Value\+Type, Allocator $>$ Class Template Reference}
+\label{classGenericPointer}\index{Generic\+Pointer$<$ Value\+Type, Allocator $>$@{Generic\+Pointer$<$ Value\+Type, Allocator $>$}}
+
+
+Represents a J\+S\+ON Pointer. Use Pointer for \hyperlink{structUTF8}{U\+T\+F8} encoding and default allocator.  
+
+
+
+
+{\ttfamily \#include $<$fwd.\+h$>$}
+
+
+
+Collaboration diagram for Generic\+Pointer$<$ Value\+Type, Allocator $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{classGenericPointer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classGenericPointer_1_1PercentEncodeStream}{Percent\+Encode\+Stream}
+\begin{DoxyCompactList}\small\item\em A helper stream to encode character (U\+T\+F-\/8 code unit) into percent-\/encoded sequence. \end{DoxyCompactList}\item 
+struct \hyperlink{structGenericPointer_1_1Token}{Token}
+\begin{DoxyCompactList}\small\item\em A token is the basic units of internal representation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Value\+Type\+::\+Encoding\+Type \hyperlink{classGenericPointer_a4b802da797a7a0b615fd9611cedb7c3b}{Encoding\+Type}
+\begin{DoxyCompactList}\small\item\em Encoding type from Value. \end{DoxyCompactList}\item 
+typedef Value\+Type\+::\+Ch \hyperlink{classGenericPointer_ab292356c11b4015c98d21b966b11f285}{Ch}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structCharacter}{Character} type from Value. \end{DoxyCompactList}\item 
+typedef \hyperlink{classGenericUri}{Generic\+Uri}$<$ Value\+Type, Allocator $>$ \hyperlink{classGenericPointer_ac82bc56506218e49644bbbbe752a86cc}{Uri\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{Indent}\textbf{ Append token}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGenericPointer}{Generic\+Pointer} \hyperlink{classGenericPointer_aa8f86c0f330807f337351a95ae254b78}{Append} (const \hyperlink{structGenericPointer_1_1Token}{Token} \&token, Allocator $\ast$\hyperlink{classGenericPointer_aeb61ba8e67260b43090791eeca8b90e0}{allocator}=0) const
+\begin{DoxyCompactList}\small\item\em Append a token and return a new Pointer. \end{DoxyCompactList}\item 
+\hyperlink{classGenericPointer}{Generic\+Pointer} \hyperlink{classGenericPointer_a9f8a1711f5b8e0d951c25c6c65326f77}{Append} (const \hyperlink{classGenericPointer_ab292356c11b4015c98d21b966b11f285}{Ch} $\ast$\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} \hyperlink{imgui__impl__opengl3__loader_8h_a011fc24f10426c01349e94a4edd4b0d5}{length}, Allocator $\ast$\hyperlink{classGenericPointer_aeb61ba8e67260b43090791eeca8b90e0}{allocator}=0) const
+\begin{DoxyCompactList}\small\item\em Append a name token with length, and return a new Pointer. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classGenericPointer_aaf4d7d852098878d24188d134182d42f}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN} ((internal\+::\+Not\+Expr$<$ internal\+::\+Is\+Same$<$ typename internal\+::\+Remove\+Const$<$ T $>$\+::\hyperlink{rapidjson_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}, \hyperlink{classGenericPointer_ab292356c11b4015c98d21b966b11f285}{Ch} $>$ $>$),(\hyperlink{classGenericPointer}{Generic\+Pointer})) \hyperlink{classGenericPointer_aa8f86c0f330807f337351a95ae254b78}{Append}(T $\ast$\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}
+\begin{DoxyCompactList}\small\item\em Append a name token without length, and return a new Pointer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Allocator $\ast$ \hyperlink{classGenericPointer_aeb61ba8e67260b43090791eeca8b90e0}{allocator}
+\item 
+Allocator $\ast$ \hyperlink{classGenericPointer_a331cffeec161b80ea18ac3f1562851bf}{allocator\+\_\+}
+\begin{DoxyCompactList}\small\item\em The current allocator. It is either user-\/supplied or equal to own\+Allocator\+\_\+. \end{DoxyCompactList}\item 
+Allocator $\ast$ \hyperlink{classGenericPointer_a99b51c07419ee17d57e97774d8ee63ab}{own\+Allocator\+\_\+}
+\begin{DoxyCompactList}\small\item\em Allocator owned by this Pointer. \end{DoxyCompactList}\item 
+\hyperlink{classGenericPointer_ab292356c11b4015c98d21b966b11f285}{Ch} $\ast$ \hyperlink{classGenericPointer_a2fd627c663483ad08e4f26707ea5ad86}{name\+Buffer\+\_\+}
+\begin{DoxyCompactList}\small\item\em A buffer containing all names in tokens. \end{DoxyCompactList}\item 
+\hyperlink{structGenericPointer_1_1Token}{Token} $\ast$ \hyperlink{classGenericPointer_a997793c66ea1a264089c37c8731eb138}{tokens\+\_\+}
+\begin{DoxyCompactList}\small\item\em A list of tokens. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classGenericPointer_a7051cf59af6622542a050bd0ff0340f8}{token\+Count\+\_\+}
+\begin{DoxyCompactList}\small\item\em Number of tokens in tokens\+\_\+. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classGenericPointer_ad103ed62e206319f1f0f4aa271866e37}{parse\+Error\+Offset\+\_\+}
+\begin{DoxyCompactList}\small\item\em Offset in code unit when parsing fail. \end{DoxyCompactList}\item 
+\hyperlink{group__RAPIDJSON__ERRORS_gacb2e274f33e54d91b96e9883a99a98be}{Pointer\+Parse\+Error\+Code} \hyperlink{classGenericPointer_a8898ec432dc40b28f79db78dc4ca83e0}{parse\+Error\+Code\+\_\+}
+\begin{DoxyCompactList}\small\item\em Parsing error code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Constructors and destructor.}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGenericPointer_a5d85b7dc82719643e8f7adccd5a74fbe}{Generic\+Pointer} (Allocator $\ast$\hyperlink{classGenericPointer_aeb61ba8e67260b43090791eeca8b90e0}{allocator}=0)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classGenericPointer_a4ad549b8a826c3c2dedf03fcc07be9b0}{Generic\+Pointer} (const \hyperlink{classGenericPointer_ab292356c11b4015c98d21b966b11f285}{Ch} $\ast$\hyperlink{pointer_8h_adb82dfe18535e9a30aa97d275f82bd55}{source}, Allocator $\ast$\hyperlink{classGenericPointer_aeb61ba8e67260b43090791eeca8b90e0}{allocator}=0)
+\begin{DoxyCompactList}\small\item\em Constructor that parses a string or U\+RI fragment representation. \end{DoxyCompactList}\item 
+\hyperlink{classGenericPointer_a9c05684ea95306aac7626e70cb3946cc}{Generic\+Pointer} (const \hyperlink{classGenericPointer_ab292356c11b4015c98d21b966b11f285}{Ch} $\ast$\hyperlink{pointer_8h_adb82dfe18535e9a30aa97d275f82bd55}{source}, size\+\_\+t \hyperlink{imgui__impl__opengl3__loader_8h_a011fc24f10426c01349e94a4edd4b0d5}{length}, Allocator $\ast$\hyperlink{classGenericPointer_aeb61ba8e67260b43090791eeca8b90e0}{allocator}=0)
+\begin{DoxyCompactList}\small\item\em Constructor that parses a string or U\+RI fragment representation, with length of the source string. \end{DoxyCompactList}\item 
+\hyperlink{classGenericPointer_a524a9921eff68f389a817a20ca7f1d84}{Generic\+Pointer} (const \hyperlink{structGenericPointer_1_1Token}{Token} $\ast$tokens, size\+\_\+t token\+Count)
+\begin{DoxyCompactList}\small\item\em Constructor with user-\/supplied tokens. \end{DoxyCompactList}\item 
+\hyperlink{classGenericPointer_a7803645e8f7f349ee09c7d50351e9432}{Generic\+Pointer} (const \hyperlink{classGenericPointer}{Generic\+Pointer} \&rhs)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classGenericPointer_a4395ca3f5c646e47cc9b93d21d1660ae}{Generic\+Pointer} (const \hyperlink{classGenericPointer}{Generic\+Pointer} \&rhs, Allocator $\ast$\hyperlink{classGenericPointer_aeb61ba8e67260b43090791eeca8b90e0}{allocator})
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classGenericPointer_acf3eb2f7c4ebf9256f638aafa17534cb}{$\sim$\+Generic\+Pointer} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{classGenericPointer}{Generic\+Pointer} \& \hyperlink{classGenericPointer_a1d0174a6e72daa4024da9e08ce1e7951}{operator=} (const \hyperlink{classGenericPointer}{Generic\+Pointer} \&rhs)
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\hyperlink{classGenericPointer}{Generic\+Pointer} \& \hyperlink{classGenericPointer_a64fd102622f772efefd445cbed56b16e}{Swap} (\hyperlink{classGenericPointer}{Generic\+Pointer} \&other) R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+O\+E\+X\+C\+E\+PT
+\begin{DoxyCompactList}\small\item\em Swap the content of this pointer with an other. \end{DoxyCompactList}\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericPointer_a249c61b5d4bed20c3f8972c57f46a937}{swap} (\hyperlink{classGenericPointer}{Generic\+Pointer} \&\hyperlink{pointer_8h_aeeddce917cf130d62c370b8f216026dd}{a}, \hyperlink{classGenericPointer}{Generic\+Pointer} \&b) R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+O\+E\+X\+C\+E\+PT
+\begin{DoxyCompactList}\small\item\em free-\/standing swap function helper \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$\newline
+class Generic\+Pointer$<$ Value\+Type, Allocator $>$}
+
+Represents a J\+S\+ON Pointer. Use Pointer for \hyperlink{structUTF8}{U\+T\+F8} encoding and default allocator. 
+
+This class implements R\+FC 6901 \char`\"{}\+Java\+Script Object Notation (\+J\+S\+O\+N) Pointer\char`\"{} (\href{https://tools.ietf.org/html/rfc6901}{\tt https\+://tools.\+ietf.\+org/html/rfc6901}).
+
+A J\+S\+ON pointer is for identifying a specific value in a J\+S\+ON document (\hyperlink{classGenericDocument}{Generic\+Document}). It can simplify coding of D\+OM tree manipulation, because it can access multiple-\/level depth of D\+OM tree with single A\+PI call.
+
+After it parses a string representation (e.\+g. \char`\"{}/foo/0\char`\"{} or U\+RI fragment representation (e.\+g. \char`\"{}\#/foo/0\char`\"{}) into its internal representation (tokens), it can be used to resolve a specific value in multiple documents, or sub-\/tree of documents.
+
+Contrary to \hyperlink{classGenericValue}{Generic\+Value}, Pointer can be copy constructed and copy assigned. Apart from assignment, a Pointer cannot be modified after construction.
+
+Although Pointer is very convenient, please aware that constructing Pointer involves parsing and dynamic memory allocation. A special constructor with user-\/ supplied tokens eliminates these.
+
+\hyperlink{classGenericPointer}{Generic\+Pointer} depends on \hyperlink{classGenericDocument}{Generic\+Document} and \hyperlink{classGenericValue}{Generic\+Value}.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Value\+Type} & The value type of the D\+OM tree. E.\+g. \hyperlink{classGenericValue}{Generic\+Value}$<$U\+T\+F8$<$$>$ $>$ \\
+\hline
+{\em Allocator} & The allocator type for allocating memory for internal representation.\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyNote}{Note}
+\hyperlink{classGenericPointer}{Generic\+Pointer} uses same encoding of Value\+Type. However, Allocator of \hyperlink{classGenericPointer}{Generic\+Pointer} is independent of Allocator of Value. 
+\end{DoxyNote}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classGenericPointer_ab292356c11b4015c98d21b966b11f285}\label{classGenericPointer_ab292356c11b4015c98d21b966b11f285}} 
+\index{Generic\+Pointer@{Generic\+Pointer}!Ch@{Ch}}
+\index{Ch@{Ch}!Generic\+Pointer@{Generic\+Pointer}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$ \\
+typedef Value\+Type\+::\+Ch \hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$\+::\hyperlink{classGenericPointer_ab292356c11b4015c98d21b966b11f285}{Ch}}
+
+
+
+\hyperlink{structCharacter}{Character} type from Value. 
+
+\mbox{\Hypertarget{classGenericPointer_a4b802da797a7a0b615fd9611cedb7c3b}\label{classGenericPointer_a4b802da797a7a0b615fd9611cedb7c3b}} 
+\index{Generic\+Pointer@{Generic\+Pointer}!Encoding\+Type@{Encoding\+Type}}
+\index{Encoding\+Type@{Encoding\+Type}!Generic\+Pointer@{Generic\+Pointer}}
+\subsubsection{\texorpdfstring{Encoding\+Type}{EncodingType}}
+{\footnotesize\ttfamily template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$ \\
+typedef Value\+Type\+::\+Encoding\+Type \hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$\+::\hyperlink{classGenericPointer_a4b802da797a7a0b615fd9611cedb7c3b}{Encoding\+Type}}
+
+
+
+Encoding type from Value. 
+
+\mbox{\Hypertarget{classGenericPointer_ac82bc56506218e49644bbbbe752a86cc}\label{classGenericPointer_ac82bc56506218e49644bbbbe752a86cc}} 
+\index{Generic\+Pointer@{Generic\+Pointer}!Uri\+Type@{Uri\+Type}}
+\index{Uri\+Type@{Uri\+Type}!Generic\+Pointer@{Generic\+Pointer}}
+\subsubsection{\texorpdfstring{Uri\+Type}{UriType}}
+{\footnotesize\ttfamily template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$ \\
+typedef \hyperlink{classGenericUri}{Generic\+Uri}$<$Value\+Type, Allocator$>$ \hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$\+::\hyperlink{classGenericPointer_ac82bc56506218e49644bbbbe752a86cc}{Uri\+Type}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGenericPointer_a5d85b7dc82719643e8f7adccd5a74fbe}\label{classGenericPointer_a5d85b7dc82719643e8f7adccd5a74fbe}} 
+\index{Generic\+Pointer@{Generic\+Pointer}!Generic\+Pointer@{Generic\+Pointer}}
+\index{Generic\+Pointer@{Generic\+Pointer}!Generic\+Pointer@{Generic\+Pointer}}
+\subsubsection{\texorpdfstring{Generic\+Pointer()}{GenericPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$\+::\hyperlink{classGenericPointer}{Generic\+Pointer} (\begin{DoxyParamCaption}\item[{Allocator $\ast$}]{allocator = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor. 
+
+\mbox{\Hypertarget{classGenericPointer_a4ad549b8a826c3c2dedf03fcc07be9b0}\label{classGenericPointer_a4ad549b8a826c3c2dedf03fcc07be9b0}} 
+\index{Generic\+Pointer@{Generic\+Pointer}!Generic\+Pointer@{Generic\+Pointer}}
+\index{Generic\+Pointer@{Generic\+Pointer}!Generic\+Pointer@{Generic\+Pointer}}
+\subsubsection{\texorpdfstring{Generic\+Pointer()}{GenericPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$\+::\hyperlink{classGenericPointer}{Generic\+Pointer} (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericPointer_ab292356c11b4015c98d21b966b11f285}{Ch} $\ast$}]{source,  }\item[{Allocator $\ast$}]{allocator = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructor that parses a string or U\+RI fragment representation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & A null-\/terminated, string or U\+RI fragment representation of J\+S\+ON pointer. \\
+\hline
+{\em allocator} & User supplied allocator for this pointer. If no allocator is provided, it creates a self-\/owned one. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGenericPointer_a9c05684ea95306aac7626e70cb3946cc}\label{classGenericPointer_a9c05684ea95306aac7626e70cb3946cc}} 
+\index{Generic\+Pointer@{Generic\+Pointer}!Generic\+Pointer@{Generic\+Pointer}}
+\index{Generic\+Pointer@{Generic\+Pointer}!Generic\+Pointer@{Generic\+Pointer}}
+\subsubsection{\texorpdfstring{Generic\+Pointer()}{GenericPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$\+::\hyperlink{classGenericPointer}{Generic\+Pointer} (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericPointer_ab292356c11b4015c98d21b966b11f285}{Ch} $\ast$}]{source,  }\item[{size\+\_\+t}]{length,  }\item[{Allocator $\ast$}]{allocator = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor that parses a string or U\+RI fragment representation, with length of the source string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & A string or U\+RI fragment representation of J\+S\+ON pointer. \\
+\hline
+{\em length} & Length of source. \\
+\hline
+{\em allocator} & User supplied allocator for this pointer. If no allocator is provided, it creates a self-\/owned one. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Slightly faster than the overload without length. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classGenericPointer_a524a9921eff68f389a817a20ca7f1d84}\label{classGenericPointer_a524a9921eff68f389a817a20ca7f1d84}} 
+\index{Generic\+Pointer@{Generic\+Pointer}!Generic\+Pointer@{Generic\+Pointer}}
+\index{Generic\+Pointer@{Generic\+Pointer}!Generic\+Pointer@{Generic\+Pointer}}
+\subsubsection{\texorpdfstring{Generic\+Pointer()}{GenericPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$\+::\hyperlink{classGenericPointer}{Generic\+Pointer} (\begin{DoxyParamCaption}\item[{const \hyperlink{structGenericPointer_1_1Token}{Token} $\ast$}]{tokens,  }\item[{size\+\_\+t}]{token\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor with user-\/supplied tokens. 
+
+This constructor let user supplies const array of tokens. This prevents the parsing process and eliminates allocation. This is preferred for memory constrained environments.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tokens} & An constant array of tokens representing the J\+S\+ON pointer. \\
+\hline
+{\em token\+Count} & Number of tokens.\\
+\hline
+\end{DoxyParams}
+{\bfseries Example} 
+\begin{DoxyCode}
+\textcolor{preprocessor}{#define NAME(s) \{ s, sizeof(s) / sizeof(s[0]) - 1, kPointerInvalidIndex \}}
+\textcolor{preprocessor}{#define INDEX(i) \{ #i, sizeof(#i) - 1, i \}}
+
+\textcolor{keyword}{static} \textcolor{keyword}{const} \hyperlink{structGenericPointer_1_1Token}{Pointer::Token} kTokens[] = \{ NAME(\textcolor{stringliteral}{"foo"}), INDEX(123) \};
+\textcolor{keyword}{static} \textcolor{keyword}{const} \hyperlink{classGenericPointer}{Pointer} p(kTokens, \textcolor{keyword}{sizeof}(kTokens) / \textcolor{keyword}{sizeof}(kTokens[0]));
+\textcolor{comment}{// Equivalent to static const Pointer p("/foo/123");}
+
+\textcolor{preprocessor}{#undef NAME}
+\textcolor{preprocessor}{#undef INDEX}
+\end{DoxyCode}
+ \mbox{\Hypertarget{classGenericPointer_a7803645e8f7f349ee09c7d50351e9432}\label{classGenericPointer_a7803645e8f7f349ee09c7d50351e9432}} 
+\index{Generic\+Pointer@{Generic\+Pointer}!Generic\+Pointer@{Generic\+Pointer}}
+\index{Generic\+Pointer@{Generic\+Pointer}!Generic\+Pointer@{Generic\+Pointer}}
+\subsubsection{\texorpdfstring{Generic\+Pointer()}{GenericPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$\+::\hyperlink{classGenericPointer}{Generic\+Pointer} (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{classGenericPointer_a4395ca3f5c646e47cc9b93d21d1660ae}\label{classGenericPointer_a4395ca3f5c646e47cc9b93d21d1660ae}} 
+\index{Generic\+Pointer@{Generic\+Pointer}!Generic\+Pointer@{Generic\+Pointer}}
+\index{Generic\+Pointer@{Generic\+Pointer}!Generic\+Pointer@{Generic\+Pointer}}
+\subsubsection{\texorpdfstring{Generic\+Pointer()}{GenericPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$\+::\hyperlink{classGenericPointer}{Generic\+Pointer} (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$ \&}]{rhs,  }\item[{Allocator $\ast$}]{allocator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{classGenericPointer_acf3eb2f7c4ebf9256f638aafa17534cb}\label{classGenericPointer_acf3eb2f7c4ebf9256f638aafa17534cb}} 
+\index{Generic\+Pointer@{Generic\+Pointer}!````~Generic\+Pointer@{$\sim$\+Generic\+Pointer}}
+\index{````~Generic\+Pointer@{$\sim$\+Generic\+Pointer}!Generic\+Pointer@{Generic\+Pointer}}
+\subsubsection{\texorpdfstring{$\sim$\+Generic\+Pointer()}{~GenericPointer()}}
+{\footnotesize\ttfamily template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$\+::$\sim$\hyperlink{classGenericPointer}{Generic\+Pointer} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGenericPointer_aa8f86c0f330807f337351a95ae254b78}\label{classGenericPointer_aa8f86c0f330807f337351a95ae254b78}} 
+\index{Generic\+Pointer@{Generic\+Pointer}!Append@{Append}}
+\index{Append@{Append}!Generic\+Pointer@{Generic\+Pointer}}
+\subsubsection{\texorpdfstring{Append()}{Append()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classGenericPointer}{Generic\+Pointer} \hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$\+::Append (\begin{DoxyParamCaption}\item[{const \hyperlink{structGenericPointer_1_1Token}{Token} \&}]{token,  }\item[{Allocator $\ast$}]{allocator = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Append a token and return a new Pointer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & \hyperlink{structGenericPointer_1_1Token}{Token} to be appended. \\
+\hline
+{\em allocator} & Allocator for the newly return Pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new Pointer with appended token. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGenericPointer_a9f8a1711f5b8e0d951c25c6c65326f77}\label{classGenericPointer_a9f8a1711f5b8e0d951c25c6c65326f77}} 
+\index{Generic\+Pointer@{Generic\+Pointer}!Append@{Append}}
+\index{Append@{Append}!Generic\+Pointer@{Generic\+Pointer}}
+\subsubsection{\texorpdfstring{Append()}{Append()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classGenericPointer}{Generic\+Pointer} \hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$\+::Append (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericPointer_ab292356c11b4015c98d21b966b11f285}{Ch} $\ast$}]{name,  }\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{length,  }\item[{Allocator $\ast$}]{allocator = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Append a name token with length, and return a new Pointer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name to be appended. \\
+\hline
+{\em length} & Length of name. \\
+\hline
+{\em allocator} & Allocator for the newly return Pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new Pointer with appended token. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGenericPointer_a1d0174a6e72daa4024da9e08ce1e7951}\label{classGenericPointer_a1d0174a6e72daa4024da9e08ce1e7951}} 
+\index{Generic\+Pointer@{Generic\+Pointer}!operator=@{operator=}}
+\index{operator=@{operator=}!Generic\+Pointer@{Generic\+Pointer}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classGenericPointer}{Generic\+Pointer}\& \hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assignment operator. 
+
+\mbox{\Hypertarget{classGenericPointer_aaf4d7d852098878d24188d134182d42f}\label{classGenericPointer_aaf4d7d852098878d24188d134182d42f}} 
+\index{Generic\+Pointer@{Generic\+Pointer}!R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN@{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN}}
+\index{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN@{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN}!Generic\+Pointer@{Generic\+Pointer}}
+\subsubsection{\texorpdfstring{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+R\+N()}{RAPIDJSON\_DISABLEIF\_RETURN()}}
+{\footnotesize\ttfamily template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$ \\
+template$<$typename T $>$ \\
+\hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$\+::R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN (\begin{DoxyParamCaption}\item[{(internal\+::\+Not\+Expr$<$ internal\+::\+Is\+Same$<$ typename internal\+::\+Remove\+Const$<$ T $>$\+::\hyperlink{rapidjson_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}, \hyperlink{classGenericPointer_ab292356c11b4015c98d21b966b11f285}{Ch} $>$ $>$)}]{,  }\item[{(\hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$)}]{ }\end{DoxyParamCaption})}
+
+
+
+Append a name token without length, and return a new Pointer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name (const Ch$\ast$) to be appended. \\
+\hline
+{\em allocator} & Allocator for the newly return Pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new Pointer with appended token. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGenericPointer_a64fd102622f772efefd445cbed56b16e}\label{classGenericPointer_a64fd102622f772efefd445cbed56b16e}} 
+\index{Generic\+Pointer@{Generic\+Pointer}!Swap@{Swap}}
+\index{Swap@{Swap}!Generic\+Pointer@{Generic\+Pointer}}
+\subsubsection{\texorpdfstring{Swap()}{Swap()}}
+{\footnotesize\ttfamily template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classGenericPointer}{Generic\+Pointer}\& \hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$\+::Swap (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Swap the content of this pointer with an other. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The pointer to swap with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Constant complexity. 
+\end{DoxyNote}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classGenericPointer_a249c61b5d4bed20c3f8972c57f46a937}\label{classGenericPointer_a249c61b5d4bed20c3f8972c57f46a937}} 
+\index{Generic\+Pointer@{Generic\+Pointer}!swap@{swap}}
+\index{swap@{swap}!Generic\+Pointer@{Generic\+Pointer}}
+\subsubsection{\texorpdfstring{swap}{swap}}
+{\footnotesize\ttfamily template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} swap (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$ \&}]{a,  }\item[{\hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$ \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+free-\/standing swap function helper 
+
+Helper function to enable support for common swap implementation pattern based on {\ttfamily std\+::swap\+:} 
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} \hyperlink{classGenericPointer_a249c61b5d4bed20c3f8972c57f46a937}{swap}(MyClass& \hyperlink{pointer_8h_aeeddce917cf130d62c370b8f216026dd}{a}, MyClass& b) \{
+    \textcolor{keyword}{using} std::swap;
+    \hyperlink{classGenericPointer_a249c61b5d4bed20c3f8972c57f46a937}{swap}(a.pointer, b.pointer);
+    \textcolor{comment}{// ...}
+\}
+\end{DoxyCode}
+ \begin{DoxySeeAlso}{See also}
+\hyperlink{classGenericPointer_a64fd102622f772efefd445cbed56b16e}{Swap()} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classGenericPointer_aeb61ba8e67260b43090791eeca8b90e0}\label{classGenericPointer_aeb61ba8e67260b43090791eeca8b90e0}} 
+\index{Generic\+Pointer@{Generic\+Pointer}!allocator@{allocator}}
+\index{allocator@{allocator}!Generic\+Pointer@{Generic\+Pointer}}
+\subsubsection{\texorpdfstring{allocator}{allocator}}
+{\footnotesize\ttfamily template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$ \\
+Allocator$\ast$ \hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$\+::allocator}
+
+\mbox{\Hypertarget{classGenericPointer_a331cffeec161b80ea18ac3f1562851bf}\label{classGenericPointer_a331cffeec161b80ea18ac3f1562851bf}} 
+\index{Generic\+Pointer@{Generic\+Pointer}!allocator\+\_\+@{allocator\+\_\+}}
+\index{allocator\+\_\+@{allocator\+\_\+}!Generic\+Pointer@{Generic\+Pointer}}
+\subsubsection{\texorpdfstring{allocator\+\_\+}{allocator\_}}
+{\footnotesize\ttfamily template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$ \\
+Allocator$\ast$ \hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$\+::allocator\+\_\+}
+
+
+
+The current allocator. It is either user-\/supplied or equal to own\+Allocator\+\_\+. 
+
+\mbox{\Hypertarget{classGenericPointer_a2fd627c663483ad08e4f26707ea5ad86}\label{classGenericPointer_a2fd627c663483ad08e4f26707ea5ad86}} 
+\index{Generic\+Pointer@{Generic\+Pointer}!name\+Buffer\+\_\+@{name\+Buffer\+\_\+}}
+\index{name\+Buffer\+\_\+@{name\+Buffer\+\_\+}!Generic\+Pointer@{Generic\+Pointer}}
+\subsubsection{\texorpdfstring{name\+Buffer\+\_\+}{nameBuffer\_}}
+{\footnotesize\ttfamily template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classGenericPointer_ab292356c11b4015c98d21b966b11f285}{Ch}$\ast$ \hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$\+::name\+Buffer\+\_\+}
+
+
+
+A buffer containing all names in tokens. 
+
+\mbox{\Hypertarget{classGenericPointer_a99b51c07419ee17d57e97774d8ee63ab}\label{classGenericPointer_a99b51c07419ee17d57e97774d8ee63ab}} 
+\index{Generic\+Pointer@{Generic\+Pointer}!own\+Allocator\+\_\+@{own\+Allocator\+\_\+}}
+\index{own\+Allocator\+\_\+@{own\+Allocator\+\_\+}!Generic\+Pointer@{Generic\+Pointer}}
+\subsubsection{\texorpdfstring{own\+Allocator\+\_\+}{ownAllocator\_}}
+{\footnotesize\ttfamily template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$ \\
+Allocator$\ast$ \hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$\+::own\+Allocator\+\_\+}
+
+
+
+Allocator owned by this Pointer. 
+
+\mbox{\Hypertarget{classGenericPointer_a8898ec432dc40b28f79db78dc4ca83e0}\label{classGenericPointer_a8898ec432dc40b28f79db78dc4ca83e0}} 
+\index{Generic\+Pointer@{Generic\+Pointer}!parse\+Error\+Code\+\_\+@{parse\+Error\+Code\+\_\+}}
+\index{parse\+Error\+Code\+\_\+@{parse\+Error\+Code\+\_\+}!Generic\+Pointer@{Generic\+Pointer}}
+\subsubsection{\texorpdfstring{parse\+Error\+Code\+\_\+}{parseErrorCode\_}}
+{\footnotesize\ttfamily template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$ \\
+\hyperlink{group__RAPIDJSON__ERRORS_gacb2e274f33e54d91b96e9883a99a98be}{Pointer\+Parse\+Error\+Code} \hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$\+::parse\+Error\+Code\+\_\+}
+
+
+
+Parsing error code. 
+
+\mbox{\Hypertarget{classGenericPointer_ad103ed62e206319f1f0f4aa271866e37}\label{classGenericPointer_ad103ed62e206319f1f0f4aa271866e37}} 
+\index{Generic\+Pointer@{Generic\+Pointer}!parse\+Error\+Offset\+\_\+@{parse\+Error\+Offset\+\_\+}}
+\index{parse\+Error\+Offset\+\_\+@{parse\+Error\+Offset\+\_\+}!Generic\+Pointer@{Generic\+Pointer}}
+\subsubsection{\texorpdfstring{parse\+Error\+Offset\+\_\+}{parseErrorOffset\_}}
+{\footnotesize\ttfamily template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$ \\
+size\+\_\+t \hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$\+::parse\+Error\+Offset\+\_\+}
+
+
+
+Offset in code unit when parsing fail. 
+
+\mbox{\Hypertarget{classGenericPointer_a7051cf59af6622542a050bd0ff0340f8}\label{classGenericPointer_a7051cf59af6622542a050bd0ff0340f8}} 
+\index{Generic\+Pointer@{Generic\+Pointer}!token\+Count\+\_\+@{token\+Count\+\_\+}}
+\index{token\+Count\+\_\+@{token\+Count\+\_\+}!Generic\+Pointer@{Generic\+Pointer}}
+\subsubsection{\texorpdfstring{token\+Count\+\_\+}{tokenCount\_}}
+{\footnotesize\ttfamily template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$ \\
+size\+\_\+t \hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$\+::token\+Count\+\_\+}
+
+
+
+Number of tokens in tokens\+\_\+. 
+
+\mbox{\Hypertarget{classGenericPointer_a997793c66ea1a264089c37c8731eb138}\label{classGenericPointer_a997793c66ea1a264089c37c8731eb138}} 
+\index{Generic\+Pointer@{Generic\+Pointer}!tokens\+\_\+@{tokens\+\_\+}}
+\index{tokens\+\_\+@{tokens\+\_\+}!Generic\+Pointer@{Generic\+Pointer}}
+\subsubsection{\texorpdfstring{tokens\+\_\+}{tokens\_}}
+{\footnotesize\ttfamily template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$ \\
+\hyperlink{structGenericPointer_1_1Token}{Token}$\ast$ \hyperlink{classGenericPointer}{Generic\+Pointer}$<$ Value\+Type, Allocator $>$\+::tokens\+\_\+}
+
+
+
+A list of tokens. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/rapidjson/\hyperlink{fwd_8h}{fwd.\+h}\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/rapidjson/\hyperlink{pointer_8h}{pointer.\+h}\end{DoxyCompactItemize}

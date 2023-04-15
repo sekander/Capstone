@@ -1,0 +1,124 @@
+\hypertarget{classGenericMember}{}\section{Generic\+Member$<$ Encoding, Allocator $>$ Class Template Reference}
+\label{classGenericMember}\index{Generic\+Member$<$ Encoding, Allocator $>$@{Generic\+Member$<$ Encoding, Allocator $>$}}
+
+
+Name-\/value pair in a J\+S\+ON object value.  
+
+
+
+
+{\ttfamily \#include $<$document.\+h$>$}
+
+
+
+Collaboration diagram for Generic\+Member$<$ Encoding, Allocator $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{classGenericMember__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGenericMember}{Generic\+Member} \& \hyperlink{classGenericMember_aa6983171b50bdcbb6a456d369680b379}{operator=} (\hyperlink{classGenericMember}{Generic\+Member} \&rhs) R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+O\+E\+X\+C\+E\+PT
+\begin{DoxyCompactList}\small\item\em Assignment with move semantics. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGenericValue}{Generic\+Value}$<$ Encoding, Allocator $>$ \hyperlink{classGenericMember_a7124f7ccd67421533d33139938604fac}{name}
+\begin{DoxyCompactList}\small\item\em name of member (must be a string) \end{DoxyCompactList}\item 
+\hyperlink{classGenericValue}{Generic\+Value}$<$ Encoding, Allocator $>$ \hyperlink{classGenericMember_aad3cfa4f9e8b9018068c8bc865723083}{value}
+\begin{DoxyCompactList}\small\item\em value of member. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGenericMember_ab9c79af91543b05cc88af0f930e7556e}{Generic\+Member} (const \hyperlink{classGenericMember}{Generic\+Member} \&rhs)
+\begin{DoxyCompactList}\small\item\em Copy constructor is not permitted. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericMember_af72094da5f8967de3fab3d2c34bc71cc}{swap} (\hyperlink{classGenericMember}{Generic\+Member} \&\hyperlink{pointer_8h_aeeddce917cf130d62c370b8f216026dd}{a}, \hyperlink{classGenericMember}{Generic\+Member} \&b) R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+O\+E\+X\+C\+E\+PT
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Encoding, typename Allocator$>$\newline
+class Generic\+Member$<$ Encoding, Allocator $>$}
+
+Name-\/value pair in a J\+S\+ON object value. 
+
+This class was internal to \hyperlink{classGenericValue}{Generic\+Value}. It used to be a inner struct. But a compiler (I\+BM XL C/\+C++ for A\+IX) have reported to have problem with that so it moved as a namespace scope struct. \href{https://code.google.com/p/rapidjson/issues/detail?id=64}{\tt https\+://code.\+google.\+com/p/rapidjson/issues/detail?id=64} 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGenericMember_ab9c79af91543b05cc88af0f930e7556e}\label{classGenericMember_ab9c79af91543b05cc88af0f930e7556e}} 
+\index{Generic\+Member@{Generic\+Member}!Generic\+Member@{Generic\+Member}}
+\index{Generic\+Member@{Generic\+Member}!Generic\+Member@{Generic\+Member}}
+\subsubsection{\texorpdfstring{Generic\+Member()}{GenericMember()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator $>$ \\
+\hyperlink{classGenericMember}{Generic\+Member}$<$ Encoding, Allocator $>$\+::\hyperlink{classGenericMember}{Generic\+Member} (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericMember}{Generic\+Member}$<$ Encoding, Allocator $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Copy constructor is not permitted. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGenericMember_aa6983171b50bdcbb6a456d369680b379}\label{classGenericMember_aa6983171b50bdcbb6a456d369680b379}} 
+\index{Generic\+Member@{Generic\+Member}!operator=@{operator=}}
+\index{operator=@{operator=}!Generic\+Member@{Generic\+Member}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator $>$ \\
+\hyperlink{classGenericMember}{Generic\+Member}\& \hyperlink{classGenericMember}{Generic\+Member}$<$ Encoding, Allocator $>$\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericMember}{Generic\+Member}$<$ Encoding, Allocator $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assignment with move semantics. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & Source of the assignment. Its name and value will become a null value after assignment. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classGenericMember_af72094da5f8967de3fab3d2c34bc71cc}\label{classGenericMember_af72094da5f8967de3fab3d2c34bc71cc}} 
+\index{Generic\+Member@{Generic\+Member}!swap@{swap}}
+\index{swap@{swap}!Generic\+Member@{Generic\+Member}}
+\subsubsection{\texorpdfstring{swap}{swap}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator $>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} swap (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericMember}{Generic\+Member}$<$ Encoding, Allocator $>$ \&}]{a,  }\item[{\hyperlink{classGenericMember}{Generic\+Member}$<$ Encoding, Allocator $>$ \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classGenericMember_a7124f7ccd67421533d33139938604fac}\label{classGenericMember_a7124f7ccd67421533d33139938604fac}} 
+\index{Generic\+Member@{Generic\+Member}!name@{name}}
+\index{name@{name}!Generic\+Member@{Generic\+Member}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator $>$ \\
+\hyperlink{classGenericValue}{Generic\+Value}$<$Encoding, Allocator$>$ \hyperlink{classGenericMember}{Generic\+Member}$<$ Encoding, Allocator $>$\+::\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}}
+
+
+
+name of member (must be a string) 
+
+\mbox{\Hypertarget{classGenericMember_aad3cfa4f9e8b9018068c8bc865723083}\label{classGenericMember_aad3cfa4f9e8b9018068c8bc865723083}} 
+\index{Generic\+Member@{Generic\+Member}!value@{value}}
+\index{value@{value}!Generic\+Member@{Generic\+Member}}
+\subsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator $>$ \\
+\hyperlink{classGenericValue}{Generic\+Value}$<$Encoding, Allocator$>$ \hyperlink{classGenericMember}{Generic\+Member}$<$ Encoding, Allocator $>$\+::\hyperlink{imgui__impl__opengl3__loader_8h_a32aff7c6c4cd253fdf6563677afab5ce}{value}}
+
+
+
+value of member. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/rapidjson/\hyperlink{document_8h}{document.\+h}\end{DoxyCompactItemize}

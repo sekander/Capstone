@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<Splash_State>
+<head><version>1.0</version></head>
+	<level_1>
+
+    		<gw>
+				<param
+						key					= "backgroundO"
+						filename 			= "assets/images/tent1.png"
+						num_x_frame			= 1
+						num_y_frame			= 1 
+						animation_speed		= 0.0
+						position_x			= 0
+						position_y			= 6.3 
+						size_x				= 136	
+						size_y				= 148
+						rotate				= 0 
+						color_r				= 1.0
+						color_g				= 1.0
+						color_b				= 1.0
+						current_x_frame		= 1 				
+						current_y_frame		= 1 				
+						alpha 				= true 
+				/>
+				<param
+						key					= "backgroundO"
+						filename 			= "assets/images/parralax.jpg"
+						num_x_frame			= 1
+						num_y_frame			= 1 
+						animation_speed		= 0.0
+						position_x			= -127
+						position_y			= -41.5
+						size_x				= 1280
+						size_y				= 720
+						rotate				= 0 
+						color_r				= 1.0
+						color_g				= 1.0
+						color_b				= 1.0
+						current_x_frame		= 1 				
+						current_y_frame		= 1 				
+						alpha 				= false 
+				/>
+				<param
+						key					= "backgroundO"
+						filename 			= "assets/images/parralax.jpg"
+						num_x_frame			= 1
+						num_y_frame			= 1 
+						animation_speed		= 0.0
+						position_x			= 0
+						position_y			= -41.5
+						size_x				= 1280
+						size_y				= 720
+						rotate				= 0 
+						color_r				= 1.0
+						color_g				= 1.0
+						color_b				= 1.0
+						current_x_frame		= 1 				
+						current_y_frame		= 1 				
+						alpha 				= false 
+				/>
+				<param
+						key					= "backgroundO"
+						filename 			= "assets/images/parralax.jpg"
+						num_x_frame			= 1
+						num_y_frame			= 1 
+						animation_speed		= 0.0
+						position_x			= 127
+						position_y			= -41.5
+						size_x				= 1280
+						size_y				= 720
+						rotate				= 0 
+						color_r				= 1.0
+						color_g				= 1.0
+						color_b				= 1.0
+						current_x_frame		= 1 				
+						current_y_frame		= 1 				
+						alpha 				= false 
+				/>
+				
+				
+			</gw>
+
+			<an>
+				<param
+						key					= "campfire"
+						filename 			= "assets/images/CampFire.png"
+						num_x_frame			= 5
+						num_y_frame			= 1 
+						animation_speed		= 0.1
+						position_x			= 30
+						position_y			= 14.75 
+						size_x				= 320
+						size_y				= 64
+						rotate				= 0 
+						color_r				= 1.0
+						color_g				= 1.0
+						color_b				= 1.0
+						current_x_frame		= 1 				
+						current_y_frame		= 1 				
+						alpha 				= true
+				/>
+			</an>
+			
+
+
+
+		<platform>
+			<param
+				key  	  = "platform"
+				xpos 	  = 200 
+				ypos 	  = 15
+				boxWidth  = 10
+				boxHeight = 2
+				rotation  = 0
+
+				/>
+			
+			<param
+				key  	  = "platform"
+				xpos 	  = 390 
+				ypos 	  = 35
+				boxWidth  = 10
+				boxHeight = 2
+				rotation  = 0
+
+				/>
+		</platform>
+
+		<edge>
+			<param
+				key = "topLeft_floor"
+				xo = -150 
+				yo = -20
+				xd = -100
+				yd = -20
+			/>
+			<param
+				key = "ramp"
+				xo = -100 
+				yo = -20
+				xd = -50
+				yd = 10
+			/>
+			
+
+			<param
+				key = "topRight_floor"
+				xo = 160 
+				yo = -20
+				xd = 210 
+				yd = -20
+			/>
+			<param
+				key = "ramp"
+				xo = 160 
+				yo = -20
+				xd = 110
+				yd = 10
+			/>
+			
+			<param
+				key = "bottomLeft_floor"
+				xo = -200 
+				yo = 40
+				xd = -150
+				yd = 40
+			/>
+			
+			<param
+				key = "ramp"
+				xo = -20 
+				yo = 20
+				xd = -150
+				yd = 40
+			/>
+			
+			<param
+				key = "bottomRight_floor"
+				xo = 210 
+				yo = 40
+				xd = 270
+				yd = 40
+			/>
+			
+			<param
+				key = "ramp"
+				xo = 80 
+				yo = 20
+				xd = 210
+				yd = 40
+			/>
+
+
+
+			<param
+				key = "Wall"
+				xo = -200 
+				yo = -20
+				xd = -200
+				yd = 40
+			/>
+			
+			<param
+				key = "Wall"
+				xo = 270 
+				yo = -20
+				xd = 270
+				yd = 40
+			/>
+
+		</edge>
+
+		<edgeO>
+			<param
+				key = "middle_floor"
+				xo = -150 
+				yo = 20
+				xd = 210
+				yd = 20
+			/>
+
+	<!--			
+			<param
+				key = "buildingfloor"
+				xo = 0 
+				yo = 5
+				xd = 60
+				yd = 5
+			/>
+			
+			<param
+				key = "buildingRamp"
+				xo = 0 
+				yo = 20
+				xd = 50
+				yd = 5
+			/>
+			
+			<param
+				key = "buildingfloor"
+				xo = 0 
+				yo = -10
+				xd = 60
+				yd = -10
+			/>
+			
+			<param
+				key = "buildingRamp"
+				xo = 5 
+				yo = -10
+				xd = 55
+				yd = 5
+			/>
+			
+			<param
+				key = "buildingfloor"
+				xo = 0 
+				yo = -25
+				xd = 60
+				yd = -25
+			/>
+			
+			<param
+				key = "buildingfloor"
+				xo = 0 
+				yo = -40
+				xd = 60
+				yd = -40
+			/>
+
+			-->
+			
+
+
+
+		</edgeO>
+	
+	</level_1>
+
+</Splash_State>

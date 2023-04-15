@@ -1,0 +1,184 @@
+\hypertarget{classTransformComponent}{}\section{Transform\+Component Class Reference}
+\label{classTransformComponent}\index{Transform\+Component@{Transform\+Component}}
+
+
+{\ttfamily \#include $<$Transform\+Component.\+h$>$}
+
+
+
+Inheritance diagram for Transform\+Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classTransformComponent__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Transform\+Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{classTransformComponent__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTransformComponent_af26bd158601191fcf60666a75a0bf5db}{Transform\+Component} (\hyperlink{classComponent}{Component} $\ast$parent\+\_\+)
+\item 
+\hyperlink{classTransformComponent_a6b5961168cb0bd9a044a106820f1c045}{Transform\+Component} (\hyperlink{classComponent}{Component} $\ast$parent\+\_\+, vec2 pos, float rot, vec2 scale=vec2(1.\+0f, 1.\+0f))
+\item 
+\hyperlink{classTransformComponent_a37d5d34a3695eafc8b8cbf37905e756f}{$\sim$\+Transform\+Component} ()
+\item 
+bool \hyperlink{classTransformComponent_aef9e192f10ac612d6b146136603b3293}{on\+Create} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classTransformComponent_aab0dd130a6c8d4d6f873f81e59e48ee0}{on\+Destroy} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classTransformComponent_a0cd568e49687464927c79ac7ab03f004}{update} (const float deltat)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classTransformComponent_a5447f13e20359c750f165332015af3ea}{draw} () const
+\item 
+vec2 \hyperlink{classTransformComponent_a51c2406d160260a2bfc8cec564bb3ef4}{get\+Position} ()
+\item 
+vec2 \hyperlink{classTransformComponent_a857d3ea2b53a21892c36cf5978ed962e}{get\+Scale} ()
+\item 
+float \hyperlink{classTransformComponent_a3811001fffdd78c71b4e7c836ef6e91c}{get\+Rotation} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classTransformComponent_a18884d130163e9dcea2af6081f14130a}{set\+Tranform} (vec2 pos, float rot, vec2 scale=vec2(1.\+0f, 1.\+0f))
+\item 
+mat4 \hyperlink{classTransformComponent_af714b51390307ef9730670da044e4c2b}{transform} (vec2 position, vec2 \hyperlink{imgui__impl__opengl3__loader_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}, float rotation, vec3 colour=vec3(1.\+0f))
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vec2 \hyperlink{classTransformComponent_ac8a1a8fcebbb7fa0fe3be2cf7533d0fd}{m\+\_\+position}
+\item 
+vec2 \hyperlink{classTransformComponent_a206ad4f98e73d416584d6431a36b3c77}{m\+\_\+scale}
+\item 
+float \hyperlink{classTransformComponent_ae34e99299bb74a9e8674eab1a898095f}{m\+\_\+rotation}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTransformComponent_af26bd158601191fcf60666a75a0bf5db}\label{classTransformComponent_af26bd158601191fcf60666a75a0bf5db}} 
+\index{Transform\+Component@{Transform\+Component}!Transform\+Component@{Transform\+Component}}
+\index{Transform\+Component@{Transform\+Component}!Transform\+Component@{Transform\+Component}}
+\subsubsection{\texorpdfstring{Transform\+Component()}{TransformComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Transform\+Component\+::\+Transform\+Component (\begin{DoxyParamCaption}\item[{\hyperlink{classComponent}{Component} $\ast$}]{parent\+\_\+ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTransformComponent_a6b5961168cb0bd9a044a106820f1c045}\label{classTransformComponent_a6b5961168cb0bd9a044a106820f1c045}} 
+\index{Transform\+Component@{Transform\+Component}!Transform\+Component@{Transform\+Component}}
+\index{Transform\+Component@{Transform\+Component}!Transform\+Component@{Transform\+Component}}
+\subsubsection{\texorpdfstring{Transform\+Component()}{TransformComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Transform\+Component\+::\+Transform\+Component (\begin{DoxyParamCaption}\item[{\hyperlink{classComponent}{Component} $\ast$}]{parent\+\_\+,  }\item[{vec2}]{pos,  }\item[{float}]{rot,  }\item[{vec2}]{scale = {\ttfamily vec2(1.0f,~1.0f)} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTransformComponent_a37d5d34a3695eafc8b8cbf37905e756f}\label{classTransformComponent_a37d5d34a3695eafc8b8cbf37905e756f}} 
+\index{Transform\+Component@{Transform\+Component}!````~Transform\+Component@{$\sim$\+Transform\+Component}}
+\index{````~Transform\+Component@{$\sim$\+Transform\+Component}!Transform\+Component@{Transform\+Component}}
+\subsubsection{\texorpdfstring{$\sim$\+Transform\+Component()}{~TransformComponent()}}
+{\footnotesize\ttfamily Transform\+Component\+::$\sim$\+Transform\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTransformComponent_a5447f13e20359c750f165332015af3ea}\label{classTransformComponent_a5447f13e20359c750f165332015af3ea}} 
+\index{Transform\+Component@{Transform\+Component}!draw@{draw}}
+\index{draw@{draw}!Transform\+Component@{Transform\+Component}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Transform\+Component\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classComponent_a8f45309003f02191f2bcc8864e8e9ecf}{Component}.
+
+\mbox{\Hypertarget{classTransformComponent_a51c2406d160260a2bfc8cec564bb3ef4}\label{classTransformComponent_a51c2406d160260a2bfc8cec564bb3ef4}} 
+\index{Transform\+Component@{Transform\+Component}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!Transform\+Component@{Transform\+Component}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily vec2 Transform\+Component\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTransformComponent_a3811001fffdd78c71b4e7c836ef6e91c}\label{classTransformComponent_a3811001fffdd78c71b4e7c836ef6e91c}} 
+\index{Transform\+Component@{Transform\+Component}!get\+Rotation@{get\+Rotation}}
+\index{get\+Rotation@{get\+Rotation}!Transform\+Component@{Transform\+Component}}
+\subsubsection{\texorpdfstring{get\+Rotation()}{getRotation()}}
+{\footnotesize\ttfamily float Transform\+Component\+::get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTransformComponent_a857d3ea2b53a21892c36cf5978ed962e}\label{classTransformComponent_a857d3ea2b53a21892c36cf5978ed962e}} 
+\index{Transform\+Component@{Transform\+Component}!get\+Scale@{get\+Scale}}
+\index{get\+Scale@{get\+Scale}!Transform\+Component@{Transform\+Component}}
+\subsubsection{\texorpdfstring{get\+Scale()}{getScale()}}
+{\footnotesize\ttfamily vec2 Transform\+Component\+::get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTransformComponent_aef9e192f10ac612d6b146136603b3293}\label{classTransformComponent_aef9e192f10ac612d6b146136603b3293}} 
+\index{Transform\+Component@{Transform\+Component}!on\+Create@{on\+Create}}
+\index{on\+Create@{on\+Create}!Transform\+Component@{Transform\+Component}}
+\subsubsection{\texorpdfstring{on\+Create()}{onCreate()}}
+{\footnotesize\ttfamily bool Transform\+Component\+::on\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classComponent_a3a1537a8b8bcdb2155afbb925c77b0a2}{Component}.
+
+\mbox{\Hypertarget{classTransformComponent_aab0dd130a6c8d4d6f873f81e59e48ee0}\label{classTransformComponent_aab0dd130a6c8d4d6f873f81e59e48ee0}} 
+\index{Transform\+Component@{Transform\+Component}!on\+Destroy@{on\+Destroy}}
+\index{on\+Destroy@{on\+Destroy}!Transform\+Component@{Transform\+Component}}
+\subsubsection{\texorpdfstring{on\+Destroy()}{onDestroy()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Transform\+Component\+::on\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classComponent_a2b198f27162a6caf63917e304295f892}{Component}.
+
+\mbox{\Hypertarget{classTransformComponent_a18884d130163e9dcea2af6081f14130a}\label{classTransformComponent_a18884d130163e9dcea2af6081f14130a}} 
+\index{Transform\+Component@{Transform\+Component}!set\+Tranform@{set\+Tranform}}
+\index{set\+Tranform@{set\+Tranform}!Transform\+Component@{Transform\+Component}}
+\subsubsection{\texorpdfstring{set\+Tranform()}{setTranform()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Transform\+Component\+::set\+Tranform (\begin{DoxyParamCaption}\item[{vec2}]{pos,  }\item[{float}]{rot,  }\item[{vec2}]{scale = {\ttfamily vec2(1.0f,~1.0f)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTransformComponent_af714b51390307ef9730670da044e4c2b}\label{classTransformComponent_af714b51390307ef9730670da044e4c2b}} 
+\index{Transform\+Component@{Transform\+Component}!transform@{transform}}
+\index{transform@{transform}!Transform\+Component@{Transform\+Component}}
+\subsubsection{\texorpdfstring{transform()}{transform()}}
+{\footnotesize\ttfamily mat4 Transform\+Component\+::transform (\begin{DoxyParamCaption}\item[{vec2}]{position,  }\item[{vec2}]{size,  }\item[{float}]{rotation,  }\item[{vec3}]{colour = {\ttfamily vec3(1.0f)} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTransformComponent_a0cd568e49687464927c79ac7ab03f004}\label{classTransformComponent_a0cd568e49687464927c79ac7ab03f004}} 
+\index{Transform\+Component@{Transform\+Component}!update@{update}}
+\index{update@{update}!Transform\+Component@{Transform\+Component}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Transform\+Component\+::update (\begin{DoxyParamCaption}\item[{const float}]{deltat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classComponent_a3448977e6f464df89e77dda7c6f52204}{Component}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classTransformComponent_ac8a1a8fcebbb7fa0fe3be2cf7533d0fd}\label{classTransformComponent_ac8a1a8fcebbb7fa0fe3be2cf7533d0fd}} 
+\index{Transform\+Component@{Transform\+Component}!m\+\_\+position@{m\+\_\+position}}
+\index{m\+\_\+position@{m\+\_\+position}!Transform\+Component@{Transform\+Component}}
+\subsubsection{\texorpdfstring{m\+\_\+position}{m\_position}}
+{\footnotesize\ttfamily vec2 Transform\+Component\+::m\+\_\+position\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTransformComponent_ae34e99299bb74a9e8674eab1a898095f}\label{classTransformComponent_ae34e99299bb74a9e8674eab1a898095f}} 
+\index{Transform\+Component@{Transform\+Component}!m\+\_\+rotation@{m\+\_\+rotation}}
+\index{m\+\_\+rotation@{m\+\_\+rotation}!Transform\+Component@{Transform\+Component}}
+\subsubsection{\texorpdfstring{m\+\_\+rotation}{m\_rotation}}
+{\footnotesize\ttfamily float Transform\+Component\+::m\+\_\+rotation\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTransformComponent_a206ad4f98e73d416584d6431a36b3c77}\label{classTransformComponent_a206ad4f98e73d416584d6431a36b3c77}} 
+\index{Transform\+Component@{Transform\+Component}!m\+\_\+scale@{m\+\_\+scale}}
+\index{m\+\_\+scale@{m\+\_\+scale}!Transform\+Component@{Transform\+Component}}
+\subsubsection{\texorpdfstring{m\+\_\+scale}{m\_scale}}
+{\footnotesize\ttfamily vec2 Transform\+Component\+::m\+\_\+scale\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/\+Components/\hyperlink{TransformComponent_8h}{Transform\+Component.\+h}\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/src/\+Components/\hyperlink{TransformComponent_8cpp}{Transform\+Component.\+cpp}\end{DoxyCompactItemize}

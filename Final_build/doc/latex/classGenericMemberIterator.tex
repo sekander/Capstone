@@ -1,0 +1,512 @@
+\hypertarget{classGenericMemberIterator}{}\section{Generic\+Member\+Iterator$<$ Const, Encoding, Allocator $>$ Class Template Reference}
+\label{classGenericMemberIterator}\index{Generic\+Member\+Iterator$<$ Const, Encoding, Allocator $>$@{Generic\+Member\+Iterator$<$ Const, Encoding, Allocator $>$}}
+
+
+(Constant) member iterator for a J\+S\+ON object value  
+
+
+
+
+{\ttfamily \#include $<$document.\+h$>$}
+
+
+
+Collaboration diagram for Generic\+Member\+Iterator$<$ Const, Encoding, Allocator $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classGenericMemberIterator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator} \hyperlink{classGenericMemberIterator_ad1cf1ecf6210b47906c9f179c893a8b8}{Iterator}
+\begin{DoxyCompactList}\small\item\em Iterator type itself. \end{DoxyCompactList}\item 
+typedef \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ true, Encoding, Allocator $>$ \hyperlink{classGenericMemberIterator_ae5be27a73dce0be58ee2776db896d591}{Const\+Iterator}
+\begin{DoxyCompactList}\small\item\em Constant iterator type. \end{DoxyCompactList}\item 
+typedef \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ false, Encoding, Allocator $>$ \hyperlink{classGenericMemberIterator_abc26eb06f2962765b11dcd06ce84ac02}{Non\+Const\+Iterator}
+\begin{DoxyCompactList}\small\item\em Non-\/constant iterator type. \end{DoxyCompactList}\item 
+typedef \hyperlink{classGenericMemberIterator_a7c3623bc81b06495fd3128398487e99e}{pointer} \hyperlink{classGenericMemberIterator_ac0bd6e77617593892fc13afb00e62f29}{Pointer}
+\begin{DoxyCompactList}\small\item\em Pointer to (const) \hyperlink{classGenericMember}{Generic\+Member}. \end{DoxyCompactList}\item 
+typedef \hyperlink{classGenericMemberIterator_a182876d698903331bd0b11db6d1beeca}{reference} \hyperlink{classGenericMemberIterator_a8042a85a9e233d65de5b6c66d9a1109a}{Reference}
+\begin{DoxyCompactList}\small\item\em Reference to (const) \hyperlink{classGenericMember}{Generic\+Member}. \end{DoxyCompactList}\item 
+typedef \hyperlink{classGenericMemberIterator_ae60bbcbaec51d36eef299996543872e6}{difference\+\_\+type} \hyperlink{classGenericMemberIterator_aaa13c83e6e0d1f5b413d62cacd8f6a2e}{Difference\+Type}
+\begin{DoxyCompactList}\small\item\em Signed integer type (e.\+g. {\ttfamily ptrdiff\+\_\+t}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ std\+:\+:iterator\+\_\+traits support}\par
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classGenericMemberIterator_a1323c9d064a9c388a1eb62a6e2c17584}{Value\+Type} \hyperlink{classGenericMemberIterator_a79326e02032d06d80e09ded797501553}{value\+\_\+type}
+\item 
+typedef \hyperlink{classGenericMemberIterator_a1323c9d064a9c388a1eb62a6e2c17584}{Value\+Type} $\ast$ \hyperlink{classGenericMemberIterator_a7c3623bc81b06495fd3128398487e99e}{pointer}
+\item 
+typedef \hyperlink{classGenericMemberIterator_a1323c9d064a9c388a1eb62a6e2c17584}{Value\+Type} \& \hyperlink{classGenericMemberIterator_a182876d698903331bd0b11db6d1beeca}{reference}
+\item 
+typedef std\+::ptrdiff\+\_\+t \hyperlink{classGenericMemberIterator_ae60bbcbaec51d36eef299996543872e6}{difference\+\_\+type}
+\item 
+typedef std\+::random\+\_\+access\+\_\+iterator\+\_\+tag \hyperlink{classGenericMemberIterator_a36cd90aef13c0cce916929f63fdb5c86}{iterator\+\_\+category}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGenericMemberIterator_a2708717d497a0aadacdf75900de4c5b4}{Generic\+Member\+Iterator} ()
+\begin{DoxyCompactList}\small\item\em Default constructor (singular value) \end{DoxyCompactList}\item 
+\hyperlink{classGenericMemberIterator_a2697fd327a90654b0bf91c988e43f95e}{Generic\+Member\+Iterator} (const \hyperlink{classGenericMemberIterator_abc26eb06f2962765b11dcd06ce84ac02}{Non\+Const\+Iterator} \&it)
+\begin{DoxyCompactList}\small\item\em Iterator conversions to more const. \end{DoxyCompactList}\item 
+\hyperlink{classGenericMemberIterator_ad1cf1ecf6210b47906c9f179c893a8b8}{Iterator} \& \hyperlink{classGenericMemberIterator_a4ebb2b80e7d70c11802520ae77958df3}{operator=} (const \hyperlink{classGenericMemberIterator_abc26eb06f2962765b11dcd06ce84ac02}{Non\+Const\+Iterator} \&it)
+\item 
+\hyperlink{classGenericMemberIterator_aaa13c83e6e0d1f5b413d62cacd8f6a2e}{Difference\+Type} \hyperlink{classGenericMemberIterator_ae119ae8ed78dbd980f83d367f59a3c94}{operator-\/} (\hyperlink{classGenericMemberIterator_ae5be27a73dce0be58ee2776db896d591}{Const\+Iterator} that) const
+\begin{DoxyCompactList}\small\item\em Distance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ stepping}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGenericMemberIterator_ad1cf1ecf6210b47906c9f179c893a8b8}{Iterator} \& \hyperlink{classGenericMemberIterator_afd6c9a104e2285d1d0b50bde53c9109e}{operator++} ()
+\item 
+\hyperlink{classGenericMemberIterator_ad1cf1ecf6210b47906c9f179c893a8b8}{Iterator} \& \hyperlink{classGenericMemberIterator_a6db8972f02d74b663b6ef90ee3ff34f6}{operator-\/-\/} ()
+\item 
+\hyperlink{classGenericMemberIterator_ad1cf1ecf6210b47906c9f179c893a8b8}{Iterator} \hyperlink{classGenericMemberIterator_a83c8be6d960213ce32d68a880a8d9089}{operator++} (int)
+\item 
+\hyperlink{classGenericMemberIterator_ad1cf1ecf6210b47906c9f179c893a8b8}{Iterator} \hyperlink{classGenericMemberIterator_a4606c8baec5ea2b5139a503f7caa5444}{operator-\/-\/} (int)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ increment/decrement}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGenericMemberIterator_ad1cf1ecf6210b47906c9f179c893a8b8}{Iterator} \hyperlink{classGenericMemberIterator_a472098839cec785b43a005a23d7a284b}{operator+} (\hyperlink{classGenericMemberIterator_aaa13c83e6e0d1f5b413d62cacd8f6a2e}{Difference\+Type} n) const
+\item 
+\hyperlink{classGenericMemberIterator_ad1cf1ecf6210b47906c9f179c893a8b8}{Iterator} \hyperlink{classGenericMemberIterator_a343099509473934b40b9a4264c472721}{operator-\/} (\hyperlink{classGenericMemberIterator_aaa13c83e6e0d1f5b413d62cacd8f6a2e}{Difference\+Type} n) const
+\item 
+\hyperlink{classGenericMemberIterator_ad1cf1ecf6210b47906c9f179c893a8b8}{Iterator} \& \hyperlink{classGenericMemberIterator_a1fc75f09d68b0f5d92f18ae8c4133e6a}{operator+=} (\hyperlink{classGenericMemberIterator_aaa13c83e6e0d1f5b413d62cacd8f6a2e}{Difference\+Type} n)
+\item 
+\hyperlink{classGenericMemberIterator_ad1cf1ecf6210b47906c9f179c893a8b8}{Iterator} \& \hyperlink{classGenericMemberIterator_a7cd0c5f194007ec24fa9fa5c13e2502a}{operator-\/=} (\hyperlink{classGenericMemberIterator_aaa13c83e6e0d1f5b413d62cacd8f6a2e}{Difference\+Type} n)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ relations}\par
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$bool Const\+\_\+$>$ }\\bool \hyperlink{classGenericMemberIterator_a79ec0aac9cd098fddd656b3ce55d0c0a}{operator==} (const \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const\+\_\+, Encoding, Allocator $>$ \&that) const
+\item 
+{\footnotesize template$<$bool Const\+\_\+$>$ }\\bool \hyperlink{classGenericMemberIterator_ad1d518be7ace72462fc77cd4c6f250e2}{operator!=} (const \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const\+\_\+, Encoding, Allocator $>$ \&that) const
+\item 
+{\footnotesize template$<$bool Const\+\_\+$>$ }\\bool \hyperlink{classGenericMemberIterator_a1d6b406f68ff02515fdc3e0385057a12}{operator$<$=} (const \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const\+\_\+, Encoding, Allocator $>$ \&that) const
+\item 
+{\footnotesize template$<$bool Const\+\_\+$>$ }\\bool \hyperlink{classGenericMemberIterator_ab6d9e8fce04a598f10453b3f722c78ac}{operator$>$=} (const \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const\+\_\+, Encoding, Allocator $>$ \&that) const
+\item 
+{\footnotesize template$<$bool Const\+\_\+$>$ }\\bool \hyperlink{classGenericMemberIterator_aaadf9036c5d4563cf00019ba840dd09a}{operator$<$} (const \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const\+\_\+, Encoding, Allocator $>$ \&that) const
+\item 
+{\footnotesize template$<$bool Const\+\_\+$>$ }\\bool \hyperlink{classGenericMemberIterator_a1b2faefeb0d9bbc04bd02d69d25828f5}{operator$>$} (const \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const\+\_\+, Encoding, Allocator $>$ \&that) const
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ dereference}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGenericMemberIterator_a8042a85a9e233d65de5b6c66d9a1109a}{Reference} \hyperlink{classGenericMemberIterator_a56ad403f7e7a35d6060931685d6cbbe8}{operator$\ast$} () const
+\item 
+\hyperlink{classGenericMemberIterator_ac0bd6e77617593892fc13afb00e62f29}{Pointer} \hyperlink{classGenericMemberIterator_abc95a8e52653a8baa2927b03239f4be9}{operator-\/$>$} () const
+\item 
+\hyperlink{classGenericMemberIterator_a8042a85a9e233d65de5b6c66d9a1109a}{Reference} \hyperlink{classGenericMemberIterator_a41b59f1bd367a98ee5d1138cc81e98a7}{operator\mbox{[}$\,$\mbox{]}} (\hyperlink{classGenericMemberIterator_aaa13c83e6e0d1f5b413d62cacd8f6a2e}{Difference\+Type} n) const
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classGenericMember}{Generic\+Member}$<$ Encoding, Allocator $>$ \hyperlink{classGenericMemberIterator_ac0d50d12ba074e68837964244668c66b}{Plain\+Type}
+\item 
+typedef internal\+::\+Maybe\+Add\+Const$<$ Const, \hyperlink{classGenericMemberIterator_ac0d50d12ba074e68837964244668c66b}{Plain\+Type} $>$\+::\hyperlink{rapidjson_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type} \hyperlink{classGenericMemberIterator_a1323c9d064a9c388a1eb62a6e2c17584}{Value\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGenericMemberIterator_a76c372cd90c8abff942ab054c4992c74}{Generic\+Member\+Iterator} (\hyperlink{classGenericMemberIterator_ac0bd6e77617593892fc13afb00e62f29}{Pointer} p)
+\begin{DoxyCompactList}\small\item\em Internal constructor from plain pointer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGenericMemberIterator_ac0bd6e77617593892fc13afb00e62f29}{Pointer} \hyperlink{classGenericMemberIterator_a86d045bb193c966d92655a73fe813548}{ptr\+\_\+}
+\begin{DoxyCompactList}\small\item\em raw pointer \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classGenericMemberIterator_a82bdd5798f1a5ac0e3e7ba4bd6938cfc}{Generic\+Value$<$ Encoding, Allocator $>$}
+\item 
+{\footnotesize template$<$bool , typename , typename $>$ }\\class \hyperlink{classGenericMemberIterator_aa375aeb1ffac85cddc3a72a6c24ec6e1}{Generic\+Member\+Iterator}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$bool Const, typename Encoding, typename Allocator$>$\newline
+class Generic\+Member\+Iterator$<$ Const, Encoding, Allocator $>$}
+
+(Constant) member iterator for a J\+S\+ON object value 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Const} & Is this a constant iterator? \\
+\hline
+{\em Encoding} & Encoding of the value. (Even non-\/string values need to have the same encoding in a document) \\
+\hline
+{\em Allocator} & Allocator type for allocating memory of object, array and string.\\
+\hline
+\end{DoxyTemplParams}
+This class implements a Random Access Iterator for \hyperlink{classGenericMember}{Generic\+Member} elements of a \hyperlink{classGenericValue}{Generic\+Value}, see I\+S\+O/\+I\+EC 14882\+:2003(E) C++ standard, 24.\+1 \mbox{[}lib.\+iterator.\+requirements\mbox{]}.
+
+\begin{DoxyNote}{Note}
+This iterator implementation is mainly intended to avoid implicit conversions from iterator values to {\ttfamily N\+U\+LL}, e.\+g. from Generic\+Value\+::\+Find\+Member.
+
+Define {\ttfamily R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+O\+M\+E\+M\+B\+E\+R\+I\+T\+E\+R\+A\+T\+O\+R\+C\+L\+A\+SS} to fall back to a pointer-\/based implementation, if your platform doesn\textquotesingle{}t provide the C++ $<$iterator$>$ header.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classGenericMember}{Generic\+Member}, \hyperlink{classGenericValue_a349b8faae61edc42b4289726820be439}{Generic\+Value\+::\+Member\+Iterator}, \hyperlink{classGenericValue_aac08c3e660a9036d3dcb8b10ff6c61f4}{Generic\+Value\+::\+Const\+Member\+Iterator} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classGenericMemberIterator_ae5be27a73dce0be58ee2776db896d591}\label{classGenericMemberIterator_ae5be27a73dce0be58ee2776db896d591}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!Const\+Iterator@{Const\+Iterator}}
+\index{Const\+Iterator@{Const\+Iterator}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{Const\+Iterator}{ConstIterator}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+typedef \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$true,Encoding,Allocator$>$ \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::\hyperlink{classGenericMemberIterator_ae5be27a73dce0be58ee2776db896d591}{Const\+Iterator}}
+
+
+
+Constant iterator type. 
+
+\mbox{\Hypertarget{classGenericMemberIterator_ae60bbcbaec51d36eef299996543872e6}\label{classGenericMemberIterator_ae60bbcbaec51d36eef299996543872e6}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!difference\+\_\+type@{difference\+\_\+type}}
+\index{difference\+\_\+type@{difference\+\_\+type}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{difference\+\_\+type}{difference\_type}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+typedef std\+::ptrdiff\+\_\+t \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::\hyperlink{classGenericMemberIterator_ae60bbcbaec51d36eef299996543872e6}{difference\+\_\+type}}
+
+\mbox{\Hypertarget{classGenericMemberIterator_aaa13c83e6e0d1f5b413d62cacd8f6a2e}\label{classGenericMemberIterator_aaa13c83e6e0d1f5b413d62cacd8f6a2e}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!Difference\+Type@{Difference\+Type}}
+\index{Difference\+Type@{Difference\+Type}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{Difference\+Type}{DifferenceType}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+typedef \hyperlink{classGenericMemberIterator_ae60bbcbaec51d36eef299996543872e6}{difference\+\_\+type} \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::\hyperlink{classGenericMemberIterator_aaa13c83e6e0d1f5b413d62cacd8f6a2e}{Difference\+Type}}
+
+
+
+Signed integer type (e.\+g. {\ttfamily ptrdiff\+\_\+t}) 
+
+\mbox{\Hypertarget{classGenericMemberIterator_ad1cf1ecf6210b47906c9f179c893a8b8}\label{classGenericMemberIterator_ad1cf1ecf6210b47906c9f179c893a8b8}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{Iterator}{Iterator}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+typedef \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator} \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::\hyperlink{classGenericMemberIterator_ad1cf1ecf6210b47906c9f179c893a8b8}{Iterator}}
+
+
+
+Iterator type itself. 
+
+\mbox{\Hypertarget{classGenericMemberIterator_a36cd90aef13c0cce916929f63fdb5c86}\label{classGenericMemberIterator_a36cd90aef13c0cce916929f63fdb5c86}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!iterator\+\_\+category@{iterator\+\_\+category}}
+\index{iterator\+\_\+category@{iterator\+\_\+category}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{iterator\+\_\+category}{iterator\_category}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+typedef std\+::random\+\_\+access\+\_\+iterator\+\_\+tag \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::\hyperlink{classGenericMemberIterator_a36cd90aef13c0cce916929f63fdb5c86}{iterator\+\_\+category}}
+
+\mbox{\Hypertarget{classGenericMemberIterator_abc26eb06f2962765b11dcd06ce84ac02}\label{classGenericMemberIterator_abc26eb06f2962765b11dcd06ce84ac02}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!Non\+Const\+Iterator@{Non\+Const\+Iterator}}
+\index{Non\+Const\+Iterator@{Non\+Const\+Iterator}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{Non\+Const\+Iterator}{NonConstIterator}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+typedef \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$false,Encoding,Allocator$>$ \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::\hyperlink{classGenericMemberIterator_abc26eb06f2962765b11dcd06ce84ac02}{Non\+Const\+Iterator}}
+
+
+
+Non-\/constant iterator type. 
+
+\mbox{\Hypertarget{classGenericMemberIterator_ac0d50d12ba074e68837964244668c66b}\label{classGenericMemberIterator_ac0d50d12ba074e68837964244668c66b}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!Plain\+Type@{Plain\+Type}}
+\index{Plain\+Type@{Plain\+Type}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{Plain\+Type}{PlainType}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+typedef \hyperlink{classGenericMember}{Generic\+Member}$<$Encoding,Allocator$>$ \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::\hyperlink{classGenericMemberIterator_ac0d50d12ba074e68837964244668c66b}{Plain\+Type}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericMemberIterator_a7c3623bc81b06495fd3128398487e99e}\label{classGenericMemberIterator_a7c3623bc81b06495fd3128398487e99e}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!pointer@{pointer}}
+\index{pointer@{pointer}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+typedef \hyperlink{classGenericMemberIterator_a1323c9d064a9c388a1eb62a6e2c17584}{Value\+Type}$\ast$ \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::\hyperlink{classGenericMemberIterator_a7c3623bc81b06495fd3128398487e99e}{pointer}}
+
+\mbox{\Hypertarget{classGenericMemberIterator_ac0bd6e77617593892fc13afb00e62f29}\label{classGenericMemberIterator_ac0bd6e77617593892fc13afb00e62f29}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!Pointer@{Pointer}}
+\index{Pointer@{Pointer}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{Pointer}{Pointer}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+typedef \hyperlink{classGenericMemberIterator_a7c3623bc81b06495fd3128398487e99e}{pointer} \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::\hyperlink{classGenericMemberIterator_ac0bd6e77617593892fc13afb00e62f29}{Pointer}}
+
+
+
+Pointer to (const) \hyperlink{classGenericMember}{Generic\+Member}. 
+
+\mbox{\Hypertarget{classGenericMemberIterator_a182876d698903331bd0b11db6d1beeca}\label{classGenericMemberIterator_a182876d698903331bd0b11db6d1beeca}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!reference@{reference}}
+\index{reference@{reference}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{reference}{reference}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+typedef \hyperlink{classGenericMemberIterator_a1323c9d064a9c388a1eb62a6e2c17584}{Value\+Type}\& \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::\hyperlink{classGenericMemberIterator_a182876d698903331bd0b11db6d1beeca}{reference}}
+
+\mbox{\Hypertarget{classGenericMemberIterator_a8042a85a9e233d65de5b6c66d9a1109a}\label{classGenericMemberIterator_a8042a85a9e233d65de5b6c66d9a1109a}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!Reference@{Reference}}
+\index{Reference@{Reference}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{Reference}{Reference}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+typedef \hyperlink{classGenericMemberIterator_a182876d698903331bd0b11db6d1beeca}{reference} \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::\hyperlink{classGenericMemberIterator_a8042a85a9e233d65de5b6c66d9a1109a}{Reference}}
+
+
+
+Reference to (const) \hyperlink{classGenericMember}{Generic\+Member}. 
+
+\mbox{\Hypertarget{classGenericMemberIterator_a79326e02032d06d80e09ded797501553}\label{classGenericMemberIterator_a79326e02032d06d80e09ded797501553}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+typedef \hyperlink{classGenericMemberIterator_a1323c9d064a9c388a1eb62a6e2c17584}{Value\+Type} \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::\hyperlink{classGenericMemberIterator_a79326e02032d06d80e09ded797501553}{value\+\_\+type}}
+
+\mbox{\Hypertarget{classGenericMemberIterator_a1323c9d064a9c388a1eb62a6e2c17584}\label{classGenericMemberIterator_a1323c9d064a9c388a1eb62a6e2c17584}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!Value\+Type@{Value\+Type}}
+\index{Value\+Type@{Value\+Type}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{Value\+Type}{ValueType}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+typedef internal\+::\+Maybe\+Add\+Const$<$Const,\hyperlink{classGenericMemberIterator_ac0d50d12ba074e68837964244668c66b}{Plain\+Type}$>$\+::\hyperlink{rapidjson_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type} \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::\hyperlink{classGenericMemberIterator_a1323c9d064a9c388a1eb62a6e2c17584}{Value\+Type}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGenericMemberIterator_a2708717d497a0aadacdf75900de4c5b4}\label{classGenericMemberIterator_a2708717d497a0aadacdf75900de4c5b4}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{Generic\+Member\+Iterator()}{GenericMemberIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+\hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::\hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor (singular value) 
+
+Creates an iterator pointing to no element. \begin{DoxyNote}{Note}
+All operations, except for comparisons, are undefined on such values. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classGenericMemberIterator_a2697fd327a90654b0bf91c988e43f95e}\label{classGenericMemberIterator_a2697fd327a90654b0bf91c988e43f95e}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{Generic\+Member\+Iterator()}{GenericMemberIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+\hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::\hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator} (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericMemberIterator_abc26eb06f2962765b11dcd06ce84ac02}{Non\+Const\+Iterator} \&}]{it }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Iterator conversions to more const. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em it} & (Non-\/const) iterator to copy from\\
+\hline
+\end{DoxyParams}
+Allows the creation of an iterator from another \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator} that is \char`\"{}less const\char`\"{}. Especially, creating a non-\/constant iterator from a constant iterator are disabled\+: \begin{DoxyItemize}
+\item const -\/$>$ non-\/const (not ok) \item const -\/$>$ const (ok) \item non-\/const -\/$>$ const (ok) \item non-\/const -\/$>$ non-\/const (ok)\end{DoxyItemize}
+\begin{DoxyNote}{Note}
+If the {\ttfamily Const} template parameter is already {\ttfamily false}, this constructor effectively defines a regular copy-\/constructor. Otherwise, the copy constructor is implicitly defined. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classGenericMemberIterator_a76c372cd90c8abff942ab054c4992c74}\label{classGenericMemberIterator_a76c372cd90c8abff942ab054c4992c74}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{Generic\+Member\+Iterator()}{GenericMemberIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+\hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::\hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator} (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericMemberIterator_ac0bd6e77617593892fc13afb00e62f29}{Pointer}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}, {\ttfamily [private]}}
+
+
+
+Internal constructor from plain pointer. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGenericMemberIterator_ad1d518be7ace72462fc77cd4c6f250e2}\label{classGenericMemberIterator_ad1d518be7ace72462fc77cd4c6f250e2}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+template$<$bool Const\+\_\+$>$ \\
+bool \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const\+\_\+, Encoding, Allocator $>$ \&}]{that }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericMemberIterator_a56ad403f7e7a35d6060931685d6cbbe8}\label{classGenericMemberIterator_a56ad403f7e7a35d6060931685d6cbbe8}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+\hyperlink{classGenericMemberIterator_a8042a85a9e233d65de5b6c66d9a1109a}{Reference} \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericMemberIterator_a472098839cec785b43a005a23d7a284b}\label{classGenericMemberIterator_a472098839cec785b43a005a23d7a284b}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!operator+@{operator+}}
+\index{operator+@{operator+}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+\hyperlink{classGenericMemberIterator_ad1cf1ecf6210b47906c9f179c893a8b8}{Iterator} \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::operator+ (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericMemberIterator_aaa13c83e6e0d1f5b413d62cacd8f6a2e}{Difference\+Type}}]{n }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericMemberIterator_afd6c9a104e2285d1d0b50bde53c9109e}\label{classGenericMemberIterator_afd6c9a104e2285d1d0b50bde53c9109e}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+\hyperlink{classGenericMemberIterator_ad1cf1ecf6210b47906c9f179c893a8b8}{Iterator}\& \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericMemberIterator_a83c8be6d960213ce32d68a880a8d9089}\label{classGenericMemberIterator_a83c8be6d960213ce32d68a880a8d9089}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+\hyperlink{classGenericMemberIterator_ad1cf1ecf6210b47906c9f179c893a8b8}{Iterator} \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::operator++ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericMemberIterator_a1fc75f09d68b0f5d92f18ae8c4133e6a}\label{classGenericMemberIterator_a1fc75f09d68b0f5d92f18ae8c4133e6a}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+\hyperlink{classGenericMemberIterator_ad1cf1ecf6210b47906c9f179c893a8b8}{Iterator}\& \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::operator+= (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericMemberIterator_aaa13c83e6e0d1f5b413d62cacd8f6a2e}{Difference\+Type}}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericMemberIterator_a343099509473934b40b9a4264c472721}\label{classGenericMemberIterator_a343099509473934b40b9a4264c472721}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+\hyperlink{classGenericMemberIterator_ad1cf1ecf6210b47906c9f179c893a8b8}{Iterator} \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericMemberIterator_aaa13c83e6e0d1f5b413d62cacd8f6a2e}{Difference\+Type}}]{n }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericMemberIterator_ae119ae8ed78dbd980f83d367f59a3c94}\label{classGenericMemberIterator_ae119ae8ed78dbd980f83d367f59a3c94}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+\hyperlink{classGenericMemberIterator_aaa13c83e6e0d1f5b413d62cacd8f6a2e}{Difference\+Type} \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericMemberIterator_ae5be27a73dce0be58ee2776db896d591}{Const\+Iterator}}]{that }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Distance. 
+
+\mbox{\Hypertarget{classGenericMemberIterator_a6db8972f02d74b663b6ef90ee3ff34f6}\label{classGenericMemberIterator_a6db8972f02d74b663b6ef90ee3ff34f6}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+\hyperlink{classGenericMemberIterator_ad1cf1ecf6210b47906c9f179c893a8b8}{Iterator}\& \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::operator-\/-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericMemberIterator_a4606c8baec5ea2b5139a503f7caa5444}\label{classGenericMemberIterator_a4606c8baec5ea2b5139a503f7caa5444}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+\hyperlink{classGenericMemberIterator_ad1cf1ecf6210b47906c9f179c893a8b8}{Iterator} \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::operator-\/-\/ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericMemberIterator_a7cd0c5f194007ec24fa9fa5c13e2502a}\label{classGenericMemberIterator_a7cd0c5f194007ec24fa9fa5c13e2502a}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+\hyperlink{classGenericMemberIterator_ad1cf1ecf6210b47906c9f179c893a8b8}{Iterator}\& \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::operator-\/= (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericMemberIterator_aaa13c83e6e0d1f5b413d62cacd8f6a2e}{Difference\+Type}}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericMemberIterator_abc95a8e52653a8baa2927b03239f4be9}\label{classGenericMemberIterator_abc95a8e52653a8baa2927b03239f4be9}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{operator-\/$>$()}{operator->()}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+\hyperlink{classGenericMemberIterator_ac0bd6e77617593892fc13afb00e62f29}{Pointer} \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::operator-\/$>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericMemberIterator_aaadf9036c5d4563cf00019ba840dd09a}\label{classGenericMemberIterator_aaadf9036c5d4563cf00019ba840dd09a}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+template$<$bool Const\+\_\+$>$ \\
+bool \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const\+\_\+, Encoding, Allocator $>$ \&}]{that }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericMemberIterator_a1d6b406f68ff02515fdc3e0385057a12}\label{classGenericMemberIterator_a1d6b406f68ff02515fdc3e0385057a12}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+template$<$bool Const\+\_\+$>$ \\
+bool \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const\+\_\+, Encoding, Allocator $>$ \&}]{that }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericMemberIterator_a4ebb2b80e7d70c11802520ae77958df3}\label{classGenericMemberIterator_a4ebb2b80e7d70c11802520ae77958df3}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!operator=@{operator=}}
+\index{operator=@{operator=}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+\hyperlink{classGenericMemberIterator_ad1cf1ecf6210b47906c9f179c893a8b8}{Iterator}\& \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericMemberIterator_abc26eb06f2962765b11dcd06ce84ac02}{Non\+Const\+Iterator} \&}]{it }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericMemberIterator_a79ec0aac9cd098fddd656b3ce55d0c0a}\label{classGenericMemberIterator_a79ec0aac9cd098fddd656b3ce55d0c0a}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!operator==@{operator==}}
+\index{operator==@{operator==}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+template$<$bool Const\+\_\+$>$ \\
+bool \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const\+\_\+, Encoding, Allocator $>$ \&}]{that }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericMemberIterator_a1b2faefeb0d9bbc04bd02d69d25828f5}\label{classGenericMemberIterator_a1b2faefeb0d9bbc04bd02d69d25828f5}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+template$<$bool Const\+\_\+$>$ \\
+bool \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const\+\_\+, Encoding, Allocator $>$ \&}]{that }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericMemberIterator_ab6d9e8fce04a598f10453b3f722c78ac}\label{classGenericMemberIterator_ab6d9e8fce04a598f10453b3f722c78ac}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+template$<$bool Const\+\_\+$>$ \\
+bool \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const\+\_\+, Encoding, Allocator $>$ \&}]{that }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericMemberIterator_a41b59f1bd367a98ee5d1138cc81e98a7}\label{classGenericMemberIterator_a41b59f1bd367a98ee5d1138cc81e98a7}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+\hyperlink{classGenericMemberIterator_a8042a85a9e233d65de5b6c66d9a1109a}{Reference} \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericMemberIterator_aaa13c83e6e0d1f5b413d62cacd8f6a2e}{Difference\+Type}}]{n }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classGenericMemberIterator_aa375aeb1ffac85cddc3a72a6c24ec6e1}\label{classGenericMemberIterator_aa375aeb1ffac85cddc3a72a6c24ec6e1}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{Generic\+Member\+Iterator}{GenericMemberIterator}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+template$<$bool , typename , typename $>$ \\
+friend class \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classGenericMemberIterator_a82bdd5798f1a5ac0e3e7ba4bd6938cfc}\label{classGenericMemberIterator_a82bdd5798f1a5ac0e3e7ba4bd6938cfc}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!Generic\+Value$<$ Encoding, Allocator $>$@{Generic\+Value$<$ Encoding, Allocator $>$}}
+\index{Generic\+Value$<$ Encoding, Allocator $>$@{Generic\+Value$<$ Encoding, Allocator $>$}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{Generic\+Value$<$ Encoding, Allocator $>$}{GenericValue< Encoding, Allocator >}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+friend class \hyperlink{classGenericValue}{Generic\+Value}$<$ Encoding, Allocator $>$\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classGenericMemberIterator_a86d045bb193c966d92655a73fe813548}\label{classGenericMemberIterator_a86d045bb193c966d92655a73fe813548}} 
+\index{Generic\+Member\+Iterator@{Generic\+Member\+Iterator}!ptr\+\_\+@{ptr\+\_\+}}
+\index{ptr\+\_\+@{ptr\+\_\+}!Generic\+Member\+Iterator@{Generic\+Member\+Iterator}}
+\subsubsection{\texorpdfstring{ptr\+\_\+}{ptr\_}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding, typename Allocator$>$ \\
+\hyperlink{classGenericMemberIterator_ac0bd6e77617593892fc13afb00e62f29}{Pointer} \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, Encoding, Allocator $>$\+::ptr\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+raw pointer 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/rapidjson/\hyperlink{document_8h}{document.\+h}\end{DoxyCompactItemize}

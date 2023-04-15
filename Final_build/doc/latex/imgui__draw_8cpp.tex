@@ -1,0 +1,360 @@
+\hypertarget{imgui__draw_8cpp}{}\section{/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/src/\+I\+M\+G\+U\+I/imgui\+\_\+draw.cpp File Reference}
+\label{imgui__draw_8cpp}\index{/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/src/\+I\+M\+G\+U\+I/imgui\+\_\+draw.\+cpp@{/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/src/\+I\+M\+G\+U\+I/imgui\+\_\+draw.\+cpp}}
+{\ttfamily \#include \char`\"{}../../include/\+I\+M\+G\+U\+I/imgui.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+I\+M\+G\+U\+I/imgui\+\_\+internal.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../../include/\+I\+M\+G\+U\+I/imstb\+\_\+rectpack.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+I\+M\+G\+U\+I/imstb\+\_\+truetype.\+h\char`\"{}}\newline
+Include dependency graph for imgui\+\_\+draw.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{imgui__draw_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structImFontBuildSrcData}{Im\+Font\+Build\+Src\+Data}
+\item 
+struct \hyperlink{structImFontBuildDstData}{Im\+Font\+Build\+Dst\+Data}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{imgui__draw_8cpp_adf4d73301961430d50d7edd96f92ce38}{I\+M\+G\+U\+I\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+M\+A\+T\+H\+\_\+\+O\+P\+E\+R\+A\+T\+O\+RS}
+\item 
+\#define \hyperlink{imgui__draw_8cpp_aebe589aefd15ba7289a47168e31b5e45}{S\+T\+B\+R\+P\+\_\+\+S\+T\+A\+T\+IC}
+\item 
+\#define \hyperlink{imgui__draw_8cpp_a9592e63d0df8b6f0712e8da3aea5db23}{S\+T\+B\+R\+P\+\_\+\+A\+S\+S\+E\+RT}(x)~do \{ \hyperlink{imgui_8h_acb09e7dc42e8e3cefb0ecaa197978920}{I\+M\+\_\+\+A\+S\+S\+E\+RT}(x); \} while (0)
+\item 
+\#define \hyperlink{imgui__draw_8cpp_a152aa757fb023d39f16dd537e66b60f0}{S\+T\+B\+R\+P\+\_\+\+S\+O\+RT}~Im\+Qsort
+\item 
+\#define \hyperlink{imgui__draw_8cpp_a0791e69f0dcd58efa795dd50eb8c6cd0}{S\+T\+B\+\_\+\+R\+E\+C\+T\+\_\+\+P\+A\+C\+K\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}
+\item 
+\#define \hyperlink{imgui__draw_8cpp_a8f6734fe0cb6d6aa09e494602afa96be}{S\+T\+B\+T\+T\+\_\+malloc}(x,  u)~((\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void})(u), \hyperlink{imgui_8h_a40113fb128e7035c8d4aaeeed565e7aa}{I\+M\+\_\+\+A\+L\+L\+OC}(x))
+\item 
+\#define \hyperlink{imgui__draw_8cpp_a357d3564409e68f1b694e06f7beeca7e}{S\+T\+B\+T\+T\+\_\+free}(x,  u)~((\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void})(u), \hyperlink{imgui_8h_ac24040f4c2d54ba3216c829703498ebb}{I\+M\+\_\+\+F\+R\+EE}(x))
+\item 
+\#define \hyperlink{imgui__draw_8cpp_a1123d905f512c19c8d796a6d294a3a84}{S\+T\+B\+T\+T\+\_\+assert}(x)~do \{ \hyperlink{imgui_8h_acb09e7dc42e8e3cefb0ecaa197978920}{I\+M\+\_\+\+A\+S\+S\+E\+RT}(x); \} while(0)
+\item 
+\#define \hyperlink{imgui__draw_8cpp_ab937f3c3c6d0c2c126c50bb32e379f02}{S\+T\+B\+T\+T\+\_\+fmod}(x,  \hyperlink{imgui__impl__opengl3__loader_8h_a5e247fc24ceb70d83f6ad59149b8910a}{y})~\hyperlink{imgui__internal_8h_ab31c49c24dd5d51dd629a56b5d11a85e}{Im\+Fmod}(x,\hyperlink{imgui__impl__opengl3__loader_8h_a5e247fc24ceb70d83f6ad59149b8910a}{y})
+\item 
+\#define \hyperlink{imgui__draw_8cpp_ace1fcbebd394a5bed76bc9b97dbe8d5a}{S\+T\+B\+T\+T\+\_\+sqrt}(x)~\hyperlink{imgui__internal_8h_af45b12e2af4037adec57b0a9488b45c2}{Im\+Sqrt}(x)
+\item 
+\#define \hyperlink{imgui__draw_8cpp_a20c159e8e6985b92a96497881709659a}{S\+T\+B\+T\+T\+\_\+pow}(x,  \hyperlink{imgui__impl__opengl3__loader_8h_a5e247fc24ceb70d83f6ad59149b8910a}{y})~Im\+Pow(x,\hyperlink{imgui__impl__opengl3__loader_8h_a5e247fc24ceb70d83f6ad59149b8910a}{y})
+\item 
+\#define \hyperlink{imgui__draw_8cpp_a2b639a5c1ed39bb9e223a78b743f3769}{S\+T\+B\+T\+T\+\_\+fabs}(x)~\hyperlink{imgui__internal_8h_aa886f20aead1a15ce961ac6fa361b044}{Im\+Fabs}(x)
+\item 
+\#define \hyperlink{imgui__draw_8cpp_a37ec4d14918346d3451d4f44f24d4710}{S\+T\+B\+T\+T\+\_\+ifloor}(x)~((int)Im\+Floor\+Signed(x))
+\item 
+\#define \hyperlink{imgui__draw_8cpp_a284a26aeebf87bc1688d38b3b16c7248}{S\+T\+B\+T\+T\+\_\+iceil}(x)~((int)\hyperlink{imgui__internal_8h_a09170e101a72d70544ae6edfe495ee8f}{Im\+Ceil}(x))
+\item 
+\#define \hyperlink{imgui__draw_8cpp_adb252cc9576591994fdf2f89baddc630}{S\+T\+B\+T\+T\+\_\+\+S\+T\+A\+T\+IC}
+\item 
+\#define \hyperlink{imgui__draw_8cpp_afaa2f2d0d9d6726cfae6da070e736347}{S\+T\+B\+\_\+\+T\+R\+U\+E\+T\+Y\+P\+E\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}
+\item 
+\#define \hyperlink{imgui__draw_8cpp_a36c70a3a9dfec20d02bbb18e00a42ee1}{Im\+Draw\+Cmd\+\_\+\+Header\+Size}~(\hyperlink{imgui_8h_a303f3de82ef5bc71ef6fd91d5f46d26e}{I\+M\+\_\+\+O\+F\+F\+S\+E\+T\+OF}(\hyperlink{structImDrawCmd}{Im\+Draw\+Cmd}, Vtx\+Offset) + sizeof(unsigned int))
+\item 
+\#define \hyperlink{imgui__draw_8cpp_ac140465795cda6fa747579fc0b1b29d0}{Im\+Draw\+Cmd\+\_\+\+Header\+Compare}(C\+M\+D\+\_\+\+L\+HS,  C\+M\+D\+\_\+\+R\+HS)~(memcmp(C\+M\+D\+\_\+\+L\+HS, C\+M\+D\+\_\+\+R\+HS, \hyperlink{imgui__draw_8cpp_a36c70a3a9dfec20d02bbb18e00a42ee1}{Im\+Draw\+Cmd\+\_\+\+Header\+Size}))
+\item 
+\#define \hyperlink{imgui__draw_8cpp_a13d0eca12c1e2df442519a1a80d8cdaa}{Im\+Draw\+Cmd\+\_\+\+Header\+Copy}(C\+M\+D\+\_\+\+D\+ST,  C\+M\+D\+\_\+\+S\+RC)~(memcpy(C\+M\+D\+\_\+\+D\+ST, C\+M\+D\+\_\+\+S\+RC, \hyperlink{imgui__draw_8cpp_a36c70a3a9dfec20d02bbb18e00a42ee1}{Im\+Draw\+Cmd\+\_\+\+Header\+Size}))
+\item 
+\#define \hyperlink{imgui__draw_8cpp_acbac18638b9456aa07cd48452f074eeb}{Im\+Draw\+Cmd\+\_\+\+Are\+Sequential\+Idx\+Offset}(C\+M\+D\+\_\+0,  C\+M\+D\+\_\+1)~(C\+M\+D\+\_\+0-\/$>$Idx\+Offset + C\+M\+D\+\_\+0-\/$>$Elem\+Count == C\+M\+D\+\_\+1-\/$>$Idx\+Offset)
+\item 
+\#define \hyperlink{imgui__draw_8cpp_aa595f4d7f5dca6ca04e5b1648e84f0d6}{I\+M\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E2\+F\+\_\+\+O\+V\+E\+R\+\_\+\+Z\+E\+RO}(VX,  VY)~\{ float d2 = VX$\ast$VX + VY$\ast$VY; if (d2 $>$ 0.\+0f) \{ float inv\+\_\+len = Im\+Rsqrt(d2); V\+X $\ast$= inv\+\_\+len; V\+Y $\ast$= inv\+\_\+len; \} \} (void)0
+\item 
+\#define \hyperlink{imgui__draw_8cpp_ae801e54afba24c14221f81e1564615ef}{I\+M\+\_\+\+F\+I\+X\+N\+O\+R\+M\+A\+L2\+F\+\_\+\+M\+A\+X\+\_\+\+I\+N\+V\+L\+E\+N2}~100.\+0f
+\item 
+\#define \hyperlink{imgui__draw_8cpp_a4df703825e073b91ea24956d6021ee59}{I\+M\+\_\+\+F\+I\+X\+N\+O\+R\+M\+A\+L2F}(VX,  VY)~\{ float d2 = VX$\ast$VX + VY$\ast$VY; if (d2 $>$ 0.\+000001f) \{ float inv\+\_\+len2 = 1.\+0f / d2; if (inv\+\_\+len2 $>$ I\+M\+\_\+\+F\+I\+X\+N\+O\+R\+M\+A\+L2\+F\+\_\+\+M\+A\+X\+\_\+\+I\+N\+V\+L\+E\+N2) inv\+\_\+len2 = I\+M\+\_\+\+F\+I\+X\+N\+O\+R\+M\+A\+L2\+F\+\_\+\+M\+A\+X\+\_\+\+I\+N\+V\+L\+E\+N2; V\+X $\ast$= inv\+\_\+len2; V\+Y $\ast$= inv\+\_\+len2; \} \} (void)0
+\item 
+\#define \hyperlink{imgui__draw_8cpp_a8abf98f5e58a4b3dbbdf35bb1d5ee872}{stb\+\_\+\+\_\+in2}(x)~((\hyperlink{game__play__state_8cpp_acb559820d9ca11295b4500f179ef6392}{i}\mbox{[}x\mbox{]} $<$$<$ 8) + \hyperlink{game__play__state_8cpp_acb559820d9ca11295b4500f179ef6392}{i}\mbox{[}(x)+1\mbox{]})
+\item 
+\#define \hyperlink{imgui__draw_8cpp_acdc23c4b28788003d2841185775661ff}{stb\+\_\+\+\_\+in3}(x)~((\hyperlink{game__play__state_8cpp_acb559820d9ca11295b4500f179ef6392}{i}\mbox{[}x\mbox{]} $<$$<$ 16) + \hyperlink{imgui__draw_8cpp_a8abf98f5e58a4b3dbbdf35bb1d5ee872}{stb\+\_\+\+\_\+in2}((x)+1))
+\item 
+\#define \hyperlink{imgui__draw_8cpp_a26702caa0fd7846cb92e8ba4d80446c3}{stb\+\_\+\+\_\+in4}(x)~((\hyperlink{game__play__state_8cpp_acb559820d9ca11295b4500f179ef6392}{i}\mbox{[}x\mbox{]} $<$$<$ 24) + \hyperlink{imgui__draw_8cpp_acdc23c4b28788003d2841185775661ff}{stb\+\_\+\+\_\+in3}((x)+1))
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structImVec2}{Im\+Vec2} \hyperlink{imgui__draw_8cpp_a313bb9d47244a5d27a5aeb4cd74f94a3}{Im\+Bezier\+Cubic\+Calc} (const \hyperlink{structImVec2}{Im\+Vec2} \&p1, const \hyperlink{structImVec2}{Im\+Vec2} \&p2, const \hyperlink{structImVec2}{Im\+Vec2} \&p3, const \hyperlink{structImVec2}{Im\+Vec2} \&p4, float t)
+\item 
+\hyperlink{structImVec2}{Im\+Vec2} \hyperlink{imgui__draw_8cpp_a9b3ec0353c3a10709ad21985942613da}{Im\+Bezier\+Quadratic\+Calc} (const \hyperlink{structImVec2}{Im\+Vec2} \&p1, const \hyperlink{structImVec2}{Im\+Vec2} \&p2, const \hyperlink{structImVec2}{Im\+Vec2} \&p3, float t)
+\item 
+\hyperlink{imgui__draw_8cpp_aef0f30b37b1337d420dbd4facfdbc328}{I\+M\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT} (\hyperlink{imgui_8h_af42aea565fd5eb55fdb4c85c24e3c582a061f928851785c7eff16663e7fcc02a6}{Im\+Draw\+Flags\+\_\+\+Round\+Corners\+Top\+Left}==(1$<$$<$ 4))
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{imgui__draw_8cpp_a8d5f3a053aae34ac7b93e39cb9096d06}{Im\+Font\+Atlas\+Build\+Multiply\+Calc\+Lookup\+Table} (unsigned char out\+\_\+table\mbox{[}256\mbox{]}, float in\+\_\+brighten\+\_\+factor)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{imgui__draw_8cpp_a8dc3feae771599949b33712b520e9060}{Im\+Font\+Atlas\+Build\+Multiply\+Rect\+Alpha8} (const unsigned char table\mbox{[}256\mbox{]}, unsigned char $\ast$\hyperlink{imgui__impl__opengl3__loader_8h_aa6f05cf9167efe04d7c20e5d34561086}{pixels}, int x, int \hyperlink{imgui__impl__opengl3__loader_8h_a5e247fc24ceb70d83f6ad59149b8910a}{y}, int w, int h, int \hyperlink{imgui__impl__opengl3__loader_8h_adec60f1216ca1b900f8d776c5b6190e0}{stride})
+\item 
+const \hyperlink{structImFontBuilderIO}{Im\+Font\+Builder\+IO} $\ast$ \hyperlink{imgui__draw_8cpp_ab5ed4ee73eb9f9fd1e49d908cf0a74fe}{Im\+Font\+Atlas\+Get\+Builder\+For\+Stb\+Truetype} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{imgui__draw_8cpp_a4bea0932904c84de73237df3f1f76bdd}{Im\+Font\+Atlas\+Build\+Setup\+Font} (\hyperlink{structImFontAtlas}{Im\+Font\+Atlas} $\ast$atlas, \hyperlink{structImFont}{Im\+Font} $\ast$font, \hyperlink{structImFontConfig}{Im\+Font\+Config} $\ast$font\+\_\+config, float ascent, float descent)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{imgui__draw_8cpp_add0fcd1708ca3540688d8277fc01bf3f}{Im\+Font\+Atlas\+Build\+Pack\+Custom\+Rects} (\hyperlink{structImFontAtlas}{Im\+Font\+Atlas} $\ast$atlas, \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} $\ast$stbrp\+\_\+context\+\_\+opaque)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{imgui__draw_8cpp_acc7928ba77e5e06a342720ccf0a95ece}{Im\+Font\+Atlas\+Build\+Render8bpp\+Rect\+From\+String} (\hyperlink{structImFontAtlas}{Im\+Font\+Atlas} $\ast$atlas, int x, int \hyperlink{imgui__impl__opengl3__loader_8h_a5e247fc24ceb70d83f6ad59149b8910a}{y}, int w, int h, const char $\ast$in\+\_\+str, char in\+\_\+marker\+\_\+char, unsigned char in\+\_\+marker\+\_\+pixel\+\_\+value)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{imgui__draw_8cpp_a66ac51ad223da84c7167d4c9f4cfb2fb}{Im\+Font\+Atlas\+Build\+Render32bpp\+Rect\+From\+String} (\hyperlink{structImFontAtlas}{Im\+Font\+Atlas} $\ast$atlas, int x, int \hyperlink{imgui__impl__opengl3__loader_8h_a5e247fc24ceb70d83f6ad59149b8910a}{y}, int w, int h, const char $\ast$in\+\_\+str, char in\+\_\+marker\+\_\+char, unsigned int in\+\_\+marker\+\_\+pixel\+\_\+value)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{imgui__draw_8cpp_ac050ff181df43cec0b63d834b6039c3f}{Im\+Font\+Atlas\+Build\+Init} (\hyperlink{structImFontAtlas}{Im\+Font\+Atlas} $\ast$atlas)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{imgui__draw_8cpp_adbf0ee92b3ac86e30b9e81f552d15d37}{Im\+Font\+Atlas\+Build\+Finish} (\hyperlink{structImFontAtlas}{Im\+Font\+Atlas} $\ast$atlas)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{imgui__draw_8cpp_adf518fea7357febbb14eeecb692a8d95}{F\+O\+N\+T\+\_\+\+A\+T\+L\+A\+S\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+X\+\_\+\+D\+A\+T\+A\+\_\+W} = 122
+\item 
+const int \hyperlink{imgui__draw_8cpp_a2c96fc3febbe9f4f6c042a2f975a5b1d}{F\+O\+N\+T\+\_\+\+A\+T\+L\+A\+S\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+X\+\_\+\+D\+A\+T\+A\+\_\+H} = 27
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{imgui__draw_8cpp_a4df703825e073b91ea24956d6021ee59}\label{imgui__draw_8cpp_a4df703825e073b91ea24956d6021ee59}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!I\+M\+\_\+\+F\+I\+X\+N\+O\+R\+M\+A\+L2F@{I\+M\+\_\+\+F\+I\+X\+N\+O\+R\+M\+A\+L2F}}
+\index{I\+M\+\_\+\+F\+I\+X\+N\+O\+R\+M\+A\+L2F@{I\+M\+\_\+\+F\+I\+X\+N\+O\+R\+M\+A\+L2F}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{I\+M\+\_\+\+F\+I\+X\+N\+O\+R\+M\+A\+L2F}{IM\_FIXNORMAL2F}}
+{\footnotesize\ttfamily \#define I\+M\+\_\+\+F\+I\+X\+N\+O\+R\+M\+A\+L2F(\begin{DoxyParamCaption}\item[{}]{VX,  }\item[{}]{VY }\end{DoxyParamCaption})~\{ float d2 = VX$\ast$VX + VY$\ast$VY; if (d2 $>$ 0.\+000001f) \{ float inv\+\_\+len2 = 1.\+0f / d2; if (inv\+\_\+len2 $>$ I\+M\+\_\+\+F\+I\+X\+N\+O\+R\+M\+A\+L2\+F\+\_\+\+M\+A\+X\+\_\+\+I\+N\+V\+L\+E\+N2) inv\+\_\+len2 = I\+M\+\_\+\+F\+I\+X\+N\+O\+R\+M\+A\+L2\+F\+\_\+\+M\+A\+X\+\_\+\+I\+N\+V\+L\+E\+N2; V\+X $\ast$= inv\+\_\+len2; V\+Y $\ast$= inv\+\_\+len2; \} \} (void)0}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_ae801e54afba24c14221f81e1564615ef}\label{imgui__draw_8cpp_ae801e54afba24c14221f81e1564615ef}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!I\+M\+\_\+\+F\+I\+X\+N\+O\+R\+M\+A\+L2\+F\+\_\+\+M\+A\+X\+\_\+\+I\+N\+V\+L\+E\+N2@{I\+M\+\_\+\+F\+I\+X\+N\+O\+R\+M\+A\+L2\+F\+\_\+\+M\+A\+X\+\_\+\+I\+N\+V\+L\+E\+N2}}
+\index{I\+M\+\_\+\+F\+I\+X\+N\+O\+R\+M\+A\+L2\+F\+\_\+\+M\+A\+X\+\_\+\+I\+N\+V\+L\+E\+N2@{I\+M\+\_\+\+F\+I\+X\+N\+O\+R\+M\+A\+L2\+F\+\_\+\+M\+A\+X\+\_\+\+I\+N\+V\+L\+E\+N2}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{I\+M\+\_\+\+F\+I\+X\+N\+O\+R\+M\+A\+L2\+F\+\_\+\+M\+A\+X\+\_\+\+I\+N\+V\+L\+E\+N2}{IM\_FIXNORMAL2F\_MAX\_INVLEN2}}
+{\footnotesize\ttfamily \#define I\+M\+\_\+\+F\+I\+X\+N\+O\+R\+M\+A\+L2\+F\+\_\+\+M\+A\+X\+\_\+\+I\+N\+V\+L\+E\+N2~100.\+0f}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_aa595f4d7f5dca6ca04e5b1648e84f0d6}\label{imgui__draw_8cpp_aa595f4d7f5dca6ca04e5b1648e84f0d6}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!I\+M\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E2\+F\+\_\+\+O\+V\+E\+R\+\_\+\+Z\+E\+RO@{I\+M\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E2\+F\+\_\+\+O\+V\+E\+R\+\_\+\+Z\+E\+RO}}
+\index{I\+M\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E2\+F\+\_\+\+O\+V\+E\+R\+\_\+\+Z\+E\+RO@{I\+M\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E2\+F\+\_\+\+O\+V\+E\+R\+\_\+\+Z\+E\+RO}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{I\+M\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E2\+F\+\_\+\+O\+V\+E\+R\+\_\+\+Z\+E\+RO}{IM\_NORMALIZE2F\_OVER\_ZERO}}
+{\footnotesize\ttfamily \#define I\+M\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E2\+F\+\_\+\+O\+V\+E\+R\+\_\+\+Z\+E\+RO(\begin{DoxyParamCaption}\item[{}]{VX,  }\item[{}]{VY }\end{DoxyParamCaption})~\{ float d2 = VX$\ast$VX + VY$\ast$VY; if (d2 $>$ 0.\+0f) \{ float inv\+\_\+len = Im\+Rsqrt(d2); V\+X $\ast$= inv\+\_\+len; V\+Y $\ast$= inv\+\_\+len; \} \} (void)0}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_acbac18638b9456aa07cd48452f074eeb}\label{imgui__draw_8cpp_acbac18638b9456aa07cd48452f074eeb}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!Im\+Draw\+Cmd\+\_\+\+Are\+Sequential\+Idx\+Offset@{Im\+Draw\+Cmd\+\_\+\+Are\+Sequential\+Idx\+Offset}}
+\index{Im\+Draw\+Cmd\+\_\+\+Are\+Sequential\+Idx\+Offset@{Im\+Draw\+Cmd\+\_\+\+Are\+Sequential\+Idx\+Offset}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{Im\+Draw\+Cmd\+\_\+\+Are\+Sequential\+Idx\+Offset}{ImDrawCmd\_AreSequentialIdxOffset}}
+{\footnotesize\ttfamily \#define Im\+Draw\+Cmd\+\_\+\+Are\+Sequential\+Idx\+Offset(\begin{DoxyParamCaption}\item[{}]{C\+M\+D\+\_\+0,  }\item[{}]{C\+M\+D\+\_\+1 }\end{DoxyParamCaption})~(C\+M\+D\+\_\+0-\/$>$Idx\+Offset + C\+M\+D\+\_\+0-\/$>$Elem\+Count == C\+M\+D\+\_\+1-\/$>$Idx\+Offset)}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_ac140465795cda6fa747579fc0b1b29d0}\label{imgui__draw_8cpp_ac140465795cda6fa747579fc0b1b29d0}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!Im\+Draw\+Cmd\+\_\+\+Header\+Compare@{Im\+Draw\+Cmd\+\_\+\+Header\+Compare}}
+\index{Im\+Draw\+Cmd\+\_\+\+Header\+Compare@{Im\+Draw\+Cmd\+\_\+\+Header\+Compare}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{Im\+Draw\+Cmd\+\_\+\+Header\+Compare}{ImDrawCmd\_HeaderCompare}}
+{\footnotesize\ttfamily \#define Im\+Draw\+Cmd\+\_\+\+Header\+Compare(\begin{DoxyParamCaption}\item[{}]{C\+M\+D\+\_\+\+L\+HS,  }\item[{}]{C\+M\+D\+\_\+\+R\+HS }\end{DoxyParamCaption})~(memcmp(C\+M\+D\+\_\+\+L\+HS, C\+M\+D\+\_\+\+R\+HS, \hyperlink{imgui__draw_8cpp_a36c70a3a9dfec20d02bbb18e00a42ee1}{Im\+Draw\+Cmd\+\_\+\+Header\+Size}))}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_a13d0eca12c1e2df442519a1a80d8cdaa}\label{imgui__draw_8cpp_a13d0eca12c1e2df442519a1a80d8cdaa}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!Im\+Draw\+Cmd\+\_\+\+Header\+Copy@{Im\+Draw\+Cmd\+\_\+\+Header\+Copy}}
+\index{Im\+Draw\+Cmd\+\_\+\+Header\+Copy@{Im\+Draw\+Cmd\+\_\+\+Header\+Copy}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{Im\+Draw\+Cmd\+\_\+\+Header\+Copy}{ImDrawCmd\_HeaderCopy}}
+{\footnotesize\ttfamily \#define Im\+Draw\+Cmd\+\_\+\+Header\+Copy(\begin{DoxyParamCaption}\item[{}]{C\+M\+D\+\_\+\+D\+ST,  }\item[{}]{C\+M\+D\+\_\+\+S\+RC }\end{DoxyParamCaption})~(memcpy(C\+M\+D\+\_\+\+D\+ST, C\+M\+D\+\_\+\+S\+RC, \hyperlink{imgui__draw_8cpp_a36c70a3a9dfec20d02bbb18e00a42ee1}{Im\+Draw\+Cmd\+\_\+\+Header\+Size}))}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_a36c70a3a9dfec20d02bbb18e00a42ee1}\label{imgui__draw_8cpp_a36c70a3a9dfec20d02bbb18e00a42ee1}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!Im\+Draw\+Cmd\+\_\+\+Header\+Size@{Im\+Draw\+Cmd\+\_\+\+Header\+Size}}
+\index{Im\+Draw\+Cmd\+\_\+\+Header\+Size@{Im\+Draw\+Cmd\+\_\+\+Header\+Size}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{Im\+Draw\+Cmd\+\_\+\+Header\+Size}{ImDrawCmd\_HeaderSize}}
+{\footnotesize\ttfamily \#define Im\+Draw\+Cmd\+\_\+\+Header\+Size~(\hyperlink{imgui_8h_a303f3de82ef5bc71ef6fd91d5f46d26e}{I\+M\+\_\+\+O\+F\+F\+S\+E\+T\+OF}(\hyperlink{structImDrawCmd}{Im\+Draw\+Cmd}, Vtx\+Offset) + sizeof(unsigned int))}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_adf4d73301961430d50d7edd96f92ce38}\label{imgui__draw_8cpp_adf4d73301961430d50d7edd96f92ce38}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!I\+M\+G\+U\+I\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+M\+A\+T\+H\+\_\+\+O\+P\+E\+R\+A\+T\+O\+RS@{I\+M\+G\+U\+I\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+M\+A\+T\+H\+\_\+\+O\+P\+E\+R\+A\+T\+O\+RS}}
+\index{I\+M\+G\+U\+I\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+M\+A\+T\+H\+\_\+\+O\+P\+E\+R\+A\+T\+O\+RS@{I\+M\+G\+U\+I\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+M\+A\+T\+H\+\_\+\+O\+P\+E\+R\+A\+T\+O\+RS}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{I\+M\+G\+U\+I\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+M\+A\+T\+H\+\_\+\+O\+P\+E\+R\+A\+T\+O\+RS}{IMGUI\_DEFINE\_MATH\_OPERATORS}}
+{\footnotesize\ttfamily \#define I\+M\+G\+U\+I\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+M\+A\+T\+H\+\_\+\+O\+P\+E\+R\+A\+T\+O\+RS}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_a8abf98f5e58a4b3dbbdf35bb1d5ee872}\label{imgui__draw_8cpp_a8abf98f5e58a4b3dbbdf35bb1d5ee872}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!stb\+\_\+\+\_\+in2@{stb\+\_\+\+\_\+in2}}
+\index{stb\+\_\+\+\_\+in2@{stb\+\_\+\+\_\+in2}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{stb\+\_\+\+\_\+in2}{stb\_\_in2}}
+{\footnotesize\ttfamily \#define stb\+\_\+\+\_\+in2(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~((\hyperlink{game__play__state_8cpp_acb559820d9ca11295b4500f179ef6392}{i}\mbox{[}x\mbox{]} $<$$<$ 8) + \hyperlink{game__play__state_8cpp_acb559820d9ca11295b4500f179ef6392}{i}\mbox{[}(x)+1\mbox{]})}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_acdc23c4b28788003d2841185775661ff}\label{imgui__draw_8cpp_acdc23c4b28788003d2841185775661ff}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!stb\+\_\+\+\_\+in3@{stb\+\_\+\+\_\+in3}}
+\index{stb\+\_\+\+\_\+in3@{stb\+\_\+\+\_\+in3}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{stb\+\_\+\+\_\+in3}{stb\_\_in3}}
+{\footnotesize\ttfamily \#define stb\+\_\+\+\_\+in3(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~((\hyperlink{game__play__state_8cpp_acb559820d9ca11295b4500f179ef6392}{i}\mbox{[}x\mbox{]} $<$$<$ 16) + \hyperlink{imgui__draw_8cpp_a8abf98f5e58a4b3dbbdf35bb1d5ee872}{stb\+\_\+\+\_\+in2}((x)+1))}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_a26702caa0fd7846cb92e8ba4d80446c3}\label{imgui__draw_8cpp_a26702caa0fd7846cb92e8ba4d80446c3}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!stb\+\_\+\+\_\+in4@{stb\+\_\+\+\_\+in4}}
+\index{stb\+\_\+\+\_\+in4@{stb\+\_\+\+\_\+in4}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{stb\+\_\+\+\_\+in4}{stb\_\_in4}}
+{\footnotesize\ttfamily \#define stb\+\_\+\+\_\+in4(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~((\hyperlink{game__play__state_8cpp_acb559820d9ca11295b4500f179ef6392}{i}\mbox{[}x\mbox{]} $<$$<$ 24) + \hyperlink{imgui__draw_8cpp_acdc23c4b28788003d2841185775661ff}{stb\+\_\+\+\_\+in3}((x)+1))}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_a0791e69f0dcd58efa795dd50eb8c6cd0}\label{imgui__draw_8cpp_a0791e69f0dcd58efa795dd50eb8c6cd0}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!S\+T\+B\+\_\+\+R\+E\+C\+T\+\_\+\+P\+A\+C\+K\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON@{S\+T\+B\+\_\+\+R\+E\+C\+T\+\_\+\+P\+A\+C\+K\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}}
+\index{S\+T\+B\+\_\+\+R\+E\+C\+T\+\_\+\+P\+A\+C\+K\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON@{S\+T\+B\+\_\+\+R\+E\+C\+T\+\_\+\+P\+A\+C\+K\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{S\+T\+B\+\_\+\+R\+E\+C\+T\+\_\+\+P\+A\+C\+K\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}{STB\_RECT\_PACK\_IMPLEMENTATION}}
+{\footnotesize\ttfamily \#define S\+T\+B\+\_\+\+R\+E\+C\+T\+\_\+\+P\+A\+C\+K\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_afaa2f2d0d9d6726cfae6da070e736347}\label{imgui__draw_8cpp_afaa2f2d0d9d6726cfae6da070e736347}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!S\+T\+B\+\_\+\+T\+R\+U\+E\+T\+Y\+P\+E\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON@{S\+T\+B\+\_\+\+T\+R\+U\+E\+T\+Y\+P\+E\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}}
+\index{S\+T\+B\+\_\+\+T\+R\+U\+E\+T\+Y\+P\+E\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON@{S\+T\+B\+\_\+\+T\+R\+U\+E\+T\+Y\+P\+E\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{S\+T\+B\+\_\+\+T\+R\+U\+E\+T\+Y\+P\+E\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}{STB\_TRUETYPE\_IMPLEMENTATION}}
+{\footnotesize\ttfamily \#define S\+T\+B\+\_\+\+T\+R\+U\+E\+T\+Y\+P\+E\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_a9592e63d0df8b6f0712e8da3aea5db23}\label{imgui__draw_8cpp_a9592e63d0df8b6f0712e8da3aea5db23}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!S\+T\+B\+R\+P\+\_\+\+A\+S\+S\+E\+RT@{S\+T\+B\+R\+P\+\_\+\+A\+S\+S\+E\+RT}}
+\index{S\+T\+B\+R\+P\+\_\+\+A\+S\+S\+E\+RT@{S\+T\+B\+R\+P\+\_\+\+A\+S\+S\+E\+RT}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{S\+T\+B\+R\+P\+\_\+\+A\+S\+S\+E\+RT}{STBRP\_ASSERT}}
+{\footnotesize\ttfamily \#define S\+T\+B\+R\+P\+\_\+\+A\+S\+S\+E\+RT(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~do \{ \hyperlink{imgui_8h_acb09e7dc42e8e3cefb0ecaa197978920}{I\+M\+\_\+\+A\+S\+S\+E\+RT}(x); \} while (0)}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_a152aa757fb023d39f16dd537e66b60f0}\label{imgui__draw_8cpp_a152aa757fb023d39f16dd537e66b60f0}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!S\+T\+B\+R\+P\+\_\+\+S\+O\+RT@{S\+T\+B\+R\+P\+\_\+\+S\+O\+RT}}
+\index{S\+T\+B\+R\+P\+\_\+\+S\+O\+RT@{S\+T\+B\+R\+P\+\_\+\+S\+O\+RT}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{S\+T\+B\+R\+P\+\_\+\+S\+O\+RT}{STBRP\_SORT}}
+{\footnotesize\ttfamily \#define S\+T\+B\+R\+P\+\_\+\+S\+O\+RT~Im\+Qsort}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_aebe589aefd15ba7289a47168e31b5e45}\label{imgui__draw_8cpp_aebe589aefd15ba7289a47168e31b5e45}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!S\+T\+B\+R\+P\+\_\+\+S\+T\+A\+T\+IC@{S\+T\+B\+R\+P\+\_\+\+S\+T\+A\+T\+IC}}
+\index{S\+T\+B\+R\+P\+\_\+\+S\+T\+A\+T\+IC@{S\+T\+B\+R\+P\+\_\+\+S\+T\+A\+T\+IC}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{S\+T\+B\+R\+P\+\_\+\+S\+T\+A\+T\+IC}{STBRP\_STATIC}}
+{\footnotesize\ttfamily \#define S\+T\+B\+R\+P\+\_\+\+S\+T\+A\+T\+IC}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_a1123d905f512c19c8d796a6d294a3a84}\label{imgui__draw_8cpp_a1123d905f512c19c8d796a6d294a3a84}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!S\+T\+B\+T\+T\+\_\+assert@{S\+T\+B\+T\+T\+\_\+assert}}
+\index{S\+T\+B\+T\+T\+\_\+assert@{S\+T\+B\+T\+T\+\_\+assert}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{S\+T\+B\+T\+T\+\_\+assert}{STBTT\_assert}}
+{\footnotesize\ttfamily \#define S\+T\+B\+T\+T\+\_\+assert(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~do \{ \hyperlink{imgui_8h_acb09e7dc42e8e3cefb0ecaa197978920}{I\+M\+\_\+\+A\+S\+S\+E\+RT}(x); \} while(0)}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_a2b639a5c1ed39bb9e223a78b743f3769}\label{imgui__draw_8cpp_a2b639a5c1ed39bb9e223a78b743f3769}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!S\+T\+B\+T\+T\+\_\+fabs@{S\+T\+B\+T\+T\+\_\+fabs}}
+\index{S\+T\+B\+T\+T\+\_\+fabs@{S\+T\+B\+T\+T\+\_\+fabs}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{S\+T\+B\+T\+T\+\_\+fabs}{STBTT\_fabs}}
+{\footnotesize\ttfamily \#define S\+T\+B\+T\+T\+\_\+fabs(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~\hyperlink{imgui__internal_8h_aa886f20aead1a15ce961ac6fa361b044}{Im\+Fabs}(x)}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_ab937f3c3c6d0c2c126c50bb32e379f02}\label{imgui__draw_8cpp_ab937f3c3c6d0c2c126c50bb32e379f02}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!S\+T\+B\+T\+T\+\_\+fmod@{S\+T\+B\+T\+T\+\_\+fmod}}
+\index{S\+T\+B\+T\+T\+\_\+fmod@{S\+T\+B\+T\+T\+\_\+fmod}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{S\+T\+B\+T\+T\+\_\+fmod}{STBTT\_fmod}}
+{\footnotesize\ttfamily \#define S\+T\+B\+T\+T\+\_\+fmod(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{\hyperlink{imgui__impl__opengl3__loader_8h_a5e247fc24ceb70d83f6ad59149b8910a}{y} }\end{DoxyParamCaption})~\hyperlink{imgui__internal_8h_ab31c49c24dd5d51dd629a56b5d11a85e}{Im\+Fmod}(x,\hyperlink{imgui__impl__opengl3__loader_8h_a5e247fc24ceb70d83f6ad59149b8910a}{y})}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_a357d3564409e68f1b694e06f7beeca7e}\label{imgui__draw_8cpp_a357d3564409e68f1b694e06f7beeca7e}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!S\+T\+B\+T\+T\+\_\+free@{S\+T\+B\+T\+T\+\_\+free}}
+\index{S\+T\+B\+T\+T\+\_\+free@{S\+T\+B\+T\+T\+\_\+free}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{S\+T\+B\+T\+T\+\_\+free}{STBTT\_free}}
+{\footnotesize\ttfamily \#define S\+T\+B\+T\+T\+\_\+free(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{u }\end{DoxyParamCaption})~((\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void})(u), \hyperlink{imgui_8h_ac24040f4c2d54ba3216c829703498ebb}{I\+M\+\_\+\+F\+R\+EE}(x))}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_a284a26aeebf87bc1688d38b3b16c7248}\label{imgui__draw_8cpp_a284a26aeebf87bc1688d38b3b16c7248}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!S\+T\+B\+T\+T\+\_\+iceil@{S\+T\+B\+T\+T\+\_\+iceil}}
+\index{S\+T\+B\+T\+T\+\_\+iceil@{S\+T\+B\+T\+T\+\_\+iceil}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{S\+T\+B\+T\+T\+\_\+iceil}{STBTT\_iceil}}
+{\footnotesize\ttfamily \#define S\+T\+B\+T\+T\+\_\+iceil(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~((int)\hyperlink{imgui__internal_8h_a09170e101a72d70544ae6edfe495ee8f}{Im\+Ceil}(x))}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_a37ec4d14918346d3451d4f44f24d4710}\label{imgui__draw_8cpp_a37ec4d14918346d3451d4f44f24d4710}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!S\+T\+B\+T\+T\+\_\+ifloor@{S\+T\+B\+T\+T\+\_\+ifloor}}
+\index{S\+T\+B\+T\+T\+\_\+ifloor@{S\+T\+B\+T\+T\+\_\+ifloor}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{S\+T\+B\+T\+T\+\_\+ifloor}{STBTT\_ifloor}}
+{\footnotesize\ttfamily \#define S\+T\+B\+T\+T\+\_\+ifloor(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~((int)Im\+Floor\+Signed(x))}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_a8f6734fe0cb6d6aa09e494602afa96be}\label{imgui__draw_8cpp_a8f6734fe0cb6d6aa09e494602afa96be}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!S\+T\+B\+T\+T\+\_\+malloc@{S\+T\+B\+T\+T\+\_\+malloc}}
+\index{S\+T\+B\+T\+T\+\_\+malloc@{S\+T\+B\+T\+T\+\_\+malloc}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{S\+T\+B\+T\+T\+\_\+malloc}{STBTT\_malloc}}
+{\footnotesize\ttfamily \#define S\+T\+B\+T\+T\+\_\+malloc(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{u }\end{DoxyParamCaption})~((\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void})(u), \hyperlink{imgui_8h_a40113fb128e7035c8d4aaeeed565e7aa}{I\+M\+\_\+\+A\+L\+L\+OC}(x))}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_a20c159e8e6985b92a96497881709659a}\label{imgui__draw_8cpp_a20c159e8e6985b92a96497881709659a}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!S\+T\+B\+T\+T\+\_\+pow@{S\+T\+B\+T\+T\+\_\+pow}}
+\index{S\+T\+B\+T\+T\+\_\+pow@{S\+T\+B\+T\+T\+\_\+pow}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{S\+T\+B\+T\+T\+\_\+pow}{STBTT\_pow}}
+{\footnotesize\ttfamily \#define S\+T\+B\+T\+T\+\_\+pow(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{\hyperlink{imgui__impl__opengl3__loader_8h_a5e247fc24ceb70d83f6ad59149b8910a}{y} }\end{DoxyParamCaption})~Im\+Pow(x,\hyperlink{imgui__impl__opengl3__loader_8h_a5e247fc24ceb70d83f6ad59149b8910a}{y})}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_ace1fcbebd394a5bed76bc9b97dbe8d5a}\label{imgui__draw_8cpp_ace1fcbebd394a5bed76bc9b97dbe8d5a}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!S\+T\+B\+T\+T\+\_\+sqrt@{S\+T\+B\+T\+T\+\_\+sqrt}}
+\index{S\+T\+B\+T\+T\+\_\+sqrt@{S\+T\+B\+T\+T\+\_\+sqrt}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{S\+T\+B\+T\+T\+\_\+sqrt}{STBTT\_sqrt}}
+{\footnotesize\ttfamily \#define S\+T\+B\+T\+T\+\_\+sqrt(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~\hyperlink{imgui__internal_8h_af45b12e2af4037adec57b0a9488b45c2}{Im\+Sqrt}(x)}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_adb252cc9576591994fdf2f89baddc630}\label{imgui__draw_8cpp_adb252cc9576591994fdf2f89baddc630}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!S\+T\+B\+T\+T\+\_\+\+S\+T\+A\+T\+IC@{S\+T\+B\+T\+T\+\_\+\+S\+T\+A\+T\+IC}}
+\index{S\+T\+B\+T\+T\+\_\+\+S\+T\+A\+T\+IC@{S\+T\+B\+T\+T\+\_\+\+S\+T\+A\+T\+IC}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{S\+T\+B\+T\+T\+\_\+\+S\+T\+A\+T\+IC}{STBTT\_STATIC}}
+{\footnotesize\ttfamily \#define S\+T\+B\+T\+T\+\_\+\+S\+T\+A\+T\+IC}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{imgui__draw_8cpp_aef0f30b37b1337d420dbd4facfdbc328}\label{imgui__draw_8cpp_aef0f30b37b1337d420dbd4facfdbc328}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!I\+M\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT@{I\+M\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT}}
+\index{I\+M\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT@{I\+M\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{I\+M\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+R\+T()}{IM\_STATIC\_ASSERT()}}
+{\footnotesize\ttfamily I\+M\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT (\begin{DoxyParamCaption}\item[{\hyperlink{imgui_8h_af42aea565fd5eb55fdb4c85c24e3c582a061f928851785c7eff16663e7fcc02a6}{Im\+Draw\+Flags\+\_\+\+Round\+Corners\+Top\+Left}}]{ = {\ttfamily =(1$<$$<$~4)} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_a313bb9d47244a5d27a5aeb4cd74f94a3}\label{imgui__draw_8cpp_a313bb9d47244a5d27a5aeb4cd74f94a3}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!Im\+Bezier\+Cubic\+Calc@{Im\+Bezier\+Cubic\+Calc}}
+\index{Im\+Bezier\+Cubic\+Calc@{Im\+Bezier\+Cubic\+Calc}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{Im\+Bezier\+Cubic\+Calc()}{ImBezierCubicCalc()}}
+{\footnotesize\ttfamily \hyperlink{structImVec2}{Im\+Vec2} Im\+Bezier\+Cubic\+Calc (\begin{DoxyParamCaption}\item[{const \hyperlink{structImVec2}{Im\+Vec2} \&}]{p1,  }\item[{const \hyperlink{structImVec2}{Im\+Vec2} \&}]{p2,  }\item[{const \hyperlink{structImVec2}{Im\+Vec2} \&}]{p3,  }\item[{const \hyperlink{structImVec2}{Im\+Vec2} \&}]{p4,  }\item[{float}]{t }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_a9b3ec0353c3a10709ad21985942613da}\label{imgui__draw_8cpp_a9b3ec0353c3a10709ad21985942613da}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!Im\+Bezier\+Quadratic\+Calc@{Im\+Bezier\+Quadratic\+Calc}}
+\index{Im\+Bezier\+Quadratic\+Calc@{Im\+Bezier\+Quadratic\+Calc}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{Im\+Bezier\+Quadratic\+Calc()}{ImBezierQuadraticCalc()}}
+{\footnotesize\ttfamily \hyperlink{structImVec2}{Im\+Vec2} Im\+Bezier\+Quadratic\+Calc (\begin{DoxyParamCaption}\item[{const \hyperlink{structImVec2}{Im\+Vec2} \&}]{p1,  }\item[{const \hyperlink{structImVec2}{Im\+Vec2} \&}]{p2,  }\item[{const \hyperlink{structImVec2}{Im\+Vec2} \&}]{p3,  }\item[{float}]{t }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_adbf0ee92b3ac86e30b9e81f552d15d37}\label{imgui__draw_8cpp_adbf0ee92b3ac86e30b9e81f552d15d37}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!Im\+Font\+Atlas\+Build\+Finish@{Im\+Font\+Atlas\+Build\+Finish}}
+\index{Im\+Font\+Atlas\+Build\+Finish@{Im\+Font\+Atlas\+Build\+Finish}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{Im\+Font\+Atlas\+Build\+Finish()}{ImFontAtlasBuildFinish()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Im\+Font\+Atlas\+Build\+Finish (\begin{DoxyParamCaption}\item[{\hyperlink{structImFontAtlas}{Im\+Font\+Atlas} $\ast$}]{atlas }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_ac050ff181df43cec0b63d834b6039c3f}\label{imgui__draw_8cpp_ac050ff181df43cec0b63d834b6039c3f}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!Im\+Font\+Atlas\+Build\+Init@{Im\+Font\+Atlas\+Build\+Init}}
+\index{Im\+Font\+Atlas\+Build\+Init@{Im\+Font\+Atlas\+Build\+Init}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{Im\+Font\+Atlas\+Build\+Init()}{ImFontAtlasBuildInit()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Im\+Font\+Atlas\+Build\+Init (\begin{DoxyParamCaption}\item[{\hyperlink{structImFontAtlas}{Im\+Font\+Atlas} $\ast$}]{atlas }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_a8d5f3a053aae34ac7b93e39cb9096d06}\label{imgui__draw_8cpp_a8d5f3a053aae34ac7b93e39cb9096d06}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!Im\+Font\+Atlas\+Build\+Multiply\+Calc\+Lookup\+Table@{Im\+Font\+Atlas\+Build\+Multiply\+Calc\+Lookup\+Table}}
+\index{Im\+Font\+Atlas\+Build\+Multiply\+Calc\+Lookup\+Table@{Im\+Font\+Atlas\+Build\+Multiply\+Calc\+Lookup\+Table}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{Im\+Font\+Atlas\+Build\+Multiply\+Calc\+Lookup\+Table()}{ImFontAtlasBuildMultiplyCalcLookupTable()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Im\+Font\+Atlas\+Build\+Multiply\+Calc\+Lookup\+Table (\begin{DoxyParamCaption}\item[{unsigned char}]{out\+\_\+table\mbox{[}256\mbox{]},  }\item[{float}]{in\+\_\+brighten\+\_\+factor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_a8dc3feae771599949b33712b520e9060}\label{imgui__draw_8cpp_a8dc3feae771599949b33712b520e9060}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!Im\+Font\+Atlas\+Build\+Multiply\+Rect\+Alpha8@{Im\+Font\+Atlas\+Build\+Multiply\+Rect\+Alpha8}}
+\index{Im\+Font\+Atlas\+Build\+Multiply\+Rect\+Alpha8@{Im\+Font\+Atlas\+Build\+Multiply\+Rect\+Alpha8}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{Im\+Font\+Atlas\+Build\+Multiply\+Rect\+Alpha8()}{ImFontAtlasBuildMultiplyRectAlpha8()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Im\+Font\+Atlas\+Build\+Multiply\+Rect\+Alpha8 (\begin{DoxyParamCaption}\item[{const unsigned char}]{table\mbox{[}256\mbox{]},  }\item[{unsigned char $\ast$}]{pixels,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h,  }\item[{int}]{stride }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_add0fcd1708ca3540688d8277fc01bf3f}\label{imgui__draw_8cpp_add0fcd1708ca3540688d8277fc01bf3f}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!Im\+Font\+Atlas\+Build\+Pack\+Custom\+Rects@{Im\+Font\+Atlas\+Build\+Pack\+Custom\+Rects}}
+\index{Im\+Font\+Atlas\+Build\+Pack\+Custom\+Rects@{Im\+Font\+Atlas\+Build\+Pack\+Custom\+Rects}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{Im\+Font\+Atlas\+Build\+Pack\+Custom\+Rects()}{ImFontAtlasBuildPackCustomRects()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Im\+Font\+Atlas\+Build\+Pack\+Custom\+Rects (\begin{DoxyParamCaption}\item[{\hyperlink{structImFontAtlas}{Im\+Font\+Atlas} $\ast$}]{atlas,  }\item[{\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} $\ast$}]{stbrp\+\_\+context\+\_\+opaque }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_a66ac51ad223da84c7167d4c9f4cfb2fb}\label{imgui__draw_8cpp_a66ac51ad223da84c7167d4c9f4cfb2fb}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!Im\+Font\+Atlas\+Build\+Render32bpp\+Rect\+From\+String@{Im\+Font\+Atlas\+Build\+Render32bpp\+Rect\+From\+String}}
+\index{Im\+Font\+Atlas\+Build\+Render32bpp\+Rect\+From\+String@{Im\+Font\+Atlas\+Build\+Render32bpp\+Rect\+From\+String}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{Im\+Font\+Atlas\+Build\+Render32bpp\+Rect\+From\+String()}{ImFontAtlasBuildRender32bppRectFromString()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Im\+Font\+Atlas\+Build\+Render32bpp\+Rect\+From\+String (\begin{DoxyParamCaption}\item[{\hyperlink{structImFontAtlas}{Im\+Font\+Atlas} $\ast$}]{atlas,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h,  }\item[{const char $\ast$}]{in\+\_\+str,  }\item[{char}]{in\+\_\+marker\+\_\+char,  }\item[{unsigned int}]{in\+\_\+marker\+\_\+pixel\+\_\+value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_acc7928ba77e5e06a342720ccf0a95ece}\label{imgui__draw_8cpp_acc7928ba77e5e06a342720ccf0a95ece}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!Im\+Font\+Atlas\+Build\+Render8bpp\+Rect\+From\+String@{Im\+Font\+Atlas\+Build\+Render8bpp\+Rect\+From\+String}}
+\index{Im\+Font\+Atlas\+Build\+Render8bpp\+Rect\+From\+String@{Im\+Font\+Atlas\+Build\+Render8bpp\+Rect\+From\+String}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{Im\+Font\+Atlas\+Build\+Render8bpp\+Rect\+From\+String()}{ImFontAtlasBuildRender8bppRectFromString()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Im\+Font\+Atlas\+Build\+Render8bpp\+Rect\+From\+String (\begin{DoxyParamCaption}\item[{\hyperlink{structImFontAtlas}{Im\+Font\+Atlas} $\ast$}]{atlas,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h,  }\item[{const char $\ast$}]{in\+\_\+str,  }\item[{char}]{in\+\_\+marker\+\_\+char,  }\item[{unsigned char}]{in\+\_\+marker\+\_\+pixel\+\_\+value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_a4bea0932904c84de73237df3f1f76bdd}\label{imgui__draw_8cpp_a4bea0932904c84de73237df3f1f76bdd}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!Im\+Font\+Atlas\+Build\+Setup\+Font@{Im\+Font\+Atlas\+Build\+Setup\+Font}}
+\index{Im\+Font\+Atlas\+Build\+Setup\+Font@{Im\+Font\+Atlas\+Build\+Setup\+Font}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{Im\+Font\+Atlas\+Build\+Setup\+Font()}{ImFontAtlasBuildSetupFont()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Im\+Font\+Atlas\+Build\+Setup\+Font (\begin{DoxyParamCaption}\item[{\hyperlink{structImFontAtlas}{Im\+Font\+Atlas} $\ast$}]{atlas,  }\item[{\hyperlink{structImFont}{Im\+Font} $\ast$}]{font,  }\item[{\hyperlink{structImFontConfig}{Im\+Font\+Config} $\ast$}]{font\+\_\+config,  }\item[{float}]{ascent,  }\item[{float}]{descent }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_ab5ed4ee73eb9f9fd1e49d908cf0a74fe}\label{imgui__draw_8cpp_ab5ed4ee73eb9f9fd1e49d908cf0a74fe}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!Im\+Font\+Atlas\+Get\+Builder\+For\+Stb\+Truetype@{Im\+Font\+Atlas\+Get\+Builder\+For\+Stb\+Truetype}}
+\index{Im\+Font\+Atlas\+Get\+Builder\+For\+Stb\+Truetype@{Im\+Font\+Atlas\+Get\+Builder\+For\+Stb\+Truetype}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{Im\+Font\+Atlas\+Get\+Builder\+For\+Stb\+Truetype()}{ImFontAtlasGetBuilderForStbTruetype()}}
+{\footnotesize\ttfamily const \hyperlink{structImFontBuilderIO}{Im\+Font\+Builder\+IO}$\ast$ Im\+Font\+Atlas\+Get\+Builder\+For\+Stb\+Truetype (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{imgui__draw_8cpp_a2c96fc3febbe9f4f6c042a2f975a5b1d}\label{imgui__draw_8cpp_a2c96fc3febbe9f4f6c042a2f975a5b1d}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!F\+O\+N\+T\+\_\+\+A\+T\+L\+A\+S\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+X\+\_\+\+D\+A\+T\+A\+\_\+H@{F\+O\+N\+T\+\_\+\+A\+T\+L\+A\+S\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+X\+\_\+\+D\+A\+T\+A\+\_\+H}}
+\index{F\+O\+N\+T\+\_\+\+A\+T\+L\+A\+S\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+X\+\_\+\+D\+A\+T\+A\+\_\+H@{F\+O\+N\+T\+\_\+\+A\+T\+L\+A\+S\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+X\+\_\+\+D\+A\+T\+A\+\_\+H}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{F\+O\+N\+T\+\_\+\+A\+T\+L\+A\+S\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+X\+\_\+\+D\+A\+T\+A\+\_\+H}{FONT\_ATLAS\_DEFAULT\_TEX\_DATA\_H}}
+{\footnotesize\ttfamily const int F\+O\+N\+T\+\_\+\+A\+T\+L\+A\+S\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+X\+\_\+\+D\+A\+T\+A\+\_\+H = 27}
+
+\mbox{\Hypertarget{imgui__draw_8cpp_adf518fea7357febbb14eeecb692a8d95}\label{imgui__draw_8cpp_adf518fea7357febbb14eeecb692a8d95}} 
+\index{imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}!F\+O\+N\+T\+\_\+\+A\+T\+L\+A\+S\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+X\+\_\+\+D\+A\+T\+A\+\_\+W@{F\+O\+N\+T\+\_\+\+A\+T\+L\+A\+S\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+X\+\_\+\+D\+A\+T\+A\+\_\+W}}
+\index{F\+O\+N\+T\+\_\+\+A\+T\+L\+A\+S\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+X\+\_\+\+D\+A\+T\+A\+\_\+W@{F\+O\+N\+T\+\_\+\+A\+T\+L\+A\+S\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+X\+\_\+\+D\+A\+T\+A\+\_\+W}!imgui\+\_\+draw.\+cpp@{imgui\+\_\+draw.\+cpp}}
+\subsubsection{\texorpdfstring{F\+O\+N\+T\+\_\+\+A\+T\+L\+A\+S\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+X\+\_\+\+D\+A\+T\+A\+\_\+W}{FONT\_ATLAS\_DEFAULT\_TEX\_DATA\_W}}
+{\footnotesize\ttfamily const int F\+O\+N\+T\+\_\+\+A\+T\+L\+A\+S\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+X\+\_\+\+D\+A\+T\+A\+\_\+W = 122}
+

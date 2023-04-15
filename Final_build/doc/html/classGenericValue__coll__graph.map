@@ -1,0 +1,12 @@
+<map id="GenericValue&lt; Encoding, Allocator &gt;" name="GenericValue&lt; Encoding, Allocator &gt;">
+<area shape="rect" id="node4" href="$structGenericValue_1_1ArrayData.html" title="{GenericValue\&lt; Encoding,\l Allocator \&gt;::ArrayData\n|+ size\l+ capacity\l|}" alt="" coords="5,593,176,699"/>
+<area shape="rect" id="node2" href="$unionGenericValue_1_1Data.html" title="{GenericValue\&lt; Encoding,\l Allocator \&gt;::Data\n||}" alt="" coords="488,769,659,861"/>
+<area shape="rect" id="node3" href="$structGenericValue_1_1String.html" title="{GenericValue\&lt; Encoding,\l Allocator \&gt;::String\n|+ length\l+ hashcode\l+ str\l|}" alt="" coords="293,585,464,707"/>
+<area shape="rect" id="node5" href="$structGenericValue_1_1ObjectData.html" title="{GenericValue\&lt; Encoding,\l Allocator \&gt;::ObjectData\n|+ size\l+ capacity\l|}" alt="" coords="488,593,659,699"/>
+<area shape="rect" id="node6" href="$classGenericMember.html" title="Name&#45;value pair in a JSON object value. " alt="" coords="475,203,659,325"/>
+<area shape="rect" id="node7" href="$unionGenericValue_1_1Number.html" title="{GenericValue\&lt; Encoding,\l Allocator \&gt;::Number\n|+ i64\l+ u64\l+ d\l|}" alt="" coords="683,585,853,707"/>
+<area shape="rect" id="node8" href="$structGenericValue_1_1Number_1_1U.html" title="{GenericValue\&lt; Encoding,\l Allocator \&gt;::Number::U\n|+ u\l+ padding2\l|}" alt="" coords="683,211,853,317"/>
+<area shape="rect" id="node9" href="$structGenericValue_1_1Number_1_1I.html" title="{GenericValue\&lt; Encoding,\l Allocator \&gt;::Number::I\n|+ i\l+ padding\l|}" alt="" coords="877,211,1048,317"/>
+<area shape="rect" id="node10" href="$structGenericValue_1_1ShortString.html" title="{GenericValue\&lt; Encoding,\l Allocator \&gt;::ShortString\n|+ str\l|+ SetLength()\l+ GetLength()\l+ Usable()\l}" alt="" coords="877,585,1048,707"/>
+<area shape="rect" id="node11" href="$structGenericValue_1_1Flag.html" title="{GenericValue\&lt; Encoding,\l Allocator \&gt;::Flag\n|+ payload\l+ flags\l|}" alt="" coords="1072,593,1243,699"/>
+</map>

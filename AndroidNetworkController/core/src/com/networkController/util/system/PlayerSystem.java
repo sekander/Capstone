@@ -49,6 +49,7 @@ public class PlayerSystem extends IteratingSystem {
 
 
 
+
         if(Gdx.input.isKeyPressed(Input.Keys.RIGHT))
             b2Body.body.setLinearVelocity( 1.0f, 0);
         else if (Gdx.input.isKeyPressed(Input.Keys.LEFT))

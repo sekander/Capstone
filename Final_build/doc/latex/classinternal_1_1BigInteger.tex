@@ -1,0 +1,270 @@
+\hypertarget{classinternal_1_1BigInteger}{}\section{internal\+:\+:Big\+Integer Class Reference}
+\label{classinternal_1_1BigInteger}\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+
+
+{\ttfamily \#include $<$biginteger.\+h$>$}
+
+
+
+Collaboration diagram for internal\+:\+:Big\+Integer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classinternal_1_1BigInteger__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} \hyperlink{classinternal_1_1BigInteger_a1310812fca26ebae77594ba08678fc4c}{Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classinternal_1_1BigInteger_abec623168bc9494dec2f50643b897f72}{Big\+Integer} (const \hyperlink{classinternal_1_1BigInteger}{Big\+Integer} \&rhs)
+\item 
+\hyperlink{classinternal_1_1BigInteger_ad02b0ef9da203efddd4af07e923732c0}{Big\+Integer} (\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} u)
+\item 
+{\footnotesize template$<$typename Ch $>$ }\\\hyperlink{classinternal_1_1BigInteger_a4dc2632b2aa2973d18864a127d7c141a}{Big\+Integer} (const Ch $\ast$decimals, size\+\_\+t \hyperlink{imgui__impl__opengl3__loader_8h_a011fc24f10426c01349e94a4edd4b0d5}{length})
+\item 
+\hyperlink{classinternal_1_1BigInteger}{Big\+Integer} \& \hyperlink{classinternal_1_1BigInteger_ae3eaf1b96cd993511c9f48a14dfc3af2}{operator=} (const \hyperlink{classinternal_1_1BigInteger}{Big\+Integer} \&rhs)
+\item 
+\hyperlink{classinternal_1_1BigInteger}{Big\+Integer} \& \hyperlink{classinternal_1_1BigInteger_a4002e0b1cf5ee68ab94ab65b35167a38}{operator=} (\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} u)
+\item 
+\hyperlink{classinternal_1_1BigInteger}{Big\+Integer} \& \hyperlink{classinternal_1_1BigInteger_a09af1d6658d51ad4372649ce1c9c1a62}{operator+=} (\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} u)
+\item 
+\hyperlink{classinternal_1_1BigInteger}{Big\+Integer} \& \hyperlink{classinternal_1_1BigInteger_a79a52c6135c9783f2e53432dce2cde89}{operator$\ast$=} (\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} u)
+\item 
+\hyperlink{classinternal_1_1BigInteger}{Big\+Integer} \& \hyperlink{classinternal_1_1BigInteger_a83e8e464b7bc31c8b2c943f8563b2226}{operator$\ast$=} (\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} u)
+\item 
+\hyperlink{classinternal_1_1BigInteger}{Big\+Integer} \& \hyperlink{classinternal_1_1BigInteger_a48b12ef4676f19290dfd5816a4ef4a88}{operator$<$$<$=} (size\+\_\+t shift)
+\item 
+bool \hyperlink{classinternal_1_1BigInteger_a52b424669238bdebc134e793d3b470ae}{operator==} (const \hyperlink{classinternal_1_1BigInteger}{Big\+Integer} \&rhs) const
+\item 
+bool \hyperlink{classinternal_1_1BigInteger_a8b6ab0d652d461c1136e0388d352628b}{operator==} (const \hyperlink{classinternal_1_1BigInteger_a1310812fca26ebae77594ba08678fc4c}{Type} rhs) const
+\item 
+\hyperlink{classinternal_1_1BigInteger}{Big\+Integer} \& \hyperlink{classinternal_1_1BigInteger_a98a13f169c27d1acfa57054f37c61763}{Multiply\+Pow5} (unsigned exp)
+\item 
+bool \hyperlink{classinternal_1_1BigInteger_ad7ad62e6b62af38283ee940eb4015b26}{Difference} (const \hyperlink{classinternal_1_1BigInteger}{Big\+Integer} \&rhs, \hyperlink{classinternal_1_1BigInteger}{Big\+Integer} $\ast$out) const
+\item 
+int \hyperlink{classinternal_1_1BigInteger_af8e90fff5382de6c1cda5f751017200c}{Compare} (const \hyperlink{classinternal_1_1BigInteger}{Big\+Integer} \&rhs) const
+\item 
+size\+\_\+t \hyperlink{classinternal_1_1BigInteger_aa0ad6e74839b7c7fe77c9742ec079525}{Get\+Count} () const
+\item 
+\hyperlink{classinternal_1_1BigInteger_a1310812fca26ebae77594ba08678fc4c}{Type} \hyperlink{classinternal_1_1BigInteger_a7288eefd49735c3c3edec698f56738bd}{Get\+Digit} (size\+\_\+t \hyperlink{imgui__impl__opengl3__loader_8h_a57f14e05b1900f16a2da82ade47d0c6d}{index}) const
+\item 
+bool \hyperlink{classinternal_1_1BigInteger_ae12dd6759f1f76501db3d1bcafce39cd}{Is\+Zero} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Ch $>$ }\\\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classinternal_1_1BigInteger_adcdffd9049832290ce37e283c51e2f50}{Append\+Decimal64} (const Ch $\ast$begin, const Ch $\ast$end)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classinternal_1_1BigInteger_a18a4939a983f296085fed6bc5b56d5c1}{Push\+Back} (\hyperlink{classinternal_1_1BigInteger_a1310812fca26ebae77594ba08678fc4c}{Type} digit)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Ch $>$ }\\static \hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} \hyperlink{classinternal_1_1BigInteger_acebb94526a2f5f26f0de244b7f76a3db}{Parse\+Uint64} (const Ch $\ast$begin, const Ch $\ast$end)
+\item 
+static \hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} \hyperlink{classinternal_1_1BigInteger_a3857418321694cd20071203b2f08ebfe}{Mul\+Add64} (\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} \hyperlink{pointer_8h_aeeddce917cf130d62c370b8f216026dd}{a}, \hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} b, \hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} k, \hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} $\ast$out\+High)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classinternal_1_1BigInteger_a1310812fca26ebae77594ba08678fc4c}{Type} \hyperlink{classinternal_1_1BigInteger_a0b505df38fedd862a748fe1e629d918a}{digits\+\_\+} \mbox{[}\hyperlink{classinternal_1_1BigInteger_a8a908718d685b9bd39fb52f2e511b0c6}{k\+Capacity}\mbox{]}
+\item 
+size\+\_\+t \hyperlink{classinternal_1_1BigInteger_ad4bf5198afe86d754ec57a82605e644b}{count\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const size\+\_\+t \hyperlink{classinternal_1_1BigInteger_a89d6a00e78a914d0b873784539416dc5}{k\+Bit\+Count} = 3328
+\item 
+static const size\+\_\+t \hyperlink{classinternal_1_1BigInteger_a8a908718d685b9bd39fb52f2e511b0c6}{k\+Capacity} = \hyperlink{classinternal_1_1BigInteger_a89d6a00e78a914d0b873784539416dc5}{k\+Bit\+Count} / sizeof(\hyperlink{classinternal_1_1BigInteger_a1310812fca26ebae77594ba08678fc4c}{Type})
+\item 
+static const size\+\_\+t \hyperlink{classinternal_1_1BigInteger_a662666ad4bc9122cb80ba2ac6e88a745}{k\+Type\+Bit} = sizeof(\hyperlink{classinternal_1_1BigInteger_a1310812fca26ebae77594ba08678fc4c}{Type}) $\ast$ 8
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classinternal_1_1BigInteger_a1310812fca26ebae77594ba08678fc4c}\label{classinternal_1_1BigInteger_a1310812fca26ebae77594ba08678fc4c}} 
+\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}!Type@{Type}}
+\index{Type@{Type}!internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily typedef \hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} \hyperlink{classinternal_1_1BigInteger_a1310812fca26ebae77594ba08678fc4c}{internal\+::\+Big\+Integer\+::\+Type}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classinternal_1_1BigInteger_abec623168bc9494dec2f50643b897f72}\label{classinternal_1_1BigInteger_abec623168bc9494dec2f50643b897f72}} 
+\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}!Big\+Integer@{Big\+Integer}}
+\index{Big\+Integer@{Big\+Integer}!internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+\subsubsection{\texorpdfstring{Big\+Integer()}{BigInteger()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily internal\+::\+Big\+Integer\+::\+Big\+Integer (\begin{DoxyParamCaption}\item[{const \hyperlink{classinternal_1_1BigInteger}{Big\+Integer} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1BigInteger_ad02b0ef9da203efddd4af07e923732c0}\label{classinternal_1_1BigInteger_ad02b0ef9da203efddd4af07e923732c0}} 
+\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}!Big\+Integer@{Big\+Integer}}
+\index{Big\+Integer@{Big\+Integer}!internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+\subsubsection{\texorpdfstring{Big\+Integer()}{BigInteger()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily internal\+::\+Big\+Integer\+::\+Big\+Integer (\begin{DoxyParamCaption}\item[{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}]{u }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classinternal_1_1BigInteger_a4dc2632b2aa2973d18864a127d7c141a}\label{classinternal_1_1BigInteger_a4dc2632b2aa2973d18864a127d7c141a}} 
+\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}!Big\+Integer@{Big\+Integer}}
+\index{Big\+Integer@{Big\+Integer}!internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+\subsubsection{\texorpdfstring{Big\+Integer()}{BigInteger()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Ch $>$ \\
+internal\+::\+Big\+Integer\+::\+Big\+Integer (\begin{DoxyParamCaption}\item[{const Ch $\ast$}]{decimals,  }\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classinternal_1_1BigInteger_adcdffd9049832290ce37e283c51e2f50}\label{classinternal_1_1BigInteger_adcdffd9049832290ce37e283c51e2f50}} 
+\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}!Append\+Decimal64@{Append\+Decimal64}}
+\index{Append\+Decimal64@{Append\+Decimal64}!internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+\subsubsection{\texorpdfstring{Append\+Decimal64()}{AppendDecimal64()}}
+{\footnotesize\ttfamily template$<$typename Ch $>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} internal\+::\+Big\+Integer\+::\+Append\+Decimal64 (\begin{DoxyParamCaption}\item[{const Ch $\ast$}]{begin,  }\item[{const Ch $\ast$}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classinternal_1_1BigInteger_af8e90fff5382de6c1cda5f751017200c}\label{classinternal_1_1BigInteger_af8e90fff5382de6c1cda5f751017200c}} 
+\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}!Compare@{Compare}}
+\index{Compare@{Compare}!internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+\subsubsection{\texorpdfstring{Compare()}{Compare()}}
+{\footnotesize\ttfamily int internal\+::\+Big\+Integer\+::\+Compare (\begin{DoxyParamCaption}\item[{const \hyperlink{classinternal_1_1BigInteger}{Big\+Integer} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1BigInteger_ad7ad62e6b62af38283ee940eb4015b26}\label{classinternal_1_1BigInteger_ad7ad62e6b62af38283ee940eb4015b26}} 
+\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}!Difference@{Difference}}
+\index{Difference@{Difference}!internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+\subsubsection{\texorpdfstring{Difference()}{Difference()}}
+{\footnotesize\ttfamily bool internal\+::\+Big\+Integer\+::\+Difference (\begin{DoxyParamCaption}\item[{const \hyperlink{classinternal_1_1BigInteger}{Big\+Integer} \&}]{rhs,  }\item[{\hyperlink{classinternal_1_1BigInteger}{Big\+Integer} $\ast$}]{out }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1BigInteger_aa0ad6e74839b7c7fe77c9742ec079525}\label{classinternal_1_1BigInteger_aa0ad6e74839b7c7fe77c9742ec079525}} 
+\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}!Get\+Count@{Get\+Count}}
+\index{Get\+Count@{Get\+Count}!internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+\subsubsection{\texorpdfstring{Get\+Count()}{GetCount()}}
+{\footnotesize\ttfamily size\+\_\+t internal\+::\+Big\+Integer\+::\+Get\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1BigInteger_a7288eefd49735c3c3edec698f56738bd}\label{classinternal_1_1BigInteger_a7288eefd49735c3c3edec698f56738bd}} 
+\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}!Get\+Digit@{Get\+Digit}}
+\index{Get\+Digit@{Get\+Digit}!internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+\subsubsection{\texorpdfstring{Get\+Digit()}{GetDigit()}}
+{\footnotesize\ttfamily \hyperlink{classinternal_1_1BigInteger_a1310812fca26ebae77594ba08678fc4c}{Type} internal\+::\+Big\+Integer\+::\+Get\+Digit (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1BigInteger_ae12dd6759f1f76501db3d1bcafce39cd}\label{classinternal_1_1BigInteger_ae12dd6759f1f76501db3d1bcafce39cd}} 
+\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}!Is\+Zero@{Is\+Zero}}
+\index{Is\+Zero@{Is\+Zero}!internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+\subsubsection{\texorpdfstring{Is\+Zero()}{IsZero()}}
+{\footnotesize\ttfamily bool internal\+::\+Big\+Integer\+::\+Is\+Zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1BigInteger_a3857418321694cd20071203b2f08ebfe}\label{classinternal_1_1BigInteger_a3857418321694cd20071203b2f08ebfe}} 
+\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}!Mul\+Add64@{Mul\+Add64}}
+\index{Mul\+Add64@{Mul\+Add64}!internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+\subsubsection{\texorpdfstring{Mul\+Add64()}{MulAdd64()}}
+{\footnotesize\ttfamily static \hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} internal\+::\+Big\+Integer\+::\+Mul\+Add64 (\begin{DoxyParamCaption}\item[{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}]{a,  }\item[{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}]{b,  }\item[{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}]{k,  }\item[{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} $\ast$}]{out\+High }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classinternal_1_1BigInteger_a98a13f169c27d1acfa57054f37c61763}\label{classinternal_1_1BigInteger_a98a13f169c27d1acfa57054f37c61763}} 
+\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}!Multiply\+Pow5@{Multiply\+Pow5}}
+\index{Multiply\+Pow5@{Multiply\+Pow5}!internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+\subsubsection{\texorpdfstring{Multiply\+Pow5()}{MultiplyPow5()}}
+{\footnotesize\ttfamily \hyperlink{classinternal_1_1BigInteger}{Big\+Integer}\& internal\+::\+Big\+Integer\+::\+Multiply\+Pow5 (\begin{DoxyParamCaption}\item[{unsigned}]{exp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1BigInteger_a79a52c6135c9783f2e53432dce2cde89}\label{classinternal_1_1BigInteger_a79a52c6135c9783f2e53432dce2cde89}} 
+\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classinternal_1_1BigInteger}{Big\+Integer}\& internal\+::\+Big\+Integer\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}]{u }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1BigInteger_a83e8e464b7bc31c8b2c943f8563b2226}\label{classinternal_1_1BigInteger_a83e8e464b7bc31c8b2c943f8563b2226}} 
+\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classinternal_1_1BigInteger}{Big\+Integer}\& internal\+::\+Big\+Integer\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}]{u }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1BigInteger_a09af1d6658d51ad4372649ce1c9c1a62}\label{classinternal_1_1BigInteger_a09af1d6658d51ad4372649ce1c9c1a62}} 
+\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \hyperlink{classinternal_1_1BigInteger}{Big\+Integer}\& internal\+::\+Big\+Integer\+::operator+= (\begin{DoxyParamCaption}\item[{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}]{u }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1BigInteger_a48b12ef4676f19290dfd5816a4ef4a88}\label{classinternal_1_1BigInteger_a48b12ef4676f19290dfd5816a4ef4a88}} 
+\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}!operator$<$$<$=@{operator$<$$<$=}}
+\index{operator$<$$<$=@{operator$<$$<$=}!internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+\subsubsection{\texorpdfstring{operator$<$$<$=()}{operator<<=()}}
+{\footnotesize\ttfamily \hyperlink{classinternal_1_1BigInteger}{Big\+Integer}\& internal\+::\+Big\+Integer\+::operator$<$$<$= (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{shift }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1BigInteger_ae3eaf1b96cd993511c9f48a14dfc3af2}\label{classinternal_1_1BigInteger_ae3eaf1b96cd993511c9f48a14dfc3af2}} 
+\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}!operator=@{operator=}}
+\index{operator=@{operator=}!internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classinternal_1_1BigInteger}{Big\+Integer}\& internal\+::\+Big\+Integer\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classinternal_1_1BigInteger}{Big\+Integer} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1BigInteger_a4002e0b1cf5ee68ab94ab65b35167a38}\label{classinternal_1_1BigInteger_a4002e0b1cf5ee68ab94ab65b35167a38}} 
+\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}!operator=@{operator=}}
+\index{operator=@{operator=}!internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classinternal_1_1BigInteger}{Big\+Integer}\& internal\+::\+Big\+Integer\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}]{u }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1BigInteger_a52b424669238bdebc134e793d3b470ae}\label{classinternal_1_1BigInteger_a52b424669238bdebc134e793d3b470ae}} 
+\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}!operator==@{operator==}}
+\index{operator==@{operator==}!internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool internal\+::\+Big\+Integer\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classinternal_1_1BigInteger}{Big\+Integer} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1BigInteger_a8b6ab0d652d461c1136e0388d352628b}\label{classinternal_1_1BigInteger_a8b6ab0d652d461c1136e0388d352628b}} 
+\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}!operator==@{operator==}}
+\index{operator==@{operator==}!internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool internal\+::\+Big\+Integer\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classinternal_1_1BigInteger_a1310812fca26ebae77594ba08678fc4c}{Type}}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1BigInteger_acebb94526a2f5f26f0de244b7f76a3db}\label{classinternal_1_1BigInteger_acebb94526a2f5f26f0de244b7f76a3db}} 
+\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}!Parse\+Uint64@{Parse\+Uint64}}
+\index{Parse\+Uint64@{Parse\+Uint64}!internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+\subsubsection{\texorpdfstring{Parse\+Uint64()}{ParseUint64()}}
+{\footnotesize\ttfamily template$<$typename Ch $>$ \\
+static \hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} internal\+::\+Big\+Integer\+::\+Parse\+Uint64 (\begin{DoxyParamCaption}\item[{const Ch $\ast$}]{begin,  }\item[{const Ch $\ast$}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classinternal_1_1BigInteger_a18a4939a983f296085fed6bc5b56d5c1}\label{classinternal_1_1BigInteger_a18a4939a983f296085fed6bc5b56d5c1}} 
+\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}!Push\+Back@{Push\+Back}}
+\index{Push\+Back@{Push\+Back}!internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+\subsubsection{\texorpdfstring{Push\+Back()}{PushBack()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} internal\+::\+Big\+Integer\+::\+Push\+Back (\begin{DoxyParamCaption}\item[{\hyperlink{classinternal_1_1BigInteger_a1310812fca26ebae77594ba08678fc4c}{Type}}]{digit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classinternal_1_1BigInteger_ad4bf5198afe86d754ec57a82605e644b}\label{classinternal_1_1BigInteger_ad4bf5198afe86d754ec57a82605e644b}} 
+\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}!count\+\_\+@{count\+\_\+}}
+\index{count\+\_\+@{count\+\_\+}!internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+\subsubsection{\texorpdfstring{count\+\_\+}{count\_}}
+{\footnotesize\ttfamily size\+\_\+t internal\+::\+Big\+Integer\+::count\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classinternal_1_1BigInteger_a0b505df38fedd862a748fe1e629d918a}\label{classinternal_1_1BigInteger_a0b505df38fedd862a748fe1e629d918a}} 
+\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}!digits\+\_\+@{digits\+\_\+}}
+\index{digits\+\_\+@{digits\+\_\+}!internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+\subsubsection{\texorpdfstring{digits\+\_\+}{digits\_}}
+{\footnotesize\ttfamily \hyperlink{classinternal_1_1BigInteger_a1310812fca26ebae77594ba08678fc4c}{Type} internal\+::\+Big\+Integer\+::digits\+\_\+\mbox{[}\hyperlink{classinternal_1_1BigInteger_a8a908718d685b9bd39fb52f2e511b0c6}{k\+Capacity}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classinternal_1_1BigInteger_a89d6a00e78a914d0b873784539416dc5}\label{classinternal_1_1BigInteger_a89d6a00e78a914d0b873784539416dc5}} 
+\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}!k\+Bit\+Count@{k\+Bit\+Count}}
+\index{k\+Bit\+Count@{k\+Bit\+Count}!internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+\subsubsection{\texorpdfstring{k\+Bit\+Count}{kBitCount}}
+{\footnotesize\ttfamily const size\+\_\+t internal\+::\+Big\+Integer\+::k\+Bit\+Count = 3328\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classinternal_1_1BigInteger_a8a908718d685b9bd39fb52f2e511b0c6}\label{classinternal_1_1BigInteger_a8a908718d685b9bd39fb52f2e511b0c6}} 
+\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}!k\+Capacity@{k\+Capacity}}
+\index{k\+Capacity@{k\+Capacity}!internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+\subsubsection{\texorpdfstring{k\+Capacity}{kCapacity}}
+{\footnotesize\ttfamily const size\+\_\+t internal\+::\+Big\+Integer\+::k\+Capacity = \hyperlink{classinternal_1_1BigInteger_a89d6a00e78a914d0b873784539416dc5}{k\+Bit\+Count} / sizeof(\hyperlink{classinternal_1_1BigInteger_a1310812fca26ebae77594ba08678fc4c}{Type})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classinternal_1_1BigInteger_a662666ad4bc9122cb80ba2ac6e88a745}\label{classinternal_1_1BigInteger_a662666ad4bc9122cb80ba2ac6e88a745}} 
+\index{internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}!k\+Type\+Bit@{k\+Type\+Bit}}
+\index{k\+Type\+Bit@{k\+Type\+Bit}!internal\+::\+Big\+Integer@{internal\+::\+Big\+Integer}}
+\subsubsection{\texorpdfstring{k\+Type\+Bit}{kTypeBit}}
+{\footnotesize\ttfamily const size\+\_\+t internal\+::\+Big\+Integer\+::k\+Type\+Bit = sizeof(\hyperlink{classinternal_1_1BigInteger_a1310812fca26ebae77594ba08678fc4c}{Type}) $\ast$ 8\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/rapidjson/internal/\hyperlink{biginteger_8h}{biginteger.\+h}\end{DoxyCompactItemize}

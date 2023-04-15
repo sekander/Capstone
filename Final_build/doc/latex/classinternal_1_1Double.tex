@@ -1,0 +1,266 @@
+\hypertarget{classinternal_1_1Double}{}\section{internal\+:\+:Double Class Reference}
+\label{classinternal_1_1Double}\index{internal\+::\+Double@{internal\+::\+Double}}
+
+
+{\ttfamily \#include $<$ieee754.\+h$>$}
+
+
+
+Collaboration diagram for internal\+:\+:Double\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{classinternal_1_1Double__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classinternal_1_1Double_a98e2cff9880cd032d174e9721ae40ddd}{Double} ()
+\item 
+\hyperlink{classinternal_1_1Double_ad66f3b914570ce62e9f16083117f3e4f}{Double} (double d)
+\item 
+\hyperlink{classinternal_1_1Double_a293a7ca841d847ea3e83ffa28b68601f}{Double} (\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} u)
+\item 
+double \hyperlink{classinternal_1_1Double_a665c64824d1046528cbc4066a9ed0ef8}{Value} () const
+\item 
+\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} \hyperlink{classinternal_1_1Double_a1a35be6344c886f159cb36a1498a62ac}{Uint64\+Value} () const
+\item 
+double \hyperlink{classinternal_1_1Double_a6ffee23d82d9c606b1a53ed87e393e90}{Next\+Positive\+Double} () const
+\item 
+bool \hyperlink{classinternal_1_1Double_ab09c26873ca4c3e471a97c4559bf317d}{Sign} () const
+\item 
+\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} \hyperlink{classinternal_1_1Double_ade5d3e893dd6884ccd37632109dae1a6}{Significand} () const
+\item 
+int \hyperlink{classinternal_1_1Double_ae091055d96d8730f654170613f2cf265}{Exponent} () const
+\item 
+bool \hyperlink{classinternal_1_1Double_a312312ab2798ee85cbd0e739fcefa386}{Is\+Nan} () const
+\item 
+bool \hyperlink{classinternal_1_1Double_afe1ce48f7fb9797e1a2044c58a6b226c}{Is\+Inf} () const
+\item 
+bool \hyperlink{classinternal_1_1Double_a8b9a82e8b99783b7e98b5307756021c0}{Is\+Nan\+Or\+Inf} () const
+\item 
+bool \hyperlink{classinternal_1_1Double_a8a39cd42010c69681da35d87f1331381}{Is\+Normal} () const
+\item 
+bool \hyperlink{classinternal_1_1Double_a90a3a1ca614b377b59576955ce987ce2}{Is\+Zero} () const
+\item 
+\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} \hyperlink{classinternal_1_1Double_a1bf89d77be843f69facec9f2bc4dbc72}{Integer\+Significand} () const
+\item 
+int \hyperlink{classinternal_1_1Double_a9721e0fdedef4d0fe6c7b411492a88fb}{Integer\+Exponent} () const
+\item 
+\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} \hyperlink{classinternal_1_1Double_ab3d3a81274e4f4b9b415db7c664d3ac9}{To\+Bias} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classinternal_1_1Double_aa710fa4f5e06b0ff4348a13475688f13}{Effective\+Significand\+Size} (int order)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>double \hyperlink{classinternal_1_1Double_a9ed5b5245664da8abe6cdeefaed6452e}{d\_}\\
+\>\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t} \hyperlink{classinternal_1_1Double_ad7523f7fe0c47d6aabe34f68b00a3250}{u\_}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{classinternal_1_1Double_a2e41ff26c6ad85628305c479fbd451aa}{k\+Significand\+Size} = 52
+\item 
+static const int \hyperlink{classinternal_1_1Double_a7d4436067abd6620d1ed156b3e9d54e2}{k\+Exponent\+Bias} = 0x3\+FF
+\item 
+static const int \hyperlink{classinternal_1_1Double_a8e8f5769df7c1a7273d83d61233a682f}{k\+Denormal\+Exponent} = 1 -\/ \hyperlink{classinternal_1_1Double_a7d4436067abd6620d1ed156b3e9d54e2}{k\+Exponent\+Bias}
+\item 
+static const \hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} \hyperlink{classinternal_1_1Double_a43d4007b0121278555519de8d4fdc59e}{k\+Sign\+Mask} = \hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+U\+I\+N\+T64\+\_\+\+C2}(0x80000000, 0x00000000)
+\item 
+static const \hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} \hyperlink{classinternal_1_1Double_a39172dca75a2a5ddec868a170f7a7a3e}{k\+Exponent\+Mask} = \hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+U\+I\+N\+T64\+\_\+\+C2}(0x7\+F\+F00000, 0x00000000)
+\item 
+static const \hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} \hyperlink{classinternal_1_1Double_aa34deedf05f755101bf807419d113bf5}{k\+Significand\+Mask} = \hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+U\+I\+N\+T64\+\_\+\+C2}(0x000\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F)
+\item 
+static const \hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} \hyperlink{classinternal_1_1Double_a93fcf8c6a54766f9239f1d3cb0ca0710}{k\+Hidden\+Bit} = \hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+U\+I\+N\+T64\+\_\+\+C2}(0x00100000, 0x00000000)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classinternal_1_1Double_a98e2cff9880cd032d174e9721ae40ddd}\label{classinternal_1_1Double_a98e2cff9880cd032d174e9721ae40ddd}} 
+\index{internal\+::\+Double@{internal\+::\+Double}!Double@{Double}}
+\index{Double@{Double}!internal\+::\+Double@{internal\+::\+Double}}
+\subsubsection{\texorpdfstring{Double()}{Double()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily internal\+::\+Double\+::\+Double (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1Double_ad66f3b914570ce62e9f16083117f3e4f}\label{classinternal_1_1Double_ad66f3b914570ce62e9f16083117f3e4f}} 
+\index{internal\+::\+Double@{internal\+::\+Double}!Double@{Double}}
+\index{Double@{Double}!internal\+::\+Double@{internal\+::\+Double}}
+\subsubsection{\texorpdfstring{Double()}{Double()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily internal\+::\+Double\+::\+Double (\begin{DoxyParamCaption}\item[{double}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1Double_a293a7ca841d847ea3e83ffa28b68601f}\label{classinternal_1_1Double_a293a7ca841d847ea3e83ffa28b68601f}} 
+\index{internal\+::\+Double@{internal\+::\+Double}!Double@{Double}}
+\index{Double@{Double}!internal\+::\+Double@{internal\+::\+Double}}
+\subsubsection{\texorpdfstring{Double()}{Double()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily internal\+::\+Double\+::\+Double (\begin{DoxyParamCaption}\item[{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}]{u }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classinternal_1_1Double_aa710fa4f5e06b0ff4348a13475688f13}\label{classinternal_1_1Double_aa710fa4f5e06b0ff4348a13475688f13}} 
+\index{internal\+::\+Double@{internal\+::\+Double}!Effective\+Significand\+Size@{Effective\+Significand\+Size}}
+\index{Effective\+Significand\+Size@{Effective\+Significand\+Size}!internal\+::\+Double@{internal\+::\+Double}}
+\subsubsection{\texorpdfstring{Effective\+Significand\+Size()}{EffectiveSignificandSize()}}
+{\footnotesize\ttfamily static int internal\+::\+Double\+::\+Effective\+Significand\+Size (\begin{DoxyParamCaption}\item[{int}]{order }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classinternal_1_1Double_ae091055d96d8730f654170613f2cf265}\label{classinternal_1_1Double_ae091055d96d8730f654170613f2cf265}} 
+\index{internal\+::\+Double@{internal\+::\+Double}!Exponent@{Exponent}}
+\index{Exponent@{Exponent}!internal\+::\+Double@{internal\+::\+Double}}
+\subsubsection{\texorpdfstring{Exponent()}{Exponent()}}
+{\footnotesize\ttfamily int internal\+::\+Double\+::\+Exponent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1Double_a9721e0fdedef4d0fe6c7b411492a88fb}\label{classinternal_1_1Double_a9721e0fdedef4d0fe6c7b411492a88fb}} 
+\index{internal\+::\+Double@{internal\+::\+Double}!Integer\+Exponent@{Integer\+Exponent}}
+\index{Integer\+Exponent@{Integer\+Exponent}!internal\+::\+Double@{internal\+::\+Double}}
+\subsubsection{\texorpdfstring{Integer\+Exponent()}{IntegerExponent()}}
+{\footnotesize\ttfamily int internal\+::\+Double\+::\+Integer\+Exponent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1Double_a1bf89d77be843f69facec9f2bc4dbc72}\label{classinternal_1_1Double_a1bf89d77be843f69facec9f2bc4dbc72}} 
+\index{internal\+::\+Double@{internal\+::\+Double}!Integer\+Significand@{Integer\+Significand}}
+\index{Integer\+Significand@{Integer\+Significand}!internal\+::\+Double@{internal\+::\+Double}}
+\subsubsection{\texorpdfstring{Integer\+Significand()}{IntegerSignificand()}}
+{\footnotesize\ttfamily \hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} internal\+::\+Double\+::\+Integer\+Significand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1Double_afe1ce48f7fb9797e1a2044c58a6b226c}\label{classinternal_1_1Double_afe1ce48f7fb9797e1a2044c58a6b226c}} 
+\index{internal\+::\+Double@{internal\+::\+Double}!Is\+Inf@{Is\+Inf}}
+\index{Is\+Inf@{Is\+Inf}!internal\+::\+Double@{internal\+::\+Double}}
+\subsubsection{\texorpdfstring{Is\+Inf()}{IsInf()}}
+{\footnotesize\ttfamily bool internal\+::\+Double\+::\+Is\+Inf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1Double_a312312ab2798ee85cbd0e739fcefa386}\label{classinternal_1_1Double_a312312ab2798ee85cbd0e739fcefa386}} 
+\index{internal\+::\+Double@{internal\+::\+Double}!Is\+Nan@{Is\+Nan}}
+\index{Is\+Nan@{Is\+Nan}!internal\+::\+Double@{internal\+::\+Double}}
+\subsubsection{\texorpdfstring{Is\+Nan()}{IsNan()}}
+{\footnotesize\ttfamily bool internal\+::\+Double\+::\+Is\+Nan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1Double_a8b9a82e8b99783b7e98b5307756021c0}\label{classinternal_1_1Double_a8b9a82e8b99783b7e98b5307756021c0}} 
+\index{internal\+::\+Double@{internal\+::\+Double}!Is\+Nan\+Or\+Inf@{Is\+Nan\+Or\+Inf}}
+\index{Is\+Nan\+Or\+Inf@{Is\+Nan\+Or\+Inf}!internal\+::\+Double@{internal\+::\+Double}}
+\subsubsection{\texorpdfstring{Is\+Nan\+Or\+Inf()}{IsNanOrInf()}}
+{\footnotesize\ttfamily bool internal\+::\+Double\+::\+Is\+Nan\+Or\+Inf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1Double_a8a39cd42010c69681da35d87f1331381}\label{classinternal_1_1Double_a8a39cd42010c69681da35d87f1331381}} 
+\index{internal\+::\+Double@{internal\+::\+Double}!Is\+Normal@{Is\+Normal}}
+\index{Is\+Normal@{Is\+Normal}!internal\+::\+Double@{internal\+::\+Double}}
+\subsubsection{\texorpdfstring{Is\+Normal()}{IsNormal()}}
+{\footnotesize\ttfamily bool internal\+::\+Double\+::\+Is\+Normal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1Double_a90a3a1ca614b377b59576955ce987ce2}\label{classinternal_1_1Double_a90a3a1ca614b377b59576955ce987ce2}} 
+\index{internal\+::\+Double@{internal\+::\+Double}!Is\+Zero@{Is\+Zero}}
+\index{Is\+Zero@{Is\+Zero}!internal\+::\+Double@{internal\+::\+Double}}
+\subsubsection{\texorpdfstring{Is\+Zero()}{IsZero()}}
+{\footnotesize\ttfamily bool internal\+::\+Double\+::\+Is\+Zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1Double_a6ffee23d82d9c606b1a53ed87e393e90}\label{classinternal_1_1Double_a6ffee23d82d9c606b1a53ed87e393e90}} 
+\index{internal\+::\+Double@{internal\+::\+Double}!Next\+Positive\+Double@{Next\+Positive\+Double}}
+\index{Next\+Positive\+Double@{Next\+Positive\+Double}!internal\+::\+Double@{internal\+::\+Double}}
+\subsubsection{\texorpdfstring{Next\+Positive\+Double()}{NextPositiveDouble()}}
+{\footnotesize\ttfamily double internal\+::\+Double\+::\+Next\+Positive\+Double (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1Double_ab09c26873ca4c3e471a97c4559bf317d}\label{classinternal_1_1Double_ab09c26873ca4c3e471a97c4559bf317d}} 
+\index{internal\+::\+Double@{internal\+::\+Double}!Sign@{Sign}}
+\index{Sign@{Sign}!internal\+::\+Double@{internal\+::\+Double}}
+\subsubsection{\texorpdfstring{Sign()}{Sign()}}
+{\footnotesize\ttfamily bool internal\+::\+Double\+::\+Sign (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1Double_ade5d3e893dd6884ccd37632109dae1a6}\label{classinternal_1_1Double_ade5d3e893dd6884ccd37632109dae1a6}} 
+\index{internal\+::\+Double@{internal\+::\+Double}!Significand@{Significand}}
+\index{Significand@{Significand}!internal\+::\+Double@{internal\+::\+Double}}
+\subsubsection{\texorpdfstring{Significand()}{Significand()}}
+{\footnotesize\ttfamily \hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} internal\+::\+Double\+::\+Significand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1Double_ab3d3a81274e4f4b9b415db7c664d3ac9}\label{classinternal_1_1Double_ab3d3a81274e4f4b9b415db7c664d3ac9}} 
+\index{internal\+::\+Double@{internal\+::\+Double}!To\+Bias@{To\+Bias}}
+\index{To\+Bias@{To\+Bias}!internal\+::\+Double@{internal\+::\+Double}}
+\subsubsection{\texorpdfstring{To\+Bias()}{ToBias()}}
+{\footnotesize\ttfamily \hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} internal\+::\+Double\+::\+To\+Bias (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1Double_a1a35be6344c886f159cb36a1498a62ac}\label{classinternal_1_1Double_a1a35be6344c886f159cb36a1498a62ac}} 
+\index{internal\+::\+Double@{internal\+::\+Double}!Uint64\+Value@{Uint64\+Value}}
+\index{Uint64\+Value@{Uint64\+Value}!internal\+::\+Double@{internal\+::\+Double}}
+\subsubsection{\texorpdfstring{Uint64\+Value()}{Uint64Value()}}
+{\footnotesize\ttfamily \hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} internal\+::\+Double\+::\+Uint64\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1Double_a665c64824d1046528cbc4066a9ed0ef8}\label{classinternal_1_1Double_a665c64824d1046528cbc4066a9ed0ef8}} 
+\index{internal\+::\+Double@{internal\+::\+Double}!Value@{Value}}
+\index{Value@{Value}!internal\+::\+Double@{internal\+::\+Double}}
+\subsubsection{\texorpdfstring{Value()}{Value()}}
+{\footnotesize\ttfamily double internal\+::\+Double\+::\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classinternal_1_1Double_a01f0bc70c07b670156d5350f0ed9cd14}\label{classinternal_1_1Double_a01f0bc70c07b670156d5350f0ed9cd14}} 
+\subsubsection{\texorpdfstring{"@24}{@24}}
+{\footnotesize\ttfamily union \{ ... \} \hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classinternal_1_1Double_a9ed5b5245664da8abe6cdeefaed6452e}\label{classinternal_1_1Double_a9ed5b5245664da8abe6cdeefaed6452e}} 
+\index{internal\+::\+Double@{internal\+::\+Double}!d\+\_\+@{d\+\_\+}}
+\index{d\+\_\+@{d\+\_\+}!internal\+::\+Double@{internal\+::\+Double}}
+\subsubsection{\texorpdfstring{d\+\_\+}{d\_}}
+{\footnotesize\ttfamily double internal\+::\+Double\+::d\+\_\+}
+
+\mbox{\Hypertarget{classinternal_1_1Double_a8e8f5769df7c1a7273d83d61233a682f}\label{classinternal_1_1Double_a8e8f5769df7c1a7273d83d61233a682f}} 
+\index{internal\+::\+Double@{internal\+::\+Double}!k\+Denormal\+Exponent@{k\+Denormal\+Exponent}}
+\index{k\+Denormal\+Exponent@{k\+Denormal\+Exponent}!internal\+::\+Double@{internal\+::\+Double}}
+\subsubsection{\texorpdfstring{k\+Denormal\+Exponent}{kDenormalExponent}}
+{\footnotesize\ttfamily const int internal\+::\+Double\+::k\+Denormal\+Exponent = 1 -\/ \hyperlink{classinternal_1_1Double_a7d4436067abd6620d1ed156b3e9d54e2}{k\+Exponent\+Bias}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classinternal_1_1Double_a7d4436067abd6620d1ed156b3e9d54e2}\label{classinternal_1_1Double_a7d4436067abd6620d1ed156b3e9d54e2}} 
+\index{internal\+::\+Double@{internal\+::\+Double}!k\+Exponent\+Bias@{k\+Exponent\+Bias}}
+\index{k\+Exponent\+Bias@{k\+Exponent\+Bias}!internal\+::\+Double@{internal\+::\+Double}}
+\subsubsection{\texorpdfstring{k\+Exponent\+Bias}{kExponentBias}}
+{\footnotesize\ttfamily const int internal\+::\+Double\+::k\+Exponent\+Bias = 0x3\+FF\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classinternal_1_1Double_a39172dca75a2a5ddec868a170f7a7a3e}\label{classinternal_1_1Double_a39172dca75a2a5ddec868a170f7a7a3e}} 
+\index{internal\+::\+Double@{internal\+::\+Double}!k\+Exponent\+Mask@{k\+Exponent\+Mask}}
+\index{k\+Exponent\+Mask@{k\+Exponent\+Mask}!internal\+::\+Double@{internal\+::\+Double}}
+\subsubsection{\texorpdfstring{k\+Exponent\+Mask}{kExponentMask}}
+{\footnotesize\ttfamily const \hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} internal\+::\+Double\+::k\+Exponent\+Mask = \hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+U\+I\+N\+T64\+\_\+\+C2}(0x7\+F\+F00000, 0x00000000)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classinternal_1_1Double_a93fcf8c6a54766f9239f1d3cb0ca0710}\label{classinternal_1_1Double_a93fcf8c6a54766f9239f1d3cb0ca0710}} 
+\index{internal\+::\+Double@{internal\+::\+Double}!k\+Hidden\+Bit@{k\+Hidden\+Bit}}
+\index{k\+Hidden\+Bit@{k\+Hidden\+Bit}!internal\+::\+Double@{internal\+::\+Double}}
+\subsubsection{\texorpdfstring{k\+Hidden\+Bit}{kHiddenBit}}
+{\footnotesize\ttfamily const \hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} internal\+::\+Double\+::k\+Hidden\+Bit = \hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+U\+I\+N\+T64\+\_\+\+C2}(0x00100000, 0x00000000)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classinternal_1_1Double_aa34deedf05f755101bf807419d113bf5}\label{classinternal_1_1Double_aa34deedf05f755101bf807419d113bf5}} 
+\index{internal\+::\+Double@{internal\+::\+Double}!k\+Significand\+Mask@{k\+Significand\+Mask}}
+\index{k\+Significand\+Mask@{k\+Significand\+Mask}!internal\+::\+Double@{internal\+::\+Double}}
+\subsubsection{\texorpdfstring{k\+Significand\+Mask}{kSignificandMask}}
+{\footnotesize\ttfamily const \hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} internal\+::\+Double\+::k\+Significand\+Mask = \hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+U\+I\+N\+T64\+\_\+\+C2}(0x000\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classinternal_1_1Double_a2e41ff26c6ad85628305c479fbd451aa}\label{classinternal_1_1Double_a2e41ff26c6ad85628305c479fbd451aa}} 
+\index{internal\+::\+Double@{internal\+::\+Double}!k\+Significand\+Size@{k\+Significand\+Size}}
+\index{k\+Significand\+Size@{k\+Significand\+Size}!internal\+::\+Double@{internal\+::\+Double}}
+\subsubsection{\texorpdfstring{k\+Significand\+Size}{kSignificandSize}}
+{\footnotesize\ttfamily const int internal\+::\+Double\+::k\+Significand\+Size = 52\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classinternal_1_1Double_a43d4007b0121278555519de8d4fdc59e}\label{classinternal_1_1Double_a43d4007b0121278555519de8d4fdc59e}} 
+\index{internal\+::\+Double@{internal\+::\+Double}!k\+Sign\+Mask@{k\+Sign\+Mask}}
+\index{k\+Sign\+Mask@{k\+Sign\+Mask}!internal\+::\+Double@{internal\+::\+Double}}
+\subsubsection{\texorpdfstring{k\+Sign\+Mask}{kSignMask}}
+{\footnotesize\ttfamily const \hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} internal\+::\+Double\+::k\+Sign\+Mask = \hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+U\+I\+N\+T64\+\_\+\+C2}(0x80000000, 0x00000000)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classinternal_1_1Double_ad7523f7fe0c47d6aabe34f68b00a3250}\label{classinternal_1_1Double_ad7523f7fe0c47d6aabe34f68b00a3250}} 
+\index{internal\+::\+Double@{internal\+::\+Double}!u\+\_\+@{u\+\_\+}}
+\index{u\+\_\+@{u\+\_\+}!internal\+::\+Double@{internal\+::\+Double}}
+\subsubsection{\texorpdfstring{u\+\_\+}{u\_}}
+{\footnotesize\ttfamily \hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t} internal\+::\+Double\+::u\+\_\+}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/rapidjson/internal/\hyperlink{ieee754_8h}{ieee754.\+h}\end{DoxyCompactItemize}

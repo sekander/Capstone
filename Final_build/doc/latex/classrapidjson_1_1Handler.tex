@@ -1,0 +1,52 @@
+\hypertarget{classrapidjson_1_1Handler}{}\section{rapidjson\+:\+:Handler Class Reference}
+\label{classrapidjson_1_1Handler}\index{rapidjson\+::\+Handler@{rapidjson\+::\+Handler}}
+
+
+Concept for receiving events from \hyperlink{classGenericReader}{Generic\+Reader} upon parsing. The functions return true if no error occurs. If they return false, the event publisher should terminate the process.  
+
+
+
+
+{\ttfamily \#include $<$reader.\+h$>$}
+
+
+
+Collaboration diagram for rapidjson\+:\+:Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classrapidjson_1_1Handler__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+Concept for receiving events from \hyperlink{classGenericReader}{Generic\+Reader} upon parsing. The functions return true if no error occurs. If they return false, the event publisher should terminate the process. 
+
+
+\begin{DoxyCode}
+concept Handler \{
+    \textcolor{keyword}{typename} Ch;
+
+    \textcolor{keywordtype}{bool} Null();
+    \textcolor{keywordtype}{bool} Bool(\textcolor{keywordtype}{bool} b);
+    \textcolor{keywordtype}{bool} Int(\textcolor{keywordtype}{int} \hyperlink{game__play__state_8cpp_acb559820d9ca11295b4500f179ef6392}{i});
+    \textcolor{keywordtype}{bool} Uint(\textcolor{keywordtype}{unsigned} \hyperlink{game__play__state_8cpp_acb559820d9ca11295b4500f179ef6392}{i});
+    \textcolor{keywordtype}{bool} Int64(\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\_t} \hyperlink{game__play__state_8cpp_acb559820d9ca11295b4500f179ef6392}{i});
+    \textcolor{keywordtype}{bool} Uint64(\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t} \hyperlink{game__play__state_8cpp_acb559820d9ca11295b4500f179ef6392}{i});
+    \textcolor{keywordtype}{bool} Double(\textcolor{keywordtype}{double} d);
+    \textcolor{keywordtype}{bool} RawNumber(\textcolor{keyword}{const} Ch* str, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{SizeType} \hyperlink{imgui__impl__opengl3__loader_8h_a011fc24f10426c01349e94a4edd4b0d5}{length}, \textcolor{keywordtype}{bool} copy);
+    \textcolor{keywordtype}{bool} String(\textcolor{keyword}{const} Ch* str, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{SizeType} \hyperlink{imgui__impl__opengl3__loader_8h_a011fc24f10426c01349e94a4edd4b0d5}{length}, \textcolor{keywordtype}{bool} copy);
+    \textcolor{keywordtype}{bool} StartObject();
+    \textcolor{keywordtype}{bool} Key(\textcolor{keyword}{const} Ch* str, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{SizeType} \hyperlink{imgui__impl__opengl3__loader_8h_a011fc24f10426c01349e94a4edd4b0d5}{length}, \textcolor{keywordtype}{bool} copy);
+    \textcolor{keywordtype}{bool} EndObject(\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{SizeType} memberCount);
+    \textcolor{keywordtype}{bool} StartArray();
+    \textcolor{keywordtype}{bool} EndArray(\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{SizeType} elementCount);
+\};
+\end{DoxyCode}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/rapidjson/\hyperlink{reader_8h}{reader.\+h}\end{DoxyCompactItemize}

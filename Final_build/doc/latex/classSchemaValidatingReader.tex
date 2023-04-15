@@ -1,0 +1,280 @@
+\hypertarget{classSchemaValidatingReader}{}\section{Schema\+Validating\+Reader$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$ Class Template Reference}
+\label{classSchemaValidatingReader}\index{Schema\+Validating\+Reader$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$@{Schema\+Validating\+Reader$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$}}
+
+
+A helper class for parsing with validation.  
+
+
+
+
+{\ttfamily \#include $<$schema.\+h$>$}
+
+
+
+Collaboration diagram for Schema\+Validating\+Reader$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSchemaValidatingReader__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Schema\+Document\+Type\+::\+Pointer\+Type \hyperlink{classSchemaValidatingReader_a30ecf1b20ca5a1b79e0d5f4ceb3bf198}{Pointer\+Type}
+\item 
+typedef Input\+Stream\+::\+Ch \hyperlink{classSchemaValidatingReader_a6eb6f887a49dbb400800ab4fc01f02c7}{Ch}
+\item 
+typedef \hyperlink{classGenericValue}{Generic\+Value}$<$ Source\+Encoding, Stack\+Allocator $>$ \hyperlink{classSchemaValidatingReader_af08b51fcef602c68d95769c35ae606be}{Value\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSchemaValidatingReader_ae7945b71687ad3dd13b9c3d096892eac}{Schema\+Validating\+Reader} (Input\+Stream \&is, const Schema\+Document\+Type \&sd)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Handler $>$ }\\bool \hyperlink{classSchemaValidatingReader_a7135d8d53aacd850fbce2901cca4a4c3}{operator()} (Handler \&handler)
+\item 
+const \hyperlink{structParseResult}{Parse\+Result} \& \hyperlink{classSchemaValidatingReader_add1def2be62e1443a88c7792e5b34e3b}{Get\+Parse\+Result} () const
+\item 
+bool \hyperlink{classSchemaValidatingReader_a3c04fa90a430a67a993a2b8876e89ff4}{Is\+Valid} () const
+\item 
+const \hyperlink{classSchemaValidatingReader_a30ecf1b20ca5a1b79e0d5f4ceb3bf198}{Pointer\+Type} \& \hyperlink{classSchemaValidatingReader_a9accbbcbe9afbbe26300d943ccb46362}{Get\+Invalid\+Schema\+Pointer} () const
+\item 
+const \hyperlink{classSchemaValidatingReader_a6eb6f887a49dbb400800ab4fc01f02c7}{Ch} $\ast$ \hyperlink{classSchemaValidatingReader_ac3192b08923b4d68d04462b0b61ded1c}{Get\+Invalid\+Schema\+Keyword} () const
+\item 
+const \hyperlink{classSchemaValidatingReader_a30ecf1b20ca5a1b79e0d5f4ceb3bf198}{Pointer\+Type} \& \hyperlink{classSchemaValidatingReader_a53051bfc38cb24368fc40e4334102da8}{Get\+Invalid\+Document\+Pointer} () const
+\item 
+const \hyperlink{classSchemaValidatingReader_af08b51fcef602c68d95769c35ae606be}{Value\+Type} \& \hyperlink{classSchemaValidatingReader_a7a54d5f2378f85f5ca23440f8f1d214e}{Get\+Error} () const
+\item 
+\hyperlink{group__RAPIDJSON__ERRORS_ga2e1f88f94a5d9a6817a5de0ed2f0105a}{Validate\+Error\+Code} \hyperlink{classSchemaValidatingReader_a625f4a209960ad79485d3c8e9bc23fbb}{Get\+Invalid\+Schema\+Code} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Input\+Stream \& \hyperlink{classSchemaValidatingReader_afef08820b573230fb30ffae3b084807f}{is\+\_\+}
+\item 
+const Schema\+Document\+Type \& \hyperlink{classSchemaValidatingReader_a920ecfbd20bf519ef36af81239f97958}{sd\+\_\+}
+\item 
+\hyperlink{structParseResult}{Parse\+Result} \hyperlink{classSchemaValidatingReader_a8d246c6285362e5a2eb578a6f7cebf25}{parse\+Result\+\_\+}
+\item 
+\hyperlink{classSchemaValidatingReader_a30ecf1b20ca5a1b79e0d5f4ceb3bf198}{Pointer\+Type} \hyperlink{classSchemaValidatingReader_a2ba358d223cd4ec6a413e64a84d3e568}{invalid\+Schema\+Pointer\+\_\+}
+\item 
+const \hyperlink{classSchemaValidatingReader_a6eb6f887a49dbb400800ab4fc01f02c7}{Ch} $\ast$ \hyperlink{classSchemaValidatingReader_a3935c72075571724b2db127351eb39be}{invalid\+Schema\+Keyword\+\_\+}
+\item 
+\hyperlink{classSchemaValidatingReader_a30ecf1b20ca5a1b79e0d5f4ceb3bf198}{Pointer\+Type} \hyperlink{classSchemaValidatingReader_ad4a32d0f16f800399813a1caab6e2453}{invalid\+Document\+Pointer\+\_\+}
+\item 
+\hyperlink{group__RAPIDJSON__ERRORS_ga2e1f88f94a5d9a6817a5de0ed2f0105a}{Validate\+Error\+Code} \hyperlink{classSchemaValidatingReader_a33ec294ce0352abc0ac24b2e69c10b70}{invalid\+Schema\+Code\+\_\+}
+\item 
+Stack\+Allocator \hyperlink{classSchemaValidatingReader_a7bb53669e646c4a712780c0df55f75a5}{allocator\+\_\+}
+\item 
+\hyperlink{classSchemaValidatingReader_af08b51fcef602c68d95769c35ae606be}{Value\+Type} \hyperlink{classSchemaValidatingReader_a1d948f949d9f946a03b35301cd6ec9be}{error\+\_\+}
+\item 
+bool \hyperlink{classSchemaValidatingReader_a4e0dcf24425a3ac3954ac08bb5f9823c}{is\+Valid\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$unsigned parse\+Flags, typename Input\+Stream, typename Source\+Encoding, typename Schema\+Document\+Type = Schema\+Document, typename Stack\+Allocator = Crt\+Allocator$>$\newline
+class Schema\+Validating\+Reader$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$}
+
+A helper class for parsing with validation. 
+
+This helper class is a functor, designed as a parameter of \hyperlink{classGenericDocument_a36fbc7d0a9595d26e0d2c8859d207d1f}{Generic\+Document\+::\+Populate()}.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em parse\+Flags} & Combination of \hyperlink{reader_8h_ab7be7dabe6ffcba60fad441505583450}{Parse\+Flag}. \\
+\hline
+{\em Input\+Stream} & Type of input stream, implementing Stream concept. \\
+\hline
+{\em Source\+Encoding} & Encoding of the input stream. \\
+\hline
+{\em Schema\+Document\+Type} & Type of schema document. \\
+\hline
+{\em Stack\+Allocator} & Allocator type for stack. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classSchemaValidatingReader_a6eb6f887a49dbb400800ab4fc01f02c7}\label{classSchemaValidatingReader_a6eb6f887a49dbb400800ab4fc01f02c7}} 
+\index{Schema\+Validating\+Reader@{Schema\+Validating\+Reader}!Ch@{Ch}}
+\index{Ch@{Ch}!Schema\+Validating\+Reader@{Schema\+Validating\+Reader}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+typedef Input\+Stream\+::\+Ch \hyperlink{classSchemaValidatingReader}{Schema\+Validating\+Reader}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::\hyperlink{classSchemaValidatingReader_a6eb6f887a49dbb400800ab4fc01f02c7}{Ch}}
+
+\mbox{\Hypertarget{classSchemaValidatingReader_a30ecf1b20ca5a1b79e0d5f4ceb3bf198}\label{classSchemaValidatingReader_a30ecf1b20ca5a1b79e0d5f4ceb3bf198}} 
+\index{Schema\+Validating\+Reader@{Schema\+Validating\+Reader}!Pointer\+Type@{Pointer\+Type}}
+\index{Pointer\+Type@{Pointer\+Type}!Schema\+Validating\+Reader@{Schema\+Validating\+Reader}}
+\subsubsection{\texorpdfstring{Pointer\+Type}{PointerType}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+typedef Schema\+Document\+Type\+::\+Pointer\+Type \hyperlink{classSchemaValidatingReader}{Schema\+Validating\+Reader}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::\hyperlink{classSchemaValidatingReader_a30ecf1b20ca5a1b79e0d5f4ceb3bf198}{Pointer\+Type}}
+
+\mbox{\Hypertarget{classSchemaValidatingReader_af08b51fcef602c68d95769c35ae606be}\label{classSchemaValidatingReader_af08b51fcef602c68d95769c35ae606be}} 
+\index{Schema\+Validating\+Reader@{Schema\+Validating\+Reader}!Value\+Type@{Value\+Type}}
+\index{Value\+Type@{Value\+Type}!Schema\+Validating\+Reader@{Schema\+Validating\+Reader}}
+\subsubsection{\texorpdfstring{Value\+Type}{ValueType}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+typedef \hyperlink{classGenericValue}{Generic\+Value}$<$Source\+Encoding, Stack\+Allocator$>$ \hyperlink{classSchemaValidatingReader}{Schema\+Validating\+Reader}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::\hyperlink{classSchemaValidatingReader_af08b51fcef602c68d95769c35ae606be}{Value\+Type}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSchemaValidatingReader_ae7945b71687ad3dd13b9c3d096892eac}\label{classSchemaValidatingReader_ae7945b71687ad3dd13b9c3d096892eac}} 
+\index{Schema\+Validating\+Reader@{Schema\+Validating\+Reader}!Schema\+Validating\+Reader@{Schema\+Validating\+Reader}}
+\index{Schema\+Validating\+Reader@{Schema\+Validating\+Reader}!Schema\+Validating\+Reader@{Schema\+Validating\+Reader}}
+\subsubsection{\texorpdfstring{Schema\+Validating\+Reader()}{SchemaValidatingReader()}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\hyperlink{classSchemaValidatingReader}{Schema\+Validating\+Reader}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::\hyperlink{classSchemaValidatingReader}{Schema\+Validating\+Reader} (\begin{DoxyParamCaption}\item[{Input\+Stream \&}]{is,  }\item[{const Schema\+Document\+Type \&}]{sd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & Input stream. \\
+\hline
+{\em sd} & Schema document. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSchemaValidatingReader_a7a54d5f2378f85f5ca23440f8f1d214e}\label{classSchemaValidatingReader_a7a54d5f2378f85f5ca23440f8f1d214e}} 
+\index{Schema\+Validating\+Reader@{Schema\+Validating\+Reader}!Get\+Error@{Get\+Error}}
+\index{Get\+Error@{Get\+Error}!Schema\+Validating\+Reader@{Schema\+Validating\+Reader}}
+\subsubsection{\texorpdfstring{Get\+Error()}{GetError()}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+const \hyperlink{classSchemaValidatingReader_af08b51fcef602c68d95769c35ae606be}{Value\+Type}\& \hyperlink{classSchemaValidatingReader}{Schema\+Validating\+Reader}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::Get\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSchemaValidatingReader_a53051bfc38cb24368fc40e4334102da8}\label{classSchemaValidatingReader_a53051bfc38cb24368fc40e4334102da8}} 
+\index{Schema\+Validating\+Reader@{Schema\+Validating\+Reader}!Get\+Invalid\+Document\+Pointer@{Get\+Invalid\+Document\+Pointer}}
+\index{Get\+Invalid\+Document\+Pointer@{Get\+Invalid\+Document\+Pointer}!Schema\+Validating\+Reader@{Schema\+Validating\+Reader}}
+\subsubsection{\texorpdfstring{Get\+Invalid\+Document\+Pointer()}{GetInvalidDocumentPointer()}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+const \hyperlink{classSchemaValidatingReader_a30ecf1b20ca5a1b79e0d5f4ceb3bf198}{Pointer\+Type}\& \hyperlink{classSchemaValidatingReader}{Schema\+Validating\+Reader}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::Get\+Invalid\+Document\+Pointer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSchemaValidatingReader_a625f4a209960ad79485d3c8e9bc23fbb}\label{classSchemaValidatingReader_a625f4a209960ad79485d3c8e9bc23fbb}} 
+\index{Schema\+Validating\+Reader@{Schema\+Validating\+Reader}!Get\+Invalid\+Schema\+Code@{Get\+Invalid\+Schema\+Code}}
+\index{Get\+Invalid\+Schema\+Code@{Get\+Invalid\+Schema\+Code}!Schema\+Validating\+Reader@{Schema\+Validating\+Reader}}
+\subsubsection{\texorpdfstring{Get\+Invalid\+Schema\+Code()}{GetInvalidSchemaCode()}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\hyperlink{group__RAPIDJSON__ERRORS_ga2e1f88f94a5d9a6817a5de0ed2f0105a}{Validate\+Error\+Code} \hyperlink{classSchemaValidatingReader}{Schema\+Validating\+Reader}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::Get\+Invalid\+Schema\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSchemaValidatingReader_ac3192b08923b4d68d04462b0b61ded1c}\label{classSchemaValidatingReader_ac3192b08923b4d68d04462b0b61ded1c}} 
+\index{Schema\+Validating\+Reader@{Schema\+Validating\+Reader}!Get\+Invalid\+Schema\+Keyword@{Get\+Invalid\+Schema\+Keyword}}
+\index{Get\+Invalid\+Schema\+Keyword@{Get\+Invalid\+Schema\+Keyword}!Schema\+Validating\+Reader@{Schema\+Validating\+Reader}}
+\subsubsection{\texorpdfstring{Get\+Invalid\+Schema\+Keyword()}{GetInvalidSchemaKeyword()}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+const \hyperlink{classSchemaValidatingReader_a6eb6f887a49dbb400800ab4fc01f02c7}{Ch}$\ast$ \hyperlink{classSchemaValidatingReader}{Schema\+Validating\+Reader}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::Get\+Invalid\+Schema\+Keyword (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSchemaValidatingReader_a9accbbcbe9afbbe26300d943ccb46362}\label{classSchemaValidatingReader_a9accbbcbe9afbbe26300d943ccb46362}} 
+\index{Schema\+Validating\+Reader@{Schema\+Validating\+Reader}!Get\+Invalid\+Schema\+Pointer@{Get\+Invalid\+Schema\+Pointer}}
+\index{Get\+Invalid\+Schema\+Pointer@{Get\+Invalid\+Schema\+Pointer}!Schema\+Validating\+Reader@{Schema\+Validating\+Reader}}
+\subsubsection{\texorpdfstring{Get\+Invalid\+Schema\+Pointer()}{GetInvalidSchemaPointer()}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+const \hyperlink{classSchemaValidatingReader_a30ecf1b20ca5a1b79e0d5f4ceb3bf198}{Pointer\+Type}\& \hyperlink{classSchemaValidatingReader}{Schema\+Validating\+Reader}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::Get\+Invalid\+Schema\+Pointer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSchemaValidatingReader_add1def2be62e1443a88c7792e5b34e3b}\label{classSchemaValidatingReader_add1def2be62e1443a88c7792e5b34e3b}} 
+\index{Schema\+Validating\+Reader@{Schema\+Validating\+Reader}!Get\+Parse\+Result@{Get\+Parse\+Result}}
+\index{Get\+Parse\+Result@{Get\+Parse\+Result}!Schema\+Validating\+Reader@{Schema\+Validating\+Reader}}
+\subsubsection{\texorpdfstring{Get\+Parse\+Result()}{GetParseResult()}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+const \hyperlink{structParseResult}{Parse\+Result}\& \hyperlink{classSchemaValidatingReader}{Schema\+Validating\+Reader}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::Get\+Parse\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSchemaValidatingReader_a3c04fa90a430a67a993a2b8876e89ff4}\label{classSchemaValidatingReader_a3c04fa90a430a67a993a2b8876e89ff4}} 
+\index{Schema\+Validating\+Reader@{Schema\+Validating\+Reader}!Is\+Valid@{Is\+Valid}}
+\index{Is\+Valid@{Is\+Valid}!Schema\+Validating\+Reader@{Schema\+Validating\+Reader}}
+\subsubsection{\texorpdfstring{Is\+Valid()}{IsValid()}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+bool \hyperlink{classSchemaValidatingReader}{Schema\+Validating\+Reader}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::Is\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSchemaValidatingReader_a7135d8d53aacd850fbce2901cca4a4c3}\label{classSchemaValidatingReader_a7135d8d53aacd850fbce2901cca4a4c3}} 
+\index{Schema\+Validating\+Reader@{Schema\+Validating\+Reader}!operator()@{operator()}}
+\index{operator()@{operator()}!Schema\+Validating\+Reader@{Schema\+Validating\+Reader}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+template$<$typename Handler $>$ \\
+bool \hyperlink{classSchemaValidatingReader}{Schema\+Validating\+Reader}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::operator() (\begin{DoxyParamCaption}\item[{Handler \&}]{handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classSchemaValidatingReader_a7bb53669e646c4a712780c0df55f75a5}\label{classSchemaValidatingReader_a7bb53669e646c4a712780c0df55f75a5}} 
+\index{Schema\+Validating\+Reader@{Schema\+Validating\+Reader}!allocator\+\_\+@{allocator\+\_\+}}
+\index{allocator\+\_\+@{allocator\+\_\+}!Schema\+Validating\+Reader@{Schema\+Validating\+Reader}}
+\subsubsection{\texorpdfstring{allocator\+\_\+}{allocator\_}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+Stack\+Allocator \hyperlink{classSchemaValidatingReader}{Schema\+Validating\+Reader}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::allocator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSchemaValidatingReader_a1d948f949d9f946a03b35301cd6ec9be}\label{classSchemaValidatingReader_a1d948f949d9f946a03b35301cd6ec9be}} 
+\index{Schema\+Validating\+Reader@{Schema\+Validating\+Reader}!error\+\_\+@{error\+\_\+}}
+\index{error\+\_\+@{error\+\_\+}!Schema\+Validating\+Reader@{Schema\+Validating\+Reader}}
+\subsubsection{\texorpdfstring{error\+\_\+}{error\_}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\hyperlink{classSchemaValidatingReader_af08b51fcef602c68d95769c35ae606be}{Value\+Type} \hyperlink{classSchemaValidatingReader}{Schema\+Validating\+Reader}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::error\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSchemaValidatingReader_ad4a32d0f16f800399813a1caab6e2453}\label{classSchemaValidatingReader_ad4a32d0f16f800399813a1caab6e2453}} 
+\index{Schema\+Validating\+Reader@{Schema\+Validating\+Reader}!invalid\+Document\+Pointer\+\_\+@{invalid\+Document\+Pointer\+\_\+}}
+\index{invalid\+Document\+Pointer\+\_\+@{invalid\+Document\+Pointer\+\_\+}!Schema\+Validating\+Reader@{Schema\+Validating\+Reader}}
+\subsubsection{\texorpdfstring{invalid\+Document\+Pointer\+\_\+}{invalidDocumentPointer\_}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\hyperlink{classSchemaValidatingReader_a30ecf1b20ca5a1b79e0d5f4ceb3bf198}{Pointer\+Type} \hyperlink{classSchemaValidatingReader}{Schema\+Validating\+Reader}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::invalid\+Document\+Pointer\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSchemaValidatingReader_a33ec294ce0352abc0ac24b2e69c10b70}\label{classSchemaValidatingReader_a33ec294ce0352abc0ac24b2e69c10b70}} 
+\index{Schema\+Validating\+Reader@{Schema\+Validating\+Reader}!invalid\+Schema\+Code\+\_\+@{invalid\+Schema\+Code\+\_\+}}
+\index{invalid\+Schema\+Code\+\_\+@{invalid\+Schema\+Code\+\_\+}!Schema\+Validating\+Reader@{Schema\+Validating\+Reader}}
+\subsubsection{\texorpdfstring{invalid\+Schema\+Code\+\_\+}{invalidSchemaCode\_}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\hyperlink{group__RAPIDJSON__ERRORS_ga2e1f88f94a5d9a6817a5de0ed2f0105a}{Validate\+Error\+Code} \hyperlink{classSchemaValidatingReader}{Schema\+Validating\+Reader}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::invalid\+Schema\+Code\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSchemaValidatingReader_a3935c72075571724b2db127351eb39be}\label{classSchemaValidatingReader_a3935c72075571724b2db127351eb39be}} 
+\index{Schema\+Validating\+Reader@{Schema\+Validating\+Reader}!invalid\+Schema\+Keyword\+\_\+@{invalid\+Schema\+Keyword\+\_\+}}
+\index{invalid\+Schema\+Keyword\+\_\+@{invalid\+Schema\+Keyword\+\_\+}!Schema\+Validating\+Reader@{Schema\+Validating\+Reader}}
+\subsubsection{\texorpdfstring{invalid\+Schema\+Keyword\+\_\+}{invalidSchemaKeyword\_}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+const \hyperlink{classSchemaValidatingReader_a6eb6f887a49dbb400800ab4fc01f02c7}{Ch}$\ast$ \hyperlink{classSchemaValidatingReader}{Schema\+Validating\+Reader}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::invalid\+Schema\+Keyword\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSchemaValidatingReader_a2ba358d223cd4ec6a413e64a84d3e568}\label{classSchemaValidatingReader_a2ba358d223cd4ec6a413e64a84d3e568}} 
+\index{Schema\+Validating\+Reader@{Schema\+Validating\+Reader}!invalid\+Schema\+Pointer\+\_\+@{invalid\+Schema\+Pointer\+\_\+}}
+\index{invalid\+Schema\+Pointer\+\_\+@{invalid\+Schema\+Pointer\+\_\+}!Schema\+Validating\+Reader@{Schema\+Validating\+Reader}}
+\subsubsection{\texorpdfstring{invalid\+Schema\+Pointer\+\_\+}{invalidSchemaPointer\_}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\hyperlink{classSchemaValidatingReader_a30ecf1b20ca5a1b79e0d5f4ceb3bf198}{Pointer\+Type} \hyperlink{classSchemaValidatingReader}{Schema\+Validating\+Reader}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::invalid\+Schema\+Pointer\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSchemaValidatingReader_afef08820b573230fb30ffae3b084807f}\label{classSchemaValidatingReader_afef08820b573230fb30ffae3b084807f}} 
+\index{Schema\+Validating\+Reader@{Schema\+Validating\+Reader}!is\+\_\+@{is\+\_\+}}
+\index{is\+\_\+@{is\+\_\+}!Schema\+Validating\+Reader@{Schema\+Validating\+Reader}}
+\subsubsection{\texorpdfstring{is\+\_\+}{is\_}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+Input\+Stream\& \hyperlink{classSchemaValidatingReader}{Schema\+Validating\+Reader}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::is\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSchemaValidatingReader_a4e0dcf24425a3ac3954ac08bb5f9823c}\label{classSchemaValidatingReader_a4e0dcf24425a3ac3954ac08bb5f9823c}} 
+\index{Schema\+Validating\+Reader@{Schema\+Validating\+Reader}!is\+Valid\+\_\+@{is\+Valid\+\_\+}}
+\index{is\+Valid\+\_\+@{is\+Valid\+\_\+}!Schema\+Validating\+Reader@{Schema\+Validating\+Reader}}
+\subsubsection{\texorpdfstring{is\+Valid\+\_\+}{isValid\_}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+bool \hyperlink{classSchemaValidatingReader}{Schema\+Validating\+Reader}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::is\+Valid\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSchemaValidatingReader_a8d246c6285362e5a2eb578a6f7cebf25}\label{classSchemaValidatingReader_a8d246c6285362e5a2eb578a6f7cebf25}} 
+\index{Schema\+Validating\+Reader@{Schema\+Validating\+Reader}!parse\+Result\+\_\+@{parse\+Result\+\_\+}}
+\index{parse\+Result\+\_\+@{parse\+Result\+\_\+}!Schema\+Validating\+Reader@{Schema\+Validating\+Reader}}
+\subsubsection{\texorpdfstring{parse\+Result\+\_\+}{parseResult\_}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\hyperlink{structParseResult}{Parse\+Result} \hyperlink{classSchemaValidatingReader}{Schema\+Validating\+Reader}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::parse\+Result\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSchemaValidatingReader_a920ecfbd20bf519ef36af81239f97958}\label{classSchemaValidatingReader_a920ecfbd20bf519ef36af81239f97958}} 
+\index{Schema\+Validating\+Reader@{Schema\+Validating\+Reader}!sd\+\_\+@{sd\+\_\+}}
+\index{sd\+\_\+@{sd\+\_\+}!Schema\+Validating\+Reader@{Schema\+Validating\+Reader}}
+\subsubsection{\texorpdfstring{sd\+\_\+}{sd\_}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+const Schema\+Document\+Type\& \hyperlink{classSchemaValidatingReader}{Schema\+Validating\+Reader}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::sd\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/rapidjson/\hyperlink{schema_8h}{schema.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,8 @@
+<map id="ImGuiTabBar" name="ImGuiTabBar">
+<area shape="rect" id="node2" href="$structImVec2.html" title="{ImVec2\n|+ x\l+ y\l|+ ImVec2()\l+ ImVec2()\l+ operator[]()\l+ operator[]()\l}" alt="" coords="36,64,133,200"/>
+<area shape="rect" id="node3" href="$structImRect.html" title="{ImRect\n||+ ImRect()\l+ ImRect()\l+ ImRect()\l+ ImRect()\l+ GetCenter()\l+ GetSize()\l+ GetWidth()\l+ GetHeight()\l+ GetArea()\l+ GetTL()\land 18 more...\l}" alt="" coords="163,343,270,567"/>
+<area shape="rect" id="node4" href="$structImVector.html" title="{ImVector\&lt; ImGuiTabItem \&gt;\n|+ Size\l+ Capacity\l|+ ImVector()\l+ ImVector()\l+ operator=()\l+ ~ImVector()\l+ clear()\l+ clear_delete()\l+ clear_destruct()\l+ empty()\l+ size()\l+ size_in_bytes()\land 32 more...\l}" alt="" coords="294,336,477,575"/>
+<area shape="rect" id="node5" href="$structImGuiTabItem.html" title="{ImGuiTabItem\n|+ ID\l+ Flags\l+ LastFrameVisible\l+ LastFrameSelected\l+ Offset\l+ Width\l+ ContentWidth\l+ RequestedWidth\l+ NameOffset\l+ BeginOrder\l+ IndexDuringLayout\l+ WantClose\l|+ ImGuiTabItem()\l}" alt="" coords="312,13,459,251"/>
+<area shape="rect" id="node6" href="$structImGuiTextBuffer.html" title="{ImGuiTextBuffer\n|+ EmptyString\l|+ ImGuiTextBuffer()\l+ operator[]()\l+ begin()\l+ end()\l+ size()\l+ empty()\l+ clear()\l+ reserve()\l+ c_str()\l+ append()\l+ appendf()\l+ appendfv()\l}" alt="" coords="502,336,640,575"/>
+<area shape="rect" id="node7" href="$structImVector.html" title="{ImVector\&lt; char \&gt;\n|+ Size\l+ Capacity\l+ Data\l|+ ImVector()\l+ ImVector()\l+ operator=()\l+ ~ImVector()\l+ clear()\l+ clear_delete()\l+ clear_destruct()\l+ empty()\l+ size()\l+ size_in_bytes()\land 32 more...\l}" alt="" coords="509,5,633,259"/>
+</map>

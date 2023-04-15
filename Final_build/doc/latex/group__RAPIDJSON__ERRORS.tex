@@ -1,0 +1,715 @@
+\hypertarget{group__RAPIDJSON__ERRORS}{}\section{Rapid\+J\+S\+ON error handling}
+\label{group__RAPIDJSON__ERRORS}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structParseResult}{Parse\+Result}
+\begin{DoxyCompactList}\small\item\em Result of parsing (wraps Parse\+Error\+Code) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__RAPIDJSON__ERRORS_ga7e4636fd48d0148f102b8a13f0539d8c}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+H\+A\+R\+T\+Y\+PE}~char
+\begin{DoxyCompactList}\small\item\em \hyperlink{structCharacter}{Character} type of error messages. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__RAPIDJSON__ERRORS_gabe2e1bd1349e5a7d6c1af78c05a98f0d}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+R\+I\+NG}(x)~x
+\begin{DoxyCompactList}\small\item\em Macro for converting string literal to \hyperlink{group__RAPIDJSON__ERRORS_ga7e4636fd48d0148f102b8a13f0539d8c}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+H\+A\+R\+T\+Y\+PE}\mbox{[}\mbox{]}. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__RAPIDJSON__ERRORS_ga7f8c4265b2edda78568ae3338aaf1461}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+O\+R\+E\+T\+U\+RN}(parse\+Error\+Code,  \hyperlink{imgui__impl__opengl3__loader_8h_ae1b92ae085ddef4b1cdca7d749339fb0}{offset})
+\begin{DoxyCompactList}\small\item\em Macro to indicate a parse error. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__RAPIDJSON__ERRORS_gae3689840fa6e89a241313f33b602f865}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+\_\+\+E\+R\+R\+OR}(parse\+Error\+Code,  \hyperlink{imgui__impl__opengl3__loader_8h_ae1b92ae085ddef4b1cdca7d749339fb0}{offset})
+\begin{DoxyCompactList}\small\item\em (Internal) macro to indicate and handle a parse error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef const \hyperlink{group__RAPIDJSON__ERRORS_ga7e4636fd48d0148f102b8a13f0539d8c}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+H\+A\+R\+T\+Y\+PE} $\ast$($\ast$ \hyperlink{group__RAPIDJSON__ERRORS_ga586548166441ab3ce30219cb35be2e04}{Get\+Parse\+Error\+Func}) (\hyperlink{group__RAPIDJSON__ERRORS_ga8d4b32dfc45840bca189ade2bbcb6ba7}{Parse\+Error\+Code})
+\begin{DoxyCompactList}\small\item\em Function pointer type of Get\+Parse\+Error(). \end{DoxyCompactList}\item 
+typedef const \hyperlink{group__RAPIDJSON__ERRORS_ga7e4636fd48d0148f102b8a13f0539d8c}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+H\+A\+R\+T\+Y\+PE} $\ast$($\ast$ \hyperlink{group__RAPIDJSON__ERRORS_ga9e966925692da858e85ecf5c44fe8d38}{Get\+Validate\+Error\+Func}) (\hyperlink{group__RAPIDJSON__ERRORS_ga2e1f88f94a5d9a6817a5de0ed2f0105a}{Validate\+Error\+Code})
+\begin{DoxyCompactList}\small\item\em Function pointer type of Get\+Validate\+Error(). \end{DoxyCompactList}\item 
+typedef const \hyperlink{group__RAPIDJSON__ERRORS_ga7e4636fd48d0148f102b8a13f0539d8c}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+H\+A\+R\+T\+Y\+PE} $\ast$($\ast$ \hyperlink{group__RAPIDJSON__ERRORS_ga27925387f15027c190cfd8411c4a3535}{Get\+Schema\+Error\+Func}) (\hyperlink{group__RAPIDJSON__ERRORS_ga64f496d2cee8c9673f3105ec6008f290}{Schema\+Error\+Code})
+\begin{DoxyCompactList}\small\item\em Function pointer type of Get\+Schema\+Error(). \end{DoxyCompactList}\item 
+typedef const \hyperlink{group__RAPIDJSON__ERRORS_ga7e4636fd48d0148f102b8a13f0539d8c}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+H\+A\+R\+T\+Y\+PE} $\ast$($\ast$ \hyperlink{group__RAPIDJSON__ERRORS_gae35ad6c3a9795985203c66648026e991}{Get\+Pointer\+Parse\+Error\+Func}) (\hyperlink{group__RAPIDJSON__ERRORS_gacb2e274f33e54d91b96e9883a99a98be}{Pointer\+Parse\+Error\+Code})
+\begin{DoxyCompactList}\small\item\em Function pointer type of Get\+Pointer\+Parse\+Error(). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__RAPIDJSON__ERRORS_ga8d4b32dfc45840bca189ade2bbcb6ba7}{Parse\+Error\+Code} \{ \newline
+\hyperlink{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7ac0856bac4945cbd1d09e9502fd8f852f}{k\+Parse\+Error\+None} = 0, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a04b368d184e84b50580be2faa55f738a}{k\+Parse\+Error\+Document\+Empty}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a2293b39033220f4c2a568482c497dab5}{k\+Parse\+Error\+Document\+Root\+Not\+Singular}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a20a50e257aab726699ab02192db72ba9}{k\+Parse\+Error\+Value\+Invalid}, 
+\newline
+\hyperlink{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7ae3142fbadf2c4cdfd0c7200d7b6b8ed3}{k\+Parse\+Error\+Object\+Miss\+Name}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a55cda7eb30436986ab42a61e06caf017}{k\+Parse\+Error\+Object\+Miss\+Colon}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a34f70d7ed2fa121954f5fc5b5113d05f}{k\+Parse\+Error\+Object\+Miss\+Comma\+Or\+Curly\+Bracket}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7abfdd2bd90134fec4fe6a22762d16a5f5}{k\+Parse\+Error\+Array\+Miss\+Comma\+Or\+Square\+Bracket}, 
+\newline
+\hyperlink{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7afc65ea941a0a26812f0f258d2429e5d2}{k\+Parse\+Error\+String\+Unicode\+Escape\+Invalid\+Hex}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7ad9fced6763a06435ca448626c74e5c72}{k\+Parse\+Error\+String\+Unicode\+Surrogate\+Invalid}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a98bb3f3b1e12fdb7f278b9fa4029306f}{k\+Parse\+Error\+String\+Escape\+Invalid}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a6369e5b4e4922720cbc45c5941efc4af}{k\+Parse\+Error\+String\+Miss\+Quotation\+Mark}, 
+\newline
+\hyperlink{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a17ecb2ed1524b513d64a93f4a7a8b456}{k\+Parse\+Error\+String\+Invalid\+Encoding}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7ae52aaa70fde46e4cc422420309700b82}{k\+Parse\+Error\+Number\+Too\+Big}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a08a2cc2b4cacfba1673ed536eee229ce}{k\+Parse\+Error\+Number\+Miss\+Fraction}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a82cdbd740e22b819a70d05e585c2a442}{k\+Parse\+Error\+Number\+Miss\+Exponent}, 
+\newline
+\hyperlink{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a6fed2d9a15f88540a1ba785f0de2cbe6}{k\+Parse\+Error\+Termination}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a2bec6b26bddd3e093a37fc0d6399e0be}{k\+Parse\+Error\+Unspecific\+Syntax\+Error}
+ \}\begin{DoxyCompactList}\small\item\em Error code of parsing. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__RAPIDJSON__ERRORS_ga2e1f88f94a5d9a6817a5de0ed2f0105a}{Validate\+Error\+Code} \{ \newline
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa626466aeef9cacbac149e4ae57d5fda2}{k\+Validate\+Errors} = -\/1, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aac15ca121db8911126960c0672dfe2a2e}{k\+Validate\+Error\+None} = 0, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aab8cf6f0be86047d0bf345f25dac31f4c}{k\+Validate\+Error\+Multiple\+Of}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa933fe947a713d741c3dcdcd7cae96b35}{k\+Validate\+Error\+Maximum}, 
+\newline
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa3fca29f33702d8d98135b849c5f05f00}{k\+Validate\+Error\+Exclusive\+Maximum}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aaa5f0cf3faa2e08c359cfcd6d151d76e9}{k\+Validate\+Error\+Minimum}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa1722fc952e01a7a858d954c08e382d65}{k\+Validate\+Error\+Exclusive\+Minimum}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa6825de2427572de01bd121c9fffcee76}{k\+Validate\+Error\+Max\+Length}, 
+\newline
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa58e6e01eef18ea0af4763abd84128790}{k\+Validate\+Error\+Min\+Length}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa86bde2af1a18d73a533ba8e2f5971879}{k\+Validate\+Error\+Pattern}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa9acbcf73fe6a65bd23108a2dbc945cff}{k\+Validate\+Error\+Max\+Items}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aad31b3292fb68a14016514736b076200c}{k\+Validate\+Error\+Min\+Items}, 
+\newline
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa35159c760856953cbd62258140d8d498}{k\+Validate\+Error\+Unique\+Items}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa17861cca8a0ab2a0685f3b7804f67303}{k\+Validate\+Error\+Additional\+Items}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa179693cbb5ea15f0242e37588e99edf6}{k\+Validate\+Error\+Max\+Properties}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa017c1ccb7febfaff42115fc256753fb6}{k\+Validate\+Error\+Min\+Properties}, 
+\newline
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa2dc93a549f16b70911e6399c61a1aec4}{k\+Validate\+Error\+Required}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aae02b299a3f5db48400e7c1987201d2ca}{k\+Validate\+Error\+Additional\+Properties}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aaecdd1b884cbacca0213b36def4e1feaf}{k\+Validate\+Error\+Pattern\+Properties}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa2f81ab754a29330709c24110a2e895c8}{k\+Validate\+Error\+Dependencies}, 
+\newline
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa3c12e9cbc8a479b77776ceccbda4c289}{k\+Validate\+Error\+Enum}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa5504bec97bd2ef15efac9ff5b0a6e8fa}{k\+Validate\+Error\+Type}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa56466697ca410e5ddc2c7fabe11f3132}{k\+Validate\+Error\+One\+Of}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa1bbc2293748b2e80415c77c7a6a069f9}{k\+Validate\+Error\+One\+Of\+Match}, 
+\newline
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aaef48f9db2382e3308b823f078c73bce4}{k\+Validate\+Error\+All\+Of}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa7b821605f3eb4ec77e2c42204b3957cf}{k\+Validate\+Error\+Any\+Of}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aadd079998cffcae99da28675a5742327d}{k\+Validate\+Error\+Not}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa360a0e4b4fcbbac76a967e375a90aa67}{k\+Validate\+Error\+Read\+Only}, 
+\newline
+\hyperlink{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa794b9acc44a5e37d3f9881806849f844}{k\+Validate\+Error\+Write\+Only}
+ \}\begin{DoxyCompactList}\small\item\em Error codes when validating. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__RAPIDJSON__ERRORS_ga64f496d2cee8c9673f3105ec6008f290}{Schema\+Error\+Code} \{ \newline
+\hyperlink{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290a85bdec7ef6fb5f31336303e3b34e4709}{k\+Schema\+Error\+None} = 0, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290a150ed68b3a71e0d23462131d9c966ac8}{k\+Schema\+Error\+Start\+Unknown}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290a47fecb5b8155c46f45444af419bd34f8}{k\+Schema\+Error\+Ref\+Plain\+Name}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290ac07a5664f08a478ce064ae6c76214afa}{k\+Schema\+Error\+Ref\+Invalid}, 
+\newline
+\hyperlink{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290a8f33741a5d141c0ac94110c4f3d1db3e}{k\+Schema\+Error\+Ref\+Pointer\+Invalid}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290a793c77ebcaf33d784fd1309f0f4d6fe5}{k\+Schema\+Error\+Ref\+Unknown}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290abd6719d8aace36b40a0672f255e4de0a}{k\+Schema\+Error\+Ref\+Cyclical}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290a600356414ba8a667dd63f0fab307519c}{k\+Schema\+Error\+Ref\+No\+Remote\+Provider}, 
+\newline
+\hyperlink{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290aafb1c930bd5d372b7adaa2cf03717294}{k\+Schema\+Error\+Ref\+No\+Remote\+Schema}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290ad5786eacee5596b451b54193afb7fd8a}{k\+Schema\+Error\+Regex\+Invalid}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290a7200d26b9ab965c1b5ba63e67c1a995b}{k\+Schema\+Error\+Spec\+Unknown}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290a28bf4fd218d4c675751c6309bdde0c67}{k\+Schema\+Error\+Spec\+Unsupported}, 
+\newline
+\hyperlink{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290a264b50a46e5b1cd82c1d6f0ca006da8c}{k\+Schema\+Error\+Spec\+Illegal}, 
+\hyperlink{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290ae7d4dfbe6fc8c97eb5cb7587683078c6}{k\+Schema\+Error\+Read\+Only\+And\+Write\+Only}
+ \}\begin{DoxyCompactList}\small\item\em Error codes when validating. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__RAPIDJSON__ERRORS_gacb2e274f33e54d91b96e9883a99a98be}{Pointer\+Parse\+Error\+Code} \{ \newline
+\hyperlink{group__RAPIDJSON__ERRORS_ggacb2e274f33e54d91b96e9883a99a98bea81e2b6fbd1bf4ac890ddb7779265e3a0}{k\+Pointer\+Parse\+Error\+None} = 0, 
+\hyperlink{group__RAPIDJSON__ERRORS_ggacb2e274f33e54d91b96e9883a99a98bea5821696a2ab6cbccdc8288cbe6e81c77}{k\+Pointer\+Parse\+Error\+Token\+Must\+Begin\+With\+Solidus}, 
+\hyperlink{group__RAPIDJSON__ERRORS_ggacb2e274f33e54d91b96e9883a99a98bea4d2a7e511d717fd1d2f532ef5fcf821b}{k\+Pointer\+Parse\+Error\+Invalid\+Escape}, 
+\hyperlink{group__RAPIDJSON__ERRORS_ggacb2e274f33e54d91b96e9883a99a98beac0c1b013c0db34dcc5a47fc1ee7a8c35}{k\+Pointer\+Parse\+Error\+Invalid\+Percent\+Encoding}, 
+\newline
+\hyperlink{group__RAPIDJSON__ERRORS_ggacb2e274f33e54d91b96e9883a99a98beabd7eae93627f74267009a03679b6dc38}{k\+Pointer\+Parse\+Error\+Character\+Must\+Percent\+Encode}
+ \}\begin{DoxyCompactList}\small\item\em Error code of J\+S\+ON pointer parsing. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__RAPIDJSON__CONFIG_gad3806c8251fdc7da9618b7e922674ffc}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+B\+E\+G\+IN} const \hyperlink{group__RAPIDJSON__ERRORS_ga7e4636fd48d0148f102b8a13f0539d8c}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+H\+A\+R\+T\+Y\+PE} $\ast$ \hyperlink{group__RAPIDJSON__ERRORS_ga755b523205f46c980c80d12e230a3abd}{Get\+Parse\+Error\+\_\+\+En} (\hyperlink{group__RAPIDJSON__ERRORS_ga8d4b32dfc45840bca189ade2bbcb6ba7}{Parse\+Error\+Code} parse\+Error\+Code)
+\begin{DoxyCompactList}\small\item\em Maps error code of parsing into error message. \end{DoxyCompactList}\item 
+const \hyperlink{group__RAPIDJSON__ERRORS_ga7e4636fd48d0148f102b8a13f0539d8c}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+H\+A\+R\+T\+Y\+PE} $\ast$ \hyperlink{group__RAPIDJSON__ERRORS_gade9d7778693290f23a627630c73e6edf}{Get\+Validate\+Error\+\_\+\+En} (\hyperlink{group__RAPIDJSON__ERRORS_ga2e1f88f94a5d9a6817a5de0ed2f0105a}{Validate\+Error\+Code} validate\+Error\+Code)
+\begin{DoxyCompactList}\small\item\em Maps error code of validation into error message. \end{DoxyCompactList}\item 
+const \hyperlink{group__RAPIDJSON__ERRORS_ga7e4636fd48d0148f102b8a13f0539d8c}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+H\+A\+R\+T\+Y\+PE} $\ast$ \hyperlink{group__RAPIDJSON__ERRORS_ga14d079416a08527108f622b197061540}{Get\+Schema\+Error\+\_\+\+En} (\hyperlink{group__RAPIDJSON__ERRORS_ga64f496d2cee8c9673f3105ec6008f290}{Schema\+Error\+Code} schema\+Error\+Code)
+\begin{DoxyCompactList}\small\item\em Maps error code of schema document compilation into error message. \end{DoxyCompactList}\item 
+const \hyperlink{group__RAPIDJSON__ERRORS_ga7e4636fd48d0148f102b8a13f0539d8c}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+H\+A\+R\+T\+Y\+PE} $\ast$ \hyperlink{group__RAPIDJSON__ERRORS_gab0c2320924fc7f2cdca02a4ce104fd8e}{Get\+Pointer\+Parse\+Error\+\_\+\+En} (\hyperlink{group__RAPIDJSON__ERRORS_gacb2e274f33e54d91b96e9883a99a98be}{Pointer\+Parse\+Error\+Code} pointer\+Parse\+Error\+Code)
+\begin{DoxyCompactList}\small\item\em Maps error code of pointer parse into error message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_ga7e4636fd48d0148f102b8a13f0539d8c}\label{group__RAPIDJSON__ERRORS_ga7e4636fd48d0148f102b8a13f0539d8c}} 
+\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+H\+A\+R\+T\+Y\+PE@{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+H\+A\+R\+T\+Y\+PE}}
+\index{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+H\+A\+R\+T\+Y\+PE@{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+H\+A\+R\+T\+Y\+PE}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}
+\subsubsection{\texorpdfstring{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+H\+A\+R\+T\+Y\+PE}{RAPIDJSON\_ERROR\_CHARTYPE}}
+{\footnotesize\ttfamily \#define R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+H\+A\+R\+T\+Y\+PE~char}
+
+
+
+\hyperlink{structCharacter}{Character} type of error messages. 
+
+The default character type is {\ttfamily char}. On Windows, user can define this macro as {\ttfamily T\+C\+H\+AR} for supporting both unicode/non-\/unicode settings. \mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gabe2e1bd1349e5a7d6c1af78c05a98f0d}\label{group__RAPIDJSON__ERRORS_gabe2e1bd1349e5a7d6c1af78c05a98f0d}} 
+\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+R\+I\+NG@{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+R\+I\+NG}}
+\index{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+R\+I\+NG@{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+R\+I\+NG}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}
+\subsubsection{\texorpdfstring{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+R\+I\+NG}{RAPIDJSON\_ERROR\_STRING}}
+{\footnotesize\ttfamily \#define R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+R\+I\+NG(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~x}
+
+
+
+Macro for converting string literal to \hyperlink{group__RAPIDJSON__ERRORS_ga7e4636fd48d0148f102b8a13f0539d8c}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+H\+A\+R\+T\+Y\+PE}\mbox{[}\mbox{]}. 
+
+By default this conversion macro does nothing. On Windows, user can define this macro as {\ttfamily \+\_\+\+T(x)} for supporting both unicode/non-\/unicode settings. \mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gae3689840fa6e89a241313f33b602f865}\label{group__RAPIDJSON__ERRORS_gae3689840fa6e89a241313f33b602f865}} 
+\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+\_\+\+E\+R\+R\+OR@{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+\_\+\+E\+R\+R\+OR}}
+\index{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+\_\+\+E\+R\+R\+OR@{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+\_\+\+E\+R\+R\+OR}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}
+\subsubsection{\texorpdfstring{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+\_\+\+E\+R\+R\+OR}{RAPIDJSON\_PARSE\_ERROR}}
+{\footnotesize\ttfamily \#define R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+\_\+\+E\+R\+R\+OR(\begin{DoxyParamCaption}\item[{}]{parse\+Error\+Code,  }\item[{}]{\hyperlink{imgui__impl__opengl3__loader_8h_ae1b92ae085ddef4b1cdca7d749339fb0}{offset} }\end{DoxyParamCaption})}
+
+
+
+(Internal) macro to indicate and handle a parse error. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parse\+Error\+Code} & \hyperlink{group__RAPIDJSON__ERRORS_ga8d4b32dfc45840bca189ade2bbcb6ba7}{rapidjson\+::\+Parse\+Error\+Code} of the error \\
+\hline
+{\em offset} & position of the error in J\+S\+ON input ({\ttfamily size\+\_\+t})\\
+\hline
+\end{DoxyParams}
+Invokes R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+O\+R\+E\+T\+U\+RN and stops the parsing.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__RAPIDJSON__ERRORS_ga7f8c4265b2edda78568ae3338aaf1461}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+O\+R\+E\+T\+U\+RN} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_ga7f8c4265b2edda78568ae3338aaf1461}\label{group__RAPIDJSON__ERRORS_ga7f8c4265b2edda78568ae3338aaf1461}} 
+\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+O\+R\+E\+T\+U\+RN@{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+O\+R\+E\+T\+U\+RN}}
+\index{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+O\+R\+E\+T\+U\+RN@{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+O\+R\+E\+T\+U\+RN}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}
+\subsubsection{\texorpdfstring{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+O\+R\+E\+T\+U\+RN}{RAPIDJSON\_PARSE\_ERROR\_NORETURN}}
+{\footnotesize\ttfamily \#define R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+O\+R\+E\+T\+U\+RN(\begin{DoxyParamCaption}\item[{}]{parse\+Error\+Code,  }\item[{}]{\hyperlink{imgui__impl__opengl3__loader_8h_ae1b92ae085ddef4b1cdca7d749339fb0}{offset} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{group__RAPIDJSON__CONFIG_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_MULTILINEMACRO\_BEGIN \(\backslash\)}
+\hyperlink{group__RAPIDJSON__CONFIG_gabeba18d612187bad2ac62aed9276d47c}{    RAPIDJSON\_ASSERT}(!HasParseError()); \textcolor{comment}{/* Error can only be assigned once */} \(\backslash\)
+    SetParseError(parseErrorCode, \hyperlink{imgui__impl__opengl3__loader_8h_ae1b92ae085ddef4b1cdca7d749339fb0}{offset}); \(\backslash\)
+    RAPIDJSON\_MULTILINEMACRO\_END
+\end{DoxyCode}
+
+
+Macro to indicate a parse error. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parse\+Error\+Code} & \hyperlink{group__RAPIDJSON__ERRORS_ga8d4b32dfc45840bca189ade2bbcb6ba7}{rapidjson\+::\+Parse\+Error\+Code} of the error \\
+\hline
+{\em offset} & position of the error in J\+S\+ON input ({\ttfamily size\+\_\+t})\\
+\hline
+\end{DoxyParams}
+This macros can be used as a customization point for the internal error handling mechanism of Rapid\+J\+S\+ON.
+
+A common usage model is to throw an exception instead of requiring the caller to explicitly check the rapidjson\+::\+Generic\+Reader\+::\+Parse\textquotesingle{}s return value\+:
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#define RAPIDJSON\_PARSE\_ERROR\_NORETURN(parseErrorCode,offset) \(\backslash\)}
+\textcolor{preprocessor}{   throw ParseException(parseErrorCode, #parseErrorCode, offset)}
+
+\textcolor{preprocessor}{#include <stdexcept>}               \textcolor{comment}{// std::runtime\_error}
+\textcolor{preprocessor}{#include "\hyperlink{error_8h}{rapidjson/error/error.h}"} \textcolor{comment}{// rapidjson::ParseResult}
+
+\textcolor{keyword}{struct }ParseException : std::runtime\_error, rapidjson::ParseResult \{
+  ParseException(\hyperlink{group__RAPIDJSON__ERRORS_ga8d4b32dfc45840bca189ade2bbcb6ba7}{rapidjson::ParseErrorCode} code, \textcolor{keyword}{const} \textcolor{keywordtype}{char}* msg, \textcolor{keywordtype}{size\_t} 
+      \hyperlink{imgui__impl__opengl3__loader_8h_ae1b92ae085ddef4b1cdca7d749339fb0}{offset})
+    : \hyperlink{namespacestd}{std}::runtime\_error(msg), \hyperlink{structParseResult}{ParseResult}(code, offset) \{\}
+\};
+
+\textcolor{preprocessor}{#include "\hyperlink{reader_8h}{rapidjson/reader.h}"}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__RAPIDJSON__ERRORS_gae3689840fa6e89a241313f33b602f865}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+\_\+\+E\+R\+R\+OR}, rapidjson\+::\+Generic\+Reader\+::\+Parse 
+\end{DoxySeeAlso}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_ga586548166441ab3ce30219cb35be2e04}\label{group__RAPIDJSON__ERRORS_ga586548166441ab3ce30219cb35be2e04}} 
+\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!Get\+Parse\+Error\+Func@{Get\+Parse\+Error\+Func}}
+\index{Get\+Parse\+Error\+Func@{Get\+Parse\+Error\+Func}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}
+\subsubsection{\texorpdfstring{Get\+Parse\+Error\+Func}{GetParseErrorFunc}}
+{\footnotesize\ttfamily typedef const \hyperlink{group__RAPIDJSON__ERRORS_ga7e4636fd48d0148f102b8a13f0539d8c}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+H\+A\+R\+T\+Y\+PE}$\ast$($\ast$ Get\+Parse\+Error\+Func) (\hyperlink{group__RAPIDJSON__ERRORS_ga8d4b32dfc45840bca189ade2bbcb6ba7}{Parse\+Error\+Code})}
+
+
+
+Function pointer type of Get\+Parse\+Error(). 
+
+This is the prototype for {\ttfamily Get\+Parse\+Error\+\_\+\+X()}, where {\ttfamily X} is a locale. User can dynamically change locale in runtime, e.\+g.\+: 
+\begin{DoxyCode}
+\hyperlink{group__RAPIDJSON__ERRORS_ga586548166441ab3ce30219cb35be2e04}{GetParseErrorFunc} GetParseError = \hyperlink{group__RAPIDJSON__ERRORS_ga755b523205f46c980c80d12e230a3abd}{GetParseError\_En}; \textcolor{comment}{// or whatever}
+\textcolor{keyword}{const} \hyperlink{group__RAPIDJSON__ERRORS_ga7e4636fd48d0148f102b8a13f0539d8c}{RAPIDJSON\_ERROR\_CHARTYPE}* s = GetParseError(document.GetParseErrorCode());
+\end{DoxyCode}
+ \mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gae35ad6c3a9795985203c66648026e991}\label{group__RAPIDJSON__ERRORS_gae35ad6c3a9795985203c66648026e991}} 
+\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!Get\+Pointer\+Parse\+Error\+Func@{Get\+Pointer\+Parse\+Error\+Func}}
+\index{Get\+Pointer\+Parse\+Error\+Func@{Get\+Pointer\+Parse\+Error\+Func}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}
+\subsubsection{\texorpdfstring{Get\+Pointer\+Parse\+Error\+Func}{GetPointerParseErrorFunc}}
+{\footnotesize\ttfamily typedef const \hyperlink{group__RAPIDJSON__ERRORS_ga7e4636fd48d0148f102b8a13f0539d8c}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+H\+A\+R\+T\+Y\+PE}$\ast$($\ast$ Get\+Pointer\+Parse\+Error\+Func) (\hyperlink{group__RAPIDJSON__ERRORS_gacb2e274f33e54d91b96e9883a99a98be}{Pointer\+Parse\+Error\+Code})}
+
+
+
+Function pointer type of Get\+Pointer\+Parse\+Error(). 
+
+This is the prototype for {\ttfamily Get\+Pointer\+Parse\+Error\+\_\+\+X()}, where {\ttfamily X} is a locale. User can dynamically change locale in runtime, e.\+g.\+: 
+\begin{DoxyCode}
+\hyperlink{group__RAPIDJSON__ERRORS_gae35ad6c3a9795985203c66648026e991}{GetPointerParseErrorFunc} GetPointerParseError = 
+      \hyperlink{group__RAPIDJSON__ERRORS_gab0c2320924fc7f2cdca02a4ce104fd8e}{GetPointerParseError\_En}; \textcolor{comment}{// or whatever}
+\textcolor{keyword}{const} \hyperlink{group__RAPIDJSON__ERRORS_ga7e4636fd48d0148f102b8a13f0539d8c}{RAPIDJSON\_ERROR\_CHARTYPE}* s = GetPointerParseError(
+      \hyperlink{imgui__impl__opengl3__loader_8h_aae1f8d263916ad71bd415381591549c0}{pointer}.GetParseErrorCode());
+\end{DoxyCode}
+ \mbox{\Hypertarget{group__RAPIDJSON__ERRORS_ga27925387f15027c190cfd8411c4a3535}\label{group__RAPIDJSON__ERRORS_ga27925387f15027c190cfd8411c4a3535}} 
+\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!Get\+Schema\+Error\+Func@{Get\+Schema\+Error\+Func}}
+\index{Get\+Schema\+Error\+Func@{Get\+Schema\+Error\+Func}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}
+\subsubsection{\texorpdfstring{Get\+Schema\+Error\+Func}{GetSchemaErrorFunc}}
+{\footnotesize\ttfamily typedef const \hyperlink{group__RAPIDJSON__ERRORS_ga7e4636fd48d0148f102b8a13f0539d8c}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+H\+A\+R\+T\+Y\+PE}$\ast$($\ast$ Get\+Schema\+Error\+Func) (\hyperlink{group__RAPIDJSON__ERRORS_ga64f496d2cee8c9673f3105ec6008f290}{Schema\+Error\+Code})}
+
+
+
+Function pointer type of Get\+Schema\+Error(). 
+
+This is the prototype for {\ttfamily Get\+Schema\+Error\+\_\+\+X()}, where {\ttfamily X} is a locale. User can dynamically change locale in runtime, e.\+g.\+: 
+\begin{DoxyCode}
+\hyperlink{group__RAPIDJSON__ERRORS_ga27925387f15027c190cfd8411c4a3535}{GetSchemaErrorFunc} GetSchemaError = \hyperlink{group__RAPIDJSON__ERRORS_ga14d079416a08527108f622b197061540}{GetSchemaError\_En}; \textcolor{comment}{// or whatever}
+\textcolor{keyword}{const} \hyperlink{group__RAPIDJSON__ERRORS_ga7e4636fd48d0148f102b8a13f0539d8c}{RAPIDJSON\_ERROR\_CHARTYPE}* s = GetSchemaError(validator.GetInvalidSchemaCode()
+      );
+\end{DoxyCode}
+ \mbox{\Hypertarget{group__RAPIDJSON__ERRORS_ga9e966925692da858e85ecf5c44fe8d38}\label{group__RAPIDJSON__ERRORS_ga9e966925692da858e85ecf5c44fe8d38}} 
+\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!Get\+Validate\+Error\+Func@{Get\+Validate\+Error\+Func}}
+\index{Get\+Validate\+Error\+Func@{Get\+Validate\+Error\+Func}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}
+\subsubsection{\texorpdfstring{Get\+Validate\+Error\+Func}{GetValidateErrorFunc}}
+{\footnotesize\ttfamily typedef const \hyperlink{group__RAPIDJSON__ERRORS_ga7e4636fd48d0148f102b8a13f0539d8c}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+H\+A\+R\+T\+Y\+PE}$\ast$($\ast$ Get\+Validate\+Error\+Func) (\hyperlink{group__RAPIDJSON__ERRORS_ga2e1f88f94a5d9a6817a5de0ed2f0105a}{Validate\+Error\+Code})}
+
+
+
+Function pointer type of Get\+Validate\+Error(). 
+
+This is the prototype for {\ttfamily Get\+Validate\+Error\+\_\+\+X()}, where {\ttfamily X} is a locale. User can dynamically change locale in runtime, e.\+g.\+: 
+\begin{DoxyCode}
+\hyperlink{group__RAPIDJSON__ERRORS_ga9e966925692da858e85ecf5c44fe8d38}{GetValidateErrorFunc} GetValidateError = \hyperlink{group__RAPIDJSON__ERRORS_gade9d7778693290f23a627630c73e6edf}{GetValidateError\_En}; \textcolor{comment}{// or
+       whatever}
+\textcolor{keyword}{const} \hyperlink{group__RAPIDJSON__ERRORS_ga7e4636fd48d0148f102b8a13f0539d8c}{RAPIDJSON\_ERROR\_CHARTYPE}* s = GetValidateError(validator.GetInvalidSchemaCode
+      ());
+\end{DoxyCode}
+ 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_ga8d4b32dfc45840bca189ade2bbcb6ba7}\label{group__RAPIDJSON__ERRORS_ga8d4b32dfc45840bca189ade2bbcb6ba7}} 
+\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!Parse\+Error\+Code@{Parse\+Error\+Code}}
+\index{Parse\+Error\+Code@{Parse\+Error\+Code}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}
+\subsubsection{\texorpdfstring{Parse\+Error\+Code}{ParseErrorCode}}
+{\footnotesize\ttfamily enum \hyperlink{group__RAPIDJSON__ERRORS_ga8d4b32dfc45840bca189ade2bbcb6ba7}{Parse\+Error\+Code}}
+
+
+
+Error code of parsing. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classGenericReader_a0c450620d14ff1824e58bb7bd9b42099}{Generic\+Reader\+::\+Parse}, \hyperlink{classGenericReader_a937bf90919f50e1c370b312cee5833e8}{Generic\+Reader\+::\+Get\+Parse\+Error\+Code} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Parse\+Error\+None@{k\+Parse\+Error\+None}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Parse\+Error\+None@{k\+Parse\+Error\+None}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7ac0856bac4945cbd1d09e9502fd8f852f}\label{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7ac0856bac4945cbd1d09e9502fd8f852f}} 
+k\+Parse\+Error\+None&No error. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Parse\+Error\+Document\+Empty@{k\+Parse\+Error\+Document\+Empty}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Parse\+Error\+Document\+Empty@{k\+Parse\+Error\+Document\+Empty}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a04b368d184e84b50580be2faa55f738a}\label{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a04b368d184e84b50580be2faa55f738a}} 
+k\+Parse\+Error\+Document\+Empty&The document is empty. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Parse\+Error\+Document\+Root\+Not\+Singular@{k\+Parse\+Error\+Document\+Root\+Not\+Singular}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Parse\+Error\+Document\+Root\+Not\+Singular@{k\+Parse\+Error\+Document\+Root\+Not\+Singular}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a2293b39033220f4c2a568482c497dab5}\label{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a2293b39033220f4c2a568482c497dab5}} 
+k\+Parse\+Error\+Document\+Root\+Not\+Singular&The document root must not follow by other values. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Parse\+Error\+Value\+Invalid@{k\+Parse\+Error\+Value\+Invalid}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Parse\+Error\+Value\+Invalid@{k\+Parse\+Error\+Value\+Invalid}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a20a50e257aab726699ab02192db72ba9}\label{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a20a50e257aab726699ab02192db72ba9}} 
+k\+Parse\+Error\+Value\+Invalid&Invalid value. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Parse\+Error\+Object\+Miss\+Name@{k\+Parse\+Error\+Object\+Miss\+Name}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Parse\+Error\+Object\+Miss\+Name@{k\+Parse\+Error\+Object\+Miss\+Name}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7ae3142fbadf2c4cdfd0c7200d7b6b8ed3}\label{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7ae3142fbadf2c4cdfd0c7200d7b6b8ed3}} 
+k\+Parse\+Error\+Object\+Miss\+Name&Missing a name for object member. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Parse\+Error\+Object\+Miss\+Colon@{k\+Parse\+Error\+Object\+Miss\+Colon}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Parse\+Error\+Object\+Miss\+Colon@{k\+Parse\+Error\+Object\+Miss\+Colon}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a55cda7eb30436986ab42a61e06caf017}\label{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a55cda7eb30436986ab42a61e06caf017}} 
+k\+Parse\+Error\+Object\+Miss\+Colon&Missing a colon after a name of object member. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Parse\+Error\+Object\+Miss\+Comma\+Or\+Curly\+Bracket@{k\+Parse\+Error\+Object\+Miss\+Comma\+Or\+Curly\+Bracket}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Parse\+Error\+Object\+Miss\+Comma\+Or\+Curly\+Bracket@{k\+Parse\+Error\+Object\+Miss\+Comma\+Or\+Curly\+Bracket}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a34f70d7ed2fa121954f5fc5b5113d05f}\label{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a34f70d7ed2fa121954f5fc5b5113d05f}} 
+k\+Parse\+Error\+Object\+Miss\+Comma\+Or\+Curly\+Bracket&Missing a comma or \textquotesingle{}\}\textquotesingle{} after an object member. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Parse\+Error\+Array\+Miss\+Comma\+Or\+Square\+Bracket@{k\+Parse\+Error\+Array\+Miss\+Comma\+Or\+Square\+Bracket}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Parse\+Error\+Array\+Miss\+Comma\+Or\+Square\+Bracket@{k\+Parse\+Error\+Array\+Miss\+Comma\+Or\+Square\+Bracket}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7abfdd2bd90134fec4fe6a22762d16a5f5}\label{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7abfdd2bd90134fec4fe6a22762d16a5f5}} 
+k\+Parse\+Error\+Array\+Miss\+Comma\+Or\+Square\+Bracket&Missing a comma or \textquotesingle{}\mbox{]}\textquotesingle{} after an array element. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Parse\+Error\+String\+Unicode\+Escape\+Invalid\+Hex@{k\+Parse\+Error\+String\+Unicode\+Escape\+Invalid\+Hex}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Parse\+Error\+String\+Unicode\+Escape\+Invalid\+Hex@{k\+Parse\+Error\+String\+Unicode\+Escape\+Invalid\+Hex}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7afc65ea941a0a26812f0f258d2429e5d2}\label{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7afc65ea941a0a26812f0f258d2429e5d2}} 
+k\+Parse\+Error\+String\+Unicode\+Escape\+Invalid\+Hex&Incorrect hex digit after \textbackslash{}u escape in string. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Parse\+Error\+String\+Unicode\+Surrogate\+Invalid@{k\+Parse\+Error\+String\+Unicode\+Surrogate\+Invalid}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Parse\+Error\+String\+Unicode\+Surrogate\+Invalid@{k\+Parse\+Error\+String\+Unicode\+Surrogate\+Invalid}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7ad9fced6763a06435ca448626c74e5c72}\label{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7ad9fced6763a06435ca448626c74e5c72}} 
+k\+Parse\+Error\+String\+Unicode\+Surrogate\+Invalid&The surrogate pair in string is invalid. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Parse\+Error\+String\+Escape\+Invalid@{k\+Parse\+Error\+String\+Escape\+Invalid}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Parse\+Error\+String\+Escape\+Invalid@{k\+Parse\+Error\+String\+Escape\+Invalid}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a98bb3f3b1e12fdb7f278b9fa4029306f}\label{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a98bb3f3b1e12fdb7f278b9fa4029306f}} 
+k\+Parse\+Error\+String\+Escape\+Invalid&Invalid escape character in string. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Parse\+Error\+String\+Miss\+Quotation\+Mark@{k\+Parse\+Error\+String\+Miss\+Quotation\+Mark}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Parse\+Error\+String\+Miss\+Quotation\+Mark@{k\+Parse\+Error\+String\+Miss\+Quotation\+Mark}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a6369e5b4e4922720cbc45c5941efc4af}\label{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a6369e5b4e4922720cbc45c5941efc4af}} 
+k\+Parse\+Error\+String\+Miss\+Quotation\+Mark&Missing a closing quotation mark in string. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Parse\+Error\+String\+Invalid\+Encoding@{k\+Parse\+Error\+String\+Invalid\+Encoding}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Parse\+Error\+String\+Invalid\+Encoding@{k\+Parse\+Error\+String\+Invalid\+Encoding}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a17ecb2ed1524b513d64a93f4a7a8b456}\label{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a17ecb2ed1524b513d64a93f4a7a8b456}} 
+k\+Parse\+Error\+String\+Invalid\+Encoding&Invalid encoding in string. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Parse\+Error\+Number\+Too\+Big@{k\+Parse\+Error\+Number\+Too\+Big}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Parse\+Error\+Number\+Too\+Big@{k\+Parse\+Error\+Number\+Too\+Big}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7ae52aaa70fde46e4cc422420309700b82}\label{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7ae52aaa70fde46e4cc422420309700b82}} 
+k\+Parse\+Error\+Number\+Too\+Big&Number too big to be stored in double. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Parse\+Error\+Number\+Miss\+Fraction@{k\+Parse\+Error\+Number\+Miss\+Fraction}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Parse\+Error\+Number\+Miss\+Fraction@{k\+Parse\+Error\+Number\+Miss\+Fraction}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a08a2cc2b4cacfba1673ed536eee229ce}\label{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a08a2cc2b4cacfba1673ed536eee229ce}} 
+k\+Parse\+Error\+Number\+Miss\+Fraction&Miss fraction part in number. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Parse\+Error\+Number\+Miss\+Exponent@{k\+Parse\+Error\+Number\+Miss\+Exponent}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Parse\+Error\+Number\+Miss\+Exponent@{k\+Parse\+Error\+Number\+Miss\+Exponent}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a82cdbd740e22b819a70d05e585c2a442}\label{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a82cdbd740e22b819a70d05e585c2a442}} 
+k\+Parse\+Error\+Number\+Miss\+Exponent&Miss exponent in number. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Parse\+Error\+Termination@{k\+Parse\+Error\+Termination}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Parse\+Error\+Termination@{k\+Parse\+Error\+Termination}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a6fed2d9a15f88540a1ba785f0de2cbe6}\label{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a6fed2d9a15f88540a1ba785f0de2cbe6}} 
+k\+Parse\+Error\+Termination&Parsing was terminated. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Parse\+Error\+Unspecific\+Syntax\+Error@{k\+Parse\+Error\+Unspecific\+Syntax\+Error}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Parse\+Error\+Unspecific\+Syntax\+Error@{k\+Parse\+Error\+Unspecific\+Syntax\+Error}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a2bec6b26bddd3e093a37fc0d6399e0be}\label{group__RAPIDJSON__ERRORS_gga8d4b32dfc45840bca189ade2bbcb6ba7a2bec6b26bddd3e093a37fc0d6399e0be}} 
+k\+Parse\+Error\+Unspecific\+Syntax\+Error&Unspecific syntax error. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gacb2e274f33e54d91b96e9883a99a98be}\label{group__RAPIDJSON__ERRORS_gacb2e274f33e54d91b96e9883a99a98be}} 
+\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!Pointer\+Parse\+Error\+Code@{Pointer\+Parse\+Error\+Code}}
+\index{Pointer\+Parse\+Error\+Code@{Pointer\+Parse\+Error\+Code}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}
+\subsubsection{\texorpdfstring{Pointer\+Parse\+Error\+Code}{PointerParseErrorCode}}
+{\footnotesize\ttfamily enum \hyperlink{group__RAPIDJSON__ERRORS_gacb2e274f33e54d91b96e9883a99a98be}{Pointer\+Parse\+Error\+Code}}
+
+
+
+Error code of J\+S\+ON pointer parsing. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classGenericPointer_a5d85b7dc82719643e8f7adccd5a74fbe}{Generic\+Pointer\+::\+Generic\+Pointer}, Generic\+Pointer\+::\+Get\+Parse\+Error\+Code 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Pointer\+Parse\+Error\+None@{k\+Pointer\+Parse\+Error\+None}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Pointer\+Parse\+Error\+None@{k\+Pointer\+Parse\+Error\+None}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_ggacb2e274f33e54d91b96e9883a99a98bea81e2b6fbd1bf4ac890ddb7779265e3a0}\label{group__RAPIDJSON__ERRORS_ggacb2e274f33e54d91b96e9883a99a98bea81e2b6fbd1bf4ac890ddb7779265e3a0}} 
+k\+Pointer\+Parse\+Error\+None&The parse is successful. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Pointer\+Parse\+Error\+Token\+Must\+Begin\+With\+Solidus@{k\+Pointer\+Parse\+Error\+Token\+Must\+Begin\+With\+Solidus}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Pointer\+Parse\+Error\+Token\+Must\+Begin\+With\+Solidus@{k\+Pointer\+Parse\+Error\+Token\+Must\+Begin\+With\+Solidus}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_ggacb2e274f33e54d91b96e9883a99a98bea5821696a2ab6cbccdc8288cbe6e81c77}\label{group__RAPIDJSON__ERRORS_ggacb2e274f33e54d91b96e9883a99a98bea5821696a2ab6cbccdc8288cbe6e81c77}} 
+k\+Pointer\+Parse\+Error\+Token\+Must\+Begin\+With\+Solidus&A token must begin with a \textquotesingle{}/\textquotesingle{}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Pointer\+Parse\+Error\+Invalid\+Escape@{k\+Pointer\+Parse\+Error\+Invalid\+Escape}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Pointer\+Parse\+Error\+Invalid\+Escape@{k\+Pointer\+Parse\+Error\+Invalid\+Escape}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_ggacb2e274f33e54d91b96e9883a99a98bea4d2a7e511d717fd1d2f532ef5fcf821b}\label{group__RAPIDJSON__ERRORS_ggacb2e274f33e54d91b96e9883a99a98bea4d2a7e511d717fd1d2f532ef5fcf821b}} 
+k\+Pointer\+Parse\+Error\+Invalid\+Escape&Invalid escape. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Pointer\+Parse\+Error\+Invalid\+Percent\+Encoding@{k\+Pointer\+Parse\+Error\+Invalid\+Percent\+Encoding}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Pointer\+Parse\+Error\+Invalid\+Percent\+Encoding@{k\+Pointer\+Parse\+Error\+Invalid\+Percent\+Encoding}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_ggacb2e274f33e54d91b96e9883a99a98beac0c1b013c0db34dcc5a47fc1ee7a8c35}\label{group__RAPIDJSON__ERRORS_ggacb2e274f33e54d91b96e9883a99a98beac0c1b013c0db34dcc5a47fc1ee7a8c35}} 
+k\+Pointer\+Parse\+Error\+Invalid\+Percent\+Encoding&Invalid percent encoding in U\+RI fragment. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Pointer\+Parse\+Error\+Character\+Must\+Percent\+Encode@{k\+Pointer\+Parse\+Error\+Character\+Must\+Percent\+Encode}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Pointer\+Parse\+Error\+Character\+Must\+Percent\+Encode@{k\+Pointer\+Parse\+Error\+Character\+Must\+Percent\+Encode}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_ggacb2e274f33e54d91b96e9883a99a98beabd7eae93627f74267009a03679b6dc38}\label{group__RAPIDJSON__ERRORS_ggacb2e274f33e54d91b96e9883a99a98beabd7eae93627f74267009a03679b6dc38}} 
+k\+Pointer\+Parse\+Error\+Character\+Must\+Percent\+Encode&A character must percent encoded in U\+RI fragment. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_ga64f496d2cee8c9673f3105ec6008f290}\label{group__RAPIDJSON__ERRORS_ga64f496d2cee8c9673f3105ec6008f290}} 
+\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!Schema\+Error\+Code@{Schema\+Error\+Code}}
+\index{Schema\+Error\+Code@{Schema\+Error\+Code}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}
+\subsubsection{\texorpdfstring{Schema\+Error\+Code}{SchemaErrorCode}}
+{\footnotesize\ttfamily enum \hyperlink{group__RAPIDJSON__ERRORS_ga64f496d2cee8c9673f3105ec6008f290}{Schema\+Error\+Code}}
+
+
+
+Error codes when validating. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Schema\+Error\+None@{k\+Schema\+Error\+None}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Schema\+Error\+None@{k\+Schema\+Error\+None}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290a85bdec7ef6fb5f31336303e3b34e4709}\label{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290a85bdec7ef6fb5f31336303e3b34e4709}} 
+k\+Schema\+Error\+None&No error. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Schema\+Error\+Start\+Unknown@{k\+Schema\+Error\+Start\+Unknown}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Schema\+Error\+Start\+Unknown@{k\+Schema\+Error\+Start\+Unknown}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290a150ed68b3a71e0d23462131d9c966ac8}\label{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290a150ed68b3a71e0d23462131d9c966ac8}} 
+k\+Schema\+Error\+Start\+Unknown&Pointer to start of schema does not resolve to a location in the document. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Schema\+Error\+Ref\+Plain\+Name@{k\+Schema\+Error\+Ref\+Plain\+Name}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Schema\+Error\+Ref\+Plain\+Name@{k\+Schema\+Error\+Ref\+Plain\+Name}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290a47fecb5b8155c46f45444af419bd34f8}\label{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290a47fecb5b8155c46f45444af419bd34f8}} 
+k\+Schema\+Error\+Ref\+Plain\+Name&\$ref fragment must be a J\+S\+ON pointer \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Schema\+Error\+Ref\+Invalid@{k\+Schema\+Error\+Ref\+Invalid}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Schema\+Error\+Ref\+Invalid@{k\+Schema\+Error\+Ref\+Invalid}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290ac07a5664f08a478ce064ae6c76214afa}\label{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290ac07a5664f08a478ce064ae6c76214afa}} 
+k\+Schema\+Error\+Ref\+Invalid&\$ref must not be an empty string \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Schema\+Error\+Ref\+Pointer\+Invalid@{k\+Schema\+Error\+Ref\+Pointer\+Invalid}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Schema\+Error\+Ref\+Pointer\+Invalid@{k\+Schema\+Error\+Ref\+Pointer\+Invalid}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290a8f33741a5d141c0ac94110c4f3d1db3e}\label{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290a8f33741a5d141c0ac94110c4f3d1db3e}} 
+k\+Schema\+Error\+Ref\+Pointer\+Invalid&\$ref fragment is not a valid J\+S\+ON pointer at offset \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Schema\+Error\+Ref\+Unknown@{k\+Schema\+Error\+Ref\+Unknown}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Schema\+Error\+Ref\+Unknown@{k\+Schema\+Error\+Ref\+Unknown}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290a793c77ebcaf33d784fd1309f0f4d6fe5}\label{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290a793c77ebcaf33d784fd1309f0f4d6fe5}} 
+k\+Schema\+Error\+Ref\+Unknown&\$ref does not resolve to a location in the target document \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Schema\+Error\+Ref\+Cyclical@{k\+Schema\+Error\+Ref\+Cyclical}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Schema\+Error\+Ref\+Cyclical@{k\+Schema\+Error\+Ref\+Cyclical}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290abd6719d8aace36b40a0672f255e4de0a}\label{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290abd6719d8aace36b40a0672f255e4de0a}} 
+k\+Schema\+Error\+Ref\+Cyclical&\$ref is cyclical \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Schema\+Error\+Ref\+No\+Remote\+Provider@{k\+Schema\+Error\+Ref\+No\+Remote\+Provider}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Schema\+Error\+Ref\+No\+Remote\+Provider@{k\+Schema\+Error\+Ref\+No\+Remote\+Provider}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290a600356414ba8a667dd63f0fab307519c}\label{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290a600356414ba8a667dd63f0fab307519c}} 
+k\+Schema\+Error\+Ref\+No\+Remote\+Provider&\$ref is remote but there is no remote provider \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Schema\+Error\+Ref\+No\+Remote\+Schema@{k\+Schema\+Error\+Ref\+No\+Remote\+Schema}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Schema\+Error\+Ref\+No\+Remote\+Schema@{k\+Schema\+Error\+Ref\+No\+Remote\+Schema}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290aafb1c930bd5d372b7adaa2cf03717294}\label{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290aafb1c930bd5d372b7adaa2cf03717294}} 
+k\+Schema\+Error\+Ref\+No\+Remote\+Schema&\$ref is remote but the remote provider did not return a schema \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Schema\+Error\+Regex\+Invalid@{k\+Schema\+Error\+Regex\+Invalid}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Schema\+Error\+Regex\+Invalid@{k\+Schema\+Error\+Regex\+Invalid}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290ad5786eacee5596b451b54193afb7fd8a}\label{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290ad5786eacee5596b451b54193afb7fd8a}} 
+k\+Schema\+Error\+Regex\+Invalid&Invalid regular expression in \textquotesingle{}pattern\textquotesingle{} or \textquotesingle{}pattern\+Properties\textquotesingle{}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Schema\+Error\+Spec\+Unknown@{k\+Schema\+Error\+Spec\+Unknown}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Schema\+Error\+Spec\+Unknown@{k\+Schema\+Error\+Spec\+Unknown}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290a7200d26b9ab965c1b5ba63e67c1a995b}\label{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290a7200d26b9ab965c1b5ba63e67c1a995b}} 
+k\+Schema\+Error\+Spec\+Unknown&J\+S\+ON schema draft or Open\+A\+PI version is not recognized. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Schema\+Error\+Spec\+Unsupported@{k\+Schema\+Error\+Spec\+Unsupported}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Schema\+Error\+Spec\+Unsupported@{k\+Schema\+Error\+Spec\+Unsupported}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290a28bf4fd218d4c675751c6309bdde0c67}\label{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290a28bf4fd218d4c675751c6309bdde0c67}} 
+k\+Schema\+Error\+Spec\+Unsupported&J\+S\+ON schema draft or Open\+A\+PI version is not supported. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Schema\+Error\+Spec\+Illegal@{k\+Schema\+Error\+Spec\+Illegal}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Schema\+Error\+Spec\+Illegal@{k\+Schema\+Error\+Spec\+Illegal}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290a264b50a46e5b1cd82c1d6f0ca006da8c}\label{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290a264b50a46e5b1cd82c1d6f0ca006da8c}} 
+k\+Schema\+Error\+Spec\+Illegal&Both J\+S\+ON schema draft and Open\+A\+PI version found in document. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Schema\+Error\+Read\+Only\+And\+Write\+Only@{k\+Schema\+Error\+Read\+Only\+And\+Write\+Only}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Schema\+Error\+Read\+Only\+And\+Write\+Only@{k\+Schema\+Error\+Read\+Only\+And\+Write\+Only}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290ae7d4dfbe6fc8c97eb5cb7587683078c6}\label{group__RAPIDJSON__ERRORS_gga64f496d2cee8c9673f3105ec6008f290ae7d4dfbe6fc8c97eb5cb7587683078c6}} 
+k\+Schema\+Error\+Read\+Only\+And\+Write\+Only&Property must not be both \textquotesingle{}read\+Only\textquotesingle{} and \textquotesingle{}write\+Only\textquotesingle{}. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_ga2e1f88f94a5d9a6817a5de0ed2f0105a}\label{group__RAPIDJSON__ERRORS_ga2e1f88f94a5d9a6817a5de0ed2f0105a}} 
+\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!Validate\+Error\+Code@{Validate\+Error\+Code}}
+\index{Validate\+Error\+Code@{Validate\+Error\+Code}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}
+\subsubsection{\texorpdfstring{Validate\+Error\+Code}{ValidateErrorCode}}
+{\footnotesize\ttfamily enum \hyperlink{group__RAPIDJSON__ERRORS_ga2e1f88f94a5d9a6817a5de0ed2f0105a}{Validate\+Error\+Code}}
+
+
+
+Error codes when validating. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classGenericSchemaValidator}{Generic\+Schema\+Validator} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Errors@{k\+Validate\+Errors}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Errors@{k\+Validate\+Errors}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa626466aeef9cacbac149e4ae57d5fda2}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa626466aeef9cacbac149e4ae57d5fda2}} 
+k\+Validate\+Errors&Top level error code when k\+Validate\+Continue\+On\+Errors\+Flag set. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+None@{k\+Validate\+Error\+None}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+None@{k\+Validate\+Error\+None}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aac15ca121db8911126960c0672dfe2a2e}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aac15ca121db8911126960c0672dfe2a2e}} 
+k\+Validate\+Error\+None&No error. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+Multiple\+Of@{k\+Validate\+Error\+Multiple\+Of}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+Multiple\+Of@{k\+Validate\+Error\+Multiple\+Of}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aab8cf6f0be86047d0bf345f25dac31f4c}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aab8cf6f0be86047d0bf345f25dac31f4c}} 
+k\+Validate\+Error\+Multiple\+Of&Number is not a multiple of the \textquotesingle{}multiple\+Of\textquotesingle{} value. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+Maximum@{k\+Validate\+Error\+Maximum}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+Maximum@{k\+Validate\+Error\+Maximum}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa933fe947a713d741c3dcdcd7cae96b35}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa933fe947a713d741c3dcdcd7cae96b35}} 
+k\+Validate\+Error\+Maximum&Number is greater than the \textquotesingle{}maximum\textquotesingle{} value. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+Exclusive\+Maximum@{k\+Validate\+Error\+Exclusive\+Maximum}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+Exclusive\+Maximum@{k\+Validate\+Error\+Exclusive\+Maximum}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa3fca29f33702d8d98135b849c5f05f00}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa3fca29f33702d8d98135b849c5f05f00}} 
+k\+Validate\+Error\+Exclusive\+Maximum&Number is greater than or equal to the \textquotesingle{}maximum\textquotesingle{} value. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+Minimum@{k\+Validate\+Error\+Minimum}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+Minimum@{k\+Validate\+Error\+Minimum}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aaa5f0cf3faa2e08c359cfcd6d151d76e9}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aaa5f0cf3faa2e08c359cfcd6d151d76e9}} 
+k\+Validate\+Error\+Minimum&Number is less than the \textquotesingle{}minimum\textquotesingle{} value. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+Exclusive\+Minimum@{k\+Validate\+Error\+Exclusive\+Minimum}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+Exclusive\+Minimum@{k\+Validate\+Error\+Exclusive\+Minimum}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa1722fc952e01a7a858d954c08e382d65}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa1722fc952e01a7a858d954c08e382d65}} 
+k\+Validate\+Error\+Exclusive\+Minimum&Number is less than or equal to the \textquotesingle{}minimum\textquotesingle{} value. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+Max\+Length@{k\+Validate\+Error\+Max\+Length}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+Max\+Length@{k\+Validate\+Error\+Max\+Length}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa6825de2427572de01bd121c9fffcee76}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa6825de2427572de01bd121c9fffcee76}} 
+k\+Validate\+Error\+Max\+Length&String is longer than the \textquotesingle{}max\+Length\textquotesingle{} value. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+Min\+Length@{k\+Validate\+Error\+Min\+Length}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+Min\+Length@{k\+Validate\+Error\+Min\+Length}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa58e6e01eef18ea0af4763abd84128790}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa58e6e01eef18ea0af4763abd84128790}} 
+k\+Validate\+Error\+Min\+Length&String is longer than the \textquotesingle{}max\+Length\textquotesingle{} value. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+Pattern@{k\+Validate\+Error\+Pattern}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+Pattern@{k\+Validate\+Error\+Pattern}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa86bde2af1a18d73a533ba8e2f5971879}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa86bde2af1a18d73a533ba8e2f5971879}} 
+k\+Validate\+Error\+Pattern&String does not match the \textquotesingle{}pattern\textquotesingle{} regular expression. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+Max\+Items@{k\+Validate\+Error\+Max\+Items}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+Max\+Items@{k\+Validate\+Error\+Max\+Items}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa9acbcf73fe6a65bd23108a2dbc945cff}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa9acbcf73fe6a65bd23108a2dbc945cff}} 
+k\+Validate\+Error\+Max\+Items&Array is longer than the \textquotesingle{}max\+Items\textquotesingle{} value. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+Min\+Items@{k\+Validate\+Error\+Min\+Items}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+Min\+Items@{k\+Validate\+Error\+Min\+Items}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aad31b3292fb68a14016514736b076200c}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aad31b3292fb68a14016514736b076200c}} 
+k\+Validate\+Error\+Min\+Items&Array is shorter than the \textquotesingle{}min\+Items\textquotesingle{} value. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+Unique\+Items@{k\+Validate\+Error\+Unique\+Items}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+Unique\+Items@{k\+Validate\+Error\+Unique\+Items}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa35159c760856953cbd62258140d8d498}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa35159c760856953cbd62258140d8d498}} 
+k\+Validate\+Error\+Unique\+Items&Array has duplicate items but \textquotesingle{}unique\+Items\textquotesingle{} is true. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+Additional\+Items@{k\+Validate\+Error\+Additional\+Items}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+Additional\+Items@{k\+Validate\+Error\+Additional\+Items}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa17861cca8a0ab2a0685f3b7804f67303}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa17861cca8a0ab2a0685f3b7804f67303}} 
+k\+Validate\+Error\+Additional\+Items&Array has additional items that are not allowed by the schema. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+Max\+Properties@{k\+Validate\+Error\+Max\+Properties}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+Max\+Properties@{k\+Validate\+Error\+Max\+Properties}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa179693cbb5ea15f0242e37588e99edf6}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa179693cbb5ea15f0242e37588e99edf6}} 
+k\+Validate\+Error\+Max\+Properties&Object has more members than \textquotesingle{}max\+Properties\textquotesingle{} value. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+Min\+Properties@{k\+Validate\+Error\+Min\+Properties}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+Min\+Properties@{k\+Validate\+Error\+Min\+Properties}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa017c1ccb7febfaff42115fc256753fb6}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa017c1ccb7febfaff42115fc256753fb6}} 
+k\+Validate\+Error\+Min\+Properties&Object has less members than \textquotesingle{}min\+Properties\textquotesingle{} value. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+Required@{k\+Validate\+Error\+Required}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+Required@{k\+Validate\+Error\+Required}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa2dc93a549f16b70911e6399c61a1aec4}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa2dc93a549f16b70911e6399c61a1aec4}} 
+k\+Validate\+Error\+Required&Object is missing one or more members required by the schema. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+Additional\+Properties@{k\+Validate\+Error\+Additional\+Properties}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+Additional\+Properties@{k\+Validate\+Error\+Additional\+Properties}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aae02b299a3f5db48400e7c1987201d2ca}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aae02b299a3f5db48400e7c1987201d2ca}} 
+k\+Validate\+Error\+Additional\+Properties&Object has additional members that are not allowed by the schema. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+Pattern\+Properties@{k\+Validate\+Error\+Pattern\+Properties}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+Pattern\+Properties@{k\+Validate\+Error\+Pattern\+Properties}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aaecdd1b884cbacca0213b36def4e1feaf}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aaecdd1b884cbacca0213b36def4e1feaf}} 
+k\+Validate\+Error\+Pattern\+Properties&See other errors. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+Dependencies@{k\+Validate\+Error\+Dependencies}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+Dependencies@{k\+Validate\+Error\+Dependencies}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa2f81ab754a29330709c24110a2e895c8}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa2f81ab754a29330709c24110a2e895c8}} 
+k\+Validate\+Error\+Dependencies&Object has missing property or schema dependencies. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+Enum@{k\+Validate\+Error\+Enum}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+Enum@{k\+Validate\+Error\+Enum}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa3c12e9cbc8a479b77776ceccbda4c289}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa3c12e9cbc8a479b77776ceccbda4c289}} 
+k\+Validate\+Error\+Enum&Property has a value that is not one of its allowed enumerated values. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+Type@{k\+Validate\+Error\+Type}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+Type@{k\+Validate\+Error\+Type}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa5504bec97bd2ef15efac9ff5b0a6e8fa}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa5504bec97bd2ef15efac9ff5b0a6e8fa}} 
+k\+Validate\+Error\+Type&Property has a type that is not allowed by the schema. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+One\+Of@{k\+Validate\+Error\+One\+Of}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+One\+Of@{k\+Validate\+Error\+One\+Of}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa56466697ca410e5ddc2c7fabe11f3132}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa56466697ca410e5ddc2c7fabe11f3132}} 
+k\+Validate\+Error\+One\+Of&Property did not match any of the sub-\/schemas specified by \textquotesingle{}one\+Of\textquotesingle{}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+One\+Of\+Match@{k\+Validate\+Error\+One\+Of\+Match}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+One\+Of\+Match@{k\+Validate\+Error\+One\+Of\+Match}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa1bbc2293748b2e80415c77c7a6a069f9}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa1bbc2293748b2e80415c77c7a6a069f9}} 
+k\+Validate\+Error\+One\+Of\+Match&Property matched more than one of the sub-\/schemas specified by \textquotesingle{}one\+Of\textquotesingle{}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+All\+Of@{k\+Validate\+Error\+All\+Of}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+All\+Of@{k\+Validate\+Error\+All\+Of}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aaef48f9db2382e3308b823f078c73bce4}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aaef48f9db2382e3308b823f078c73bce4}} 
+k\+Validate\+Error\+All\+Of&Property did not match all of the sub-\/schemas specified by \textquotesingle{}all\+Of\textquotesingle{}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+Any\+Of@{k\+Validate\+Error\+Any\+Of}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+Any\+Of@{k\+Validate\+Error\+Any\+Of}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa7b821605f3eb4ec77e2c42204b3957cf}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa7b821605f3eb4ec77e2c42204b3957cf}} 
+k\+Validate\+Error\+Any\+Of&Property did not match any of the sub-\/schemas specified by \textquotesingle{}any\+Of\textquotesingle{}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+Not@{k\+Validate\+Error\+Not}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+Not@{k\+Validate\+Error\+Not}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aadd079998cffcae99da28675a5742327d}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aadd079998cffcae99da28675a5742327d}} 
+k\+Validate\+Error\+Not&Property matched the sub-\/schema specified by \textquotesingle{}not\textquotesingle{}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+Read\+Only@{k\+Validate\+Error\+Read\+Only}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+Read\+Only@{k\+Validate\+Error\+Read\+Only}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa360a0e4b4fcbbac76a967e375a90aa67}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa360a0e4b4fcbbac76a967e375a90aa67}} 
+k\+Validate\+Error\+Read\+Only&Property is read-\/only but has been provided when validation is for writing. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Validate\+Error\+Write\+Only@{k\+Validate\+Error\+Write\+Only}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!k\+Validate\+Error\+Write\+Only@{k\+Validate\+Error\+Write\+Only}}}\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa794b9acc44a5e37d3f9881806849f844}\label{group__RAPIDJSON__ERRORS_gga2e1f88f94a5d9a6817a5de0ed2f0105aa794b9acc44a5e37d3f9881806849f844}} 
+k\+Validate\+Error\+Write\+Only&Property is write-\/only but has been provided when validation is for reading. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_ga755b523205f46c980c80d12e230a3abd}\label{group__RAPIDJSON__ERRORS_ga755b523205f46c980c80d12e230a3abd}} 
+\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!Get\+Parse\+Error\+\_\+\+En@{Get\+Parse\+Error\+\_\+\+En}}
+\index{Get\+Parse\+Error\+\_\+\+En@{Get\+Parse\+Error\+\_\+\+En}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}
+\subsubsection{\texorpdfstring{Get\+Parse\+Error\+\_\+\+En()}{GetParseError\_En()}}
+{\footnotesize\ttfamily \hyperlink{group__RAPIDJSON__CONFIG_gad3806c8251fdc7da9618b7e922674ffc}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+B\+E\+G\+IN} const \hyperlink{group__RAPIDJSON__ERRORS_ga7e4636fd48d0148f102b8a13f0539d8c}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+H\+A\+R\+T\+Y\+PE}$\ast$ Get\+Parse\+Error\+\_\+\+En (\begin{DoxyParamCaption}\item[{\hyperlink{group__RAPIDJSON__ERRORS_ga8d4b32dfc45840bca189ade2bbcb6ba7}{Parse\+Error\+Code}}]{parse\+Error\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Maps error code of parsing into error message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parse\+Error\+Code} & Error code obtained in parsing. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the error message. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+User can make a copy of this function for localization. Using switch-\/case is safer for future modification of error codes. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gab0c2320924fc7f2cdca02a4ce104fd8e}\label{group__RAPIDJSON__ERRORS_gab0c2320924fc7f2cdca02a4ce104fd8e}} 
+\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!Get\+Pointer\+Parse\+Error\+\_\+\+En@{Get\+Pointer\+Parse\+Error\+\_\+\+En}}
+\index{Get\+Pointer\+Parse\+Error\+\_\+\+En@{Get\+Pointer\+Parse\+Error\+\_\+\+En}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}
+\subsubsection{\texorpdfstring{Get\+Pointer\+Parse\+Error\+\_\+\+En()}{GetPointerParseError\_En()}}
+{\footnotesize\ttfamily const \hyperlink{group__RAPIDJSON__ERRORS_ga7e4636fd48d0148f102b8a13f0539d8c}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+H\+A\+R\+T\+Y\+PE}$\ast$ Get\+Pointer\+Parse\+Error\+\_\+\+En (\begin{DoxyParamCaption}\item[{\hyperlink{group__RAPIDJSON__ERRORS_gacb2e274f33e54d91b96e9883a99a98be}{Pointer\+Parse\+Error\+Code}}]{pointer\+Parse\+Error\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Maps error code of pointer parse into error message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pointer\+Parse\+Error\+Code} & Error code obtained from pointer parse. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the error message. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+User can make a copy of this function for localization. Using switch-\/case is safer for future modification of error codes. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_ga14d079416a08527108f622b197061540}\label{group__RAPIDJSON__ERRORS_ga14d079416a08527108f622b197061540}} 
+\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!Get\+Schema\+Error\+\_\+\+En@{Get\+Schema\+Error\+\_\+\+En}}
+\index{Get\+Schema\+Error\+\_\+\+En@{Get\+Schema\+Error\+\_\+\+En}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}
+\subsubsection{\texorpdfstring{Get\+Schema\+Error\+\_\+\+En()}{GetSchemaError\_En()}}
+{\footnotesize\ttfamily const \hyperlink{group__RAPIDJSON__ERRORS_ga7e4636fd48d0148f102b8a13f0539d8c}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+H\+A\+R\+T\+Y\+PE}$\ast$ Get\+Schema\+Error\+\_\+\+En (\begin{DoxyParamCaption}\item[{\hyperlink{group__RAPIDJSON__ERRORS_ga64f496d2cee8c9673f3105ec6008f290}{Schema\+Error\+Code}}]{schema\+Error\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Maps error code of schema document compilation into error message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em schema\+Error\+Code} & Error code obtained from compiling the schema document. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the error message. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+User can make a copy of this function for localization. Using switch-\/case is safer for future modification of error codes. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__RAPIDJSON__ERRORS_gade9d7778693290f23a627630c73e6edf}\label{group__RAPIDJSON__ERRORS_gade9d7778693290f23a627630c73e6edf}} 
+\index{Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}!Get\+Validate\+Error\+\_\+\+En@{Get\+Validate\+Error\+\_\+\+En}}
+\index{Get\+Validate\+Error\+\_\+\+En@{Get\+Validate\+Error\+\_\+\+En}!Rapid\+J\+S\+O\+N error handling@{Rapid\+J\+S\+O\+N error handling}}
+\subsubsection{\texorpdfstring{Get\+Validate\+Error\+\_\+\+En()}{GetValidateError\_En()}}
+{\footnotesize\ttfamily const \hyperlink{group__RAPIDJSON__ERRORS_ga7e4636fd48d0148f102b8a13f0539d8c}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+H\+A\+R\+T\+Y\+PE}$\ast$ Get\+Validate\+Error\+\_\+\+En (\begin{DoxyParamCaption}\item[{\hyperlink{group__RAPIDJSON__ERRORS_ga2e1f88f94a5d9a6817a5de0ed2f0105a}{Validate\+Error\+Code}}]{validate\+Error\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Maps error code of validation into error message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em validate\+Error\+Code} & Error code obtained from validator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the error message. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+User can make a copy of this function for localization. Using switch-\/case is safer for future modification of error codes. 
+\end{DoxyNote}

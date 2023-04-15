@@ -1,0 +1,101 @@
+\hypertarget{classBStateMachine}{}\section{B\+State\+Machine Class Reference}
+\label{classBStateMachine}\index{B\+State\+Machine@{B\+State\+Machine}}
+
+
+{\ttfamily \#include $<$B\+State\+Machine.\+h$>$}
+
+
+
+Collaboration diagram for B\+State\+Machine\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classBStateMachine__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBStateMachine_a2adf6b9ddf8c2ee8bac44ba19117b33d}{B\+State\+Machine} (\hyperlink{classNPC__Actor}{N\+P\+C\+\_\+\+Actor} $\ast$owner\+\_\+)
+\item 
+\hyperlink{classBStateMachine_a6481d45c322e54431313dab96d09fab2}{$\sim$\+B\+State\+Machine} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classBStateMachine_aa0b42b7bdb0ab0d870d90e806b3d64e6}{set\+Initial\+State} (\hyperlink{classBState}{B\+State} $\ast$initial)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classBStateMachine_a1cee2bb706e0436296b672c33f54fc87}{update} (\hyperlink{classPlayer__Actor}{Player\+\_\+\+Actor} $\ast$\hyperlink{game__play__state_8cpp_ac65a4bc85dcd7c1cefbc84425f42fc46}{player})
+\item 
+\hyperlink{BState_8h_a275a67132f10277ada3a0ee3d616b647}{S\+T\+A\+TE} \hyperlink{classBStateMachine_a32d9a3654c1f8d442d7dca4d7051d41d}{get\+Current\+State\+Name} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBState}{B\+State} $\ast$ \hyperlink{classBStateMachine_a0119312b98d2eb47ff4bca56f91e1fc9}{initial\+State}
+\item 
+\hyperlink{classBState}{B\+State} $\ast$ \hyperlink{classBStateMachine_a17df33dd6465b8305bd5ff3a0e23cd35}{current\+State}
+\item 
+\hyperlink{classNPC__Actor}{N\+P\+C\+\_\+\+Actor} $\ast$ \hyperlink{classBStateMachine_aee8abc0940bb36b601f0a1e43d6ada88}{actor}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBStateMachine_a2adf6b9ddf8c2ee8bac44ba19117b33d}\label{classBStateMachine_a2adf6b9ddf8c2ee8bac44ba19117b33d}} 
+\index{B\+State\+Machine@{B\+State\+Machine}!B\+State\+Machine@{B\+State\+Machine}}
+\index{B\+State\+Machine@{B\+State\+Machine}!B\+State\+Machine@{B\+State\+Machine}}
+\subsubsection{\texorpdfstring{B\+State\+Machine()}{BStateMachine()}}
+{\footnotesize\ttfamily B\+State\+Machine\+::\+B\+State\+Machine (\begin{DoxyParamCaption}\item[{\hyperlink{classNPC__Actor}{N\+P\+C\+\_\+\+Actor} $\ast$}]{owner\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBStateMachine_a6481d45c322e54431313dab96d09fab2}\label{classBStateMachine_a6481d45c322e54431313dab96d09fab2}} 
+\index{B\+State\+Machine@{B\+State\+Machine}!````~B\+State\+Machine@{$\sim$\+B\+State\+Machine}}
+\index{````~B\+State\+Machine@{$\sim$\+B\+State\+Machine}!B\+State\+Machine@{B\+State\+Machine}}
+\subsubsection{\texorpdfstring{$\sim$\+B\+State\+Machine()}{~BStateMachine()}}
+{\footnotesize\ttfamily B\+State\+Machine\+::$\sim$\+B\+State\+Machine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classBStateMachine_a32d9a3654c1f8d442d7dca4d7051d41d}\label{classBStateMachine_a32d9a3654c1f8d442d7dca4d7051d41d}} 
+\index{B\+State\+Machine@{B\+State\+Machine}!get\+Current\+State\+Name@{get\+Current\+State\+Name}}
+\index{get\+Current\+State\+Name@{get\+Current\+State\+Name}!B\+State\+Machine@{B\+State\+Machine}}
+\subsubsection{\texorpdfstring{get\+Current\+State\+Name()}{getCurrentStateName()}}
+{\footnotesize\ttfamily \hyperlink{BState_8h_a275a67132f10277ada3a0ee3d616b647}{S\+T\+A\+TE} B\+State\+Machine\+::get\+Current\+State\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBStateMachine_aa0b42b7bdb0ab0d870d90e806b3d64e6}\label{classBStateMachine_aa0b42b7bdb0ab0d870d90e806b3d64e6}} 
+\index{B\+State\+Machine@{B\+State\+Machine}!set\+Initial\+State@{set\+Initial\+State}}
+\index{set\+Initial\+State@{set\+Initial\+State}!B\+State\+Machine@{B\+State\+Machine}}
+\subsubsection{\texorpdfstring{set\+Initial\+State()}{setInitialState()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} B\+State\+Machine\+::set\+Initial\+State (\begin{DoxyParamCaption}\item[{\hyperlink{classBState}{B\+State} $\ast$}]{initial }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classBStateMachine_a1cee2bb706e0436296b672c33f54fc87}\label{classBStateMachine_a1cee2bb706e0436296b672c33f54fc87}} 
+\index{B\+State\+Machine@{B\+State\+Machine}!update@{update}}
+\index{update@{update}!B\+State\+Machine@{B\+State\+Machine}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} B\+State\+Machine\+::update (\begin{DoxyParamCaption}\item[{\hyperlink{classPlayer__Actor}{Player\+\_\+\+Actor} $\ast$}]{player }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classBStateMachine_aee8abc0940bb36b601f0a1e43d6ada88}\label{classBStateMachine_aee8abc0940bb36b601f0a1e43d6ada88}} 
+\index{B\+State\+Machine@{B\+State\+Machine}!actor@{actor}}
+\index{actor@{actor}!B\+State\+Machine@{B\+State\+Machine}}
+\subsubsection{\texorpdfstring{actor}{actor}}
+{\footnotesize\ttfamily \hyperlink{classNPC__Actor}{N\+P\+C\+\_\+\+Actor}$\ast$ B\+State\+Machine\+::actor\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBStateMachine_a17df33dd6465b8305bd5ff3a0e23cd35}\label{classBStateMachine_a17df33dd6465b8305bd5ff3a0e23cd35}} 
+\index{B\+State\+Machine@{B\+State\+Machine}!current\+State@{current\+State}}
+\index{current\+State@{current\+State}!B\+State\+Machine@{B\+State\+Machine}}
+\subsubsection{\texorpdfstring{current\+State}{currentState}}
+{\footnotesize\ttfamily \hyperlink{classBState}{B\+State}$\ast$ B\+State\+Machine\+::current\+State\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBStateMachine_a0119312b98d2eb47ff4bca56f91e1fc9}\label{classBStateMachine_a0119312b98d2eb47ff4bca56f91e1fc9}} 
+\index{B\+State\+Machine@{B\+State\+Machine}!initial\+State@{initial\+State}}
+\index{initial\+State@{initial\+State}!B\+State\+Machine@{B\+State\+Machine}}
+\subsubsection{\texorpdfstring{initial\+State}{initialState}}
+{\footnotesize\ttfamily \hyperlink{classBState}{B\+State}$\ast$ B\+State\+Machine\+::initial\+State\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/\+B\+State\+Machine/\hyperlink{BStateMachine_8h}{B\+State\+Machine.\+h}\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/src/\+B\+State\+Machine/\hyperlink{BStateMachine_8cpp}{B\+State\+Machine.\+cpp}\end{DoxyCompactItemize}

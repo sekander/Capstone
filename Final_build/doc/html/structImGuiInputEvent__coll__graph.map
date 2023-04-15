@@ -1,0 +1,8 @@
+<map id="ImGuiInputEvent" name="ImGuiInputEvent">
+<area shape="rect" id="node2" href="$structImGuiInputEventAppFocused.html" title="{ImGuiInputEventAppFocused\n|+ Focused\l|}" alt="" coords="5,20,199,97"/>
+<area shape="rect" id="node3" href="$structImGuiInputEventMousePos.html" title="{ImGuiInputEventMousePos\n|+ PosX\l+ PosY\l|}" alt="" coords="223,13,405,105"/>
+<area shape="rect" id="node4" href="$structImGuiInputEventMouseButton.html" title="{ImGuiInputEventMouseButton\n|+ Button\l+ Down\l|}" alt="" coords="430,13,627,105"/>
+<area shape="rect" id="node5" href="$structImGuiInputEventText.html" title="{ImGuiInputEventText\n|+ Char\l|}" alt="" coords="651,20,798,97"/>
+<area shape="rect" id="node6" href="$structImGuiInputEventMouseWheel.html" title="{ImGuiInputEventMouseWheel\n|+ WheelX\l+ WheelY\l|}" alt="" coords="823,13,1019,105"/>
+<area shape="rect" id="node7" href="$structImGuiInputEventKey.html" title="{ImGuiInputEventKey\n|+ Key\l+ Down\l+ AnalogValue\l|}" alt="" coords="1043,5,1185,112"/>
+</map>

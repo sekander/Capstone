@@ -1,0 +1,227 @@
+\hypertarget{classShaderComponent}{}\section{Shader\+Component Class Reference}
+\label{classShaderComponent}\index{Shader\+Component@{Shader\+Component}}
+
+
+{\ttfamily \#include $<$Shader\+Component.\+h$>$}
+
+
+
+Inheritance diagram for Shader\+Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classShaderComponent__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Shader\+Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classShaderComponent__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classShaderComponent_a85854a674af6364cf113117964a07170}{Shader\+Component} (\hyperlink{classComponent}{Component} $\ast$parent\+\_\+)
+\item 
+\hyperlink{classShaderComponent_a8bb8e340123f28784cddaa2bf627c040}{$\sim$\+Shader\+Component} ()
+\item 
+bool \hyperlink{classShaderComponent_a0c42362c7ba178050551e7451b49abe5}{on\+Create} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classShaderComponent_a7ebd7c8ee1b2aea5ad2010a4652bb588}{on\+Destroy} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classShaderComponent_ab8f4b5e17bf77b20e509ac94c9dddc10}{update} (const float deltat)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classShaderComponent_a1ac6a772f197d759e9ae11fae0551687}{draw} () const
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classShaderComponent_afc567dab2f49c5e161cf6e9489a5667f}{load\+Shader} (const char $\ast$v\+Shader, const char $\ast$f\+Shader)
+\item 
+\hyperlink{classShaderComponent}{Shader\+Component} \& \hyperlink{classShaderComponent_aecf930a4a91e58138270d4edb92c3f98}{Use} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classShaderComponent_a043aa71f2b2efc6718f587d22a9b6d8c}{Set\+Float} (const char $\ast$\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}, float \hyperlink{imgui__impl__opengl3__loader_8h_a32aff7c6c4cd253fdf6563677afab5ce}{value}, bool use\+Shader=false)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classShaderComponent_a23f051529e36aeb7ccddaf4ff543cebc}{Set\+Integer} (const char $\ast$\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}, int \hyperlink{imgui__impl__opengl3__loader_8h_a32aff7c6c4cd253fdf6563677afab5ce}{value}, bool use\+Shader=false)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classShaderComponent_a3d1a69de59f69c7b319f08639764a716}{Set\+Vector2f} (const char $\ast$\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}, float x, float \hyperlink{imgui__impl__opengl3__loader_8h_a5e247fc24ceb70d83f6ad59149b8910a}{y}, bool use\+Shader=false)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classShaderComponent_af5e317ce56405fadb5c62d178c3f2420}{Set\+Vector2f} (const char $\ast$\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}, const glm\+::vec2 \&\hyperlink{imgui__impl__opengl3__loader_8h_a32aff7c6c4cd253fdf6563677afab5ce}{value}, bool use\+Shader=false)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classShaderComponent_ad3a7bcb131f85976bda6eecc830dc41b}{Set\+Vector3f} (const char $\ast$\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}, float x, float \hyperlink{imgui__impl__opengl3__loader_8h_a5e247fc24ceb70d83f6ad59149b8910a}{y}, float z, bool use\+Shader=false)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classShaderComponent_adc91769da0d93e210a8f743f898f1e06}{Set\+Vector3f} (const char $\ast$\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}, const glm\+::vec3 \&\hyperlink{imgui__impl__opengl3__loader_8h_a32aff7c6c4cd253fdf6563677afab5ce}{value}, bool use\+Shader=false)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classShaderComponent_a2d7b6091a6b20cbb7ed5a219504d5f8e}{Set\+Vector4f} (const char $\ast$\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}, float x, float \hyperlink{imgui__impl__opengl3__loader_8h_a5e247fc24ceb70d83f6ad59149b8910a}{y}, float z, float w, bool use\+Shader=false)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classShaderComponent_a241661f9491daf849d6b9a6d4ba497ff}{Set\+Vector4f} (const char $\ast$\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}, const glm\+::vec4 \&\hyperlink{imgui__impl__opengl3__loader_8h_a32aff7c6c4cd253fdf6563677afab5ce}{value}, bool use\+Shader=false)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classShaderComponent_ae8dcaeeff884867548d48327dbd21f13}{Set\+Matrix4} (const char $\ast$\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}, const glm\+::mat4 \&matrix, bool use\+Shader=false)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classShaderComponent_a157e28adca7dc3a8bd978162d45746ba}{Compile} (const char $\ast$vertex\+Source, const char $\ast$fragment\+Source, const char $\ast$geometry\+Source=nullptr)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classShaderComponent_a92f704bba9b4bb0cc0375126345c8295}{check\+Compile\+Errors} (unsigned int object, \hyperlink{imgui__impl__opengl3__loader_8h_ac83513893df92266f79a515488701770}{std\+::string} \hyperlink{imgui__impl__opengl3__loader_8h_a63267399cd2a2ee217572c11d2e54f07}{type})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{classShaderComponent_a86e364d55d966ff81256f54bfe061fae}{ID}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classShaderComponent_a85854a674af6364cf113117964a07170}\label{classShaderComponent_a85854a674af6364cf113117964a07170}} 
+\index{Shader\+Component@{Shader\+Component}!Shader\+Component@{Shader\+Component}}
+\index{Shader\+Component@{Shader\+Component}!Shader\+Component@{Shader\+Component}}
+\subsubsection{\texorpdfstring{Shader\+Component()}{ShaderComponent()}}
+{\footnotesize\ttfamily Shader\+Component\+::\+Shader\+Component (\begin{DoxyParamCaption}\item[{\hyperlink{classComponent}{Component} $\ast$}]{parent\+\_\+ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classShaderComponent_a8bb8e340123f28784cddaa2bf627c040}\label{classShaderComponent_a8bb8e340123f28784cddaa2bf627c040}} 
+\index{Shader\+Component@{Shader\+Component}!````~Shader\+Component@{$\sim$\+Shader\+Component}}
+\index{````~Shader\+Component@{$\sim$\+Shader\+Component}!Shader\+Component@{Shader\+Component}}
+\subsubsection{\texorpdfstring{$\sim$\+Shader\+Component()}{~ShaderComponent()}}
+{\footnotesize\ttfamily Shader\+Component\+::$\sim$\+Shader\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classShaderComponent_a92f704bba9b4bb0cc0375126345c8295}\label{classShaderComponent_a92f704bba9b4bb0cc0375126345c8295}} 
+\index{Shader\+Component@{Shader\+Component}!check\+Compile\+Errors@{check\+Compile\+Errors}}
+\index{check\+Compile\+Errors@{check\+Compile\+Errors}!Shader\+Component@{Shader\+Component}}
+\subsubsection{\texorpdfstring{check\+Compile\+Errors()}{checkCompileErrors()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Shader\+Component\+::check\+Compile\+Errors (\begin{DoxyParamCaption}\item[{unsigned int}]{object,  }\item[{\hyperlink{imgui__impl__opengl3__loader_8h_ac83513893df92266f79a515488701770}{std\+::string}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classShaderComponent_a157e28adca7dc3a8bd978162d45746ba}\label{classShaderComponent_a157e28adca7dc3a8bd978162d45746ba}} 
+\index{Shader\+Component@{Shader\+Component}!Compile@{Compile}}
+\index{Compile@{Compile}!Shader\+Component@{Shader\+Component}}
+\subsubsection{\texorpdfstring{Compile()}{Compile()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Shader\+Component\+::\+Compile (\begin{DoxyParamCaption}\item[{const char $\ast$}]{vertex\+Source,  }\item[{const char $\ast$}]{fragment\+Source,  }\item[{const char $\ast$}]{geometry\+Source = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classShaderComponent_a1ac6a772f197d759e9ae11fae0551687}\label{classShaderComponent_a1ac6a772f197d759e9ae11fae0551687}} 
+\index{Shader\+Component@{Shader\+Component}!draw@{draw}}
+\index{draw@{draw}!Shader\+Component@{Shader\+Component}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Shader\+Component\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classComponent_a8f45309003f02191f2bcc8864e8e9ecf}{Component}.
+
+\mbox{\Hypertarget{classShaderComponent_afc567dab2f49c5e161cf6e9489a5667f}\label{classShaderComponent_afc567dab2f49c5e161cf6e9489a5667f}} 
+\index{Shader\+Component@{Shader\+Component}!load\+Shader@{load\+Shader}}
+\index{load\+Shader@{load\+Shader}!Shader\+Component@{Shader\+Component}}
+\subsubsection{\texorpdfstring{load\+Shader()}{loadShader()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Shader\+Component\+::load\+Shader (\begin{DoxyParamCaption}\item[{const char $\ast$}]{v\+Shader,  }\item[{const char $\ast$}]{f\+Shader }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classShaderComponent_a0c42362c7ba178050551e7451b49abe5}\label{classShaderComponent_a0c42362c7ba178050551e7451b49abe5}} 
+\index{Shader\+Component@{Shader\+Component}!on\+Create@{on\+Create}}
+\index{on\+Create@{on\+Create}!Shader\+Component@{Shader\+Component}}
+\subsubsection{\texorpdfstring{on\+Create()}{onCreate()}}
+{\footnotesize\ttfamily bool Shader\+Component\+::on\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classComponent_a3a1537a8b8bcdb2155afbb925c77b0a2}{Component}.
+
+\mbox{\Hypertarget{classShaderComponent_a7ebd7c8ee1b2aea5ad2010a4652bb588}\label{classShaderComponent_a7ebd7c8ee1b2aea5ad2010a4652bb588}} 
+\index{Shader\+Component@{Shader\+Component}!on\+Destroy@{on\+Destroy}}
+\index{on\+Destroy@{on\+Destroy}!Shader\+Component@{Shader\+Component}}
+\subsubsection{\texorpdfstring{on\+Destroy()}{onDestroy()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Shader\+Component\+::on\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classComponent_a2b198f27162a6caf63917e304295f892}{Component}.
+
+\mbox{\Hypertarget{classShaderComponent_a043aa71f2b2efc6718f587d22a9b6d8c}\label{classShaderComponent_a043aa71f2b2efc6718f587d22a9b6d8c}} 
+\index{Shader\+Component@{Shader\+Component}!Set\+Float@{Set\+Float}}
+\index{Set\+Float@{Set\+Float}!Shader\+Component@{Shader\+Component}}
+\subsubsection{\texorpdfstring{Set\+Float()}{SetFloat()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Shader\+Component\+::\+Set\+Float (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{float}]{value,  }\item[{bool}]{use\+Shader = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classShaderComponent_a23f051529e36aeb7ccddaf4ff543cebc}\label{classShaderComponent_a23f051529e36aeb7ccddaf4ff543cebc}} 
+\index{Shader\+Component@{Shader\+Component}!Set\+Integer@{Set\+Integer}}
+\index{Set\+Integer@{Set\+Integer}!Shader\+Component@{Shader\+Component}}
+\subsubsection{\texorpdfstring{Set\+Integer()}{SetInteger()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Shader\+Component\+::\+Set\+Integer (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{int}]{value,  }\item[{bool}]{use\+Shader = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classShaderComponent_ae8dcaeeff884867548d48327dbd21f13}\label{classShaderComponent_ae8dcaeeff884867548d48327dbd21f13}} 
+\index{Shader\+Component@{Shader\+Component}!Set\+Matrix4@{Set\+Matrix4}}
+\index{Set\+Matrix4@{Set\+Matrix4}!Shader\+Component@{Shader\+Component}}
+\subsubsection{\texorpdfstring{Set\+Matrix4()}{SetMatrix4()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Shader\+Component\+::\+Set\+Matrix4 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const glm\+::mat4 \&}]{matrix,  }\item[{bool}]{use\+Shader = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classShaderComponent_a3d1a69de59f69c7b319f08639764a716}\label{classShaderComponent_a3d1a69de59f69c7b319f08639764a716}} 
+\index{Shader\+Component@{Shader\+Component}!Set\+Vector2f@{Set\+Vector2f}}
+\index{Set\+Vector2f@{Set\+Vector2f}!Shader\+Component@{Shader\+Component}}
+\subsubsection{\texorpdfstring{Set\+Vector2f()}{SetVector2f()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Shader\+Component\+::\+Set\+Vector2f (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{bool}]{use\+Shader = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classShaderComponent_af5e317ce56405fadb5c62d178c3f2420}\label{classShaderComponent_af5e317ce56405fadb5c62d178c3f2420}} 
+\index{Shader\+Component@{Shader\+Component}!Set\+Vector2f@{Set\+Vector2f}}
+\index{Set\+Vector2f@{Set\+Vector2f}!Shader\+Component@{Shader\+Component}}
+\subsubsection{\texorpdfstring{Set\+Vector2f()}{SetVector2f()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Shader\+Component\+::\+Set\+Vector2f (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const glm\+::vec2 \&}]{value,  }\item[{bool}]{use\+Shader = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classShaderComponent_ad3a7bcb131f85976bda6eecc830dc41b}\label{classShaderComponent_ad3a7bcb131f85976bda6eecc830dc41b}} 
+\index{Shader\+Component@{Shader\+Component}!Set\+Vector3f@{Set\+Vector3f}}
+\index{Set\+Vector3f@{Set\+Vector3f}!Shader\+Component@{Shader\+Component}}
+\subsubsection{\texorpdfstring{Set\+Vector3f()}{SetVector3f()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Shader\+Component\+::\+Set\+Vector3f (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z,  }\item[{bool}]{use\+Shader = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classShaderComponent_adc91769da0d93e210a8f743f898f1e06}\label{classShaderComponent_adc91769da0d93e210a8f743f898f1e06}} 
+\index{Shader\+Component@{Shader\+Component}!Set\+Vector3f@{Set\+Vector3f}}
+\index{Set\+Vector3f@{Set\+Vector3f}!Shader\+Component@{Shader\+Component}}
+\subsubsection{\texorpdfstring{Set\+Vector3f()}{SetVector3f()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Shader\+Component\+::\+Set\+Vector3f (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const glm\+::vec3 \&}]{value,  }\item[{bool}]{use\+Shader = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classShaderComponent_a2d7b6091a6b20cbb7ed5a219504d5f8e}\label{classShaderComponent_a2d7b6091a6b20cbb7ed5a219504d5f8e}} 
+\index{Shader\+Component@{Shader\+Component}!Set\+Vector4f@{Set\+Vector4f}}
+\index{Set\+Vector4f@{Set\+Vector4f}!Shader\+Component@{Shader\+Component}}
+\subsubsection{\texorpdfstring{Set\+Vector4f()}{SetVector4f()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Shader\+Component\+::\+Set\+Vector4f (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z,  }\item[{float}]{w,  }\item[{bool}]{use\+Shader = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classShaderComponent_a241661f9491daf849d6b9a6d4ba497ff}\label{classShaderComponent_a241661f9491daf849d6b9a6d4ba497ff}} 
+\index{Shader\+Component@{Shader\+Component}!Set\+Vector4f@{Set\+Vector4f}}
+\index{Set\+Vector4f@{Set\+Vector4f}!Shader\+Component@{Shader\+Component}}
+\subsubsection{\texorpdfstring{Set\+Vector4f()}{SetVector4f()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Shader\+Component\+::\+Set\+Vector4f (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const glm\+::vec4 \&}]{value,  }\item[{bool}]{use\+Shader = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classShaderComponent_ab8f4b5e17bf77b20e509ac94c9dddc10}\label{classShaderComponent_ab8f4b5e17bf77b20e509ac94c9dddc10}} 
+\index{Shader\+Component@{Shader\+Component}!update@{update}}
+\index{update@{update}!Shader\+Component@{Shader\+Component}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Shader\+Component\+::update (\begin{DoxyParamCaption}\item[{const float}]{deltat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classComponent_a3448977e6f464df89e77dda7c6f52204}{Component}.
+
+\mbox{\Hypertarget{classShaderComponent_aecf930a4a91e58138270d4edb92c3f98}\label{classShaderComponent_aecf930a4a91e58138270d4edb92c3f98}} 
+\index{Shader\+Component@{Shader\+Component}!Use@{Use}}
+\index{Use@{Use}!Shader\+Component@{Shader\+Component}}
+\subsubsection{\texorpdfstring{Use()}{Use()}}
+{\footnotesize\ttfamily \hyperlink{classShaderComponent}{Shader\+Component} \& Shader\+Component\+::\+Use (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classShaderComponent_a86e364d55d966ff81256f54bfe061fae}\label{classShaderComponent_a86e364d55d966ff81256f54bfe061fae}} 
+\index{Shader\+Component@{Shader\+Component}!ID@{ID}}
+\index{ID@{ID}!Shader\+Component@{Shader\+Component}}
+\subsubsection{\texorpdfstring{ID}{ID}}
+{\footnotesize\ttfamily unsigned int Shader\+Component\+::\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/\+Components/\hyperlink{ShaderComponent_8h}{Shader\+Component.\+h}\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/src/\+Components/\hyperlink{ShaderComponent_8cpp}{Shader\+Component.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,114 @@
+\hypertarget{splash__state_8cpp}{}\section{/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/src/\+States/splash\+\_\+state.cpp File Reference}
+\label{splash__state_8cpp}\index{/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/src/\+States/splash\+\_\+state.\+cpp@{/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/src/\+States/splash\+\_\+state.\+cpp}}
+{\ttfamily \#include \char`\"{}../../include/\+Components/\+Transform\+Component.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Components/\+Shader\+Component.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Components/\+Render\+Component.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Actors/\+Actor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Actors/\+Texture\+\_\+\+Actor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+Game\+Data/\+Game\+Data.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/\+States/splash\+\_\+state.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+Include dependency graph for splash\+\_\+state.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{splash__state_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classActor}{Actor} $>$ \hyperlink{splash__state_8cpp_ad08daddf37f438c4a3de54292e109d2f}{gs\+\_\+actor}
+\begin{DoxyCompactList}\small\item\em -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---\hyperlink{classComponent}{Component} System-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classActor}{Actor} $>$ \hyperlink{splash__state_8cpp_a6477f67a3a34ca86c9256f0dfc708330}{animate\+\_\+actor}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classActor}{Actor} $>$ \hyperlink{splash__state_8cpp_a200701545719cf5d4ee428c3aeedf177}{splash\+\_\+fade\+\_\+in\+\_\+out\+\_\+actor}
+\item 
+const unsigned int \hyperlink{splash__state_8cpp_a74ba59acbf346c2b19bc1ce5170f755d}{S\+C\+R\+\_\+\+W\+I\+D\+TH} = 800
+\item 
+const unsigned int \hyperlink{splash__state_8cpp_aca03a77ac5a7f2e26d08cd6de43f9a17}{S\+C\+R\+\_\+\+H\+E\+I\+G\+HT} = 600
+\item 
+glm\+::mat4 \hyperlink{splash__state_8cpp_a949ee6397237a07bab00864f405ae615}{projection2}
+\item 
+double \hyperlink{splash__state_8cpp_ab3742e1445f567debea67a2a948b16fe}{last\+\_\+time} = glfw\+Get\+Time()
+\item 
+unsigned int \hyperlink{splash__state_8cpp_aa842b9586dde38a44641d58f88b6d888}{frame\+\_\+x}
+\item 
+float \hyperlink{splash__state_8cpp_a62d90547f34aecf5beecf4014818e508}{splash\+\_\+fadein\+\_\+wave}
+\item 
+bool \hyperlink{splash__state_8cpp_a2bade554d18c6b49aad84e8bdededcf7}{splash\+\_\+pause\+\_\+fade}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{splash__state_8cpp_a6477f67a3a34ca86c9256f0dfc708330}\label{splash__state_8cpp_a6477f67a3a34ca86c9256f0dfc708330}} 
+\index{splash\+\_\+state.\+cpp@{splash\+\_\+state.\+cpp}!animate\+\_\+actor@{animate\+\_\+actor}}
+\index{animate\+\_\+actor@{animate\+\_\+actor}!splash\+\_\+state.\+cpp@{splash\+\_\+state.\+cpp}}
+\subsubsection{\texorpdfstring{animate\+\_\+actor}{animate\_actor}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classActor}{Actor}$>$ animate\+\_\+actor}
+
+\mbox{\Hypertarget{splash__state_8cpp_aa842b9586dde38a44641d58f88b6d888}\label{splash__state_8cpp_aa842b9586dde38a44641d58f88b6d888}} 
+\index{splash\+\_\+state.\+cpp@{splash\+\_\+state.\+cpp}!frame\+\_\+x@{frame\+\_\+x}}
+\index{frame\+\_\+x@{frame\+\_\+x}!splash\+\_\+state.\+cpp@{splash\+\_\+state.\+cpp}}
+\subsubsection{\texorpdfstring{frame\+\_\+x}{frame\_x}}
+{\footnotesize\ttfamily unsigned int frame\+\_\+x}
+
+\mbox{\Hypertarget{splash__state_8cpp_ad08daddf37f438c4a3de54292e109d2f}\label{splash__state_8cpp_ad08daddf37f438c4a3de54292e109d2f}} 
+\index{splash\+\_\+state.\+cpp@{splash\+\_\+state.\+cpp}!gs\+\_\+actor@{gs\+\_\+actor}}
+\index{gs\+\_\+actor@{gs\+\_\+actor}!splash\+\_\+state.\+cpp@{splash\+\_\+state.\+cpp}}
+\subsubsection{\texorpdfstring{gs\+\_\+actor}{gs\_actor}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classActor}{Actor}$>$ gs\+\_\+actor}
+
+
+
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---\hyperlink{classComponent}{Component} System-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- 
+
+\mbox{\Hypertarget{splash__state_8cpp_ab3742e1445f567debea67a2a948b16fe}\label{splash__state_8cpp_ab3742e1445f567debea67a2a948b16fe}} 
+\index{splash\+\_\+state.\+cpp@{splash\+\_\+state.\+cpp}!last\+\_\+time@{last\+\_\+time}}
+\index{last\+\_\+time@{last\+\_\+time}!splash\+\_\+state.\+cpp@{splash\+\_\+state.\+cpp}}
+\subsubsection{\texorpdfstring{last\+\_\+time}{last\_time}}
+{\footnotesize\ttfamily double last\+\_\+time = glfw\+Get\+Time()}
+
+\mbox{\Hypertarget{splash__state_8cpp_a949ee6397237a07bab00864f405ae615}\label{splash__state_8cpp_a949ee6397237a07bab00864f405ae615}} 
+\index{splash\+\_\+state.\+cpp@{splash\+\_\+state.\+cpp}!projection2@{projection2}}
+\index{projection2@{projection2}!splash\+\_\+state.\+cpp@{splash\+\_\+state.\+cpp}}
+\subsubsection{\texorpdfstring{projection2}{projection2}}
+{\footnotesize\ttfamily glm\+::mat4 projection2}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= glm::ortho(0.0f, static\_cast<float>(\hyperlink{splash__state_8cpp_a74ba59acbf346c2b19bc1ce5170f755d}{SCR\_WIDTH}),
+            static\_cast<float>(\hyperlink{splash__state_8cpp_aca03a77ac5a7f2e26d08cd6de43f9a17}{SCR\_HEIGHT}), 0.0f, -1.0f, 1.0f)
+\end{DoxyCode}
+\mbox{\Hypertarget{splash__state_8cpp_aca03a77ac5a7f2e26d08cd6de43f9a17}\label{splash__state_8cpp_aca03a77ac5a7f2e26d08cd6de43f9a17}} 
+\index{splash\+\_\+state.\+cpp@{splash\+\_\+state.\+cpp}!S\+C\+R\+\_\+\+H\+E\+I\+G\+HT@{S\+C\+R\+\_\+\+H\+E\+I\+G\+HT}}
+\index{S\+C\+R\+\_\+\+H\+E\+I\+G\+HT@{S\+C\+R\+\_\+\+H\+E\+I\+G\+HT}!splash\+\_\+state.\+cpp@{splash\+\_\+state.\+cpp}}
+\subsubsection{\texorpdfstring{S\+C\+R\+\_\+\+H\+E\+I\+G\+HT}{SCR\_HEIGHT}}
+{\footnotesize\ttfamily const unsigned int S\+C\+R\+\_\+\+H\+E\+I\+G\+HT = 600}
+
+\mbox{\Hypertarget{splash__state_8cpp_a74ba59acbf346c2b19bc1ce5170f755d}\label{splash__state_8cpp_a74ba59acbf346c2b19bc1ce5170f755d}} 
+\index{splash\+\_\+state.\+cpp@{splash\+\_\+state.\+cpp}!S\+C\+R\+\_\+\+W\+I\+D\+TH@{S\+C\+R\+\_\+\+W\+I\+D\+TH}}
+\index{S\+C\+R\+\_\+\+W\+I\+D\+TH@{S\+C\+R\+\_\+\+W\+I\+D\+TH}!splash\+\_\+state.\+cpp@{splash\+\_\+state.\+cpp}}
+\subsubsection{\texorpdfstring{S\+C\+R\+\_\+\+W\+I\+D\+TH}{SCR\_WIDTH}}
+{\footnotesize\ttfamily const unsigned int S\+C\+R\+\_\+\+W\+I\+D\+TH = 800}
+
+\mbox{\Hypertarget{splash__state_8cpp_a200701545719cf5d4ee428c3aeedf177}\label{splash__state_8cpp_a200701545719cf5d4ee428c3aeedf177}} 
+\index{splash\+\_\+state.\+cpp@{splash\+\_\+state.\+cpp}!splash\+\_\+fade\+\_\+in\+\_\+out\+\_\+actor@{splash\+\_\+fade\+\_\+in\+\_\+out\+\_\+actor}}
+\index{splash\+\_\+fade\+\_\+in\+\_\+out\+\_\+actor@{splash\+\_\+fade\+\_\+in\+\_\+out\+\_\+actor}!splash\+\_\+state.\+cpp@{splash\+\_\+state.\+cpp}}
+\subsubsection{\texorpdfstring{splash\+\_\+fade\+\_\+in\+\_\+out\+\_\+actor}{splash\_fade\_in\_out\_actor}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classActor}{Actor}$>$ splash\+\_\+fade\+\_\+in\+\_\+out\+\_\+actor}
+
+\mbox{\Hypertarget{splash__state_8cpp_a62d90547f34aecf5beecf4014818e508}\label{splash__state_8cpp_a62d90547f34aecf5beecf4014818e508}} 
+\index{splash\+\_\+state.\+cpp@{splash\+\_\+state.\+cpp}!splash\+\_\+fadein\+\_\+wave@{splash\+\_\+fadein\+\_\+wave}}
+\index{splash\+\_\+fadein\+\_\+wave@{splash\+\_\+fadein\+\_\+wave}!splash\+\_\+state.\+cpp@{splash\+\_\+state.\+cpp}}
+\subsubsection{\texorpdfstring{splash\+\_\+fadein\+\_\+wave}{splash\_fadein\_wave}}
+{\footnotesize\ttfamily float splash\+\_\+fadein\+\_\+wave}
+
+\mbox{\Hypertarget{splash__state_8cpp_a2bade554d18c6b49aad84e8bdededcf7}\label{splash__state_8cpp_a2bade554d18c6b49aad84e8bdededcf7}} 
+\index{splash\+\_\+state.\+cpp@{splash\+\_\+state.\+cpp}!splash\+\_\+pause\+\_\+fade@{splash\+\_\+pause\+\_\+fade}}
+\index{splash\+\_\+pause\+\_\+fade@{splash\+\_\+pause\+\_\+fade}!splash\+\_\+state.\+cpp@{splash\+\_\+state.\+cpp}}
+\subsubsection{\texorpdfstring{splash\+\_\+pause\+\_\+fade}{splash\_pause\_fade}}
+{\footnotesize\ttfamily bool splash\+\_\+pause\+\_\+fade}
+

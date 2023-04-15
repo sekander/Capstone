@@ -1,0 +1,109 @@
+\hypertarget{classState}{}\section{State Class Reference}
+\label{classState}\index{State@{State}}
+
+
+{\ttfamily \#include $<$state.\+h$>$}
+
+
+
+Inheritance diagram for State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classState__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{classState__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classState_a7ab4d8c6aa239a17ed579d89a209b156}{Init} ()=0
+\item 
+virtual \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classState_a1705412877f37a5cc8fc712542756076}{Input} (float delta)=0
+\item 
+virtual \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classState_a6572089fbf2178bf5c582cc27d6d3925}{Sound\+Update} ()=0
+\item 
+virtual \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classState_aac0d3fdee1341e168af730b8f31a7bf1}{Update} (float delta)=0
+\item 
+virtual \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classState_a0e48dfae1e3090630475812681417c5f}{Render} (float delta)=0
+\item 
+virtual \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classState_ade502eaa386d570e526eb356ffd73fd8}{Delete\+Data} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classState_ade502eaa386d570e526eb356ffd73fd8}\label{classState_ade502eaa386d570e526eb356ffd73fd8}} 
+\index{State@{State}!Delete\+Data@{Delete\+Data}}
+\index{Delete\+Data@{Delete\+Data}!State@{State}}
+\subsubsection{\texorpdfstring{Delete\+Data()}{DeleteData()}}
+{\footnotesize\ttfamily virtual \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} State\+::\+Delete\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classGamePlayState_a8a393249f2deabe0fe8f236b4e58cb17}{Game\+Play\+State}, \hyperlink{classSplashState_aca842c8e3ea2642980569ed3b4bb362a}{Splash\+State}, \hyperlink{classGameOverState_afb6fa68ff0c5e4f83725de8059c4f7c8}{Game\+Over\+State}, \hyperlink{classLoadingPlayState_a3735d8ecb6747de9ab62dddedf9eeaa3}{Loading\+Play\+State}, and \hyperlink{classMainMenuState_a52c4dad229a1e9851e8742b81bc30abb}{Main\+Menu\+State}.
+
+\mbox{\Hypertarget{classState_a7ab4d8c6aa239a17ed579d89a209b156}\label{classState_a7ab4d8c6aa239a17ed579d89a209b156}} 
+\index{State@{State}!Init@{Init}}
+\index{Init@{Init}!State@{State}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily virtual \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} State\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classGamePlayState_ae13389eea1f83f27d18ba200f107937d}{Game\+Play\+State}, \hyperlink{classSplashState_ae3e0604da087032c179593c237580988}{Splash\+State}, \hyperlink{classGameOverState_aa3d4f165ff735552f16132e929d369c2}{Game\+Over\+State}, \hyperlink{classLoadingPlayState_aaa131760db87f7dd206064105b53004c}{Loading\+Play\+State}, and \hyperlink{classMainMenuState_afab2a9b829a8ef752fed701d5cd260f8}{Main\+Menu\+State}.
+
+\mbox{\Hypertarget{classState_a1705412877f37a5cc8fc712542756076}\label{classState_a1705412877f37a5cc8fc712542756076}} 
+\index{State@{State}!Input@{Input}}
+\index{Input@{Input}!State@{State}}
+\subsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily virtual \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} State\+::\+Input (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classGamePlayState_a3bc9231fd11546b5dd13581ed2aa1afa}{Game\+Play\+State}, \hyperlink{classSplashState_adb2eb87bd89e41af0c3a9d0903e89450}{Splash\+State}, \hyperlink{classGameOverState_adb4be2a5c6292d020999c2da9588ebfc}{Game\+Over\+State}, \hyperlink{classLoadingPlayState_a69ec7d3e42aa57e4db484e201aae3c63}{Loading\+Play\+State}, and \hyperlink{classMainMenuState_aa62c91d35b5b4a24c0a13c22020845e8}{Main\+Menu\+State}.
+
+\mbox{\Hypertarget{classState_a0e48dfae1e3090630475812681417c5f}\label{classState_a0e48dfae1e3090630475812681417c5f}} 
+\index{State@{State}!Render@{Render}}
+\index{Render@{Render}!State@{State}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} State\+::\+Render (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classGamePlayState_a4bd296aa04088a3d8249f569e86f21a7}{Game\+Play\+State}, \hyperlink{classSplashState_a5efb6f0ede61ec76ee2dd72a6b24c57c}{Splash\+State}, \hyperlink{classGameOverState_ac9c9ef71b0a12940ac5caa7763f23fdc}{Game\+Over\+State}, \hyperlink{classLoadingPlayState_a9f52c378fd76e40eb366d6da2c57ab11}{Loading\+Play\+State}, and \hyperlink{classMainMenuState_af675ec319923f1cf22446808a7735dea}{Main\+Menu\+State}.
+
+\mbox{\Hypertarget{classState_a6572089fbf2178bf5c582cc27d6d3925}\label{classState_a6572089fbf2178bf5c582cc27d6d3925}} 
+\index{State@{State}!Sound\+Update@{Sound\+Update}}
+\index{Sound\+Update@{Sound\+Update}!State@{State}}
+\subsubsection{\texorpdfstring{Sound\+Update()}{SoundUpdate()}}
+{\footnotesize\ttfamily virtual \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} State\+::\+Sound\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classGamePlayState_a3367714db85b4d59a52bc1d8b0828d3c}{Game\+Play\+State}, \hyperlink{classSplashState_adff14b96ab0de144e0052326819e7f2e}{Splash\+State}, \hyperlink{classGameOverState_ab46f47037abd1eeabdbff49f8dfb802b}{Game\+Over\+State}, \hyperlink{classLoadingPlayState_a8676ff36334ce4de33a9874fe4a54c3f}{Loading\+Play\+State}, and \hyperlink{classMainMenuState_adde4b3b16d68c2c8b3bd03818cc30abe}{Main\+Menu\+State}.
+
+\mbox{\Hypertarget{classState_aac0d3fdee1341e168af730b8f31a7bf1}\label{classState_aac0d3fdee1341e168af730b8f31a7bf1}} 
+\index{State@{State}!Update@{Update}}
+\index{Update@{Update}!State@{State}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} State\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classGamePlayState_a19bcc1ff2a83a3aa001010ae35d67b85}{Game\+Play\+State}, \hyperlink{classSplashState_af19b293ae1e914e13db4382115e56d2c}{Splash\+State}, \hyperlink{classGameOverState_a4dc49d576a9435531f502660119800a9}{Game\+Over\+State}, \hyperlink{classLoadingPlayState_adab55fbf70ddda174590a55d59ec355b}{Loading\+Play\+State}, and \hyperlink{classMainMenuState_a1605be0d2e5228643d911c7069db3196}{Main\+Menu\+State}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/\+States/\hyperlink{state_8h}{state.\+h}\end{DoxyCompactItemize}

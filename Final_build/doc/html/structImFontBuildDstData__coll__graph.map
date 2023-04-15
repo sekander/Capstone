@@ -1,0 +1,4 @@
+<map id="ImFontBuildDstData" name="ImFontBuildDstData">
+<area shape="rect" id="node2" href="$structImBitVector.html" title="{ImBitVector\n||+ Create()\l+ Clear()\l+ TestBit()\l+ SetBit()\l+ ClearBit()\l}" alt="" coords="31,321,121,457"/>
+<area shape="rect" id="node3" href="$structImVector.html" title="{ImVector\&lt; ImU32 \&gt;\n|+ Size\l+ Capacity\l+ Data\l|+ ImVector()\l+ ImVector()\l+ operator=()\l+ ~ImVector()\l+ clear()\l+ clear_delete()\l+ clear_destruct()\l+ empty()\l+ size()\l+ size_in_bytes()\land 32 more...\l}" alt="" coords="7,5,145,259"/>
+</map>

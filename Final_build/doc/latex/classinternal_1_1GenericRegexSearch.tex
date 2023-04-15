@@ -1,0 +1,231 @@
+\hypertarget{classinternal_1_1GenericRegexSearch}{}\section{internal\+:\+:Generic\+Regex\+Search$<$ Regex\+Type, Allocator $>$ Class Template Reference}
+\label{classinternal_1_1GenericRegexSearch}\index{internal\+::\+Generic\+Regex\+Search$<$ Regex\+Type, Allocator $>$@{internal\+::\+Generic\+Regex\+Search$<$ Regex\+Type, Allocator $>$}}
+
+
+{\ttfamily \#include $<$regex.\+h$>$}
+
+
+
+Collaboration diagram for internal\+:\+:Generic\+Regex\+Search$<$ Regex\+Type, Allocator $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{classinternal_1_1GenericRegexSearch__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Regex\+Type\+::\+Encoding\+Type \hyperlink{classinternal_1_1GenericRegexSearch_a7b1f81c580c33200c83e1529c2fdbf54}{Encoding}
+\item 
+typedef Encoding\+::\+Ch \hyperlink{classinternal_1_1GenericRegexSearch_a966f3a62fc838b5e9350f4c6a624d9a1}{Ch}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classinternal_1_1GenericRegexSearch_a72f70e210a4bc944dba62655a008750b}{Generic\+Regex\+Search} (const Regex\+Type \&regex, Allocator $\ast$allocator=0)
+\item 
+\hyperlink{classinternal_1_1GenericRegexSearch_ad14ee51edf6f9bfe3b7cffa59c4c19c9}{$\sim$\+Generic\+Regex\+Search} ()
+\item 
+{\footnotesize template$<$typename Input\+Stream $>$ }\\bool \hyperlink{classinternal_1_1GenericRegexSearch_ad204164a20e3ac403b405683b51c2d0b}{Match} (Input\+Stream \&is)
+\item 
+bool \hyperlink{classinternal_1_1GenericRegexSearch_a9d3fe83905549d2fd4c513b8eacd14de}{Match} (const \hyperlink{classinternal_1_1GenericRegexSearch_a966f3a62fc838b5e9350f4c6a624d9a1}{Ch} $\ast$s)
+\item 
+{\footnotesize template$<$typename Input\+Stream $>$ }\\bool \hyperlink{classinternal_1_1GenericRegexSearch_a766c684321471b468ff468648f186cf0}{Search} (Input\+Stream \&is)
+\item 
+bool \hyperlink{classinternal_1_1GenericRegexSearch_a97398161c60f3ed3e4aabaff952c6f1e}{Search} (const \hyperlink{classinternal_1_1GenericRegexSearch_a966f3a62fc838b5e9350f4c6a624d9a1}{Ch} $\ast$s)
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Regex\+Type\+::\+State \hyperlink{classinternal_1_1GenericRegexSearch_a0586261735313d8cf20042e50ee75c92}{State}
+\item 
+typedef Regex\+Type\+::\+Range \hyperlink{classinternal_1_1GenericRegexSearch_aaceb6517b628e447c6df61a8b7b33c7c}{Range}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Input\+Stream $>$ }\\bool \hyperlink{classinternal_1_1GenericRegexSearch_a850b4f0e1cf3f7e0f6c02ae3d7da654a}{Search\+With\+Anchoring} (Input\+Stream \&is, bool anchor\+Begin, bool anchor\+End)
+\item 
+size\+\_\+t \hyperlink{classinternal_1_1GenericRegexSearch_a12ddb6629c0be52801d291a8e5005c06}{Get\+State\+Set\+Size} () const
+\item 
+bool \hyperlink{classinternal_1_1GenericRegexSearch_aa16ed718784de143ec64861b2b662ea4}{Add\+State} (\hyperlink{classinternal_1_1Stack}{Stack}$<$ Allocator $>$ \&l, \hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} \hyperlink{imgui__impl__opengl3__loader_8h_a57f14e05b1900f16a2da82ade47d0c6d}{index})
+\item 
+bool \hyperlink{classinternal_1_1GenericRegexSearch_a1a9c7b4f977805912d1c1f1866442fbe}{Match\+Range} (\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} range\+Index, unsigned codepoint) const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const Regex\+Type \& \hyperlink{classinternal_1_1GenericRegexSearch_aaec69557b0641a19b337ebd44b6d7a7b}{regex\+\_\+}
+\item 
+Allocator $\ast$ \hyperlink{classinternal_1_1GenericRegexSearch_aa87a7caf0054f4e65446ecd91aba367c}{allocator\+\_\+}
+\item 
+Allocator $\ast$ \hyperlink{classinternal_1_1GenericRegexSearch_a804573e03eb673a9633f638fe3e3b62f}{own\+Allocator\+\_\+}
+\item 
+\hyperlink{classinternal_1_1Stack}{Stack}$<$ Allocator $>$ \hyperlink{classinternal_1_1GenericRegexSearch_a6b44c058a10cff21c2e3d20d32b84eba}{state0\+\_\+}
+\item 
+\hyperlink{classinternal_1_1Stack}{Stack}$<$ Allocator $>$ \hyperlink{classinternal_1_1GenericRegexSearch_a029a67ab36e5cb1b1394fc7a688c7cda}{state1\+\_\+}
+\item 
+\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$ \hyperlink{classinternal_1_1GenericRegexSearch_a2f697f3edbd1e1f91d3f4535e494f4c2}{state\+Set\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classinternal_1_1GenericRegexSearch_a966f3a62fc838b5e9350f4c6a624d9a1}\label{classinternal_1_1GenericRegexSearch_a966f3a62fc838b5e9350f4c6a624d9a1}} 
+\index{internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}!Ch@{Ch}}
+\index{Ch@{Ch}!internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+typedef Encoding\+::\+Ch \hyperlink{classinternal_1_1GenericRegexSearch}{internal\+::\+Generic\+Regex\+Search}$<$ Regex\+Type, Allocator $>$\+::\hyperlink{classinternal_1_1GenericRegexSearch_a966f3a62fc838b5e9350f4c6a624d9a1}{Ch}}
+
+\mbox{\Hypertarget{classinternal_1_1GenericRegexSearch_a7b1f81c580c33200c83e1529c2fdbf54}\label{classinternal_1_1GenericRegexSearch_a7b1f81c580c33200c83e1529c2fdbf54}} 
+\index{internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}!Encoding@{Encoding}}
+\index{Encoding@{Encoding}!internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}}
+\subsubsection{\texorpdfstring{Encoding}{Encoding}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+typedef Regex\+Type\+::\+Encoding\+Type \hyperlink{classinternal_1_1GenericRegexSearch}{internal\+::\+Generic\+Regex\+Search}$<$ Regex\+Type, Allocator $>$\+::\hyperlink{classinternal_1_1GenericRegexSearch_a7b1f81c580c33200c83e1529c2fdbf54}{Encoding}}
+
+\mbox{\Hypertarget{classinternal_1_1GenericRegexSearch_aaceb6517b628e447c6df61a8b7b33c7c}\label{classinternal_1_1GenericRegexSearch_aaceb6517b628e447c6df61a8b7b33c7c}} 
+\index{internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}!Range@{Range}}
+\index{Range@{Range}!internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}}
+\subsubsection{\texorpdfstring{Range}{Range}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+typedef Regex\+Type\+::\+Range \hyperlink{classinternal_1_1GenericRegexSearch}{internal\+::\+Generic\+Regex\+Search}$<$ Regex\+Type, Allocator $>$\+::\hyperlink{classinternal_1_1GenericRegexSearch_aaceb6517b628e447c6df61a8b7b33c7c}{Range}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classinternal_1_1GenericRegexSearch_a0586261735313d8cf20042e50ee75c92}\label{classinternal_1_1GenericRegexSearch_a0586261735313d8cf20042e50ee75c92}} 
+\index{internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}!State@{State}}
+\index{State@{State}!internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}}
+\subsubsection{\texorpdfstring{State}{State}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+typedef Regex\+Type\+::\+State \hyperlink{classinternal_1_1GenericRegexSearch}{internal\+::\+Generic\+Regex\+Search}$<$ Regex\+Type, Allocator $>$\+::\hyperlink{classinternal_1_1GenericRegexSearch_a0586261735313d8cf20042e50ee75c92}{State}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classinternal_1_1GenericRegexSearch_a72f70e210a4bc944dba62655a008750b}\label{classinternal_1_1GenericRegexSearch_a72f70e210a4bc944dba62655a008750b}} 
+\index{internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}!Generic\+Regex\+Search@{Generic\+Regex\+Search}}
+\index{Generic\+Regex\+Search@{Generic\+Regex\+Search}!internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}}
+\subsubsection{\texorpdfstring{Generic\+Regex\+Search()}{GenericRegexSearch()}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classinternal_1_1GenericRegexSearch}{internal\+::\+Generic\+Regex\+Search}$<$ Regex\+Type, Allocator $>$\+::\hyperlink{classinternal_1_1GenericRegexSearch}{Generic\+Regex\+Search} (\begin{DoxyParamCaption}\item[{const Regex\+Type \&}]{regex,  }\item[{Allocator $\ast$}]{allocator = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1GenericRegexSearch_ad14ee51edf6f9bfe3b7cffa59c4c19c9}\label{classinternal_1_1GenericRegexSearch_ad14ee51edf6f9bfe3b7cffa59c4c19c9}} 
+\index{internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}!````~Generic\+Regex\+Search@{$\sim$\+Generic\+Regex\+Search}}
+\index{````~Generic\+Regex\+Search@{$\sim$\+Generic\+Regex\+Search}!internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}}
+\subsubsection{\texorpdfstring{$\sim$\+Generic\+Regex\+Search()}{~GenericRegexSearch()}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classinternal_1_1GenericRegexSearch}{internal\+::\+Generic\+Regex\+Search}$<$ Regex\+Type, Allocator $>$\+::$\sim$\hyperlink{classinternal_1_1GenericRegexSearch}{Generic\+Regex\+Search} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classinternal_1_1GenericRegexSearch_aa16ed718784de143ec64861b2b662ea4}\label{classinternal_1_1GenericRegexSearch_aa16ed718784de143ec64861b2b662ea4}} 
+\index{internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}!Add\+State@{Add\+State}}
+\index{Add\+State@{Add\+State}!internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}}
+\subsubsection{\texorpdfstring{Add\+State()}{AddState()}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+bool \hyperlink{classinternal_1_1GenericRegexSearch}{internal\+::\+Generic\+Regex\+Search}$<$ Regex\+Type, Allocator $>$\+::Add\+State (\begin{DoxyParamCaption}\item[{\hyperlink{classinternal_1_1Stack}{Stack}$<$ Allocator $>$ \&}]{l,  }\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classinternal_1_1GenericRegexSearch_a12ddb6629c0be52801d291a8e5005c06}\label{classinternal_1_1GenericRegexSearch_a12ddb6629c0be52801d291a8e5005c06}} 
+\index{internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}!Get\+State\+Set\+Size@{Get\+State\+Set\+Size}}
+\index{Get\+State\+Set\+Size@{Get\+State\+Set\+Size}!internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}}
+\subsubsection{\texorpdfstring{Get\+State\+Set\+Size()}{GetStateSetSize()}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+size\+\_\+t \hyperlink{classinternal_1_1GenericRegexSearch}{internal\+::\+Generic\+Regex\+Search}$<$ Regex\+Type, Allocator $>$\+::Get\+State\+Set\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classinternal_1_1GenericRegexSearch_ad204164a20e3ac403b405683b51c2d0b}\label{classinternal_1_1GenericRegexSearch_ad204164a20e3ac403b405683b51c2d0b}} 
+\index{internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}!Match@{Match}}
+\index{Match@{Match}!internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}}
+\subsubsection{\texorpdfstring{Match()}{Match()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+template$<$typename Input\+Stream $>$ \\
+bool \hyperlink{classinternal_1_1GenericRegexSearch}{internal\+::\+Generic\+Regex\+Search}$<$ Regex\+Type, Allocator $>$\+::Match (\begin{DoxyParamCaption}\item[{Input\+Stream \&}]{is }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1GenericRegexSearch_a9d3fe83905549d2fd4c513b8eacd14de}\label{classinternal_1_1GenericRegexSearch_a9d3fe83905549d2fd4c513b8eacd14de}} 
+\index{internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}!Match@{Match}}
+\index{Match@{Match}!internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}}
+\subsubsection{\texorpdfstring{Match()}{Match()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+bool \hyperlink{classinternal_1_1GenericRegexSearch}{internal\+::\+Generic\+Regex\+Search}$<$ Regex\+Type, Allocator $>$\+::Match (\begin{DoxyParamCaption}\item[{const \hyperlink{classinternal_1_1GenericRegexSearch_a966f3a62fc838b5e9350f4c6a624d9a1}{Ch} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1GenericRegexSearch_a1a9c7b4f977805912d1c1f1866442fbe}\label{classinternal_1_1GenericRegexSearch_a1a9c7b4f977805912d1c1f1866442fbe}} 
+\index{internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}!Match\+Range@{Match\+Range}}
+\index{Match\+Range@{Match\+Range}!internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}}
+\subsubsection{\texorpdfstring{Match\+Range()}{MatchRange()}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+bool \hyperlink{classinternal_1_1GenericRegexSearch}{internal\+::\+Generic\+Regex\+Search}$<$ Regex\+Type, Allocator $>$\+::Match\+Range (\begin{DoxyParamCaption}\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{range\+Index,  }\item[{unsigned}]{codepoint }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classinternal_1_1GenericRegexSearch_a766c684321471b468ff468648f186cf0}\label{classinternal_1_1GenericRegexSearch_a766c684321471b468ff468648f186cf0}} 
+\index{internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}!Search@{Search}}
+\index{Search@{Search}!internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}}
+\subsubsection{\texorpdfstring{Search()}{Search()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+template$<$typename Input\+Stream $>$ \\
+bool \hyperlink{classinternal_1_1GenericRegexSearch}{internal\+::\+Generic\+Regex\+Search}$<$ Regex\+Type, Allocator $>$\+::Search (\begin{DoxyParamCaption}\item[{Input\+Stream \&}]{is }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1GenericRegexSearch_a97398161c60f3ed3e4aabaff952c6f1e}\label{classinternal_1_1GenericRegexSearch_a97398161c60f3ed3e4aabaff952c6f1e}} 
+\index{internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}!Search@{Search}}
+\index{Search@{Search}!internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}}
+\subsubsection{\texorpdfstring{Search()}{Search()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+bool \hyperlink{classinternal_1_1GenericRegexSearch}{internal\+::\+Generic\+Regex\+Search}$<$ Regex\+Type, Allocator $>$\+::Search (\begin{DoxyParamCaption}\item[{const \hyperlink{classinternal_1_1GenericRegexSearch_a966f3a62fc838b5e9350f4c6a624d9a1}{Ch} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classinternal_1_1GenericRegexSearch_a850b4f0e1cf3f7e0f6c02ae3d7da654a}\label{classinternal_1_1GenericRegexSearch_a850b4f0e1cf3f7e0f6c02ae3d7da654a}} 
+\index{internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}!Search\+With\+Anchoring@{Search\+With\+Anchoring}}
+\index{Search\+With\+Anchoring@{Search\+With\+Anchoring}!internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}}
+\subsubsection{\texorpdfstring{Search\+With\+Anchoring()}{SearchWithAnchoring()}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+template$<$typename Input\+Stream $>$ \\
+bool \hyperlink{classinternal_1_1GenericRegexSearch}{internal\+::\+Generic\+Regex\+Search}$<$ Regex\+Type, Allocator $>$\+::Search\+With\+Anchoring (\begin{DoxyParamCaption}\item[{Input\+Stream \&}]{is,  }\item[{bool}]{anchor\+Begin,  }\item[{bool}]{anchor\+End }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classinternal_1_1GenericRegexSearch_aa87a7caf0054f4e65446ecd91aba367c}\label{classinternal_1_1GenericRegexSearch_aa87a7caf0054f4e65446ecd91aba367c}} 
+\index{internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}!allocator\+\_\+@{allocator\+\_\+}}
+\index{allocator\+\_\+@{allocator\+\_\+}!internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}}
+\subsubsection{\texorpdfstring{allocator\+\_\+}{allocator\_}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+Allocator$\ast$ \hyperlink{classinternal_1_1GenericRegexSearch}{internal\+::\+Generic\+Regex\+Search}$<$ Regex\+Type, Allocator $>$\+::allocator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classinternal_1_1GenericRegexSearch_a804573e03eb673a9633f638fe3e3b62f}\label{classinternal_1_1GenericRegexSearch_a804573e03eb673a9633f638fe3e3b62f}} 
+\index{internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}!own\+Allocator\+\_\+@{own\+Allocator\+\_\+}}
+\index{own\+Allocator\+\_\+@{own\+Allocator\+\_\+}!internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}}
+\subsubsection{\texorpdfstring{own\+Allocator\+\_\+}{ownAllocator\_}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+Allocator$\ast$ \hyperlink{classinternal_1_1GenericRegexSearch}{internal\+::\+Generic\+Regex\+Search}$<$ Regex\+Type, Allocator $>$\+::own\+Allocator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classinternal_1_1GenericRegexSearch_aaec69557b0641a19b337ebd44b6d7a7b}\label{classinternal_1_1GenericRegexSearch_aaec69557b0641a19b337ebd44b6d7a7b}} 
+\index{internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}!regex\+\_\+@{regex\+\_\+}}
+\index{regex\+\_\+@{regex\+\_\+}!internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}}
+\subsubsection{\texorpdfstring{regex\+\_\+}{regex\_}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+const Regex\+Type\& \hyperlink{classinternal_1_1GenericRegexSearch}{internal\+::\+Generic\+Regex\+Search}$<$ Regex\+Type, Allocator $>$\+::regex\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classinternal_1_1GenericRegexSearch_a6b44c058a10cff21c2e3d20d32b84eba}\label{classinternal_1_1GenericRegexSearch_a6b44c058a10cff21c2e3d20d32b84eba}} 
+\index{internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}!state0\+\_\+@{state0\+\_\+}}
+\index{state0\+\_\+@{state0\+\_\+}!internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}}
+\subsubsection{\texorpdfstring{state0\+\_\+}{state0\_}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classinternal_1_1Stack}{Stack}$<$Allocator$>$ \hyperlink{classinternal_1_1GenericRegexSearch}{internal\+::\+Generic\+Regex\+Search}$<$ Regex\+Type, Allocator $>$\+::state0\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classinternal_1_1GenericRegexSearch_a029a67ab36e5cb1b1394fc7a688c7cda}\label{classinternal_1_1GenericRegexSearch_a029a67ab36e5cb1b1394fc7a688c7cda}} 
+\index{internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}!state1\+\_\+@{state1\+\_\+}}
+\index{state1\+\_\+@{state1\+\_\+}!internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}}
+\subsubsection{\texorpdfstring{state1\+\_\+}{state1\_}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+\hyperlink{classinternal_1_1Stack}{Stack}$<$Allocator$>$ \hyperlink{classinternal_1_1GenericRegexSearch}{internal\+::\+Generic\+Regex\+Search}$<$ Regex\+Type, Allocator $>$\+::state1\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classinternal_1_1GenericRegexSearch_a2f697f3edbd1e1f91d3f4535e494f4c2}\label{classinternal_1_1GenericRegexSearch_a2f697f3edbd1e1f91d3f4535e494f4c2}} 
+\index{internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}!state\+Set\+\_\+@{state\+Set\+\_\+}}
+\index{state\+Set\+\_\+@{state\+Set\+\_\+}!internal\+::\+Generic\+Regex\+Search@{internal\+::\+Generic\+Regex\+Search}}
+\subsubsection{\texorpdfstring{state\+Set\+\_\+}{stateSet\_}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}$\ast$ \hyperlink{classinternal_1_1GenericRegexSearch}{internal\+::\+Generic\+Regex\+Search}$<$ Regex\+Type, Allocator $>$\+::state\+Set\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/rapidjson/internal/\hyperlink{regex_8h}{regex.\+h}\end{DoxyCompactItemize}

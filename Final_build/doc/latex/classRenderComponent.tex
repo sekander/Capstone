@@ -1,0 +1,256 @@
+\hypertarget{classRenderComponent}{}\section{Render\+Component Class Reference}
+\label{classRenderComponent}\index{Render\+Component@{Render\+Component}}
+
+
+{\ttfamily \#include $<$Render\+Component.\+h$>$}
+
+
+
+Inheritance diagram for Render\+Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classRenderComponent__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Render\+Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classRenderComponent__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRenderComponent_a24b1eded43130d0dcb0bb7e4796983c3}{Render\+Component} (\hyperlink{classComponent}{Component} $\ast$parent\+\_\+)
+\item 
+\hyperlink{classRenderComponent_a16bab40295123b9ea802d7e85b14a884}{$\sim$\+Render\+Component} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classRenderComponent_a2d05ddd16edf5d2022d46a640a74a4da}{on\+Destroy} () override
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classRenderComponent_a93203c887b05a024f70f30e8a71576bd}{update} (const float delta) override
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classRenderComponent_af2bf016f9a929d97b4c0c31db8e3842f}{draw} () const override
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classRenderComponent_a24db61b2e418c298a489c7c04cdb4c97}{init\+Line\+Render\+Data} (vec2 start, vec2 end)
+\item 
+bool \hyperlink{classRenderComponent_a5ecc72f2a9249c4df22365dbe7ca49b0}{on\+Create} () override
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classRenderComponent_aa57b7f23b20116d123538e236b9ed388}{init\+Render\+Data} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classRenderComponent_afdeec83350ada025d9e447ac57c86f78}{render\+Data} (\hyperlink{stdint_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} num\+\_\+x\+\_\+frame, \hyperlink{stdint_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} num\+\_\+y\+\_\+frames, \hyperlink{stdint_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} x\+\_\+frame, \hyperlink{stdint_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} y\+\_\+frame)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classRenderComponent_a62bf78722e9498c3c25f99d294325393}{Load\+Texture} (const char $\ast$file\+Name)
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classTexture2D}{Texture2D} $>$ \hyperlink{classRenderComponent_ad505bc06bf0bcab5f714496b21a331d1}{get\+\_\+texture} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classRenderComponent_ac4b28834176234f17223ae6068494175}{Load\+Sprite} (const char $\ast$file\+Name, vec2 position, vec2 \hyperlink{imgui__impl__opengl3__loader_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}, unsigned int x\+\_\+frame=0, unsigned int y\+\_\+frame=0, float rotation=0.\+0f, vec3 colour=vec3(1.\+0f), vec2 frames=vec2(1.\+0f), bool is\+Alpha=true)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classRenderComponent_a402d72e1fa9f7d4e21de7790a77b6c95}{Load\+Tiles} (std\+::shared\+\_\+ptr$<$ \hyperlink{classTexture2D}{Texture2D} $>$ \hyperlink{imgui__impl__opengl3__loader_8h_a0b57774cb59b667df4a205ae0b1a50e2}{texture}, vec2 position, vec2 \hyperlink{imgui__impl__opengl3__loader_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}, unsigned int x\+\_\+frame=0, unsigned int y\+\_\+frame=0, float rotation=0.\+0f, vec3 colour=vec3(1.\+0f), vec2 frames=vec2(1.\+0f))
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classRenderComponent_ab6c080155535c487e32403e4d22683e5}{draw\+Square} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classRenderComponent_a8def1d9b9ceda298e79b82fd8b0e5942}{draw\+Sprites} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classRenderComponent_a2413b8e4fc53c6f41984b173187577a9}{draw\+Line} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classRenderComponent_ac38281dc68e53d796d44dfb7d4c588a4}{draw\+Line} (glm\+::vec2 origin, glm\+::vec2 dest)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classRenderComponent_a3d25a4dc34ed86b6165b985abe8e762b}{draw\+Texture} (\hyperlink{classTexture2D}{Texture2D} \&)
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classsprite}{sprite} $>$ \hyperlink{classRenderComponent_a43c12db168ff23056f06b62a88d9cfa4}{get\+\_\+sprite} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classsprite}{sprite} $>$ \hyperlink{classRenderComponent_a5957b320510f0ab746614f9d31765c69}{smart\+\_\+sprite}
+\item 
+unsigned int \hyperlink{classRenderComponent_a82809c0d1c00bb0bc413cac2b43b9798}{V\+BO}
+\item 
+unsigned int \hyperlink{classRenderComponent_ada9411b5bec58bd87311579cb93b85ea}{V\+AO}
+\item 
+unsigned int \hyperlink{classRenderComponent_ae10a802c26234ac9f665bac4d626d41f}{quad\+V\+AO}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classTexture2D}{Texture2D} $>$ \hyperlink{classRenderComponent_a3c6e7ef44a96bdeda2e2a49514a0d3e8}{texture}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRenderComponent_a24b1eded43130d0dcb0bb7e4796983c3}\label{classRenderComponent_a24b1eded43130d0dcb0bb7e4796983c3}} 
+\index{Render\+Component@{Render\+Component}!Render\+Component@{Render\+Component}}
+\index{Render\+Component@{Render\+Component}!Render\+Component@{Render\+Component}}
+\subsubsection{\texorpdfstring{Render\+Component()}{RenderComponent()}}
+{\footnotesize\ttfamily Render\+Component\+::\+Render\+Component (\begin{DoxyParamCaption}\item[{\hyperlink{classComponent}{Component} $\ast$}]{parent\+\_\+ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRenderComponent_a16bab40295123b9ea802d7e85b14a884}\label{classRenderComponent_a16bab40295123b9ea802d7e85b14a884}} 
+\index{Render\+Component@{Render\+Component}!````~Render\+Component@{$\sim$\+Render\+Component}}
+\index{````~Render\+Component@{$\sim$\+Render\+Component}!Render\+Component@{Render\+Component}}
+\subsubsection{\texorpdfstring{$\sim$\+Render\+Component()}{~RenderComponent()}}
+{\footnotesize\ttfamily Render\+Component\+::$\sim$\+Render\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRenderComponent_af2bf016f9a929d97b4c0c31db8e3842f}\label{classRenderComponent_af2bf016f9a929d97b4c0c31db8e3842f}} 
+\index{Render\+Component@{Render\+Component}!draw@{draw}}
+\index{draw@{draw}!Render\+Component@{Render\+Component}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Render\+Component\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classComponent_a8f45309003f02191f2bcc8864e8e9ecf}{Component}.
+
+\mbox{\Hypertarget{classRenderComponent_a2413b8e4fc53c6f41984b173187577a9}\label{classRenderComponent_a2413b8e4fc53c6f41984b173187577a9}} 
+\index{Render\+Component@{Render\+Component}!draw\+Line@{draw\+Line}}
+\index{draw\+Line@{draw\+Line}!Render\+Component@{Render\+Component}}
+\subsubsection{\texorpdfstring{draw\+Line()}{drawLine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Render\+Component\+::draw\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRenderComponent_ac38281dc68e53d796d44dfb7d4c588a4}\label{classRenderComponent_ac38281dc68e53d796d44dfb7d4c588a4}} 
+\index{Render\+Component@{Render\+Component}!draw\+Line@{draw\+Line}}
+\index{draw\+Line@{draw\+Line}!Render\+Component@{Render\+Component}}
+\subsubsection{\texorpdfstring{draw\+Line()}{drawLine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Render\+Component\+::draw\+Line (\begin{DoxyParamCaption}\item[{glm\+::vec2}]{origin,  }\item[{glm\+::vec2}]{dest }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRenderComponent_a8def1d9b9ceda298e79b82fd8b0e5942}\label{classRenderComponent_a8def1d9b9ceda298e79b82fd8b0e5942}} 
+\index{Render\+Component@{Render\+Component}!draw\+Sprites@{draw\+Sprites}}
+\index{draw\+Sprites@{draw\+Sprites}!Render\+Component@{Render\+Component}}
+\subsubsection{\texorpdfstring{draw\+Sprites()}{drawSprites()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Render\+Component\+::draw\+Sprites (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRenderComponent_ab6c080155535c487e32403e4d22683e5}\label{classRenderComponent_ab6c080155535c487e32403e4d22683e5}} 
+\index{Render\+Component@{Render\+Component}!draw\+Square@{draw\+Square}}
+\index{draw\+Square@{draw\+Square}!Render\+Component@{Render\+Component}}
+\subsubsection{\texorpdfstring{draw\+Square()}{drawSquare()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Render\+Component\+::draw\+Square (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRenderComponent_a3d25a4dc34ed86b6165b985abe8e762b}\label{classRenderComponent_a3d25a4dc34ed86b6165b985abe8e762b}} 
+\index{Render\+Component@{Render\+Component}!draw\+Texture@{draw\+Texture}}
+\index{draw\+Texture@{draw\+Texture}!Render\+Component@{Render\+Component}}
+\subsubsection{\texorpdfstring{draw\+Texture()}{drawTexture()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Render\+Component\+::draw\+Texture (\begin{DoxyParamCaption}\item[{\hyperlink{classTexture2D}{Texture2D} \&}]{texture }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRenderComponent_a43c12db168ff23056f06b62a88d9cfa4}\label{classRenderComponent_a43c12db168ff23056f06b62a88d9cfa4}} 
+\index{Render\+Component@{Render\+Component}!get\+\_\+sprite@{get\+\_\+sprite}}
+\index{get\+\_\+sprite@{get\+\_\+sprite}!Render\+Component@{Render\+Component}}
+\subsubsection{\texorpdfstring{get\+\_\+sprite()}{get\_sprite()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classsprite}{sprite}$>$ Render\+Component\+::get\+\_\+sprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classRenderComponent_ad505bc06bf0bcab5f714496b21a331d1}\label{classRenderComponent_ad505bc06bf0bcab5f714496b21a331d1}} 
+\index{Render\+Component@{Render\+Component}!get\+\_\+texture@{get\+\_\+texture}}
+\index{get\+\_\+texture@{get\+\_\+texture}!Render\+Component@{Render\+Component}}
+\subsubsection{\texorpdfstring{get\+\_\+texture()}{get\_texture()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classTexture2D}{Texture2D}$>$ Render\+Component\+::get\+\_\+texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classRenderComponent_a24db61b2e418c298a489c7c04cdb4c97}\label{classRenderComponent_a24db61b2e418c298a489c7c04cdb4c97}} 
+\index{Render\+Component@{Render\+Component}!init\+Line\+Render\+Data@{init\+Line\+Render\+Data}}
+\index{init\+Line\+Render\+Data@{init\+Line\+Render\+Data}!Render\+Component@{Render\+Component}}
+\subsubsection{\texorpdfstring{init\+Line\+Render\+Data()}{initLineRenderData()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Render\+Component\+::init\+Line\+Render\+Data (\begin{DoxyParamCaption}\item[{vec2}]{start,  }\item[{vec2}]{end }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRenderComponent_aa57b7f23b20116d123538e236b9ed388}\label{classRenderComponent_aa57b7f23b20116d123538e236b9ed388}} 
+\index{Render\+Component@{Render\+Component}!init\+Render\+Data@{init\+Render\+Data}}
+\index{init\+Render\+Data@{init\+Render\+Data}!Render\+Component@{Render\+Component}}
+\subsubsection{\texorpdfstring{init\+Render\+Data()}{initRenderData()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Render\+Component\+::init\+Render\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRenderComponent_ac4b28834176234f17223ae6068494175}\label{classRenderComponent_ac4b28834176234f17223ae6068494175}} 
+\index{Render\+Component@{Render\+Component}!Load\+Sprite@{Load\+Sprite}}
+\index{Load\+Sprite@{Load\+Sprite}!Render\+Component@{Render\+Component}}
+\subsubsection{\texorpdfstring{Load\+Sprite()}{LoadSprite()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Render\+Component\+::\+Load\+Sprite (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name,  }\item[{vec2}]{position,  }\item[{vec2}]{size,  }\item[{unsigned int}]{x\+\_\+frame = {\ttfamily 0},  }\item[{unsigned int}]{y\+\_\+frame = {\ttfamily 0},  }\item[{float}]{rotation = {\ttfamily 0.0f},  }\item[{vec3}]{colour = {\ttfamily vec3(1.0f)},  }\item[{vec2}]{frames = {\ttfamily vec2(1.0f)},  }\item[{bool}]{is\+Alpha = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRenderComponent_a62bf78722e9498c3c25f99d294325393}\label{classRenderComponent_a62bf78722e9498c3c25f99d294325393}} 
+\index{Render\+Component@{Render\+Component}!Load\+Texture@{Load\+Texture}}
+\index{Load\+Texture@{Load\+Texture}!Render\+Component@{Render\+Component}}
+\subsubsection{\texorpdfstring{Load\+Texture()}{LoadTexture()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Render\+Component\+::\+Load\+Texture (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classRenderComponent_a402d72e1fa9f7d4e21de7790a77b6c95}\label{classRenderComponent_a402d72e1fa9f7d4e21de7790a77b6c95}} 
+\index{Render\+Component@{Render\+Component}!Load\+Tiles@{Load\+Tiles}}
+\index{Load\+Tiles@{Load\+Tiles}!Render\+Component@{Render\+Component}}
+\subsubsection{\texorpdfstring{Load\+Tiles()}{LoadTiles()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Render\+Component\+::\+Load\+Tiles (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classTexture2D}{Texture2D} $>$}]{texture,  }\item[{vec2}]{position,  }\item[{vec2}]{size,  }\item[{unsigned int}]{x\+\_\+frame = {\ttfamily 0},  }\item[{unsigned int}]{y\+\_\+frame = {\ttfamily 0},  }\item[{float}]{rotation = {\ttfamily 0.0f},  }\item[{vec3}]{colour = {\ttfamily vec3(1.0f)},  }\item[{vec2}]{frames = {\ttfamily vec2(1.0f)} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRenderComponent_a5ecc72f2a9249c4df22365dbe7ca49b0}\label{classRenderComponent_a5ecc72f2a9249c4df22365dbe7ca49b0}} 
+\index{Render\+Component@{Render\+Component}!on\+Create@{on\+Create}}
+\index{on\+Create@{on\+Create}!Render\+Component@{Render\+Component}}
+\subsubsection{\texorpdfstring{on\+Create()}{onCreate()}}
+{\footnotesize\ttfamily bool Render\+Component\+::on\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classComponent_a3a1537a8b8bcdb2155afbb925c77b0a2}{Component}.
+
+\mbox{\Hypertarget{classRenderComponent_a2d05ddd16edf5d2022d46a640a74a4da}\label{classRenderComponent_a2d05ddd16edf5d2022d46a640a74a4da}} 
+\index{Render\+Component@{Render\+Component}!on\+Destroy@{on\+Destroy}}
+\index{on\+Destroy@{on\+Destroy}!Render\+Component@{Render\+Component}}
+\subsubsection{\texorpdfstring{on\+Destroy()}{onDestroy()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Render\+Component\+::on\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classComponent_a2b198f27162a6caf63917e304295f892}{Component}.
+
+\mbox{\Hypertarget{classRenderComponent_afdeec83350ada025d9e447ac57c86f78}\label{classRenderComponent_afdeec83350ada025d9e447ac57c86f78}} 
+\index{Render\+Component@{Render\+Component}!render\+Data@{render\+Data}}
+\index{render\+Data@{render\+Data}!Render\+Component@{Render\+Component}}
+\subsubsection{\texorpdfstring{render\+Data()}{renderData()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Render\+Component\+::render\+Data (\begin{DoxyParamCaption}\item[{\hyperlink{stdint_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}]{num\+\_\+x\+\_\+frame,  }\item[{\hyperlink{stdint_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}]{num\+\_\+y\+\_\+frames,  }\item[{\hyperlink{stdint_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}]{x\+\_\+frame,  }\item[{\hyperlink{stdint_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}]{y\+\_\+frame }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRenderComponent_a93203c887b05a024f70f30e8a71576bd}\label{classRenderComponent_a93203c887b05a024f70f30e8a71576bd}} 
+\index{Render\+Component@{Render\+Component}!update@{update}}
+\index{update@{update}!Render\+Component@{Render\+Component}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Render\+Component\+::update (\begin{DoxyParamCaption}\item[{const float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classComponent_a3448977e6f464df89e77dda7c6f52204}{Component}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classRenderComponent_ae10a802c26234ac9f665bac4d626d41f}\label{classRenderComponent_ae10a802c26234ac9f665bac4d626d41f}} 
+\index{Render\+Component@{Render\+Component}!quad\+V\+AO@{quad\+V\+AO}}
+\index{quad\+V\+AO@{quad\+V\+AO}!Render\+Component@{Render\+Component}}
+\subsubsection{\texorpdfstring{quad\+V\+AO}{quadVAO}}
+{\footnotesize\ttfamily unsigned int Render\+Component\+::quad\+V\+AO\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classRenderComponent_a5957b320510f0ab746614f9d31765c69}\label{classRenderComponent_a5957b320510f0ab746614f9d31765c69}} 
+\index{Render\+Component@{Render\+Component}!smart\+\_\+sprite@{smart\+\_\+sprite}}
+\index{smart\+\_\+sprite@{smart\+\_\+sprite}!Render\+Component@{Render\+Component}}
+\subsubsection{\texorpdfstring{smart\+\_\+sprite}{smart\_sprite}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classsprite}{sprite}$>$ Render\+Component\+::smart\+\_\+sprite\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classRenderComponent_a3c6e7ef44a96bdeda2e2a49514a0d3e8}\label{classRenderComponent_a3c6e7ef44a96bdeda2e2a49514a0d3e8}} 
+\index{Render\+Component@{Render\+Component}!texture@{texture}}
+\index{texture@{texture}!Render\+Component@{Render\+Component}}
+\subsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classTexture2D}{Texture2D}$>$ Render\+Component\+::texture\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classRenderComponent_ada9411b5bec58bd87311579cb93b85ea}\label{classRenderComponent_ada9411b5bec58bd87311579cb93b85ea}} 
+\index{Render\+Component@{Render\+Component}!V\+AO@{V\+AO}}
+\index{V\+AO@{V\+AO}!Render\+Component@{Render\+Component}}
+\subsubsection{\texorpdfstring{V\+AO}{VAO}}
+{\footnotesize\ttfamily unsigned int Render\+Component\+::\+V\+AO\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classRenderComponent_a82809c0d1c00bb0bc413cac2b43b9798}\label{classRenderComponent_a82809c0d1c00bb0bc413cac2b43b9798}} 
+\index{Render\+Component@{Render\+Component}!V\+BO@{V\+BO}}
+\index{V\+BO@{V\+BO}!Render\+Component@{Render\+Component}}
+\subsubsection{\texorpdfstring{V\+BO}{VBO}}
+{\footnotesize\ttfamily unsigned int Render\+Component\+::\+V\+BO\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/\+Components/\hyperlink{RenderComponent_8h}{Render\+Component.\+h}\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/src/\+Components/\hyperlink{RenderComponent_8cpp}{Render\+Component.\+cpp}\end{DoxyCompactItemize}

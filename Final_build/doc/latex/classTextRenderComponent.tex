@@ -1,0 +1,155 @@
+\hypertarget{classTextRenderComponent}{}\section{Text\+Render\+Component Class Reference}
+\label{classTextRenderComponent}\index{Text\+Render\+Component@{Text\+Render\+Component}}
+
+
+{\ttfamily \#include $<$Text\+Render\+Component.\+h$>$}
+
+
+
+Inheritance diagram for Text\+Render\+Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{classTextRenderComponent__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Text\+Render\+Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{classTextRenderComponent__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTextRenderComponent_a1c68e979570639a0f422b0c65f13cc1f}{Text\+Render\+Component} (\hyperlink{classComponent}{Component} $\ast$parent\+\_\+)
+\item 
+\hyperlink{classTextRenderComponent_ac1558f65e70d5392ced81e8667c77ed1}{$\sim$\+Text\+Render\+Component} ()
+\item 
+bool \hyperlink{classTextRenderComponent_aafaf33608a83d1ff4af66ef53ba81b29}{on\+Create} () override
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classTextRenderComponent_a097fb07ecd0e1feed1c4c2bd7c97d480}{on\+Destroy} () override
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classTextRenderComponent_a73c53ed27b94597551536fda5775fb49}{update} (const float delta) override
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classTextRenderComponent_a5e1f85aded3b9c661483b62984c675d1}{Load} (\hyperlink{imgui__impl__opengl3__loader_8h_ac83513893df92266f79a515488701770}{std\+::string} font, unsigned int font\+Size)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classTextRenderComponent_a548a98c1048447ac5c27aae8dcf1df36}{Render\+Text} (\hyperlink{imgui__impl__opengl3__loader_8h_ac83513893df92266f79a515488701770}{std\+::string} \hyperlink{game__play__state_8cpp_a295b62c787445f811e691da4b10f6be4}{text}, float x, float \hyperlink{imgui__impl__opengl3__loader_8h_a5e247fc24ceb70d83f6ad59149b8910a}{y}, float scale)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classTextRenderComponent_adb02fc97e8e67e7d3035b38c2860bfab}{draw} () const override
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ char, \hyperlink{structCharacter}{Character} $>$ \hyperlink{classTextRenderComponent_a96cfcacedd8e2dc8d39055b2e75c4376}{Characters}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{classTextRenderComponent_a04eb58b08e5bdc1d16d80cdc5eed5d9b}{V\+AO}
+\item 
+unsigned int \hyperlink{classTextRenderComponent_a5f1d776333e1fb3ea2ba028fde4202f0}{V\+BO}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTextRenderComponent_a1c68e979570639a0f422b0c65f13cc1f}\label{classTextRenderComponent_a1c68e979570639a0f422b0c65f13cc1f}} 
+\index{Text\+Render\+Component@{Text\+Render\+Component}!Text\+Render\+Component@{Text\+Render\+Component}}
+\index{Text\+Render\+Component@{Text\+Render\+Component}!Text\+Render\+Component@{Text\+Render\+Component}}
+\subsubsection{\texorpdfstring{Text\+Render\+Component()}{TextRenderComponent()}}
+{\footnotesize\ttfamily Text\+Render\+Component\+::\+Text\+Render\+Component (\begin{DoxyParamCaption}\item[{\hyperlink{classComponent}{Component} $\ast$}]{parent\+\_\+ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTextRenderComponent_ac1558f65e70d5392ced81e8667c77ed1}\label{classTextRenderComponent_ac1558f65e70d5392ced81e8667c77ed1}} 
+\index{Text\+Render\+Component@{Text\+Render\+Component}!````~Text\+Render\+Component@{$\sim$\+Text\+Render\+Component}}
+\index{````~Text\+Render\+Component@{$\sim$\+Text\+Render\+Component}!Text\+Render\+Component@{Text\+Render\+Component}}
+\subsubsection{\texorpdfstring{$\sim$\+Text\+Render\+Component()}{~TextRenderComponent()}}
+{\footnotesize\ttfamily Text\+Render\+Component\+::$\sim$\+Text\+Render\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTextRenderComponent_adb02fc97e8e67e7d3035b38c2860bfab}\label{classTextRenderComponent_adb02fc97e8e67e7d3035b38c2860bfab}} 
+\index{Text\+Render\+Component@{Text\+Render\+Component}!draw@{draw}}
+\index{draw@{draw}!Text\+Render\+Component@{Text\+Render\+Component}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Text\+Render\+Component\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classComponent_a8f45309003f02191f2bcc8864e8e9ecf}{Component}.
+
+\mbox{\Hypertarget{classTextRenderComponent_a5e1f85aded3b9c661483b62984c675d1}\label{classTextRenderComponent_a5e1f85aded3b9c661483b62984c675d1}} 
+\index{Text\+Render\+Component@{Text\+Render\+Component}!Load@{Load}}
+\index{Load@{Load}!Text\+Render\+Component@{Text\+Render\+Component}}
+\subsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Text\+Render\+Component\+::\+Load (\begin{DoxyParamCaption}\item[{\hyperlink{imgui__impl__opengl3__loader_8h_ac83513893df92266f79a515488701770}{std\+::string}}]{font,  }\item[{unsigned int}]{font\+Size }\end{DoxyParamCaption})}
+
+Improve code in the future \mbox{\Hypertarget{classTextRenderComponent_aafaf33608a83d1ff4af66ef53ba81b29}\label{classTextRenderComponent_aafaf33608a83d1ff4af66ef53ba81b29}} 
+\index{Text\+Render\+Component@{Text\+Render\+Component}!on\+Create@{on\+Create}}
+\index{on\+Create@{on\+Create}!Text\+Render\+Component@{Text\+Render\+Component}}
+\subsubsection{\texorpdfstring{on\+Create()}{onCreate()}}
+{\footnotesize\ttfamily bool Text\+Render\+Component\+::on\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classComponent_a3a1537a8b8bcdb2155afbb925c77b0a2}{Component}.
+
+\mbox{\Hypertarget{classTextRenderComponent_a097fb07ecd0e1feed1c4c2bd7c97d480}\label{classTextRenderComponent_a097fb07ecd0e1feed1c4c2bd7c97d480}} 
+\index{Text\+Render\+Component@{Text\+Render\+Component}!on\+Destroy@{on\+Destroy}}
+\index{on\+Destroy@{on\+Destroy}!Text\+Render\+Component@{Text\+Render\+Component}}
+\subsubsection{\texorpdfstring{on\+Destroy()}{onDestroy()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Text\+Render\+Component\+::on\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classComponent_a2b198f27162a6caf63917e304295f892}{Component}.
+
+\mbox{\Hypertarget{classTextRenderComponent_a548a98c1048447ac5c27aae8dcf1df36}\label{classTextRenderComponent_a548a98c1048447ac5c27aae8dcf1df36}} 
+\index{Text\+Render\+Component@{Text\+Render\+Component}!Render\+Text@{Render\+Text}}
+\index{Render\+Text@{Render\+Text}!Text\+Render\+Component@{Text\+Render\+Component}}
+\subsubsection{\texorpdfstring{Render\+Text()}{RenderText()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Text\+Render\+Component\+::\+Render\+Text (\begin{DoxyParamCaption}\item[{\hyperlink{imgui__impl__opengl3__loader_8h_ac83513893df92266f79a515488701770}{std\+::string}}]{text,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{scale }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTextRenderComponent_a73c53ed27b94597551536fda5775fb49}\label{classTextRenderComponent_a73c53ed27b94597551536fda5775fb49}} 
+\index{Text\+Render\+Component@{Text\+Render\+Component}!update@{update}}
+\index{update@{update}!Text\+Render\+Component@{Text\+Render\+Component}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Text\+Render\+Component\+::update (\begin{DoxyParamCaption}\item[{const float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classComponent_a3448977e6f464df89e77dda7c6f52204}{Component}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classTextRenderComponent_a96cfcacedd8e2dc8d39055b2e75c4376}\label{classTextRenderComponent_a96cfcacedd8e2dc8d39055b2e75c4376}} 
+\index{Text\+Render\+Component@{Text\+Render\+Component}!Characters@{Characters}}
+\index{Characters@{Characters}!Text\+Render\+Component@{Text\+Render\+Component}}
+\subsubsection{\texorpdfstring{Characters}{Characters}}
+{\footnotesize\ttfamily std\+::map$<$char, \hyperlink{structCharacter}{Character}$>$ Text\+Render\+Component\+::\+Characters}
+
+\mbox{\Hypertarget{classTextRenderComponent_a04eb58b08e5bdc1d16d80cdc5eed5d9b}\label{classTextRenderComponent_a04eb58b08e5bdc1d16d80cdc5eed5d9b}} 
+\index{Text\+Render\+Component@{Text\+Render\+Component}!V\+AO@{V\+AO}}
+\index{V\+AO@{V\+AO}!Text\+Render\+Component@{Text\+Render\+Component}}
+\subsubsection{\texorpdfstring{V\+AO}{VAO}}
+{\footnotesize\ttfamily unsigned int Text\+Render\+Component\+::\+V\+AO\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTextRenderComponent_a5f1d776333e1fb3ea2ba028fde4202f0}\label{classTextRenderComponent_a5f1d776333e1fb3ea2ba028fde4202f0}} 
+\index{Text\+Render\+Component@{Text\+Render\+Component}!V\+BO@{V\+BO}}
+\index{V\+BO@{V\+BO}!Text\+Render\+Component@{Text\+Render\+Component}}
+\subsubsection{\texorpdfstring{V\+BO}{VBO}}
+{\footnotesize\ttfamily unsigned int Text\+Render\+Component\+::\+V\+BO\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/\+Components/\hyperlink{TextRenderComponent_8h}{Text\+Render\+Component.\+h}\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/src/\+Components/\hyperlink{TextRenderComponent_8cpp}{Text\+Render\+Component.\+cpp}\end{DoxyCompactItemize}

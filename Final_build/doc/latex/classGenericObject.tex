@@ -1,0 +1,499 @@
+\hypertarget{classGenericObject}{}\section{Generic\+Object$<$ Const, ValueT $>$ Class Template Reference}
+\label{classGenericObject}\index{Generic\+Object$<$ Const, Value\+T $>$@{Generic\+Object$<$ Const, Value\+T $>$}}
+
+
+Helper class for accessing Value of object type.  
+
+
+
+
+{\ttfamily \#include $<$document.\+h$>$}
+
+
+
+Collaboration diagram for Generic\+Object$<$ Const, ValueT $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classGenericObject__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classGenericObject}{Generic\+Object}$<$ true, ValueT $>$ \hyperlink{classGenericObject_aeee588f9a85e88cac89b7c4dfb6b0bd3}{Const\+Object}
+\item 
+typedef \hyperlink{classGenericObject}{Generic\+Object}$<$ false, ValueT $>$ \hyperlink{classGenericObject_ae8f5673d0cf8e7ebfd2d4f6ab27b632d}{Object}
+\item 
+typedef ValueT \hyperlink{classGenericObject_a4c25f4a5f696745c418b91ad9f577f12}{Plain\+Type}
+\item 
+typedef internal\+::\+Maybe\+Add\+Const$<$ Const, \hyperlink{classGenericObject_a4c25f4a5f696745c418b91ad9f577f12}{Plain\+Type} $>$\+::\hyperlink{rapidjson_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type} \hyperlink{classGenericObject_a930aa30f89caee7ba7bff60bf9dc21b1}{Value\+Type}
+\item 
+typedef \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ Const, typename Value\+T\+::\+Encoding\+Type, typename Value\+T\+::\+Allocator\+Type $>$ \hyperlink{classGenericObject_a1f531d70f8d57ed30199ac445b5935e6}{Member\+Iterator}
+\item 
+typedef \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$ true, typename Value\+T\+::\+Encoding\+Type, typename Value\+T\+::\+Allocator\+Type $>$ \hyperlink{classGenericObject_af16706c0ad32b957c56e7d0541628cd5}{Const\+Member\+Iterator}
+\item 
+typedef Value\+Type\+::\+Allocator\+Type \hyperlink{classGenericObject_a00c8cee952d5ebadc5e1c309aa489ad9}{Allocator\+Type}
+\item 
+typedef Value\+Type\+::\+String\+Ref\+Type \hyperlink{classGenericObject_a9b8381fc96f5f89b2163b052ed66cc59}{String\+Ref\+Type}
+\item 
+typedef Value\+Type\+::\+Encoding\+Type \hyperlink{classGenericObject_a96ebfdde095e2ce42535d15ae5dc58ef}{Encoding\+Type}
+\item 
+typedef Value\+Type\+::\+Ch \hyperlink{classGenericObject_ac6747e5baa13e15bcea1658b5624647a}{Ch}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGenericObject_a10173c42d0e8a71ca0e3ae75d800887a}{Generic\+Object} (\hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const} \hyperlink{classGenericObject}{Generic\+Object} \&rhs)
+\item 
+\hyperlink{classGenericObject}{Generic\+Object} \& \hyperlink{classGenericObject_af8984f76d6f3b13039c6d3b8e217f747}{operator=} (\hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const} \hyperlink{classGenericObject}{Generic\+Object} \&rhs)
+\item 
+\hyperlink{classGenericObject_a8ac79abb76ac4d2c647681a37fc4ab46}{$\sim$\+Generic\+Object} ()
+\item 
+\hyperlink{classGenericObject_a2948af90e01df17989cd844d6197eb18}{operator Value\+Type \&} () \hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const}
+\item 
+\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} \hyperlink{classGenericObject_a15326564c82f2b545811f753534563e4}{Member\+Count} () \hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const}
+\item 
+\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} \hyperlink{classGenericObject_a0389754cbdb435d732bad6edf4f8cdb2}{Member\+Capacity} () \hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const}
+\item 
+bool \hyperlink{classGenericObject_a9cc10bfeeb6a5eb95ba1ae587b6e6ad8}{Object\+Empty} () \hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const}
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classGenericObject_a930aa30f89caee7ba7bff60bf9dc21b1}{Value\+Type} \& \hyperlink{classGenericObject_a2d8c758d10e7c7ab23e3904d5936b204}{operator\mbox{[}$\,$\mbox{]}} (T $\ast$\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}) \hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const}
+\item 
+{\footnotesize template$<$typename Source\+Allocator $>$ }\\\hyperlink{classGenericObject_a930aa30f89caee7ba7bff60bf9dc21b1}{Value\+Type} \& \hyperlink{classGenericObject_a19bfc1bd98b120d42e7d50db0886614a}{operator\mbox{[}$\,$\mbox{]}} (\hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const} \hyperlink{classGenericValue}{Generic\+Value}$<$ \hyperlink{classGenericObject_a96ebfdde095e2ce42535d15ae5dc58ef}{Encoding\+Type}, Source\+Allocator $>$ \&\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}) \hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const}
+\item 
+\hyperlink{classGenericObject_a1f531d70f8d57ed30199ac445b5935e6}{Member\+Iterator} \hyperlink{classGenericObject_af1e80a8a521f05530f9b6a448242ff2d}{Member\+Begin} () \hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const}
+\item 
+\hyperlink{classGenericObject_a1f531d70f8d57ed30199ac445b5935e6}{Member\+Iterator} \hyperlink{classGenericObject_a75873786614f67796bfb190008e004dc}{Member\+End} () \hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const}
+\item 
+\hyperlink{classGenericObject}{Generic\+Object} \hyperlink{classGenericObject_af750abd40d05136da98705899b4575c2}{Member\+Reserve} (\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} new\+Capacity, \hyperlink{classGenericObject_a00c8cee952d5ebadc5e1c309aa489ad9}{Allocator\+Type} \&allocator) \hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const}
+\item 
+bool \hyperlink{classGenericObject_a996d775e52cc7c5cf2aa308cf5a2b2cf}{Has\+Member} (\hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const} \hyperlink{classGenericObject_ac6747e5baa13e15bcea1658b5624647a}{Ch} $\ast$\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}) \hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const}
+\item 
+{\footnotesize template$<$typename Source\+Allocator $>$ }\\bool \hyperlink{classGenericObject_a0b63666ca05c86f9d719350f2302a3f7}{Has\+Member} (\hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const} \hyperlink{classGenericValue}{Generic\+Value}$<$ \hyperlink{classGenericObject_a96ebfdde095e2ce42535d15ae5dc58ef}{Encoding\+Type}, Source\+Allocator $>$ \&\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}) \hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const}
+\item 
+\hyperlink{classGenericObject_a1f531d70f8d57ed30199ac445b5935e6}{Member\+Iterator} \hyperlink{classGenericObject_a979890ccb3b116af19f9e3e77d3d286f}{Find\+Member} (\hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const} \hyperlink{classGenericObject_ac6747e5baa13e15bcea1658b5624647a}{Ch} $\ast$\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}) \hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const}
+\item 
+{\footnotesize template$<$typename Source\+Allocator $>$ }\\\hyperlink{classGenericObject_a1f531d70f8d57ed30199ac445b5935e6}{Member\+Iterator} \hyperlink{classGenericObject_a12a4fbbf2219d6bb43c3d61923830ab4}{Find\+Member} (\hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const} \hyperlink{classGenericValue}{Generic\+Value}$<$ \hyperlink{classGenericObject_a96ebfdde095e2ce42535d15ae5dc58ef}{Encoding\+Type}, Source\+Allocator $>$ \&\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}) \hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const}
+\item 
+\hyperlink{classGenericObject}{Generic\+Object} \hyperlink{classGenericObject_a3668524c8566c46cbae97d938064f5fa}{Add\+Member} (\hyperlink{classGenericObject_a930aa30f89caee7ba7bff60bf9dc21b1}{Value\+Type} \&\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}, \hyperlink{classGenericObject_a930aa30f89caee7ba7bff60bf9dc21b1}{Value\+Type} \&\hyperlink{imgui__impl__opengl3__loader_8h_a32aff7c6c4cd253fdf6563677afab5ce}{value}, \hyperlink{classGenericObject_a00c8cee952d5ebadc5e1c309aa489ad9}{Allocator\+Type} \&allocator) \hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const}
+\item 
+\hyperlink{classGenericObject}{Generic\+Object} \hyperlink{classGenericObject_ae871adc8c906a72878b7cf5df279ed1f}{Add\+Member} (\hyperlink{classGenericObject_a930aa30f89caee7ba7bff60bf9dc21b1}{Value\+Type} \&\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}, \hyperlink{classGenericObject_a9b8381fc96f5f89b2163b052ed66cc59}{String\+Ref\+Type} \hyperlink{imgui__impl__opengl3__loader_8h_a32aff7c6c4cd253fdf6563677afab5ce}{value}, \hyperlink{classGenericObject_a00c8cee952d5ebadc5e1c309aa489ad9}{Allocator\+Type} \&allocator) \hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const}
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classGenericObject_a98ebcec632c41442d89cd8634b7ecc47}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN} ((internal\+::\+Or\+Expr$<$ internal\+::\+Is\+Pointer$<$ T $>$, \hyperlink{structinternal_1_1IsGenericValue}{internal\+::\+Is\+Generic\+Value}$<$ T $>$ $>$),(\hyperlink{classGenericObject_a930aa30f89caee7ba7bff60bf9dc21b1}{Value\+Type} \&)) \hyperlink{classGenericObject_a3668524c8566c46cbae97d938064f5fa}{Add\+Member}(\hyperlink{classGenericObject_a930aa30f89caee7ba7bff60bf9dc21b1}{Value\+Type} \&\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}
+\item 
+\hyperlink{classGenericObject}{Generic\+Object} \hyperlink{classGenericObject_a011a0dd06baf841e3f6e21a3c95db3c1}{Add\+Member} (\hyperlink{classGenericObject_a9b8381fc96f5f89b2163b052ed66cc59}{String\+Ref\+Type} \hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}, \hyperlink{classGenericObject_a930aa30f89caee7ba7bff60bf9dc21b1}{Value\+Type} \&\hyperlink{imgui__impl__opengl3__loader_8h_a32aff7c6c4cd253fdf6563677afab5ce}{value}, \hyperlink{classGenericObject_a00c8cee952d5ebadc5e1c309aa489ad9}{Allocator\+Type} \&allocator) \hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const}
+\item 
+\hyperlink{classGenericObject}{Generic\+Object} \hyperlink{classGenericObject_a3af43681aea03c4313d689bcbf5e3363}{Add\+Member} (\hyperlink{classGenericObject_a9b8381fc96f5f89b2163b052ed66cc59}{String\+Ref\+Type} \hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}, \hyperlink{classGenericObject_a9b8381fc96f5f89b2163b052ed66cc59}{String\+Ref\+Type} \hyperlink{imgui__impl__opengl3__loader_8h_a32aff7c6c4cd253fdf6563677afab5ce}{value}, \hyperlink{classGenericObject_a00c8cee952d5ebadc5e1c309aa489ad9}{Allocator\+Type} \&allocator) \hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const}
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classGenericObject_af361a4b677882964789201fc605541d0}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN} ((internal\+::\+Or\+Expr$<$ internal\+::\+Is\+Pointer$<$ T $>$, \hyperlink{structinternal_1_1IsGenericValue}{internal\+::\+Is\+Generic\+Value}$<$ T $>$ $>$),(\hyperlink{classGenericObject}{Generic\+Object})) \hyperlink{classGenericObject_a3668524c8566c46cbae97d938064f5fa}{Add\+Member}(\hyperlink{classGenericObject_a9b8381fc96f5f89b2163b052ed66cc59}{String\+Ref\+Type} \hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericObject_a129ce3843a6658e620a7f740d9f44ee1}{Remove\+All\+Members} ()
+\item 
+bool \hyperlink{classGenericObject_aebeda9c2cac6afd56dda55caaf2c4a0c}{Remove\+Member} (\hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const} \hyperlink{classGenericObject_ac6747e5baa13e15bcea1658b5624647a}{Ch} $\ast$\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}) \hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const}
+\item 
+{\footnotesize template$<$typename Source\+Allocator $>$ }\\bool \hyperlink{classGenericObject_a8e29dc07b992e71e35dd93a57f95842c}{Remove\+Member} (\hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const} \hyperlink{classGenericValue}{Generic\+Value}$<$ \hyperlink{classGenericObject_a96ebfdde095e2ce42535d15ae5dc58ef}{Encoding\+Type}, Source\+Allocator $>$ \&\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}) \hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const}
+\item 
+\hyperlink{classGenericObject_a1f531d70f8d57ed30199ac445b5935e6}{Member\+Iterator} \hyperlink{classGenericObject_a006f76a33dada85c9d13e069cc43623d}{Remove\+Member} (\hyperlink{classGenericObject_a1f531d70f8d57ed30199ac445b5935e6}{Member\+Iterator} m) \hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const}
+\item 
+\hyperlink{classGenericObject_a1f531d70f8d57ed30199ac445b5935e6}{Member\+Iterator} \hyperlink{classGenericObject_a29ad0490a4a088d57df7a9884f979a82}{Erase\+Member} (\hyperlink{classGenericObject_af16706c0ad32b957c56e7d0541628cd5}{Const\+Member\+Iterator} pos) \hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const}
+\item 
+\hyperlink{classGenericObject_a1f531d70f8d57ed30199ac445b5935e6}{Member\+Iterator} \hyperlink{classGenericObject_a67f85d2da462287dead8e35f2ac974b5}{Erase\+Member} (\hyperlink{classGenericObject_af16706c0ad32b957c56e7d0541628cd5}{Const\+Member\+Iterator} first, \hyperlink{classGenericObject_af16706c0ad32b957c56e7d0541628cd5}{Const\+Member\+Iterator} last) \hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const}
+\item 
+bool \hyperlink{classGenericObject_af0d31a8547051624449494a339b20107}{Erase\+Member} (\hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const} \hyperlink{classGenericObject_ac6747e5baa13e15bcea1658b5624647a}{Ch} $\ast$\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}) \hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const}
+\item 
+{\footnotesize template$<$typename Source\+Allocator $>$ }\\bool \hyperlink{classGenericObject_a4cd6f90444f20cc9d5577747d3968da4}{Erase\+Member} (\hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const} \hyperlink{classGenericValue}{Generic\+Value}$<$ \hyperlink{classGenericObject_a96ebfdde095e2ce42535d15ae5dc58ef}{Encoding\+Type}, Source\+Allocator $>$ \&\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}) \hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T \hyperlink{classGenericObject_a131538fbbacbc0a3a5ad15dbea66394f}{value}
+\item 
+T \hyperlink{classGenericObject_a00c8cee952d5ebadc5e1c309aa489ad9}{Allocator\+Type} \&allocator \hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const} \{ value\+\_\+.\+Add\+Member(\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}, \hyperlink{imgui__impl__opengl3__loader_8h_a32aff7c6c4cd253fdf6563677afab5ce}{value}, allocator)
+\item 
+return $\ast$ \hyperlink{classGenericObject_a719a0e5501da825e6f86ce12b46446cb}{this}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGenericObject_a4bd854dbe7168cf81541fad6fd9d9f12}{Generic\+Object} ()
+\item 
+\hyperlink{classGenericObject_a56600535a7936f35f53973e358cd4731}{Generic\+Object} (\hyperlink{classGenericObject_a930aa30f89caee7ba7bff60bf9dc21b1}{Value\+Type} \&\hyperlink{imgui__impl__opengl3__loader_8h_a32aff7c6c4cd253fdf6563677afab5ce}{value})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGenericObject_a930aa30f89caee7ba7bff60bf9dc21b1}{Value\+Type} \& \hyperlink{classGenericObject_a2578a62ca4786f6fb056400138623473}{value\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename , typename $>$ }\\class \hyperlink{classGenericObject_a899449e1a645b5e377af059fb61113d8}{Generic\+Value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$bool Const, typename ValueT$>$\newline
+class Generic\+Object$<$ Const, Value\+T $>$}
+
+Helper class for accessing Value of object type. 
+
+Instance of this helper class is obtained by {\ttfamily Generic\+Value\+::\+Get\+Object()}. In addition to all A\+P\+Is for array type, it provides range-\/based for loop if {\ttfamily R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+H\+A\+S\+\_\+\+C\+X\+X11\+\_\+\+R\+A\+N\+G\+E\+\_\+\+F\+OR=1}. 
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classGenericObject_a00c8cee952d5ebadc5e1c309aa489ad9}\label{classGenericObject_a00c8cee952d5ebadc5e1c309aa489ad9}} 
+\index{Generic\+Object@{Generic\+Object}!Allocator\+Type@{Allocator\+Type}}
+\index{Allocator\+Type@{Allocator\+Type}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Allocator\+Type}{AllocatorType}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+typedef Value\+Type\+::\+Allocator\+Type \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::\hyperlink{classGenericObject_a00c8cee952d5ebadc5e1c309aa489ad9}{Allocator\+Type}}
+
+\mbox{\Hypertarget{classGenericObject_ac6747e5baa13e15bcea1658b5624647a}\label{classGenericObject_ac6747e5baa13e15bcea1658b5624647a}} 
+\index{Generic\+Object@{Generic\+Object}!Ch@{Ch}}
+\index{Ch@{Ch}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+typedef Value\+Type\+::\+Ch \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::\hyperlink{classGenericObject_ac6747e5baa13e15bcea1658b5624647a}{Ch}}
+
+\mbox{\Hypertarget{classGenericObject_af16706c0ad32b957c56e7d0541628cd5}\label{classGenericObject_af16706c0ad32b957c56e7d0541628cd5}} 
+\index{Generic\+Object@{Generic\+Object}!Const\+Member\+Iterator@{Const\+Member\+Iterator}}
+\index{Const\+Member\+Iterator@{Const\+Member\+Iterator}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Const\+Member\+Iterator}{ConstMemberIterator}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+typedef \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$true, typename Value\+T\+::\+Encoding\+Type, typename Value\+T\+::\+Allocator\+Type$>$ \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::\hyperlink{classGenericObject_af16706c0ad32b957c56e7d0541628cd5}{Const\+Member\+Iterator}}
+
+\mbox{\Hypertarget{classGenericObject_aeee588f9a85e88cac89b7c4dfb6b0bd3}\label{classGenericObject_aeee588f9a85e88cac89b7c4dfb6b0bd3}} 
+\index{Generic\+Object@{Generic\+Object}!Const\+Object@{Const\+Object}}
+\index{Const\+Object@{Const\+Object}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Const\+Object}{ConstObject}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+typedef \hyperlink{classGenericObject}{Generic\+Object}$<$true, ValueT$>$ \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::\hyperlink{classGenericObject_aeee588f9a85e88cac89b7c4dfb6b0bd3}{Const\+Object}}
+
+\mbox{\Hypertarget{classGenericObject_a96ebfdde095e2ce42535d15ae5dc58ef}\label{classGenericObject_a96ebfdde095e2ce42535d15ae5dc58ef}} 
+\index{Generic\+Object@{Generic\+Object}!Encoding\+Type@{Encoding\+Type}}
+\index{Encoding\+Type@{Encoding\+Type}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Encoding\+Type}{EncodingType}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+typedef Value\+Type\+::\+Encoding\+Type \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::\hyperlink{classGenericObject_a96ebfdde095e2ce42535d15ae5dc58ef}{Encoding\+Type}}
+
+\mbox{\Hypertarget{classGenericObject_a1f531d70f8d57ed30199ac445b5935e6}\label{classGenericObject_a1f531d70f8d57ed30199ac445b5935e6}} 
+\index{Generic\+Object@{Generic\+Object}!Member\+Iterator@{Member\+Iterator}}
+\index{Member\+Iterator@{Member\+Iterator}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Member\+Iterator}{MemberIterator}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+typedef \hyperlink{classGenericMemberIterator}{Generic\+Member\+Iterator}$<$Const, typename Value\+T\+::\+Encoding\+Type, typename Value\+T\+::\+Allocator\+Type$>$ \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::\hyperlink{classGenericObject_a1f531d70f8d57ed30199ac445b5935e6}{Member\+Iterator}}
+
+\mbox{\Hypertarget{classGenericObject_ae8f5673d0cf8e7ebfd2d4f6ab27b632d}\label{classGenericObject_ae8f5673d0cf8e7ebfd2d4f6ab27b632d}} 
+\index{Generic\+Object@{Generic\+Object}!Object@{Object}}
+\index{Object@{Object}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Object}{Object}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+typedef \hyperlink{classGenericObject}{Generic\+Object}$<$false, ValueT$>$ \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::\hyperlink{classGenericObject_ae8f5673d0cf8e7ebfd2d4f6ab27b632d}{Object}}
+
+\mbox{\Hypertarget{classGenericObject_a4c25f4a5f696745c418b91ad9f577f12}\label{classGenericObject_a4c25f4a5f696745c418b91ad9f577f12}} 
+\index{Generic\+Object@{Generic\+Object}!Plain\+Type@{Plain\+Type}}
+\index{Plain\+Type@{Plain\+Type}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Plain\+Type}{PlainType}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+typedef ValueT \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::\hyperlink{classGenericObject_a4c25f4a5f696745c418b91ad9f577f12}{Plain\+Type}}
+
+\mbox{\Hypertarget{classGenericObject_a9b8381fc96f5f89b2163b052ed66cc59}\label{classGenericObject_a9b8381fc96f5f89b2163b052ed66cc59}} 
+\index{Generic\+Object@{Generic\+Object}!String\+Ref\+Type@{String\+Ref\+Type}}
+\index{String\+Ref\+Type@{String\+Ref\+Type}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{String\+Ref\+Type}{StringRefType}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+typedef Value\+Type\+::\+String\+Ref\+Type \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::\hyperlink{classGenericObject_a9b8381fc96f5f89b2163b052ed66cc59}{String\+Ref\+Type}}
+
+\mbox{\Hypertarget{classGenericObject_a930aa30f89caee7ba7bff60bf9dc21b1}\label{classGenericObject_a930aa30f89caee7ba7bff60bf9dc21b1}} 
+\index{Generic\+Object@{Generic\+Object}!Value\+Type@{Value\+Type}}
+\index{Value\+Type@{Value\+Type}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Value\+Type}{ValueType}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+typedef internal\+::\+Maybe\+Add\+Const$<$Const,\hyperlink{classGenericObject_a4c25f4a5f696745c418b91ad9f577f12}{Plain\+Type}$>$\+::\hyperlink{rapidjson_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type} \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::\hyperlink{classGenericObject_a930aa30f89caee7ba7bff60bf9dc21b1}{Value\+Type}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGenericObject_a10173c42d0e8a71ca0e3ae75d800887a}\label{classGenericObject_a10173c42d0e8a71ca0e3ae75d800887a}} 
+\index{Generic\+Object@{Generic\+Object}!Generic\+Object@{Generic\+Object}}
+\index{Generic\+Object@{Generic\+Object}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Generic\+Object()}{GenericObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+\hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::\hyperlink{classGenericObject}{Generic\+Object} (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const} \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericObject_a8ac79abb76ac4d2c647681a37fc4ab46}\label{classGenericObject_a8ac79abb76ac4d2c647681a37fc4ab46}} 
+\index{Generic\+Object@{Generic\+Object}!````~Generic\+Object@{$\sim$\+Generic\+Object}}
+\index{````~Generic\+Object@{$\sim$\+Generic\+Object}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{$\sim$\+Generic\+Object()}{~GenericObject()}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+\hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::$\sim$\hyperlink{classGenericObject}{Generic\+Object} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericObject_a4bd854dbe7168cf81541fad6fd9d9f12}\label{classGenericObject_a4bd854dbe7168cf81541fad6fd9d9f12}} 
+\index{Generic\+Object@{Generic\+Object}!Generic\+Object@{Generic\+Object}}
+\index{Generic\+Object@{Generic\+Object}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Generic\+Object()}{GenericObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+\hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::\hyperlink{classGenericObject}{Generic\+Object} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGenericObject_a56600535a7936f35f53973e358cd4731}\label{classGenericObject_a56600535a7936f35f53973e358cd4731}} 
+\index{Generic\+Object@{Generic\+Object}!Generic\+Object@{Generic\+Object}}
+\index{Generic\+Object@{Generic\+Object}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Generic\+Object()}{GenericObject()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+\hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::\hyperlink{classGenericObject}{Generic\+Object} (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericObject_a930aa30f89caee7ba7bff60bf9dc21b1}{Value\+Type} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGenericObject_a3668524c8566c46cbae97d938064f5fa}\label{classGenericObject_a3668524c8566c46cbae97d938064f5fa}} 
+\index{Generic\+Object@{Generic\+Object}!Add\+Member@{Add\+Member}}
+\index{Add\+Member@{Add\+Member}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Add\+Member()}{AddMember()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+\hyperlink{classGenericObject}{Generic\+Object} \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::Add\+Member (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericObject_a930aa30f89caee7ba7bff60bf9dc21b1}{Value\+Type} \&}]{name,  }\item[{\hyperlink{classGenericObject_a930aa30f89caee7ba7bff60bf9dc21b1}{Value\+Type} \&}]{value,  }\item[{\hyperlink{classGenericObject_a00c8cee952d5ebadc5e1c309aa489ad9}{Allocator\+Type} \&}]{allocator }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericObject_ae871adc8c906a72878b7cf5df279ed1f}\label{classGenericObject_ae871adc8c906a72878b7cf5df279ed1f}} 
+\index{Generic\+Object@{Generic\+Object}!Add\+Member@{Add\+Member}}
+\index{Add\+Member@{Add\+Member}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Add\+Member()}{AddMember()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+\hyperlink{classGenericObject}{Generic\+Object} \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::Add\+Member (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericObject_a930aa30f89caee7ba7bff60bf9dc21b1}{Value\+Type} \&}]{name,  }\item[{\hyperlink{classGenericObject_a9b8381fc96f5f89b2163b052ed66cc59}{String\+Ref\+Type}}]{value,  }\item[{\hyperlink{classGenericObject_a00c8cee952d5ebadc5e1c309aa489ad9}{Allocator\+Type} \&}]{allocator }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericObject_a011a0dd06baf841e3f6e21a3c95db3c1}\label{classGenericObject_a011a0dd06baf841e3f6e21a3c95db3c1}} 
+\index{Generic\+Object@{Generic\+Object}!Add\+Member@{Add\+Member}}
+\index{Add\+Member@{Add\+Member}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Add\+Member()}{AddMember()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+\hyperlink{classGenericObject}{Generic\+Object} \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::Add\+Member (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericObject_a9b8381fc96f5f89b2163b052ed66cc59}{String\+Ref\+Type}}]{name,  }\item[{\hyperlink{classGenericObject_a930aa30f89caee7ba7bff60bf9dc21b1}{Value\+Type} \&}]{value,  }\item[{\hyperlink{classGenericObject_a00c8cee952d5ebadc5e1c309aa489ad9}{Allocator\+Type} \&}]{allocator }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericObject_a3af43681aea03c4313d689bcbf5e3363}\label{classGenericObject_a3af43681aea03c4313d689bcbf5e3363}} 
+\index{Generic\+Object@{Generic\+Object}!Add\+Member@{Add\+Member}}
+\index{Add\+Member@{Add\+Member}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Add\+Member()}{AddMember()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+\hyperlink{classGenericObject}{Generic\+Object} \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::Add\+Member (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericObject_a9b8381fc96f5f89b2163b052ed66cc59}{String\+Ref\+Type}}]{name,  }\item[{\hyperlink{classGenericObject_a9b8381fc96f5f89b2163b052ed66cc59}{String\+Ref\+Type}}]{value,  }\item[{\hyperlink{classGenericObject_a00c8cee952d5ebadc5e1c309aa489ad9}{Allocator\+Type} \&}]{allocator }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericObject_a29ad0490a4a088d57df7a9884f979a82}\label{classGenericObject_a29ad0490a4a088d57df7a9884f979a82}} 
+\index{Generic\+Object@{Generic\+Object}!Erase\+Member@{Erase\+Member}}
+\index{Erase\+Member@{Erase\+Member}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Erase\+Member()}{EraseMember()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+\hyperlink{classGenericObject_a1f531d70f8d57ed30199ac445b5935e6}{Member\+Iterator} \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::Erase\+Member (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericObject_af16706c0ad32b957c56e7d0541628cd5}{Const\+Member\+Iterator}}]{pos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericObject_a67f85d2da462287dead8e35f2ac974b5}\label{classGenericObject_a67f85d2da462287dead8e35f2ac974b5}} 
+\index{Generic\+Object@{Generic\+Object}!Erase\+Member@{Erase\+Member}}
+\index{Erase\+Member@{Erase\+Member}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Erase\+Member()}{EraseMember()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+\hyperlink{classGenericObject_a1f531d70f8d57ed30199ac445b5935e6}{Member\+Iterator} \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::Erase\+Member (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericObject_af16706c0ad32b957c56e7d0541628cd5}{Const\+Member\+Iterator}}]{first,  }\item[{\hyperlink{classGenericObject_af16706c0ad32b957c56e7d0541628cd5}{Const\+Member\+Iterator}}]{last }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericObject_af0d31a8547051624449494a339b20107}\label{classGenericObject_af0d31a8547051624449494a339b20107}} 
+\index{Generic\+Object@{Generic\+Object}!Erase\+Member@{Erase\+Member}}
+\index{Erase\+Member@{Erase\+Member}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Erase\+Member()}{EraseMember()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+bool \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::Erase\+Member (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const} \hyperlink{classGenericObject_ac6747e5baa13e15bcea1658b5624647a}{Ch} $\ast$}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericObject_a4cd6f90444f20cc9d5577747d3968da4}\label{classGenericObject_a4cd6f90444f20cc9d5577747d3968da4}} 
+\index{Generic\+Object@{Generic\+Object}!Erase\+Member@{Erase\+Member}}
+\index{Erase\+Member@{Erase\+Member}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Erase\+Member()}{EraseMember()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+template$<$typename Source\+Allocator $>$ \\
+bool \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::Erase\+Member (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const} \hyperlink{classGenericValue}{Generic\+Value}$<$ \hyperlink{classGenericObject_a96ebfdde095e2ce42535d15ae5dc58ef}{Encoding\+Type}, Source\+Allocator $>$ \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericObject_a979890ccb3b116af19f9e3e77d3d286f}\label{classGenericObject_a979890ccb3b116af19f9e3e77d3d286f}} 
+\index{Generic\+Object@{Generic\+Object}!Find\+Member@{Find\+Member}}
+\index{Find\+Member@{Find\+Member}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Find\+Member()}{FindMember()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+\hyperlink{classGenericObject_a1f531d70f8d57ed30199ac445b5935e6}{Member\+Iterator} \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::Find\+Member (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const} \hyperlink{classGenericObject_ac6747e5baa13e15bcea1658b5624647a}{Ch} $\ast$}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericObject_a12a4fbbf2219d6bb43c3d61923830ab4}\label{classGenericObject_a12a4fbbf2219d6bb43c3d61923830ab4}} 
+\index{Generic\+Object@{Generic\+Object}!Find\+Member@{Find\+Member}}
+\index{Find\+Member@{Find\+Member}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Find\+Member()}{FindMember()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+template$<$typename Source\+Allocator $>$ \\
+\hyperlink{classGenericObject_a1f531d70f8d57ed30199ac445b5935e6}{Member\+Iterator} \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::Find\+Member (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const} \hyperlink{classGenericValue}{Generic\+Value}$<$ \hyperlink{classGenericObject_a96ebfdde095e2ce42535d15ae5dc58ef}{Encoding\+Type}, Source\+Allocator $>$ \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericObject_a996d775e52cc7c5cf2aa308cf5a2b2cf}\label{classGenericObject_a996d775e52cc7c5cf2aa308cf5a2b2cf}} 
+\index{Generic\+Object@{Generic\+Object}!Has\+Member@{Has\+Member}}
+\index{Has\+Member@{Has\+Member}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Has\+Member()}{HasMember()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+bool \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::Has\+Member (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const} \hyperlink{classGenericObject_ac6747e5baa13e15bcea1658b5624647a}{Ch} $\ast$}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericObject_a0b63666ca05c86f9d719350f2302a3f7}\label{classGenericObject_a0b63666ca05c86f9d719350f2302a3f7}} 
+\index{Generic\+Object@{Generic\+Object}!Has\+Member@{Has\+Member}}
+\index{Has\+Member@{Has\+Member}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Has\+Member()}{HasMember()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+template$<$typename Source\+Allocator $>$ \\
+bool \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::Has\+Member (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const} \hyperlink{classGenericValue}{Generic\+Value}$<$ \hyperlink{classGenericObject_a96ebfdde095e2ce42535d15ae5dc58ef}{Encoding\+Type}, Source\+Allocator $>$ \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericObject_af1e80a8a521f05530f9b6a448242ff2d}\label{classGenericObject_af1e80a8a521f05530f9b6a448242ff2d}} 
+\index{Generic\+Object@{Generic\+Object}!Member\+Begin@{Member\+Begin}}
+\index{Member\+Begin@{Member\+Begin}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Member\+Begin()}{MemberBegin()}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+\hyperlink{classGenericObject_a1f531d70f8d57ed30199ac445b5935e6}{Member\+Iterator} \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::Member\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericObject_a0389754cbdb435d732bad6edf4f8cdb2}\label{classGenericObject_a0389754cbdb435d732bad6edf4f8cdb2}} 
+\index{Generic\+Object@{Generic\+Object}!Member\+Capacity@{Member\+Capacity}}
+\index{Member\+Capacity@{Member\+Capacity}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Member\+Capacity()}{MemberCapacity()}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::Member\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericObject_a15326564c82f2b545811f753534563e4}\label{classGenericObject_a15326564c82f2b545811f753534563e4}} 
+\index{Generic\+Object@{Generic\+Object}!Member\+Count@{Member\+Count}}
+\index{Member\+Count@{Member\+Count}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Member\+Count()}{MemberCount()}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type} \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::Member\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericObject_a75873786614f67796bfb190008e004dc}\label{classGenericObject_a75873786614f67796bfb190008e004dc}} 
+\index{Generic\+Object@{Generic\+Object}!Member\+End@{Member\+End}}
+\index{Member\+End@{Member\+End}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Member\+End()}{MemberEnd()}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+\hyperlink{classGenericObject_a1f531d70f8d57ed30199ac445b5935e6}{Member\+Iterator} \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::Member\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericObject_af750abd40d05136da98705899b4575c2}\label{classGenericObject_af750abd40d05136da98705899b4575c2}} 
+\index{Generic\+Object@{Generic\+Object}!Member\+Reserve@{Member\+Reserve}}
+\index{Member\+Reserve@{Member\+Reserve}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Member\+Reserve()}{MemberReserve()}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+\hyperlink{classGenericObject}{Generic\+Object} \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::Member\+Reserve (\begin{DoxyParamCaption}\item[{\hyperlink{rapidjson_8h_a5ed6e6e67250fadbd041127e6386dcb5}{Size\+Type}}]{new\+Capacity,  }\item[{\hyperlink{classGenericObject_a00c8cee952d5ebadc5e1c309aa489ad9}{Allocator\+Type} \&}]{allocator }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericObject_a9cc10bfeeb6a5eb95ba1ae587b6e6ad8}\label{classGenericObject_a9cc10bfeeb6a5eb95ba1ae587b6e6ad8}} 
+\index{Generic\+Object@{Generic\+Object}!Object\+Empty@{Object\+Empty}}
+\index{Object\+Empty@{Object\+Empty}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Object\+Empty()}{ObjectEmpty()}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+bool \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::Object\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericObject_a2948af90e01df17989cd844d6197eb18}\label{classGenericObject_a2948af90e01df17989cd844d6197eb18}} 
+\index{Generic\+Object@{Generic\+Object}!operator Value\+Type \&@{operator Value\+Type \&}}
+\index{operator Value\+Type \&@{operator Value\+Type \&}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{operator Value\+Type \&()}{operator ValueType \&()}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+\hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::operator \hyperlink{classGenericObject_a930aa30f89caee7ba7bff60bf9dc21b1}{Value\+Type} \& (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericObject_af8984f76d6f3b13039c6d3b8e217f747}\label{classGenericObject_af8984f76d6f3b13039c6d3b8e217f747}} 
+\index{Generic\+Object@{Generic\+Object}!operator=@{operator=}}
+\index{operator=@{operator=}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+\hyperlink{classGenericObject}{Generic\+Object}\& \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const} \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericObject_a2d8c758d10e7c7ab23e3904d5936b204}\label{classGenericObject_a2d8c758d10e7c7ab23e3904d5936b204}} 
+\index{Generic\+Object@{Generic\+Object}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+template$<$typename T $>$ \\
+\hyperlink{classGenericObject_a930aa30f89caee7ba7bff60bf9dc21b1}{Value\+Type}\& \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{T $\ast$}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericObject_a19bfc1bd98b120d42e7d50db0886614a}\label{classGenericObject_a19bfc1bd98b120d42e7d50db0886614a}} 
+\index{Generic\+Object@{Generic\+Object}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+template$<$typename Source\+Allocator $>$ \\
+\hyperlink{classGenericObject_a930aa30f89caee7ba7bff60bf9dc21b1}{Value\+Type}\& \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const} \hyperlink{classGenericValue}{Generic\+Value}$<$ \hyperlink{classGenericObject_a96ebfdde095e2ce42535d15ae5dc58ef}{Encoding\+Type}, Source\+Allocator $>$ \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericObject_a98ebcec632c41442d89cd8634b7ecc47}\label{classGenericObject_a98ebcec632c41442d89cd8634b7ecc47}} 
+\index{Generic\+Object@{Generic\+Object}!R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN@{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN}}
+\index{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN@{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+R\+N()}{RAPIDJSON\_DISABLEIF\_RETURN()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+template$<$typename T $>$ \\
+\hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN (\begin{DoxyParamCaption}\item[{(internal\+::\+Or\+Expr$<$ internal\+::\+Is\+Pointer$<$ T $>$, \hyperlink{structinternal_1_1IsGenericValue}{internal\+::\+Is\+Generic\+Value}$<$ T $>$ $>$)}]{,  }\item[{(\hyperlink{classGenericObject_a930aa30f89caee7ba7bff60bf9dc21b1}{Value\+Type} \&)}]{ }\end{DoxyParamCaption}) \&}
+
+\mbox{\Hypertarget{classGenericObject_af361a4b677882964789201fc605541d0}\label{classGenericObject_af361a4b677882964789201fc605541d0}} 
+\index{Generic\+Object@{Generic\+Object}!R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN@{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN}}
+\index{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN@{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+R\+N()}{RAPIDJSON\_DISABLEIF\_RETURN()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+template$<$typename T $>$ \\
+\hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN (\begin{DoxyParamCaption}\item[{(internal\+::\+Or\+Expr$<$ internal\+::\+Is\+Pointer$<$ T $>$, \hyperlink{structinternal_1_1IsGenericValue}{internal\+::\+Is\+Generic\+Value}$<$ T $>$ $>$)}]{,  }\item[{(\hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$)}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classGenericObject_a129ce3843a6658e620a7f740d9f44ee1}\label{classGenericObject_a129ce3843a6658e620a7f740d9f44ee1}} 
+\index{Generic\+Object@{Generic\+Object}!Remove\+All\+Members@{Remove\+All\+Members}}
+\index{Remove\+All\+Members@{Remove\+All\+Members}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Remove\+All\+Members()}{RemoveAllMembers()}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::Remove\+All\+Members (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericObject_aebeda9c2cac6afd56dda55caaf2c4a0c}\label{classGenericObject_aebeda9c2cac6afd56dda55caaf2c4a0c}} 
+\index{Generic\+Object@{Generic\+Object}!Remove\+Member@{Remove\+Member}}
+\index{Remove\+Member@{Remove\+Member}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Remove\+Member()}{RemoveMember()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+bool \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::Remove\+Member (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const} \hyperlink{classGenericObject_ac6747e5baa13e15bcea1658b5624647a}{Ch} $\ast$}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericObject_a8e29dc07b992e71e35dd93a57f95842c}\label{classGenericObject_a8e29dc07b992e71e35dd93a57f95842c}} 
+\index{Generic\+Object@{Generic\+Object}!Remove\+Member@{Remove\+Member}}
+\index{Remove\+Member@{Remove\+Member}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Remove\+Member()}{RemoveMember()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+template$<$typename Source\+Allocator $>$ \\
+bool \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::Remove\+Member (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}{const} \hyperlink{classGenericValue}{Generic\+Value}$<$ \hyperlink{classGenericObject_a96ebfdde095e2ce42535d15ae5dc58ef}{Encoding\+Type}, Source\+Allocator $>$ \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGenericObject_a006f76a33dada85c9d13e069cc43623d}\label{classGenericObject_a006f76a33dada85c9d13e069cc43623d}} 
+\index{Generic\+Object@{Generic\+Object}!Remove\+Member@{Remove\+Member}}
+\index{Remove\+Member@{Remove\+Member}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Remove\+Member()}{RemoveMember()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+\hyperlink{classGenericObject_a1f531d70f8d57ed30199ac445b5935e6}{Member\+Iterator} \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::Remove\+Member (\begin{DoxyParamCaption}\item[{\hyperlink{classGenericObject_a1f531d70f8d57ed30199ac445b5935e6}{Member\+Iterator}}]{m }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classGenericObject_a899449e1a645b5e377af059fb61113d8}\label{classGenericObject_a899449e1a645b5e377af059fb61113d8}} 
+\index{Generic\+Object@{Generic\+Object}!Generic\+Value@{Generic\+Value}}
+\index{Generic\+Value@{Generic\+Value}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{Generic\+Value}{GenericValue}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+template$<$typename , typename $>$ \\
+friend class \hyperlink{classGenericValue}{Generic\+Value}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}\label{classGenericObject_af70c9646b5e422306c33e98b3d8783a7}} 
+\index{Generic\+Object@{Generic\+Object}!const@{const}}
+\index{const@{const}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{const}{const}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+T \hyperlink{classGenericObject_a00c8cee952d5ebadc5e1c309aa489ad9}{Allocator\+Type} \&allocator \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::const \{ value\+\_\+.\+Add\+Member(\hyperlink{imgui__impl__opengl3__loader_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}, \hyperlink{imgui__impl__opengl3__loader_8h_a32aff7c6c4cd253fdf6563677afab5ce}{value}, allocator)}
+
+\mbox{\Hypertarget{classGenericObject_a719a0e5501da825e6f86ce12b46446cb}\label{classGenericObject_a719a0e5501da825e6f86ce12b46446cb}} 
+\index{Generic\+Object@{Generic\+Object}!this@{this}}
+\index{this@{this}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{this}{this}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+return $\ast$ \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::this}
+
+\mbox{\Hypertarget{classGenericObject_a131538fbbacbc0a3a5ad15dbea66394f}\label{classGenericObject_a131538fbbacbc0a3a5ad15dbea66394f}} 
+\index{Generic\+Object@{Generic\+Object}!value@{value}}
+\index{value@{value}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+T \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::\hyperlink{imgui__impl__opengl3__loader_8h_a32aff7c6c4cd253fdf6563677afab5ce}{value}}
+
+\mbox{\Hypertarget{classGenericObject_a2578a62ca4786f6fb056400138623473}\label{classGenericObject_a2578a62ca4786f6fb056400138623473}} 
+\index{Generic\+Object@{Generic\+Object}!value\+\_\+@{value\+\_\+}}
+\index{value\+\_\+@{value\+\_\+}!Generic\+Object@{Generic\+Object}}
+\subsubsection{\texorpdfstring{value\+\_\+}{value\_}}
+{\footnotesize\ttfamily template$<$bool Const, typename ValueT $>$ \\
+\hyperlink{classGenericObject_a930aa30f89caee7ba7bff60bf9dc21b1}{Value\+Type}\& \hyperlink{classGenericObject}{Generic\+Object}$<$ Const, ValueT $>$\+::value\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/rapidjson/\hyperlink{document_8h}{document.\+h}\end{DoxyCompactItemize}

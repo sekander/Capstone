@@ -1,0 +1,134 @@
+\hypertarget{classPickUps__Actor}{}\section{Pick\+Ups\+\_\+\+Actor Class Reference}
+\label{classPickUps__Actor}\index{Pick\+Ups\+\_\+\+Actor@{Pick\+Ups\+\_\+\+Actor}}
+
+
+{\ttfamily \#include $<$Pick\+Ups\+\_\+\+Actor.\+h$>$}
+
+
+
+Inheritance diagram for Pick\+Ups\+\_\+\+Actor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classPickUps__Actor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Pick\+Ups\+\_\+\+Actor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classPickUps__Actor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPickUps__Actor_abd87640259cb2e25dc4eae1311e0175e}{Pick\+Ups\+\_\+\+Actor} (\hyperlink{classComponent}{Component} $\ast$parent\+\_\+)
+\item 
+\hyperlink{classPickUps__Actor_ac6093eccf1512b7a66876038496107e5}{$\sim$\+Pick\+Ups\+\_\+\+Actor} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classPickUps__Actor_af465c835fb431671fa437b5bf209e51d}{Initalize\+Actor} (const char $\ast$file\+Name, b2\+World $\ast$world, glm\+::vec2 positon, glm\+::vec2 \hyperlink{imgui__impl__opengl3__loader_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}, glm\+::vec2 box\+Size, int total\+X\+Frames, int total\+Y\+Frames, int current\+X\+Frame, int current\+Y\+Frame)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classPickUps__Actor_a0e2fa168ce8586fcc4f69a2ff824c801}{Initalize\+Actor} (\hyperlink{classTexture__Actor}{Texture\+\_\+\+Actor} $\ast$\hyperlink{imgui__impl__opengl3__loader_8h_a0b57774cb59b667df4a205ae0b1a50e2}{texture}, b2\+World $\ast$world, glm\+::vec2 positon, glm\+::vec2 \hyperlink{imgui__impl__opengl3__loader_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}, glm\+::vec2 box\+Size, int total\+X\+Frames, int total\+Y\+Frames, int current\+X\+Frame, int current\+Y\+Frame)
+\item 
+bool \hyperlink{classPickUps__Actor_aec7751b6c40d081160740669a59af7bb}{on\+Create} (b2\+World \&world)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classPickUps__Actor_a0b159c7f94f6a36497a350924dd41e73}{on\+Destroy} (b2\+World \&world)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classPickUps__Actor_a3f098ecced007eaa97719faaf7ba35d4}{update} (const float delta\+Time\+\_\+)
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classPickUps__Actor_aacd9aee15846715f30259aba89a5d83f}{input} ()
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classPickUps__Actor_a4e3094c5847d4b712718a04839fce966}{draw} (std\+::shared\+\_\+ptr$<$ \hyperlink{classShader__Actor}{Shader\+\_\+\+Actor} $>$ \hyperlink{imgui__impl__opengl3__loader_8h_a57b2a96adb1d51204909a82d861e395e}{shader}, glm\+::mat4 \hyperlink{main__menu__state_8cpp_a565d92bfbcc4a481d2d35f3850a382f7}{projection}, float xpos, float ypos, float box\+Width, float bow\+Height, float rot) const
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classPickUps__Actor_ae710e2745950c1b868aba96f7a19637f}{draw} (\hyperlink{classTexture__Actor}{Texture\+\_\+\+Actor} $\ast$\hyperlink{imgui__impl__opengl3__loader_8h_a0b57774cb59b667df4a205ae0b1a50e2}{texture}, std\+::shared\+\_\+ptr$<$ \hyperlink{classShader__Actor}{Shader\+\_\+\+Actor} $>$ \hyperlink{imgui__impl__opengl3__loader_8h_a57b2a96adb1d51204909a82d861e395e}{shader}, glm\+::mat4 \hyperlink{main__menu__state_8cpp_a565d92bfbcc4a481d2d35f3850a382f7}{projection}, float xpos, float ypos, float box\+Width, float bow\+Height, float rot) const
+\item 
+\hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} \hyperlink{classPickUps__Actor_ae4e6ac905806ed9416438afd91b7f4fc}{shoot\+\_\+projectiles} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPickUps__Actor_abd87640259cb2e25dc4eae1311e0175e}\label{classPickUps__Actor_abd87640259cb2e25dc4eae1311e0175e}} 
+\index{Pick\+Ups\+\_\+\+Actor@{Pick\+Ups\+\_\+\+Actor}!Pick\+Ups\+\_\+\+Actor@{Pick\+Ups\+\_\+\+Actor}}
+\index{Pick\+Ups\+\_\+\+Actor@{Pick\+Ups\+\_\+\+Actor}!Pick\+Ups\+\_\+\+Actor@{Pick\+Ups\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{Pick\+Ups\+\_\+\+Actor()}{PickUps\_Actor()}}
+{\footnotesize\ttfamily Pick\+Ups\+\_\+\+Actor\+::\+Pick\+Ups\+\_\+\+Actor (\begin{DoxyParamCaption}\item[{\hyperlink{classComponent}{Component} $\ast$}]{parent\+\_\+ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPickUps__Actor_ac6093eccf1512b7a66876038496107e5}\label{classPickUps__Actor_ac6093eccf1512b7a66876038496107e5}} 
+\index{Pick\+Ups\+\_\+\+Actor@{Pick\+Ups\+\_\+\+Actor}!````~Pick\+Ups\+\_\+\+Actor@{$\sim$\+Pick\+Ups\+\_\+\+Actor}}
+\index{````~Pick\+Ups\+\_\+\+Actor@{$\sim$\+Pick\+Ups\+\_\+\+Actor}!Pick\+Ups\+\_\+\+Actor@{Pick\+Ups\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{$\sim$\+Pick\+Ups\+\_\+\+Actor()}{~PickUps\_Actor()}}
+{\footnotesize\ttfamily Pick\+Ups\+\_\+\+Actor\+::$\sim$\+Pick\+Ups\+\_\+\+Actor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPickUps__Actor_a4e3094c5847d4b712718a04839fce966}\label{classPickUps__Actor_a4e3094c5847d4b712718a04839fce966}} 
+\index{Pick\+Ups\+\_\+\+Actor@{Pick\+Ups\+\_\+\+Actor}!draw@{draw}}
+\index{draw@{draw}!Pick\+Ups\+\_\+\+Actor@{Pick\+Ups\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Pick\+Ups\+\_\+\+Actor\+::draw (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classShader__Actor}{Shader\+\_\+\+Actor} $>$}]{shader,  }\item[{glm\+::mat4}]{projection,  }\item[{float}]{xpos,  }\item[{float}]{ypos,  }\item[{float}]{box\+Width,  }\item[{float}]{bow\+Height,  }\item[{float}]{rot }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPickUps__Actor_ae710e2745950c1b868aba96f7a19637f}\label{classPickUps__Actor_ae710e2745950c1b868aba96f7a19637f}} 
+\index{Pick\+Ups\+\_\+\+Actor@{Pick\+Ups\+\_\+\+Actor}!draw@{draw}}
+\index{draw@{draw}!Pick\+Ups\+\_\+\+Actor@{Pick\+Ups\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Pick\+Ups\+\_\+\+Actor\+::draw (\begin{DoxyParamCaption}\item[{\hyperlink{classTexture__Actor}{Texture\+\_\+\+Actor} $\ast$}]{texture,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classShader__Actor}{Shader\+\_\+\+Actor} $>$}]{shader,  }\item[{glm\+::mat4}]{projection,  }\item[{float}]{xpos,  }\item[{float}]{ypos,  }\item[{float}]{box\+Width,  }\item[{float}]{bow\+Height,  }\item[{float}]{rot }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPickUps__Actor_af465c835fb431671fa437b5bf209e51d}\label{classPickUps__Actor_af465c835fb431671fa437b5bf209e51d}} 
+\index{Pick\+Ups\+\_\+\+Actor@{Pick\+Ups\+\_\+\+Actor}!Initalize\+Actor@{Initalize\+Actor}}
+\index{Initalize\+Actor@{Initalize\+Actor}!Pick\+Ups\+\_\+\+Actor@{Pick\+Ups\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{Initalize\+Actor()}{InitalizeActor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Pick\+Ups\+\_\+\+Actor\+::\+Initalize\+Actor (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name,  }\item[{b2\+World $\ast$}]{world,  }\item[{glm\+::vec2}]{positon,  }\item[{glm\+::vec2}]{size,  }\item[{glm\+::vec2}]{box\+Size,  }\item[{int}]{total\+X\+Frames,  }\item[{int}]{total\+Y\+Frames,  }\item[{int}]{current\+X\+Frame,  }\item[{int}]{current\+Y\+Frame }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPickUps__Actor_a0e2fa168ce8586fcc4f69a2ff824c801}\label{classPickUps__Actor_a0e2fa168ce8586fcc4f69a2ff824c801}} 
+\index{Pick\+Ups\+\_\+\+Actor@{Pick\+Ups\+\_\+\+Actor}!Initalize\+Actor@{Initalize\+Actor}}
+\index{Initalize\+Actor@{Initalize\+Actor}!Pick\+Ups\+\_\+\+Actor@{Pick\+Ups\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{Initalize\+Actor()}{InitalizeActor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Pick\+Ups\+\_\+\+Actor\+::\+Initalize\+Actor (\begin{DoxyParamCaption}\item[{\hyperlink{classTexture__Actor}{Texture\+\_\+\+Actor} $\ast$}]{texture,  }\item[{b2\+World $\ast$}]{world,  }\item[{glm\+::vec2}]{positon,  }\item[{glm\+::vec2}]{size,  }\item[{glm\+::vec2}]{box\+Size,  }\item[{int}]{total\+X\+Frames,  }\item[{int}]{total\+Y\+Frames,  }\item[{int}]{current\+X\+Frame,  }\item[{int}]{current\+Y\+Frame }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPickUps__Actor_aacd9aee15846715f30259aba89a5d83f}\label{classPickUps__Actor_aacd9aee15846715f30259aba89a5d83f}} 
+\index{Pick\+Ups\+\_\+\+Actor@{Pick\+Ups\+\_\+\+Actor}!input@{input}}
+\index{input@{input}!Pick\+Ups\+\_\+\+Actor@{Pick\+Ups\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Pick\+Ups\+\_\+\+Actor\+::input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPickUps__Actor_aec7751b6c40d081160740669a59af7bb}\label{classPickUps__Actor_aec7751b6c40d081160740669a59af7bb}} 
+\index{Pick\+Ups\+\_\+\+Actor@{Pick\+Ups\+\_\+\+Actor}!on\+Create@{on\+Create}}
+\index{on\+Create@{on\+Create}!Pick\+Ups\+\_\+\+Actor@{Pick\+Ups\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{on\+Create()}{onCreate()}}
+{\footnotesize\ttfamily bool Pick\+Ups\+\_\+\+Actor\+::on\+Create (\begin{DoxyParamCaption}\item[{b2\+World \&}]{world }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPickUps__Actor_a0b159c7f94f6a36497a350924dd41e73}\label{classPickUps__Actor_a0b159c7f94f6a36497a350924dd41e73}} 
+\index{Pick\+Ups\+\_\+\+Actor@{Pick\+Ups\+\_\+\+Actor}!on\+Destroy@{on\+Destroy}}
+\index{on\+Destroy@{on\+Destroy}!Pick\+Ups\+\_\+\+Actor@{Pick\+Ups\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{on\+Destroy()}{onDestroy()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Pick\+Ups\+\_\+\+Actor\+::on\+Destroy (\begin{DoxyParamCaption}\item[{b2\+World \&}]{world }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPickUps__Actor_ae4e6ac905806ed9416438afd91b7f4fc}\label{classPickUps__Actor_ae4e6ac905806ed9416438afd91b7f4fc}} 
+\index{Pick\+Ups\+\_\+\+Actor@{Pick\+Ups\+\_\+\+Actor}!shoot\+\_\+projectiles@{shoot\+\_\+projectiles}}
+\index{shoot\+\_\+projectiles@{shoot\+\_\+projectiles}!Pick\+Ups\+\_\+\+Actor@{Pick\+Ups\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{shoot\+\_\+projectiles()}{shoot\_projectiles()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Pick\+Ups\+\_\+\+Actor\+::shoot\+\_\+projectiles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPickUps__Actor_a3f098ecced007eaa97719faaf7ba35d4}\label{classPickUps__Actor_a3f098ecced007eaa97719faaf7ba35d4}} 
+\index{Pick\+Ups\+\_\+\+Actor@{Pick\+Ups\+\_\+\+Actor}!update@{update}}
+\index{update@{update}!Pick\+Ups\+\_\+\+Actor@{Pick\+Ups\+\_\+\+Actor}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \hyperlink{imgui__impl__opengl3__loader_8h_ac668e7cffd9e2e9cfee428b9b2f34fa7}{void} Pick\+Ups\+\_\+\+Actor\+::update (\begin{DoxyParamCaption}\item[{const float}]{delta\+Time\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classActor_a724ff8f2e9c34f15a6c443a3912504c4}{Actor}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/\+Actors/\hyperlink{PickUps__Actor_8h}{Pick\+Ups\+\_\+\+Actor.\+h}\item 
+/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/src/\+Actors/\hyperlink{PickUps__Actor_8cpp}{Pick\+Ups\+\_\+\+Actor.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,18 @@
+- Create locked framerate 
+- Implement proper animation code
+- Implement path finding algorithms
+- Complete full level 1 demo 
+
+SETUP Android GUI to handle connection to udp server 
+	-> Create connection button to start searching for host
+	-> Enable the user to search again if host isn't found
+	-> Enable user to disconnect from the host safetly 
+
+SETUP Animations correctly 
+	-> Update animation code 
+	-> Add animation transitions from different controls
+
+SETUP gun controls 
+	-> Fix gun input
+	
+Close the android test socket connection 

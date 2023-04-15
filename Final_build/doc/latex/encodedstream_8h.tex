@@ -1,0 +1,47 @@
+\hypertarget{encodedstream_8h}{}\section{/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/rapidjson/encodedstream.h File Reference}
+\label{encodedstream_8h}\index{/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/rapidjson/encodedstream.\+h@{/mnt/hdd/fnky/\+C0de/\+C\+A\+P\+S\+T\+O\+N\+E/clean\+\_\+build/include/rapidjson/encodedstream.\+h}}
+{\ttfamily \#include \char`\"{}stream.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}memorystream.\+h\char`\"{}}\newline
+Include dependency graph for encodedstream.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{encodedstream_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{encodedstream_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classEncodedInputStream}{Encoded\+Input\+Stream$<$ Encoding, Input\+Byte\+Stream $>$}
+\begin{DoxyCompactList}\small\item\em Input byte stream wrapper with a statically bound encoding. \end{DoxyCompactList}\item 
+class \hyperlink{classEncodedInputStream_3_01UTF8_3_4_00_01MemoryStream_01_4}{Encoded\+Input\+Stream$<$ U\+T\+F8$<$$>$, Memory\+Stream $>$}
+\begin{DoxyCompactList}\small\item\em Specialized for \hyperlink{structUTF8}{U\+T\+F8} \hyperlink{structMemoryStream}{Memory\+Stream}. \end{DoxyCompactList}\item 
+class \hyperlink{classEncodedOutputStream}{Encoded\+Output\+Stream$<$ Encoding, Output\+Byte\+Stream $>$}
+\begin{DoxyCompactList}\small\item\em Output byte stream wrapper with statically bound encoding. \end{DoxyCompactList}\item 
+class \hyperlink{classAutoUTFInputStream}{Auto\+U\+T\+F\+Input\+Stream$<$ Char\+Type, Input\+Byte\+Stream $>$}
+\begin{DoxyCompactList}\small\item\em Input stream wrapper with dynamically bound encoding and automatic encoding detection. \end{DoxyCompactList}\item 
+class \hyperlink{classAutoUTFOutputStream}{Auto\+U\+T\+F\+Output\+Stream$<$ Char\+Type, Output\+Byte\+Stream $>$}
+\begin{DoxyCompactList}\small\item\em Output stream wrapper with dynamically bound encoding and automatic encoding detection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{encodedstream_8h_a6530c8834a049a0ff230b56072df6c24}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+S\+\_\+\+F\+U\+NC}(x)~\hyperlink{structUTF8}{U\+T\+F8}$<$Ch$>$\+::x, \hyperlink{structUTF16LE}{U\+T\+F16\+LE}$<$Ch$>$\+::x, \hyperlink{structUTF16BE}{U\+T\+F16\+BE}$<$Ch$>$\+::x, \hyperlink{structUTF32LE}{U\+T\+F32\+LE}$<$Ch$>$\+::x, \hyperlink{structUTF32BE}{U\+T\+F32\+BE}$<$Ch$>$\+::x
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{encodedstream_8h_a6530c8834a049a0ff230b56072df6c24}\label{encodedstream_8h_a6530c8834a049a0ff230b56072df6c24}} 
+\index{encodedstream.\+h@{encodedstream.\+h}!R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+S\+\_\+\+F\+U\+NC@{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+S\+\_\+\+F\+U\+NC}}
+\index{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+S\+\_\+\+F\+U\+NC@{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+S\+\_\+\+F\+U\+NC}!encodedstream.\+h@{encodedstream.\+h}}
+\subsubsection{\texorpdfstring{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+S\+\_\+\+F\+U\+NC}{RAPIDJSON\_ENCODINGS\_FUNC}}
+{\footnotesize\ttfamily \#define R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+S\+\_\+\+F\+U\+NC(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~\hyperlink{structUTF8}{U\+T\+F8}$<$Ch$>$\+::x, \hyperlink{structUTF16LE}{U\+T\+F16\+LE}$<$Ch$>$\+::x, \hyperlink{structUTF16BE}{U\+T\+F16\+BE}$<$Ch$>$\+::x, \hyperlink{structUTF32LE}{U\+T\+F32\+LE}$<$Ch$>$\+::x, \hyperlink{structUTF32BE}{U\+T\+F32\+BE}$<$Ch$>$\+::x}
+
